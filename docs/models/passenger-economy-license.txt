@@ -1,0 +1,7 @@
+Economy Traincar
+Author: masinissam_RBX (https://sketchfab.com/RobloxGameMaker1259)
+Source: https://sketchfab.com/3d-models/economy-traincar-adff4da69020428785623718e9c91690
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Derivative modifications: removed exporter outlines; fitted source body proportions to the game's existing coach envelope; retained source body/door/undercarriage textures; extracted actual UV-preserving hinged door panels and wheel rims; retargeted wheel/bogie pivots; replaced couplers; simplified meshes into three LOD profiles.
+This derivative is not endorsed by the original author. Original download was not modified.

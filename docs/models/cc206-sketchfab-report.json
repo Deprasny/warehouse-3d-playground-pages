@@ -1,0 +1,802 @@
+{
+  "source": {
+    "filename": "cc_206_ge-cm20emp_locomotive_-_pt._kai.glb",
+    "sha256": "07f526e92c56e607f5e8f12a3332a57521c4a5d9dc3c2c91193d87ac6c8b2ee2",
+    "bytes": 51897984,
+    "author": "pucohensap",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901"
+  },
+  "reference": {
+    "file": "cc206-sketchfab-reference.glb",
+    "bytes": 41614004,
+    "triangles": 903343,
+    "primitives": 77,
+    "meshes": 27,
+    "materials": 19,
+    "textures": 11,
+    "dropped": {
+      "BESI_REL_7": 1728,
+      "BETON_BANTALAN_REL_8": 3273,
+      "KUNCI_KLIP_REL_32": 79728,
+      "PELAT_KLIP_REL_42": 29107,
+      "Cube_168": 12
+    },
+    "bogieCenters": [
+      -4.311024547260373,
+      4.311023652713655
+    ],
+    "axles": [
+      -6.002432118606784,
+      -4.428012783517177,
+      -2.5026287396571556,
+      2.502628389617136,
+      4.428010449917045,
+      6.002432118606784
+    ],
+    "wheelPivots": 12,
+    "rigNodes": [
+      {
+        "name": "cc206-sketchfab-rig",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "extras": {
+          "author": "pucohensap",
+          "source": "https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "isLocomotive": true,
+          "staticWorldDynamic": true,
+          "units": "metres",
+          "lengthScale": 0.9787828365764324,
+          "bogieCenters": [
+            -4.311024547260373,
+            4.311023652713655
+          ]
+        }
+      },
+      {
+        "name": "locomotive-body",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "extras": {}
+      },
+      {
+        "name": "rail-bogie--1",
+        "translation": [
+          0,
+          0,
+          -4.311024547260373
+        ],
+        "extras": {}
+      },
+      {
+        "name": "rail-bogie-1",
+        "translation": [
+          0,
+          0,
+          4.311023652713655
+        ],
+        "extras": {}
+      },
+      {
+        "name": "rail-coupler-1",
+        "translation": [
+          0,
+          0.6803735643625259,
+          6.9941277503967285
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "rail-coupler--1",
+        "translation": [
+          0,
+          0.6803735643625259,
+          -6.994126319885254
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-1-1",
+        "translation": [
+          0.6829624029342085,
+          2.3092357516288757,
+          6.5973570346832275
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-1--1",
+        "translation": [
+          -0.6829628505511209,
+          2.3092357516288757,
+          6.5973570346832275
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-0--1",
+        "translation": [
+          -0.6829621001379564,
+          2.3092357516288757,
+          -6.597356796264648
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-0-1",
+        "translation": [
+          0.6829632604494691,
+          2.3092357516288757,
+          -6.597356796264648
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "rail-wheel-1-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          -0.11698818143072831
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-5-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          1.6914084552117599
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-3-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          -1.8083953262976395
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-4--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          0.11698693021023399
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-3--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          -1.8083953262976395
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-5--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          1.6914084552117599
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-4-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          0.11698693021023399
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-1--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          -0.11698818143072831
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-2--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          1.8083958632164885
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-2-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          1.8083958632164885
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-0--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          -1.6914075606650423
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-0-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          -1.6914075606650423
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-1",
+        "translation": [
+          0,
+          0.46002793312072754,
+          -0.11698663170996415
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 1,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-0",
+        "translation": [
+          0,
+          0.46002793312072754,
+          -1.6914089911765169
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 0,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-3",
+        "translation": [
+          0,
+          0.46002793312072754,
+          -1.80839520708835
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 3,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-5",
+        "translation": [
+          0,
+          0.46002793312072754,
+          1.6914082167931808
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 5,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-2",
+        "translation": [
+          0,
+          0.46002793312072754,
+          1.8083953863793303
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 2,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-4",
+        "translation": [
+          0,
+          0.46002793312072754,
+          0.11698657258236533
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 4,
+          "axis": "x"
+        }
+      }
+    ],
+    "sourceBounds": [
+      3.0040453672409058,
+      3.7171895503997803,
+      16.19256019592285
+    ],
+    "lengthScale": 0.9787828365764324
+  },
+  "optimized": {
+    "file": "cc206-sketchfab-optimized.glb",
+    "bytes": 3548036,
+    "triangles": 114575,
+    "primitives": 78,
+    "meshes": 27,
+    "materials": 20,
+    "textures": 1,
+    "dropped": {
+      "BAUT_BADAN_4": 14292,
+      "BAUT_JENDELA_DEPAN_1_5": 4640,
+      "BAUT_JENDELA_DEPAN_2_6": 4640,
+      "BESI_REL_7": 1728,
+      "BETON_BANTALAN_REL_8": 3273,
+      "ENGSEL_BADAN_16": 41160,
+      "ENGSEL_KEPALA_1_17": 12944,
+      "ENGSEL_KEPALA_2_18": 12944,
+      "GAGANG_PINTU_BADAN_19": 46106,
+      "KUNCI_KLIP_REL_32": 79728,
+      "PELAT_KLIP_REL_42": 29107,
+      "PIPA_BAWAH_LANTAI_DEK_47": 50635,
+      "SELANG_DEPAN_1_107": 53116,
+      "SELANG_DEPAN_2_164": 53116,
+      "Cube_168": 12
+    },
+    "bogieCenters": [
+      -4.311024547260373,
+      4.311023652713655
+    ],
+    "axles": [
+      -6.002432118606784,
+      -4.428012783517177,
+      -2.5026287396571556,
+      2.502628389617136,
+      4.428010449917045,
+      6.002432118606784
+    ],
+    "wheelPivots": 12,
+    "rigNodes": [
+      {
+        "name": "cc206-sketchfab-rig",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "extras": {
+          "author": "pucohensap",
+          "source": "https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "isLocomotive": true,
+          "staticWorldDynamic": true,
+          "units": "metres",
+          "lengthScale": 0.9787828365764324,
+          "bogieCenters": [
+            -4.311024547260373,
+            4.311023652713655
+          ]
+        }
+      },
+      {
+        "name": "locomotive-body",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "extras": {}
+      },
+      {
+        "name": "rail-bogie--1",
+        "translation": [
+          0,
+          0,
+          -4.311024547260373
+        ],
+        "extras": {}
+      },
+      {
+        "name": "rail-bogie-1",
+        "translation": [
+          0,
+          0,
+          4.311023652713655
+        ],
+        "extras": {}
+      },
+      {
+        "name": "rail-coupler-1",
+        "translation": [
+          0,
+          0.6803735643625259,
+          6.9941277503967285
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "rail-coupler--1",
+        "translation": [
+          0,
+          0.6803735643625259,
+          -6.994126319885254
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-1-1",
+        "translation": [
+          0.6829624029342085,
+          2.3092357516288757,
+          6.5973570346832275
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-1--1",
+        "translation": [
+          -0.6829628505511209,
+          2.3092357516288757,
+          6.5973570346832275
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-0--1",
+        "translation": [
+          -0.6829621001379564,
+          2.3092357516288757,
+          -6.597356796264648
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "cab-entry-0-1",
+        "translation": [
+          0.6829632604494691,
+          2.3092357516288757,
+          -6.597356796264648
+        ],
+        "extras": {
+          "staticWorldDynamic": true
+        }
+      },
+      {
+        "name": "rail-wheel-1-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          -0.11698818143072831
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-5-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          1.6914084552117599
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-3-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          -1.8083953262976395
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-4--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          0.11698693021023399
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-3--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          -1.8083953262976395
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-5--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          1.6914084552117599
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-4-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          0.11698693021023399
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-1--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          -0.11698818143072831
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-2--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          1.8083958632164885
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-2-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          1.8083958632164885
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-0--1",
+        "translation": [
+          -0.5497661083936691,
+          0.46002790331840515,
+          -1.6914075606650423
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-wheel-0-1",
+        "translation": [
+          0.5497660934925079,
+          0.46002790331840515,
+          -1.6914075606650423
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "radius": 0.46002790331840515,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-1",
+        "translation": [
+          0,
+          0.46002793312072754,
+          -0.11698663170996415
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 1,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-0",
+        "translation": [
+          0,
+          0.46002793312072754,
+          -1.6914089911765169
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 0,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-3",
+        "translation": [
+          0,
+          0.46002793312072754,
+          -1.80839520708835
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 3,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-5",
+        "translation": [
+          0,
+          0.46002793312072754,
+          1.6914082167931808
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 5,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-2",
+        "translation": [
+          0,
+          0.46002793312072754,
+          1.8083953863793303
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 2,
+          "axis": "x"
+        }
+      },
+      {
+        "name": "rail-axle-shaft-4",
+        "translation": [
+          0,
+          0.46002793312072754,
+          0.11698657258236533
+        ],
+        "extras": {
+          "staticWorldDynamic": true,
+          "axleShaft": true,
+          "axleIndex": 4,
+          "axis": "x"
+        }
+      }
+    ],
+    "sourceBounds": [
+      3.0040453672409058,
+      3.7171895503997803,
+      16.19256019592285
+    ],
+    "lengthScale": 0.9787828365764324
+  }
+}

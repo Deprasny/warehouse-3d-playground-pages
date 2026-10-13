@@ -1,0 +1,45 @@
+{
+  "author": "masinissam_RBX",
+  "source": "https://sketchfab.com/3d-models/economy-traincar-adff4da69020428785623718e9c91690",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "input": "economy_traincar.glb",
+  "output": "passenger-economy-original.glb",
+  "bytes": 4783020,
+  "sha256": "c26e9bcba15b0b6a0ea587fe24b5c2f0113f98c0909539079376131efafe5973",
+  "byteForByteCopy": true,
+  "sourceWorldBounds": {
+    "min": [-3.9370079040527344, 7.173769474029541, -953.4061889648438],
+    "max": [126.93779754638672, 177.37510681152344, 17.563459396362305]
+  },
+  "sourceWorldSize": [130.87480545043945, 170.2013373374939, 970.969648361206],
+  "display": {
+    "method": "One whole-scene translation followed by one uniform scale; all original internal transforms and geometry data retained",
+    "sourceSceneTranslation": [-61.50039482116699, -7.173769474029541, 467.9213647842407],
+    "uniformScale": 0.022158581172433463,
+    "sizeBeforeTrainScale": [2.9, 3.771420149049589, 21.515309769180963],
+    "alignmentGroupName": "passenger-original-alignment"
+  },
+  "virtualPhysics": {
+    "bogieSpanSource": 662.5983800888062,
+    "bogieZFormula": "bogieSpanSource * uniformScale / 2",
+    "couplerZFormula": "displayLength / 2 - 0.56",
+    "couplerY": 0.83,
+    "emptyAnchorsOnly": true
+  },
+  "retained": {
+    "triangles": 68590,
+    "trianglePrimitives": 19,
+    "lineIndexCount": 106364,
+    "linePrimitives": 11,
+    "totalPrimitives": 30,
+    "nativeNodes": 35,
+    "geometryAttributes": "Unchanged POSITION, NORMAL, UV and other original attributes",
+    "materialsAndTextures": "Unchanged source materials and texture bytes",
+    "sourceOutlines": true
+  },
+  "limitations": [
+    "Native pooled wheels and doors have no independent animation nodes; no visible wheel spinning or door opening is invented",
+    "The original source is longer than the previous stylized coach; simulation spacing must use carSpecRaw and detailLength",
+    "Original geometry and full outlines are rendered; no lower-detail profile or shadow proxy is applied"
+  ]
+}

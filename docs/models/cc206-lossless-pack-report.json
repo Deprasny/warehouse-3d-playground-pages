@@ -1,0 +1,29 @@
+[
+  {
+    "detail": "optimized",
+    "input": "cc206-sketchfab-optimized.glb",
+    "output": "cc206-sketchfab-optimized-packed.glb",
+    "sourceBytes": 3548036,
+    "packedBytes": 2198004,
+    "vertexAttributesExact": true,
+    "orientedTrianglesExact": true
+  },
+  {
+    "detail": "medium",
+    "input": "cc206-sketchfab-medium.glb",
+    "output": "cc206-sketchfab-medium-packed.glb",
+    "sourceBytes": 1133416,
+    "packedBytes": 844308,
+    "vertexAttributesExact": true,
+    "orientedTrianglesExact": true
+  },
+  {
+    "detail": "low",
+    "input": "cc206-sketchfab-low.glb",
+    "output": "cc206-sketchfab-low-packed.glb",
+    "sourceBytes": 828548,
+    "packedBytes": 645084,
+    "vertexAttributesExact": true,
+    "orientedTrianglesExact": true
+  }
+]

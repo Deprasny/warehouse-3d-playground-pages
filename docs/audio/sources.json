@@ -1,0 +1,59 @@
+{
+  "synthesized": {
+    "description": "Locomotive engines, horns, train and facility effects are synthesized locally using Web Audio. No Wikimedia train recordings are used."
+  },
+  "ambient": {
+    "birds": {
+      "file": "ambient-birds.mp3",
+      "source": "https://freesound.org/people/Magnesus/sounds/723913/",
+      "download": "https://cdn.freesound.org/previews/723/723913_2008500-hq.mp3",
+      "title": "Forest birds - ambient seamless loop",
+      "author": "Magnesus",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Public high-quality MP3 preview; excerpt starts 0 seconds, 27 seconds before processing; mono 22050 Hz / 64 kbit MP3; tail-to-head 1-second crossfade loop and loudness normalization -23 LUFS / -4 dBTP; not original WAV",
+      "durationSeconds": 26.0,
+      "bytes": 208813,
+      "sha256": "6059e2d3c7d341fb93bb292732418af9a9cad23f1d53be03a0bc91fb100fd094"
+    },
+    "wind": {
+      "file": "ambient-wind.mp3",
+      "source": "https://freesound.org/people/kevinklang/sounds/841982/",
+      "download": "https://cdn.freesound.org/previews/841/841982_14469752-hq.mp3",
+      "title": "WIND_loop",
+      "author": "kevinklang",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Public high-quality MP3 preview; excerpt starts 0 seconds, 19 seconds before processing; mono 22050 Hz / 64 kbit MP3; tail-to-head 1-second crossfade loop and loudness normalization -23 LUFS / -4 dBTP; not original WAV",
+      "durationSeconds": 18.000499,
+      "bytes": 144865,
+      "sha256": "5be59de05622ea4f3b892ddae8192040003eb599c1153c159631f16d3d871b3f"
+    },
+    "crickets": {
+      "file": "ambient-crickets.mp3",
+      "source": "https://freesound.org/people/sengjinn/sounds/175020/",
+      "download": "https://cdn.freesound.org/previews/175/175020_2979997-hq.mp3",
+      "title": "AMBIENCE NIGHT FIELD CRICKET 01.wav",
+      "author": "sengjinn",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Public high-quality MP3 preview; excerpt starts 4 seconds, 24 seconds before processing; mono 22050 Hz / 64 kbit MP3; tail-to-head 1-second crossfade loop and loudness normalization -23 LUFS / -4 dBTP; not original WAV",
+      "durationSeconds": 23.0,
+      "bytes": 184780,
+      "sha256": "aadfba459e09d5bd98d6eed37dde189fcacaf156491e49eb581fbd9be58180e4"
+    },
+    "river": {
+      "file": "ambient-river.mp3",
+      "source": "https://freesound.org/people/SamuelGremaud/sounds/411826/",
+      "download": "https://cdn.freesound.org/previews/411/411826_8031303-hq.mp3",
+      "title": "RIVER (THAMES)",
+      "author": "SamuelGremaud",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Public high-quality MP3 preview; excerpt starts 4 seconds, 24 seconds before processing; mono 22050 Hz / 64 kbit MP3; tail-to-head 1-second crossfade loop and loudness normalization -23 LUFS / -4 dBTP; not original WAV",
+      "durationSeconds": 23.0,
+      "bytes": 184780,
+      "sha256": "d65dd1e587ab9df93eac28bc9117d4c31cfaf3d6124d9fc51c0a828005dc9785"
+    }
+  }
+}

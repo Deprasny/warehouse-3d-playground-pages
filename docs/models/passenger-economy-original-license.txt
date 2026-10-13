@@ -1,0 +1,13 @@
+Economy Traincar — original downloaded GLB
+Author: masinissam_RBX (https://sketchfab.com/RobloxGameMaker1259)
+Source: https://sketchfab.com/3d-models/economy-traincar-adff4da69020428785623718e9c91690
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+This GLB is a byte-for-byte copy of the user's downloaded economy_traincar.glb.
+SHA256: c26e9bcba15b0b6a0ea587fe24b5c2f0113f98c0909539079376131efafe5973
+No geometry, topology, UV, material, texture, outline or internal hierarchy modifications.
+
+Game display: the whole source scene is translated to ground-centre and uniformly scaled to width 2.9 game-model units. Four empty virtual physics anchors are added outside the original scene so the simulation can position it along the railway. These anchors add no visible parts or animations. Native pooled wheels and doors stay as downloaded.
+No compression into the previous short coach envelope, extracted doors, LOD profiles, mesh batching, simplification or shadow proxy is applied to this original asset.
+
+The original file in Downloads is unchanged. This game use is not endorsed by the original author.

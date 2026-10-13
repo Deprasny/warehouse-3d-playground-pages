@@ -1,0 +1,1233 @@
+{
+  "author": "masinissam_RBX",
+  "source": "https://sketchfab.com/3d-models/economy-traincar-adff4da69020428785623718e9c91690",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "input": "economy_traincar.glb",
+  "inputSHA256": "c26e9bcba15b0b6a0ea587fe24b5c2f0113f98c0909539079376131efafe5973",
+  "inputBytes": 4783020,
+  "normalization": {
+    "sourceWorldBounds": {
+      "min": [
+        -3.937008,
+        7.173769,
+        -953.406189
+      ],
+      "max": [
+        126.937798,
+        177.375107,
+        17.563459
+      ]
+    },
+    "fittedBody": {
+      "width": 2.9,
+      "height": 4.1,
+      "length": 9.8
+    },
+    "originalAspectLengthToWidth": 7.419072300286733,
+    "gameAspectLengthToWidth": 3.3793103448275867,
+    "note": "Source coach is longer and narrower than the existing stylized coach slot. Width, height and longitudinal spans are deliberately retargeted independently; piecewise Z anchors keep doors and bogies at the established boarding/coupling positions. This is a game derivative, not a scale engineering model.",
+    "bodyXScale": 0.02327903661264266,
+    "yAnchors": [
+      [
+        7.173769,
+        0
+      ],
+      [
+        29.318189,
+        0.43
+      ],
+      [
+        38.976379,
+        1
+      ],
+      [
+        56.644341,
+        1.465
+      ],
+      [
+        144.266,
+        3.315
+      ],
+      [
+        177.375107,
+        4.1
+      ]
+    ],
+    "zAnchors": [
+      [
+        -953.406189,
+        -5.04
+      ],
+      [
+        -934.114929,
+        -4.9
+      ],
+      [
+        -925.34,
+        -4.44
+      ],
+      [
+        -878.33,
+        -3.82
+      ],
+      [
+        -61.56,
+        3.82
+      ],
+      [
+        -14.947,
+        4.44
+      ],
+      [
+        -1.727874,
+        4.9
+      ],
+      [
+        17.563459,
+        5.04
+      ]
+    ]
+  },
+  "doorExtraction": "Actual source body UVs, dark door panes and interior handles are clipped into four UV-preserving panels. Chrome entrance guardrails stay fixed on the body. Matching rectangles are removed from static side walls, leaving openings. No generic replacement door texture is used.",
+  "wheelExtraction": "Eight actual downloaded wheel rims separated from four spanning shafts. Only rims rotate; shafts and photo-textured frames follow their bogies. Wheel Y/Z scales independently correct the source elliptical flange envelope to a .43-radius circle.",
+  "transparency": "Source triangle materials were opaque and one-sided; retained opaque surfaces require no transparency pass.",
+  "surfaceBatching": "High retains original diffuse maps on retained surfaces. Medium retains side livery, end doors and bogie photo maps; low retains side livery and end doors. Other detail textures are approximated by their linear mean base colors and normal maps omitted for medium/low. Nearly uniform rough-metal grain becomes its mean roughness scalar. Untextured surfaces merge using per-vertex colors and shared roughness .7; retained textures preserve original UVs.",
+  "validation": [
+    "Original input SHA256 unchanged",
+    "Every accessor finite",
+    "Triangle indices in range",
+    "Eight wheel pivots: X±.95 Y.43; radius .43",
+    "Two bogie pivots Z±3.15",
+    "Four source-textured positive-Z door panels at existing hinges",
+    "Two game-compatible coupler pivots Z±4.86 Y.83",
+    "Identical rigid hierarchy across three LOD profiles"
+  ],
+  "levels": [
+    {
+      "level": "high",
+      "filename": "passenger-economy-high.glb",
+      "bytes": 1546920,
+      "sha256": "a4dd4001189d4c861f3f60b34f00caddf41d84bc9b2aff9d66bb2b9840a94d4c",
+      "triangles": 23199,
+      "primitives": 46,
+      "materials": 12,
+      "textures": [
+        {
+          "name": "45c88963-a58c-40d6-8c8f-1ba5aaf7c8e5-basecolor",
+          "bytes": 41442
+        },
+        {
+          "name": "0af5cb1c-6d97-40ac-9029-afcbc15770ab-basecolor",
+          "bytes": 82417
+        },
+        {
+          "name": "Metal_Rough-basecolor",
+          "bytes": 2730
+        },
+        {
+          "name": "Metal_Rough-metallicroughness",
+          "bytes": 6789
+        },
+        {
+          "name": "1bd7ff7d-0f36-4b32-afd4-02e56b484dd1-basecolor",
+          "bytes": 73851
+        },
+        {
+          "name": "1ad16884-ad94-4e5c-a93a-7bcf45341c5a-basecolor",
+          "bytes": 2777
+        },
+        {
+          "name": "00f9e35d-9558-48f8-a4ab-b83a0f2d20fa-basecolor",
+          "bytes": 13635
+        },
+        {
+          "name": "454e6211-7431-41f5-9b30-85c06dbd8fe7-basecolor",
+          "bytes": 10787
+        },
+        {
+          "name": "Aluminum-basecolor",
+          "bytes": 79992
+        },
+        {
+          "name": "10123602-487f-437b-8c1b-e68f15bc776a-basecolor",
+          "bytes": 3577
+        },
+        {
+          "name": "78f491a3-a170-41cf-8316-5ac8c1962286-basecolor",
+          "bytes": 175587
+        }
+      ],
+      "bakedDetailMaps": [],
+      "sourceTriangles": 68590,
+      "discardedLineIndices": 106364,
+      "droppedCouplerTriangles": 7249,
+      "extractedDoorTriangles": 13197,
+      "wheelRanges": [
+        {
+          "name": "rail-wheel-coach-0--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.42999258637428284
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.430031955242157
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-0-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.42999258637428284
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.430031955242157
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-1--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.42999067902565
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.4300338923931122
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-1-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.42999067902565
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.4300338923931122
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-2--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.43000420928001404
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.4300200641155243
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-2-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.43000420928001404
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.4300200641155243
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-3--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.4300018548965454
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.43002259731292725
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-3-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.4300018548965454
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.43002259731292725
+          ]
+        }
+      ],
+      "rig": [
+        {
+          "name": "passenger-body",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-bogie--1",
+          "translation": [
+            0,
+            0,
+            -3.15
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-bogie-1",
+          "translation": [
+            0,
+            0,
+            3.15
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-wheel-coach-0--1",
+          "translation": [
+            -0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 0
+          }
+        },
+        {
+          "name": "rail-wheel-coach-0-1",
+          "translation": [
+            0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 0
+          }
+        },
+        {
+          "name": "rail-wheel-coach-1--1",
+          "translation": [
+            -0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 1
+          }
+        },
+        {
+          "name": "rail-wheel-coach-1-1",
+          "translation": [
+            0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 1
+          }
+        },
+        {
+          "name": "rail-wheel-coach-2--1",
+          "translation": [
+            -0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 2
+          }
+        },
+        {
+          "name": "rail-wheel-coach-2-1",
+          "translation": [
+            0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 2
+          }
+        },
+        {
+          "name": "rail-wheel-coach-3--1",
+          "translation": [
+            -0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 3
+          }
+        },
+        {
+          "name": "rail-wheel-coach-3-1",
+          "translation": [
+            0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 3
+          }
+        },
+        {
+          "name": "passenger-door--1--1",
+          "translation": [
+            -1.435,
+            2.39,
+            -4.4399999999999995
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door--1-1",
+          "translation": [
+            -1.435,
+            2.39,
+            3.82
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door-1--1",
+          "translation": [
+            1.435,
+            2.39,
+            -4.4399999999999995
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door-1-1",
+          "translation": [
+            1.435,
+            2.39,
+            3.82
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "rail-coupler--1",
+          "translation": [
+            0,
+            0.83,
+            -4.86
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-coupler-1",
+          "translation": [
+            0,
+            0.83,
+            4.86
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        }
+      ]
+    },
+    {
+      "level": "medium",
+      "filename": "passenger-economy-medium.glb",
+      "bytes": 692044,
+      "sha256": "eff531b6830ddfff8735bba2f01fa0470098ac10e9397880e951c398f46a6649",
+      "triangles": 7513,
+      "primitives": 25,
+      "materials": 4,
+      "textures": [
+        {
+          "name": "45c88963-a58c-40d6-8c8f-1ba5aaf7c8e5-basecolor",
+          "bytes": 41442
+        },
+        {
+          "name": "0af5cb1c-6d97-40ac-9029-afcbc15770ab-basecolor",
+          "bytes": 82417
+        },
+        {
+          "name": "78f491a3-a170-41cf-8316-5ac8c1962286-basecolor",
+          "bytes": 175587
+        }
+      ],
+      "bakedDetailMaps": [
+        "Metal_Rough",
+        "1bd7ff7d-0f36-4b32-afd4-02e56b484dd1",
+        "1ad16884-ad94-4e5c-a93a-7bcf45341c5a",
+        "00f9e35d-9558-48f8-a4ab-b83a0f2d20fa",
+        "a8165b98-bf37-4a31-be06-4ff88a43b982",
+        "454e6211-7431-41f5-9b30-85c06dbd8fe7",
+        "Aluminum",
+        "10123602-487f-437b-8c1b-e68f15bc776a",
+        "8ce9bb0a-b3da-4635-a229-da9a852595d0"
+      ],
+      "sourceTriangles": 68590,
+      "discardedLineIndices": 106364,
+      "droppedCouplerTriangles": 7249,
+      "extractedDoorTriangles": 13197,
+      "wheelRanges": [
+        {
+          "name": "rail-wheel-coach-0--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.42999258637428284
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.430031955242157
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-0-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.42999258637428284
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.430031955242157
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-1--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.42999067902565
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.4300338923931122
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-1-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.42999067902565
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.4300338923931122
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-2--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.43000420928001404
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.4300200641155243
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-2-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.43000420928001404
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.4300200641155243
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-3--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.4300018548965454
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.43002259731292725
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-3-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.4300018548965454
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.43002259731292725
+          ]
+        }
+      ],
+      "rig": [
+        {
+          "name": "passenger-body",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-bogie--1",
+          "translation": [
+            0,
+            0,
+            -3.15
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-bogie-1",
+          "translation": [
+            0,
+            0,
+            3.15
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-wheel-coach-0--1",
+          "translation": [
+            -0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 0
+          }
+        },
+        {
+          "name": "rail-wheel-coach-0-1",
+          "translation": [
+            0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 0
+          }
+        },
+        {
+          "name": "rail-wheel-coach-1--1",
+          "translation": [
+            -0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 1
+          }
+        },
+        {
+          "name": "rail-wheel-coach-1-1",
+          "translation": [
+            0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 1
+          }
+        },
+        {
+          "name": "rail-wheel-coach-2--1",
+          "translation": [
+            -0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 2
+          }
+        },
+        {
+          "name": "rail-wheel-coach-2-1",
+          "translation": [
+            0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 2
+          }
+        },
+        {
+          "name": "rail-wheel-coach-3--1",
+          "translation": [
+            -0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 3
+          }
+        },
+        {
+          "name": "rail-wheel-coach-3-1",
+          "translation": [
+            0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 3
+          }
+        },
+        {
+          "name": "passenger-door--1--1",
+          "translation": [
+            -1.435,
+            2.39,
+            -4.4399999999999995
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door--1-1",
+          "translation": [
+            -1.435,
+            2.39,
+            3.82
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door-1--1",
+          "translation": [
+            1.435,
+            2.39,
+            -4.4399999999999995
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door-1-1",
+          "translation": [
+            1.435,
+            2.39,
+            3.82
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "rail-coupler--1",
+          "translation": [
+            0,
+            0.83,
+            -4.86
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-coupler-1",
+          "translation": [
+            0,
+            0.83,
+            4.86
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        }
+      ]
+    },
+    {
+      "level": "low",
+      "filename": "passenger-economy-low.glb",
+      "bytes": 355104,
+      "sha256": "54d50641a40ee5fe11f648abc12dfaae8214e25fde19d3c4e0bfdf1c3f0d68af",
+      "triangles": 4160,
+      "primitives": 23,
+      "materials": 3,
+      "textures": [
+        {
+          "name": "45c88963-a58c-40d6-8c8f-1ba5aaf7c8e5-basecolor",
+          "bytes": 41442
+        },
+        {
+          "name": "0af5cb1c-6d97-40ac-9029-afcbc15770ab-basecolor",
+          "bytes": 82417
+        }
+      ],
+      "bakedDetailMaps": [
+        "Metal_Rough",
+        "1bd7ff7d-0f36-4b32-afd4-02e56b484dd1",
+        "1ad16884-ad94-4e5c-a93a-7bcf45341c5a",
+        "00f9e35d-9558-48f8-a4ab-b83a0f2d20fa",
+        "a8165b98-bf37-4a31-be06-4ff88a43b982",
+        "454e6211-7431-41f5-9b30-85c06dbd8fe7",
+        "Aluminum",
+        "10123602-487f-437b-8c1b-e68f15bc776a",
+        "8ce9bb0a-b3da-4635-a229-da9a852595d0",
+        "78f491a3-a170-41cf-8316-5ac8c1962286"
+      ],
+      "sourceTriangles": 68590,
+      "discardedLineIndices": 106364,
+      "droppedCouplerTriangles": 7249,
+      "extractedDoorTriangles": 13197,
+      "wheelRanges": [
+        {
+          "name": "rail-wheel-coach-0--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.42999258637428284
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.430031955242157
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-0-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.42999258637428284
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.430031955242157
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-1--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.42999067902565
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.4300338923931122
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-1-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.42999067902565
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.4300338923931122
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-2--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.43000420928001404
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.4300200641155243
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-2-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.43000420928001404
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.4300200641155243
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-3--1",
+          "min": [
+            -0.07999643683433533,
+            -0.429999977350235,
+            -0.4300018548965454
+          ],
+          "max": [
+            0.07976159453392029,
+            0.429999977350235,
+            0.43002259731292725
+          ]
+        },
+        {
+          "name": "rail-wheel-coach-3-1",
+          "min": [
+            -0.07987748086452484,
+            -0.429999977350235,
+            -0.4300018548965454
+          ],
+          "max": [
+            0.07988045364618301,
+            0.429999977350235,
+            0.43002259731292725
+          ]
+        }
+      ],
+      "rig": [
+        {
+          "name": "passenger-body",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-bogie--1",
+          "translation": [
+            0,
+            0,
+            -3.15
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-bogie-1",
+          "translation": [
+            0,
+            0,
+            3.15
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-wheel-coach-0--1",
+          "translation": [
+            -0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 0
+          }
+        },
+        {
+          "name": "rail-wheel-coach-0-1",
+          "translation": [
+            0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 0
+          }
+        },
+        {
+          "name": "rail-wheel-coach-1--1",
+          "translation": [
+            -0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 1
+          }
+        },
+        {
+          "name": "rail-wheel-coach-1-1",
+          "translation": [
+            0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 1
+          }
+        },
+        {
+          "name": "rail-wheel-coach-2--1",
+          "translation": [
+            -0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 2
+          }
+        },
+        {
+          "name": "rail-wheel-coach-2-1",
+          "translation": [
+            0.95,
+            0.43,
+            -0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 2
+          }
+        },
+        {
+          "name": "rail-wheel-coach-3--1",
+          "translation": [
+            -0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 3
+          }
+        },
+        {
+          "name": "rail-wheel-coach-3-1",
+          "translation": [
+            0.95,
+            0.43,
+            0.79
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "axis": "x",
+            "radius": 0.43,
+            "axleIndex": 3
+          }
+        },
+        {
+          "name": "passenger-door--1--1",
+          "translation": [
+            -1.435,
+            2.39,
+            -4.4399999999999995
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door--1-1",
+          "translation": [
+            -1.435,
+            2.39,
+            3.82
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door-1--1",
+          "translation": [
+            1.435,
+            2.39,
+            -4.4399999999999995
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "passenger-door-1-1",
+          "translation": [
+            1.435,
+            2.39,
+            3.82
+          ],
+          "extras": {
+            "staticWorldDynamic": true,
+            "isPassengerDoor": true,
+            "width": 0.62,
+            "height": 1.85
+          }
+        },
+        {
+          "name": "rail-coupler--1",
+          "translation": [
+            0,
+            0.83,
+            -4.86
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        },
+        {
+          "name": "rail-coupler-1",
+          "translation": [
+            0,
+            0.83,
+            4.86
+          ],
+          "extras": {
+            "staticWorldDynamic": true
+          }
+        }
+      ]
+    }
+  ]
+}

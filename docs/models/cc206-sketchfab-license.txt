@@ -1,0 +1,5 @@
+CC 206 (GE-CM20EMP locomotive) - PT. KAI
+Author: pucohensap
+Source: https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901
+License: CC BY 4.0 - https://creativecommons.org/licenses/by/4.0/
+Modifications: rel/display removed, bolts/hinges reduced, dense brake hoses replaced with coarse curves, derivative meshes simplified/merged, rough/specular maps averaged into scalar materials, unused UV removed and selected mechanical normals rebuilt, wheels/bogies/doors/couplers grouped and pivoted for animation; spanning axle shafts retained on bogies and wheel rim centres corrected. Original Downloads file remains unchanged.

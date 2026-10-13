@@ -1,0 +1,296 @@
+[
+  {
+    "category": "yard",
+    "variant": 0,
+    "name": "Depot Riverside",
+    "file": "depot-riverside-blue.glb",
+    "bytes": 9709840,
+    "meshes": 338,
+    "triangles": 98276,
+    "size": [
+      28,
+      4.863027552962303,
+      23
+    ]
+  },
+  {
+    "category": "warehouse",
+    "variant": 0,
+    "name": "Gudang tiga bay",
+    "file": "warehouse-0-blue.glb",
+    "bytes": 1621200,
+    "meshes": 42,
+    "triangles": 16480,
+    "size": [
+      11.75,
+      4.6330275508761405,
+      7.857777833938599
+    ]
+  },
+  {
+    "category": "warehouse",
+    "variant": 1,
+    "name": "Gudang atap pelana",
+    "file": "warehouse-1-blue.glb",
+    "bytes": 1168340,
+    "meshes": 32,
+    "triangles": 11860,
+    "size": [
+      8.949999809265137,
+      5.9870266887545585,
+      7.864844083786011
+    ]
+  },
+  {
+    "category": "warehouse",
+    "variant": 2,
+    "name": "Gudang dengan kantor",
+    "file": "warehouse-2-blue.glb",
+    "bytes": 1617960,
+    "meshes": 45,
+    "triangles": 16420,
+    "size": [
+      14.274999618530273,
+      4.5484070751070975,
+      6.5577781200408936
+    ]
+  },
+  {
+    "category": "truck",
+    "variant": 0,
+    "name": "Truk boks",
+    "file": "truck-0-blue.glb",
+    "bytes": 520236,
+    "meshes": 17,
+    "triangles": 5256,
+    "size": [
+      2.609999895095825,
+      3.0499999833106997,
+      6.3045000556111335
+    ]
+  },
+  {
+    "category": "truck",
+    "variant": 1,
+    "name": "Truk bak terbuka",
+    "file": "truck-1-blue.glb",
+    "bytes": 1088584,
+    "meshes": 35,
+    "triangles": 11004,
+    "size": [
+      2.609999895095825,
+      2.5499999499320984,
+      5.679999971687794
+    ]
+  },
+  {
+    "category": "truck",
+    "variant": 2,
+    "name": "Van pengiriman",
+    "file": "truck-2-blue.glb",
+    "bytes": 492624,
+    "meshes": 17,
+    "triangles": 4968,
+    "size": [
+      2.2899999618530273,
+      2.6900000548362732,
+      4.354499912559986
+    ]
+  },
+  {
+    "category": "forklift",
+    "variant": 0,
+    "name": "Forklift kompak",
+    "file": "forklift-0-blue.glb",
+    "bytes": 328696,
+    "meshes": 25,
+    "triangles": 3344,
+    "size": [
+      1.5379999887943268,
+      2.9100000113248825,
+      3.294999837875366
+    ]
+  },
+  {
+    "category": "forklift",
+    "variant": 1,
+    "name": "Forklift bermuatan",
+    "file": "forklift-1-blue.glb",
+    "bytes": 647956,
+    "meshes": 35,
+    "triangles": 6572,
+    "size": [
+      1.5379999887943268,
+      2.9100000113248825,
+      3.4049999403953555
+    ]
+  },
+  {
+    "category": "forklift",
+    "variant": 2,
+    "name": "Forklift heavy-duty",
+    "file": "forklift-2-blue.glb",
+    "bytes": 328692,
+    "meshes": 25,
+    "triangles": 3344,
+    "size": [
+      1.8379999887943268,
+      3.4500000607967376,
+      3.294999837875366
+    ]
+  },
+  {
+    "category": "pallet",
+    "variant": 0,
+    "name": "Kardus bertali",
+    "file": "pallet-0-blue.glb",
+    "bytes": 319296,
+    "meshes": 10,
+    "triangles": 3228,
+    "size": [
+      1.3799999952316284,
+      1.326999993994832,
+      1.2999999523162842
+    ]
+  },
+  {
+    "category": "pallet",
+    "variant": 1,
+    "name": "Kardus bertingkat",
+    "file": "pallet-1-blue.glb",
+    "bytes": 387508,
+    "meshes": 9,
+    "triangles": 3948,
+    "size": [
+      1.3799999952316284,
+      1.8009999711066484,
+      1.2999999523162842
+    ]
+  },
+  {
+    "category": "pallet",
+    "variant": 2,
+    "name": "Peti kayu",
+    "file": "pallet-2-blue.glb",
+    "bytes": 304536,
+    "meshes": 9,
+    "triangles": 3084,
+    "size": [
+      1.3799999952316284,
+      1.270999999716878,
+      1.2999999523162842
+    ]
+  },
+  {
+    "category": "pallet",
+    "variant": 3,
+    "name": "Palet kosong",
+    "file": "pallet-3-blue.glb",
+    "bytes": 13416,
+    "meshes": 3,
+    "triangles": 108,
+    "size": [
+      1.3799999952316284,
+      0.20999999530613422,
+      1.2999999523162842
+    ]
+  },
+  {
+    "category": "tree",
+    "variant": 0,
+    "name": "Pohon bulat",
+    "file": "tree-0-blue.glb",
+    "bytes": 20384,
+    "meshes": 3,
+    "triangles": 188,
+    "size": [
+      2.2820000529289244,
+      4.184000060558319,
+      2.184000086784363
+    ]
+  },
+  {
+    "category": "tree",
+    "variant": 1,
+    "name": "Pohon kerucut",
+    "file": "tree-1-blue.glb",
+    "bytes": 12788,
+    "meshes": 4,
+    "triangles": 136,
+    "size": [
+      2.2650578022003174,
+      4.0049999642372125,
+      2.23064649105072
+    ]
+  },
+  {
+    "category": "tree",
+    "variant": 2,
+    "name": "Pohon berumpun",
+    "file": "tree-2-blue.glb",
+    "bytes": 36732,
+    "meshes": 4,
+    "triangles": 348,
+    "size": [
+      2.6896429366390597,
+      3.891999936103821,
+      2.499894709075122
+    ]
+  },
+  {
+    "category": "train",
+    "variant": 0,
+    "name": "CC206 · putih-oranye",
+    "file": "cc206-blue.glb",
+    "bytes": 1909996,
+    "meshes": 103,
+    "triangles": 19768,
+    "size": [
+      3.509999990463257,
+      4.574999966621399,
+      15.180000305175781
+    ]
+  },
+  {
+    "category": "wagon",
+    "variant": 0,
+    "name": "Gerbong datar",
+    "file": "freight-wagon-0-blue.glb",
+    "bytes": 550352,
+    "meshes": 41,
+    "triangles": 5900,
+    "size": [
+      2.8949999809265137,
+      1.834999955892563,
+      11.0600004196167
+    ]
+  },
+  {
+    "category": "wagon",
+    "variant": 1,
+    "name": "Gerbong boks",
+    "file": "freight-wagon-1-blue.glb",
+    "bytes": 853624,
+    "meshes": 45,
+    "triangles": 9020,
+    "size": [
+      2.930000066757202,
+      4.160000006556511,
+      11.0600004196167
+    ]
+  },
+  {
+    "category": "rail",
+    "variant": 0,
+    "name": "Rel dan bantalan",
+    "file": "rail-track-blue.glb",
+    "bytes": 663440,
+    "meshes": 6,
+    "triangles": 6852,
+    "size": [
+      3.200000047683716,
+      0.31999999314546584,
+      14
+    ]
+  }
+]

@@ -1,0 +1,2195 @@
+{
+  "source": {
+    "file": "cc206-sketchfab-optimized.glb",
+    "sha256": "8bb55144eff8054dd518a933f0805791d40e502947f2189633dbb35f054f6256",
+    "bytes": 3548036,
+    "triangles": 114575,
+    "primitives": 78,
+    "meshes": 27,
+    "materials": 20,
+    "textures": 1,
+    "bounds": {
+      "min": [
+        -1.4701541662216187,
+        0,
+        -7.92449951171875
+      ],
+      "max": [
+        1.4701539278030396,
+        3.6365034580230713,
+        7.923737049102783
+      ]
+    },
+    "author": "pucohensap",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901"
+  },
+  "medium": {
+    "file": "cc206-sketchfab-medium.glb",
+    "bytes": 1133416,
+    "sha256": "360bc98462d48fff53ee5bb962c15619e10c25a8f1bc3728b48d89bcef253f33",
+    "triangles": 22632,
+    "primitives": 78,
+    "meshes": 27,
+    "materials": 20,
+    "textures": 1,
+    "bounds": {
+      "min": [
+        -1.4701541662216187,
+        0,
+        -7.92449951171875
+      ],
+      "max": [
+        1.4701539278030396,
+        3.6365034580230713,
+        7.923737049102783
+      ]
+    },
+    "options": {
+      "ratio": 0.05,
+      "error": 0.01,
+      "wheelRatio": 0.27,
+      "wheelError": 0.009,
+      "wheelSegments": 20
+    },
+    "primitiveReductions": [
+      {
+        "node": "locomotive-body",
+        "material": "cat_atap",
+        "before": 15890,
+        "after": 3562,
+        "relativeError": 0.009906742721796036,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_putih",
+        "before": 14642,
+        "after": 884,
+        "relativeError": 0.009948549792170525,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "bogi",
+        "before": 953,
+        "after": 174,
+        "relativeError": 0.009934797883033752,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "deck",
+        "before": 14036,
+        "after": 701,
+        "relativeError": 0.003985834773629904,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "material",
+        "before": 8628,
+        "after": 2028,
+        "relativeError": 0.009880091063678265,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "interior",
+        "before": 231,
+        "after": 107,
+        "relativeError": 0.009525328874588013,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "krom",
+        "before": 8560,
+        "after": 427,
+        "relativeError": 0.0021568858064711094,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu",
+        "before": 198,
+        "after": 12,
+        "relativeError": 0.008172607980668545,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_merah",
+        "before": 5990,
+        "after": 297,
+        "relativeError": 0.007365136872977018,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "KARET_KACA",
+        "before": 3620,
+        "after": 162,
+        "relativeError": 0.001625270233489573,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "kaca_glass",
+        "before": 364,
+        "after": 60,
+        "relativeError": 0.005251836031675339,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "kaca_glass",
+        "before": 364,
+        "after": 76,
+        "relativeError": 0.00835439469665289,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_putih_glass",
+        "before": 322,
+        "after": 87,
+        "relativeError": 0.009937415830790997,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_putih_glass",
+        "before": 322,
+        "after": 78,
+        "relativeError": 0.009259114973247051,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_kuning_glass",
+        "before": 287,
+        "after": 61,
+        "relativeError": 0.009271763265132904,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_kuning_glass",
+        "before": 287,
+        "after": 78,
+        "relativeError": 0.009831976145505905,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_hijau_glass",
+        "before": 431,
+        "after": 89,
+        "relativeError": 0.009861471131443977,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_hijau_glass",
+        "before": 431,
+        "after": 88,
+        "relativeError": 0.009818438440561295,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_merah_glass",
+        "before": 431,
+        "after": 117,
+        "relativeError": 0.009868518449366093,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_merah_glass",
+        "before": 432,
+        "after": 113,
+        "relativeError": 0.00991174578666687,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_oranye",
+        "before": 3710,
+        "after": 605,
+        "relativeError": 0.009924042038619518,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "jaring",
+        "before": 516,
+        "after": 505,
+        "relativeError": 0.009999684058129787,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_biru",
+        "before": 224,
+        "after": 38,
+        "relativeError": 0.00930901151150465,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "material_0",
+        "before": 576,
+        "after": 46,
+        "relativeError": 0.0036862685810774565,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie--1",
+        "material": "bogi",
+        "before": 11321,
+        "after": 1940,
+        "relativeError": 0.00992502085864544,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie--1",
+        "material": "material",
+        "before": 15,
+        "after": 7,
+        "relativeError": 0.009768348187208176,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie-1",
+        "material": "bogi",
+        "before": 11181,
+        "after": 2678,
+        "relativeError": 0.009947488084435463,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie-1",
+        "material": "material",
+        "before": 5,
+        "after": 5,
+        "relativeError": 0,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-coupler-1",
+        "material": "bogi",
+        "before": 566,
+        "after": 363,
+        "relativeError": 0.009991872124373913,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-coupler--1",
+        "material": "bogi",
+        "before": 578,
+        "after": 369,
+        "relativeError": 0.009926083497703075,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "cat_bodi_putih",
+        "before": 169,
+        "after": 91,
+        "relativeError": 0.009378213435411453,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "material",
+        "before": 193,
+        "after": 114,
+        "relativeError": 0.009833754040300846,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "cat_bodi_oranye",
+        "before": 30,
+        "after": 26,
+        "relativeError": 0.008889303542673588,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "KARET_KACA",
+        "before": 149,
+        "after": 93,
+        "relativeError": 0.009353695437312126,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "cat_bodi_putih",
+        "before": 155,
+        "after": 80,
+        "relativeError": 0.00864739716053009,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "material",
+        "before": 168,
+        "after": 103,
+        "relativeError": 0.009409409016370773,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "KARET_KACA",
+        "before": 150,
+        "after": 93,
+        "relativeError": 0.009828046895563602,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "cat_bodi_putih",
+        "before": 175,
+        "after": 95,
+        "relativeError": 0.009033887647092342,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "material",
+        "before": 192,
+        "after": 116,
+        "relativeError": 0.009523081593215466,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "cat_bodi_oranye",
+        "before": 30,
+        "after": 26,
+        "relativeError": 0.00888948142528534,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "KARET_KACA",
+        "before": 150,
+        "after": 102,
+        "relativeError": 0.00909148808568716,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "cat_bodi_putih",
+        "before": 160,
+        "after": 80,
+        "relativeError": 0.008984038606286049,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "material",
+        "before": 173,
+        "after": 107,
+        "relativeError": 0.00941514689475298,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "KARET_KACA",
+        "before": 150,
+        "after": 97,
+        "relativeError": 0.009566905908286572,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-wheel-1-1",
+        "material": "bogi",
+        "before": 465,
+        "after": 314,
+        "relativeError": 0.0088950851932168,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-1-1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.007245355751365423,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-5-1",
+        "material": "bogi",
+        "before": 443,
+        "after": 319,
+        "relativeError": 0.008931445889174938,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-5-1",
+        "material": "RODA_GILAP",
+        "before": 153,
+        "after": 143,
+        "relativeError": 0.008933942764997482,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-3-1",
+        "material": "bogi",
+        "before": 438,
+        "after": 327,
+        "relativeError": 0.008736862801015377,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-3-1",
+        "material": "RODA_GILAP",
+        "before": 153,
+        "after": 147,
+        "relativeError": 0.0044701281003654,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-4--1",
+        "material": "bogi",
+        "before": 458,
+        "after": 324,
+        "relativeError": 0.008863254450261593,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-4--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.007247461937367916,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-3--1",
+        "material": "bogi",
+        "before": 456,
+        "after": 323,
+        "relativeError": 0.008931509219110012,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-3--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 128,
+        "relativeError": 0.008958442136645317,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-5--1",
+        "material": "bogi",
+        "before": 465,
+        "after": 328,
+        "relativeError": 0.008930988609790802,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-5--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.007245881482958794,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-4-1",
+        "material": "bogi",
+        "before": 444,
+        "after": 317,
+        "relativeError": 0.008931135758757591,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-4-1",
+        "material": "RODA_GILAP",
+        "before": 151,
+        "after": 144,
+        "relativeError": 0.006423456594347954,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-1--1",
+        "material": "bogi",
+        "before": 461,
+        "after": 314,
+        "relativeError": 0.008939212188124657,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-1--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.007246396970003843,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-2--1",
+        "material": "bogi",
+        "before": 473,
+        "after": 317,
+        "relativeError": 0.008956101723015308,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-2--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.007245867047458887,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-2-1",
+        "material": "bogi",
+        "before": 460,
+        "after": 312,
+        "relativeError": 0.008937889710068703,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-2-1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.0072463927790522575,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-0--1",
+        "material": "bogi",
+        "before": 459,
+        "after": 327,
+        "relativeError": 0.008982528001070023,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-0--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 130,
+        "relativeError": 0.0072484733536839485,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-0-1",
+        "material": "bogi",
+        "before": 465,
+        "after": 320,
+        "relativeError": 0.0087897889316082,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-wheel-0-1",
+        "material": "RODA_GILAP",
+        "before": 132,
+        "after": 131,
+        "relativeError": 0.007244296837598085,
+        "errorLimit": 0.009,
+        "wheelLandmarks": 20
+      },
+      {
+        "node": "rail-axle-shaft-1",
+        "material": "bogi",
+        "before": 48,
+        "after": 34,
+        "relativeError": 0.009906478226184845,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-0",
+        "material": "bogi",
+        "before": 48,
+        "after": 32,
+        "relativeError": 0.009909006766974926,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-3",
+        "material": "bogi",
+        "before": 48,
+        "after": 36,
+        "relativeError": 0.009904361329972744,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-5",
+        "material": "bogi",
+        "before": 48,
+        "after": 32,
+        "relativeError": 0.009903131984174252,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-2",
+        "material": "bogi",
+        "before": 48,
+        "after": 33,
+        "relativeError": 0.009905683808028698,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-4",
+        "material": "bogi",
+        "before": 48,
+        "after": 32,
+        "relativeError": 0.009903699159622192,
+        "errorLimit": 0.01,
+        "wheelLandmarks": 0
+      }
+    ]
+  },
+  "low": {
+    "file": "cc206-sketchfab-low.glb",
+    "bytes": 828548,
+    "sha256": "9c741c6f567d9bcab3f28703d231a074337a97b41dfe03f3fdc13c3c2dc7f685",
+    "triangles": 15617,
+    "primitives": 78,
+    "meshes": 27,
+    "materials": 20,
+    "textures": 1,
+    "bounds": {
+      "min": [
+        -1.4701541662216187,
+        0,
+        -7.92449951171875
+      ],
+      "max": [
+        1.4701539278030396,
+        3.6365034580230713,
+        7.923737049102783
+      ]
+    },
+    "options": {
+      "ratio": 0.018,
+      "error": 0.06,
+      "wheelRatio": 0.18,
+      "wheelError": 0.018,
+      "wheelSegments": 12
+    },
+    "primitiveReductions": [
+      {
+        "node": "locomotive-body",
+        "material": "cat_atap",
+        "before": 15890,
+        "after": 3396,
+        "relativeError": 0.05418569594621658,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_putih",
+        "before": 14642,
+        "after": 575,
+        "relativeError": 0.05684942379593849,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "bogi",
+        "before": 953,
+        "after": 82,
+        "relativeError": 0.04600835219025612,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "deck",
+        "before": 14036,
+        "after": 274,
+        "relativeError": 0.054844316095113754,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "material",
+        "before": 8628,
+        "after": 1692,
+        "relativeError": 0.05474088713526726,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "interior",
+        "before": 231,
+        "after": 52,
+        "relativeError": 0.05998821556568146,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "krom",
+        "before": 8560,
+        "after": 211,
+        "relativeError": 0.013288398273289204,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu",
+        "before": 198,
+        "after": 12,
+        "relativeError": 0.008172607980668545,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_merah",
+        "before": 5990,
+        "after": 220,
+        "relativeError": 0.03676842153072357,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "KARET_KACA",
+        "before": 3620,
+        "after": 80,
+        "relativeError": 0.03892442584037781,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "kaca_glass",
+        "before": 364,
+        "after": 40,
+        "relativeError": 0.05675852298736572,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "kaca_glass",
+        "before": 364,
+        "after": 60,
+        "relativeError": 0.05809950456023216,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_putih_glass",
+        "before": 322,
+        "after": 61,
+        "relativeError": 0.04591013491153717,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_putih_glass",
+        "before": 322,
+        "after": 54,
+        "relativeError": 0.04677746072411537,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_kuning_glass",
+        "before": 287,
+        "after": 43,
+        "relativeError": 0.05706557631492615,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_kuning_glass",
+        "before": 287,
+        "after": 64,
+        "relativeError": 0.030578214675188065,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_hijau_glass",
+        "before": 431,
+        "after": 50,
+        "relativeError": 0.038288507610559464,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_hijau_glass",
+        "before": 431,
+        "after": 49,
+        "relativeError": 0.04052932187914848,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_merah_glass",
+        "before": 431,
+        "after": 47,
+        "relativeError": 0.05744495615363121,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "lampu_merah_glass",
+        "before": 432,
+        "after": 46,
+        "relativeError": 0.053414925932884216,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_oranye",
+        "before": 3710,
+        "after": 479,
+        "relativeError": 0.05877130478620529,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "jaring",
+        "before": 516,
+        "after": 36,
+        "relativeError": 0.05817347392439842,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "cat_bodi_biru",
+        "before": 224,
+        "after": 25,
+        "relativeError": 0.017192332074046135,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "locomotive-body",
+        "material": "material_0",
+        "before": 576,
+        "after": 46,
+        "relativeError": 0.0028232967015355825,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie--1",
+        "material": "bogi",
+        "before": 11321,
+        "after": 1052,
+        "relativeError": 0.05982695147395134,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie--1",
+        "material": "material",
+        "before": 15,
+        "after": 6,
+        "relativeError": 0.013486105017364025,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie-1",
+        "material": "bogi",
+        "before": 11181,
+        "after": 1660,
+        "relativeError": 0.05824953690171242,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-bogie-1",
+        "material": "material",
+        "before": 5,
+        "after": 5,
+        "relativeError": 0,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-coupler-1",
+        "material": "bogi",
+        "before": 566,
+        "after": 86,
+        "relativeError": 0.05977396294474602,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-coupler--1",
+        "material": "bogi",
+        "before": 578,
+        "after": 90,
+        "relativeError": 0.059579312801361084,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "cat_bodi_putih",
+        "before": 169,
+        "after": 66,
+        "relativeError": 0.04766739532351494,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "material",
+        "before": 193,
+        "after": 72,
+        "relativeError": 0.044489793479442596,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "cat_bodi_oranye",
+        "before": 30,
+        "after": 14,
+        "relativeError": 0.04741230979561806,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "KARET_KACA",
+        "before": 149,
+        "after": 48,
+        "relativeError": 0.04729091003537178,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1-1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "cat_bodi_putih",
+        "before": 155,
+        "after": 65,
+        "relativeError": 0.05994950979948044,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "material",
+        "before": 168,
+        "after": 58,
+        "relativeError": 0.04448921978473663,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "KARET_KACA",
+        "before": 150,
+        "after": 58,
+        "relativeError": 0.05093665421009064,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-1--1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "cat_bodi_putih",
+        "before": 175,
+        "after": 66,
+        "relativeError": 0.047667331993579865,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "material",
+        "before": 192,
+        "after": 67,
+        "relativeError": 0.044489409774541855,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "cat_bodi_oranye",
+        "before": 30,
+        "after": 14,
+        "relativeError": 0.047412388026714325,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "KARET_KACA",
+        "before": 150,
+        "after": 55,
+        "relativeError": 0.0452759675681591,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0--1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "cat_bodi_putih",
+        "before": 160,
+        "after": 66,
+        "relativeError": 0.059894170612096786,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "material",
+        "before": 173,
+        "after": 58,
+        "relativeError": 0.052087005227804184,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "KARET_KACA",
+        "before": 150,
+        "after": 57,
+        "relativeError": 0.05633152276277542,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "cab-entry-0-1",
+        "material": "cat_atap",
+        "before": 2,
+        "after": 2,
+        "relativeError": 0,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-wheel-1-1",
+        "material": "bogi",
+        "before": 465,
+        "after": 215,
+        "relativeError": 0.017892710864543915,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-1-1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 122,
+        "relativeError": 0.010562261566519737,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-5-1",
+        "material": "bogi",
+        "before": 443,
+        "after": 217,
+        "relativeError": 0.01786399818956852,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-5-1",
+        "material": "RODA_GILAP",
+        "before": 153,
+        "after": 136,
+        "relativeError": 0.01444068644195795,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-3-1",
+        "material": "bogi",
+        "before": 438,
+        "after": 220,
+        "relativeError": 0.017867116257548332,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-3-1",
+        "material": "RODA_GILAP",
+        "before": 153,
+        "after": 135,
+        "relativeError": 0.014432893134653568,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-4--1",
+        "material": "bogi",
+        "before": 458,
+        "after": 215,
+        "relativeError": 0.01786462962627411,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-4--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 122,
+        "relativeError": 0.010081352666020393,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-3--1",
+        "material": "bogi",
+        "before": 456,
+        "after": 210,
+        "relativeError": 0.01786205545067787,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-3--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 124,
+        "relativeError": 0.009592319838702679,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-5--1",
+        "material": "bogi",
+        "before": 465,
+        "after": 214,
+        "relativeError": 0.01786210387945175,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-5--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 124,
+        "relativeError": 0.012051503174006939,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-4-1",
+        "material": "bogi",
+        "before": 444,
+        "after": 217,
+        "relativeError": 0.01786399446427822,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-4-1",
+        "material": "RODA_GILAP",
+        "before": 151,
+        "after": 135,
+        "relativeError": 0.012051536701619625,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-1--1",
+        "material": "bogi",
+        "before": 461,
+        "after": 224,
+        "relativeError": 0.017862075939774513,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-1--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 124,
+        "relativeError": 0.010081357322633266,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-2--1",
+        "material": "bogi",
+        "before": 473,
+        "after": 227,
+        "relativeError": 0.017864614725112915,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-2--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 124,
+        "relativeError": 0.010561411269009113,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-2-1",
+        "material": "bogi",
+        "before": 460,
+        "after": 206,
+        "relativeError": 0.017865242436528206,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-2-1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 122,
+        "relativeError": 0.015176747925579548,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-0--1",
+        "material": "bogi",
+        "before": 459,
+        "after": 212,
+        "relativeError": 0.017865939065814018,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-0--1",
+        "material": "RODA_GILAP",
+        "before": 131,
+        "after": 122,
+        "relativeError": 0.013054356910288334,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-0-1",
+        "material": "bogi",
+        "before": 465,
+        "after": 214,
+        "relativeError": 0.017863405868411064,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-wheel-0-1",
+        "material": "RODA_GILAP",
+        "before": 132,
+        "after": 122,
+        "relativeError": 0.01583900675177574,
+        "errorLimit": 0.018,
+        "wheelLandmarks": 12
+      },
+      {
+        "node": "rail-axle-shaft-1",
+        "material": "bogi",
+        "before": 48,
+        "after": 25,
+        "relativeError": 0.05887939780950546,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-0",
+        "material": "bogi",
+        "before": 48,
+        "after": 22,
+        "relativeError": 0.05887744575738907,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-3",
+        "material": "bogi",
+        "before": 48,
+        "after": 29,
+        "relativeError": 0.02187342569231987,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-5",
+        "material": "bogi",
+        "before": 48,
+        "after": 24,
+        "relativeError": 0.02187485806643963,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-2",
+        "material": "bogi",
+        "before": 48,
+        "after": 25,
+        "relativeError": 0.058881502598524094,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      },
+      {
+        "node": "rail-axle-shaft-4",
+        "material": "bogi",
+        "before": 48,
+        "after": 24,
+        "relativeError": 0.04589996114373207,
+        "errorLimit": 0.06,
+        "wheelLandmarks": 0
+      }
+    ]
+  },
+  "rig": [
+    {
+      "name": "cc206-sketchfab-rig",
+      "parent": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "author": "pucohensap",
+        "source": "https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "isLocomotive": true,
+        "staticWorldDynamic": true,
+        "units": "metres",
+        "lengthScale": 0.9787828365764324,
+        "bogieCenters": [
+          -4.311024547260373,
+          4.311023652713655
+        ]
+      }
+    },
+    {
+      "name": "locomotive-body",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {}
+    },
+    {
+      "name": "rail-bogie--1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0,
+        0,
+        -4.311024547260373
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {}
+    },
+    {
+      "name": "rail-bogie-1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0,
+        0,
+        4.311023652713655
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {}
+    },
+    {
+      "name": "rail-coupler-1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0,
+        0.6803735643625259,
+        6.9941277503967285
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true
+      }
+    },
+    {
+      "name": "rail-coupler--1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0,
+        0.6803735643625259,
+        -6.994126319885254
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true
+      }
+    },
+    {
+      "name": "cab-entry-1-1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0.6829624029342085,
+        2.3092357516288757,
+        6.5973570346832275
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true
+      }
+    },
+    {
+      "name": "cab-entry-1--1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        -0.6829628505511209,
+        2.3092357516288757,
+        6.5973570346832275
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true
+      }
+    },
+    {
+      "name": "cab-entry-0--1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        -0.6829621001379564,
+        2.3092357516288757,
+        -6.597356796264648
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true
+      }
+    },
+    {
+      "name": "cab-entry-0-1",
+      "parent": "cc206-sketchfab-rig",
+      "translation": [
+        0.6829632604494691,
+        2.3092357516288757,
+        -6.597356796264648
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true
+      }
+    },
+    {
+      "name": "rail-wheel-1-1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        0.5497660934925079,
+        0.46002790331840515,
+        -0.11698818143072831
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-5-1",
+      "parent": "rail-bogie-1",
+      "translation": [
+        0.5497660934925079,
+        0.46002790331840515,
+        1.6914084552117599
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-3-1",
+      "parent": "rail-bogie-1",
+      "translation": [
+        0.5497660934925079,
+        0.46002790331840515,
+        -1.8083953262976395
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-4--1",
+      "parent": "rail-bogie-1",
+      "translation": [
+        -0.5497661083936691,
+        0.46002790331840515,
+        0.11698693021023399
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-3--1",
+      "parent": "rail-bogie-1",
+      "translation": [
+        -0.5497661083936691,
+        0.46002790331840515,
+        -1.8083953262976395
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-5--1",
+      "parent": "rail-bogie-1",
+      "translation": [
+        -0.5497661083936691,
+        0.46002790331840515,
+        1.6914084552117599
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-4-1",
+      "parent": "rail-bogie-1",
+      "translation": [
+        0.5497660934925079,
+        0.46002790331840515,
+        0.11698693021023399
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-1--1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        -0.5497661083936691,
+        0.46002790331840515,
+        -0.11698818143072831
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-2--1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        -0.5497661083936691,
+        0.46002790331840515,
+        1.8083958632164885
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-2-1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        0.5497660934925079,
+        0.46002790331840515,
+        1.8083958632164885
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-0--1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        -0.5497661083936691,
+        0.46002790331840515,
+        -1.6914075606650423
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-wheel-0-1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        0.5497660934925079,
+        0.46002790331840515,
+        -1.6914075606650423
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "radius": 0.46002790331840515,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-axle-shaft-1",
+      "parent": "rail-bogie--1",
+      "translation": [
+        0,
+        0.46002793312072754,
+        -0.11698663170996415
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "axleShaft": true,
+        "axleIndex": 1,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-axle-shaft-0",
+      "parent": "rail-bogie--1",
+      "translation": [
+        0,
+        0.46002793312072754,
+        -1.6914089911765169
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "axleShaft": true,
+        "axleIndex": 0,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-axle-shaft-3",
+      "parent": "rail-bogie-1",
+      "translation": [
+        0,
+        0.46002793312072754,
+        -1.80839520708835
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "axleShaft": true,
+        "axleIndex": 3,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-axle-shaft-5",
+      "parent": "rail-bogie-1",
+      "translation": [
+        0,
+        0.46002793312072754,
+        1.6914082167931808
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "axleShaft": true,
+        "axleIndex": 5,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-axle-shaft-2",
+      "parent": "rail-bogie--1",
+      "translation": [
+        0,
+        0.46002793312072754,
+        1.8083953863793303
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "axleShaft": true,
+        "axleIndex": 2,
+        "axis": "x"
+      }
+    },
+    {
+      "name": "rail-axle-shaft-4",
+      "parent": "rail-bogie-1",
+      "translation": [
+        0,
+        0.46002793312072754,
+        0.11698657258236533
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extras": {
+        "staticWorldDynamic": true,
+        "axleShaft": true,
+        "axleIndex": 4,
+        "axis": "x"
+      }
+    }
+  ],
+  "validation": {
+    "accessorsFinite": true,
+    "indexRangesValid": true,
+    "rigidTransformsAndExtrasUnchanged": true,
+    "nativeEnvelopeUnchanged": true,
+    "wheelCircularLandmarksRetained": true,
+    "sourceSha256Unchanged": true,
+    "browserPixelQualityVerified": false
+  },
+  "notes": "Far triangle floor is reported honestly; disconnected source details and locked silhouettes prevent safely reaching 3–5k. Transparent sort units and double-sided surfaces retain source materials. Runtime may consolidate compatible opaque colors per rigid pivot."
+}

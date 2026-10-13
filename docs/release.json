@@ -1,0 +1,377 @@
+{
+  "sourceCommit": "56d2b69a766070646fe1e83501532790e7a83285",
+  "sourceFingerprint": "3346f229d76718010943668890fa781219bcb2ad4a3d50a02c37cd0f42954d5f",
+  "checks": {
+    "passed": 83,
+    "total": 83
+  },
+  "base": "/warehouse-3d-playground-pages/",
+  "builtAt": "2026-10-13T04:10:17.402379+00:00",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "assets/AssetCatalogPage-Cjr84Tzk.js",
+      "sha256": "cad2b85ac633bb44807488d434a48b7241fce986eff112a5cdbe93b57275577d",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetThumbnail-QyhmCEav.js",
+      "sha256": "679334d015ccf4e5d0570f5a957e417dad2d8929341144c66743ae47c86fd835",
+      "bytes": 779468
+    },
+    {
+      "path": "assets/BufferGeometryUtils-fhjzNkL6.js",
+      "sha256": "bc33fa39e22de0efbdecede97b8972aadfd42696ad39728f0f0b59b10f8ad248",
+      "bytes": 4752
+    },
+    {
+      "path": "assets/Cc206ReviewPage-DJ_elxHK.js",
+      "sha256": "2338b5ec61a16b8dce95be43e9ea066093b7d4bf8cd859ff367d6dcc6654902e",
+      "bytes": 11982
+    },
+    {
+      "path": "assets/ConsistsPage-BKUPBVvS.js",
+      "sha256": "c327021c30a91315a521092da07464533a9a5eba55c74453c166b165a23f320b",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/DownloadSimple.es-BqDncxKq.js",
+      "sha256": "959de61aa534e3bee003a1afe6ae674cced379cfc682b630da7407b4954b2a72",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/GLTFExporter-Zav4VGXk.js",
+      "sha256": "d1e2657ac7cedf1684e25e25562eab0c360767a73f381d4c6014ee1a9d3c90a9",
+      "bytes": 36784
+    },
+    {
+      "path": "assets/GLTFLoader-C-C7ZcSb.js",
+      "sha256": "bd2f0fe548e2a9d3e8027a52e55143a982b39e562049283832c87240f4f4e2b5",
+      "bytes": 44396
+    },
+    {
+      "path": "assets/GaugeReviewPage-MIGy7112.js",
+      "sha256": "211700b64d39b6c04327ce2b728c144e8c0854509a4a913b0fe9ae396165c142",
+      "bytes": 10822
+    },
+    {
+      "path": "assets/HudPreviewPanel-C_t6OEQb.js",
+      "sha256": "b8a4b68702004989f6e88e0da575b8ae3723b483b6e5e08f90a90a2b3431615b",
+      "bytes": 421
+    },
+    {
+      "path": "assets/ImportedCc206Page-DHA72Yj2.js",
+      "sha256": "7bea27c614cb4f9c355b3fd4f897d3ce88c46dcd98e2d7707f9a353d197a828d",
+      "bytes": 13958
+    },
+    {
+      "path": "assets/index-B-j-o-MH.js",
+      "sha256": "c3a9cd15d0bc8d02d17d6aa1acecec0906d12766d83d2824281f84134d0781d3",
+      "bytes": 585072
+    },
+    {
+      "path": "assets/index-D8tGPKra.css",
+      "sha256": "6c6d3f963d3135a87ed260242caef164df2d663d09639b8e72107f1eb7878adc",
+      "bytes": 59200
+    },
+    {
+      "path": "assets/meshopt_decoder.module-DXTYc6wn.js",
+      "sha256": "6bf68170d437477fb3411dfb24339df33257d69a4322c3907e14af33cff083c7",
+      "bytes": 26486
+    },
+    {
+      "path": "assets/three.core-IH6yQD8m.js",
+      "sha256": "cfc37790441ec61234242de4480774cbca3a382abcbcfd0f306fa99dd57b5d05",
+      "bytes": 260563
+    },
+    {
+      "path": "audio/ambient-birds.mp3",
+      "sha256": "6059e2d3c7d341fb93bb292732418af9a9cad23f1d53be03a0bc91fb100fd094",
+      "bytes": 208813
+    },
+    {
+      "path": "audio/ambient-crickets.mp3",
+      "sha256": "aadfba459e09d5bd98d6eed37dde189fcacaf156491e49eb581fbd9be58180e4",
+      "bytes": 184780
+    },
+    {
+      "path": "audio/ambient-river.mp3",
+      "sha256": "d65dd1e587ab9df93eac28bc9117d4c31cfaf3d6124d9fc51c0a828005dc9785",
+      "bytes": 184780
+    },
+    {
+      "path": "audio/ambient-wind.mp3",
+      "sha256": "5be59de05622ea4f3b892ddae8192040003eb599c1153c159631f16d3d871b3f",
+      "bytes": 144865
+    },
+    {
+      "path": "audio/credits.html",
+      "sha256": "b15c7d4a20a1a0b55ded9c643deeef4fded19f8c338c09a23cfb68fe71b2b5ee",
+      "bytes": 2791
+    },
+    {
+      "path": "audio/sources.json",
+      "sha256": "87baba9c53177aba7932fcf053c62dabfc471e6516146ddc77ed54403c38e025",
+      "bytes": 3264
+    },
+    {
+      "path": "fonts/manrope-OFL.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "bytes": 4387
+    },
+    {
+      "path": "fonts/manrope-latin-variable.woff2",
+      "sha256": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f",
+      "bytes": 24576
+    },
+    {
+      "path": "index.html",
+      "sha256": "e6e8c5e755cd96b3b963d8fee974bf5e97156c5422679baaa8ab4f622d9751db",
+      "bytes": 877
+    },
+    {
+      "path": "models/catalog.json",
+      "sha256": "e1236050afcfb2087b1ce512eae0f5c42fcd9431e82f72871575907122885145",
+      "bytes": 5731
+    },
+    {
+      "path": "models/cc201-game-high.glb",
+      "sha256": "f35bbe873d04b1281cd5a20ad2e8e7a9ba203d55beea366885d4cc4882ada88f",
+      "bytes": 15682576
+    },
+    {
+      "path": "models/cc201-game-low.glb",
+      "sha256": "83dba0e467edad743e055afa1ba6e94f2eb2b379521bf16791e16af0d0dce4f8",
+      "bytes": 6604564
+    },
+    {
+      "path": "models/cc201-game-medium.glb",
+      "sha256": "9d0532d80b11fd29bc350236f1bfeb5bf2377e82bf115b4a95fe4359aa18ee41",
+      "bytes": 8355852
+    },
+    {
+      "path": "models/cc201-warehouse-preview.glb",
+      "sha256": "7a086bfd3d68d9adaa3f046ea940a193e4c4de1a771def94070e3e9904a1cae7",
+      "bytes": 22610392
+    },
+    {
+      "path": "models/cc206-blue.glb",
+      "sha256": "62722e0683c5fadd8cf6e3ee061d1d65dda94a4dbc31aea4456f2fb4c2e7c696",
+      "bytes": 1909996
+    },
+    {
+      "path": "models/cc206-lossless-pack-report.json",
+      "sha256": "ef774e8d8291118c33424b8e25a14123ad561abb1aa413b56fef12c9c279f722",
+      "bytes": 758
+    },
+    {
+      "path": "models/cc206-sketchfab-license.txt",
+      "sha256": "8c8ad4c088a7cc014b5ca89e45a5c533ede38d7f3fc54e48354485239838185f",
+      "bytes": 668
+    },
+    {
+      "path": "models/cc206-sketchfab-lod-report.json",
+      "sha256": "f364f51f35028cd2dc569fcfa859b4beee8428941a9ce93ac8a2624e5b4fe33b",
+      "bytes": 50615
+    },
+    {
+      "path": "models/cc206-sketchfab-low-packed.glb",
+      "sha256": "111ca50946aeba4c6dfba2349bbeeff3b6c75ecc082f6f85ce78f2fe624c8a69",
+      "bytes": 645084
+    },
+    {
+      "path": "models/cc206-sketchfab-low.glb",
+      "sha256": "9c741c6f567d9bcab3f28703d231a074337a97b41dfe03f3fdc13c3c2dc7f685",
+      "bytes": 828548
+    },
+    {
+      "path": "models/cc206-sketchfab-medium-packed.glb",
+      "sha256": "2c1bcb97c069e414476686d830f037a7e956871949cc0beac254d32513058996",
+      "bytes": 844308
+    },
+    {
+      "path": "models/cc206-sketchfab-medium.glb",
+      "sha256": "360bc98462d48fff53ee5bb962c15619e10c25a8f1bc3728b48d89bcef253f33",
+      "bytes": 1133416
+    },
+    {
+      "path": "models/cc206-sketchfab-optimized-packed.glb",
+      "sha256": "fa372f63e9d16ad65e1f37161e4cd9f4ceacdb020b4343d8ac7898f8d9bd9b82",
+      "bytes": 2198004
+    },
+    {
+      "path": "models/cc206-sketchfab-optimized.glb",
+      "sha256": "8bb55144eff8054dd518a933f0805791d40e502947f2189633dbb35f054f6256",
+      "bytes": 3548036
+    },
+    {
+      "path": "models/cc206-sketchfab-reference.glb",
+      "sha256": "ddf4067ac7f530b7f1b7a14ff69edbb044a54fa03b6bfe6913c391caa11257ea",
+      "bytes": 41614004
+    },
+    {
+      "path": "models/cc206-sketchfab-report.json",
+      "sha256": "f8e155c820152eff06ef6dca1a5458ffb4c696922b0f5dcb8091cdc9f2380fc7",
+      "bytes": 18569
+    },
+    {
+      "path": "models/depot-assets-blue.zip",
+      "sha256": "bf1490697b4122347d3702cf5a84d10727373b47979b394e6d9df12490c8d8ad",
+      "bytes": 1960629
+    },
+    {
+      "path": "models/depot-riverside-blue.glb",
+      "sha256": "f58eaefbc07d33cbb389c8572a020220e3f6b3209c41b892a1c7302a97ff8924",
+      "bytes": 9709840
+    },
+    {
+      "path": "models/forklift-0-blue.glb",
+      "sha256": "836076ca961c61f31096769f49d106417c1a85b07023da37ca2ca62bee381376",
+      "bytes": 328696
+    },
+    {
+      "path": "models/forklift-1-blue.glb",
+      "sha256": "b0a33906e713443c740c1760a4db579695500129bafd83eda19645d1bf8e11c3",
+      "bytes": 647956
+    },
+    {
+      "path": "models/forklift-2-blue.glb",
+      "sha256": "23843c4a7384d811412b3501607eb874bb0254e749502705ff8415cd9e1fbfc4",
+      "bytes": 328692
+    },
+    {
+      "path": "models/freight-wagon-0-blue.glb",
+      "sha256": "c21090c6a88f4ebb125633886fe3b3d6abfe4dd91d8fcfb2d83043b5491381ad",
+      "bytes": 550352
+    },
+    {
+      "path": "models/freight-wagon-1-blue.glb",
+      "sha256": "cfa4d8f5e369b88d33cd4d5172de6c37ee2d8c929367f2d026f7934525aa53d7",
+      "bytes": 853624
+    },
+    {
+      "path": "models/pallet-0-blue.glb",
+      "sha256": "288d2c4d0b576e9d5b6b926add7bd7b3d87c997483904467ba5f61a1e2b23b9c",
+      "bytes": 319296
+    },
+    {
+      "path": "models/pallet-1-blue.glb",
+      "sha256": "aae9e5b015f096a290090a986e66ca8b490a96e2ca49647400397abdefcd48fc",
+      "bytes": 387508
+    },
+    {
+      "path": "models/pallet-2-blue.glb",
+      "sha256": "ddc037d099c037b5aaabfb52f671141736fda6345ca01acde9ab46622296866c",
+      "bytes": 304536
+    },
+    {
+      "path": "models/pallet-3-blue.glb",
+      "sha256": "4b83e9fe0e18258a323568e190e63da17f5dfbff9e37be0de4632207b9a7e62f",
+      "bytes": 13416
+    },
+    {
+      "path": "models/passenger-economy-high.glb",
+      "sha256": "a4dd4001189d4c861f3f60b34f00caddf41d84bc9b2aff9d66bb2b9840a94d4c",
+      "bytes": 1546920
+    },
+    {
+      "path": "models/passenger-economy-license.txt",
+      "sha256": "7206b06bf8f68508f4199a165fd76fdfaae8c96ab6ebf52517474091dd9b30d4",
+      "bytes": 665
+    },
+    {
+      "path": "models/passenger-economy-low.glb",
+      "sha256": "54d50641a40ee5fe11f648abc12dfaae8214e25fde19d3c4e0bfdf1c3f0d68af",
+      "bytes": 355104
+    },
+    {
+      "path": "models/passenger-economy-medium.glb",
+      "sha256": "eff531b6830ddfff8735bba2f01fa0470098ac10e9397880e951c398f46a6649",
+      "bytes": 692044
+    },
+    {
+      "path": "models/passenger-economy-original-license.txt",
+      "sha256": "ea60da8c960c0f7a013f33d97344d3d70f87db874f666fe41e916ad9b28d81a1",
+      "bytes": 1127
+    },
+    {
+      "path": "models/passenger-economy-original-report.json",
+      "sha256": "0b086fdae4e509c4c77c38392ee4885b56931ca573d57cc4cfac56ebbcdff1d5",
+      "bytes": 2065
+    },
+    {
+      "path": "models/passenger-economy-original.glb",
+      "sha256": "c26e9bcba15b0b6a0ea587fe24b5c2f0113f98c0909539079376131efafe5973",
+      "bytes": 4783020
+    },
+    {
+      "path": "models/passenger-economy-report.json",
+      "sha256": "16a6aa8cf4f2de53957cc9df05c602ee8079ceed89f11f4dc99f40834032c1d3",
+      "bytes": 29902
+    },
+    {
+      "path": "models/rail-track-blue.glb",
+      "sha256": "48d0ec308eacc74b5c2afa3c9f371e086cc0c551b3b2757e8050baac4845fbf1",
+      "bytes": 663440
+    },
+    {
+      "path": "models/tree-0-blue.glb",
+      "sha256": "6dbca996aaaf5e101036631e59ec72fb8ab2d26b8da1c7be5eff9854cdb9bc73",
+      "bytes": 20384
+    },
+    {
+      "path": "models/tree-1-blue.glb",
+      "sha256": "22b4bca968f2a4b393900555455258a395da9343a56aa850697fbc73d0345d78",
+      "bytes": 12788
+    },
+    {
+      "path": "models/tree-2-blue.glb",
+      "sha256": "2c8d9a5d1dad1258ccf607de79e5405bf04f42a4c12c6c369f1669a0fc10593a",
+      "bytes": 36732
+    },
+    {
+      "path": "models/truck-0-blue.glb",
+      "sha256": "b52e12e55d544a99d6b4b1d5b991d8bcce61f481347f0c6186ba3c8c63b46369",
+      "bytes": 520236
+    },
+    {
+      "path": "models/truck-1-blue.glb",
+      "sha256": "f579a974857342cdab85c922e4bab421b1e951eb7a764f2f96592a49fb44afd1",
+      "bytes": 1088584
+    },
+    {
+      "path": "models/truck-2-blue.glb",
+      "sha256": "5c04c07529248b3e114a9843dd43d50abf0de0d5b45a320381f279b48ad9d378",
+      "bytes": 492624
+    },
+    {
+      "path": "models/warehouse-0-blue.glb",
+      "sha256": "643d4f335955ccd8a0bfc161a82233745e0535452cb559ca36f2fc9298189844",
+      "bytes": 1621200
+    },
+    {
+      "path": "models/warehouse-1-blue.glb",
+      "sha256": "3107ee1fdb82da61bf2229cbbd2e0ac7893e1fdde489bd34b51e174dd1c8b05c",
+      "bytes": 1168340
+    },
+    {
+      "path": "models/warehouse-2-blue.glb",
+      "sha256": "fcf7eab08c4e3e8f0c7334538b4e3af8f613c670bd61ccdc795299b27adeb043",
+      "bytes": 1617960
+    },
+    {
+      "path": "sponsors/indomie-wrap.webp",
+      "sha256": "5a11d0a93a2e5979ad4f701b5a9db2fa9f68a3f63145d3d899f9269125aebbbd",
+      "bytes": 47522
+    },
+    {
+      "path": "sponsors/le-minerale-wrap.webp",
+      "sha256": "32933778e0af22081c63a751643954d6429b45e057f05168e64848c3d12c857b",
+      "bytes": 38184
+    }
+  ]
+}
