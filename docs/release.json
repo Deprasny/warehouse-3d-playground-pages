@@ -1,15 +1,15 @@
 {
-  "sourceCommit": "9e5c6e817cd2cafa9a064d7056992d3d47029d72",
-  "sourceFingerprint": "edfc5f1c0ffcd6a66efb9210b2db247394298bdf737a518466c7a7d1fc4dfd57",
+  "sourceCommit": "674a38f893e4d600e7323a11854ea0bf00368cb3",
+  "sourceFingerprint": "1091db1097bca7c879f7b237d37c25bf3d4274598cc379e715a4f54662d746e8",
   "sourceIncludesUncommittedAudioFix": true,
   "sourceExcludesConcurrentVegetationWork": true,
-  "builtAt": "2026-10-13T15:06:22.233470+00:00",
+  "builtAt": "2026-10-13T17:22:50.111376+00:00",
   "checks": {
     "scope": "targeted",
     "passed": 3,
     "total": 3,
     "names": [
-      "check-mountain-terrain.ts",
+      "check-hilly-terrain.ts",
       "check-mountain-preview.ts",
       "check-module-boundaries.ts"
     ]
@@ -18,8 +18,24 @@
     "status": "skipped",
     "reason": "User requested no combined suite."
   },
+  "browserChecks": {
+    "status": "not repeated",
+    "reason": "User requested no Ego Browser verification unless explicitly asked."
+  },
+  "knownBaselineCheckLimit": "check-map-definition.ts requires a CC201 Node fixture; baseline reproduces the same missing-template failure.",
   "base": "/warehouse-3d-playground-pages/",
   "terrainPreview": "terrain-preview.html",
+  "terrain": {
+    "sourceHash": "9bc34caa00345281ec150922d8b6ebe8acf39d65a16c6063c9a92d22f7598d56",
+    "originalBytes": 26335864,
+    "originalTriangles": 526472,
+    "optimizedBytes": 2169612,
+    "assetName": "hilly-terrain-b5292f5de8b4.glb",
+    "triangles": 105294,
+    "adjustedVertices": 86940,
+    "textureResolution": 1024,
+    "meshCount": 1
+  },
   "files": [
     {
       "path": ".nojekyll",
@@ -77,6 +93,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-DvsNYx-K.js",
+      "sha256": "9a967411d1224ca17d15cf5b6068c9d3d76ce9e217f90e4a987388eabc73af26",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-Jv7AAxx9.js",
       "sha256": "2be0efd009301595a07ecc00de883d3cdcdebb8e8d16bfedfe4ea9bc063fa72a",
       "bytes": 24446
@@ -117,6 +138,11 @@
       "bytes": 780104
     },
     {
+      "path": "assets/AssetThumbnail-D_D4AZVn.js",
+      "sha256": "5f72e4b63318a710508eb48f7c5be8f0e9267eea7de211e7c53ed26992f341d9",
+      "bytes": 792239
+    },
+    {
       "path": "assets/AssetThumbnail-Dy_PlIrH.js",
       "sha256": "906fb462d670b33dc850f9886dfd2b360539fb8a0d463ca2a6514a4cccf77ff3",
       "bytes": 792158
@@ -140,6 +166,11 @@
       "path": "assets/Cc206ReviewPage-2bUYq9gS.js",
       "sha256": "4c9c10f9c4c7b04ae60d8fcfa2fad0ea605ee5033577bfb760e29862cdf5afd4",
       "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-B-u-R941.js",
+      "sha256": "4f9b6a8588966679102eb32ce6e0418f8303ff18be8a0cd5ed2f06dbcdcbae9e",
+      "bytes": 11977
     },
     {
       "path": "assets/Cc206ReviewPage-BHhUN2IS.js",
@@ -267,6 +298,16 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-rcKatn0-.js",
+      "sha256": "713c26e3e3997decb6d0ceca3bc2f3412340b5861f5495bbc83a8fa531c34904",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/DownloadSimple.es-BPzKiV6u.js",
+      "sha256": "d0a15da154130bd1ffe61b801b2413f1091f52af4368a4512502c82bacba941a",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-BqDncxKq.js",
       "sha256": "959de61aa534e3bee003a1afe6ae674cced379cfc682b630da7407b4954b2a72",
       "bytes": 2061
@@ -342,6 +383,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-844jNFMw.js",
+      "sha256": "c0cc6a5215a5b5e2026f5f14a2fb81046ddfcd30ce9d083f849175495bfe66a3",
+      "bytes": 44239
+    },
+    {
       "path": "assets/GLTFLoader-B6dXDznl.js",
       "sha256": "854ca777dfca126b689667f7dbfd1580045ff87eb26a0fa2305c3673fd79e0f6",
       "bytes": 44396
@@ -359,6 +405,11 @@
     {
       "path": "assets/GLTFLoader-C-C7ZcSb.js",
       "sha256": "bd2f0fe548e2a9d3e8027a52e55143a982b39e562049283832c87240f4f4e2b5",
+      "bytes": 44396
+    },
+    {
+      "path": "assets/GLTFLoader-DEZM43OV.js",
+      "sha256": "7887f9ec3e81b1718fba397bc75a863874a7c5e3f0aa26309b78b64e6f838ba5",
       "bytes": 44396
     },
     {
@@ -404,6 +455,11 @@
     {
       "path": "assets/GaugeReviewPage-ByfHzfaX.js",
       "sha256": "2c085ae4f412ee3bfa7e232a3b1fd750b3c2597cdb1d89b40d4fe1cd47d3297b",
+      "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-CWCBiOJ2.js",
+      "sha256": "a7556a637fdb138bdaf0a2b6f7b4d7e4094be0e6fea344d92742d08e7997fa5b",
       "bytes": 10822
     },
     {
@@ -477,6 +533,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-D1JEWH0h.js",
+      "sha256": "49c05164d7583a66cf8fdaca947036d3e14e9d45f3fd8cc9e014f42cd7d72c70",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-D75pnI1v.js",
       "sha256": "9e030610bafef9622f20dd5b8d7be530cf4593e8c4888d903b7a5e088e3d71e6",
       "bytes": 421
@@ -537,6 +598,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-Cu5SxR52.js",
+      "sha256": "062f23ef4f6d3d19ea6270464f1402b0f743f2e404115c415d92fbc67d2f237a",
+      "bytes": 13958
+    },
+    {
       "path": "assets/ImportedCc206Page-DHA72Yj2.js",
       "sha256": "7bea27c614cb4f9c355b3fd4f897d3ce88c46dcd98e2d7707f9a353d197a828d",
       "bytes": 13958
@@ -595,6 +661,11 @@
       "path": "assets/index-B3bxH4tZ.js",
       "sha256": "da90ef2c7062eda4879ef0b3599ac1336eeebb4ef2fefab74c76384df4a4574e",
       "bytes": 623078
+    },
+    {
+      "path": "assets/index-BAD9LEMv.js",
+      "sha256": "4a659ce5dcf6ec064c5a975045f83cdfcacff3280bd078546f336e1cc3971ee6",
+      "bytes": 733332
     },
     {
       "path": "assets/index-BFwwF7CX.js",
@@ -667,6 +738,11 @@
       "bytes": 568321
     },
     {
+      "path": "assets/terrain-preview-qbX8Q3zf.js",
+      "sha256": "acef16bfbf0c69adffc418dadf5e3023f97d84945e8363f9e5b41ac8d41300c6",
+      "bytes": 887404
+    },
+    {
       "path": "assets/three.core-IH6yQD8m.js",
       "sha256": "cfc37790441ec61234242de4480774cbca3a382abcbcfd0f306fa99dd57b5d05",
       "bytes": 260563
@@ -713,7 +789,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "9b2734d0b25f98834280971a544fef280f9360c98992b416822c224f0261d76b",
+      "sha256": "3f992989e0abc06c8d536196cd9c5ee9398aade8545219b9eaca49fc733720a1",
       "bytes": 877
     },
     {
@@ -852,6 +928,11 @@
       "bytes": 853624
     },
     {
+      "path": "models/hilly-terrain-b5292f5de8b4.glb",
+      "sha256": "b5292f5de8b4201deb2fbf092f0ca23e1c665cba1aff289ce7b6c88a5b39bfb0",
+      "bytes": 2169612
+    },
+    {
       "path": "models/pallet-0-blue.glb",
       "sha256": "288d2c4d0b576e9d5b6b926add7bd7b3d87c997483904467ba5f61a1e2b23b9c",
       "bytes": 319296
@@ -973,8 +1054,8 @@
     },
     {
       "path": "terrain-preview.html",
-      "sha256": "0dfdf8160c856b7cbbe35b8644b42c81780f83a0dd0a80329e68831873fb128c",
-      "bytes": 1696
+      "sha256": "b5c9569137152287fd3fad7f48c87139a77db8445ec43358a7b1f17350a66e76",
+      "bytes": 2098
     }
   ]
 }
