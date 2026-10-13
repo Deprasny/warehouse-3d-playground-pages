@@ -1,9 +1,9 @@
 {
-  "sourceCommit": "e5b34cfd0351db95397786fa958a2993c703c22e",
-  "sourceFingerprint": "38f48c406dbce94f94ae2b0cf18616cc77088ab3ca89f666246cc942498717ac",
+  "sourceCommit": "9e5c6e817cd2cafa9a064d7056992d3d47029d72",
+  "sourceFingerprint": "edfc5f1c0ffcd6a66efb9210b2db247394298bdf737a518466c7a7d1fc4dfd57",
   "sourceIncludesUncommittedAudioFix": true,
   "sourceExcludesConcurrentVegetationWork": true,
-  "builtAt": "2026-10-13T14:55:26.765576+00:00",
+  "builtAt": "2026-10-13T15:06:22.233470+00:00",
   "checks": {
     "scope": "targeted",
     "passed": 3,
@@ -29,6 +29,11 @@
     {
       "path": "assets/AssetCatalogPage-B9H9FvXh.js",
       "sha256": "265ac34d275301bb9033b86abe54aedab1def8ca3c575a1d33d56d1021e48c75",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-BYKdo2Ca.js",
+      "sha256": "2a282a742d292f5a1f119279cb4ffc71184be96325582045b833d7ce1094bb1c",
       "bytes": 24446
     },
     {
@@ -192,6 +197,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-mGQZ7vrF.js",
+      "sha256": "6595757bee5c0d9588c84c2b549094664efe96cacfa22dfcd8c865b8ae9719aa",
+      "bytes": 11982
+    },
+    {
       "path": "assets/ConsistsPage-2azHfWMT.js",
       "sha256": "04f77fa0a40c337be161dd558dd46763fc1bb3d2cb0542657187d436e768b07e",
       "bytes": 8448
@@ -229,6 +239,11 @@
     {
       "path": "assets/ConsistsPage-DMJzo5qx.js",
       "sha256": "8ff4a9f99033954dc27c0bf54ecc3eb2085d9dfd38b9766fa28a864368c7c909",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-DrpLhtMb.js",
+      "sha256": "a73b31844dbc83128c55989c356b345c63f20a4a62e2db736c174eefc56ed632",
       "bytes": 8448
     },
     {
@@ -294,6 +309,11 @@
     {
       "path": "assets/DownloadSimple.es-MMVlOfSO.js",
       "sha256": "3062d79984f06eb27f0166799bc9c63f6e7bfed47d5d8b5be1836a5160667259",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-XxAprvsN.js",
+      "sha256": "ab63fcd5693af63f7589c6fe45f70bd2f52ccff58b2f57a9f8948f3f5e14c066",
       "bytes": 2061
     },
     {
@@ -367,6 +387,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-BK9TQbBm.js",
+      "sha256": "5f10e5a136442e64bb5b832cf2cee7ebd858f54746294974110ac9079bb1a564",
+      "bytes": 10822
+    },
+    {
       "path": "assets/GaugeReviewPage-BZ248rSW.js",
       "sha256": "7c9eb7864d41238944865b1fec46bc9c60a52c2b4a99d6aeb7fe8dc668f718cc",
       "bytes": 10822
@@ -429,6 +454,11 @@
     {
       "path": "assets/HudPreviewPanel-Br1DcFOr.js",
       "sha256": "a5af1a1867711f6ea08dd134e962060cb65a60ffd8b4ac196858e9d719abee8b",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-By2PJEKe.js",
+      "sha256": "6de190df40b38ae0bfd89145320b4cf12a2ba97c21e6369b2a9cc42ab622fcca",
       "bytes": 421
     },
     {
@@ -512,6 +542,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-DMsQAxZF.js",
+      "sha256": "f974bbf1541d810246dbc2df29468faa22c4ce72ac5c96d5222c25fac3621811",
+      "bytes": 13958
+    },
+    {
       "path": "assets/ImportedCc206Page-DN7Y51TJ.js",
       "sha256": "d3075d4aa8ea22387a2c82bd6923ce87d6d4a1d1198ccf48642c5f7ea731fb5f",
       "bytes": 13963
@@ -545,6 +580,11 @@
       "path": "assets/cc201-decoder.worker-ChVfWu9Y.js",
       "sha256": "40a19e36b41cf8cdf4c910748d76a91e0e89fd27eef6d773e59b9cf507a68c83",
       "bytes": 36743
+    },
+    {
+      "path": "assets/index-3H24Mfi8.js",
+      "sha256": "690220c79601a27bd4095fabf954010a2dc7e3c7bcaa2b45e9a2046ce4c89c86",
+      "bytes": 640849
     },
     {
       "path": "assets/index-B-j-o-MH.js",
@@ -622,6 +662,11 @@
       "bytes": 566401
     },
     {
+      "path": "assets/terrain-preview-QqvdihVX.js",
+      "sha256": "f5a212e72bd0cb66dcc03d49fc94b960be38ab4d640e4d73b7964a9d317bb304",
+      "bytes": 568321
+    },
+    {
       "path": "assets/three.core-IH6yQD8m.js",
       "sha256": "cfc37790441ec61234242de4480774cbca3a382abcbcfd0f306fa99dd57b5d05",
       "bytes": 260563
@@ -668,7 +713,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "1c750a093e4b7446686b3c0cede97ae8e552ff7200686e7f7833557c7b2909b7",
+      "sha256": "9b2734d0b25f98834280971a544fef280f9360c98992b416822c224f0261d76b",
       "bytes": 877
     },
     {
@@ -928,7 +973,7 @@
     },
     {
       "path": "terrain-preview.html",
-      "sha256": "45d2b95aaf51ce75c543a23bd2f8913674db740ad3990c55f62d48c53b89b322",
+      "sha256": "0dfdf8160c856b7cbbe35b8644b42c81780f83a0dd0a80329e68831873fb128c",
       "bytes": 1696
     }
   ]
