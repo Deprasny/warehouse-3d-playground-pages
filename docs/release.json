@@ -1,12 +1,12 @@
 {
-  "sourceCommit": "f3cc41c7e2bda623cbfbc0d2d56a21df16f1cc2c",
-  "sourceFingerprint": "ad597640f9c61b7d4a5700ab10211049331fdb1ef9a3713cb8a0fca1681b522e",
+  "sourceCommit": "708d8196be30265087ef64789db383af2c8df600",
+  "sourceFingerprint": "d6f3cc5221fc2bb2b7529d5cba6204bc8944c93cb859aeacad1b5089fefc5335",
   "checks": {
-    "passed": 85,
-    "total": 85
+    "passed": 86,
+    "total": 86
   },
   "base": "/warehouse-3d-playground-pages/",
-  "builtAt": "2026-10-13T07:11:08.518078+00:00",
+  "builtAt": "2026-10-13T08:53:41.228725+00:00",
   "files": [
     {
       "path": ".nojekyll",
@@ -34,6 +34,16 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-QzDHA335.js",
+      "sha256": "94d3ff79a77fb53b4c5f0c35bdafdbaf1b9cbd6f70c3e8d3be8b2ec567b24fcd",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetThumbnail-CGjXWiqu.js",
+      "sha256": "7b1c21c39e5b193a8fecb8283b0b9043ed46d6045c41bcc5a549b0666b4b34a7",
+      "bytes": 779832
+    },
+    {
       "path": "assets/AssetThumbnail-Kob_q6oe.js",
       "sha256": "5832f5cd85fef659476d1b624cfac43c2873282560cc494f9db5a76d13eb1007",
       "bytes": 779807
@@ -51,6 +61,11 @@
     {
       "path": "assets/Cc206ReviewPage-BHhUN2IS.js",
       "sha256": "c59d58cc54f1876e3a95901e547508d4106fc21a29ee3a1eb4dd0594a96a03d2",
+      "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-DHajkNSV.js",
+      "sha256": "ba7d35a8a2a7bde4d4f064d98036ec388f472d37ed88f09a38ad7681012cf34e",
       "bytes": 11982
     },
     {
@@ -89,6 +104,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-CuernzGn.js",
+      "sha256": "0511f077ad03f736afbf5542b4e0f1df82836f867f9b4ab2da10c8ef04f27bd9",
+      "bytes": 8443
+    },
+    {
       "path": "assets/DownloadSimple.es-BqDncxKq.js",
       "sha256": "959de61aa534e3bee003a1afe6ae674cced379cfc682b630da7407b4954b2a72",
       "bytes": 2061
@@ -96,6 +116,11 @@
     {
       "path": "assets/DownloadSimple.es-BvUYGQlE.js",
       "sha256": "d219d0b4fd48d3df78f9f3ed2e6f9bef40b816f3663c6274a2ffc16b599a7da7",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-CUPH2JoF.js",
+      "sha256": "e13ae862f310cb2534fa7ba8a0e9742f35ad0b928f518747e386e3fb42e32d94",
       "bytes": 2061
     },
     {
@@ -119,6 +144,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-Ddm7y4pU.js",
+      "sha256": "2b0d2d331dd82a6dc95a59ace92908039f48401fdc0d7e19914ff28ad5410c61",
+      "bytes": 44396
+    },
+    {
       "path": "assets/GLTFLoader-DzDPbHor.js",
       "sha256": "fc79fc3d06a0d074510dbc1b70f685fb17931b88916e9deb6dbcad163b101347",
       "bytes": 44396
@@ -136,6 +166,11 @@
     {
       "path": "assets/GaugeReviewPage-S6JCjIjK.js",
       "sha256": "b6393165d2757695dd225230dba79e64d98f3997d45a7fb5492f083cb6cfa5c3",
+      "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-gXbQBNMo.js",
+      "sha256": "09763ebf0f3bc3c86eb42bf5340c2c4273d585d55252c6d0b9d79449dd77d3cd",
       "bytes": 10822
     },
     {
@@ -162,6 +197,16 @@
       "path": "assets/HudPreviewPanel-D_IJqgDW.js",
       "sha256": "482848c73f197f3d6eacb15ff59515c498cf0645186bac8dd046d88cc56ff724",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-DnfhFEXK.js",
+      "sha256": "517feb986a8c2709a03463a8d66763930257ea377987a6a84a2c592f443f7647",
+      "bytes": 421
+    },
+    {
+      "path": "assets/ImportedCc206Page-8SccP7cF.js",
+      "sha256": "388ed4cdc5b169bef4ef5a63abe82150a7037a56405ee1e3973800b2b4e4b201",
+      "bytes": 13963
     },
     {
       "path": "assets/ImportedCc206Page-DHA72Yj2.js",
@@ -202,6 +247,11 @@
       "path": "assets/index-BFwwF7CX.js",
       "sha256": "152e8884c7f73cca0163f9d41caa171ce32029ac3ac92d9cacdab1afe1e414a2",
       "bytes": 586774
+    },
+    {
+      "path": "assets/index-CNk6SLOU.js",
+      "sha256": "4b9c0eb9be28ae5a4386d4ed83ffbd97b7d18772f2dfc544335ab3bbe67f70ab",
+      "bytes": 592564
     },
     {
       "path": "assets/index-D8tGPKra.css",
@@ -270,7 +320,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "2c9c243faaf89436f10a500b0d44abb5ff4b34a697e487a731fc9c1eea72b01d",
+      "sha256": "07b3b46a1fc0b0cec80082d4f23388e03f6c02fed1b8bf14ff5769a768d02d9e",
       "bytes": 877
     },
     {
