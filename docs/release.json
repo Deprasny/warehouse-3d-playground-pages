@@ -1,12 +1,12 @@
 {
-  "sourceCommit": "56d2b69a766070646fe1e83501532790e7a83285",
-  "sourceFingerprint": "3346f229d76718010943668890fa781219bcb2ad4a3d50a02c37cd0f42954d5f",
+  "sourceCommit": "aa02752b1086b2a238c3b6dfb566e31b6faf18f0",
+  "sourceFingerprint": "de59dad8e7107d23c84e88f09c6930a9c6ff8b3819b3796cd6b729b60158a8ef",
   "checks": {
-    "passed": 83,
-    "total": 83
+    "passed": 84,
+    "total": 84
   },
   "base": "/warehouse-3d-playground-pages/",
-  "builtAt": "2026-10-13T04:10:17.402379+00:00",
+  "builtAt": "2026-10-13T05:46:12.436931+00:00",
   "files": [
     {
       "path": ".nojekyll",
@@ -14,9 +14,19 @@
       "bytes": 0
     },
     {
+      "path": "assets/AssetCatalogPage-COiWOEsl.js",
+      "sha256": "b19b62410e1d8fb854a39ea04a215aeecd52acc3944c902a496bfac6f997c7c6",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-Cjr84Tzk.js",
       "sha256": "cad2b85ac633bb44807488d434a48b7241fce986eff112a5cdbe93b57275577d",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetThumbnail-Kob_q6oe.js",
+      "sha256": "5832f5cd85fef659476d1b624cfac43c2873282560cc494f9db5a76d13eb1007",
+      "bytes": 779807
     },
     {
       "path": "assets/AssetThumbnail-QyhmCEav.js",
@@ -34,13 +44,28 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-fFB8k6sI.js",
+      "sha256": "9a45e1fb85a250148c51bbe6cf35c63dc92bb0017a13375739afcfc125796688",
+      "bytes": 11982
+    },
+    {
       "path": "assets/ConsistsPage-BKUPBVvS.js",
       "sha256": "c327021c30a91315a521092da07464533a9a5eba55c74453c166b165a23f320b",
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-CpVJAL9G.js",
+      "sha256": "5d1d7e0583e34e97331a8ed9c5446f3ac3c7081c73c23f29f245370696eebbe1",
+      "bytes": 8448
+    },
+    {
       "path": "assets/DownloadSimple.es-BqDncxKq.js",
       "sha256": "959de61aa534e3bee003a1afe6ae674cced379cfc682b630da7407b4954b2a72",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-xY18WiPL.js",
+      "sha256": "bcbf8ce989287ba284d44f1e83ea21c6310a5990bff2355707e4de79eee5b93a",
       "bytes": 2061
     },
     {
@@ -54,9 +79,24 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-DzDPbHor.js",
+      "sha256": "fc79fc3d06a0d074510dbc1b70f685fb17931b88916e9deb6dbcad163b101347",
+      "bytes": 44396
+    },
+    {
       "path": "assets/GaugeReviewPage-MIGy7112.js",
       "sha256": "211700b64d39b6c04327ce2b728c144e8c0854509a4a913b0fe9ae396165c142",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-pUxyPM6L.js",
+      "sha256": "af57aee52c782245a7f675666d1afd49fb2992e0e791eba7072d5af12ebb7b93",
+      "bytes": 10822
+    },
+    {
+      "path": "assets/HudPreviewPanel-8niBBabQ.js",
+      "sha256": "9abc102630b1b5b2a4ad6240cfa4ac301dca413b792cdce1bd4599f804dabfab",
+      "bytes": 421
     },
     {
       "path": "assets/HudPreviewPanel-C_t6OEQb.js",
@@ -69,6 +109,21 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-fXD5vBM2.js",
+      "sha256": "495f96d2ad00579c3b1aa50d8479273cd7b54a586a47d1c4bb5fbb5b2b761a94",
+      "bytes": 13958
+    },
+    {
+      "path": "assets/brotli_dec_wasm_bg-BK3DOf3U.wasm",
+      "sha256": "79b29cb1790560f0a0f32b4a31d935e2782875e4a367fde23c81d986b327ec3f",
+      "bytes": 208439
+    },
+    {
+      "path": "assets/cc201-decoder.worker-ChVfWu9Y.js",
+      "sha256": "40a19e36b41cf8cdf4c910748d76a91e0e89fd27eef6d773e59b9cf507a68c83",
+      "bytes": 36743
+    },
+    {
       "path": "assets/index-B-j-o-MH.js",
       "sha256": "c3a9cd15d0bc8d02d17d6aa1acecec0906d12766d83d2824281f84134d0781d3",
       "bytes": 585072
@@ -77,6 +132,11 @@
       "path": "assets/index-D8tGPKra.css",
       "sha256": "6c6d3f963d3135a87ed260242caef164df2d663d09639b8e72107f1eb7878adc",
       "bytes": 59200
+    },
+    {
+      "path": "assets/index-ZbbQOOE9.js",
+      "sha256": "9cb36a99d89118fe5c19d24d48729f526bde03470dad3153fd1b2616a9ee2e57",
+      "bytes": 585072
     },
     {
       "path": "assets/meshopt_decoder.module-DXTYc6wn.js",
@@ -130,7 +190,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "e6e8c5e755cd96b3b963d8fee974bf5e97156c5422679baaa8ab4f622d9751db",
+      "sha256": "0d4486a60590fc9a116878d9a8a4086dfcbd566c6e248a4fdf118310f98be2c4",
       "bytes": 877
     },
     {
@@ -139,9 +199,19 @@
       "bytes": 5731
     },
     {
+      "path": "models/cc201-codec-license.txt",
+      "sha256": "e896322d037d6154296c5b3d1876a90977770704dd74799751f52f27e0483905",
+      "bytes": 1081
+    },
+    {
       "path": "models/cc201-game-high.glb",
       "sha256": "f35bbe873d04b1281cd5a20ad2e8e7a9ba203d55beea366885d4cc4882ada88f",
       "bytes": 15682576
+    },
+    {
+      "path": "models/cc201-game-lossless.bin",
+      "sha256": "50dba0aa426326274f09509025131db2a92a3fa22c97c97738c3d1ac324ba865",
+      "bytes": 6839615
     },
     {
       "path": "models/cc201-game-low.glb",
@@ -152,6 +222,11 @@
       "path": "models/cc201-game-medium.glb",
       "sha256": "9d0532d80b11fd29bc350236f1bfeb5bf2377e82bf115b4a95fe4359aa18ee41",
       "bytes": 8355852
+    },
+    {
+      "path": "models/cc201-lossless-pack-report.json",
+      "sha256": "4f20005b5d41b7473037d950c79b4bf14eab9869dc351eeeb1baeca2e904ec5e",
+      "bytes": 536
     },
     {
       "path": "models/cc201-warehouse-preview.glb",

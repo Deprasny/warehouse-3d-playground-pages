@@ -1,0 +1,23 @@
+{
+  "sourceBytes": 30642992,
+  "packedBytes": 6839615,
+  "glbBytes": 32732928,
+  "reduction": 0.7767967631881377,
+  "codec": "Brotli + exact shared tuples + meshopt index sequences",
+  "glbSha256": "81e5495261f5b86d8cd13d0f94f1913421ef9a4edf3f02fcd15c5c09bb9079af",
+  "packedSha256": "50dba0aa426326274f09509025131db2a92a3fa22c97c97738c3d1ac324ba865",
+  "variants": [
+    {
+      "detail": "high",
+      "scene": 0
+    },
+    {
+      "detail": "medium",
+      "scene": 1
+    },
+    {
+      "detail": "low",
+      "scene": 2
+    }
+  ]
+}
