@@ -1,6 +1,6 @@
 {
   "synthesized": {
-    "description": "Locomotive engines, horns, train and facility effects are synthesized locally using Web Audio. No Wikimedia train recordings are used."
+    "description": "Locomotive engines are silent. Moving trains use synthesized rail-joint knocks; horns and facility effects are synthesized locally using Web Audio. No Wikimedia train recordings are used."
   },
   "ambient": {
     "birds": {
