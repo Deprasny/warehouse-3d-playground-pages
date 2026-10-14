@@ -1,9 +1,9 @@
 {
-  "release": "riverside-time-weather-20261015",
+  "release": "riverside-auto-roster-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "aeecf755f923a53c1b2f4c0d9ae74744277db53611bada0dbc0916413a399033",
+  "sourceFingerprint": "7f0c442a7821357944a98276ee560f03ba4a0007680314b60b6eb20c27a3c0e5",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T17:02:21.304Z",
+  "builtAt": "2026-10-14T18:13:23.336Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,9 +20,8 @@
     "reason": "AGENTS.md requires explicit test consent; implementation and deployment authorization does not include tests."
   },
   "browserChecks": {
-    "status": "visual inspection",
-    "timeWeatherCaptures": 30,
-    "scope": "requested appearance calibration and missing-body diagnosis; no automated suite"
+    "status": "pending",
+    "scope": "focused Auto roster regression diagnosis; no automated suite"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -230,7 +229,38 @@
       "southCrossoverRoutingEnabled": true,
       "turnoutReadiness": true,
       "interlocking": "conservative full-journey lane reservations; crossovers lock both lanes",
-      "northStorageParkingEnabled": false
+      "northStorageParkingEnabled": false,
+      "autoRoster": {
+        "source": "built-in and saved collection",
+        "selection": "round-robin",
+        "preservesFormation": true,
+        "engines": [
+          "cc201",
+          "cc206"
+        ],
+        "carriages": [
+          "freight",
+          "passenger",
+          "tank",
+          "container"
+        ],
+        "maximumLiveTrains": 4,
+        "dispatchIntervalSeconds": 30,
+        "longFormationOperation": "pass",
+        "stopSpanLimit": 60,
+        "hiddenApproachSpanLimit": 188
+      },
+      "capacity": {
+        "southPlatformLength": 64,
+        "southLoopParallelLength": 64,
+        "southLoopToeSeparation": 116,
+        "builtInFormationSpanApprox": [
+          100,
+          101.2
+        ],
+        "maximumFormationSpanApprox": 111.7,
+        "limitation": "Toe separation includes branch curves; full formations cannot berth within the current clear loop/peron."
+      }
     },
     "trackPlan": {
       "revision": "V4",
@@ -474,6 +504,11 @@
     {
       "path": "assets/AssetCatalogPage-DfJwkjyZ.js",
       "sha256": "5f76def0fa63a13cb5c68058eaf40413a20e38d47b0b9c1ace23129c34cb4c39",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-DNFpeB3g.js",
+      "sha256": "03e0a5f833f1c51ff5a88fc087937ca2abcd292347f3f5960f4e4fd3701a04dd",
       "bytes": 24446
     },
     {
@@ -757,6 +792,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DyEQ0Rq3.js",
+      "sha256": "d77bcd72bb76764e0bd801f650dfec33dcb2803758f5c84abf895492bfe716e2",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-DYuFBd6h.js",
       "sha256": "0b9473df3bd08a880098c924db8263896f6daba09a5064a159635f9868cb6707",
       "bytes": 11982
@@ -794,6 +834,11 @@
     {
       "path": "assets/ConsistsPage-BKUPBVvS.js",
       "sha256": "c327021c30a91315a521092da07464533a9a5eba55c74453c166b165a23f320b",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-BL41W6uq.js",
+      "sha256": "9f9255704bb9c29576e7404041cbcb0d8c14a676c10cd340dd0ffcba508dfdfe",
       "bytes": 8448
     },
     {
@@ -967,6 +1012,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-D3PSAVok.js",
+      "sha256": "e0f9fe456f6f345c1ffe639de5e7d256670c6409b7df9bad9fe8039c9e459f4b",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-T87q4D4K.js",
       "sha256": "ecc611562ae2c44b6e057b958634074692b9fd9eb00af152d312bb8197de0aa2",
       "bytes": 40924
@@ -1004,6 +1054,11 @@
     {
       "path": "assets/DownloadSimple.es-BIaXvn8f.js",
       "sha256": "1f6704cd83120cd103051c73799a24077b23472cf2fb0c1939eb682a0a17017c",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-BLSPxvnZ.js",
+      "sha256": "632f8b26011d8584490d62f50e3d6ceb29945d299394bb9f6a2674ba4d21aa88",
       "bytes": 2061
     },
     {
@@ -1232,6 +1287,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-DytVz6T-.js",
+      "sha256": "6c74ea05520f9ef9fbb407b8806fa597995d6edab7907786271368644f5d9e3a",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-gXbQBNMo.js",
       "sha256": "09763ebf0f3bc3c86eb42bf5340c2c4273d585d55252c6d0b9d79449dd77d3cd",
       "bytes": 10822
@@ -1422,6 +1482,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-CD7a9ecS.js",
+      "sha256": "f2a13adc605975fd77983c4bebf390cd46e0988832c79eae367c7c345f061636",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-CE30ZZWx.js",
       "sha256": "f4dc20977a5a58a62cb2165969e3d0ee44f0cd7bc314f6e96942c8617539c0ff",
       "bytes": 421
@@ -1602,6 +1667,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-Ce0SdEqe.js",
+      "sha256": "9dacd6bb96cf891133edff842bf34b6b32d45bf8ca0fd4f5f52efca23cdc4125",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-CsrbFeJL.js",
       "sha256": "12bb321dab8c5a0f615a5e1d80499deb792292a60259e3558a6ba0fdf5ef1f87",
       "bytes": 13958
@@ -1772,6 +1842,11 @@
       "bytes": 777071
     },
     {
+      "path": "assets/index-Cu7PwFwE.js",
+      "sha256": "0059b40de4f088a6ae7cfbf6b446d569ba497550de39c92c1b1e9bd289821fd4",
+      "bytes": 777044
+    },
+    {
       "path": "assets/index-CVb2w6it.js",
       "sha256": "2ff57efe0943c26ca5e67833532c274f8cd88a7be907f670561fb5c3aa5dccd0",
       "bytes": 734792
@@ -1923,7 +1998,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "cd9ad392d4a37db13b672b2281088bff0c073f7bd4a915f436e09ce682edc718",
+      "sha256": "f7f6c17b520aa6f23cb6e7ed9dcfe85414e25670131da88f2230d10412da5c04",
       "bytes": 890
     },
     {
