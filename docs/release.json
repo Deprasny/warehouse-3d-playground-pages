@@ -1,9 +1,9 @@
 {
-  "release": "riverside-camera-tail-handoff-20261015",
+  "release": "riverside-four-car-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "e8fb3e1183c972edd9e1698a92ece2b7aa3e84ace64629ca419babacbc92a7c7",
+  "sourceFingerprint": "63f0dcca2063d75f7d0ee1217c5277e8a9444e304aba831fd2df1c1cfe0e679e",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T18:42:50.001Z",
+  "builtAt": "2026-10-14T18:53:25.270Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,8 +20,8 @@
     "reason": "AGENTS.md requires explicit test consent; implementation and deployment authorization does not include tests."
   },
   "browserChecks": {
-    "status": "pending",
-    "scope": "focused Auto roster regression diagnosis; no automated suite"
+    "status": "not_run_for_four_car_update",
+    "scope": "User requested no more routine browser testing; earlier focused observations saved separately."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -86,7 +86,7 @@
           4
         ],
         "facade": "south (+Z)",
-        "platformLength": 64,
+        "platformLength": 72,
         "model": "models/station-selatan.glb"
       },
       {
@@ -109,7 +109,8 @@
           3.35,
           -79.2
         ],
-        "model": "models/station-utara.glb"
+        "model": "models/station-utara.glb",
+        "platformLength": 78
       }
     ],
     "river": {
@@ -247,19 +248,21 @@
         "maximumLiveTrains": 4,
         "dispatchIntervalSeconds": 30,
         "longFormationOperation": "pass",
-        "stopSpanLimit": 60,
-        "hiddenApproachSpanLimit": 188
+        "stopSpanLimit": 68,
+        "hiddenApproachSpanLimit": 188,
+        "maximumWagons": 4,
+        "legacyCollection": "preserve IDs/names and ordered first four cars in memory; no storage writes on read"
       },
       "capacity": {
-        "southPlatformLength": 64,
-        "southLoopParallelLength": 64,
+        "southPlatformLength": 72,
+        "southLoopParallelLength": 72,
         "southLoopToeSeparation": 116,
-        "builtInFormationSpanApprox": [
-          100,
-          101.2
-        ],
-        "maximumFormationSpanApprox": 111.7,
-        "limitation": "Toe separation includes branch curves; full formations cannot berth within the current clear loop/peron."
+        "northPlatformLength": 78,
+        "singleLocoFourWagonsSpan": 55.832,
+        "doubleLocoFourWagonsSpan": 66.304,
+        "fourStoredWagonsSpan": 45.36,
+        "badugUsableLength": 65,
+        "limitation": "Physical fit only; staged overtaking block release and badug storage operations remain disabled."
       },
       "normalDirection": {
         "south": {
@@ -294,9 +297,9 @@
         "loopSouthZ": 63.4,
         "westToeX": -44,
         "eastToeX": 72,
-        "parallelFromX": -20,
-        "parallelToX": 44,
-        "platformLength": 64,
+        "parallelFromX": -24,
+        "parallelToX": 48,
+        "platformLength": 72,
         "platformZ": [
           48.6,
           52.9,
@@ -398,7 +401,9 @@
     },
     "viewportAwareClamp": true,
     "followHandoff": "after last car envelope clears visible map",
-    "stationaryFollowRetained": true
+    "stationaryFollowRetained": true,
+    "freePan": "locked at minimum zoom; opens progressively; full map target range at zoom 2.16",
+    "followPan": "viewport inset retained while the entire formation clears"
   },
   "terrainPreview": "terrain-preview.html",
   "terrain": {
@@ -574,6 +579,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-NpCIbZe9.js",
+      "sha256": "4713f5213eaeed5b89f07014a24ffa51fa72c841715c0bd2feb671d62798cbb2",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-qcyiq1Ix.js",
       "sha256": "7c9bedce13c0143ac14885829054d985af3b92b2175194e62b2feb91aa065da8",
       "bytes": 24446
@@ -587,6 +597,11 @@
       "path": "assets/AssetThumbnail-B1uRZWH0.js",
       "sha256": "0f7682df4e271988206d906cc237a914ff1ea0a8133a13ce520c05c012ce818c",
       "bytes": 798497
+    },
+    {
+      "path": "assets/AssetThumbnail-B63Kco88.js",
+      "sha256": "12500a669a64963da29597d9b2fbc08ef0982084820b820ef07892fb2aabbee0",
+      "bytes": 798426
     },
     {
       "path": "assets/AssetThumbnail-BLYdIKbZ.js",
@@ -759,6 +774,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-BQIgqB2p.js",
+      "sha256": "5c73a469ea29e264391db47edcb48fdd66ddadecfa0d57c09ada308f5782e584",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-BvBjZJB1.js",
       "sha256": "17f2788ce1ec6738d1c89936988d38eccda7fbf8b9d4368bd17835a57364e805",
       "bytes": 11982
@@ -861,6 +881,11 @@
     {
       "path": "assets/ConsistsPage-2azHfWMT.js",
       "sha256": "04f77fa0a40c337be161dd558dd46763fc1bb3d2cb0542657187d436e768b07e",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-B1pWdl2K.js",
+      "sha256": "34e246bbc238d85f166e7bfdb7e8b8322585f0b5579492475ba3bfa030b55098",
       "bytes": 8448
     },
     {
@@ -1074,6 +1099,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-OFCPMJlr.js",
+      "sha256": "a6b68dafe3a8b5d1bf8df6c6d1713d0aa07a36b620e766f72ff8eda6204bf022",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-qe6gOhBE.js",
       "sha256": "7881f4502715e4d87750542db2e0e4f2c549dd3cad66d9f09b8ce4f91e6687fd",
       "bytes": 40924
@@ -1194,6 +1224,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DLoqM-mS.js",
+      "sha256": "af583fe6d04bdd68c53e849d95e861421bd5673803931ef4bc2e9c04aa2f5d82",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-DQZbzG85.js",
       "sha256": "d18a1ad2700f4849ff97b946d42c441446485ee8abe5416cb1392201d2d49d82",
       "bytes": 2061
@@ -1276,6 +1311,11 @@
     {
       "path": "assets/GaugeReviewPage-BKatBdLa.js",
       "sha256": "c1f30f05b8842a9c574f227f0bd616bf392c92c66b1300550688112516349d32",
+      "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-BRD6vUT5.js",
+      "sha256": "9ddd8a2d67901bbcb319ac8b5ef263eac46495433a7a8de4d239ac7b372452cb",
       "bytes": 10825
     },
     {
@@ -1472,6 +1512,11 @@
       "path": "assets/GLTFLoader-C9px0ImY.js",
       "sha256": "94b5c693bb43de4ed525844779b29a0fc34126abe041cd7902ff0e7e7a04ec5d",
       "bytes": 44396
+    },
+    {
+      "path": "assets/GLTFLoader-Cn60xx-k.js",
+      "sha256": "11756bdb276f46f3f5767ca7acfb05e5be8cf4c2b72834f0f8e8fe5f82a860a6",
+      "bytes": 44394
     },
     {
       "path": "assets/GLTFLoader-CTrUBzYt.js",
@@ -1674,6 +1719,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-TKg3p-gs.js",
+      "sha256": "5989003b9e1cfff9b821b218f8e75bdc9aa40ed2d893da6d25be4800a8c5b5b6",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-w4q7w01g.js",
       "sha256": "d5e14566ca97537149ee2af167496fc666457530cd2b006c25f5a53b194b2a7c",
       "bytes": 421
@@ -1731,6 +1781,11 @@
     {
       "path": "assets/ImportedCc206Page-BIrNguSC.js",
       "sha256": "217defd44677ab17c981fbe96626bb9a6cc641cb29f235b98abfb967b4e8dcbb",
+      "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-BnLrYnrt.js",
+      "sha256": "b83e16b531986c4a24858c173d23bd22cbc0b5b1b54fa7c0df1eac9abf0c8242",
       "bytes": 13963
     },
     {
@@ -1984,6 +2039,11 @@
       "bytes": 600551
     },
     {
+      "path": "assets/index-Dn51gkuz.js",
+      "sha256": "3d4d5164230a5a9721029789cda9dcd343805a19d069f24a661f416ac64c5fec",
+      "bytes": 783841
+    },
+    {
       "path": "assets/index-Dv7hS-WD.css",
       "sha256": "dcf64938e64d4954cca09343079e7a7d9c585e9a3c5013899244893114eb2d9e",
       "bytes": 59224
@@ -2115,7 +2175,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "8038e1bc1aa3ccc6cdfe497660d28ee1aebe93236085ed97149706f4399f5d87",
+      "sha256": "23f4fbe4f5cc90036128356918122c58f3c5d83465bd91adc130c6af17e7b63c",
       "bytes": 890
     },
     {
@@ -2726,7 +2786,8 @@
       "straight": 9,
       "branch": 4.5
     },
-    "tailProtection": "full journey locks retained after aspect returns red behind leading end"
+    "tailProtection": "full journey locks retained after aspect returns red behind leading end",
+    "exitPosition": "shared peron center +/- (peronLength/2 + 3)"
   },
   "artificialLighting": {
     "buildings": {
