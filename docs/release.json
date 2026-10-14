@@ -1,9 +1,9 @@
 {
-  "release": "riverside-headway-20261015",
+  "release": "riverside-cinematic-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "fa7d4a945d84fe032553fe9415b2e46715295cdb0c92956adad924ce96755b9e",
+  "sourceFingerprint": "957abc872229344be34596a73418693f857cefca0b8706bbbc5394d0e548ddb6",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T19:49:10.231Z",
+  "builtAt": "2026-10-14T19:57:52.278Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -21,7 +21,7 @@
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "User explicitly requested build and deploy only."
+    "scope": "Build and deployment only, per ongoing user preference."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -605,6 +605,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-P5KPCFTO.js",
+      "sha256": "57629bd4c0d68a0e4f3046c90261e8d3ae016b610a51adb24c13656491552f45",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-qcyiq1Ix.js",
       "sha256": "7c9bedce13c0143ac14885829054d985af3b92b2175194e62b2feb91aa065da8",
       "bytes": 24446
@@ -870,6 +875,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DvJ9W4wp.js",
+      "sha256": "5f16801247a8f26d0936d9ca663a0a3a0247bf220b0838a78bbfcb170e1b2b6c",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-Dx_P2Ge2.js",
       "sha256": "f9a3f6ff75e8683c993872aa37be9d2d1b80212f6145e6972260904bdd7bf7b9",
       "bytes": 11982
@@ -1085,6 +1095,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-WAtPFu4W.js",
+      "sha256": "cd36edd794079b587f46ef8176f65cbe358c70d818c68f9f89998bd29414798f",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-ZdxcRYpI.js",
       "sha256": "8b58dc9e66d7a77e223790fa71954a8d9bb5c3026f2b2ab07532188d3b4a0657",
       "bytes": 8448
@@ -1092,6 +1107,11 @@
     {
       "path": "assets/diorama-postprocessing-B1oTgmMR.js",
       "sha256": "463b1d4a95c1cc9c48d19fa823f659b5f57c3ca56d7a111456ae948ac5f700cb",
+      "bytes": 40924
+    },
+    {
+      "path": "assets/diorama-postprocessing-BEI3L2K0.js",
+      "sha256": "15a90336fe330ae489376c28afb442fa469813c10d17b860b7efeb97be445e31",
       "bytes": 40924
     },
     {
@@ -1235,6 +1255,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-C9LYz7m7.js",
+      "sha256": "6f8a999a367d86d1b60da25ef65b73c987ec327cb792a602e1768bf5d2872ccd",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-CAo5ZrUt.js",
       "sha256": "5c9f7beb66103b5f6c685dbfaa6a722af27d9f5e18b3859e20e366117a93ed58",
       "bytes": 2061
@@ -1347,6 +1372,11 @@
     {
       "path": "assets/GaugeReviewPage-2pfeHBB9.js",
       "sha256": "293c776375071ef8f571367ba762652a0c9c9ad4d9e0bee23c558237b332c88d",
+      "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-3XlliPX0.js",
+      "sha256": "6b31264b9b12d6f88a351ea9ea93aca52ad05034f72ed97eba2bcaf9d124769e",
       "bytes": 10825
     },
     {
@@ -1815,8 +1845,18 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-y9cw1Qql.js",
+      "sha256": "6318c02c280f393f5c0be87a1ec7e89ccb3adb8a0287e5b44c0b71d80679efdd",
+      "bytes": 421
+    },
+    {
       "path": "assets/ImportedCc206Page-1ZXZUWU4.js",
       "sha256": "2aa99e5e2d85b770f76d2f2efd934c929244aa9d6e7eae1b9d75a80fa3d25121",
+      "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-5I_yAlwV.js",
+      "sha256": "678165358a6e7975491d541269900b2c22818565fec0b1ecd26b441827085c75",
       "bytes": 13963
     },
     {
@@ -2070,6 +2110,11 @@
       "bytes": 752502
     },
     {
+      "path": "assets/index-C4n99HSt.css",
+      "sha256": "e1df671e0de36305834820cb9b3c40941aae3f144f1379632d9f44fa8631664b",
+      "bytes": 59573
+    },
+    {
       "path": "assets/index-CB5H3k2w.js",
       "sha256": "86b47deaa4d21f4fdab8a379ba7fbc9a93c6b8ad2fa8387d3538b9ab8c2a20d9",
       "bytes": 777107
@@ -2078,6 +2123,11 @@
       "path": "assets/index-CFgDzykG.js",
       "sha256": "bd2c88e3c6e4ab502101b42dadeb52444596d95a2324c228acf1ae24f2ab0e1e",
       "bytes": 762476
+    },
+    {
+      "path": "assets/index-CGqyE2J2.js",
+      "sha256": "05658284c03f897abf34fc513cdb7b45bb8e6d72294cf4a2723900812a6c462a",
+      "bytes": 804185
     },
     {
       "path": "assets/index-CI7k24M3.js",
@@ -2276,7 +2326,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "bd47c0fd15cb32d2eca49680e142fcaf1fab8de3698a447c4bb642a965166983",
+      "sha256": "d4192f9e5a1faff1fbc3777e247007e781201509fa9b9b6f506b864f7e682631",
       "bytes": 890
     },
     {
@@ -2928,5 +2978,25 @@
     "now": "require destination route through next head or planned stop before entry; keep future route authority after passing pole",
     "sharedModule": "rail/riverside-signal-reservation",
     "simulationChecks": "not run; user chose build and deploy"
+  },
+  "cinematicHud": {
+    "defaultEnabled": true,
+    "idleMs": 5000,
+    "fadeMs": 300,
+    "persistentPreference": true,
+    "wake": [
+      "pointer move",
+      "pointer down/touch",
+      "wheel",
+      "keyboard",
+      "window focus"
+    ],
+    "keyboardAndEditingProtected": true,
+    "dragProtected": true,
+    "hiddenControlsInert": true,
+    "panelsRemainMounted": true,
+    "simulationAndCameraContinue": true,
+    "reducedMotionSupported": true,
+    "loadingAndExternalBrowserProtected": true
   }
 }
