@@ -1,9 +1,9 @@
 {
-  "release": "riverside-diorama-railway-20261014",
+  "release": "riverside-double-track-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "2cac650f10ac43e7d47b4bc8c7cff216b2dc9900362d9f2d74132615b8a8d875",
+  "sourceFingerprint": "9fc46ed6fb0157d9e6421b3afae0a929113f60393eea6887e01b26b333381e77",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T13:14:57.796Z",
+  "builtAt": "2026-10-14T14:06:02.594Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -50,7 +50,7 @@
   },
   "map": {
     "id": "riverside",
-    "mode": "two-station-preview",
+    "mode": "double-track",
     "visibleSize": [
       200,
       200
@@ -72,17 +72,41 @@
         "name": "Stasiun Selatan",
         "position": [
           28,
-          0,
-          55
-        ]
+          0.35,
+          69
+        ],
+        "tracks": 4,
+        "front": [
+          1,
+          2
+        ],
+        "rear": [
+          3,
+          4
+        ],
+        "model": "models/station-selatan.glb"
       },
       {
         "name": "Stasiun Utara",
         "position": [
           28,
-          3,
-          -55
-        ]
+          3.35,
+          -69
+        ],
+        "tracks": 3,
+        "front": [
+          1,
+          2
+        ],
+        "rearStorage": [
+          3
+        ],
+        "buffer": [
+          82,
+          3.35,
+          -79.2
+        ],
+        "model": "models/station-utara.glb"
       }
     ],
     "river": {
@@ -91,10 +115,12 @@
       "flow": "west-east"
     },
     "bridge": {
-      "x": -74,
-      "fromZ": 16,
-      "toZ": -16,
-      "tracks": 1
+      "x": -76.1,
+      "fromZ": 18,
+      "toZ": -18,
+      "tracks": 2,
+      "deckWidth": 8.2,
+      "style": "matte bowstring side trusses and masonry abutments"
     },
     "curveRadius": 24,
     "northHeight": 3,
@@ -110,8 +136,42 @@
       "houses": 9,
       "stations": {
         "count": 2,
-        "construction": "procedural Three.js",
-        "appearance": "cream plaster, timber frames, layered terracotta tiles, veranda and tiled canopy"
+        "construction": "Blender via MCP",
+        "source": "station concepts V01",
+        "exports": [
+          {
+            "id": "station-utara",
+            "file": "station-utara.glb",
+            "bytes": 1245240,
+            "triangles": 16088,
+            "materials": 2,
+            "textures": 0,
+            "dimensionsBlenderXYZ": [
+              26.9,
+              10.815,
+              6.275
+            ],
+            "upAxis": "Y",
+            "facadeDirectionGLTF": "+Z",
+            "windows": "separate material for night emission"
+          },
+          {
+            "id": "station-selatan",
+            "file": "station-selatan.glb",
+            "bytes": 1291008,
+            "triangles": 16388,
+            "materials": 2,
+            "textures": 0,
+            "dimensionsBlenderXYZ": [
+              33.3,
+              13.525,
+              7.22
+            ],
+            "upAxis": "Y",
+            "facadeDirectionGLTF": "+Z",
+            "windows": "separate material for night emission"
+          }
+        ]
       },
       "railway": {
         "gauge": "existing calibrated gauge",
@@ -145,7 +205,34 @@
     "traffic": {
       "automaticTrains": 2,
       "wagonsPerTrain": 4,
-      "singleSection": true
+      "singleSection": false,
+      "mainTracks": 2,
+      "independentDirectionalBlocks": true,
+      "rearShuntingEnabled": false
+    },
+    "trackPlan": {
+      "spacing": 4.2,
+      "frontZ": {
+        "south": [
+          55,
+          59.2
+        ],
+        "north": [
+          -55,
+          -59.2
+        ]
+      },
+      "rearZ": {
+        "south": [
+          79.2,
+          83.4
+        ],
+        "north": [
+          -79.2
+        ]
+      },
+      "storageStraightLength": 70,
+      "storageUsableNominal": 65
     }
   },
   "vegetation": {
@@ -175,14 +262,14 @@
     "focusPoints": {
       "south": [
         28,
-        55
+        69
       ],
       "north": [
         28,
-        -55
+        -69
       ],
       "bridge": [
-        -74,
+        -76.1,
         0
       ]
     }
@@ -263,6 +350,11 @@
     {
       "path": "assets/AssetCatalogPage-CpUsHbyf.js",
       "sha256": "734844e43ac184cdbc8e0d462f0e41a057d908dc4ffb23fd765a78cc243e08ef",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-CUYN6Jqz.js",
+      "sha256": "ea4b80551c0efd1e1064093719b84c4b44df36ad4de37f9a8b285aaac85e1236",
       "bytes": 24446
     },
     {
@@ -506,6 +598,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-C9VfDSM3.js",
+      "sha256": "5388a4420e7fead96e22efde6410e16e0d65510ec1d3b4f70a91af3fb28d0e12",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-CBK7S2mi.js",
       "sha256": "66be178fb411cf5f53627018900aa54fee8df2ee99dd51a773b30c1946447101",
       "bytes": 11982
@@ -601,6 +698,11 @@
       "bytes": 8443
     },
     {
+      "path": "assets/ConsistsPage-D4rYesIy.js",
+      "sha256": "17346a718aca1ead7be58c84a342d624985cb22bfee6fd124d95181be025f0e2",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-Dam5vk_b.js",
       "sha256": "04e4192b89fbf6b757c1c4eef18c99a2c6ac6d86f27b5e83aaf0dca943035e4f",
       "bytes": 8448
@@ -666,6 +768,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-CKj4PqRo.js",
+      "sha256": "1bd041212ad67614aa2a10adfa094d562f0f9b8043f76057a420e28727dc3c5d",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-CwE313qY.js",
       "sha256": "673c9924d21891e0dfa3c0c9d353cfcb46be602a6097f3c49c200fd09730e6de",
       "bytes": 40924
@@ -723,6 +830,11 @@
     {
       "path": "assets/DownloadSimple.es-CM_3U2Hh.js",
       "sha256": "c1247eb519892606978e11a52d531760d13347bfc80c69395c60a63f5b3a2018",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-CNKDpQ-2.js",
+      "sha256": "b9304c05fd9b4264b5f02b710588baa7dd41d37bca16854fa4362493609377d5",
       "bytes": 2061
     },
     {
@@ -891,6 +1003,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-miNmJoO0.js",
+      "sha256": "2ddc1f7a276665dfa5d723a38dcf4a861b37d8831a38c795542e70c781510136",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-pUxyPM6L.js",
       "sha256": "af57aee52c782245a7f675666d1afd49fb2992e0e791eba7072d5af12ebb7b93",
       "bytes": 10822
@@ -1016,6 +1133,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-BcLzAtHf.js",
+      "sha256": "1d1c7ce308d04901151c75f06cb40a7b210549d5d8e2313709809d1b2a37386e",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-BJG42N6r.js",
       "sha256": "e33bc3a368621225ceb07d77d7082fd415a65d96a6e1d832c9b606f77768a94e",
       "bytes": 421
@@ -1119,6 +1241,11 @@
       "path": "assets/HudPreviewPanel-w4q7w01g.js",
       "sha256": "d5e14566ca97537149ee2af167496fc666457530cd2b006c25f5a53b194b2a7c",
       "bytes": 421
+    },
+    {
+      "path": "assets/ImportedCc206Page-1ZXZUWU4.js",
+      "sha256": "2aa99e5e2d85b770f76d2f2efd934c929244aa9d6e7eae1b9d75a80fa3d25121",
+      "bytes": 13963
     },
     {
       "path": "assets/ImportedCc206Page-8SccP7cF.js",
@@ -1286,6 +1413,11 @@
       "bytes": 634672
     },
     {
+      "path": "assets/index-BTWV0U60.js",
+      "sha256": "00e93137b1aa26701768f24b0fa65eae85d4f8584f0253fdd233cd4b7991d979",
+      "bytes": 760544
+    },
+    {
       "path": "assets/index-BZKIMRr9.js",
       "sha256": "050b136e7b8aebe31f8f5641dc00795ef5cebde9060e652c070de2f781d9f063",
       "bytes": 752502
@@ -1447,7 +1579,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "180dcaa5361cddc7faf409d18779ad2f73e6374b2a09c0bb680f220a1841d45f",
+      "sha256": "756f5ba48a69a4b9bbb3fb6f1525f5eb01284ad160f9a16b2ba494701b36544a",
       "bytes": 890
     },
     {
@@ -1726,6 +1858,21 @@
       "bytes": 912132
     },
     {
+      "path": "models/riverside-station-export.json",
+      "sha256": "71822e84b07eba7635150dcb20368132431ca7cc8a3b84a0b3e74e8a88f212f0",
+      "bytes": 675
+    },
+    {
+      "path": "models/station-selatan.glb",
+      "sha256": "134d40409aa9e5886ad13ba520285e52e76304d758b6bb798e15713d8f2a4e81",
+      "bytes": 1291008
+    },
+    {
+      "path": "models/station-utara.glb",
+      "sha256": "d0dada84b604366623dcafbef93da30acb455bd6cca1c205d9f57f749ce4bf48",
+      "bytes": 1245240
+    },
+    {
       "path": "models/tree-0-blue.glb",
       "sha256": "b7bb0245f103527d8880c77240bca8d2824e3e1a8ae6bd823611dd0c076572af",
       "bytes": 5255292
@@ -1795,5 +1942,15 @@
       "sha256": "acdc7ec59d939b13bbf0c6796b7a6bb41fb40eb335d2682ce987d54bf78fbfa4",
       "bytes": 2316
     }
-  ]
+  ],
+  "atmosphere": {
+    "style": "central diorama profile",
+    "minimumAmbient": 0.55,
+    "wetGroundRoughness": 0.78,
+    "windowMaterial": "separate emission-enabled vertex paint",
+    "lampLensHeights": [
+      4.67,
+      7.67
+    ]
+  }
 }

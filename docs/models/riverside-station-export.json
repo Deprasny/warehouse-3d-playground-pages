@@ -1,0 +1,34 @@
+[
+  {
+    "id": "station-utara",
+    "file": "station-utara.glb",
+    "bytes": 1245240,
+    "triangles": 16088,
+    "materials": 2,
+    "textures": 0,
+    "dimensionsBlenderXYZ": [
+      26.9,
+      10.815,
+      6.275
+    ],
+    "upAxis": "Y",
+    "facadeDirectionGLTF": "+Z",
+    "windows": "separate material for night emission"
+  },
+  {
+    "id": "station-selatan",
+    "file": "station-selatan.glb",
+    "bytes": 1291008,
+    "triangles": 16388,
+    "materials": 2,
+    "textures": 0,
+    "dimensionsBlenderXYZ": [
+      33.3,
+      13.525,
+      7.22
+    ],
+    "upAxis": "Y",
+    "facadeDirectionGLTF": "+Z",
+    "windows": "separate material for night emission"
+  }
+]
