@@ -1,9 +1,9 @@
 {
-  "release": "riverside-diorama-kit-20261014",
+  "release": "riverside-diorama-render-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "0d13ac904053b0849cc2b6a7c3d58edcb41804e4ac36e3be5dadb19018a2b10e",
+  "sourceFingerprint": "1b41512aa35fcf9a5a6b55d1f74cff672cc9d12140a52e320e3abbdb2df0449e",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T12:35:46.099Z",
+  "builtAt": "2026-10-14T12:57:36.229Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -109,7 +109,7 @@
       "bytes": 912132,
       "houses": 9,
       "instancing": "per asset per map quadrant",
-      "rendering": "AgX, warm daylight, matte materials, lightweight contact shading"
+      "rendering": "AgX exposure 1.06, directional daylight 3.15, hemisphere 1.0, fill 0.35; Auto default with sun shadows; High MSAA 4x and GTAO 60% resolution capped at 1280 pixels, radius 1.2m, intensity 0.45; Light direct rendering"
     },
     "terrainPalette": {
       "grass": "#91b96c",
@@ -268,6 +268,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-DfJwkjyZ.js",
+      "sha256": "5f76def0fa63a13cb5c68058eaf40413a20e38d47b0b9c1ace23129c34cb4c39",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-DOEcNEV9.js",
       "sha256": "7fcc0a60422efe2ad9952d6d7d2c5ba93f2b681147e9fafeeb2814f9e69ff03a",
       "bytes": 24446
@@ -353,6 +358,11 @@
       "bytes": 798006
     },
     {
+      "path": "assets/AssetThumbnail-DEmSpwRs.js",
+      "sha256": "7c24036b5272395d4df672615b018f600b0deaf128e26be8d730c030fd83b56b",
+      "bytes": 798417
+    },
+    {
       "path": "assets/AssetThumbnail-Dy_PlIrH.js",
       "sha256": "906fb462d670b33dc850f9886dfd2b360539fb8a0d463ca2a6514a4cccf77ff3",
       "bytes": 792158
@@ -371,6 +381,11 @@
       "path": "assets/brotli_dec_wasm_bg-BK3DOf3U.wasm",
       "sha256": "79b29cb1790560f0a0f32b4a31d935e2782875e4a367fde23c81d986b327ec3f",
       "bytes": 208439
+    },
+    {
+      "path": "assets/BufferGeometryUtils-BPi_9ICY.js",
+      "sha256": "7a5a212fb38891c8c27afc7844abc03b7c05202ddd03a7d29426a18fdef10033",
+      "bytes": 4752
     },
     {
       "path": "assets/BufferGeometryUtils-D_K8gBps.js",
@@ -416,6 +431,11 @@
       "path": "assets/Cc206ReviewPage-BdHhn5kM.js",
       "sha256": "0f738677373d8274f7c1c56398b173f54c7eac6b92a326e7aa457d7a24546d57",
       "bytes": 11977
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BhGXjc6Z.js",
+      "sha256": "8f66aca9a7d6edb43d89fbcb3951ad2ebf0b133931f54f08fcca87bdaa9d6292",
+      "bytes": 11982
     },
     {
       "path": "assets/Cc206ReviewPage-BHhUN2IS.js",
@@ -513,6 +533,11 @@
       "bytes": 8443
     },
     {
+      "path": "assets/ConsistsPage-BsXhLRNO.js",
+      "sha256": "aba1009d65419e29e333fb61b8c5df4e39ba1814bd546d9b3acd7776545cf0ae",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-BWTYk8CZ.js",
       "sha256": "98640af25a6a74bb189ffbe426caa09853c26ca33f3d5a434cd27cb2434d60ec",
       "bytes": 8448
@@ -596,6 +621,16 @@
       "path": "assets/ConsistsPage-ZdxcRYpI.js",
       "sha256": "8b58dc9e66d7a77e223790fa71954a8d9bb5c3026f2b2ab07532188d3b4a0657",
       "bytes": 8448
+    },
+    {
+      "path": "assets/diorama-postprocessing-CwE313qY.js",
+      "sha256": "673c9924d21891e0dfa3c0c9d353cfcb46be602a6097f3c49c200fd09730e6de",
+      "bytes": 40924
+    },
+    {
+      "path": "assets/DownloadSimple.es-0hhsaX4O.js",
+      "sha256": "728cd1e4da15b2f0f493fefa6898f4df6c54d4974891e814b3c0efe46c35b6de",
+      "bytes": 2061
     },
     {
       "path": "assets/DownloadSimple.es-b3x6h5e4.js",
@@ -773,6 +808,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-D7VjjaHD.js",
+      "sha256": "3eb6ee2b50fdcac44ad68aae357d39968e5bf218739993ce7f2c7dee0aa04d8b",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-DvsJ_Aw1.js",
       "sha256": "01ad8d60c0f231d6d381990a896f7f5bd60e4deeb8046637e11e165b8f823160",
       "bytes": 10817
@@ -810,6 +850,11 @@
     {
       "path": "assets/GLTFExporter-BNjNMp04.js",
       "sha256": "780c83f610f6584f82efcab5d0c4c5b624cd96f1adcb3b728a8e2632852a1072",
+      "bytes": 36784
+    },
+    {
+      "path": "assets/GLTFExporter-Dztwbq43.js",
+      "sha256": "d255f60d13ea8ac37bef6b24c8d71036cfafcb24cbdf4da7d5d4a99eb3e15b60",
       "bytes": 36784
     },
     {
@@ -878,6 +923,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-DHiDjUc-.js",
+      "sha256": "cec358433c82e608f3e3045483d4fb882110c51b2874702f80a6d1c96f34b389",
+      "bytes": 44394
+    },
+    {
       "path": "assets/GLTFLoader-DIo4VCB6.js",
       "sha256": "88654e4bfd1e77fddc9999245ee9bf36075bd500627f8bab201f6c4c0e3ffc12",
       "bytes": 44396
@@ -900,6 +950,11 @@
     {
       "path": "assets/HudPreviewPanel-8niBBabQ.js",
       "sha256": "9abc102630b1b5b2a4ad6240cfa4ac301dca413b792cdce1bd4599f804dabfab",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BbascsDA.js",
+      "sha256": "8c7a78e2fb6f6b0933d2036f663320111554da36cb7b8900cbc34a504f498f9e",
       "bytes": 421
     },
     {
@@ -1021,6 +1076,11 @@
       "path": "assets/ImportedCc206Page-BgEWxGTK.js",
       "sha256": "70ebc5b8b8d49a4a5ac40f80bcbdc5cb0e1b0d5a5ea2f33786afb9a8a0b4235d",
       "bytes": 14005
+    },
+    {
+      "path": "assets/ImportedCc206Page-Bh_NQnYt.js",
+      "sha256": "e81807dc053e721d8afeccdc03d713e188910e64788d0402b005a34b29d40b59",
+      "bytes": 13963
     },
     {
       "path": "assets/ImportedCc206Page-BHKJenjH.js",
@@ -1193,6 +1253,11 @@
       "bytes": 586774
     },
     {
+      "path": "assets/index-jUXURaGz.js",
+      "sha256": "4e6bbbeef4058d99dae6101c44b9a7ca206e85e4b299fcd252308b309aee3c03",
+      "bytes": 747427
+    },
+    {
       "path": "assets/index-PQGmcJX-.js",
       "sha256": "5395d34e063767f832e255c162eea878d7c3793dfe3fe1ba2cf81255753954ff",
       "bytes": 610333
@@ -1253,6 +1318,11 @@
       "bytes": 2424
     },
     {
+      "path": "assets/three.core-C-PyFkKG.js",
+      "sha256": "d93e8eb70eb9bec2046bb89e04a292496883a0ff73344f7fee9bd06ef8cc7f2d",
+      "bytes": 262650
+    },
+    {
       "path": "assets/three.core-CoYdGzU1.js",
       "sha256": "d8fcf6baff64defe54c16ff97ed02467dfdded7fdeb4589fe06b9b39e3c51563",
       "bytes": 260694
@@ -1304,7 +1374,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "11eaf0818e38fd861dd6de5bd179832badc0fc77e293d5720b727e93921d249e",
+      "sha256": "b16a752fec8671216c4c46f523925ebe25fadb5b24ea17fce9dda3f051d884e0",
       "bytes": 890
     },
     {
