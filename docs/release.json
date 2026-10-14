@@ -1,9 +1,9 @@
 {
-  "release": "riverside-200-old-cc206-20261014",
+  "release": "riverside-two-stations-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "fd1910f9f64965fccb62c666eddf4364fdbe0b5fcd29a667be82585e65df20cf",
+  "sourceFingerprint": "1df1b7254a515fcb7e64a22dc5439b3e20c3ce023ca210c3a325f594410eaad2",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T10:30:45.676Z",
+  "builtAt": "2026-10-14T11:28:08.115Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -50,6 +50,7 @@
   },
   "map": {
     "id": "riverside",
+    "mode": "two-station-preview",
     "visibleSize": [
       200,
       200
@@ -61,16 +62,56 @@
       "maxZ": 100
     },
     "simulationBounds": {
-      "minX": -320,
-      "maxX": 180,
+      "minX": -100,
+      "maxX": 230,
       "minZ": -100,
-      "maxZ": 240
+      "maxZ": 100
     },
+    "stations": [
+      {
+        "name": "Stasiun Selatan",
+        "position": [
+          28,
+          0,
+          55
+        ]
+      },
+      {
+        "name": "Stasiun Utara",
+        "position": [
+          28,
+          3,
+          -55
+        ]
+      }
+    ],
+    "river": {
+      "width": 22,
+      "waterY": -1.25,
+      "flow": "west-east"
+    },
+    "bridge": {
+      "x": -74,
+      "fromZ": 16,
+      "toZ": -16,
+      "tracks": 1
+    },
+    "curveRadius": 24,
+    "northHeight": 3,
+    "southHeight": 0,
+    "terrain": "procedural grass and river banks",
     "disabledModules": [
       "bbm-yard",
-      "locomotive-depot"
+      "locomotive-depot",
+      "cargo-port",
+      "wagon-siding",
+      "old-city"
     ],
-    "sidingMode": "static"
+    "traffic": {
+      "automaticTrains": 2,
+      "wagonsPerTrain": 4,
+      "singleSection": true
+    }
   },
   "vegetation": {
     "model": "models/jacaranda-game.glb",
@@ -90,6 +131,22 @@
     "minZoom": {
       "riverside": 1.4,
       "mini-station": 1.1
+    },
+    "initialZoom": 1.2,
+    "fullMapOverview": true,
+    "focusPoints": {
+      "south": [
+        28,
+        55
+      ],
+      "north": [
+        28,
+        -55
+      ],
+      "bridge": [
+        -74,
+        0
+      ]
     }
   },
   "terrainPreview": "terrain-preview.html",
@@ -166,6 +223,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-CW1VYQAQ.js",
+      "sha256": "b971ce1a057f92355d10b55383a2b0ba6a2f29b38841ca3c3806beec8c17ac0b",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-d4A7ZVtj.js",
       "sha256": "12701ec2111a8a4ee8a700d9167d43cd3ce116fc4852b6be6a57d8074b531fc2",
       "bytes": 24446
@@ -204,6 +266,11 @@
       "path": "assets/AssetThumbnail-B1uRZWH0.js",
       "sha256": "0f7682df4e271988206d906cc237a914ff1ea0a8133a13ce520c05c012ce818c",
       "bytes": 798497
+    },
+    {
+      "path": "assets/AssetThumbnail-BLYdIKbZ.js",
+      "sha256": "a203ae7ec2c3635f86c746eabc3fdddec1b215db6fba107e7a403a8ae9d1530b",
+      "bytes": 798453
     },
     {
       "path": "assets/AssetThumbnail-BS5tdPV-.js",
@@ -316,6 +383,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-BMHdAxYv.js",
+      "sha256": "030b1a68be13ffa6b49d2cec2429bf6b2fb0f5f45ac006bc35b1092b1ac6a8eb",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-BNuK_zyR.js",
       "sha256": "0b56cdc4c91e7c45bf396d329fb7bfa2bb173b86fd199f7921f68cf9f785a785",
       "bytes": 11982
@@ -413,6 +485,11 @@
     {
       "path": "assets/ConsistsPage-CuernzGn.js",
       "sha256": "0511f077ad03f736afbf5542b4e0f1df82836f867f9b4ab2da10c8ef04f27bd9",
+      "bytes": 8443
+    },
+    {
+      "path": "assets/ConsistsPage-Dcd1g0uU.js",
+      "sha256": "923d7f1b033a862240767b80097c35d8e8ca8e9c9a6f0a25f9a8b63bdfa2899a",
       "bytes": 8443
     },
     {
@@ -526,6 +603,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DzE4FrcB.js",
+      "sha256": "8e0044bd767d47db58e95d8281e8af02cdf88d4ae715b908ecae73dc8b8a72e2",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-gpUjnyko.js",
       "sha256": "9b710a18ad502e3661b8712e87a5d1a276d198808e3a3a1b1fc505d58cf82a7f",
       "bytes": 2061
@@ -584,6 +666,11 @@
       "path": "assets/GaugeReviewPage-BZ248rSW.js",
       "sha256": "7c9eb7864d41238944865b1fec46bc9c60a52c2b4a99d6aeb7fe8dc668f718cc",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-C4EB8YFQ.js",
+      "sha256": "e0b79e259f62da68c4a524aedea2770c137971abdedf95f052df2f8642642fa1",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-CbNCgCrf.js",
@@ -686,6 +773,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-CTrUBzYt.js",
+      "sha256": "5a4c2869d914c8a99ff97cc823ed2d555a31c16584290f292159c8b361633304",
+      "bytes": 44396
+    },
+    {
       "path": "assets/GLTFLoader-Ddm7y4pU.js",
       "sha256": "2b0d2d331dd82a6dc95a59ace92908039f48401fdc0d7e19914ff28ad5410c61",
       "bytes": 44396
@@ -773,6 +865,11 @@
     {
       "path": "assets/HudPreviewPanel-DfhsuCxE.js",
       "sha256": "e1f581c92b71a3f52d417b18ee4c7499f03197a18ebfe2d5ef6606db71787e03",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-DGswyNfC.js",
+      "sha256": "c41acdf949d22b8aab34e8e03fb3d3cebea235bba698fb9a03bc5e7d1eb35de8",
       "bytes": 421
     },
     {
@@ -891,6 +988,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-IDKs1N02.js",
+      "sha256": "bcf07fedd304b91bcabf70635fd14053d9d7c63970fe102f1b231c5fb1ac4d58",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-J7tdelCo.js",
       "sha256": "bad833e22377c3a3401df1993541faf8bcae2c97f919988039293a289e930648",
       "bytes": 13958
@@ -899,6 +1001,11 @@
       "path": "assets/index-3H24Mfi8.js",
       "sha256": "690220c79601a27bd4095fabf954010a2dc7e3c7bcaa2b45e9a2046ce4c89c86",
       "bytes": 640849
+    },
+    {
+      "path": "assets/index-aHRQ1-VX.js",
+      "sha256": "875c5b0055219c2868ec9aaf4507369c36d302a32b86f0ccececafe8b21bb68a",
+      "bytes": 738839
     },
     {
       "path": "assets/index-B-j-o-MH.js",
@@ -1072,7 +1179,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "184f40175c8119bdebf939f229f2c5226fffeaf502648580e0181a3bf6703cd6",
+      "sha256": "069ba4457569b88878ddebad93222c0a2cf0693d019ae3f37147a2d0b525f334",
       "bytes": 890
     },
     {
