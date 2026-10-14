@@ -1,9 +1,9 @@
 {
-  "release": "riverside-south-layout-v4-20261014",
+  "release": "riverside-main-map-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "7f5131a1c50848a88040514498fc9233362a63b854e4762373ff9ed02464565e",
+  "sourceFingerprint": "8583463cc973b1030e14fed7d6eaf970e0029ba435313032fdfa5360a1010bb3",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T14:42:01.365Z",
+  "builtAt": "2026-10-14T15:18:36.552Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -50,7 +50,7 @@
   },
   "map": {
     "id": "riverside",
-    "mode": "double-track-south-layout-v4",
+    "mode": "main-game",
     "visibleSize": [
       200,
       200
@@ -63,7 +63,7 @@
     },
     "simulationBounds": {
       "minX": -100,
-      "maxX": 230,
+      "maxX": 320,
       "minZ": -100,
       "maxZ": 100
     },
@@ -205,12 +205,30 @@
       "old-city"
     ],
     "traffic": {
-      "automaticTrains": 2,
-      "wagonsPerTrain": 4,
-      "singleSection": false,
-      "mainTracks": 2,
-      "independentDirectionalBlocks": true,
-      "manualSwitchingEnabled": false
+      "startingTrains": 0,
+      "automaticDefault": false,
+      "playerDispatch": true,
+      "savedConsists": true,
+      "southTracks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "approachTracks": [
+        2,
+        3
+      ],
+      "operations": [
+        "stop",
+        "pass"
+      ],
+      "departure": "manual at both stations; optional auto dwell",
+      "southLoopRoutingEnabled": true,
+      "southCrossoverRoutingEnabled": true,
+      "turnoutReadiness": true,
+      "interlocking": "conservative full-journey lane reservations; crossovers lock both lanes",
+      "northStorageParkingEnabled": false
     },
     "trackPlan": {
       "revision": "V4",
@@ -274,11 +292,19 @@
         ]
       },
       "entryOrder": "crossover -> loop fork -> station",
-      "access": "J2 -> J3 -> J4 without reversing; geometry available, manual command not enabled",
+      "access": "Player selects approach J2 and south target J4; route traverses crossover before loop fork",
       "totalRoutes": 9,
       "totalTurnouts": 13,
       "storageStraightLength": 70,
-      "storageUsableNominal": 65
+      "storageUsableNominal": 65,
+      "hiddenApproachX": 300
+    },
+    "isMainMap": true,
+    "gameRuntime": {
+      "defaultSession": "free",
+      "implementation": "riverside-game-runtime",
+      "initialState": "empty, manual",
+      "legacyDemo": "only explicit rail-demo sessions"
     }
   },
   "vegetation": {
@@ -451,6 +477,11 @@
     {
       "path": "assets/AssetCatalogPage-DvsNYx-K.js",
       "sha256": "9a967411d1224ca17d15cf5b6068c9d3d76ce9e217f90e4a987388eabc73af26",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-Dytz2v1n.js",
+      "sha256": "8633af7578bba3a75d4b886f2d205969eb2f4e06f964fe612ba1b51f948664c6",
       "bytes": 24446
     },
     {
@@ -684,6 +715,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-Dx_P2Ge2.js",
+      "sha256": "f9a3f6ff75e8683c993872aa37be9d2d1b80212f6145e6972260904bdd7bf7b9",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-DxWrV85W.js",
       "sha256": "cd2cf64f774db1feea933c968c725ffc2c301cf138165b2dae63327bf0fc1cf1",
       "bytes": 11982
@@ -707,6 +743,11 @@
       "path": "assets/ConsistsPage-B9O1mPhk.js",
       "sha256": "e64dff7f6018d7f2484a8065e036083e093cf28930156de3dd8cde8791837f0a",
       "bytes": 8488
+    },
+    {
+      "path": "assets/ConsistsPage-Bg5TnmR0.js",
+      "sha256": "953ff2012a7fc9d526716d6038006b25112650181cbfe8422969d2cbee7cde46",
+      "bytes": 8448
     },
     {
       "path": "assets/ConsistsPage-BKUPBVvS.js",
@@ -844,6 +885,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-T87q4D4K.js",
+      "sha256": "ecc611562ae2c44b6e057b958634074692b9fd9eb00af152d312bb8197de0aa2",
+      "bytes": 40924
+    },
+    {
       "path": "assets/DownloadSimple.es-0hhsaX4O.js",
       "sha256": "728cd1e4da15b2f0f493fefa6898f4df6c54d4974891e814b3c0efe46c35b6de",
       "bytes": 2061
@@ -931,6 +977,11 @@
     {
       "path": "assets/DownloadSimple.es-DIV_k3Qs.js",
       "sha256": "1944a7bfdbbc66c100d901e7f5688678a33e6b41b9b14cdf2f5d076f85a8f07f",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-DQZbzG85.js",
+      "sha256": "d18a1ad2700f4849ff97b946d42c441446485ee8abe5416cb1392201d2d49d82",
       "bytes": 2061
     },
     {
@@ -1062,6 +1113,11 @@
       "path": "assets/GaugeReviewPage-gXbQBNMo.js",
       "sha256": "09763ebf0f3bc3c86eb42bf5340c2c4273d585d55252c6d0b9d79449dd77d3cd",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-iMKHCuHz.js",
+      "sha256": "1af60c1f11e61ff84353cc539ae19eafd77a8c8c065553d1d5800357bdb57c70",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-K_fR-kM6.js",
@@ -1259,6 +1315,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-CZc6SRHe.js",
+      "sha256": "aeced16d660a8fce84d87a6043152ea8a76f8b7c86f738d2ba4d764b9acf06c7",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-D_IJqgDW.js",
       "sha256": "482848c73f197f3d6eacb15ff59515c498cf0645186bac8dd046d88cc56ff724",
       "bytes": 421
@@ -1376,6 +1437,11 @@
     {
       "path": "assets/ImportedCc206Page-BSlD59S9.js",
       "sha256": "c4ea6e8c5e5f780869b9ee7a77af84529b74e9d9e2995c8bc2d8e2a1925692f9",
+      "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-C0mfy2A3.js",
+      "sha256": "f74686aef39ee021b47af7541016b6b9b6e7d971c27a01fc73d6ed5e3efdc574",
       "bytes": 13963
     },
     {
@@ -1517,6 +1583,11 @@
       "path": "assets/index-CNk6SLOU.js",
       "sha256": "4b9c0eb9be28ae5a4386d4ed83ffbd97b7d18772f2dfc544335ab3bbe67f70ab",
       "bytes": 592564
+    },
+    {
+      "path": "assets/index-CPBlo3r2.js",
+      "sha256": "f7d7aba8356cbbb729c8de6cf32b74c27b21cfd13f227b611a402de3168bcded",
+      "bytes": 777071
     },
     {
       "path": "assets/index-CVb2w6it.js",
@@ -1670,7 +1741,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "5fce1e6dc10d6aedc3f35fd8a057399fa3f4b3d9cfc04c97b8e926f8c9a48582",
+      "sha256": "fa4f7ab655d3c88fcec06af232337d61c47d8065389a3577b6fc8b7150f42292",
       "bytes": 890
     },
     {
@@ -2075,5 +2146,6 @@
         61.3
       ]
     ]
-  }
+  },
+  "defaultMap": "riverside"
 }
