@@ -1,0 +1,238 @@
+{
+  "assetCount": 14,
+  "totalTriangles": 10591,
+  "assets": [
+    {
+      "id": "house-gable",
+      "file": "assets/house-gable.glb",
+      "triangles": 4336,
+      "vertices": 2418,
+      "dimensionsBlenderXYZ": [
+        6.148,
+        7.58,
+        5.2
+      ],
+      "bytes": 365372,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "house-long",
+      "file": "assets/house-long.glb",
+      "triangles": 5356,
+      "vertices": 2970,
+      "dimensionsBlenderXYZ": [
+        5.447,
+        8.315,
+        4.75
+      ],
+      "bytes": 451832,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "tree-round",
+      "file": "assets/tree-round.glb",
+      "triangles": 116,
+      "vertices": 64,
+      "dimensionsBlenderXYZ": [
+        3.75,
+        3.43,
+        5.119
+      ],
+      "bytes": 13016,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "tree-cluster",
+      "file": "assets/tree-cluster.glb",
+      "triangles": 152,
+      "vertices": 94,
+      "dimensionsBlenderXYZ": [
+        3.967,
+        3.249,
+        5.874
+      ],
+      "bytes": 15828,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "tree-pine",
+      "file": "assets/tree-pine.glb",
+      "triangles": 144,
+      "vertices": 80,
+      "dimensionsBlenderXYZ": [
+        3.612,
+        3.705,
+        6.75
+      ],
+      "bytes": 12736,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "shrub",
+      "file": "assets/shrub.glb",
+      "triangles": 60,
+      "vertices": 36,
+      "dimensionsBlenderXYZ": [
+        2.19,
+        1.577,
+        1.418
+      ],
+      "bytes": 8152,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "rock-1",
+      "file": "assets/rock-1.glb",
+      "triangles": 20,
+      "vertices": 12,
+      "dimensionsBlenderXYZ": [
+        1.885,
+        1.442,
+        1.117
+      ],
+      "bytes": 3584,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "rock-2",
+      "file": "assets/rock-2.glb",
+      "triangles": 20,
+      "vertices": 12,
+      "dimensionsBlenderXYZ": [
+        1.172,
+        0.951,
+        0.589
+      ],
+      "bytes": 3584,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "rock-3",
+      "file": "assets/rock-3.glb",
+      "triangles": 20,
+      "vertices": 12,
+      "dimensionsBlenderXYZ": [
+        2.587,
+        1.387,
+        0.714
+      ],
+      "bytes": 3584,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "grass-tuft",
+      "file": "assets/grass-tuft.glb",
+      "triangles": 7,
+      "vertices": 21,
+      "dimensionsBlenderXYZ": [
+        0.627,
+        0.492,
+        0.56
+      ],
+      "bytes": 2096,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "flowers-yellow",
+      "file": "assets/flowers-yellow.glb",
+      "triangles": 180,
+      "vertices": 110,
+      "dimensionsBlenderXYZ": [
+        0.814,
+        0.868,
+        0.52
+      ],
+      "bytes": 18596,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "fence-3m",
+      "file": "assets/fence-3m.glb",
+      "triangles": 156,
+      "vertices": 88,
+      "dimensionsBlenderXYZ": [
+        3.03,
+        0.13,
+        1.04
+      ],
+      "bytes": 14328,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "ground-grass",
+      "file": "assets/ground-grass.glb",
+      "triangles": 12,
+      "vertices": 8,
+      "dimensionsBlenderXYZ": [
+        4.0,
+        4.0,
+        0.32
+      ],
+      "bytes": 2160,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    },
+    {
+      "id": "ground-earth",
+      "file": "assets/ground-earth.glb",
+      "triangles": 12,
+      "vertices": 8,
+      "dimensionsBlenderXYZ": [
+        4.0,
+        4.0,
+        0.32
+      ],
+      "bytes": 2160,
+      "materialCount": 1,
+      "pivot": "ground-center",
+      "units": "meters",
+      "colorAttribute": "Color"
+    }
+  ],
+  "sharedMaterials": 1,
+  "textureImages": 0,
+  "glbUpAxis": "Y",
+  "blenderUpAxis": "Z",
+  "kitLayout": "catalog; individual assets are exported at origin",
+  "sceneObjects": 112,
+  "renderEngine": "Cycles OptiX GPU",
+  "blender": "4.5.10 LTS"
+}

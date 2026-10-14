@@ -1,9 +1,9 @@
 {
-  "release": "riverside-plain-terrain-20261014",
+  "release": "riverside-diorama-kit-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "3ef3edd08eeed5104a808e570b5ce14e346651a9d21fa70625f83404f2f920e9",
+  "sourceFingerprint": "0d13ac904053b0849cc2b6a7c3d58edcb41804e4ac36e3be5dadb19018a2b10e",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T11:42:49.070Z",
+  "builtAt": "2026-10-14T12:35:46.099Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -100,12 +100,22 @@
     "northHeight": 3,
     "southHeight": 0,
     "terrain": "plain matte vertex colors; no grass texture/noise",
-    "artDirection": "miniature model railway; terrain only applied",
+    "artDirection": "stylized low-poly diorama",
+    "diorama": {
+      "source": "original Blender kit",
+      "asset": "models/riverside-diorama-kit.glb",
+      "sourceAssets": 14,
+      "sourceTriangles": 10591,
+      "bytes": 912132,
+      "houses": 9,
+      "instancing": "per asset per map quadrant",
+      "rendering": "AgX, warm daylight, matte materials, lightweight contact shading"
+    },
     "terrainPalette": {
-      "grass": "#9eb78e",
-      "bank": "#b9b49c",
-      "bed": "#7b928c",
-      "soil": "#a6977e"
+      "grass": "#91b96c",
+      "bank": "#b7a47b",
+      "bed": "#788e7c",
+      "soil": "#a98b62"
     },
     "disabledModules": [
       "bbm-yard",
@@ -121,11 +131,14 @@
     }
   },
   "vegetation": {
-    "model": "models/jacaranda-game.glb",
-    "license": "CC0-1.0",
-    "triangles": 42531,
-    "bytes": 3065800,
-    "sharedTextures": true
+    "active": "original diorama trees, shrubs, grass and flowers",
+    "cachedAsset": "models/riverside-diorama-kit.glb",
+    "sourceTypes": [
+      "round",
+      "cluster",
+      "pine"
+    ],
+    "placement": "deterministic; excludes river, track, station and house footprints"
   },
   "camera": {
     "gameplayRotation": "locked isometric",
@@ -220,6 +233,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-COFuDOtG.js",
+      "sha256": "a79496116e2f10c98c5a1e653873f24de6f55cd93ed26809d2807f8202daa2c9",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-COiWOEsl.js",
       "sha256": "b19b62410e1d8fb854a39ea04a215aeecd52acc3944c902a496bfac6f997c7c6",
       "bytes": 24446
@@ -300,6 +318,11 @@
       "bytes": 792230
     },
     {
+      "path": "assets/AssetThumbnail-C3JjJkDx.js",
+      "sha256": "8f5f2465627e7ea86d683b843c523bad1b4fd792be385887321748807968a3e0",
+      "bytes": 798420
+    },
+    {
       "path": "assets/AssetThumbnail-CGjXWiqu.js",
       "sha256": "7b1c21c39e5b193a8fecb8283b0b9043ed46d6045c41bcc5a549b0666b4b34a7",
       "bytes": 779832
@@ -348,6 +371,11 @@
       "path": "assets/brotli_dec_wasm_bg-BK3DOf3U.wasm",
       "sha256": "79b29cb1790560f0a0f32b4a31d935e2782875e4a367fde23c81d986b327ec3f",
       "bytes": 208439
+    },
+    {
+      "path": "assets/BufferGeometryUtils-D_K8gBps.js",
+      "sha256": "acd5346a9af0cb6edcd7b2c8035dc8d141aee9028fa87f7a2887ff8e3974b356",
+      "bytes": 4752
     },
     {
       "path": "assets/BufferGeometryUtils-fhjzNkL6.js",
@@ -427,6 +455,11 @@
     {
       "path": "assets/Cc206ReviewPage-CBK7S2mi.js",
       "sha256": "66be178fb411cf5f53627018900aa54fee8df2ee99dd51a773b30c1946447101",
+      "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-CgKFYTTp.js",
+      "sha256": "f8c757023ead101fa8b0dd27c9cb2dc930a7db2481053c8f4ba26e7e82a77c09",
       "bytes": 11982
     },
     {
@@ -510,6 +543,11 @@
       "bytes": 8443
     },
     {
+      "path": "assets/ConsistsPage-Dam5vk_b.js",
+      "sha256": "04e4192b89fbf6b757c1c4eef18c99a2c6ac6d86f27b5e83aaf0dca943035e4f",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-Dcd1g0uU.js",
       "sha256": "923d7f1b033a862240767b80097c35d8e8ca8e9c9a6f0a25f9a8b63bdfa2899a",
       "bytes": 8443
@@ -562,6 +600,11 @@
     {
       "path": "assets/DownloadSimple.es-b3x6h5e4.js",
       "sha256": "77a0a895214e185ffde4c12b6af261d4c620d27aceef65d7f368f02cd2e65d8f",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-B5zm3Uzl.js",
+      "sha256": "d5e64f1c6e86047d2f503e245f96f535f74bbd9e5596556843187631550ff73c",
       "bytes": 2061
     },
     {
@@ -675,6 +718,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-BjmDnGPw.js",
+      "sha256": "a5db8b75e2397b0d0e70c420400f9a3963c5e2ba62100825f6510d24d777d3b0",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-BK9TQbBm.js",
       "sha256": "5f10e5a136442e64bb5b832cf2cee7ebd858f54746294974110ac9079bb1a564",
       "bytes": 10822
@@ -760,6 +808,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GLTFExporter-BNjNMp04.js",
+      "sha256": "780c83f610f6584f82efcab5d0c4c5b624cd96f1adcb3b728a8e2632852a1072",
+      "bytes": 36784
+    },
+    {
       "path": "assets/GLTFExporter-Zav4VGXk.js",
       "sha256": "d1e2657ac7cedf1684e25e25562eab0c360767a73f381d4c6014ee1a9d3c90a9",
       "bytes": 36784
@@ -773,6 +826,11 @@
       "path": "assets/GLTFLoader-844jNFMw.js",
       "sha256": "c0cc6a5215a5b5e2026f5f14a2fb81046ddfcd30ce9d083f849175495bfe66a3",
       "bytes": 44239
+    },
+    {
+      "path": "assets/GLTFLoader-B0OtCTzX.js",
+      "sha256": "cc966104b9d10fe419622fcf6acd536c49920ca5763aaa65105225d815e89f06",
+      "bytes": 44395
     },
     {
       "path": "assets/GLTFLoader-B6dXDznl.js",
@@ -920,6 +978,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-DuNjZxTb.js",
+      "sha256": "df31d60dee5f88f4d9e3fa875eda8ac8a3d59821ad3dd323da9b7b6c9b7fa87b",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-Dv_C5cDs.js",
       "sha256": "8c78d3168342050aa0809382e2fc45e192cfea24a74e432cde52d1a0bb345358",
       "bytes": 421
@@ -993,6 +1056,11 @@
       "path": "assets/ImportedCc206Page-Cu5SxR52.js",
       "sha256": "062f23ef4f6d3d19ea6270464f1402b0f743f2e404115c415d92fbc67d2f237a",
       "bytes": 13958
+    },
+    {
+      "path": "assets/ImportedCc206Page-D9LwQwOq.js",
+      "sha256": "e28e73ae0d4253441c2e71c013bcd6ffdecb38fcf993beddfedfd3e721c37ea4",
+      "bytes": 13963
     },
     {
       "path": "assets/ImportedCc206Page-Dgr33cUw.js",
@@ -1073,6 +1141,11 @@
       "path": "assets/index-BcbFvQjx.js",
       "sha256": "c197a1e67374d29efb6063590766e5b786c18448ea4cecd960fc9fd98c58fc99",
       "bytes": 734480
+    },
+    {
+      "path": "assets/index-BfhEMeD1.js",
+      "sha256": "482dc738b4ec1c08f928a9060f7dd4ae6d3f3942155eee918c5d9caa798ca53b",
+      "bytes": 746861
     },
     {
       "path": "assets/index-BFwwF7CX.js",
@@ -1180,6 +1253,11 @@
       "bytes": 2424
     },
     {
+      "path": "assets/three.core-CoYdGzU1.js",
+      "sha256": "d8fcf6baff64defe54c16ff97ed02467dfdded7fdeb4589fe06b9b39e3c51563",
+      "bytes": 260694
+    },
+    {
       "path": "assets/three.core-IH6yQD8m.js",
       "sha256": "cfc37790441ec61234242de4480774cbca3a382abcbcfd0f306fa99dd57b5d05",
       "bytes": 260563
@@ -1226,7 +1304,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "62978646fc8dc09ccfd79e91bd68cb5b42e9d1b9daecf644b02a22b2dd125e87",
+      "sha256": "11eaf0818e38fd861dd6de5bd179832badc0fc77e293d5720b727e93921d249e",
       "bytes": 890
     },
     {
@@ -1493,6 +1571,16 @@
       "path": "models/rail-track-blue.glb",
       "sha256": "48d0ec308eacc74b5c2afa3c9f371e086cc0c551b3b2757e8050baac4845fbf1",
       "bytes": 663440
+    },
+    {
+      "path": "models/riverside-diorama-kit-manifest.json",
+      "sha256": "a3fcf7aadb61f0b6144b1a566a3dae12b64d371929d49256075b0ad4823f9740",
+      "bytes": 5108
+    },
+    {
+      "path": "models/riverside-diorama-kit.glb",
+      "sha256": "7c56b8fb6473c0c88c84b26452847c8e02686171bb87c30a18f4b65d084464fb",
+      "bytes": 912132
     },
     {
       "path": "models/tree-0-blue.glb",
