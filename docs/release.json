@@ -1,9 +1,9 @@
 {
-  "release": "riverside-four-car-20261015",
+  "release": "riverside-auto-operations-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "63f0dcca2063d75f7d0ee1217c5277e8a9444e304aba831fd2df1c1cfe0e679e",
+  "sourceFingerprint": "55667d00c3e867063f3494219bfa719d17281d69931983337d5afcbeeb8e2a3a",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T18:53:25.270Z",
+  "builtAt": "2026-10-14T19:36:46.820Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,8 +20,8 @@
     "reason": "AGENTS.md requires explicit test consent; implementation and deployment authorization does not include tests."
   },
   "browserChecks": {
-    "status": "not_run_for_four_car_update",
-    "scope": "User requested no more routine browser testing; earlier focused observations saved separately."
+    "status": "not_run",
+    "scope": "No browser interaction or end-to-end simulation test for this feature."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -229,8 +229,8 @@
       "southLoopRoutingEnabled": true,
       "southCrossoverRoutingEnabled": true,
       "turnoutReadiness": true,
-      "interlocking": "conservative full-journey lane reservations; crossovers lock both lanes",
-      "northStorageParkingEnabled": false,
+      "interlocking": "physical section locks; retain occupied blocks until tail clears; acquire braking lead ahead",
+      "northStorageParkingEnabled": true,
       "autoRoster": {
         "source": "built-in and saved collection",
         "selection": "round-robin",
@@ -245,8 +245,8 @@
           "tank",
           "container"
         ],
-        "maximumLiveTrains": 4,
-        "dispatchIntervalSeconds": 30,
+        "maximumLiveTrains": 8,
+        "dispatchIntervalSeconds": 18,
         "longFormationOperation": "pass",
         "stopSpanLimit": 68,
         "hiddenApproachSpanLimit": 188,
@@ -262,7 +262,7 @@
         "doubleLocoFourWagonsSpan": 66.304,
         "fourStoredWagonsSpan": 45.36,
         "badugUsableLength": 65,
-        "limitation": "Physical fit only; staged overtaking block release and badug storage operations remain disabled."
+        "limitation": "Four-car geometric limits retained; staged overtaking and physical storage/collect implemented but end-to-end playback unverified."
       },
       "normalDirection": {
         "south": {
@@ -275,7 +275,18 @@
         },
         "runningSide": "right",
         "loopExit": "return to normal lane via downstream crossover"
-      }
+      },
+      "singleSection": false,
+      "automaticTrains": "up to 8",
+      "stagedReservation": true,
+      "activityMix": {
+        "pass": 25,
+        "stop": 20,
+        "overtake": 25,
+        "meet": 15,
+        "store": 15
+      },
+      "mixMeaning": "intent per 20 scenario deck; storage unavailable falls back to stop; pairs spawn two trains; counters count dispatched scenarios"
     },
     "trackPlan": {
       "revision": "V4",
@@ -574,6 +585,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-K74jCNEY.js",
+      "sha256": "3de80945a85ba02b78eb4c2d99f6569b9b84e5d73b7bbfb55ac1390a05195720",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-l9Qg4_IQ.js",
       "sha256": "67d13c8eae5301486f434bc4fbd7b36ea5821314217bb57d78eded1abe0ee213",
       "bytes": 24446
@@ -839,6 +855,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DP5rUs_7.js",
+      "sha256": "f289b98e3593c23adc99d93aa695d33e18d099874dd4a1f6ef51c8efbe038170",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-Dx_P2Ge2.js",
       "sha256": "f9a3f6ff75e8683c993872aa37be9d2d1b80212f6145e6972260904bdd7bf7b9",
       "bytes": 11982
@@ -959,6 +980,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-CtqJ93SD.js",
+      "sha256": "fee33a518cd09bd5ae6b37cb25820127f928ed322f593588e61bba411f7307e6",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-CuernzGn.js",
       "sha256": "0511f077ad03f736afbf5542b4e0f1df82836f867f9b4ab2da10c8ef04f27bd9",
       "bytes": 8443
@@ -1056,6 +1082,11 @@
     {
       "path": "assets/diorama-postprocessing-BEw-3aDd.js",
       "sha256": "3c5f916a74460dec945fd1ea685ba060a2b87390b04b11fba9dab0eb34b92b1e",
+      "bytes": 40924
+    },
+    {
+      "path": "assets/diorama-postprocessing-BKs7o_D5.js",
+      "sha256": "158bb84b7c16d80687e11f93f945d1c5379dbc6f9c40eb7cc0ed8a81641e1baf",
       "bytes": 40924
     },
     {
@@ -1234,6 +1265,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DRWvoUTf.js",
+      "sha256": "dc537631cfaecfee7d11479a5bed274ef4cf6a903199b1145bbe28eb60a330c6",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-DsOybMKD.js",
       "sha256": "94348294531386e62a5ec0c48e8d03f382d6dba34a12590b08b6c7edb3d16d3e",
       "bytes": 2061
@@ -1386,6 +1422,11 @@
     {
       "path": "assets/GaugeReviewPage-DcYl4b4t.js",
       "sha256": "0eab98f78080d4ee56d797efd42ffa123a9e58d561a781be8bf4d54919391d0f",
+      "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-DlECJUId.js",
+      "sha256": "fc347ae2b2ff3021f3e331c94bd5d593c51aa56833f9cfa233474e51945077d8",
       "bytes": 10825
     },
     {
@@ -1714,6 +1755,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-SWsAdHfA.js",
+      "sha256": "69449eaf99f22fa5c886b5ab27790f9fe9938ef0569829fd1249cc60ee4cdb9c",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-T3r4peZQ.js",
       "sha256": "29ae75c51a6c5bd14c1a60d1648fda72a66711eb64bd9a6bb4976c58601e696f",
       "bytes": 421
@@ -1869,6 +1915,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-Du5wQUma.js",
+      "sha256": "32da39f92c0ca14fd8102623b840cd500309c7bd2889dc76e8869b4d6242884b",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-DzxaaFCn.js",
       "sha256": "41beb2fae4bee9e0bde7804bfa9b85f2d419ba1294e8fb93431ea1fe9b9b961f",
       "bytes": 13958
@@ -1992,6 +2043,11 @@
       "path": "assets/index-CI7k24M3.js",
       "sha256": "a5bd9f46c293d17b16986906e781884f69d34ac173808cb14e4aa69b876355c2",
       "bytes": 777376
+    },
+    {
+      "path": "assets/index-CMUcFxbi.js",
+      "sha256": "4de10b8a33145a4f16e341d6646e5a349f3c90f4f250ea59f348d8a4de46c74f",
+      "bytes": 800859
     },
     {
       "path": "assets/index-CNk6SLOU.js",
@@ -2175,7 +2231,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "23f4fbe4f5cc90036128356918122c58f3c5d83465bd91adc130c6af17e7b63c",
+      "sha256": "47d208cf62d17e9d744f7a570b0d2c211002e7b8172290c26c214a8a2bb00f3a",
       "bytes": 890
     },
     {
@@ -2768,7 +2824,7 @@
     "evidence": "Two simultaneously active passenger consists show intact locomotive bodies and coach roofs; screenshot train-body-fixed.png"
   },
   "signalling": {
-    "heads": 12,
+    "heads": 16,
     "entry": 4,
     "southExit": 6,
     "northExit": 2,
@@ -2776,18 +2832,22 @@
     "aspects": [
       "red",
       "yellow",
-      "green"
+      "green",
+      "white"
     ],
     "default": "red",
-    "authority": "shared movement/braking/HUD/lamp decision",
+    "authority": "shared protected-section ownership, scoped point readiness, braking and lamp decision",
     "stopBeforeHead": 1,
     "postLateralOffset": 1.8,
     "speedLimits": {
       "straight": 9,
-      "branch": 4.5
+      "branch": 4.5,
+      "shunt": 3
     },
-    "tailProtection": "full journey locks retained after aspect returns red behind leading end",
-    "exitPosition": "shared peron center +/- (peronLength/2 + 3)"
+    "tailProtection": "occupied sections held until last vehicle clears",
+    "exitPosition": "shared peron center +/- (peronLength/2 + 3)",
+    "block": 2,
+    "shunt": 2
   },
   "artificialLighting": {
     "buildings": {
@@ -2808,5 +2868,14 @@
     "locomotiveMarkers": "day/night including stationary and paused",
     "locomotiveProjection": "night envelope plus bounded weather contribution; no clear-day projections",
     "fixedSourceBudgets": true
+  },
+  "riversideStorage": {
+    "maximumWagons": 4,
+    "locomotives": 1,
+    "passengerAllowed": false,
+    "minimumStoredSeconds": 30,
+    "collectAfterStoreEngineExits": true,
+    "actualWagonMeshesRetained": true,
+    "manualCollectButton": true
   }
 }
