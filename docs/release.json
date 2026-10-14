@@ -1,9 +1,9 @@
 {
-  "release": "riverside-double-track-20261014",
+  "release": "riverside-south-layout-v4-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "9fc46ed6fb0157d9e6421b3afae0a929113f60393eea6887e01b26b333381e77",
+  "sourceFingerprint": "7f5131a1c50848a88040514498fc9233362a63b854e4762373ff9ed02464565e",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T14:06:02.594Z",
+  "builtAt": "2026-10-14T14:42:01.365Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -50,7 +50,7 @@
   },
   "map": {
     "id": "riverside",
-    "mode": "double-track",
+    "mode": "double-track-south-layout-v4",
     "visibleSize": [
       200,
       200
@@ -71,19 +71,21 @@
       {
         "name": "Stasiun Selatan",
         "position": [
-          28,
+          12,
           0.35,
-          69
+          39.5
         ],
         "tracks": 4,
-        "front": [
-          1,
-          2
+        "main": [
+          2,
+          3
         ],
-        "rear": [
-          3,
+        "loops": [
+          1,
           4
         ],
+        "facade": "south (+Z)",
+        "platformLength": 64,
         "model": "models/station-selatan.glb"
       },
       {
@@ -208,29 +210,73 @@
       "singleSection": false,
       "mainTracks": 2,
       "independentDirectionalBlocks": true,
-      "rearShuntingEnabled": false
+      "manualSwitchingEnabled": false
     },
     "trackPlan": {
+      "revision": "V4",
       "spacing": 4.2,
-      "frontZ": {
-        "south": [
-          55,
-          59.2
+      "south": {
+        "centerX": 12,
+        "buildingZ": 39.5,
+        "tracks": [
+          1,
+          2,
+          3,
+          4
         ],
-        "north": [
-          -55,
-          -59.2
+        "mainTracks": [
+          2,
+          3
+        ],
+        "loopNorthZ": 50.8,
+        "loopSouthZ": 63.4,
+        "westToeX": -44,
+        "eastToeX": 72,
+        "parallelFromX": -20,
+        "parallelToX": 44,
+        "platformLength": 64,
+        "platformZ": [
+          48.6,
+          52.9,
+          61.3
+        ],
+        "lampX": [
+          -12,
+          12,
+          36
+        ],
+        "crossovers": [
+          {
+            "id": "west",
+            "fromX": -82,
+            "toX": -54
+          },
+          {
+            "id": "east",
+            "fromX": 76,
+            "toX": 98
+          }
         ]
       },
-      "rearZ": {
-        "south": [
-          79.2,
-          83.4
+      "north": {
+        "centerX": 28,
+        "buildingZ": -69,
+        "storageTrackZ": -79.2,
+        "bufferX": 82,
+        "tracks": [
+          1,
+          2,
+          3
         ],
-        "north": [
-          -79.2
+        "mainTracks": [
+          1,
+          2
         ]
       },
+      "entryOrder": "crossover -> loop fork -> station",
+      "access": "J2 -> J3 -> J4 without reversing; geometry available, manual command not enabled",
+      "totalRoutes": 9,
+      "totalTurnouts": 13,
       "storageStraightLength": 70,
       "storageUsableNominal": 65
     }
@@ -261,8 +307,8 @@
     "fullMapOverview": true,
     "focusPoints": {
       "south": [
-        28,
-        69
+        12,
+        39.5
       ],
       "north": [
         28,
@@ -335,6 +381,11 @@
     {
       "path": "assets/AssetCatalogPage-Cjr84Tzk.js",
       "sha256": "cad2b85ac633bb44807488d434a48b7241fce986eff112a5cdbe93b57275577d",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-CMCowmRD.js",
+      "sha256": "470eafcd057b81683431a2146cac3a31407d48520e20c534cc1a6d8fffd82dfd",
       "bytes": 24446
     },
     {
@@ -633,6 +684,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DxWrV85W.js",
+      "sha256": "cd2cf64f774db1feea933c968c725ffc2c301cf138165b2dae63327bf0fc1cf1",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-fFB8k6sI.js",
       "sha256": "9a45e1fb85a250148c51bbe6cf35c63dc92bb0017a13375739afcfc125796688",
       "bytes": 11982
@@ -680,6 +736,11 @@
     {
       "path": "assets/ConsistsPage-BxEz0qVZ.js",
       "sha256": "ac785eb06c6fc11bcd21e6fa251b5cff5c8bf6363cde4a80b4308665242c47c1",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-C1ZG5y_O.js",
+      "sha256": "c4d592a0f45fa1c9efbeb81150db184e2398e0e0eca37f4c2775418c7c59df3e",
       "bytes": 8448
     },
     {
@@ -763,6 +824,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/diorama-postprocessing-B1oTgmMR.js",
+      "sha256": "463b1d4a95c1cc9c48d19fa823f659b5f57c3ca56d7a111456ae948ac5f700cb",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-BEw-3aDd.js",
       "sha256": "3c5f916a74460dec945fd1ea685ba060a2b87390b04b11fba9dab0eb34b92b1e",
       "bytes": 40924
@@ -820,6 +886,11 @@
     {
       "path": "assets/DownloadSimple.es-bvXXCKpl.js",
       "sha256": "27cd4cebd82dd01612978f38a250aeb0074f39d66d1415ec603e2ccb18d5e74d",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-Bya2zbNQ.js",
+      "sha256": "e14af7969bd55fcc2741766b82ff201b66e4f6f696be27bc02bf3360627b6b9c",
       "bytes": 2061
     },
     {
@@ -1013,6 +1084,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-s4SHeMOR.js",
+      "sha256": "3e360661abbb4696f2c8b9f91fd6d861ce0da78bb563c8c20ab2e52b6822efc9",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-S6JCjIjK.js",
       "sha256": "b6393165d2757695dd225230dba79e64d98f3997d45a7fb5492f083cb6cfa5c3",
       "bytes": 10822
@@ -1130,6 +1206,11 @@
     {
       "path": "assets/HudPreviewPanel-BbascsDA.js",
       "sha256": "8c7a78e2fb6f6b0933d2036f663320111554da36cb7b8900cbc34a504f498f9e",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BbCIRh0r.js",
+      "sha256": "4fd9ad75a68c75d1ea23064a9ce43d40d2d206a5292eb5379e2d271c61cb0a4c",
       "bytes": 421
     },
     {
@@ -1278,6 +1359,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-BIrNguSC.js",
+      "sha256": "217defd44677ab17c981fbe96626bb9a6cc641cb29f235b98abfb967b4e8dcbb",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-BNvP8nZU.js",
       "sha256": "f56eb28d24e1028c0979e68b122216db662651145aa2244ec68cd7a84ce04f26",
       "bytes": 13963
@@ -1421,6 +1507,11 @@
       "path": "assets/index-BZKIMRr9.js",
       "sha256": "050b136e7b8aebe31f8f5641dc00795ef5cebde9060e652c070de2f781d9f063",
       "bytes": 752502
+    },
+    {
+      "path": "assets/index-CFgDzykG.js",
+      "sha256": "bd2c88e3c6e4ab502101b42dadeb52444596d95a2324c228acf1ae24f2ab0e1e",
+      "bytes": 762476
     },
     {
       "path": "assets/index-CNk6SLOU.js",
@@ -1579,7 +1670,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "756f5ba48a69a4b9bbb3fb6f1525f5eb01284ad160f9a16b2ba494701b36544a",
+      "sha256": "5fce1e6dc10d6aedc3f35fd8a057399fa3f4b3d9cfc04c97b8e926f8c9a48582",
       "bytes": 890
     },
     {
@@ -1951,6 +2042,38 @@
     "lampLensHeights": [
       4.67,
       7.67
+    ],
+    "southLampPositions": [
+      [
+        -12,
+        4.67,
+        48.6
+      ],
+      [
+        -12,
+        4.67,
+        61.3
+      ],
+      [
+        12,
+        4.67,
+        48.6
+      ],
+      [
+        12,
+        4.67,
+        61.3
+      ],
+      [
+        36,
+        4.67,
+        48.6
+      ],
+      [
+        36,
+        4.67,
+        61.3
+      ]
     ]
   }
 }
