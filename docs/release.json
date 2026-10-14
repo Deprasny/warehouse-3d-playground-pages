@@ -1,9 +1,9 @@
 {
-  "release": "riverside-main-map-startup-fix-20261014",
+  "release": "riverside-diorama-loader-fix-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "a68f81638b319af1a6200bce01375bfddcd45f4a0a96390ead1ff667883e7cde",
+  "sourceFingerprint": "b9cb0093cbadcb8685b08db3406684326e11555f19e49856f111cdb55140a67f",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T15:29:59.650Z",
+  "builtAt": "2026-10-14T15:40:53.460Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -365,6 +365,11 @@
       "bytes": 0
     },
     {
+      "path": "assets/AssetCatalogPage-8jod8MlT.js",
+      "sha256": "f0778d69d5020f662af61b905a9db105a9a288ff05070555a7dcbec1d8316f7b",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-B9H9FvXh.js",
       "sha256": "265ac34d275301bb9033b86abe54aedab1def8ca3c575a1d33d56d1021e48c75",
       "bytes": 24446
@@ -690,6 +695,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-CB6h_tum.js",
+      "sha256": "a790aa182209fcc408ec34e34e9a7229967bc533833967c199b2154c743e3a2b",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-CBK7S2mi.js",
       "sha256": "66be178fb411cf5f53627018900aa54fee8df2ee99dd51a773b30c1946447101",
       "bytes": 11982
@@ -805,6 +815,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-CdQryrqr.js",
+      "sha256": "6a4dc80b54352568460709f18d0cecbb469b9cfd95170a2f88a7c9b11a1b76f9",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-CpVJAL9G.js",
       "sha256": "5d1d7e0583e34e97331a8ed9c5446f3ac3c7081c73c23f29f245370696eebbe1",
       "bytes": 8448
@@ -895,6 +910,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-CNkj0I8I.js",
+      "sha256": "44060a4c24122899ff61f052d215dde04975ada6f4c417d898e9d67dbf32913c",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-CSQ9MSUB.js",
       "sha256": "7f03b653a270f4fb3c01492fad6ceefc24888150b6607eed3ac18b51e15a4a1a",
       "bytes": 40924
@@ -912,6 +932,11 @@
     {
       "path": "assets/DownloadSimple.es-0hhsaX4O.js",
       "sha256": "728cd1e4da15b2f0f493fefa6898f4df6c54d4974891e814b3c0efe46c35b6de",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-abuwcTAF.js",
+      "sha256": "f5308aaf9ba8bf90421868ebd6a58321557205ac132357bd206a9991355b87c6",
       "bytes": 2061
     },
     {
@@ -1133,6 +1158,11 @@
       "path": "assets/GaugeReviewPage-DvsJ_Aw1.js",
       "sha256": "01ad8d60c0f231d6d381990a896f7f5bd60e4deeb8046637e11e165b8f823160",
       "bytes": 10817
+    },
+    {
+      "path": "assets/GaugeReviewPage-Dwo7uAe5.js",
+      "sha256": "a63916fea982bc58b088feb6aadd848abfa168d269405bb268a4f6b6a24b80a7",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-DwSbo3h7.js",
@@ -1375,6 +1405,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-DMnCVtLi.js",
+      "sha256": "f08541e419ae5ccad4259fe44baa79754400efab79e56ed5ae84eaa6eae7de2f",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-DnfhFEXK.js",
       "sha256": "517feb986a8c2709a03463a8d66763930257ea377987a6a84a2c592f443f7647",
       "bytes": 421
@@ -1427,6 +1462,11 @@
     {
       "path": "assets/ImportedCc206Page-8SccP7cF.js",
       "sha256": "388ed4cdc5b169bef4ef5a63abe82150a7037a56405ee1e3973800b2b4e4b201",
+      "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-B2q_ZhNg.js",
+      "sha256": "62cae7c3039376cb759a34c1122ce1ac814d32e83281b872f5d8faca7a6ecc57",
       "bytes": 13963
     },
     {
@@ -1625,6 +1665,11 @@
       "bytes": 762476
     },
     {
+      "path": "assets/index-CI7k24M3.js",
+      "sha256": "a5bd9f46c293d17b16986906e781884f69d34ac173808cb14e4aa69b876355c2",
+      "bytes": 777376
+    },
+    {
       "path": "assets/index-CNk6SLOU.js",
       "sha256": "4b9c0eb9be28ae5a4386d4ed83ffbd97b7d18772f2dfc544335ab3bbe67f70ab",
       "bytes": 592564
@@ -1786,7 +1831,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "4492d53c7ca1aa0e2668923aaf3f8c0107b751b5ee64858e3a05cdba0aef96ac",
+      "sha256": "82f92762964f6b72354738ccbadc0305e87988b2c85287419e0e53a6c8cffa8d",
       "bytes": 890
     },
     {
@@ -2208,5 +2253,14 @@
     },
     "browserInspection": "not run",
     "tests": "no automated test suite run"
+  },
+  "assetLoadingFix": {
+    "asset": "models/riverside-diorama-kit.glb",
+    "revision": "diorama-2",
+    "cache": "reload",
+    "attempts": 2,
+    "errorDetails": "HTTP status and requested asset URL, or network failure",
+    "diagnosis": "Exact v1 asset URL returned HTTP 200 and a fresh browser session loaded the game. The user-specific cache/transient response failure was not reproduced.",
+    "browserDiagnostic": "fresh session reached main Riverside HUD with 0 trains and no console errors"
   }
 }
