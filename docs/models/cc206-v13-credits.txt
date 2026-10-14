@@ -1,0 +1,51 @@
+CC206 V13 — original Blender reconstruction for Depras
+
+Model: Depras / Codex, original V13 reconstruction from photographic references.
+Game derivatives: selective geometry reduction, rigid wheel/bogie/door anchors,
+vertex-color Standard PBR batching and Meshopt compression.
+No Sketchfab geometry is incorporated in these V13 GLBs. The separately retained
+cc206-sketchfab-* files have their own author and licence credits.
+This file records provenance; it does not assign a new licence to the original model.
+
+Photographic references (used to study shape, not embedded as model textures):
+
+Muhammad Fathy P M — Lokomotif CC206, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:Lokomotif_CC206.jpg
+
+Ananda Rahmat Suseno — CC 206 16 10 SDT, CC0
+https://commons.wikimedia.org/wiki/File:CC_206_16_10_SDT.jpg
+
+JohanSpoorlijn — GE CM20EMP bogie manufactured by PT Barata, CC0
+https://commons.wikimedia.org/wiki/File:Het_draaistel_werd_door_PT_Barata_vervaardigd_voor_de_GE_CM20EMP-diesellocomotief.jpg
+
+Naufal Farras / NFarras for Transport for Bandung — Argo Wilis in Lebakjero, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:Argo_Wilis_in_Lebakjero_(high,_east,_2024).jpg
+
+Muhammad Ridwan Difulu (Commons user ムハンマド リドワン ドイフルー) — CC 206 13 83 at Bandung depot, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:20230824_Langsir_lok_CC_206_13_83_setelah_berdinas_menuju_Depo_Loko_Bandung.jpg
+
+Ghazy2007 — 2061360BD, CC0
+https://commons.wikimedia.org/wiki/File:2061360BD.jpg
+
+Muhammad Sadiqih Asbullah — CC 206 13 54 CPN, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:CC_206_13_54_CPN.jpg
+
+NFarras — CC 206 13 41 coupled with Sangkuriang train, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:CC_206_13_41_Locomotive_Getting_Coupled_with_Sangkuriang_Train_-_Sangkuriang_Inaugural_Run.jpg
+
+Bahnfrend — CC 201 92 12, CC 206 15 03 and container train, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:CC_201_92_12,_CC_206_15_03_%2B_container_train,_Semarang_Tawang_Station,_2025_(02).jpg
+
+Bahnfrend — CC 206 13 29 and Sembrani, CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:CC_206_13_29_%2B_Sembrani,_Semarang_Tawang_Station,_2025_(03).jpg
+
+KAI logo: PT Kereta Api Indonesia (Persero); trademark belongs to its owner.
+https://commons.wikimedia.org/wiki/File:Logo_PT_Kereta_Api_Indonesia_(Persero)_2020.svg
+
+Reference-photo licence links:
+CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+CC0: https://creativecommons.org/publicdomain/zero/1.0/
+
+Proportion comparator only (no geometry copied): CC 206 GE CM20EMP by pucohensap, CC BY 4.0.
+https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901
+https://creativecommons.org/licenses/by/4.0/

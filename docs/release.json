@@ -1,9 +1,9 @@
 {
-  "release": "cc206-v12-game-20261014",
+  "release": "cc206-v13-game-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "897b40ae5eb4f1e1bc5ce77ddd8a012a67d32207d56c549fe05396244688c2af",
+  "sourceFingerprint": "a6e19e2438cfe331ce6c11237395c347d271606d9bd068afad13892ba9f63901",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T09:07:45.714Z",
+  "builtAt": "2026-10-14T10:12:00.062Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -17,31 +17,31 @@
   },
   "checks": {
     "status": "not_run",
-    "reason": "AGENTS.md requires explicit test consent; this request authorizes deployment only."
+    "reason": "AGENTS.md requires explicit test consent; implementation and deployment authorization does not include tests."
   },
   "browserChecks": {
     "status": "not_run"
   },
   "cc206": {
-    "revision": "original-v12",
-    "sourceSha256": "6274bb6caecb7135cac374bd392aeb483a2c77471d0af0367432d4e156c60c33",
+    "revision": "original-v13",
+    "sourceSha256": "2291b24c2c7cd6ff6faf32a2fed483eb4a0680c1683101eda089de4cae6c6d37",
     "levels": {
       "high": {
-        "file": "models/cc206-v12-high-packed.glb",
-        "bytes": 2060096,
-        "triangles": 119822,
+        "file": "models/cc206-v13-high-packed.glb",
+        "bytes": 2076112,
+        "triangles": 119580,
         "materials": 5
       },
       "medium": {
-        "file": "models/cc206-v12-medium-packed.glb",
-        "bytes": 824944,
-        "triangles": 39983,
+        "file": "models/cc206-v13-medium-packed.glb",
+        "bytes": 884668,
+        "triangles": 42715,
         "materials": 5
       },
       "low": {
-        "file": "models/cc206-v12-low-packed.glb",
-        "bytes": 620852,
-        "triangles": 25166,
+        "file": "models/cc206-v13-low-packed.glb",
+        "bytes": 675920,
+        "triangles": 28404,
         "materials": 5
       }
     }
@@ -103,6 +103,11 @@
       "path": "assets/AssetCatalogPage-C4vPRTrw.js",
       "sha256": "8c3f1ecffbb2aead126abc734ad7cb246934b3314be5d44a4718dfb662b1e19a",
       "bytes": 24487
+    },
+    {
+      "path": "assets/AssetCatalogPage-CCXtrOt8.js",
+      "sha256": "93c7e4073164bd7fb45058d9b77ec648cd1e11d031e99f9f2a41583830522493",
+      "bytes": 24446
     },
     {
       "path": "assets/AssetCatalogPage-CFAT_HCI.js",
@@ -205,6 +210,11 @@
       "bytes": 792239
     },
     {
+      "path": "assets/AssetThumbnail-D9N6g5jb.js",
+      "sha256": "b5a59f9c1ba6d986511f6a9b908081254c2a23b28c56299f601b8d841548375e",
+      "bytes": 798006
+    },
+    {
       "path": "assets/AssetThumbnail-Dy_PlIrH.js",
       "sha256": "906fb462d670b33dc850f9886dfd2b360539fb8a0d463ca2a6514a4cccf77ff3",
       "bytes": 792158
@@ -283,6 +293,11 @@
       "path": "assets/Cc206ReviewPage-BWBECq-G.js",
       "sha256": "256b1770d82d1713d9c8aa20e5c94a10eb045d83a2f6c00c2feff4b9a9e18bd0",
       "bytes": 11977
+    },
+    {
+      "path": "assets/Cc206ReviewPage-CBK7S2mi.js",
+      "sha256": "66be178fb411cf5f53627018900aa54fee8df2ee99dd51a773b30c1946447101",
+      "bytes": 11982
     },
     {
       "path": "assets/Cc206ReviewPage-CGTe1cGo.js",
@@ -385,6 +400,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-oTa2HTP5.js",
+      "sha256": "39c249e6f530913d6e5a24a5d3b778dbe642fae7fd6e4e25008d2d0f9bdaea91",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-rcKatn0-.js",
       "sha256": "713c26e3e3997decb6d0ceca3bc2f3412340b5861f5495bbc83a8fa531c34904",
       "bytes": 8448
@@ -422,6 +442,11 @@
     {
       "path": "assets/DownloadSimple.es-CAo5ZrUt.js",
       "sha256": "5c9f7beb66103b5f6c685dbfaa6a722af27d9f5e18b3859e20e366117a93ed58",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-CM_3U2Hh.js",
+      "sha256": "c1247eb519892606978e11a52d531760d13347bfc80c69395c60a63f5b3a2018",
       "bytes": 2061
     },
     {
@@ -535,6 +560,11 @@
       "bytes": 10817
     },
     {
+      "path": "assets/GaugeReviewPage-DwSbo3h7.js",
+      "sha256": "39d747e2e0db9d589ed38cb88013a280b733b785ed395c8cd62637b4956baf80",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-gXbQBNMo.js",
       "sha256": "09763ebf0f3bc3c86eb42bf5340c2c4273d585d55252c6d0b9d79449dd77d3cd",
       "bytes": 10822
@@ -610,6 +640,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-DIo4VCB6.js",
+      "sha256": "88654e4bfd1e77fddc9999245ee9bf36075bd500627f8bab201f6c4c0e3ffc12",
+      "bytes": 44396
+    },
+    {
       "path": "assets/GLTFLoader-DzDPbHor.js",
       "sha256": "fc79fc3d06a0d074510dbc1b70f685fb17931b88916e9deb6dbcad163b101347",
       "bytes": 44396
@@ -667,6 +702,11 @@
     {
       "path": "assets/HudPreviewPanel-D75pnI1v.js",
       "sha256": "9e030610bafef9622f20dd5b8d7be530cf4593e8c4888d903b7a5e088e3d71e6",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-DfhsuCxE.js",
+      "sha256": "e1f581c92b71a3f52d417b18ee4c7499f03197a18ebfe2d5ef6606db71787e03",
       "bytes": 421
     },
     {
@@ -765,6 +805,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-DzxaaFCn.js",
+      "sha256": "41beb2fae4bee9e0bde7804bfa9b85f2d419ba1294e8fb93431ea1fe9b9b961f",
+      "bytes": 13958
+    },
+    {
       "path": "assets/ImportedCc206Page-fXD5vBM2.js",
       "sha256": "495f96d2ad00579c3b1aa50d8479273cd7b54a586a47d1c4bb5fbb5b2b761a94",
       "bytes": 13958
@@ -803,6 +848,11 @@
       "path": "assets/index-BAD9LEMv.js",
       "sha256": "4a659ce5dcf6ec064c5a975045f83cdfcacff3280bd078546f336e1cc3971ee6",
       "bytes": 733332
+    },
+    {
+      "path": "assets/index-BcbFvQjx.js",
+      "sha256": "c197a1e67374d29efb6063590766e5b786c18448ea4cecd960fc9fd98c58fc99",
+      "bytes": 734480
     },
     {
       "path": "assets/index-BFwwF7CX.js",
@@ -946,7 +996,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "7de40465f97411a0220827a46414368f75d238f0bd94ed9b7dbbc7ffe3527c57",
+      "sha256": "72f862b71f71ed3ff9e7a3bb3ea1e9445826a1dab17bb096320c85bd70b6b015",
       "bytes": 890
     },
     {
@@ -1073,6 +1123,31 @@
       "path": "models/cc206-v12-medium-packed.glb",
       "sha256": "b8d2370d174530ed548aafdb06c25d043b81949c1f7d2cf330775c3c03993558",
       "bytes": 824944
+    },
+    {
+      "path": "models/cc206-v13-credits.txt",
+      "sha256": "ab3fcd2ae6fa8902a7a2ffa9b4dd2d1a88dabc359e9195fa2359ca403dc1e510",
+      "bytes": 2775
+    },
+    {
+      "path": "models/cc206-v13-game-report.json",
+      "sha256": "bffee62cb897748e09d677cd82674b6f9afb54274e66f51aa8f8d1c3e5ad04c4",
+      "bytes": 524604
+    },
+    {
+      "path": "models/cc206-v13-high-packed.glb",
+      "sha256": "3ea3d9fc1dfc8f3fbe7ed250e955cafb508fa78aeee8435c0a48b1cabe8df433",
+      "bytes": 2076112
+    },
+    {
+      "path": "models/cc206-v13-low-packed.glb",
+      "sha256": "fb599914dfbc4fb186c46c7072e24ea94809cb93547c38f77a5a3ad03bf6027d",
+      "bytes": 675920
+    },
+    {
+      "path": "models/cc206-v13-medium-packed.glb",
+      "sha256": "0a35b072b110d496e81d8b0ac9ea90cd9beeb9a985caa51479c1df8b37dde99a",
+      "bytes": 884668
     },
     {
       "path": "models/depot-assets-blue.zip",
