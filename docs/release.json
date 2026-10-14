@@ -1,9 +1,9 @@
 {
-  "release": "riverside-auto-roster-20261015",
+  "release": "riverside-right-track-signals-lights-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "7f0c442a7821357944a98276ee560f03ba4a0007680314b60b6eb20c27a3c0e5",
+  "sourceFingerprint": "9cbe2f71955ea31525bb0221fb3ad409152bc00f354856fdb361007661cabcf6",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T18:13:23.336Z",
+  "builtAt": "2026-10-14T18:33:47.148Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -260,6 +260,18 @@
         ],
         "maximumFormationSpanApprox": 111.7,
         "limitation": "Toe separation includes branch curves; full formations cannot berth within the current clear loop/peron."
+      },
+      "normalDirection": {
+        "south": {
+          "2": "west",
+          "3": "east"
+        },
+        "north": {
+          "1": "east",
+          "2": "west"
+        },
+        "runningSide": "right",
+        "loopExit": "return to normal lane via downstream crossover"
       }
     },
     "trackPlan": {
@@ -324,7 +336,7 @@
         ]
       },
       "entryOrder": "crossover -> loop fork -> station",
-      "access": "Player selects approach J2 and south target J4; route traverses crossover before loop fork",
+      "access": "Right-hand operation: J2 -> J4 from east; J3 -> J1 from west; opposite-end crossover restores normal running lane",
       "totalRoutes": 9,
       "totalTurnouts": 13,
       "storageStraightLength": 70,
@@ -435,6 +447,11 @@
       "path": "assets/AssetCatalogPage-C4vPRTrw.js",
       "sha256": "8c3f1ecffbb2aead126abc734ad7cb246934b3314be5d44a4718dfb662b1e19a",
       "bytes": 24487
+    },
+    {
+      "path": "assets/AssetCatalogPage-C8bkuryJ.js",
+      "sha256": "0f87cd68016a5834f21dfd2d321380cac22d7acab3ebb19bfbc95d6e60e73cfd",
+      "bytes": 24446
     },
     {
       "path": "assets/AssetCatalogPage-CCXtrOt8.js",
@@ -767,6 +784,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-CZXHlkFc.js",
+      "sha256": "34ed3a1251330b936f93afafaffcebff1b4994086d566ac226769610be5af59e",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-D2ZnuKIF.js",
       "sha256": "4c56fadabd314b9f16a963378fc78a9cf8d01f37a3346d4e811847c57908e71e",
       "bytes": 12024
@@ -912,6 +934,11 @@
       "bytes": 8443
     },
     {
+      "path": "assets/ConsistsPage-DeKfI6XS.js",
+      "sha256": "52b16cd03d86d855fa9cfa46bc983a852ee97ae95a428c5a2291198dabc8e636",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-DfWAymtF.js",
       "sha256": "e4decce7987ca9da89f73a62b238b89400ba83ffdffdc73229f158b5617968a7",
       "bytes": 8448
@@ -1014,6 +1041,11 @@
     {
       "path": "assets/diorama-postprocessing-D3PSAVok.js",
       "sha256": "e0f9fe456f6f345c1ffe639de5e7d256670c6409b7df9bad9fe8039c9e459f4b",
+      "bytes": 40924
+    },
+    {
+      "path": "assets/diorama-postprocessing-Dqha8Jwz.js",
+      "sha256": "79c26d2ef630831dcfac29804adecc6aeaded27a9123fc6cc4704062521799c8",
       "bytes": 40924
     },
     {
@@ -1167,6 +1199,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-vbe0NmQg.js",
+      "sha256": "1885988e7bd1cbd39d3f560decdf538808e15881d92c319abd7c4f4d1e2bf516",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-XxAprvsN.js",
       "sha256": "ab63fcd5693af63f7589c6fe45f70bd2f52ccff58b2f57a9f8948f3f5e14c066",
       "bytes": 2061
@@ -1255,6 +1292,11 @@
       "path": "assets/GaugeReviewPage-CWCBiOJ2.js",
       "sha256": "a7556a637fdb138bdaf0a2b6f7b4d7e4094be0e6fea344d92742d08e7997fa5b",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-CXbsYUIz.js",
+      "sha256": "95707974a1897ec7ab4443dc5d60da76f9fc4454a037a3f0c1a4fbe6c0bba290",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-D-qsYcnN.js",
@@ -1497,6 +1539,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-CGyS_FRu.js",
+      "sha256": "c673143e0a2f352e988174559d8ecb67ac6dcc69ce4298340a0fd72b22fb43f7",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-CtFUdUnU.js",
       "sha256": "ade44ab001b16998aa2e2fb222cbeadfd5b091b21ebb032a46a60d0d58670c39",
       "bytes": 421
@@ -1667,6 +1714,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-C4XmdwGQ.js",
+      "sha256": "4330e05c4f511eeff5551cb2e9c792ba1fc8c3a952dac200f1add441fbce01bf",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-Ce0SdEqe.js",
       "sha256": "9dacd6bb96cf891133edff842bf34b6b32d45bf8ca0fd4f5f52efca23cdc4125",
       "bytes": 13963
@@ -1765,6 +1817,11 @@
       "path": "assets/index-B-j-o-MH.js",
       "sha256": "c3a9cd15d0bc8d02d17d6aa1acecec0906d12766d83d2824281f84134d0781d3",
       "bytes": 585072
+    },
+    {
+      "path": "assets/index-B-ZR-B4d.js",
+      "sha256": "d3be4c5f2338551bc04de5ccc013cfe8cbdfd082b31395ad0ee834bac77b8a07",
+      "bytes": 781924
     },
     {
       "path": "assets/index-B3bxH4tZ.js",
@@ -1998,7 +2055,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "f7f6c17b520aa6f23cb6e7ed9dcfe85414e25670131da88f2230d10412da5c04",
+      "sha256": "347b6559cf7392257b1318c3b1b1dde62431d22b9829d284005c10e4bbf16598",
       "bytes": 890
     },
     {
@@ -2589,5 +2646,46 @@
     "detailInstancingRetained": true,
     "diagnosis": "Template bank was not excluded from batching; scene-wide instancing of merged visual LOD also suppressed bodies. Keep already-merged LOD surfaces native.",
     "evidence": "Two simultaneously active passenger consists show intact locomotive bodies and coach roofs; screenshot train-body-fixed.png"
+  },
+  "signalling": {
+    "heads": 12,
+    "entry": 4,
+    "southExit": 6,
+    "northExit": 2,
+    "normalDirectionOnlyOnMain": true,
+    "aspects": [
+      "red",
+      "yellow",
+      "green"
+    ],
+    "default": "red",
+    "authority": "shared movement/braking/HUD/lamp decision",
+    "stopBeforeHead": 1,
+    "postLateralOffset": 1.8,
+    "speedLimits": {
+      "straight": 9,
+      "branch": 4.5
+    },
+    "tailProtection": "full journey locks retained after aspect returns red behind leading end"
+  },
+  "artificialLighting": {
+    "buildings": {
+      "fadeOn": [
+        17,
+        18.5
+      ],
+      "fadeOff": [
+        5.5,
+        7
+      ],
+      "dayOff": [
+        7,
+        17
+      ]
+    },
+    "houseWindows": "glass palette triangles retain geometry and use a separate emissive material group",
+    "locomotiveMarkers": "day/night including stationary and paused",
+    "locomotiveProjection": "night envelope plus bounded weather contribution; no clear-day projections",
+    "fixedSourceBudgets": true
   }
 }
