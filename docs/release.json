@@ -1,9 +1,9 @@
 {
-  "release": "riverside-color-calibration-20261014",
+  "release": "riverside-time-weather-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "f5eeca7e30aa3d415bebeed42c5e38e3d7549f66b351894ae2918e697da8b7be",
+  "sourceFingerprint": "aeecf755f923a53c1b2f4c0d9ae74744277db53611bada0dbc0916413a399033",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T15:56:06.568Z",
+  "builtAt": "2026-10-14T17:02:21.304Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,9 @@
     "reason": "AGENTS.md requires explicit test consent; implementation and deployment authorization does not include tests."
   },
   "browserChecks": {
-    "status": "not_run"
+    "status": "visual inspection",
+    "timeWeatherCaptures": 30,
+    "scope": "requested appearance calibration and missing-body diagnosis; no automated suite"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -189,7 +191,7 @@
         "station glows on lens centers"
       ],
       "instancing": "per asset per map quadrant",
-      "rendering": "Neutral exposure 1.05, directional daylight 3.65, hemisphere 0.8, fill 0.24; Auto default with sun shadows; High MSAA 4x and GTAO 60% resolution capped at 1280 pixels, radius 1.2m, intensity 0.45; Light direct rendering"
+      "rendering": "ACES Filmic exposure 1, six lighting presets; Auto shadows, High GTAO/MSAA; weather softens directional light without changing exposure"
     },
     "terrainPalette": {
       "grass": "#91b96c",
@@ -367,6 +369,11 @@
     {
       "path": "assets/AssetCatalogPage-8jod8MlT.js",
       "sha256": "f0778d69d5020f662af61b905a9db105a9a288ff05070555a7dcbec1d8316f7b",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-B_TMla4Y.js",
+      "sha256": "ffced88e3072d8357f4fb4f518a982d46a88d25292e63fc6bf789f51ad9c813f",
       "bytes": 24446
     },
     {
@@ -640,6 +647,11 @@
       "bytes": 11977
     },
     {
+      "path": "assets/Cc206ReviewPage-B1IAlfSD.js",
+      "sha256": "903ce04cb888f4f15acda9e31b67c90430b19b255c19360524d82c1f7dfdc703",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-Bb05YUQA.js",
       "sha256": "bc3d24ea2dc0b3675b3ad10cc0c5083815cd2053b13285aa448ea432152cfa5b",
       "bytes": 11982
@@ -855,6 +867,11 @@
       "bytes": 8443
     },
     {
+      "path": "assets/ConsistsPage-DfWAymtF.js",
+      "sha256": "e4decce7987ca9da89f73a62b238b89400ba83ffdffdc73229f158b5617968a7",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-DK6qWo5c.js",
       "sha256": "ea574a865f676b2a487dca511904e7e5152e02d08455df5139b7b54f94896c67",
       "bytes": 8448
@@ -927,6 +944,11 @@
     {
       "path": "assets/diorama-postprocessing-CNkj0I8I.js",
       "sha256": "44060a4c24122899ff61f052d215dde04975ada6f4c417d898e9d67dbf32913c",
+      "bytes": 40924
+    },
+    {
+      "path": "assets/diorama-postprocessing-CRrToWuU.js",
+      "sha256": "c52d2a2466d47198a7b1ed59c9360c8cf4fc0a41bb4f35b264f75db2d3698ff6",
       "bytes": 40924
     },
     {
@@ -1085,6 +1107,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-QrHLaCOp.js",
+      "sha256": "4f954d7dc8d9ecc0aac8a1697789e778e186c34e26eb0038a878011b239eb264",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-XxAprvsN.js",
       "sha256": "ab63fcd5693af63f7589c6fe45f70bd2f52ccff58b2f57a9f8948f3f5e14c066",
       "bytes": 2061
@@ -1182,6 +1209,11 @@
     {
       "path": "assets/GaugeReviewPage-D7VjjaHD.js",
       "sha256": "3eb6ee2b50fdcac44ad68aae357d39968e5bf218739993ce7f2c7dee0aa04d8b",
+      "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-DcYl4b4t.js",
+      "sha256": "0eab98f78080d4ee56d797efd42ffa123a9e58d561a781be8bf4d54919391d0f",
       "bytes": 10825
     },
     {
@@ -1470,6 +1502,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-hhE8l5Al.js",
+      "sha256": "22794a1589194c7ee0a4e2b582c89991e6ec13a0759073145390940c22e19e89",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-LJ64GhfH.js",
       "sha256": "c5fa08018126a602322c5c9f64e2bffa654d55b55e404d55b618febb2840c7e1",
       "bytes": 421
@@ -1595,6 +1632,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-Dmvkn__7.js",
+      "sha256": "ee02d88d244254c6981e3528460b0f7f90036a6bdeabba9b9a44fee3ae1061c9",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-DN7Y51TJ.js",
       "sha256": "d3075d4aa8ea22387a2c82bd6923ce87d6d4a1d1198ccf48642c5f7ea731fb5f",
       "bytes": 13963
@@ -1643,6 +1685,11 @@
       "path": "assets/index-aHRQ1-VX.js",
       "sha256": "875c5b0055219c2868ec9aaf4507369c36d302a32b86f0ccececafe8b21bb68a",
       "bytes": 738839
+    },
+    {
+      "path": "assets/index-ASDKRkSD.js",
+      "sha256": "029682ae995949ae6c7510efb38ac55293df52f0fde99a7dd628988c5daa605d",
+      "bytes": 776803
     },
     {
       "path": "assets/index-B-j-o-MH.js",
@@ -1876,7 +1923,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "35f23e2ce2099e1901bcac8b1f1d9b80274303651c6ef0ae665aeae2bb079be9",
+      "sha256": "cd9ad392d4a37db13b672b2281088bff0c073f7bd4a915f436e09ce682edc718",
       "bytes": 890
     },
     {
@@ -2280,7 +2327,134 @@
         4.67,
         61.3
       ]
-    ]
+    ],
+    "seasonsEnabled": false,
+    "timePresets": [
+      "dawn",
+      "morning",
+      "day",
+      "afternoon",
+      "sunset",
+      "night"
+    ],
+    "hourRange": [
+      0,
+      24
+    ],
+    "clockCycleSeconds": 600,
+    "weather": [
+      "clear",
+      "cloudy",
+      "rain",
+      "storm",
+      "snow"
+    ],
+    "independentAutoControls": true,
+    "pausedEdits": "immediate preview",
+    "lighting": {
+      "dawn": {
+        "sky": "#dcd9db",
+        "ground": "#aeb9b4",
+        "sun": "#ffe1c3",
+        "ambient": "#e9edf2",
+        "fill": "#d0deec",
+        "floor": "#d2d6d1",
+        "sunPower": 1.15,
+        "ambientPower": 0.82,
+        "fillPower": 0.32,
+        "sunPosition": [
+          34,
+          12,
+          26
+        ],
+        "darkness": 0.35
+      },
+      "morning": {
+        "sky": "#e8eae3",
+        "ground": "#bbc3b7",
+        "sun": "#fff0da",
+        "ambient": "#f3f5f1",
+        "fill": "#dce7ed",
+        "floor": "#d6d9d0",
+        "sunPower": 2.6,
+        "ambientPower": 0.92,
+        "fillPower": 0.32,
+        "sunPosition": [
+          24,
+          32,
+          28
+        ],
+        "darkness": 0.04
+      },
+      "day": {
+        "sky": "#e8eae3",
+        "ground": "#b9c4ba",
+        "sun": "#fff7eb",
+        "ambient": "#f5f8fc",
+        "fill": "#e3edff",
+        "floor": "#d1d9dc",
+        "sunPower": 3,
+        "ambientPower": 0.92,
+        "fillPower": 0.3,
+        "sunPosition": [
+          -24,
+          42,
+          28
+        ],
+        "darkness": 0
+      },
+      "afternoon": {
+        "sky": "#e7e3d9",
+        "ground": "#bdc2af",
+        "sun": "#ffedcf",
+        "ambient": "#f1efe5",
+        "fill": "#d5e2ec",
+        "floor": "#d6d6cc",
+        "sunPower": 2.55,
+        "ambientPower": 0.88,
+        "fillPower": 0.3,
+        "sunPosition": [
+          -32,
+          28,
+          25
+        ],
+        "darkness": 0.08
+      },
+      "sunset": {
+        "sky": "#dbc7ba",
+        "ground": "#ab987a",
+        "sun": "#ffd39a",
+        "ambient": "#f5dfbb",
+        "fill": "#c0cddd",
+        "floor": "#d5c6b0",
+        "sunPower": 1.35,
+        "ambientPower": 0.8,
+        "fillPower": 0.32,
+        "sunPosition": [
+          -65,
+          18,
+          24
+        ],
+        "darkness": 0.38
+      },
+      "night": {
+        "sky": "#24384a",
+        "ground": "#556460",
+        "sun": "#c6d7e9",
+        "ambient": "#b3c7d7",
+        "fill": "#abc6dc",
+        "floor": "#3b4a51",
+        "sunPower": 0.42,
+        "ambientPower": 0.78,
+        "fillPower": 0.32,
+        "sunPosition": [
+          -40,
+          34,
+          35
+        ],
+        "darkness": 1
+      }
+    }
   },
   "defaultMap": "riverside",
   "hotfix": {
@@ -2309,18 +2483,36 @@
     "browserDiagnostic": "fresh session reached main Riverside HUD with 0 trains and no console errors"
   },
   "colorCalibration": {
-    "toneMapping": "Neutral",
-    "exposure": 1.05,
+    "toneMapping": "ACESFilmic",
+    "exposure": 1,
     "day": {
-      "sunPower": 3.65,
-      "ambientPower": 0.8,
-      "fillPower": 0.24
+      "sky": "#e8eae3",
+      "ground": "#b9c4ba",
+      "sun": "#fff7eb",
+      "ambient": "#f5f8fc",
+      "fill": "#e3edff",
+      "floor": "#d1d9dc",
+      "sunPower": 3,
+      "ambientPower": 0.92,
+      "fillPower": 0.3,
+      "sunPosition": [
+        -24,
+        42,
+        28
+      ],
+      "darkness": 0
     },
-    "shadowIntensity": 0.95,
-    "contactOpacity": 0.18,
+    "shadowIntensity": 0.78,
+    "contactOpacity": 0.16,
     "paletteChanged": false,
     "newPostprocessingPasses": 0,
-    "diagnosis": "Default clear summer daylight; AgX and broad warm fill reduced color separation. Weather/season do not overwrite exposure.",
-    "browserScope": "Visual appearance in local Auto and High; no gameplay automation or automated test suite"
+    "browserScope": "30 time/weather appearance captures and repeated train dispatch; no automated suite"
+  },
+  "trainVisibilityFix": {
+    "templateBank": "riverside-game-shared-templates",
+    "nativeVisualLod": true,
+    "detailInstancingRetained": true,
+    "diagnosis": "Template bank was not excluded from batching; scene-wide instancing of merged visual LOD also suppressed bodies. Keep already-merged LOD surfaces native.",
+    "evidence": "Two simultaneously active passenger consists show intact locomotive bodies and coach roofs; screenshot train-body-fixed.png"
   }
 }
