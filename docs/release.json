@@ -1,9 +1,9 @@
 {
-  "release": "riverside-two-stations-20261014",
+  "release": "riverside-plain-terrain-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "1df1b7254a515fcb7e64a22dc5439b3e20c3ce023ca210c3a325f594410eaad2",
+  "sourceFingerprint": "3ef3edd08eeed5104a808e570b5ce14e346651a9d21fa70625f83404f2f920e9",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T11:28:08.115Z",
+  "builtAt": "2026-10-14T11:42:49.070Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -99,7 +99,14 @@
     "curveRadius": 24,
     "northHeight": 3,
     "southHeight": 0,
-    "terrain": "procedural grass and river banks",
+    "terrain": "plain matte vertex colors; no grass texture/noise",
+    "artDirection": "miniature model railway; terrain only applied",
+    "terrainPalette": {
+      "grass": "#9eb78e",
+      "bank": "#b9b49c",
+      "bed": "#7b928c",
+      "soil": "#a6977e"
+    },
     "disabledModules": [
       "bbm-yard",
       "locomotive-depot",
@@ -129,7 +136,7 @@
       "square-example": 3
     },
     "minZoom": {
-      "riverside": 1.4,
+      "riverside": 0.7,
       "mini-station": 1.1
     },
     "initialZoom": 1.2,
@@ -240,6 +247,11 @@
     {
       "path": "assets/AssetCatalogPage-DBCwo1f4.js",
       "sha256": "5cbbbffa3227e3b5177021049f914cec1b193b18b78a3cdf14eb8e09901f3d82",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-DOEcNEV9.js",
+      "sha256": "7fcc0a60422efe2ad9952d6d7d2c5ba93f2b681147e9fafeeb2814f9e69ff03a",
       "bytes": 24446
     },
     {
@@ -408,6 +420,11 @@
       "bytes": 11977
     },
     {
+      "path": "assets/Cc206ReviewPage-ByK_-ncN.js",
+      "sha256": "0f322fdbc70f215a1d43eb1dc06a093125dc312939f15eb5cd9fc23beaae0919",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-CBK7S2mi.js",
       "sha256": "66be178fb411cf5f53627018900aa54fee8df2ee99dd51a773b30c1946447101",
       "bytes": 11982
@@ -456,6 +473,11 @@
       "path": "assets/ConsistsPage-BKUPBVvS.js",
       "sha256": "c327021c30a91315a521092da07464533a9a5eba55c74453c166b165a23f320b",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-Bp1wAFfI.js",
+      "sha256": "fa8610555dcab090bc6a0bdd2fcd0bb41ab39abf92d7cf1654033c78781b9629",
+      "bytes": 8443
     },
     {
       "path": "assets/ConsistsPage-BWTYk8CZ.js",
@@ -548,6 +570,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-BIaXvn8f.js",
+      "sha256": "1f6704cd83120cd103051c73799a24077b23472cf2fb0c1939eb682a0a17017c",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-BPzKiV6u.js",
       "sha256": "d0a15da154130bd1ffe61b801b2413f1091f52af4368a4512502c82bacba941a",
       "bytes": 2061
@@ -631,6 +658,11 @@
       "path": "assets/DownloadSimple.es-xY18WiPL.js",
       "sha256": "bcbf8ce989287ba284d44f1e83ea21c6310a5990bff2355707e4de79eee5b93a",
       "bytes": 2061
+    },
+    {
+      "path": "assets/GaugeReviewPage-2pfeHBB9.js",
+      "sha256": "293c776375071ef8f571367ba762652a0c9c9ad4d9e0bee23c558237b332c88d",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-B7zPIkpJ.js",
@@ -843,6 +875,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-CeBJZRcA.js",
+      "sha256": "1d49c81f1e3eb5a9039fadcfa09f1ca3c85e082702425227abb09550d40aff4e",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-CtFUdUnU.js",
       "sha256": "ade44ab001b16998aa2e2fb222cbeadfd5b091b21ebb032a46a60d0d58670c39",
       "bytes": 421
@@ -925,6 +962,11 @@
     {
       "path": "assets/ImportedCc206Page-BHKJenjH.js",
       "sha256": "4cf362cfbb2865251052e19cc2a95d920f70689dbcb29ab8f9ace0b4c57de6b1",
+      "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-BNvP8nZU.js",
+      "sha256": "f56eb28d24e1028c0979e68b122216db662651145aa2244ec68cd7a84ce04f26",
       "bytes": 13963
     },
     {
@@ -1083,6 +1125,11 @@
       "bytes": 610333
     },
     {
+      "path": "assets/index-VefjSXLo.js",
+      "sha256": "797bc44719c48deea3d586c9c0658f394953b3458cd5e25508ad52548f6bd0aa",
+      "bytes": 738780
+    },
+    {
       "path": "assets/index-XmtPqJZm.js",
       "sha256": "a21164637e7fe6a3ab79c9dac0987684512635df28f61f106a92bd69abed614e",
       "bytes": 611990
@@ -1179,7 +1226,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "069ba4457569b88878ddebad93222c0a2cf0693d019ae3f37147a2d0b525f334",
+      "sha256": "62978646fc8dc09ccfd79e91bd68cb5b42e9d1b9daecf644b02a22b2dd125e87",
       "bytes": 890
     },
     {
