@@ -1,0 +1,32 @@
+{
+  "asset": "Jacaranda Tree",
+  "author": "Rico Cilliers; Rob Tuytel (guidance)",
+  "source": "https://polyhaven.com/a/jacaranda_tree",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "modifications": "Game derivative: seam-aware bark/branch simplification; all preview leaf cards preserved; 1K PBR and restored cutout alpha; meshopt compression.",
+  "sourceTriangles": 3863832,
+  "previewTriangles": 284562,
+  "bytes": 3065800,
+  "triangles": 42531,
+  "parts": [
+    {
+      "material": "jacaranda_tree_branches",
+      "before": 18414,
+      "after": 4459,
+      "error": 0.0010912733851000667
+    },
+    {
+      "material": "jacaranda_tree_trunk",
+      "before": 230112,
+      "after": 2036,
+      "error": 0.0063625783659517765
+    },
+    {
+      "material": "jacaranda_tree_leaves",
+      "before": 36036,
+      "after": 36036,
+      "unchanged": true
+    }
+  ]
+}

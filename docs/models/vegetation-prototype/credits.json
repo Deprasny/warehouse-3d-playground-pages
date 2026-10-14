@@ -1,0 +1,11 @@
+{
+  "asset": "Jacaranda Tree",
+  "author": "Rico Cilliers; Rob Tuytel (guidance)",
+  "source": "https://polyhaven.com/a/jacaranda_tree",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "modifications": "Simplified geometry; 1K WebP PBR maps; source leaf alpha restored as cutout; meshopt packing. Local prototype only.",
+  "sourceTriangles": 3863832,
+  "previewTriangles": 284562,
+  "bytes": 5104688
+}

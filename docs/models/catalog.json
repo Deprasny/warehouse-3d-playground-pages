@@ -4,9 +4,9 @@
     "variant": 0,
     "name": "Depot Riverside",
     "file": "depot-riverside-blue.glb",
-    "bytes": 9709840,
-    "meshes": 338,
-    "triangles": 98276,
+    "bytes": 7175488,
+    "meshes": 336,
+    "triangles": 386853,
     "size": [
       28,
       4.863027552962303,
@@ -198,43 +198,43 @@
   {
     "category": "tree",
     "variant": 0,
-    "name": "Pohon bulat",
+    "name": "Jacaranda",
     "file": "tree-0-blue.glb",
-    "bytes": 20384,
+    "bytes": 5255292,
     "meshes": 3,
-    "triangles": 188,
+    "triangles": 42531,
     "size": [
-      2.2820000529289244,
-      4.184000060558319,
-      2.184000086784363
+      5.196777245399335,
+      4.15,
+      4.097439497054964
     ]
   },
   {
     "category": "tree",
     "variant": 1,
-    "name": "Pohon kerucut",
+    "name": "Jacaranda ramping",
     "file": "tree-1-blue.glb",
-    "bytes": 12788,
-    "meshes": 4,
-    "triangles": 136,
+    "bytes": 5255292,
+    "meshes": 3,
+    "triangles": 42531,
     "size": [
-      2.2650578022003174,
-      4.0049999642372125,
-      2.23064649105072
+      4.248834986419263,
+      3.9,
+      3.3500270393993956
     ]
   },
   {
     "category": "tree",
     "variant": 2,
-    "name": "Pohon berumpun",
+    "name": "Jacaranda lebar",
     "file": "tree-2-blue.glb",
-    "bytes": 36732,
-    "meshes": 4,
-    "triangles": 348,
+    "bytes": 5255316,
+    "meshes": 3,
+    "triangles": 42531,
     "size": [
-      2.6896429366390597,
-      3.891999936103821,
-      2.499894709075122
+      5.339532090212713,
+      4.1,
+      4.209995666371654
     ]
   },
   {
