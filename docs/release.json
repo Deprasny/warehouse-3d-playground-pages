@@ -1,9 +1,9 @@
 {
-  "release": "riverside-diorama-loader-fix-20261014",
+  "release": "riverside-color-calibration-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "b9cb0093cbadcb8685b08db3406684326e11555f19e49856f111cdb55140a67f",
+  "sourceFingerprint": "f5eeca7e30aa3d415bebeed42c5e38e3d7549f66b351894ae2918e697da8b7be",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T15:40:53.460Z",
+  "builtAt": "2026-10-14T15:56:06.568Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -189,7 +189,7 @@
         "station glows on lens centers"
       ],
       "instancing": "per asset per map quadrant",
-      "rendering": "AgX exposure 1.06, directional daylight 3.15, hemisphere 1.0, fill 0.35; Auto default with sun shadows; High MSAA 4x and GTAO 60% resolution capped at 1280 pixels, radius 1.2m, intensity 0.45; Light direct rendering"
+      "rendering": "Neutral exposure 1.05, directional daylight 3.65, hemisphere 0.8, fill 0.24; Auto default with sun shadows; High MSAA 4x and GTAO 60% resolution capped at 1280 pixels, radius 1.2m, intensity 0.45; Light direct rendering"
     },
     "terrainPalette": {
       "grass": "#91b96c",
@@ -372,6 +372,11 @@
     {
       "path": "assets/AssetCatalogPage-B9H9FvXh.js",
       "sha256": "265ac34d275301bb9033b86abe54aedab1def8ca3c575a1d33d56d1021e48c75",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-BAneos-p.js",
+      "sha256": "d7f117ed25aa372a585171ded8d64bebff21fcb4925d65bc5f94fc8b3f1bcbe0",
       "bytes": 24446
     },
     {
@@ -740,6 +745,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DYuFBd6h.js",
+      "sha256": "0b9473df3bd08a880098c924db8263896f6daba09a5064a159635f9868cb6707",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-DYwbIDp7.js",
       "sha256": "e8409f8bf86acc43e6a1339706981a61f9a3fedfb08050972871d005740e60e0",
       "bytes": 11982
@@ -870,6 +880,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-iRQ3DkUZ.js",
+      "sha256": "99921cf7caf0d7b005dd28625dd3d3a109b83f84eeaf328bfa58fcb0cc36a0e5",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-oEuaiswS.js",
       "sha256": "63da33a5f6c904f68e8d05a540876c2ebb321b0dfc6d9980a89eb0485b38c473",
       "bytes": 8448
@@ -922,6 +937,11 @@
     {
       "path": "assets/diorama-postprocessing-CwE313qY.js",
       "sha256": "673c9924d21891e0dfa3c0c9d353cfcb46be602a6097f3c49c200fd09730e6de",
+      "bytes": 40924
+    },
+    {
+      "path": "assets/diorama-postprocessing-CwiBUGSi.js",
+      "sha256": "a45560a6501e2fdd9b25cd696af2c59b250dd314fcde8d6c6c1f06b94e5aef1b",
       "bytes": 40924
     },
     {
@@ -1002,6 +1022,11 @@
     {
       "path": "assets/DownloadSimple.es-CNKDpQ-2.js",
       "sha256": "b9304c05fd9b4264b5f02b710588baa7dd41d37bca16854fa4362493609377d5",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-CQzNVcoe.js",
+      "sha256": "9e53c08632c0aaa054d0b3e80cc61b2c773a7ad7dae06c8c1490f255428d9e35",
       "bytes": 2061
     },
     {
@@ -1148,6 +1173,11 @@
       "path": "assets/GaugeReviewPage-CWCBiOJ2.js",
       "sha256": "a7556a637fdb138bdaf0a2b6f7b4d7e4094be0e6fea344d92742d08e7997fa5b",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-D-qsYcnN.js",
+      "sha256": "873ac3ff60ae3da9b3ea4e872c6741732feb75c80368b4438705d82af1de262d",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-D7VjjaHD.js",
@@ -1435,6 +1465,11 @@
       "bytes": 420
     },
     {
+      "path": "assets/HudPreviewPanel-DYYD2AtM.js",
+      "sha256": "c299d835af177d4877d410c02d654b851e790a5f3df9bd4752f9e5a8dc7ac000",
+      "bytes": 421
+    },
+    {
       "path": "assets/HudPreviewPanel-LJ64GhfH.js",
       "sha256": "c5fa08018126a602322c5c9f64e2bffa654d55b55e404d55b618febb2840c7e1",
       "bytes": 421
@@ -1467,6 +1502,11 @@
     {
       "path": "assets/ImportedCc206Page-B2q_ZhNg.js",
       "sha256": "62cae7c3039376cb759a34c1122ce1ac814d32e83281b872f5d8faca7a6ecc57",
+      "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-B5H3B18M.js",
+      "sha256": "87b72b0a2194e5ed14258a61f8817caa992aa103d39171419f31c0c86f5df5da",
       "bytes": 13963
     },
     {
@@ -1643,6 +1683,11 @@
       "path": "assets/index-BrDRlZ34.js",
       "sha256": "accf4c4fc415e34032f05fcbcf9f86321805b77ed9a9e89e97e1af1d3802a432",
       "bytes": 634672
+    },
+    {
+      "path": "assets/index-BrvW3cTd.js",
+      "sha256": "a9aa5f0f29db65535094b9cfea59c5c48ab9b1b8ccfef8b1c429736e1d57d00c",
+      "bytes": 777378
     },
     {
       "path": "assets/index-BTWV0U60.js",
@@ -1831,7 +1876,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "82f92762964f6b72354738ccbadc0305e87988b2c85287419e0e53a6c8cffa8d",
+      "sha256": "35f23e2ce2099e1901bcac8b1f1d9b80274303651c6ef0ae665aeae2bb079be9",
       "bytes": 890
     },
     {
@@ -2262,5 +2307,20 @@
     "errorDetails": "HTTP status and requested asset URL, or network failure",
     "diagnosis": "Exact v1 asset URL returned HTTP 200 and a fresh browser session loaded the game. The user-specific cache/transient response failure was not reproduced.",
     "browserDiagnostic": "fresh session reached main Riverside HUD with 0 trains and no console errors"
+  },
+  "colorCalibration": {
+    "toneMapping": "Neutral",
+    "exposure": 1.05,
+    "day": {
+      "sunPower": 3.65,
+      "ambientPower": 0.8,
+      "fillPower": 0.24
+    },
+    "shadowIntensity": 0.95,
+    "contactOpacity": 0.18,
+    "paletteChanged": false,
+    "newPostprocessingPasses": 0,
+    "diagnosis": "Default clear summer daylight; AgX and broad warm fill reduced color separation. Weather/season do not overwrite exposure.",
+    "browserScope": "Visual appearance in local Auto and High; no gameplay automation or automated test suite"
   }
 }
