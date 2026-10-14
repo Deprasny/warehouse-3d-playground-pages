@@ -1,9 +1,9 @@
 {
-  "release": "riverside-main-map-20261014",
+  "release": "riverside-main-map-startup-fix-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "8583463cc973b1030e14fed7d6eaf970e0029ba435313032fdfa5360a1010bb3",
+  "sourceFingerprint": "a68f81638b319af1a6200bce01375bfddcd45f4a0a96390ead1ff667883e7cde",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T15:18:36.552Z",
+  "builtAt": "2026-10-14T15:29:59.650Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -490,6 +490,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-l9Qg4_IQ.js",
+      "sha256": "67d13c8eae5301486f434bc4fbd7b36ea5821314217bb57d78eded1abe0ee213",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-QzDHA335.js",
       "sha256": "94d3ff79a77fb53b4c5f0c35bdafdbaf1b9cbd6f70c3e8d3be8b2ec567b24fcd",
       "bytes": 24446
@@ -725,6 +730,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DYwbIDp7.js",
+      "sha256": "e8409f8bf86acc43e6a1339706981a61f9a3fedfb08050972871d005740e60e0",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-fFB8k6sI.js",
       "sha256": "9a45e1fb85a250148c51bbe6cf35c63dc92bb0017a13375739afcfc125796688",
       "bytes": 11982
@@ -762,6 +772,11 @@
     {
       "path": "assets/ConsistsPage-BsXhLRNO.js",
       "sha256": "aba1009d65419e29e333fb61b8c5df4e39ba1814bd546d9b3acd7776545cf0ae",
+      "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-BtoQU_IF.js",
+      "sha256": "393d37655bc270c1fa80029043c9b748593e4aedc75e5b31260f3e6033886ce8",
       "bytes": 8448
     },
     {
@@ -880,6 +895,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-CSQ9MSUB.js",
+      "sha256": "7f03b653a270f4fb3c01492fad6ceefc24888150b6607eed3ac18b51e15a4a1a",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-CwE313qY.js",
       "sha256": "673c9924d21891e0dfa3c0c9d353cfcb46be602a6097f3c49c200fd09730e6de",
       "bytes": 40924
@@ -902,6 +922,11 @@
     {
       "path": "assets/DownloadSimple.es-B5zm3Uzl.js",
       "sha256": "d5e64f1c6e86047d2f503e245f96f535f74bbd9e5596556843187631550ff73c",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-B7QXsWVV.js",
+      "sha256": "b95c3b797b6a9e7f45d3f07618cb8fdb72fdae3b4c8012a5339678bef95e020b",
       "bytes": 2061
     },
     {
@@ -1083,6 +1108,11 @@
       "path": "assets/GaugeReviewPage-CoDAA_yi.js",
       "sha256": "38485e5deec5d04d5bb4252b46efeef8c14ef17236b5711fa15ed3e860785625",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-cOO7yG3w.js",
+      "sha256": "9e800cec1c97baa29fc041057fe55b47611c9241c33c4e03286b690b3bea67b1",
+      "bytes": 10825
     },
     {
       "path": "assets/GaugeReviewPage-CpJ6ZlBr.js",
@@ -1385,6 +1415,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-WwmJiYDW.js",
+      "sha256": "f484f046ce22d955fdbef7effbaf57a64f88bfb48cf0bdbf8bda7533b0e2fd76",
+      "bytes": 421
+    },
+    {
       "path": "assets/ImportedCc206Page-1ZXZUWU4.js",
       "sha256": "2aa99e5e2d85b770f76d2f2efd934c929244aa9d6e7eae1b9d75a80fa3d25121",
       "bytes": 13963
@@ -1510,6 +1545,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-PQIAg_Ml.js",
+      "sha256": "2b83a7873f87ee3324c9417887f4211562b5b8ba123e4f940c1d7494d7cd94ca",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-t45VPyWH.js",
       "sha256": "ddf74c7a89942e16c520ad06138c659fb2650cc0de8a293d327cc5cea3524e6d",
       "bytes": 13963
@@ -1573,6 +1613,11 @@
       "path": "assets/index-BZKIMRr9.js",
       "sha256": "050b136e7b8aebe31f8f5641dc00795ef5cebde9060e652c070de2f781d9f063",
       "bytes": 752502
+    },
+    {
+      "path": "assets/index-CB5H3k2w.js",
+      "sha256": "86b47deaa4d21f4fdab8a379ba7fbc9a93c6b8ad2fa8387d3538b9ab8c2a20d9",
+      "bytes": 777107
     },
     {
       "path": "assets/index-CFgDzykG.js",
@@ -1741,7 +1786,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "fa4f7ab655d3c88fcec06af232337d61c47d8065389a3577b6fc8b7150f42292",
+      "sha256": "4492d53c7ca1aa0e2668923aaf3f8c0107b751b5ee64858e3a05cdba0aef96ac",
       "bytes": 890
     },
     {
@@ -2147,5 +2192,21 @@
       ]
     ]
   },
-  "defaultMap": "riverside"
+  "defaultMap": "riverside",
+  "hotfix": {
+    "symptom": "blank page",
+    "cause": "example maps inherited Riverside railLayout and failed eager registry validation",
+    "changed": [
+      "src/maps/examples/square-railway.ts",
+      "src/maps/examples/mini-station.ts"
+    ],
+    "resolution": "clear railLayout on non-Riverside example maps",
+    "startupRegistryDiagnostic": {
+      "before": "Mountain railway must fit map and approach bounds.",
+      "after": "riverside=game; square-example=railway; mini-station=preview",
+      "status": "passed"
+    },
+    "browserInspection": "not run",
+    "tests": "no automated test suite run"
+  }
 }
