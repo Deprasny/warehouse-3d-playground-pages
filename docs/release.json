@@ -1,9 +1,9 @@
 {
-  "release": "cc206-v13-game-20261014",
+  "release": "riverside-200-old-cc206-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "a6e19e2438cfe331ce6c11237395c347d271606d9bd068afad13892ba9f63901",
+  "sourceFingerprint": "fd1910f9f64965fccb62c666eddf4364fdbe0b5fcd29a667be82585e65df20cf",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T10:12:00.062Z",
+  "builtAt": "2026-10-14T10:30:45.676Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -23,28 +23,54 @@
     "status": "not_run"
   },
   "cc206": {
-    "revision": "original-v13",
-    "sourceSha256": "2291b24c2c7cd6ff6faf32a2fed483eb4a0680c1683101eda089de4cae6c6d37",
+    "revision": "sketchfab-old",
+    "author": "pucohensap",
+    "license": "CC BY 4.0",
+    "sourceSha256": "8bb55144eff8054dd518a933f0805791d40e502947f2189633dbb35f054f6256",
     "levels": {
       "high": {
-        "file": "models/cc206-v13-high-packed.glb",
-        "bytes": 2076112,
-        "triangles": 119580,
-        "materials": 5
+        "file": "models/cc206-sketchfab-optimized-packed.glb",
+        "bytes": 2198004,
+        "triangles": 114575,
+        "materials": 20
       },
       "medium": {
-        "file": "models/cc206-v13-medium-packed.glb",
-        "bytes": 884668,
-        "triangles": 42715,
-        "materials": 5
+        "file": "models/cc206-sketchfab-medium-packed.glb",
+        "bytes": 844308,
+        "triangles": 22632,
+        "materials": 20
       },
       "low": {
-        "file": "models/cc206-v13-low-packed.glb",
-        "bytes": 675920,
-        "triangles": 28404,
-        "materials": 5
+        "file": "models/cc206-sketchfab-low-packed.glb",
+        "bytes": 645084,
+        "triangles": 15617,
+        "materials": 20
       }
     }
+  },
+  "map": {
+    "id": "riverside",
+    "visibleSize": [
+      200,
+      200
+    ],
+    "bounds": {
+      "minX": -100,
+      "maxX": 100,
+      "minZ": -100,
+      "maxZ": 100
+    },
+    "simulationBounds": {
+      "minX": -320,
+      "maxX": 180,
+      "minZ": -100,
+      "maxZ": 240
+    },
+    "disabledModules": [
+      "bbm-yard",
+      "locomotive-depot"
+    ],
+    "sidingMode": "static"
   },
   "vegetation": {
     "model": "models/jacaranda-game.glb",
@@ -97,6 +123,11 @@
     {
       "path": "assets/AssetCatalogPage-BYKdo2Ca.js",
       "sha256": "2a282a742d292f5a1f119279cb4ffc71184be96325582045b833d7ce1094bb1c",
+      "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-BzqVIzQR.js",
+      "sha256": "dff72d6f49d976e66b650c3c6e0a52fef556c0f6fa68d91d95d693d28ddeedc7",
       "bytes": 24446
     },
     {
@@ -168,6 +199,11 @@
       "path": "assets/AssetCatalogPage-QzDHA335.js",
       "sha256": "94d3ff79a77fb53b4c5f0c35bdafdbaf1b9cbd6f70c3e8d3be8b2ec567b24fcd",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetThumbnail-B1uRZWH0.js",
+      "sha256": "0f7682df4e271988206d906cc237a914ff1ea0a8133a13ce520c05c012ce818c",
+      "bytes": 798497
     },
     {
       "path": "assets/AssetThumbnail-BS5tdPV-.js",
@@ -252,6 +288,11 @@
     {
       "path": "assets/Cc206ReviewPage-2bUYq9gS.js",
       "sha256": "4c9c10f9c4c7b04ae60d8fcfa2fad0ea605ee5033577bfb760e29862cdf5afd4",
+      "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-5STOm-hQ.js",
+      "sha256": "727b69c65634ec54bd15822ad358a91156aaad854945ecdd4a0fd6d8e5239ef1",
       "bytes": 11982
     },
     {
@@ -375,6 +416,11 @@
       "bytes": 8443
     },
     {
+      "path": "assets/ConsistsPage-DK6qWo5c.js",
+      "sha256": "ea574a865f676b2a487dca511904e7e5152e02d08455df5139b7b54f94896c67",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-DMJzo5qx.js",
       "sha256": "8ff4a9f99033954dc27c0bf54ecc3eb2085d9dfd38b9766fa28a864368c7c909",
       "bytes": 8448
@@ -413,6 +459,11 @@
       "path": "assets/ConsistsPage-ZdxcRYpI.js",
       "sha256": "8b58dc9e66d7a77e223790fa71954a8d9bb5c3026f2b2ab07532188d3b4a0657",
       "bytes": 8448
+    },
+    {
+      "path": "assets/DownloadSimple.es-b3x6h5e4.js",
+      "sha256": "77a0a895214e185ffde4c12b6af261d4c620d27aceef65d7f368f02cd2e65d8f",
+      "bytes": 2061
     },
     {
       "path": "assets/DownloadSimple.es-BgNAoaNR.js",
@@ -570,6 +621,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-K_fR-kM6.js",
+      "sha256": "1d0e3eb1af3c9a47fb46a618eb7c9f9d3f9e47df03007fcd6a7674f611bbacdc",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-MIGy7112.js",
       "sha256": "211700b64d39b6c04327ce2b728c144e8c0854509a4a913b0fe9ae396165c142",
       "bytes": 10822
@@ -645,6 +701,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-DuaUVEMP.js",
+      "sha256": "eb45b8c206502ea551e257879f17a9e72e381cb8664cd913de920d3dd19fc966",
+      "bytes": 44396
+    },
+    {
       "path": "assets/GLTFLoader-DzDPbHor.js",
       "sha256": "fc79fc3d06a0d074510dbc1b70f685fb17931b88916e9deb6dbcad163b101347",
       "bytes": 44396
@@ -662,6 +723,11 @@
     {
       "path": "assets/HudPreviewPanel-BJG42N6r.js",
       "sha256": "e33bc3a368621225ceb07d77d7082fd415a65d96a6e1d832c9b606f77768a94e",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BPi7Wp9f.js",
+      "sha256": "06e0f6f4ae53ad2ac48101714667d6b16b874b31df3998264b2d17a620c7c394",
       "bytes": 421
     },
     {
@@ -775,6 +841,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-C2AqJHdu.js",
+      "sha256": "31c8eaa267837579d53519160893d18a0845145e912fc8d7bef3e23f8b740bec",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-CsrbFeJL.js",
       "sha256": "12bb321dab8c5a0f615a5e1d80499deb792292a60259e3558a6ba0fdf5ef1f87",
       "bytes": 13958
@@ -868,6 +939,11 @@
       "path": "assets/index-CNk6SLOU.js",
       "sha256": "4b9c0eb9be28ae5a4386d4ed83ffbd97b7d18772f2dfc544335ab3bbe67f70ab",
       "bytes": 592564
+    },
+    {
+      "path": "assets/index-CVb2w6it.js",
+      "sha256": "2ff57efe0943c26ca5e67833532c274f8cd88a7be907f670561fb5c3aa5dccd0",
+      "bytes": 734792
     },
     {
       "path": "assets/index-d27YIHCZ.js",
@@ -996,7 +1072,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "72f862b71f71ed3ff9e7a3bb3ea1e9445826a1dab17bb096320c85bd70b6b015",
+      "sha256": "184f40175c8119bdebf939f229f2c5226fffeaf502648580e0181a3bf6703cd6",
       "bytes": 890
     },
     {
