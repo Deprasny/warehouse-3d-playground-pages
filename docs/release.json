@@ -1,9 +1,9 @@
 {
-  "release": "riverside-diorama-render-20261014",
+  "release": "riverside-diorama-railway-20261014",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "1b41512aa35fcf9a5a6b55d1f74cff672cc9d12140a52e320e3abbdb2df0449e",
+  "sourceFingerprint": "2cac650f10ac43e7d47b4bc8c7cff216b2dc9900362d9f2d74132615b8a8d875",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T12:57:36.229Z",
+  "builtAt": "2026-10-14T13:14:57.796Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -108,6 +108,24 @@
       "sourceTriangles": 10591,
       "bytes": 912132,
       "houses": 9,
+      "stations": {
+        "count": 2,
+        "construction": "procedural Three.js",
+        "appearance": "cream plaster, timber frames, layered terracotta tiles, veranda and tiled canopy"
+      },
+      "railway": {
+        "gauge": "existing calibrated gauge",
+        "ballast": "sloped matte shoulders; absent on bridge",
+        "sleepers": "two timber colors, instanced",
+        "fasteners": "instanced plates"
+      },
+      "atmosphereFixes": [
+        "relative vertex grass tint with separate bank/bed paint",
+        "wet roughness 0.78",
+        "minimum ambient 0.55",
+        "consistent toneMapped flags for locomotive/signal/bolt",
+        "station glows on lens centers"
+      ],
       "instancing": "per asset per map quadrant",
       "rendering": "AgX exposure 1.06, directional daylight 3.15, hemisphere 1.0, fill 0.35; Auto default with sun shadows; High MSAA 4x and GTAO 60% resolution capped at 1280 pixels, radius 1.2m, intensity 0.45; Light direct rendering"
     },
@@ -278,6 +296,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-Dsl_yCpK.js",
+      "sha256": "69edf97552e2bd8376b29312802881b1f47a7fed69874f5f143028c698885f5b",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-DUF5RzmW.js",
       "sha256": "9043fb40b9206cc5b815e17e42b4f60d451013ac68f2c66c237d1998b07b756b",
       "bytes": 24446
@@ -351,6 +374,11 @@
       "path": "assets/AssetThumbnail-D_D4AZVn.js",
       "sha256": "5f72e4b63318a710508eb48f7c5be8f0e9267eea7de211e7c53ed26992f341d9",
       "bytes": 792239
+    },
+    {
+      "path": "assets/AssetThumbnail-D3qS1oYA.js",
+      "sha256": "ba308967397bf9cf1f008413b8219c6e5db0189ead1f6143f04daf97933ab2f4",
+      "bytes": 798437
     },
     {
       "path": "assets/AssetThumbnail-D9N6g5jb.js",
@@ -440,6 +468,11 @@
     {
       "path": "assets/Cc206ReviewPage-BHhUN2IS.js",
       "sha256": "c59d58cc54f1876e3a95901e547508d4106fc21a29ee3a1eb4dd0594a96a03d2",
+      "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BJZAzfHd.js",
+      "sha256": "5c5ffa98bf0960a42543020566e77281fee02018f1473dd3cbc16258dec3c866",
       "bytes": 11982
     },
     {
@@ -618,9 +651,19 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-Su4PEaQe.js",
+      "sha256": "4572c0502a5179e1a1c6271c559281253657b196c27d07b5130a65a834f455ce",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-ZdxcRYpI.js",
       "sha256": "8b58dc9e66d7a77e223790fa71954a8d9bb5c3026f2b2ab07532188d3b4a0657",
       "bytes": 8448
+    },
+    {
+      "path": "assets/diorama-postprocessing-BEw-3aDd.js",
+      "sha256": "3c5f916a74460dec945fd1ea685ba060a2b87390b04b11fba9dab0eb34b92b1e",
+      "bytes": 40924
     },
     {
       "path": "assets/diorama-postprocessing-CwE313qY.js",
@@ -700,6 +743,11 @@
     {
       "path": "assets/DownloadSimple.es-DGd3VWrA.js",
       "sha256": "143cae35e4fd9c49946c16d3a99c7064bb879af967ffe22fa7f55bfd184d8301",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-DIV_k3Qs.js",
+      "sha256": "1944a7bfdbbc66c100d901e7f5688678a33e6b41b9b14cdf2f5d076f85a8f07f",
       "bytes": 2061
     },
     {
@@ -785,6 +833,11 @@
     {
       "path": "assets/GaugeReviewPage-C4EB8YFQ.js",
       "sha256": "e0b79e259f62da68c4a524aedea2770c137971abdedf95f052df2f8642642fa1",
+      "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-CB_j9z3V.js",
+      "sha256": "25cd3e9825d7176d957a4e88d048b84adb4f1baedc0a4a73e749f80445f9b145",
       "bytes": 10825
     },
     {
@@ -948,6 +1001,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-Rzofna9p.js",
+      "sha256": "950baf84fe780ff32aaf37a9d153332769e25bf08f02dbebf8662d63b9cc9d01",
+      "bytes": 44394
+    },
+    {
       "path": "assets/HudPreviewPanel-8niBBabQ.js",
       "sha256": "9abc102630b1b5b2a4ad6240cfa4ac301dca413b792cdce1bd4599f804dabfab",
       "bytes": 421
@@ -1050,6 +1108,11 @@
     {
       "path": "assets/HudPreviewPanel-LJ64GhfH.js",
       "sha256": "c5fa08018126a602322c5c9f64e2bffa654d55b55e404d55b618febb2840c7e1",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-T3r4peZQ.js",
+      "sha256": "29ae75c51a6c5bd14c1a60d1648fda72a66711eb64bd9a6bb4976c58601e696f",
       "bytes": 421
     },
     {
@@ -1168,6 +1231,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-t45VPyWH.js",
+      "sha256": "ddf74c7a89942e16c520ad06138c659fb2650cc0de8a293d327cc5cea3524e6d",
+      "bytes": 13963
+    },
+    {
       "path": "assets/index-3H24Mfi8.js",
       "sha256": "690220c79601a27bd4095fabf954010a2dc7e3c7bcaa2b45e9a2046ce4c89c86",
       "bytes": 640849
@@ -1216,6 +1284,11 @@
       "path": "assets/index-BrDRlZ34.js",
       "sha256": "accf4c4fc415e34032f05fcbcf9f86321805b77ed9a9e89e97e1af1d3802a432",
       "bytes": 634672
+    },
+    {
+      "path": "assets/index-BZKIMRr9.js",
+      "sha256": "050b136e7b8aebe31f8f5641dc00795ef5cebde9060e652c070de2f781d9f063",
+      "bytes": 752502
     },
     {
       "path": "assets/index-CNk6SLOU.js",
@@ -1374,7 +1447,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "b16a752fec8671216c4c46f523925ebe25fadb5b24ea17fce9dda3f051d884e0",
+      "sha256": "180dcaa5361cddc7faf409d18779ad2f73e6374b2a09c0bb680f220a1841d45f",
       "bytes": 890
     },
     {
