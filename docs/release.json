@@ -1,9 +1,9 @@
 {
-  "release": "riverside-auto-operations-20261015",
+  "release": "riverside-headway-20261015",
   "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "55667d00c3e867063f3494219bfa719d17281d69931983337d5afcbeeb8e2a3a",
+  "sourceFingerprint": "fa7d4a945d84fe032553fe9415b2e46715295cdb0c92956adad924ce96755b9e",
   "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T19:36:46.820Z",
+  "builtAt": "2026-10-14T19:49:10.231Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -21,7 +21,7 @@
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser interaction or end-to-end simulation test for this feature."
+    "scope": "User explicitly requested build and deploy only."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -570,6 +570,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-DUIo9-5s.js",
+      "sha256": "a984c48b95513c62ea3a506ac8bb8e37966dfc07aa43279bee29075005e25207",
+      "bytes": 24446
+    },
+    {
       "path": "assets/AssetCatalogPage-DvsNYx-K.js",
       "sha256": "9a967411d1224ca17d15cf5b6068c9d3d76ce9e217f90e4a987388eabc73af26",
       "bytes": 24446
@@ -855,6 +860,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DO3f-mpq.js",
+      "sha256": "294d6ea6bed6271cb5a81965f1814d11e8e8af22a92add83935d181bac13cd96",
+      "bytes": 11982
+    },
+    {
       "path": "assets/Cc206ReviewPage-DP5rUs_7.js",
       "sha256": "f289b98e3593c23adc99d93aa695d33e18d099874dd4a1f6ef51c8efbe038170",
       "bytes": 11982
@@ -1010,6 +1020,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-DF0qrrqR.js",
+      "sha256": "a27d95f714638722fefff0c8138cc176d853f78892588614a1d3b529faca8b65",
+      "bytes": 8448
+    },
+    {
       "path": "assets/ConsistsPage-DfWAymtF.js",
       "sha256": "e4decce7987ca9da89f73a62b238b89400ba83ffdffdc73229f158b5617968a7",
       "bytes": 8448
@@ -1090,6 +1105,11 @@
       "bytes": 40924
     },
     {
+      "path": "assets/diorama-postprocessing-C9lscMlz.js",
+      "sha256": "80353a9775036b707dd999fc8eeeffa7e01bd500dda9a4fd5a6b32dcfff14aba",
+      "bytes": 40924
+    },
+    {
       "path": "assets/diorama-postprocessing-CKj4PqRo.js",
       "sha256": "1bd041212ad67614aa2a10adfa094d562f0f9b8043f76057a420e28727dc3c5d",
       "bytes": 40924
@@ -1152,6 +1172,11 @@
     {
       "path": "assets/DownloadSimple.es-abuwcTAF.js",
       "sha256": "f5308aaf9ba8bf90421868ebd6a58321557205ac132357bd206a9991355b87c6",
+      "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-AioCQP4z.js",
+      "sha256": "28a2bfd010e8ec8934082781a7890bffc54fed32064a6c520438475eafa5a145",
       "bytes": 2061
     },
     {
@@ -1385,6 +1410,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-Cn4ClQc_.js",
+      "sha256": "bdaf6b684c7e1ec32637c4895b67e54161fdacd62c06154a17ad53728c4f7453",
+      "bytes": 10825
+    },
+    {
       "path": "assets/GaugeReviewPage-CoDAA_yi.js",
       "sha256": "38485e5deec5d04d5bb4252b46efeef8c14ef17236b5711fa15ed3e860785625",
       "bytes": 10822
@@ -1607,6 +1637,11 @@
     {
       "path": "assets/HudPreviewPanel-8niBBabQ.js",
       "sha256": "9abc102630b1b5b2a4ad6240cfa4ac301dca413b792cdce1bd4599f804dabfab",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-B2e9hGYN.js",
+      "sha256": "fd59ea74d026581b94210126796a94d19fd90bd77a38ab0c59be0ee97c0bf99a",
       "bytes": 421
     },
     {
@@ -1925,6 +1960,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-e-0PUZNu.js",
+      "sha256": "66de49ebb8ee7e5b0ed4f06a4986256d7a2716756a58b31ff50b789647ff6085",
+      "bytes": 13963
+    },
+    {
       "path": "assets/ImportedCc206Page-fXD5vBM2.js",
       "sha256": "495f96d2ad00579c3b1aa50d8479273cd7b54a586a47d1c4bb5fbb5b2b761a94",
       "bytes": 13958
@@ -2115,6 +2155,11 @@
       "bytes": 747427
     },
     {
+      "path": "assets/index-KYDXQuv8.js",
+      "sha256": "dc721b504ec39ccc39c6fdb5f9c01f0d9af11a39cd861047a212b19a84584f75",
+      "bytes": 801220
+    },
+    {
       "path": "assets/index-PQGmcJX-.js",
       "sha256": "5395d34e063767f832e255c162eea878d7c3793dfe3fe1ba2cf81255753954ff",
       "bytes": 610333
@@ -2231,7 +2276,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "47d208cf62d17e9d744f7a570b0d2c211002e7b8172290c26c214a8a2bb00f3a",
+      "sha256": "bd47c0fd15cb32d2eca49680e142fcaf1fab8de3698a447c4bb642a965166983",
       "bytes": 890
     },
     {
@@ -2836,7 +2881,7 @@
       "white"
     ],
     "default": "red",
-    "authority": "shared protected-section ownership, scoped point readiness, braking and lamp decision",
+    "authority": "shared signal-zone reservations to next head or planned stop; scoped points, braking and lamps",
     "stopBeforeHead": 1,
     "postLateralOffset": 1.8,
     "speedLimits": {
@@ -2844,7 +2889,7 @@
       "branch": 4.5,
       "shunt": 3
     },
-    "tailProtection": "occupied sections held until last vehicle clears",
+    "tailProtection": "retain occupied blocks and committed route sections until tail clears",
     "exitPosition": "shared peron center +/- (peronLength/2 + 3)",
     "block": 2,
     "shunt": 2
@@ -2877,5 +2922,11 @@
     "collectAfterStoreEngineExits": true,
     "actualWagonMeshesRetained": true,
     "manualCollectButton": true
+  },
+  "headwayFix": {
+    "previous": "entry head checked only section 3 units beyond pole",
+    "now": "require destination route through next head or planned stop before entry; keep future route authority after passing pole",
+    "sharedModule": "rail/riverside-signal-reservation",
+    "simulationChecks": "not run; user chose build and deploy"
   }
 }
