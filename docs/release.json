@@ -1,9 +1,9 @@
 {
-  "release": "riverside-village-places-20261015-7121dce",
-  "sourceCommit": "7121dce9958db6fd2fdd0e6ec5476b6b740d92eb",
-  "sourceFingerprint": "ff640b99008d78e0199c6dba2e55f746484a6260",
+  "release": "riverside-natural-foreground-20261015-a70c9dd",
+  "sourceCommit": "a70c9dd2283dc86c2c79094f79a6b5f733a9b5c0",
+  "sourceFingerprint": "da49a561190775403d2ef3737c40545e56db3e49",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T14:22:08.196358+00:00",
+  "builtAt": "2026-10-15T14:39:31.906717+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "7f375f157d7c8744fc592c2fc8335e17410ab9b6",
+  "previousSourceCommit": "7121dce9958db6fd2fdd0e6ec5476b6b740d92eb",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,12 +29,11 @@
     "status": "not_run",
     "approvedByUser": false,
     "run": [],
-    "scope": "Village, mill, orchard and riverside static layout: source review and production build only.",
-    "note": "No simulation, test suite or gameplay checks run for this release."
+    "scope": "No simulation, automated tests or profiling; static source review and production build only."
   },
   "browserChecks": {
-    "status": "not_run",
-    "scope": "No browser visual or interaction checks; live HTTP delivery verified separately."
+    "status": "not_run_at_build",
+    "scope": "Targeted foreground screenshot follows deployment; no interaction or simulation suite."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -638,6 +637,11 @@
       "bytes": 24445
     },
     {
+      "path": "assets/AssetCatalogPage-DesGY8nG.js",
+      "sha256": "822f8d13bf94c7789884c7d64fbbf27e53383c61b1e66d3eb2b97d6a01c944f3",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-DEwrXZCx.js",
       "sha256": "96d7ae1553cc6ab0cdce1c8040fc997631247676871f019a4f2682ab6b16e9d5",
       "bytes": 24445
@@ -993,6 +997,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-BqhVKH53.js",
+      "sha256": "0911daccfb647d904b8607acb9d2686723af519012a3489c40e9879eeacebab9",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-BQIgqB2p.js",
       "sha256": "5c73a469ea29e264391db47edcb48fdd66ddadecfa0d57c09ada308f5782e584",
       "bytes": 11982
@@ -1266,6 +1275,11 @@
       "path": "assets/ConsistsPage-BxEz0qVZ.js",
       "sha256": "ac785eb06c6fc11bcd21e6fa251b5cff5c8bf6363cde4a80b4308665242c47c1",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-C-a26Vtm.js",
+      "sha256": "c3d822c84f3298f0ecdc7e8c24a7f0a06e584a347ae3962fed18955ba5d75cf5",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-C1ZG5y_O.js",
@@ -1723,6 +1737,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-Cq_NnJql.js",
+      "sha256": "043e9b159eeb096cd68f3589800b395cec45253f17638024e56721c6757be7bf",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-CQzNVcoe.js",
       "sha256": "9e53c08632c0aaa054d0b3e80cc61b2c773a7ad7dae06c8c1490f255428d9e35",
       "bytes": 2061
@@ -1871,6 +1890,11 @@
       "path": "assets/DownloadSimple.es-YpAhwte1.js",
       "sha256": "0e155d35aa0d3a57ef1f0b9470d7ef89288ffb5b35746cd78679f49da9b829dc",
       "bytes": 2061
+    },
+    {
+      "path": "assets/GaugeReviewPage-2fqi3M6S.js",
+      "sha256": "6449e16fdd6183f595cf0233decbadc95b86929e564bdd4e66691d1f07f50aad",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-2pfeHBB9.js",
@@ -2308,6 +2332,11 @@
       "bytes": 44398
     },
     {
+      "path": "assets/HudPreviewPanel-6Z3QwZ32.js",
+      "sha256": "37107500d71b2a66866d8cfe09922c4d05426dacf7fa1256bc92534ae499402a",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-8niBBabQ.js",
       "sha256": "9abc102630b1b5b2a4ad6240cfa4ac301dca413b792cdce1bd4599f804dabfab",
       "bytes": 421
@@ -2631,6 +2660,11 @@
       "path": "assets/ImportedCc206Page-BDsaVsAs.js",
       "sha256": "45e2bf8527b4582cad7c54108c87850380849bb3b49f8a27efb44f7cfee3349d",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-BEnPcn9N.js",
+      "sha256": "e7ea457070e2e64d4fe954ef2fb3b9771cc1aafd587431e451a121863a5faebd",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-BgEWxGTK.js",
@@ -3128,6 +3162,11 @@
       "bytes": 749509
     },
     {
+      "path": "assets/index-DjUZLSZu.js",
+      "sha256": "c17087092f79660ccba2a09458a4229f418ea988ea9fbac356fb4bfbc5469b64",
+      "bytes": 790530
+    },
+    {
       "path": "assets/index-DM5z6BDf.js",
       "sha256": "410c41c70055789aed05a1ead28c5e56c4469da27385c991bad0eba9ca458a4c",
       "bytes": 600675
@@ -3331,6 +3370,11 @@
       "path": "assets/use-hud-browser-D487qnNe.js",
       "sha256": "d6920478111f1363b023bb51e9267bcda2b35e28a30d535df9f04184ebd1481d",
       "bytes": 591615
+    },
+    {
+      "path": "assets/use-hud-browser-D5GeLP8N.js",
+      "sha256": "4decfbcd69ac494378d78e7ea3a521620537364d98a9818c3dd26069b4c16e39",
+      "bytes": 594128
     },
     {
       "path": "assets/use-hud-browser-D8ePTPD7.js",
@@ -3694,7 +3738,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "ab617e80bc4177261f460ca9b45167eb2896e566a7fbd5e8a79f602b4a4589c2",
+      "sha256": "8fb2d775ecf31c3b5fb0e1536cefe5ac0c8a7b84f63905c38f20c3e0e051fc24",
       "bytes": 1595
     },
     {
@@ -4903,6 +4947,19 @@
         "status": "not_run",
         "scope": "No browser visual, interaction or performance checks of this layout. HTTP delivery inspection only."
       }
+    },
+    "7121dce9958db6fd2fdd0e6ec5476b6b740d92eb": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "scope": "Village, mill, orchard and riverside static layout: source review and production build only.",
+        "note": "No simulation, test suite or gameplay checks run for this release."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser visual or interaction checks; live HTTP delivery verified separately."
+      }
     }
   },
   "northBridgeJunction": {
@@ -4970,5 +5027,14 @@
     "style": "Shared low-poly palette, cream plaster, layered terracotta roofs and matte plain ground",
     "ownership": "Session-owned static geometry; approved vegetation kit remains instanced; traffic and inventory retain existing controllers",
     "animations": "New activities and actors are not implemented by this layout release"
+  },
+  "naturalForeground": {
+    "readiness": "layout-only",
+    "places": "Household vegetable garden with potting pergola, irregular fenced pasture with open shelter and water trough",
+    "access": "Continuous dirt lane outside the rails, explicit field gate approaches; no railway crossing or new live vehicle route",
+    "landscape": "Six repeated grove patterns and all south random scatter removed; unequal west/east woodland masses, low central meadow and two landmark trees",
+    "landforms": "Three broad smooth rises, maximum 1.5/0.45/1.3 metres, shared by terrain mesh and scenery height queries",
+    "style": "Existing matte low-poly palette and instanced kit; plain terrain, no new textures",
+    "runtime": "No new actors, livestock animation or cargo inventory; existing traffic and rail controllers retain authority"
   }
 }
