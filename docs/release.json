@@ -1,9 +1,9 @@
 {
-  "release": "riverside-auto-north-exits-portals-20261015-3dd9e07",
-  "sourceCommit": "3dd9e070baaedc074725d3f644ff45fb0e647660",
-  "sourceFingerprint": "9d23c116bb5f07c0cefbadcfbfb3eb8c8f52490e",
+  "release": "riverside-single-bore-portals-20261015-ac90c58",
+  "sourceCommit": "ac90c58de338ba268bbac5f6daa7d5e5bb257409",
+  "sourceFingerprint": "8becb648e472b454cc4953ce0463ced0ab89ff9d",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T12:10:26.160998+00:00",
+  "builtAt": "2026-10-15T12:19:45.701838+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,34 +20,21 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "4326f78461e023e2e2bc490742aaf20e32bf9d8e",
+  "previousSourceCommit": "3dd9e070baaedc074725d3f644ff45fb0e647660",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "passed",
-    "approvedByUser": true,
-    "run": [
-      "node --experimental-transform-types scripts/trace-riverside-rail.ts --rail-only --seconds=900 --scenario=auto-north --label=auto-north-20261015-extended"
-    ],
-    "scope": "Authorized targeted Auto north-exit headless simulation only; no full suite, ambient road stress, browser or portal appearance tests.",
-    "results": {
-      "completedTrains": 23,
-      "simulatedSeconds": 900,
-      "conflictEnvelopeChecks": 9000,
-      "northStraightStopCompleted": 1,
-      "northStraightPassCompleted": 1,
-      "northTurnStopCompleted": 3,
-      "northTurnPassCompleted": 2,
-      "northExitAbruptResets": 0,
-      "recurringStopAdvanceCycles": 0
-    },
-    "note": "Initial 600-second window ended before a late straight-exit train completed; same focused run extended to 900 seconds passed. Combined execution 35.36s. Meet scenario was not selected; two isolated existing storage route-change resets are documented. See docs/riverside-auto-north-verification.md. Prior manual/geometry verification remains historical."
+    "status": "not_run",
+    "approvedByUser": false,
+    "run": [],
+    "scope": "Portal appearance correction: production build and static source review only. No simulations, browser or visual tests run.",
+    "note": "Earlier authorized Auto verification is preserved under historicalVerification for the previous source commit. Train movement/planner unchanged in this revision."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "Current approval covers targeted headless Auto verification. No portal/HUD browser appearance, interaction or performance tests; HTTP delivery checks only."
+    "scope": "No portal/HUD browser appearance, interaction or performance tests for this portal correction; HTTP delivery checks only."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -464,6 +451,11 @@
       "path": "assets/AssetCatalogPage-8jod8MlT.js",
       "sha256": "f0778d69d5020f662af61b905a9db105a9a288ff05070555a7dcbec1d8316f7b",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-B1naMGjB.js",
+      "sha256": "bc7c87d4981ab125d4b2d3a2dffe287d783e346059639aa8b1ec3086033017ec",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-B9H9FvXh.js",
@@ -1146,6 +1138,11 @@
       "bytes": 11973
     },
     {
+      "path": "assets/Cc206ReviewPage-orpJNJx1.js",
+      "sha256": "c909ba5991b78b1dee5040d8eed2e825ff8815cf14989739e377d0c5f8a615ea",
+      "bytes": 12019
+    },
+    {
       "path": "assets/ConsistsPage-2azHfWMT.js",
       "sha256": "04f77fa0a40c337be161dd558dd46763fc1bb3d2cb0542657187d436e768b07e",
       "bytes": 8448
@@ -1309,6 +1306,11 @@
       "path": "assets/ConsistsPage-DfWAymtF.js",
       "sha256": "e4decce7987ca9da89f73a62b238b89400ba83ffdffdc73229f158b5617968a7",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-DIaK555W.js",
+      "sha256": "5f34db1fe6e48d0ef5341fb7f211e5e6d4bb05c839fe3ab8d3a8f8bc9d8e7cd5",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-DJ2xjzUm.js",
@@ -1661,6 +1663,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-CX9wk0bo.js",
+      "sha256": "6c2e2453a5aa9a6e8701caff65131f2e8be1ea7a65f0dcf05e97d2b2f57b8714",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-D01Bf66D.js",
       "sha256": "a8379ab01ad005114ed2247dfba276aff361466bbc7de656d5e1aa457a84ea10",
       "bytes": 2099
@@ -1878,6 +1885,11 @@
     {
       "path": "assets/GaugeReviewPage-C7hZblp0.js",
       "sha256": "04ff5abccb0bad424ce636ce92467ec0ad6230c91460355bcdb693e8ef25a166",
+      "bytes": 18201
+    },
+    {
+      "path": "assets/GaugeReviewPage-C8eAbFZq.js",
+      "sha256": "35f9902ed0b5acd7e6558fa8d10bf0522699bced47ecfc1b3fe1ff65ddc2ef06",
       "bytes": 18201
     },
     {
@@ -2416,6 +2428,11 @@
       "bytes": 422
     },
     {
+      "path": "assets/HudPreviewPanel-kUelg7_U.js",
+      "sha256": "411ce7ec3a18cbda629cf01b6d7eba9a4300c4b44d918f97a4f25c126b442480",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-LJ64GhfH.js",
       "sha256": "c5fa08018126a602322c5c9f64e2bffa654d55b55e404d55b618febb2840c7e1",
       "bytes": 421
@@ -2624,6 +2641,11 @@
       "path": "assets/ImportedCc206Page-D9LwQwOq.js",
       "sha256": "e28e73ae0d4253441c2e71c013bcd6ffdecb38fcf993beddfedfd3e721c37ea4",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-DbKcUKDw.js",
+      "sha256": "2193587ddaa044cf76d5d7184918a6e6fc34edb4bd7e59ee0fa1caeaa340daef",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-Dd50LYL6.js",
@@ -2854,6 +2876,11 @@
       "path": "assets/index-CI7k24M3.js",
       "sha256": "82789e73e828bd99d024db630f931dfce4f4113a95d022866ee1a775ddfc9783",
       "bytes": 777500
+    },
+    {
+      "path": "assets/index-CiYWWwAO.js",
+      "sha256": "7b67df750650a7c55666291bff1e479307a6753ccad16671f0781c905a656caf",
+      "bytes": 756988
     },
     {
       "path": "assets/index-CK6ytzTF.css",
@@ -3113,6 +3140,11 @@
     {
       "path": "assets/use-hud-browser-6a5jKKOj.js",
       "sha256": "86477ce3fd71005b18ce258ac39a838ba563997fb73a3a05f07f9cdeb78c9a14",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-BM-XSF7L.js",
+      "sha256": "c076dfb8daaad5f35f06b60515738c60b0c23ca60673b6a0113c98a5ef630dca",
       "bytes": 594128
     },
     {
@@ -3482,7 +3514,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "e25b1b1a0777b138763f5633a6effd9531a2d75d3152d1501a987586e8db7352",
+      "sha256": "877058f6e977ed465ae1a3a9933193dad3ded02d9016429fccd6e2ca8633e6ee",
       "bytes": 1595
     },
     {
@@ -4290,7 +4322,7 @@
     "maxActiveAutomatic": 8,
     "maxQueuedAutomatic": 2,
     "physicalDeadlockAutoRecoveryGuaranteed": false,
-    "gameplayVerification": "Targeted headless Auto north-exit simulation passed; no current browser or broad suite run",
+    "gameplayVerification": "Previous targeted Auto simulation passed; historical evidence retained. No current simulation/browser/broad suite run for portal-only correction",
     "automaticMix": {
       "pass": 20,
       "stop": 15,
@@ -4628,6 +4660,32 @@
         "status": "blocked",
         "scope": "Requested HUD hover review could not run: browser control inventory had no connected browser. No gameplay/performance tests. HTTP delivery checks only."
       }
+    },
+    "3dd9e070baaedc074725d3f644ff45fb0e647660": {
+      "checks": {
+        "status": "passed",
+        "approvedByUser": true,
+        "run": [
+          "node --experimental-transform-types scripts/trace-riverside-rail.ts --rail-only --seconds=900 --scenario=auto-north --label=auto-north-20261015-extended"
+        ],
+        "scope": "Authorized targeted Auto north-exit headless simulation only; no full suite, ambient road stress, browser or portal appearance tests.",
+        "results": {
+          "completedTrains": 23,
+          "simulatedSeconds": 900,
+          "conflictEnvelopeChecks": 9000,
+          "northStraightStopCompleted": 1,
+          "northStraightPassCompleted": 1,
+          "northTurnStopCompleted": 3,
+          "northTurnPassCompleted": 2,
+          "northExitAbruptResets": 0,
+          "recurringStopAdvanceCycles": 0
+        },
+        "note": "Initial 600-second window ended before a late straight-exit train completed; same focused run extended to 900 seconds passed. Combined execution 35.36s. Meet scenario was not selected; two isolated existing storage route-change resets are documented. See docs/riverside-auto-north-verification.md. Prior manual/geometry verification remains historical."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "Current approval covers targeted headless Auto verification. No portal/HUD browser appearance, interaction or performance tests; HTTP delivery checks only."
+      }
     }
   },
   "northBridgeJunction": {
@@ -4635,7 +4693,7 @@
     "exits": "Playable dispatch choice north-exit: South station straight out or North station right-turn out; full tail clears hidden Z=-300 approach",
     "protection": "Six guarded points and three diamonds in one shared conflict block; granted authority remains held through braking until tail clearance",
     "signals": "Gate-specific unready point guards; controlled braking to protected boundary instead of immediate speed resets",
-    "verification": "Current authorized Auto simulation completed straight and right-turn exits in stop/pass operation; earlier manual/turnout geometry verification retained in historical release evidence"
+    "verification": "Historical Auto simulation completed straight and right-turn exits in stop/pass operation; no movement tests rerun for portal-only correction"
   },
   "carriageWheelVisibility": {
     "cause": "Stationary bogie frame and axleboxes obscure rotating discs and marker",
@@ -4659,10 +4717,12 @@
       "north-east",
       "north-exit"
     ],
-    "geometry": "Three paired low-poly stone arch portals with enclosed short dark throats and opaque rear occluders before map clipping",
+    "geometry": "Three low-poly stone arch portals, each with ONE wide shared bore for both tracks and no centre pier; enclosed dark throat and opaque arched rear occluder",
     "frontCoordinateMagnitude": 94.5,
     "rearCoordinateMagnitude": 99.7,
-    "openingWidth": 3.1,
+    "openingsPerArm": 1,
+    "openingsTotal": 3,
+    "openingWidth": 7.3,
     "openingCrownAboveRail": 4.5,
     "textures": 0,
     "addedLights": 0,
