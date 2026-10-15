@@ -1,9 +1,9 @@
 {
-  "release": "riverside-diorama-hud-traffic-trace-20261015-b499f94",
-  "sourceCommit": "b499f94492ebbeee3223489b0bdd2eded7b12d1a",
-  "sourceFingerprint": "11ebebc9d63aef8110df178faffed4efe60c1d7d",
+  "release": "riverside-blender-hud-water-v2-20261015-e66ebc7",
+  "sourceCommit": "e66ebc7b09bdce22d3469ab7e89d879dec78fa85",
+  "sourceFingerprint": "eafb534b5247894b898d18363f96bac2bd4cb15e",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T09:44:24.906994+00:00",
+  "builtAt": "2026-10-15T10:15:10.954105+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,25 +20,20 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "bd89b4b8cb431711a7a1c52db9a1137ccdac3d7a",
+  "previousSourceCommit": "b499f94492ebbeee3223489b0bdd2eded7b12d1a",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "targeted_passed",
-    "approvedByUser": true,
-    "run": [
-      "node --experimental-transform-types scripts/trace-riverside-road.ts --seconds=600",
-      "node --experimental-transform-types scripts/trace-riverside-road.ts --seconds=1200 --gates",
-      "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --label=coupled-final",
-      "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=600 --scenario=crossovers --label=crossovers-before"
-    ],
-    "note": "User explicitly requested rail/road engine simulation and trace. Focused headless regressions passed; no broad suite, HUD browser/gameplay check or performance measurement run."
+    "status": "not_run",
+    "approvedByUser": false,
+    "run": [],
+    "note": "This HUD/water release ran production build and asset authoring only. Earlier approved traffic simulations are historical evidence, not rerun on this revision."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No game browser/playback checks run. HTTP delivery verification only."
+    "scope": "No browser UI/gameplay/performance tests. HTTP delivery checks only."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -480,6 +475,11 @@
       "path": "assets/AssetCatalogPage-Bh5KYLJ_.js",
       "sha256": "7c4845588e241ae3b30aa5aa2d4c91dadebe16fe08ee343cb8e64d1faa047fd6",
       "bytes": 24445
+    },
+    {
+      "path": "assets/AssetCatalogPage-BoxcSAwQ.js",
+      "sha256": "c4f4412f6ec35dea5e041f15d0c5892c3ea03056ab7129f5f85c3fc5fe78afc3",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-BWvbdt5p.js",
@@ -972,6 +972,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DmqmwXy2.js",
+      "sha256": "b5a5eaa27dad741372a7fa9f158e7ab578fcf78ee0a080c09e1bcac2855746b6",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-DO3f-mpq.js",
       "sha256": "294d6ea6bed6271cb5a81965f1814d11e8e8af22a92add83935d181bac13cd96",
       "bytes": 11982
@@ -1180,6 +1185,11 @@
       "path": "assets/ConsistsPage-Dam5vk_b.js",
       "sha256": "04e4192b89fbf6b757c1c4eef18c99a2c6ac6d86f27b5e83aaf0dca943035e4f",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-DbxpPbm7.js",
+      "sha256": "3eb7d943fb92d7f44eba5eb740374de225c93ea29b22efbdce7a0c1978b72618",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-Dcd1g0uU.js",
@@ -1582,6 +1592,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DVgfDMYJ.js",
+      "sha256": "12f9d788ecad27ba828740f4d8b52c8fb6c26f5046d1c7c52a4deb2c41a623dd",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-DzE4FrcB.js",
       "sha256": "8e0044bd767d47db58e95d8281e8af02cdf88d4ae715b908ecae73dc8b8a72e2",
       "bytes": 2061
@@ -1695,6 +1710,11 @@
       "path": "assets/GaugeReviewPage-Bw5lhQYn.js",
       "sha256": "61dad171dec242c0bc02c289f783b22e8dfa829ab6c9926773efd7123aefb5ca",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-BxMrEpAC.js",
+      "sha256": "27db7d51086696fd4fbc9fda4613e738b0f9ba318ba599671d642d113bc0f69d",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-ByfHzfaX.js",
@@ -2107,6 +2127,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-CXHalgAS.js",
+      "sha256": "5914da872084348c18fffa26a901263d2c8dd18ad009fbf675ad6130086eb205",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-CZc6SRHe.js",
       "sha256": "aeced16d660a8fce84d87a6043152ea8a76f8b7c86f738d2ba4d764b9acf06c7",
       "bytes": 421
@@ -2352,6 +2377,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-CM0BJ9XQ.js",
+      "sha256": "26762dda0d276e582811d690fac4a03c5584a56bf1a9ee784b73b3c5d68ab2f3",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-Cr_WnEji.js",
       "sha256": "4ad4ebacbdf1f36eb8331841a88e183640fe6c78ceea50fe017db86f213fcbc8",
       "bytes": 13962
@@ -2497,6 +2527,11 @@
       "bytes": 734604
     },
     {
+      "path": "assets/index-B9Xy7JUg.js",
+      "sha256": "8ba58482dd11bb993f36f72dde9db3d1c320a31dd6eb7bc78d20fa444ae49006",
+      "bytes": 729896
+    },
+    {
       "path": "assets/index-BAD9LEMv.js",
       "sha256": "27d7e430733c42131860d1ab1988e0279714340869074c3e7e9e709cf4703177",
       "bytes": 733456
@@ -2515,6 +2550,11 @@
       "path": "assets/index-BFwwF7CX.js",
       "sha256": "39d8afaa961e5f355117cf571f2c32d77c01db421e853f42357b1834031a1b2d",
       "bytes": 586896
+    },
+    {
+      "path": "assets/index-BgBxt5Y9.css",
+      "sha256": "94958d4d2ae1cba8936854d00846d415e12181b1025ad5c4414c35543d564c94",
+      "bytes": 75470
     },
     {
       "path": "assets/index-BN_u3ozD.js",
@@ -2787,6 +2827,11 @@
       "bytes": 261234
     },
     {
+      "path": "assets/use-hud-browser-D487qnNe.js",
+      "sha256": "d6920478111f1363b023bb51e9267bcda2b35e28a30d535df9f04184ebd1481d",
+      "bytes": 591615
+    },
+    {
       "path": "assets/use-hud-browser-qTapQkaX.js",
       "sha256": "d292fd114f36257438aa4e12a9db4f38f3a7ae7f460bc95fa93c4c541b53062e",
       "bytes": 591615
@@ -2837,8 +2882,83 @@
       "bytes": 4480
     },
     {
+      "path": "hud/diorama-v2/button-active.png",
+      "sha256": "83c277171c3a61c1a5935238aa3f39fba4c99bd8e81eef7b7c27ac9e85d16e3d",
+      "bytes": 66553
+    },
+    {
+      "path": "hud/diorama-v2/button-selected.png",
+      "sha256": "bebbed97e54ecdabc15bdc31dd1778571dfedbf28ec3660840a81a2bd8690922",
+      "bytes": 64669
+    },
+    {
+      "path": "hud/diorama-v2/button.png",
+      "sha256": "4be85c6e23dfc968970217d395ccb904c17142f2979e2b6e9567a14db97d46e3",
+      "bytes": 66296
+    },
+    {
+      "path": "hud/diorama-v2/camera.png",
+      "sha256": "0015604b512e5aeff4ab4be0d7ff89bdba418e8aba0e5f902528f5011a26a8b7",
+      "bytes": 59584
+    },
+    {
+      "path": "hud/diorama-v2/formation.png",
+      "sha256": "97490e437884239778f8c32fb8e106fdfa252f01b6edd9008ef912aacda9b7a6",
+      "bytes": 47465
+    },
+    {
+      "path": "hud/diorama-v2/manifest.json",
+      "sha256": "38e4598ee3b6dfd8c4e76e0f9df4d4445e16839cf8d484b9c5bc7460d6d4739e",
+      "bytes": 1062
+    },
+    {
+      "path": "hud/diorama-v2/moon.png",
+      "sha256": "0fe91d16418a596c1740446b56722a9cbe714ffd305f387fe10fefc059b9b62a",
+      "bytes": 41489
+    },
+    {
+      "path": "hud/diorama-v2/nature.png",
+      "sha256": "afa749a004cb10e6b56026d2967cd6f63b547567c426e29d72681c189e4f0d7a",
+      "bytes": 41562
+    },
+    {
+      "path": "hud/diorama-v2/panel-dark.png",
+      "sha256": "3ed6674be30d18f6b5c57c7cd0626c68d928add095ff7e79ba2a973c6e98b624",
+      "bytes": 66208
+    },
+    {
+      "path": "hud/diorama-v2/panel.png",
+      "sha256": "5a712028f44f27d59b1ed127829eebe5b5efb96e41e33bb811e21ad370894f32",
+      "bytes": 66296
+    },
+    {
+      "path": "hud/diorama-v2/pause.png",
+      "sha256": "99d417936687e1a8ee6a1a91446d6563e73da1b25faab11e1e8ddb2230497b1e",
+      "bytes": 49783
+    },
+    {
+      "path": "hud/diorama-v2/play.png",
+      "sha256": "6033be3af17a71a2fe037e116ee46bae37f8b6815c7d26f232a0950b92b2cc09",
+      "bytes": 43605
+    },
+    {
+      "path": "hud/diorama-v2/settings.png",
+      "sha256": "1112b2f373bb7239696678f4c0cf35cc8e87f47917874b88eed077234aa59ae9",
+      "bytes": 55492
+    },
+    {
+      "path": "hud/diorama-v2/station.png",
+      "sha256": "0bbaecc4e31b2a3435a9bc516171243c9742481a347db9ea39e89846228980b4",
+      "bytes": 48072
+    },
+    {
+      "path": "hud/diorama-v2/sun.png",
+      "sha256": "37f29e153421d5441f234269a3d08e1ca90e5fcf0b0e03d5f5d30115823d1f75",
+      "bytes": 51821
+    },
+    {
       "path": "index.html",
-      "sha256": "5b74921047f498501bda5c9d59e6428638376a1c1f19b1830841b40b968bc165",
+      "sha256": "7773b2a7f3c7c21bdd74ec0c113668808d50f213bb10879165b832953d03d2b3",
       "bytes": 1595
     },
     {
@@ -3577,7 +3697,7 @@
     "assetReview": "Original Blender kit visually reviewed through a presentation render and eight-frame wing-motion contact sheet; game appearance and performance unmeasured"
   },
   "quietAmbience": {
-    "riverRipples": "Owned by riverWater; old duplicate ripple batch removed",
+    "riverRipples": "Repeated ripple arcs removed in water revision 2; water motion remains owned by riverWater",
     "wind": "Root-pinned grass shear using existing instances",
     "kitchenChimneys": 3,
     "smokePuffs": 15,
@@ -3649,20 +3769,15 @@
     "gameplayVerification": "not_run"
   },
   "riverWater": {
-    "surface": "Shared diorama palette channel-to-bank vertex color gradient",
-    "currentHighlightStreaks": 18,
-    "rippleArcs": 6,
-    "downstreamMetersPerSessionSecond": 0.42,
-    "surfaceTriangles": 3840,
-    "detailTriangles": 864,
-    "netAddedTriangles": 192,
+    "revision": 2,
+    "surface": "Shared diorama palette, asymmetric channel color, blended shallow shoreline, low-amplitude coherent surface motion",
+    "details": "Sparse irregular fading current glints; repeated ripple rings removed",
     "maxDrawCallsTotal": 2,
-    "dynamicBufferBytes": 41472,
     "textures": 0,
     "addedShadowCasters": 0,
-    "clock": "Session clock; pause and reset shared with world ambience",
-    "weather": "Wind widens streaks; night, cloud and rain reduce contrast",
-    "gameVisualReview": "not_run"
+    "clock": "Session clock, pause and reset shared with world ambience",
+    "gameVisualReview": "not_run",
+    "note": "See docs/river-water-refinement.md for implementation and verification limits"
   },
   "passengerGangways": {
     "pairs": "Adjacent executive/economy coaches including mixed passenger pairs",
@@ -3710,12 +3825,85 @@
   "dioramaHUD": {
     "direction": "A, selected by user",
     "composition": "Persistent left roster, compact upper-right time/playback, floating lower dock, selected details at right",
-    "style": "Matte cream, olive text, terracotta actions, sage states, shallow bevel and shadow",
-    "icons": "Cached actual CC201/CC206, station-selatan and approved scenery-kit model thumbnails",
-    "renderer": "One existing serial on-demand thumbnail renderer; no per-icon animation loop",
+    "style": "Blender-authored matte beveled panel/button nine-slices and orthographic miniature icon renders, with semantic HTML labels",
+    "icons": "Nine transparent Blender renders: actual CC206, station and scenery-kit sources plus authored camera, gear, playback and time symbols",
+    "renderer": "Static authored PNG navigation icons; existing cached on-demand model thumbnails retained for train roster",
     "stationMenu": "Progressive disclosure for farm, storage, Auto mix and real journey history",
     "cinematicDefault": "Off; explicit existing preferences retained",
-    "verification": "Production build and static React/layout/accessibility review only; browser visuals not checked"
+    "verification": "Production build and Blender authoring render review; no browser/UI interaction tests",
+    "authoredAssetDirectory": "hud/diorama-v2/",
+    "authoredAssets": [
+      {
+        "path": "hud/diorama-v2/button-active.png",
+        "bytes": 66553,
+        "sha256": "83c277171c3a61c1a5935238aa3f39fba4c99bd8e81eef7b7c27ac9e85d16e3d"
+      },
+      {
+        "path": "hud/diorama-v2/button-selected.png",
+        "bytes": 64669,
+        "sha256": "bebbed97e54ecdabc15bdc31dd1778571dfedbf28ec3660840a81a2bd8690922"
+      },
+      {
+        "path": "hud/diorama-v2/button.png",
+        "bytes": 66296,
+        "sha256": "4be85c6e23dfc968970217d395ccb904c17142f2979e2b6e9567a14db97d46e3"
+      },
+      {
+        "path": "hud/diorama-v2/camera.png",
+        "bytes": 59584,
+        "sha256": "0015604b512e5aeff4ab4be0d7ff89bdba418e8aba0e5f902528f5011a26a8b7"
+      },
+      {
+        "path": "hud/diorama-v2/formation.png",
+        "bytes": 47465,
+        "sha256": "97490e437884239778f8c32fb8e106fdfa252f01b6edd9008ef912aacda9b7a6"
+      },
+      {
+        "path": "hud/diorama-v2/moon.png",
+        "bytes": 41489,
+        "sha256": "0fe91d16418a596c1740446b56722a9cbe714ffd305f387fe10fefc059b9b62a"
+      },
+      {
+        "path": "hud/diorama-v2/nature.png",
+        "bytes": 41562,
+        "sha256": "afa749a004cb10e6b56026d2967cd6f63b547567c426e29d72681c189e4f0d7a"
+      },
+      {
+        "path": "hud/diorama-v2/panel-dark.png",
+        "bytes": 66208,
+        "sha256": "3ed6674be30d18f6b5c57c7cd0626c68d928add095ff7e79ba2a973c6e98b624"
+      },
+      {
+        "path": "hud/diorama-v2/panel.png",
+        "bytes": 66296,
+        "sha256": "5a712028f44f27d59b1ed127829eebe5b5efb96e41e33bb811e21ad370894f32"
+      },
+      {
+        "path": "hud/diorama-v2/pause.png",
+        "bytes": 49783,
+        "sha256": "99d417936687e1a8ee6a1a91446d6563e73da1b25faab11e1e8ddb2230497b1e"
+      },
+      {
+        "path": "hud/diorama-v2/play.png",
+        "bytes": 43605,
+        "sha256": "6033be3af17a71a2fe037e116ee46bae37f8b6815c7d26f232a0950b92b2cc09"
+      },
+      {
+        "path": "hud/diorama-v2/settings.png",
+        "bytes": 55492,
+        "sha256": "1112b2f373bb7239696678f4c0cf35cc8e87f47917874b88eed077234aa59ae9"
+      },
+      {
+        "path": "hud/diorama-v2/station.png",
+        "bytes": 48072,
+        "sha256": "0bbaecc4e31b2a3435a9bc516171243c9742481a347db9ea39e89846228980b4"
+      },
+      {
+        "path": "hud/diorama-v2/sun.png",
+        "bytes": 51821,
+        "sha256": "37f29e153421d5441f234269a3d08e1ca90e5fcf0b0e03d5f5d30115823d1f75"
+      }
+    ]
   },
   "trafficDiagnosis": {
     "reproduced": [
@@ -3752,5 +3940,24 @@
     "roadAdapter": "Production modules and original local vehicle GLB; planar height callback and periodic gates",
     "trace": "Optional read-only callback for actors, blocks, owners, stop limits, signals and crossing state; ignored JSON artifacts from CLI runners",
     "browserGameplay": "not_run"
+  },
+  "historicalVerification": {
+    "b499f94492ebbeee3223489b0bdd2eded7b12d1a": {
+      "checks": {
+        "status": "targeted_passed",
+        "approvedByUser": true,
+        "run": [
+          "node --experimental-transform-types scripts/trace-riverside-road.ts --seconds=600",
+          "node --experimental-transform-types scripts/trace-riverside-road.ts --seconds=1200 --gates",
+          "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --label=coupled-final",
+          "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=600 --scenario=crossovers --label=crossovers-before"
+        ],
+        "note": "User explicitly requested rail/road engine simulation and trace. Focused headless regressions passed; no broad suite, HUD browser/gameplay check or performance measurement run."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No game browser/playback checks run. HTTP delivery verification only."
+      }
+    }
   }
 }

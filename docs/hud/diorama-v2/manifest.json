@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "authoring": "Blender 4.5.10 LTS / Cycles / AgX Medium High Contrast",
+  "size": [
+    256,
+    256
+  ],
+  "alpha": true,
+  "icons": [
+    "formation",
+    "station",
+    "nature",
+    "camera",
+    "settings",
+    "play",
+    "pause",
+    "sun",
+    "moon"
+  ],
+  "skins": [
+    "panel",
+    "panel-dark",
+    "button",
+    "button-active",
+    "button-selected"
+  ],
+  "nineSlice": {
+    "sourceInset": 48,
+    "displayWidth": 24
+  },
+  "sources": {
+    "formation": "models/cc206-sketchfab-medium.glb",
+    "station": "models/station-selatan.glb",
+    "nature": "models/riverside-diorama-kit.glb"
+  },
+  "files": {
+    "formation.png": 47465,
+    "station.png": 48072,
+    "nature.png": 41562,
+    "camera.png": 59584,
+    "settings.png": 55492,
+    "play.png": 43605,
+    "pause.png": 49783,
+    "sun.png": 51821,
+    "moon.png": 41489,
+    "panel.png": 66296,
+    "panel-dark.png": 66208,
+    "button.png": 66296,
+    "button-active.png": 66553,
+    "button-selected.png": 64669
+  }
+}
