@@ -1,9 +1,9 @@
 {
-  "release": "riverside-cinematic-20261015",
-  "sourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
-  "sourceFingerprint": "957abc872229344be34596a73418693f857cefca0b8706bbbc5394d0e548ddb6",
-  "sourceIncludesUncommittedChanges": true,
-  "builtAt": "2026-10-14T19:57:52.278Z",
+  "release": "riverside-north-farm-20261015",
+  "sourceCommit": "fa20c82c670823fa379acbe6411dd26d784cea8c",
+  "sourceFingerprint": "f1c0dcdf9b3b13e65bcfa5bfd006a7964554f36b9df39de462342f803d543f9f",
+  "sourceIncludesUncommittedChanges": false,
+  "builtAt": "2026-10-15T06:33:26.960Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -16,12 +16,19 @@
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "not_run",
-    "reason": "AGENTS.md requires explicit test consent; implementation and deployment authorization does not include tests."
+    "status": "targeted_passed",
+    "approvedByUser": true,
+    "run": [
+      "check-module-boundaries",
+      "check-asset-registry",
+      "check-map-definition",
+      "check-render-batching"
+    ],
+    "note": "Full suite not run; map-definition and render-batching re-run after the R5 grade fix."
   },
   "browserChecks": {
-    "status": "not_run",
-    "scope": "Build and deployment only, per ongoing user preference."
+    "status": "passed",
+    "scope": "Headless Chrome on local dev server: Riverside loads without console errors, crop phases, haul pickup and road traffic visible, farm HUD card populated. Barrier closing for a passing train and badug wagon loading not observed."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -2998,5 +3005,12 @@
     "simulationAndCameraContinue": true,
     "reducedMotionSupported": true,
     "loadingAndExternalBrowserProtected": true
+  },
+  "northFarm": {
+    "models": [
+      "models/riverside-farm-kit.glb",
+      "models/riverside-road-kit.glb",
+      "models/riverside-vehicles.glb"
+    ]
   }
 }
