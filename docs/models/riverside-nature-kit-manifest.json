@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "file": "riverside-nature-kit.glb",
+  "bytes": 56496,
+  "triangles": 614,
+  "meshes": 9,
+  "materials": 1,
+  "textures": 0,
+  "assets": [
+    "bird-meadow",
+    "bird-river",
+    "butterfly-meadow"
+  ],
+  "author": "Original project assets",
+  "artStyle": "stylized-low-poly-diorama",
+  "paletteSource": "src/art/diorama-style.ts",
+  "coordinates": "glTF Y-up, +Z forward, wing flap around local Z",
+  "motion": "Wing pivots exported; continuous flap/glide and flight paths controlled by game time. Blender preview actions remain in the .blend only."
+}

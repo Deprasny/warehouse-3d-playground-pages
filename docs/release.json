@@ -1,9 +1,9 @@
 {
-  "release": "riverside-traffic-horn-20261015-f73c5ca",
-  "sourceCommit": "f73c5ca0d76b8179db860bc3ec5caae36e6d699d",
-  "sourceFingerprint": "f9e6e2aed5a4e98432825c9eeacb2d7c4e470a25",
+  "release": "riverside-nature-life-20261015-416509c",
+  "sourceCommit": "416509c926d4bb4ef36f3baf2cf25f4e0311f818",
+  "sourceFingerprint": "5c6c94d826094965b80e77dd012ca507701d9e03",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T07:24:48.9817557Z",
+  "builtAt": "2026-10-15T07:41:46.4495857Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "fa20c82c670823fa379acbe6411dd26d784cea8c",
+  "previousSourceCommit": "f73c5ca0d76b8179db860bc3ec5caae36e6d699d",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,11 +29,11 @@
     "status": "not_run",
     "approvedByUser": false,
     "run": [],
-    "note": "User authorized implementation, build and production deployment only; no simulation, audio or regression tests run."
+    "note": "No automated gameplay, simulation, browser or regression tests run; implementation, asset creation, build and deployment only."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "User will inspect the published game; no browser automation or playback checks run."
+    "scope": "User will inspect the published scene; no game browser/playback checks run."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -3031,5 +3031,19 @@
     "crossing": "body-length stop limits; admitted vehicles clear before arms lower; trains wait for closure",
     "collision": "shared world footprints across routes and fleet",
     "runtimeValidation": "not run"
+  },
+  "natureLife": {
+    "kit": "models/riverside-nature-kit.glb",
+    "bytes": 56496,
+    "sha256": "e723b436e5712f9ec7cf17ba5777a9a93fb2e78c9e1aafd01312b62d524a9113",
+    "templateTriangles": 614,
+    "materials": 1,
+    "textures": 0,
+    "birds": 8,
+    "butterflies": 3,
+    "maxDrawCalls": 9,
+    "motion": "Sparse staggered flocks with flap/glide bursts; small flower-bed loops; session clock owns motion",
+    "environment": "Daytime only; heavy rain, storms and snow suppress activity",
+    "assetReview": "Original Blender kit visually reviewed through a presentation render and eight-frame wing-motion contact sheet; game appearance and performance unmeasured"
   }
 }
