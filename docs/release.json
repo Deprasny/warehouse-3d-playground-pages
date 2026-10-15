@@ -1,9 +1,9 @@
 {
-  "release": "riverside-functional-work-layout-20261015-7f375f1",
-  "sourceCommit": "7f375f157d7c8744fc592c2fc8335e17410ab9b6",
-  "sourceFingerprint": "f17da1e12caed86092c0bb5caff534d9e584e86b",
+  "release": "riverside-village-places-20261015-7121dce",
+  "sourceCommit": "7121dce9958db6fd2fdd0e6ec5476b6b740d92eb",
+  "sourceFingerprint": "ff640b99008d78e0199c6dba2e55f746484a6260",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T14:03:08.072837+00:00",
+  "builtAt": "2026-10-15T14:22:08.196358+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e1ae2d21eb186642527e98be7faac1e552fa8249",
+  "previousSourceCommit": "7f375f157d7c8744fc592c2fc8335e17410ab9b6",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,12 +29,12 @@
     "status": "not_run",
     "approvedByUser": false,
     "run": [],
-    "scope": "Functional farm/warehouse/rail-dock layout: static source and asset-dimension review plus production build only.",
-    "note": "No simulations or gameplay checks in this stage. Earlier targeted results are historical evidence for their recorded source revisions."
+    "scope": "Village, mill, orchard and riverside static layout: source review and production build only.",
+    "note": "No simulation, test suite or gameplay checks run for this release."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser visual, interaction or performance checks of this layout. HTTP delivery inspection only."
+    "scope": "No browser visual or interaction checks; live HTTP delivery verified separately."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -471,6 +471,11 @@
       "path": "assets/AssetCatalogPage-BAneos-p.js",
       "sha256": "d7f117ed25aa372a585171ded8d64bebff21fcb4925d65bc5f94fc8b3f1bcbe0",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-BfVw181L.js",
+      "sha256": "17dfe3b8ce5ff2c2fa2477fb0542b83a74026b6c3d8b2af97ad67e2db57891c9",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-BgRMhMcQ.js",
@@ -993,6 +998,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-BQN4FH8f.js",
+      "sha256": "3c4eb928ebd176df5ef36301f3657e83f95461df37c7489e5d71fe4939a08b29",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-BR1_TwVD.js",
       "sha256": "fa45938447f13a205411b7d5c50caa59fbf9f96e72872c8606d3d683f294b6af",
       "bytes": 12019
@@ -1191,6 +1201,11 @@
       "path": "assets/ConsistsPage-B_HfR5l-.js",
       "sha256": "780188229354947abc9034d2e94ec3711166fbc3502f8a5306e071554a6d5163",
       "bytes": 8442
+    },
+    {
+      "path": "assets/ConsistsPage-BC0PjYvy.js",
+      "sha256": "348b043fa7815b1599bbff4ac0c29daff8d8c2d1f78575416c21309656b5abcd",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-Bg5TnmR0.js",
@@ -1723,6 +1738,11 @@
       "bytes": 2099
     },
     {
+      "path": "assets/DownloadSimple.es-Cz_IvMp9.js",
+      "sha256": "c6fb6dc062d2040ecd7e777cd6041281a2b7c16f52ce94a1de377732970e14b5",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-D01Bf66D.js",
       "sha256": "a8379ab01ad005114ed2247dfba276aff361466bbc7de656d5e1aa457a84ea10",
       "bytes": 2099
@@ -2018,6 +2038,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-D529KBsu.js",
+      "sha256": "2aa23ef978310d2b521b5e6925556ed1a2073a815c421fcd2e519850eab69ae5",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-D7VjjaHD.js",
       "sha256": "3eb6ee2b50fdcac44ad68aae357d39968e5bf218739993ce7f2c7dee0aa04d8b",
       "bytes": 10825
@@ -2291,6 +2316,11 @@
       "path": "assets/HudPreviewPanel-B2e9hGYN.js",
       "sha256": "fd59ea74d026581b94210126796a94d19fd90bd77a38ab0c59be0ee97c0bf99a",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-B4RFl-QU.js",
+      "sha256": "84d6104bc5f49cbb5a0ea8a2b7c8a6096d862ecd06037a49527363d9109e8a85",
+      "bytes": 422
     },
     {
       "path": "assets/HudPreviewPanel-Bapn4rat.js",
@@ -2828,6 +2858,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-kwNM8l73.js",
+      "sha256": "e4a19eff18fb2ba3cf235e41ca8b633a4ad4e305c7ad6640faf581cc59cdba1f",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-PQIAg_Ml.js",
       "sha256": "2b83a7873f87ee3324c9417887f4211562b5b8ba123e4f940c1d7494d7cd94ca",
       "bytes": 13963
@@ -2971,6 +3006,11 @@
       "path": "assets/index-C4n99HSt.css",
       "sha256": "1aeee37c2d4dcd53655adcaaab202adb5c787ffa349f66e5368aef36cac1bee7",
       "bytes": 59575
+    },
+    {
+      "path": "assets/index-C8XmlTp5.js",
+      "sha256": "68e523757db7dbbc888018340af9d06d9c470a9500a8b9fc4a1a0d8389050f8e",
+      "bytes": 781251
     },
     {
       "path": "assets/index-CB5H3k2w.js",
@@ -3265,6 +3305,11 @@
     {
       "path": "assets/use-hud-browser-BM-XSF7L.js",
       "sha256": "c076dfb8daaad5f35f06b60515738c60b0c23ca60673b6a0113c98a5ef630dca",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-Boo3kx7N.js",
+      "sha256": "bbe60ac8cb902c8546a894b37a6791bb56e18aa430fee67bbcff34414f54e63c",
       "bytes": 594128
     },
     {
@@ -3649,7 +3694,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "6881045663f996fa1b1a9b36734c05e362b4bde987cb71c2db21604a64936e13",
+      "sha256": "ab617e80bc4177261f460ca9b45167eb2896e566a7fbd5e8a79f602b4a4589c2",
       "bytes": 1595
     },
     {
@@ -4845,6 +4890,19 @@
         "status": "not_run",
         "scope": "No browser visual, interaction, gameplay or performance checks for this release. HTTP delivery inspection only."
       }
+    },
+    "7f375f157d7c8744fc592c2fc8335e17410ab9b6": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "scope": "Functional farm/warehouse/rail-dock layout: static source and asset-dimension review plus production build only.",
+        "note": "No simulations or gameplay checks in this stage. Earlier targeted results are historical evidence for their recorded source revisions."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser visual, interaction or performance checks of this layout. HTTP delivery inspection only."
+      }
     }
   },
   "northBridgeJunction": {
@@ -4901,5 +4959,16 @@
     "animations": "Not implemented in this stage; no new moving actors or live port/crossing permissions",
     "style": "Shared stylized low-poly palette, cream/terracotta architecture and plain matte soil/paving",
     "verification": "Source review and production build only; runtime, appearance and swept-path checks not run"
+  },
+  "villagePlaces": {
+    "readiness": "layout-only",
+    "westVillage": "Open warung, three market stalls, communal well, courtyard and household garden",
+    "eastVillage": "Open workshop, lean-to workbay and village approach",
+    "northProduction": "Rice mill, drying court, lumbung, office, water tank and service approach",
+    "landscape": "Orchard and composed foreground groves; south station keepout no longer suppresses distant foreground vegetation",
+    "river": "Raised southbank leisure deck, small open pavilion, benches and connected shore walk",
+    "style": "Shared low-poly palette, cream plaster, layered terracotta roofs and matte plain ground",
+    "ownership": "Session-owned static geometry; approved vegetation kit remains instanced; traffic and inventory retain existing controllers",
+    "animations": "New activities and actors are not implemented by this layout release"
   }
 }
