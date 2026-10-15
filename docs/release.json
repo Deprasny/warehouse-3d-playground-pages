@@ -1,9 +1,9 @@
 {
-  "release": "riverside-stable-authority-north-turn-shore-20261015-4326f78",
-  "sourceCommit": "4326f78461e023e2e2bc490742aaf20e32bf9d8e",
-  "sourceFingerprint": "883e47093f0afcce13a3740f898c70fa9e4ac6d9",
+  "release": "riverside-auto-north-exits-portals-20261015-3dd9e07",
+  "sourceCommit": "3dd9e070baaedc074725d3f644ff45fb0e647660",
+  "sourceFingerprint": "9d23c116bb5f07c0cefbadcfbfb3eb8c8f52490e",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T11:54:14.469793+00:00",
+  "builtAt": "2026-10-15T12:10:26.160998+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e5ce0b5b591eaa230c0159b82d654d89fdaca633",
+  "previousSourceCommit": "4326f78461e023e2e2bc490742aaf20e32bf9d8e",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,27 +29,25 @@
     "status": "passed",
     "approvedByUser": true,
     "run": [
-      "stability-single",
-      "stability-opposed",
-      "stability-north-straight",
-      "stability-north-turn",
-      "stability-north-opposed",
-      "check-riverside-movement-stability"
+      "node --experimental-transform-types scripts/trace-riverside-rail.ts --rail-only --seconds=900 --scenario=auto-north --label=auto-north-20261015-extended"
     ],
-    "scope": "Targeted headless rail stability and north-exit verification only; no full suite, road stress, browser or water visual tests.",
+    "scope": "Authorized targeted Auto north-exit headless simulation only; no full suite, ambient road stress, browser or portal appearance tests.",
     "results": {
-      "completedTrains": 7,
-      "abruptFreeApproachResets": 0,
-      "conflictEnvelopeChecks": 11800,
-      "turnoutConfigs": 6,
-      "diamondRailHits": 12,
-      "railGaps": 24
+      "completedTrains": 23,
+      "simulatedSeconds": 900,
+      "conflictEnvelopeChecks": 9000,
+      "northStraightStopCompleted": 1,
+      "northStraightPassCompleted": 1,
+      "northTurnStopCompleted": 3,
+      "northTurnPassCompleted": 2,
+      "northExitAbruptResets": 0,
+      "recurringStopAdvanceCycles": 0
     },
-    "note": "Stop/advance reproduced red at 28.6 simulated seconds before correction. Five final scenarios passed with require-smooth; geometry rerun after explicit public constructor correction. See docs/rail-movement-stability.md."
+    "note": "Initial 600-second window ended before a late straight-exit train completed; same focused run extended to 900 seconds passed. Combined execution 35.36s. Meet scenario was not selected; two isolated existing storage route-change resets are documented. See docs/riverside-auto-north-verification.md. Prior manual/geometry verification remains historical."
   },
   "browserChecks": {
-    "status": "blocked",
-    "scope": "Requested HUD hover review could not run: browser control inventory had no connected browser. No gameplay/performance tests. HTTP delivery checks only."
+    "status": "not_run",
+    "scope": "Current approval covers targeted headless Auto verification. No portal/HUD browser appearance, interaction or performance tests; HTTP delivery checks only."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -658,6 +656,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-DQC_iCiL.js",
+      "sha256": "8a40643ede771ed3851aee2badbf47fb204eb35c47832958a626c1a6e4db012e",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-Dsl_yCpK.js",
       "sha256": "69edf97552e2bd8376b29312802881b1f47a7fed69874f5f143028c698885f5b",
       "bytes": 24446
@@ -895,6 +898,11 @@
     {
       "path": "assets/Cc206ReviewPage-406fPcoh.js",
       "sha256": "817bfb6450f15dfd0c87baba07e59bd5363f7d3267d37b4f292726a9fb879bf0",
+      "bytes": 12019
+    },
+    {
+      "path": "assets/Cc206ReviewPage-4uh7dq6W.js",
+      "sha256": "041db70508dafba28fce9ca176d62eca55689d08c006fa30a75533aaaaccba4c",
       "bytes": 12019
     },
     {
@@ -1251,6 +1259,11 @@
       "path": "assets/ConsistsPage-CuernzGn.js",
       "sha256": "0511f077ad03f736afbf5542b4e0f1df82836f867f9b4ab2da10c8ef04f27bd9",
       "bytes": 8443
+    },
+    {
+      "path": "assets/ConsistsPage-Cyq0RJt9.js",
+      "sha256": "036995462f391884ea0a0e40409a93bb0340ad7a7d8ae67d381ca20593dc5810",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-D4rYesIy.js",
@@ -1723,6 +1736,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-ENOAJCGD.js",
+      "sha256": "4bd0b52f55501c475d05e3408e7a46ac7d05887593c16fb4f8e16ae61bb7175a",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-gpUjnyko.js",
       "sha256": "9b710a18ad502e3661b8712e87a5d1a276d198808e3a3a1b1fc505d58cf82a7f",
       "bytes": 2061
@@ -1936,6 +1954,11 @@
       "path": "assets/GaugeReviewPage-DlECJUId.js",
       "sha256": "fc347ae2b2ff3021f3e331c94bd5d593c51aa56833f9cfa233474e51945077d8",
       "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-DS08rEno.js",
+      "sha256": "5d9620a46fb87fcf9dc18d1f206733b4579f6160d2358f69ef54bfb55bd5e3df",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-DvsJ_Aw1.js",
@@ -2273,6 +2296,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-Cjm95-oY.js",
+      "sha256": "8b92b8beec622338482372cbbb62645d4aec357ca09e8013ff988f428d7113ee",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-CtFUdUnU.js",
       "sha256": "ade44ab001b16998aa2e2fb222cbeadfd5b091b21ebb032a46a60d0d58670c39",
       "bytes": 421
@@ -2551,6 +2579,11 @@
       "path": "assets/ImportedCc206Page-CdsApWqf.js",
       "sha256": "ca223582eb6955406be8911638ed8385aca36c1bca4be7019e6cf3bd5281a3ef",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-CdZ6eNew.js",
+      "sha256": "54f1e91b01d710dfaac33f30be24e0a790a8a521a67651156be8f0bb7f4ae261",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-Ce0SdEqe.js",
@@ -2973,6 +3006,11 @@
       "bytes": 738904
     },
     {
+      "path": "assets/index-wNp8RPNV.js",
+      "sha256": "883d0eb03bb56287d222f0ac650de14c9ec3a827293f8d6e44207edc3432835d",
+      "bytes": 756815
+    },
+    {
       "path": "assets/index-XmtPqJZm.js",
       "sha256": "145fc08a6ed17ee0594cd178a1f5c8178cc27b3f868bba8d7889f7d29765c68e",
       "bytes": 612114
@@ -3071,6 +3109,11 @@
       "path": "assets/three.core-nbKIHe-i.js",
       "sha256": "55cb74ad2dca6ec1da63747a91e4325c658c5fba4a11a2a48b04efa3e709249b",
       "bytes": 261234
+    },
+    {
+      "path": "assets/use-hud-browser-6a5jKKOj.js",
+      "sha256": "86477ce3fd71005b18ce258ac39a838ba563997fb73a3a05f07f9cdeb78c9a14",
+      "bytes": 594128
     },
     {
       "path": "assets/use-hud-browser-BrfKDmwU.js",
@@ -3439,7 +3482,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "b472b8415082d8f2ef47ec3d3c8dd75431333dd63f61822575e44fe06a3ec468",
+      "sha256": "e25b1b1a0777b138763f5633a6effd9531a2d75d3152d1501a987586e8db7352",
       "bytes": 1595
     },
     {
@@ -4247,7 +4290,17 @@
     "maxActiveAutomatic": 8,
     "maxQueuedAutomatic": 2,
     "physicalDeadlockAutoRecoveryGuaranteed": false,
-    "gameplayVerification": "not_run"
+    "gameplayVerification": "Targeted headless Auto north-exit simulation passed; no current browser or broad suite run",
+    "automaticMix": {
+      "pass": 20,
+      "stop": 15,
+      "overtake": 20,
+      "meet": 10,
+      "store": 15,
+      "northStraight": 10,
+      "northTurn": 10
+    },
+    "northExitScheduling": "Fixed east/J2 straight and west/J3 right-turn approaches; independent accepted-dispatch stop/pass alternation"
   },
   "riverWater": {
     "revision": 3,
@@ -4547,6 +4600,34 @@
         "status": "blocked",
         "scope": "Requested HUD hover review could not run: browser control inventory had no connected browser. No gameplay/performance tests. HTTP delivery checks only."
       }
+    },
+    "4326f78461e023e2e2bc490742aaf20e32bf9d8e": {
+      "checks": {
+        "status": "passed",
+        "approvedByUser": true,
+        "run": [
+          "stability-single",
+          "stability-opposed",
+          "stability-north-straight",
+          "stability-north-turn",
+          "stability-north-opposed",
+          "check-riverside-movement-stability"
+        ],
+        "scope": "Targeted headless rail stability and north-exit verification only; no full suite, road stress, browser or water visual tests.",
+        "results": {
+          "completedTrains": 7,
+          "abruptFreeApproachResets": 0,
+          "conflictEnvelopeChecks": 11800,
+          "turnoutConfigs": 6,
+          "diamondRailHits": 12,
+          "railGaps": 24
+        },
+        "note": "Stop/advance reproduced red at 28.6 simulated seconds before correction. Five final scenarios passed with require-smooth; geometry rerun after explicit public constructor correction. See docs/rail-movement-stability.md."
+      },
+      "browserChecks": {
+        "status": "blocked",
+        "scope": "Requested HUD hover review could not run: browser control inventory had no connected browser. No gameplay/performance tests. HTTP delivery checks only."
+      }
     }
   },
   "northBridgeJunction": {
@@ -4554,7 +4635,7 @@
     "exits": "Playable dispatch choice north-exit: South station straight out or North station right-turn out; full tail clears hidden Z=-300 approach",
     "protection": "Six guarded points and three diamonds in one shared conflict block; granted authority remains held through braking until tail clearance",
     "signals": "Gate-specific unready point guards; controlled braking to protected boundary instead of immediate speed resets",
-    "verification": "Five authorized targeted runtime simulations and exact turnout/diamond geometry check passed"
+    "verification": "Current authorized Auto simulation completed straight and right-turn exits in stop/pass operation; earlier manual/turnout geometry verification retained in historical release evidence"
   },
   "carriageWheelVisibility": {
     "cause": "Stationary bogie frame and axleboxes obscure rotating discs and marker",
@@ -4571,5 +4652,20 @@
     "stationContacts": "One vertex-alpha batch beneath two station plinths; shared atmosphere opacity",
     "stationContactDrawCalls": 1,
     "verification": "Source review and production build; no browser or simulation tests"
+  },
+  "railMapPortals": {
+    "arms": [
+      "south-east",
+      "north-east",
+      "north-exit"
+    ],
+    "geometry": "Three paired low-poly stone arch portals with enclosed short dark throats and opaque rear occluders before map clipping",
+    "frontCoordinateMagnitude": 94.5,
+    "rearCoordinateMagnitude": 99.7,
+    "openingWidth": 3.1,
+    "openingCrownAboveRail": 4.5,
+    "textures": 0,
+    "addedLights": 0,
+    "verification": "Static source dimensions and production build only; portal browser/appearance checks not run"
   }
 }
