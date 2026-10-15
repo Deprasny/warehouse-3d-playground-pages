@@ -1,9 +1,9 @@
 {
-  "release": "riverside-operations-polish-water-20261015-8ad971c",
-  "sourceCommit": "8ad971c3f513ab4f56d0b1583b54a1cdee8f8673",
-  "sourceFingerprint": "7019554e87eed6dc8af2b69b0305b42c16fb66b8",
+  "release": "riverside-passenger-gangways-20261015-abb6cb6",
+  "sourceCommit": "abb6cb60acbbcb5d38f3100341cd332346897f46",
+  "sourceFingerprint": "e85268e2a18ee883e058a0ab8c824b456c224e95",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T09:04:25.488996+00:00",
+  "builtAt": "2026-10-15T09:09:53.140864+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "c930c0d0d507a0c83d150dc7a0cdb2d4de0952d4",
+  "previousSourceCommit": "8ad971c3f513ab4f56d0b1583b54a1cdee8f8673",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -500,6 +500,11 @@
       "path": "assets/AssetCatalogPage-C8bkuryJ.js",
       "sha256": "0f87cd68016a5834f21dfd2d321380cac22d7acab3ebb19bfbc95d6e60e73cfd",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-CbOB2uyO.js",
+      "sha256": "303b36d27b7731eea3daba83953042b4181fd58e9996f0f378891dbf43e3a274",
+      "bytes": 24445
     },
     {
       "path": "assets/AssetCatalogPage-CCXtrOt8.js",
@@ -1012,6 +1017,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-mxPMx8kC.js",
+      "sha256": "2f1171d8580521389fbf7a91f3238012ae0f9e20fdd64f1aee4a4f125caf8127",
+      "bytes": 11973
+    },
+    {
       "path": "assets/ConsistsPage-2azHfWMT.js",
       "sha256": "04f77fa0a40c337be161dd558dd46763fc1bb3d2cb0542657187d436e768b07e",
       "bytes": 8448
@@ -1030,6 +1040,11 @@
       "path": "assets/ConsistsPage-Bg5TnmR0.js",
       "sha256": "953ff2012a7fc9d526716d6038006b25112650181cbfe8422969d2cbee7cde46",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-BIlaSUSl.js",
+      "sha256": "eb278a5ae0d3eb282b2dbe9b87cdd52ab2efff404b2960d3f86c77008812259c",
+      "bytes": 8442
     },
     {
       "path": "assets/ConsistsPage-BKUPBVvS.js",
@@ -1482,6 +1497,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DpCuiS8z.js",
+      "sha256": "48e0f229fc0190ab98ffafa5fadc9436398fc706420b037a792c823a13683732",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-DQZbzG85.js",
       "sha256": "d18a1ad2700f4849ff97b946d42c441446485ee8abe5416cb1392201d2d49d82",
       "bytes": 2061
@@ -1727,6 +1747,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-LUotgOGS.js",
+      "sha256": "443cd0f344d58c3caf48f828ad04ac963155d65650367e19c7517ed9687ae71c",
+      "bytes": 18024
+    },
+    {
       "path": "assets/GaugeReviewPage-MIGy7112.js",
       "sha256": "211700b64d39b6c04327ce2b728c144e8c0854509a4a913b0fe9ae396165c142",
       "bytes": 10822
@@ -1924,6 +1949,11 @@
     {
       "path": "assets/HudPreviewPanel-BcLzAtHf.js",
       "sha256": "1d1c7ce308d04901151c75f06cb40a7b210549d5d8e2313709809d1b2a37386e",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BetCOzZ5.js",
+      "sha256": "67e6077df0ad5cee37cb30926e6ae53176d40da10fe34310857b061e2947e004",
       "bytes": 421
     },
     {
@@ -2247,6 +2277,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-DF6LLEke.js",
+      "sha256": "9a6439644ec2933e458e961583fa250fae85cd81dbbabe3641ede367b20854f6",
+      "bytes": 13962
+    },
+    {
       "path": "assets/ImportedCc206Page-Dgr33cUw.js",
       "sha256": "a42e2fb3556620f24b59d1c59c9cd1ba5883b99551c77ccbe375e04ba81270eb",
       "bytes": 13958
@@ -2467,6 +2502,11 @@
       "bytes": 734916
     },
     {
+      "path": "assets/index-Cz7cQ3vK.js",
+      "sha256": "f70b2acb989aaf0ba30ee2efa02d4b2d8d58359a2d7ae763664938cbdc01b4c6",
+      "bytes": 738633
+    },
+    {
       "path": "assets/index-d27YIHCZ.js",
       "sha256": "c498fcb39056c8f64676a4f9b4a08f1f789f7a2117f1c0680152f66dac580590",
       "bytes": 639095
@@ -2663,7 +2703,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "e7e5b333ae5991b3965d4a1c4ac151334ecdbb639d833304cfc16d925662faac",
+      "sha256": "7a35733239d2d07fca449a3e7e3829894a8d1896dceb244226d191e67f5d052f",
       "bytes": 1004
     },
     {
@@ -3488,5 +3528,26 @@
     "clock": "Session clock; pause and reset shared with world ambience",
     "weather": "Wind widens streaks; night, cloud and rain reduce contrast",
     "gameVisualReview": "not_run"
+  },
+  "passengerGangways": {
+    "pairs": "Adjacent executive/economy coaches including mixed passenger pairs",
+    "shape": "Opaque hollow beveled rectangular rubber accordion with thick rims and eight folds",
+    "deformation": "Endpoint positions, scale and quaternion interpolation from both physical coach ends",
+    "attachmentZRaw": 7.2,
+    "foldWidthRaw": [
+      1.26,
+      1.44
+    ],
+    "foldHeightRaw": [
+      1.94,
+      2.12
+    ],
+    "wallThicknessRaw": 0.075,
+    "trianglesPerPair": 672,
+    "maxAddedDrawCallsPerTrain": 1,
+    "unchangedPoseBufferUploads": false,
+    "couplerAndPhysicsSpacing": "unchanged",
+    "storageLifecycle": "Connections rebuilt on detach/attach and disposed before pooling",
+    "visualGameplayVerification": "not_run"
   }
 }
