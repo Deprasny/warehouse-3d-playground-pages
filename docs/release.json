@@ -1,9 +1,9 @@
 {
-  "release": "riverside-structured-village-20261015-214114b",
-  "sourceCommit": "214114b2ee9c8801c191bd6aaa7b987836c3a0e2",
-  "sourceFingerprint": "5136f175aff2820421028aae82b11f59792ab7d6",
+  "release": "riverside-auto-viewing-20261015-5debe64",
+  "sourceCommit": "5debe64bd7ac8b5e1752671597f79b62acb158ed",
+  "sourceFingerprint": "4cfd626733d0375e820a798d62683f3b444fc057",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T15:48:58.781738+00:00",
+  "builtAt": "2026-10-15T16:42:14.569489+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e894767bb03454723bd3dec4f0bc062dd16f0780",
+  "previousSourceCommit": "214114b2ee9c8801c191bd6aaa7b987836c3a0e2",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "Source review and production build only; no tests, traffic simulations or profiling."
+    "scope": "Source review and production build only; no tests or traffic simulations."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser check or screenshot for this release."
+    "scope": "No browser check of Auto defaults or camera handoff."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -519,6 +519,11 @@
       "path": "assets/AssetCatalogPage-BzqVIzQR.js",
       "sha256": "dff72d6f49d976e66b650c3c6e0a52fef556c0f6fa68d91d95d693d28ddeedc7",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-C2OsvIAK.js",
+      "sha256": "9765e8d48cb4849c561f0b8a60cefcf00d49ec1c564890f4791b84ba8879b643",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-C4vPRTrw.js",
@@ -1076,6 +1081,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-CgzZL-bu.js",
+      "sha256": "f45fef0ef7ed5352738a75ccca35e882653d09124c480131b5b96c4cba704297",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-CW2pK1z9.js",
       "sha256": "0e2b67fab5fb05ca006f1c4c28fa9c3aa2c5c590645425d4a316804ca441fc7c",
       "bytes": 12019
@@ -1321,6 +1331,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-CK-ZptOP.js",
+      "sha256": "87e57b5b11a721cf057f078a283c5d9783c0f8f6b641c9082bd36c6ff0bd3c85",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-CkgyP3B5.js",
       "sha256": "07acae9e60507740d62486a131c3812bd8fab8ccdaf26db35410f48f7e385109",
       "bytes": 8470
@@ -1539,6 +1554,11 @@
       "path": "assets/diorama-postprocessing-BO-7dP1Q.js",
       "sha256": "31551371bc90c328f672114e408a02957effbaa6ee98832169a715229c81da03",
       "bytes": 41405
+    },
+    {
+      "path": "assets/diorama-postprocessing-BuIbbHYq.js",
+      "sha256": "64e9ed8fc59f594aaf0d9d974a590379dcbd943e62496f67107a3a798d9b32e3",
+      "bytes": 41254
     },
     {
       "path": "assets/diorama-postprocessing-C5n2mWYa.js",
@@ -1769,6 +1789,11 @@
       "path": "assets/DownloadSimple.es-CM_3U2Hh.js",
       "sha256": "c1247eb519892606978e11a52d531760d13347bfc80c69395c60a63f5b3a2018",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-CMa3M1YZ.js",
+      "sha256": "9e225c0e2dc9b7488de7cc17294b42e2942366dc2dfcc14c020fc85c5f807dc5",
+      "bytes": 2099
     },
     {
       "path": "assets/DownloadSimple.es-CNKDpQ-2.js",
@@ -2106,6 +2131,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-CWdY4LWR.js",
+      "sha256": "36537b884251c26c13b9719f64eae75805b06c3729df07906dd5c9253a357fe1",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-CXbsYUIz.js",
       "sha256": "95707974a1897ec7ab4443dc5d60da76f9fc4454a037a3f0c1a4fbe6c0bba290",
       "bytes": 10825
@@ -2416,6 +2446,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-BB0fOHiC.js",
+      "sha256": "381cb711e056bb5031644de5af06370f6ea3e3e795681ba1acb1d9afbe8de3ec",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-BbascsDA.js",
       "sha256": "8c7a78e2fb6f6b0933d2036f663320111554da36cb7b8900cbc34a504f498f9e",
       "bytes": 421
@@ -2699,6 +2734,11 @@
       "path": "assets/ImportedCc206Page-5I_yAlwV.js",
       "sha256": "678165358a6e7975491d541269900b2c22818565fec0b1ecd26b441827085c75",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-7qeXXmpX.js",
+      "sha256": "cece512b36112540610a9a4f14352cb716cd0225dc0079b11b6902fdb5213e1d",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-8SccP7cF.js",
@@ -3211,6 +3251,11 @@
       "bytes": 734916
     },
     {
+      "path": "assets/index-Cvs8WC75.js",
+      "sha256": "be6eeef5fa090dd02470467fc2f05f94fd9c7a0cd75e06d7ef75a1dbf03370b9",
+      "bytes": 798286
+    },
+    {
       "path": "assets/index-CWXGGavj.js",
       "sha256": "de27a5c272227c66da226f66f8725a25bf97aadd52f014a744389da3ac09b2fa",
       "bytes": 752604
@@ -3488,6 +3533,11 @@
     {
       "path": "assets/use-hud-browser-DMrCcVm5.js",
       "sha256": "f8d4ef9d16782f56f2b1459b27a33422a2ef40ff99965855eb0c4a05abbaa38a",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-Jfgnuj82.js",
+      "sha256": "a82b06ed83543bf740aaba3c48e7bcb89efd307a365f09667eddbfb02692aaf9",
       "bytes": 594128
     },
     {
@@ -3842,7 +3892,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "7111b69faece23bbe06ac139e1d457af695f120d77be97fb3960a00e1dc5e381",
+      "sha256": "842d53dba4af2ec2f1cf0c1f603698cd03acfdbf12cce888506aa6afa5d55b8b",
       "bytes": 1595
     },
     {
@@ -5087,6 +5137,17 @@
         "status": "not_run_at_build",
         "scope": "Targeted Max graphics screenshot/visible render diagnostics follows deployment; no simulation or gameplay suite."
       }
+    },
+    "214114b2ee9c8801c191bd6aaa7b987836c3a0e2": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "Source review and production build only; no tests, traffic simulations or profiling."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser check or screenshot for this release."
+      }
     }
   },
   "northBridgeJunction": {
@@ -5179,5 +5240,18 @@
     ],
     "default": "auto",
     "removed": "Max 2x preset, its URL override and rendering branches"
+  },
+  "autoPresentation": {
+    "onEnable": {
+      "quality": "light",
+      "automaticTime": true,
+      "automaticWeather": true,
+      "camera": "moving"
+    },
+    "signalHoldCameraSwitchSeconds": 5,
+    "clock": "session simulation seconds",
+    "handoff": "Different visible moving train after continuous signal hold; regular scheduled dwell excluded; keep current if no alternative",
+    "manualSelection": "unchanged",
+    "newMap": "Design documents only; current live map unchanged"
   }
 }
