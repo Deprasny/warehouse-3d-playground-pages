@@ -1,9 +1,9 @@
 {
-  "release": "riverside-quiet-ambience-20261015-6e63565",
-  "sourceCommit": "6e63565b312ce79b86d0541bd165be2f1678d411",
-  "sourceFingerprint": "64cf87399aaa3df95e28963022874e44f45e8bdf",
+  "release": "riverside-carriages-crossing-20261015-c930c0d",
+  "sourceCommit": "c930c0d0d507a0c83d150dc7a0cdb2d4de0952d4",
+  "sourceFingerprint": "59927545d12e501e7c844ea7a9c4873e64229329",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T07:54:41.3636256Z",
+  "builtAt": "2026-10-15T08:25:09.4258926Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "416509c926d4bb4ef36f3baf2cf25f4e0311f818",
+  "previousSourceCommit": "6e63565b312ce79b86d0541bd165be2f1678d411",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,7 +29,7 @@
     "status": "not_run",
     "approvedByUser": false,
     "run": [],
-    "note": "No automated gameplay, simulation, browser or regression tests run; implementation, static review, production build and deployment only."
+    "note": "No automated gameplay, simulation, browser or regression tests run. Static code review, original asset authoring and visual review, export inspection and TypeScript/Vite build only."
   },
   "browserChecks": {
     "status": "not_run",
@@ -3055,5 +3055,37 @@
     "maxAdditionalDrawCalls": 3,
     "pauseAndReset": "Absolute session clock; camera only reorients smoke",
     "weather": "Wind affects motion; rain, storms and darkness reduce smoke"
+  },
+  "carriageKit": {
+    "asset": "models/riverside-carriage-kit.glb?v=carriages-1",
+    "bytes": 692992,
+    "sha256": "040fe4b0e492c63f3d03e8d4e8543a4d08228b85b74d80703a634a460f6af0b7",
+    "types": [
+      "executive",
+      "economy",
+      "harvest",
+      "ballast",
+      "container",
+      "tank"
+    ],
+    "materialCount": 2,
+    "textureCount": 0,
+    "triangleRange": [
+      2306,
+      3280
+    ],
+    "style": "stylized-low-poly-diorama",
+    "passengerDifference": "Executive silver with continuous dark glazing and low AC roof; economy white/orange with separate small windows and high vented roof",
+    "ballastLoad": "130 angular crushed rocks",
+    "legacyIds": "passenger selects economy; freight selects harvest; saved collection IDs and names preserved",
+    "farmLoading": "Only harvest carriages contribute farm loading capacity",
+    "assetReview": "Revised original Blender presentation visually inspected; export contents inspected; game performance and articulation unmeasured"
+  },
+  "crossingQueue": {
+    "change": "Shared one-vehicle reservation for decorative traffic and farm hauls, including north station/yard turns",
+    "admission": "Check continuous vehicle footprint path through exit; other approaches wait outside conflict corridor",
+    "clearance": "Retain reservation until vehicle rear clears; retain existing rail gate and collision checks",
+    "reset": "Clears reservation and waiting order",
+    "validation": "Static review and build only; exact screenshot scenario not replayed in simulation"
   }
 }
