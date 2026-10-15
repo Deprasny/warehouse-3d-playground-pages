@@ -1,9 +1,9 @@
 {
-  "release": "riverside-nature-life-20261015-416509c",
-  "sourceCommit": "416509c926d4bb4ef36f3baf2cf25f4e0311f818",
-  "sourceFingerprint": "5c6c94d826094965b80e77dd012ca507701d9e03",
+  "release": "riverside-quiet-ambience-20261015-6e63565",
+  "sourceCommit": "6e63565b312ce79b86d0541bd165be2f1678d411",
+  "sourceFingerprint": "64cf87399aaa3df95e28963022874e44f45e8bdf",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T07:41:46.4495857Z",
+  "builtAt": "2026-10-15T07:54:41.3636256Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "f73c5ca0d76b8179db860bc3ec5caae36e6d699d",
+  "previousSourceCommit": "416509c926d4bb4ef36f3baf2cf25f4e0311f818",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,7 +29,7 @@
     "status": "not_run",
     "approvedByUser": false,
     "run": [],
-    "note": "No automated gameplay, simulation, browser or regression tests run; implementation, asset creation, build and deployment only."
+    "note": "No automated gameplay, simulation, browser or regression tests run; implementation, static review, production build and deployment only."
   },
   "browserChecks": {
     "status": "not_run",
@@ -3045,5 +3045,15 @@
     "motion": "Sparse staggered flocks with flap/glide bursts; small flower-bed loops; session clock owns motion",
     "environment": "Daytime only; heavy rain, storms and snow suppress activity",
     "assetReview": "Original Blender kit visually reviewed through a presentation render and eight-frame wing-motion contact sheet; game appearance and performance unmeasured"
+  },
+  "quietAmbience": {
+    "riverRipples": 6,
+    "wind": "Root-pinned grass shear using existing instances",
+    "kitchenChimneys": 3,
+    "smokePuffs": 15,
+    "smokeSchedule": "Breakfast 05:45-09:15; lunch 11:00-13:45; dinner 16:30-20:00, with gradual fades",
+    "maxAdditionalDrawCalls": 3,
+    "pauseAndReset": "Absolute session clock; camera only reorients smoke",
+    "weather": "Wind affects motion; rain, storms and darkness reduce smoke"
   }
 }
