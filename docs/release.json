@@ -1,9 +1,9 @@
 {
-  "release": "riverside-auto-viewing-20261015-5debe64",
-  "sourceCommit": "5debe64bd7ac8b5e1752671597f79b62acb158ed",
-  "sourceFingerprint": "4cfd626733d0375e820a798d62683f3b444fc057",
+  "release": "riverside-north-crossing-demand-7f7aa71",
+  "sourceCommit": "7f7aa71f746765085658ede9431de55ece7657ae",
+  "sourceFingerprint": "f05b5d5ba43dc33e32bec9612c3a6a682b237cca",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T16:42:14.569489+00:00",
+  "builtAt": "2026-10-15T17:01:52.580528+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,19 +20,34 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "214114b2ee9c8801c191bd6aaa7b987836c3a0e2",
+  "previousSourceCommit": "5debe64bd7ac8b5e1752671597f79b62acb158ed",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "not_run",
-    "run": [],
-    "scope": "Source review and production build only; no tests or traffic simulations."
+    "status": "targeted_pass",
+    "run": [
+      {
+        "command": "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --scenario=auto --label=north-dwell-before",
+        "verdict": "expected_reproduction_failure",
+        "simulatedSeconds": 391.9,
+        "failure": "Actor7 departing did not progress for180seconds"
+      },
+      {
+        "command": "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --scenario=auto --label=north-dwell-after",
+        "verdict": "PASS",
+        "simulatedSeconds": 1200,
+        "completed": 51,
+        "ownershipChecks": 12000,
+        "wallSeconds": 43.3660061
+      }
+    ],
+    "scope": "User-authorized coupled Auto diagnosis and targeted recheck; no other suite"
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser check of Auto defaults or camera handoff."
+    "scope": "No browser or visual gameplay check for this correction"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -751,6 +766,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-TsJg2oFB.js",
+      "sha256": "5403336fff76d50aa2fe6eac6b4d323b60be27060482b5b70ae3b4e5ff9b6e8e",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetThumbnail-Ajz_aPLF.js",
       "sha256": "cf78bfe0c64f1475810182cbe9313f9dd12bed06cc97ecc9302e6e7ec1211aaf",
       "bytes": 617137
@@ -1221,6 +1241,11 @@
       "bytes": 12019
     },
     {
+      "path": "assets/Cc206ReviewPage-zNJ224QU.js",
+      "sha256": "28b3b21918f01a757663d5ae016c7a89e16bfd40c40081f22cdf519800e73cbb",
+      "bytes": 12019
+    },
+    {
       "path": "assets/ConsistsPage-2azHfWMT.js",
       "sha256": "04f77fa0a40c337be161dd558dd46763fc1bb3d2cb0542657187d436e768b07e",
       "bytes": 8448
@@ -1324,6 +1349,11 @@
       "path": "assets/ConsistsPage-C3C4_fft.js",
       "sha256": "717008ab8ba3487921b700447be0123b339b334ca2fa273bf040b3f87e266a6f",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-CAJJy3wB.js",
+      "sha256": "98d1fa3b402d5a1570746910e4a378dcfcda51d4a5cc44b6a760146d301595e5",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-CdQryrqr.js",
@@ -1626,6 +1656,11 @@
       "bytes": 41405
     },
     {
+      "path": "assets/diorama-postprocessing-Dsb2-vKb.js",
+      "sha256": "1b07b2ba3260cf81be002a2b3a17f7dd1da23a8537ff6249bf355b383bc26909",
+      "bytes": 41254
+    },
+    {
       "path": "assets/diorama-postprocessing-DTPZuMwy.js",
       "sha256": "02b39c09fbb7598a7f77c7860464fc91b52291c4a6607279ef9f7843853bd295",
       "bytes": 40937
@@ -1814,6 +1849,11 @@
       "path": "assets/DownloadSimple.es-CUPH2JoF.js",
       "sha256": "e13ae862f310cb2534fa7ba8a0e9742f35ad0b928f518747e386e3fb42e32d94",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-CvlTmpzp.js",
+      "sha256": "52db24c03f115a1a1a1b846fd96fb5e21115ca034ff8a1e479cc2fb321f34114",
+      "bytes": 2099
     },
     {
       "path": "assets/DownloadSimple.es-CX9wk0bo.js",
@@ -2196,6 +2236,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-DxQjlOiK.js",
+      "sha256": "e197a5c0ed9f8f5230fbf40a2a5259b9bb39d24e533825a448678c0153847ed2",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-DytVz6T-.js",
       "sha256": "6c74ea05520f9ef9fbb407b8806fa597995d6edab7907786271368644f5d9e3a",
       "bytes": 10825
@@ -2571,6 +2616,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-CUibWXhD.js",
+      "sha256": "017a9a7308336dd0401232fe39955dfe69a1e946b54f40727841ddcd43d1f4a8",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-CXHalgAS.js",
       "sha256": "5914da872084348c18fffa26a901263d2c8dd18ad009fbf675ad6130086eb205",
       "bytes": 422
@@ -2764,6 +2814,11 @@
       "path": "assets/ImportedCc206Page-B7EUCDYB.js",
       "sha256": "c5edda59783baeb1f473103d86706b120682de935bf22fbf05c190c031a22c67",
       "bytes": 13958
+    },
+    {
+      "path": "assets/ImportedCc206Page-BDidv3IY.js",
+      "sha256": "2c09d15a55abf60db95f24eef2cc2be6258d35de9f50d91490826989d9a720b7",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-BDsaVsAs.js",
@@ -3356,6 +3411,11 @@
       "bytes": 610457
     },
     {
+      "path": "assets/index-qL0r0rnd.js",
+      "sha256": "aeba4eed35a751fd4ebae6b8239533e61dfcd7608cae4acddd5ef14fb74d2617",
+      "bytes": 798463
+    },
+    {
       "path": "assets/index-sJHRreVG.css",
       "sha256": "a36c6c798de4e5d80ee69b38f5bd858e2e2280c145d683b7fe4fe4ce1603d8b8",
       "bytes": 79231
@@ -3544,6 +3604,11 @@
       "path": "assets/use-hud-browser-Nqe127WI.js",
       "sha256": "8d1069087f4b652654aae23735076520b878f546739906c4a585f0da3d8ab24a",
       "bytes": 591615
+    },
+    {
+      "path": "assets/use-hud-browser-QS6a4SXY.js",
+      "sha256": "3df306c5b28865b981f637a301f0bee6824c9dc07f64650b601d53f71c118709",
+      "bytes": 594128
     },
     {
       "path": "assets/use-hud-browser-qTapQkaX.js",
@@ -3892,7 +3957,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "842d53dba4af2ec2f1cf0c1f603698cd03acfdbf12cce888506aa6afa5d55b8b",
+      "sha256": "94d2aea60349c30db231b582adaf1e0d041d99c1b7e4a87037483399eb2f25ff",
       "bytes": 1595
     },
     {
@@ -5148,6 +5213,17 @@
         "status": "not_run",
         "scope": "No browser check or screenshot for this release."
       }
+    },
+    "5debe64bd7ac8b5e1752671597f79b62acb158ed": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "Source review and production build only; no tests or traffic simulations."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser check of Auto defaults or camera handoff."
+      }
     }
   },
   "northBridgeJunction": {
@@ -5253,5 +5329,11 @@
     "handoff": "Different visible moving train after continuous signal hold; regular scheduled dwell excluded; keep current if no alternative",
     "manualSelection": "unchanged",
     "newMap": "Design documents only; current live map unchanged"
+  },
+  "northCrossingDemandFix": {
+    "cause": "Exit signal waited for barrier while zero speed suppressed the old50m demand trigger",
+    "behavior": "Active route intending to cross within50m requests closure even when stopped at signal; physical body/tail detection retained",
+    "safety": "Existing road evacuation, full barrier closure and interlocking still govern permission",
+    "runtimeSha256": "3489555d353e721c54dca0740828259b6fd72d45299c53b09ec66ca031bb01c3"
   }
 }
