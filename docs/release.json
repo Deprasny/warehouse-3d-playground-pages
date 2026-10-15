@@ -1,9 +1,9 @@
 {
-  "release": "riverside-blender-hud-water-v2-20261015-e66ebc7",
-  "sourceCommit": "e66ebc7b09bdce22d3469ab7e89d879dec78fa85",
-  "sourceFingerprint": "eafb534b5247894b898d18363f96bac2bd4cb15e",
+  "release": "riverside-blender-hud-water-v2-20261015-2b79a50",
+  "sourceCommit": "2b79a50d19fe12730ad6ef8102ac800475f6e777",
+  "sourceFingerprint": "9bb465b6b9fbc397182cefcb09bf0c4fb6c3a22b",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T10:15:10.954105+00:00",
+  "builtAt": "2026-10-15T10:31:24.681705+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "b499f94492ebbeee3223489b0bdd2eded7b12d1a",
+  "previousSourceCommit": "e66ebc7b09bdce22d3469ab7e89d879dec78fa85",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -532,6 +532,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-CJm-FpuN.js",
+      "sha256": "0b6ed6fac98d5a3503eb2a61e6307a17a8d3c963ae884a4f12ea3f3c89a993a1",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-Cjr84Tzk.js",
       "sha256": "cad2b85ac633bb44807488d434a48b7241fce986eff112a5cdbe93b57275577d",
       "bytes": 24446
@@ -912,6 +917,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-BR1_TwVD.js",
+      "sha256": "fa45938447f13a205411b7d5c50caa59fbf9f96e72872c8606d3d683f294b6af",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-BvBjZJB1.js",
       "sha256": "17f2788ce1ec6738d1c89936988d38eccda7fbf8b9d4368bd17835a57364e805",
       "bytes": 11982
@@ -1210,6 +1220,11 @@
       "path": "assets/ConsistsPage-DfWAymtF.js",
       "sha256": "e4decce7987ca9da89f73a62b238b89400ba83ffdffdc73229f158b5617968a7",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-DJ2xjzUm.js",
+      "sha256": "b8c11b22019c5382afae7e7192483d551147bdf0234c6fc6b9732769eceee227",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-DK6qWo5c.js",
@@ -1532,6 +1547,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-D01Bf66D.js",
+      "sha256": "a8379ab01ad005114ed2247dfba276aff361466bbc7de656d5e1aa457a84ea10",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-D7cybiPB.js",
       "sha256": "655fd6a6ef67074a7d2d18c7d514d64372005d8a499af6a298aeddb1082481f9",
       "bytes": 2061
@@ -1730,6 +1750,11 @@
       "path": "assets/GaugeReviewPage-C4EB8YFQ.js",
       "sha256": "e0b79e259f62da68c4a524aedea2770c137971abdedf95f052df2f8642642fa1",
       "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-C7hZblp0.js",
+      "sha256": "04ff5abccb0bad424ce636ce92467ec0ad6230c91460355bcdb693e8ef25a166",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-CB_j9z3V.js",
@@ -2242,6 +2267,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-uYNA7cUb.js",
+      "sha256": "2b5862ecddb50afd68d90f667994751acfa053b0e0119f85d265a89b470e0fc8",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-w4q7w01g.js",
       "sha256": "d5e14566ca97537149ee2af167496fc666457530cd2b006c25f5a53b194b2a7c",
       "bytes": 421
@@ -2377,6 +2407,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-CfCJ0_uR.js",
+      "sha256": "3a69289f6e8dfd97ada81ec8b35a5aad91a17eeb5e40052c3caa90256106a987",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-CM0BJ9XQ.js",
       "sha256": "26762dda0d276e582811d690fac4a03c5584a56bf1a9ee784b73b3c5d68ab2f3",
       "bytes": 18413
@@ -2497,6 +2532,11 @@
       "bytes": 640973
     },
     {
+      "path": "assets/index-3r2Lr6B3.js",
+      "sha256": "bbceb513bd57eb1ded8442d542c557cb021a7d3a364a1bfce1ed9cb096cad216",
+      "bytes": 730179
+    },
+    {
       "path": "assets/index-aHRQ1-VX.js",
       "sha256": "c702d68ea94a09c132fb56c4001c51d8bb47a9e921bbd2b490b2d63c4d3f00de",
       "bytes": 738963
@@ -2615,6 +2655,11 @@
       "path": "assets/index-CI7k24M3.js",
       "sha256": "82789e73e828bd99d024db630f931dfce4f4113a95d022866ee1a775ddfc9783",
       "bytes": 777500
+    },
+    {
+      "path": "assets/index-CLlORsFS.css",
+      "sha256": "e8b61465efe5a739e834108b98911e90922583f515eaad03c4e2c4376bbea637",
+      "bytes": 76295
     },
     {
       "path": "assets/index-CMUcFxbi.js",
@@ -2837,6 +2882,11 @@
       "bytes": 591615
     },
     {
+      "path": "assets/use-hud-browser-r5lAzQ_U.js",
+      "sha256": "aa820593ff3fff7b84d4471e175380fb35eed0bdbbf4bf933bc8ff24425e21b7",
+      "bytes": 591615
+    },
+    {
       "path": "audio/ambient-birds.mp3",
       "sha256": "6059e2d3c7d341fb93bb292732418af9a9cad23f1d53be03a0bc91fb100fd094",
       "bytes": 208813
@@ -2958,7 +3008,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "7773b2a7f3c7c21bdd74ec0c113668808d50f213bb10879165b832953d03d2b3",
+      "sha256": "d49a67e984bceab9a0f8c7f8f5c5ddc96e85d22e50fd3db885bb2176cfc8cd79",
       "bytes": 1595
     },
     {
@@ -3903,7 +3953,8 @@
         "bytes": 51821,
         "sha256": "37f29e153421d5441f234269a3d08e1ca90e5fcf0b0e03d5f5d30115823d1f75"
       }
-    ]
+    ],
+    "dockLabels": "Hover/focus tooltips, Escape dismissal, immediate touch activation; button accessible names retained"
   },
   "trafficDiagnosis": {
     "reproduced": [
@@ -3957,6 +4008,18 @@
       "browserChecks": {
         "status": "not_run",
         "scope": "No game browser/playback checks run. HTTP delivery verification only."
+      }
+    },
+    "e66ebc7b09bdce22d3469ab7e89d879dec78fa85": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "note": "This HUD/water release ran production build and asset authoring only. Earlier approved traffic simulations are historical evidence, not rerun on this revision."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser UI/gameplay/performance tests. HTTP delivery checks only."
       }
     }
   }
