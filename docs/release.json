@@ -1,9 +1,9 @@
 {
-  "release": "riverside-north-crossing-demand-7f7aa71",
-  "sourceCommit": "7f7aa71f746765085658ede9431de55ece7657ae",
-  "sourceFingerprint": "f05b5d5ba43dc33e32bec9612c3a6a682b237cca",
+  "release": "riverside-livestock-actions-18ca788",
+  "sourceCommit": "18ca7887ff82319b1852fd14e00848f7a544c316",
+  "sourceFingerprint": "bacaf3e32f1cecb76508a100adcf60555d4a7671",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T17:01:52.580528+00:00",
+  "builtAt": "2026-10-15T17:56:10.418125+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,34 +20,19 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "5debe64bd7ac8b5e1752671597f79b62acb158ed",
+  "previousSourceCommit": "7f7aa71f746765085658ede9431de55ece7657ae",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "targeted_pass",
-    "run": [
-      {
-        "command": "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --scenario=auto --label=north-dwell-before",
-        "verdict": "expected_reproduction_failure",
-        "simulatedSeconds": 391.9,
-        "failure": "Actor7 departing did not progress for180seconds"
-      },
-      {
-        "command": "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --scenario=auto --label=north-dwell-after",
-        "verdict": "PASS",
-        "simulatedSeconds": 1200,
-        "completed": 51,
-        "ownershipChecks": 12000,
-        "wallSeconds": 43.3660061
-      }
-    ],
-    "scope": "User-authorized coupled Auto diagnosis and targeted recheck; no other suite"
+    "status": "not_run",
+    "run": [],
+    "scope": "No user authorization for tests or simulations in this change; build and source review only"
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser or visual gameplay check for this correction"
+    "scope": "Runtime visual interaction and animation not inspected in browser"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -611,6 +596,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-CTSADI3C.js",
+      "sha256": "9bc88852044882fee0e3e906abd1e5ebcf9040a99ddf36f865d7ea3b92b0a45f",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-CUYN6Jqz.js",
       "sha256": "ea4b80551c0efd1e1064093719b84c4b44df36ad4de37f9a8b285aaac85e1236",
       "bytes": 24446
@@ -1081,6 +1071,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-Cb4Uj5Rh.js",
+      "sha256": "950171c3bceafcc72c42be766d737fe8b11e650bc0b4f2983aa53ade61323a29",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-CB6h_tum.js",
       "sha256": "a790aa182209fcc408ec34e34e9a7229967bc533833967c199b2154c743e3a2b",
       "bytes": 11982
@@ -1511,6 +1506,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-m54yoPyp.js",
+      "sha256": "25f5cc10c89496d64a53429ee3b0a960b20e5543d104c110192a005cd02e359e",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-m5YX-bCk.js",
       "sha256": "fa0af0da543fbb8174346c8bdf76abb5a3510a539893c24bf3a91d24d0e23016",
       "bytes": 8450
@@ -1574,6 +1574,11 @@
       "path": "assets/diorama-postprocessing-BEw-3aDd.js",
       "sha256": "7716bcb5540c735e33db79cd7931f50909990844f0389dbcb52e96cbd0a2965d",
       "bytes": 41405
+    },
+    {
+      "path": "assets/diorama-postprocessing-BH_kMUo7.js",
+      "sha256": "a7a1126e20d9a7d3ea0e2acf7826390c02d6f3eabb5d3b8464ed9ce87abdb947",
+      "bytes": 41254
     },
     {
       "path": "assets/diorama-postprocessing-BKs7o_D5.js",
@@ -1886,6 +1891,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DHeK_0Sp.js",
+      "sha256": "c9dc8e76ab72fff9a800548157add8a1b75f2bfae143ac4aad46771ccb0bba59",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-DIV_k3Qs.js",
       "sha256": "1944a7bfdbbc66c100d901e7f5688678a33e6b41b9b14cdf2f5d076f85a8f07f",
       "bytes": 2061
@@ -2089,6 +2099,11 @@
       "path": "assets/GaugeReviewPage-BuwfDt8d.js",
       "sha256": "fb40ab44b437a9e4ed9e4a989029bf816888c8ff2847d54d55a9e0dbc0c07ca2",
       "bytes": 10815
+    },
+    {
+      "path": "assets/GaugeReviewPage-Bw3c0cNl.js",
+      "sha256": "b0aad0773c7bcba734dc8a81154ca2f39f1116fb90b1e3116d8ec294199ac039",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-Bw5lhQYn.js",
@@ -2611,6 +2626,11 @@
       "bytes": 422
     },
     {
+      "path": "assets/HudPreviewPanel-CsvacC_Y.js",
+      "sha256": "9ea89281568750f7528b40eed785ff591325eb72552be87235cec54da5498d86",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-CtFUdUnU.js",
       "sha256": "ade44ab001b16998aa2e2fb222cbeadfd5b091b21ebb032a46a60d0d58670c39",
       "bytes": 421
@@ -2976,6 +2996,11 @@
       "bytes": 13962
     },
     {
+      "path": "assets/ImportedCc206Page-D0lqRaON.js",
+      "sha256": "7f26ebd3b3828b96f7a6f9a35d3dc5a84d2bccab2487a36f75f2a078df3c4a06",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-D9LwQwOq.js",
       "sha256": "e28e73ae0d4253441c2e71c013bcd6ffdecb38fcf993beddfedfd3e721c37ea4",
       "bytes": 13963
@@ -3154,6 +3179,11 @@
       "path": "assets/index-BcbFvQjx.js",
       "sha256": "d705f658a31474ee1862e9f62f53263047172207786e1ba07d64917d50bc01fe",
       "bytes": 734604
+    },
+    {
+      "path": "assets/index-BcH1lZY1.js",
+      "sha256": "3f6d9c5b92a18f2a53b13d82a1281189523e1b4b401d7cf5b9e9a4f5cf0625f4",
+      "bytes": 809098
     },
     {
       "path": "assets/index-BfhEMeD1.js",
@@ -3591,6 +3621,11 @@
       "bytes": 594128
     },
     {
+      "path": "assets/use-hud-browser-DeKsescr.js",
+      "sha256": "a98626990d51c4aea96b2a4115ef575f4b0d5ca89dfd293934d5397a9ebfe465",
+      "bytes": 594128
+    },
+    {
       "path": "assets/use-hud-browser-DMrCcVm5.js",
       "sha256": "f8d4ef9d16782f56f2b1459b27a33422a2ef40ff99965855eb0c4a05abbaa38a",
       "bytes": 594128
@@ -3957,7 +3992,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "94d2aea60349c30db231b582adaf1e0d041d99c1b7e4a87037483399eb2f25ff",
+      "sha256": "2c4d82546a724a3a4c7edb547b2fdcb9201fbd4e88cac031d35dd29ee313e911",
       "bytes": 1595
     },
     {
@@ -4244,6 +4279,16 @@
       "path": "models/riverside-farm-kit.glb",
       "sha256": "8894e573e9beb37d72124e71f82e70b495e8499360127dcfb882509955fbb5cf",
       "bytes": 718628
+    },
+    {
+      "path": "models/riverside-livestock-kit-manifest.json",
+      "sha256": "a8ff005da142990cbdad6fcb9ad5697b3dfe1d41125f2cf1460edae9e0d3cbe0",
+      "bytes": 4559
+    },
+    {
+      "path": "models/riverside-livestock-kit.glb",
+      "sha256": "52e6a7fabc552c74902c37dcfe8b54044e59c9a4c1cecd148bbd31fcb9b0c572",
+      "bytes": 417236
     },
     {
       "path": "models/riverside-nature-kit-manifest.json",
@@ -5224,6 +5269,32 @@
         "status": "not_run",
         "scope": "No browser check of Auto defaults or camera handoff."
       }
+    },
+    "7f7aa71f746765085658ede9431de55ece7657ae": {
+      "checks": {
+        "status": "targeted_pass",
+        "run": [
+          {
+            "command": "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --scenario=auto --label=north-dwell-before",
+            "verdict": "expected_reproduction_failure",
+            "simulatedSeconds": 391.9,
+            "failure": "Actor7 departing did not progress for180seconds"
+          },
+          {
+            "command": "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --scenario=auto --label=north-dwell-after",
+            "verdict": "PASS",
+            "simulatedSeconds": 1200,
+            "completed": 51,
+            "ownershipChecks": 12000,
+            "wallSeconds": 43.3660061
+          }
+        ],
+        "scope": "User-authorized coupled Auto diagnosis and targeted recheck; no other suite"
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser or visual gameplay check for this correction"
+      }
     }
   },
   "northBridgeJunction": {
@@ -5299,14 +5370,14 @@
     "landscape": "Asymmetric west/east woodland with low plants; former central vacant meadow now contains neighbouring hamlet roofs and shared courts",
     "landforms": "Three broad smooth rises, maximum 1.5/0.45/1.3 metres, shared by terrain mesh and scenery height queries",
     "style": "Existing matte low-poly palette and instanced kit; plain terrain, no new textures",
-    "runtime": "No new actors, livestock animation or cargo inventory; existing traffic and rail controllers retain authority"
+    "runtime": "Nine ambient livestock actors with joint actions; existing rail/traffic and stock controllers retain authority"
   },
   "hamletComposition": {
     "readiness": "layout-only",
     "architecture": "Existing six roof volumes reorganized around a connected village street and shared courts",
     "access": "Explicit building entrance-to-court connections replace nearest-court heuristics",
     "landscape": "Reduced, asymmetric foreground framing; no rail or live road routing change",
-    "tableaux": "Existing display-only cattle and public figures remain static; no new simulation actors"
+    "tableaux": "Public display figures remain static; old procedural cattle replaced by articulated kit actors"
   },
   "graphics": {
     "presets": [
@@ -5335,5 +5406,46 @@
     "behavior": "Active route intending to cross within50m requests closure even when stopped at signal; physical body/tail detection retained",
     "safety": "Existing road evacuation, full barrier closure and interlocking still govern permission",
     "runtimeSha256": "3489555d353e721c54dca0740828259b6fd72d45299c53b09ec66ca031bb01c3"
+  },
+  "livestock": {
+    "templates": [
+      "cow",
+      "calf",
+      "goat",
+      "kid",
+      "chicken",
+      "duck"
+    ],
+    "file": "models/riverside-livestock-kit.glb",
+    "sha256": "52e6a7fabc552c74902c37dcfe8b54044e59c9a4c1cecd148bbd31fcb9b0c572",
+    "trianglesPerLibrary": 4590,
+    "materialsPerSession": 1,
+    "texturesInLibrary": 0,
+    "residents": {
+      "cow": 2,
+      "calf": 1,
+      "goat": 1,
+      "kid": 1,
+      "chicken": 2,
+      "duck": 2
+    },
+    "actions": [
+      "idle",
+      "graze",
+      "look",
+      "walk"
+    ],
+    "placement": "Current south foreground X34.5..74 Z77..95.5; authored pens and short bounded arcs",
+    "clock": "Session simulation seconds; pause holds pose, reset returns phase",
+    "scenery": "Existing cattle shelter/trough plus goat shelter, feed store, chicken coop/run and retained faceted duck pond",
+    "replacement": "Three static procedural cattle replaced; public display figurines retained",
+    "inventory": "Ambient actors only; no livestock stock/business simulation",
+    "verification": "Production build and independent code review; no runtime/simulation/browser tests"
+  },
+  "newVillageMasterplan": {
+    "status": "design_only",
+    "source": "docs/design/riverside-two-station-winding-masterplan.md",
+    "network": "Two stations on one open winding double-track corridor, one local goods access; no closed circuit",
+    "runtime": "Full 400x300 redesign not implemented; this release adds livestock to current map"
   }
 }

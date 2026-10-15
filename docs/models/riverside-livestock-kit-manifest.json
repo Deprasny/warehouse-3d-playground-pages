@@ -1,0 +1,207 @@
+{
+  "schema": "riverside-livestock-v1",
+  "asset": "riverside-livestock-kit.glb",
+  "artStyle": "stylized-low-poly-diorama",
+  "units": "metres",
+  "up": "+Y",
+  "forward": "+X",
+  "pivot": "ground origin",
+  "material": {
+    "name": "MAT-RV-livestock-vertex-palette",
+    "vertexColors": "COLOR_0",
+    "roughness": 0.88,
+    "metalness": 0,
+    "textures": 0
+  },
+  "animations": [],
+  "templates": [
+    {
+      "id": "cow",
+      "root": "ASSET-livestock-cow",
+      "bounds": {
+        "min": [
+          -1.0145820379257202,
+          0.0,
+          -0.49000000953674316
+        ],
+        "max": [
+          1.399999976158142,
+          1.7261452674865723,
+          0.49000000953674316
+        ]
+      },
+      "size": [
+        2.4145820140838623,
+        1.7261452674865723,
+        0.9800000190734863
+      ],
+      "triangles": 1148,
+      "meshes": 7,
+      "pivots": [
+        "RIG-cow-head",
+        "RIG-cow-leg-BL",
+        "RIG-cow-leg-BR",
+        "RIG-cow-leg-FL",
+        "RIG-cow-leg-FR",
+        "RIG-cow-tail"
+      ]
+    },
+    {
+      "id": "calf",
+      "root": "ASSET-livestock-calf",
+      "bounds": {
+        "min": [
+          -0.6493325233459473,
+          0.0,
+          -0.31360000371932983
+        ],
+        "max": [
+          0.8960000276565552,
+          1.0112000703811646,
+          0.31360000371932983
+        ]
+      },
+      "size": [
+        1.5453325510025024,
+        1.0112000703811646,
+        0.6272000074386597
+      ],
+      "triangles": 940,
+      "meshes": 7,
+      "pivots": [
+        "RIG-calf-head",
+        "RIG-calf-leg-BL",
+        "RIG-calf-leg-BR",
+        "RIG-calf-leg-FL",
+        "RIG-calf-leg-FR",
+        "RIG-calf-tail"
+      ]
+    },
+    {
+      "id": "goat",
+      "root": "ASSET-livestock-goat",
+      "bounds": {
+        "min": [
+          -0.7381753325462341,
+          0.0,
+          -0.38999998569488525
+        ],
+        "max": [
+          0.9589711427688599,
+          1.6314430236816406,
+          0.38999998569488525
+        ]
+      },
+      "size": [
+        1.697146475315094,
+        1.6314430236816406,
+        0.7799999713897705
+      ],
+      "triangles": 752,
+      "meshes": 7,
+      "pivots": [
+        "RIG-goat-head",
+        "RIG-goat-leg-BL",
+        "RIG-goat-leg-BR",
+        "RIG-goat-leg-FL",
+        "RIG-goat-leg-FR",
+        "RIG-goat-tail"
+      ]
+    },
+    {
+      "id": "kid",
+      "root": "ASSET-livestock-kid",
+      "bounds": {
+        "min": [
+          -0.4576686918735504,
+          0.0,
+          -0.241799995303154
+        ],
+        "max": [
+          0.5945621132850647,
+          0.8948129415512085,
+          0.241799995303154
+        ]
+      },
+      "size": [
+        1.0522308051586151,
+        0.8948129415512085,
+        0.483599990606308
+      ],
+      "triangles": 692,
+      "meshes": 7,
+      "pivots": [
+        "RIG-kid-head",
+        "RIG-kid-leg-BL",
+        "RIG-kid-leg-BR",
+        "RIG-kid-leg-FL",
+        "RIG-kid-leg-FR",
+        "RIG-kid-tail"
+      ]
+    },
+    {
+      "id": "chicken",
+      "root": "ASSET-livestock-chicken",
+      "bounds": {
+        "min": [
+          -0.6000000238418579,
+          0.0,
+          -0.23499999940395355
+        ],
+        "max": [
+          0.4509214162826538,
+          0.8574082851409912,
+          0.23499999940395355
+        ]
+      },
+      "size": [
+        1.0509214401245117,
+        0.8574082851409912,
+        0.4699999988079071
+      ],
+      "triangles": 650,
+      "meshes": 7,
+      "pivots": [
+        "RIG-chicken-head",
+        "RIG-chicken-leg-L",
+        "RIG-chicken-leg-R",
+        "RIG-chicken-tail",
+        "RIG-chicken-wing-L",
+        "RIG-chicken-wing-R"
+      ]
+    },
+    {
+      "id": "duck",
+      "root": "ASSET-livestock-duck",
+      "bounds": {
+        "min": [
+          -0.5099999904632568,
+          0.0,
+          -0.23499999940395355
+        ],
+        "max": [
+          0.6200000047683716,
+          0.75,
+          0.23499999940395355
+        ]
+      },
+      "size": [
+        1.1299999952316284,
+        0.75,
+        0.4699999988079071
+      ],
+      "triangles": 408,
+      "meshes": 7,
+      "pivots": [
+        "RIG-duck-head",
+        "RIG-duck-leg-L",
+        "RIG-duck-leg-R",
+        "RIG-duck-tail",
+        "RIG-duck-wing-L",
+        "RIG-duck-wing-R"
+      ]
+    }
+  ],
+  "triangleCount": 4590,
+  "byteLength": 417236
+}
