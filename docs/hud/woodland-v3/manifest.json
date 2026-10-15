@@ -1,0 +1,56 @@
+{
+  "version": 3,
+  "icons": [
+    "formation",
+    "station",
+    "nature",
+    "camera",
+    "settings",
+    "play",
+    "pause",
+    "sun",
+    "moon"
+  ],
+  "skins": [
+    "panel",
+    "panel-dark",
+    "button",
+    "button-active",
+    "button-selected"
+  ],
+  "ornaments": [
+    "twig-corner"
+  ],
+  "size": [
+    256,
+    256
+  ],
+  "nineSlice": {
+    "sourceInset": 40,
+    "panelDisplayWidth": 16,
+    "buttonDisplayWidth": 10
+  },
+  "colorManagement": {
+    "view": "Standard",
+    "look": "Medium High Contrast",
+    "exposure": -0.25
+  },
+  "style": "Shared diorama palette, single-segment chamfers, six-sided branches, solid faceted leaves",
+  "files": {
+    "formation.png": 64013,
+    "station.png": 64472,
+    "nature.png": 55721,
+    "camera.png": 70116,
+    "settings.png": 66258,
+    "play.png": 56074,
+    "pause.png": 60425,
+    "sun.png": 64523,
+    "moon.png": 53424,
+    "panel.png": 61812,
+    "panel-dark.png": 61812,
+    "button.png": 61812,
+    "button-active.png": 67735,
+    "button-selected.png": 68564,
+    "twig-corner.png": 52110
+  }
+}

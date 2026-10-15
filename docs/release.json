@@ -1,9 +1,9 @@
 {
-  "release": "riverside-blender-hud-water-v2-20261015-2b79a50",
-  "sourceCommit": "2b79a50d19fe12730ad6ef8102ac800475f6e777",
-  "sourceFingerprint": "9bb465b6b9fbc397182cefcb09bf0c4fb6c3a22b",
+  "release": "riverside-woodland-hud-v3-20261015-fa6e218",
+  "sourceCommit": "fa6e21821b88546741fc54b6f21c06aca52e5f07",
+  "sourceFingerprint": "2c133a957e8312c78416f5377f78063345623002",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T10:31:24.681705+00:00",
+  "builtAt": "2026-10-15T10:53:24.875322+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e66ebc7b09bdce22d3469ab7e89d879dec78fa85",
+  "previousSourceCommit": "2b79a50d19fe12730ad6ef8102ac800475f6e777",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -577,6 +577,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-CXjIsToV.js",
+      "sha256": "28e0e2d42b705194c13b5c2858ee7f66aa7b22d594a5ae034b884240d145ca9c",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-d4A7ZVtj.js",
       "sha256": "12701ec2111a8a4ee8a700d9167d43cd3ce116fc4852b6be6a57d8074b531fc2",
       "bytes": 24446
@@ -847,6 +852,11 @@
       "bytes": 11978
     },
     {
+      "path": "assets/Cc206ReviewPage-406fPcoh.js",
+      "sha256": "817bfb6450f15dfd0c87baba07e59bd5363f7d3267d37b4f292726a9fb879bf0",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-5STOm-hQ.js",
       "sha256": "727b69c65634ec54bd15822ad358a91156aaad854945ecdd4a0fd6d8e5239ef1",
       "bytes": 11982
@@ -1110,6 +1120,11 @@
       "path": "assets/ConsistsPage-BKUPBVvS.js",
       "sha256": "c327021c30a91315a521092da07464533a9a5eba55c74453c166b165a23f320b",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-BKXd9Zov.js",
+      "sha256": "3b62a995a612d915047e53ae88207ba2e43b4914c4f7dd884fed41ba3d2b5173",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-BL41W6uq.js",
@@ -1527,6 +1542,11 @@
       "bytes": 2099
     },
     {
+      "path": "assets/DownloadSimple.es-Cg9jrIyp.js",
+      "sha256": "71d5ac027bc0c60eace62fac54d0884fada7835d65b0b8cf6ba43ec032752d08",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-CM_3U2Hh.js",
       "sha256": "c1247eb519892606978e11a52d531760d13347bfc80c69395c60a63f5b3a2018",
       "bytes": 2061
@@ -1820,6 +1840,11 @@
       "path": "assets/GaugeReviewPage-DcYl4b4t.js",
       "sha256": "0eab98f78080d4ee56d797efd42ffa123a9e58d561a781be8bf4d54919391d0f",
       "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-DinPhDzx.js",
+      "sha256": "3f43647cb4d42db25a556f3e6667ac180b8032f739a8641df7af6c02f8a06bb1",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-DlECJUId.js",
@@ -2177,6 +2202,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-DdGOgx3i.js",
+      "sha256": "81e18b022ebf62b40a366aac58657e2c38e985fa26547a42c973ab95a5221fa8",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-DfhsuCxE.js",
       "sha256": "e1f581c92b71a3f52d417b18ee4c7499f03197a18ebfe2d5ef6606db71787e03",
       "bytes": 421
@@ -2442,6 +2472,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-Dd50LYL6.js",
+      "sha256": "da80f6124547503d81ad452782f8b041c7ebb40e6ddfe4d59ba7a8d4ee0c4fca",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-DF6LLEke.js",
       "sha256": "9a6439644ec2933e458e961583fa250fae85cd81dbbabe3641ede367b20854f6",
       "bytes": 13962
@@ -2657,6 +2692,11 @@
       "bytes": 777500
     },
     {
+      "path": "assets/index-CK6ytzTF.css",
+      "sha256": "6c5004ca93a7d17addac3c8e5c20a50559c7d993c832d265fda80ebab409f2c2",
+      "bytes": 78585
+    },
+    {
       "path": "assets/index-CLlORsFS.css",
       "sha256": "e8b61465efe5a739e834108b98911e90922583f515eaad03c4e2c4376bbea637",
       "bytes": 76295
@@ -2750,6 +2790,11 @@
       "path": "assets/index-DXPP1sEZ.js",
       "sha256": "d4bf83feda3614bf73d8433cc8a90b379fb1d54432b61685714d4065f6f475af",
       "bytes": 721631
+    },
+    {
+      "path": "assets/index-eyck4LNs.js",
+      "sha256": "901bf56ed83f5bd96a417c4822a99c7cf4e2e18f1570fc05e2d5d97265560fa2",
+      "bytes": 730012
     },
     {
       "path": "assets/index-F98s9fsb.js",
@@ -2874,6 +2919,11 @@
     {
       "path": "assets/use-hud-browser-D487qnNe.js",
       "sha256": "d6920478111f1363b023bb51e9267bcda2b35e28a30d535df9f04184ebd1481d",
+      "bytes": 591615
+    },
+    {
+      "path": "assets/use-hud-browser-Nqe127WI.js",
+      "sha256": "8d1069087f4b652654aae23735076520b878f546739906c4a585f0da3d8ab24a",
       "bytes": 591615
     },
     {
@@ -3007,8 +3057,88 @@
       "bytes": 51821
     },
     {
+      "path": "hud/woodland-v3/button-active.png",
+      "sha256": "d279a3f1750f602b20b06c04b0f56958f266d97c37ec52cf821440652d84e353",
+      "bytes": 67735
+    },
+    {
+      "path": "hud/woodland-v3/button-selected.png",
+      "sha256": "527f06f527c387515a51221076703d0d44d6591d90dd3c7e598398c04d44266b",
+      "bytes": 68564
+    },
+    {
+      "path": "hud/woodland-v3/button.png",
+      "sha256": "b9a43068251f6943bc1fcaf67efd8a3c1d60b5f1c55dca130245b0c4e5b83209",
+      "bytes": 61812
+    },
+    {
+      "path": "hud/woodland-v3/camera.png",
+      "sha256": "5e717a9fa858d08b4f6271fe66c5d75bfd0968bb4efbcd6864d01f6eae8d583b",
+      "bytes": 70116
+    },
+    {
+      "path": "hud/woodland-v3/formation.png",
+      "sha256": "04409891f4f9233ef56332a910c7220780ade01913fc74bd26e77e88cb97fa75",
+      "bytes": 64013
+    },
+    {
+      "path": "hud/woodland-v3/manifest.json",
+      "sha256": "d0587206a7176713effe4c6c015a32d3b971cdb061ecedfa806872115f688c17",
+      "bytes": 1127
+    },
+    {
+      "path": "hud/woodland-v3/moon.png",
+      "sha256": "3990593ecdd86d8f3ba6877acd2b6a14bb452ba3f85784c01a0e0a16c4e53cf2",
+      "bytes": 53424
+    },
+    {
+      "path": "hud/woodland-v3/nature.png",
+      "sha256": "7c64bf3a4e90cae6f419a5e8c811833b860868be3b6374cbcef1f6e6570d1cfd",
+      "bytes": 55721
+    },
+    {
+      "path": "hud/woodland-v3/panel-dark.png",
+      "sha256": "63109bf5a79eb8cc1eddc5bca1ad1530f54dc1dfde604a62abbbe0d707e6a317",
+      "bytes": 61812
+    },
+    {
+      "path": "hud/woodland-v3/panel.png",
+      "sha256": "f0e2549673e6af04761780d5c0b37d1c28e63dd1d5ac04e874a8e012a96d2a41",
+      "bytes": 61812
+    },
+    {
+      "path": "hud/woodland-v3/pause.png",
+      "sha256": "fef084115182966397bd32fb18f918a824d34663c066867caa3ed5db4c1779e6",
+      "bytes": 60425
+    },
+    {
+      "path": "hud/woodland-v3/play.png",
+      "sha256": "657b6a4b9709472c91eb8048cd96ef51e5f03f8da30c967adbfb16e7f9d7018a",
+      "bytes": 56074
+    },
+    {
+      "path": "hud/woodland-v3/settings.png",
+      "sha256": "b98bef8b359c86f15dabf116332ff4c4b156162b0c5dce1bdf58cc48d05039c8",
+      "bytes": 66258
+    },
+    {
+      "path": "hud/woodland-v3/station.png",
+      "sha256": "a05856e46e471836a6a37c0b8ae6e24ce86fe6a6b3bd0aed214979d2b4f99749",
+      "bytes": 64472
+    },
+    {
+      "path": "hud/woodland-v3/sun.png",
+      "sha256": "b8f14337f87fcad451144e599d5b24dcc6cf704ade2319016f33e382a9642253",
+      "bytes": 64523
+    },
+    {
+      "path": "hud/woodland-v3/twig-corner.png",
+      "sha256": "45d1514561919e6018f6ace158abb607abaddaf536be1819263c1f0f382995e8",
+      "bytes": 52110
+    },
+    {
       "path": "index.html",
-      "sha256": "d49a67e984bceab9a0f8c7f8f5c5ddc96e85d22e50fd3db885bb2176cfc8cd79",
+      "sha256": "4a51ea9717c8b3d2c440c350bd203f03c923fd1a934e73d4881ee905c7a9e44a",
       "bytes": 1595
     },
     {
@@ -3875,86 +4005,94 @@
   "dioramaHUD": {
     "direction": "A, selected by user",
     "composition": "Persistent left roster, compact upper-right time/playback, floating lower dock, selected details at right",
-    "style": "Blender-authored matte beveled panel/button nine-slices and orthographic miniature icon renders, with semantic HTML labels",
+    "style": "Bright stylized low-poly wood frames, faceted wrapping branches and pointed solid leaves; Standard Medium High Contrast render with daylight fill",
     "icons": "Nine transparent Blender renders: actual CC206, station and scenery-kit sources plus authored camera, gear, playback and time symbols",
     "renderer": "Static authored PNG navigation icons; existing cached on-demand model thumbnails retained for train roster",
     "stationMenu": "Progressive disclosure for farm, storage, Auto mix and real journey history",
     "cinematicDefault": "Off; explicit existing preferences retained",
-    "verification": "Production build and Blender authoring render review; no browser/UI interaction tests",
-    "authoredAssetDirectory": "hud/diorama-v2/",
+    "verification": "Production build and Blender authoring proof review. User explicitly declined offered desktop/narrow browser visual checks; no UI tests run.",
+    "authoredAssetDirectory": "hud/woodland-v3/",
     "authoredAssets": [
       {
-        "path": "hud/diorama-v2/button-active.png",
-        "bytes": 66553,
-        "sha256": "83c277171c3a61c1a5935238aa3f39fba4c99bd8e81eef7b7c27ac9e85d16e3d"
+        "path": "hud/woodland-v3/button-active.png",
+        "bytes": 67735,
+        "sha256": "d279a3f1750f602b20b06c04b0f56958f266d97c37ec52cf821440652d84e353"
       },
       {
-        "path": "hud/diorama-v2/button-selected.png",
-        "bytes": 64669,
-        "sha256": "bebbed97e54ecdabc15bdc31dd1778571dfedbf28ec3660840a81a2bd8690922"
+        "path": "hud/woodland-v3/button-selected.png",
+        "bytes": 68564,
+        "sha256": "527f06f527c387515a51221076703d0d44d6591d90dd3c7e598398c04d44266b"
       },
       {
-        "path": "hud/diorama-v2/button.png",
-        "bytes": 66296,
-        "sha256": "4be85c6e23dfc968970217d395ccb904c17142f2979e2b6e9567a14db97d46e3"
+        "path": "hud/woodland-v3/button.png",
+        "bytes": 61812,
+        "sha256": "b9a43068251f6943bc1fcaf67efd8a3c1d60b5f1c55dca130245b0c4e5b83209"
       },
       {
-        "path": "hud/diorama-v2/camera.png",
-        "bytes": 59584,
-        "sha256": "0015604b512e5aeff4ab4be0d7ff89bdba418e8aba0e5f902528f5011a26a8b7"
+        "path": "hud/woodland-v3/camera.png",
+        "bytes": 70116,
+        "sha256": "5e717a9fa858d08b4f6271fe66c5d75bfd0968bb4efbcd6864d01f6eae8d583b"
       },
       {
-        "path": "hud/diorama-v2/formation.png",
-        "bytes": 47465,
-        "sha256": "97490e437884239778f8c32fb8e106fdfa252f01b6edd9008ef912aacda9b7a6"
+        "path": "hud/woodland-v3/formation.png",
+        "bytes": 64013,
+        "sha256": "04409891f4f9233ef56332a910c7220780ade01913fc74bd26e77e88cb97fa75"
       },
       {
-        "path": "hud/diorama-v2/moon.png",
-        "bytes": 41489,
-        "sha256": "0fe91d16418a596c1740446b56722a9cbe714ffd305f387fe10fefc059b9b62a"
+        "path": "hud/woodland-v3/moon.png",
+        "bytes": 53424,
+        "sha256": "3990593ecdd86d8f3ba6877acd2b6a14bb452ba3f85784c01a0e0a16c4e53cf2"
       },
       {
-        "path": "hud/diorama-v2/nature.png",
-        "bytes": 41562,
-        "sha256": "afa749a004cb10e6b56026d2967cd6f63b547567c426e29d72681c189e4f0d7a"
+        "path": "hud/woodland-v3/nature.png",
+        "bytes": 55721,
+        "sha256": "7c64bf3a4e90cae6f419a5e8c811833b860868be3b6374cbcef1f6e6570d1cfd"
       },
       {
-        "path": "hud/diorama-v2/panel-dark.png",
-        "bytes": 66208,
-        "sha256": "3ed6674be30d18f6b5c57c7cd0626c68d928add095ff7e79ba2a973c6e98b624"
+        "path": "hud/woodland-v3/panel-dark.png",
+        "bytes": 61812,
+        "sha256": "63109bf5a79eb8cc1eddc5bca1ad1530f54dc1dfde604a62abbbe0d707e6a317"
       },
       {
-        "path": "hud/diorama-v2/panel.png",
-        "bytes": 66296,
-        "sha256": "5a712028f44f27d59b1ed127829eebe5b5efb96e41e33bb811e21ad370894f32"
+        "path": "hud/woodland-v3/panel.png",
+        "bytes": 61812,
+        "sha256": "f0e2549673e6af04761780d5c0b37d1c28e63dd1d5ac04e874a8e012a96d2a41"
       },
       {
-        "path": "hud/diorama-v2/pause.png",
-        "bytes": 49783,
-        "sha256": "99d417936687e1a8ee6a1a91446d6563e73da1b25faab11e1e8ddb2230497b1e"
+        "path": "hud/woodland-v3/pause.png",
+        "bytes": 60425,
+        "sha256": "fef084115182966397bd32fb18f918a824d34663c066867caa3ed5db4c1779e6"
       },
       {
-        "path": "hud/diorama-v2/play.png",
-        "bytes": 43605,
-        "sha256": "6033be3af17a71a2fe037e116ee46bae37f8b6815c7d26f232a0950b92b2cc09"
+        "path": "hud/woodland-v3/play.png",
+        "bytes": 56074,
+        "sha256": "657b6a4b9709472c91eb8048cd96ef51e5f03f8da30c967adbfb16e7f9d7018a"
       },
       {
-        "path": "hud/diorama-v2/settings.png",
-        "bytes": 55492,
-        "sha256": "1112b2f373bb7239696678f4c0cf35cc8e87f47917874b88eed077234aa59ae9"
+        "path": "hud/woodland-v3/settings.png",
+        "bytes": 66258,
+        "sha256": "b98bef8b359c86f15dabf116332ff4c4b156162b0c5dce1bdf58cc48d05039c8"
       },
       {
-        "path": "hud/diorama-v2/station.png",
-        "bytes": 48072,
-        "sha256": "0bbaecc4e31b2a3435a9bc516171243c9742481a347db9ea39e89846228980b4"
+        "path": "hud/woodland-v3/station.png",
+        "bytes": 64472,
+        "sha256": "a05856e46e471836a6a37c0b8ae6e24ce86fe6a6b3bd0aed214979d2b4f99749"
       },
       {
-        "path": "hud/diorama-v2/sun.png",
-        "bytes": 51821,
-        "sha256": "37f29e153421d5441f234269a3d08e1ca90e5fcf0b0e03d5f5d30115823d1f75"
+        "path": "hud/woodland-v3/sun.png",
+        "bytes": 64523,
+        "sha256": "b8f14337f87fcad451144e599d5b24dcc6cf704ade2319016f33e382a9642253"
+      },
+      {
+        "path": "hud/woodland-v3/twig-corner.png",
+        "bytes": 52110,
+        "sha256": "45d1514561919e6018f6ace158abb607abaddaf536be1819263c1f0f382995e8"
       }
     ],
-    "dockLabels": "Hover/focus tooltips, Escape dismissal, immediate touch activation; button accessible names retained"
+    "dockLabels": "Hover/focus tooltips, Escape dismissal, immediate touch activation; button accessible names retained",
+    "ornaments": "Two summary corners and one dock corner, decorative and pointer-transparent",
+    "iconSizes": "76px train / 70px station / 44px nature / 40px camera and settings, factor 0.82 narrow screens",
+    "emptySummary": "Map name, live count, one add-train action; redundant heading and two large buttons removed"
   },
   "trafficDiagnosis": {
     "reproduced": [
@@ -4011,6 +4149,18 @@
       }
     },
     "e66ebc7b09bdce22d3469ab7e89d879dec78fa85": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "note": "This HUD/water release ran production build and asset authoring only. Earlier approved traffic simulations are historical evidence, not rerun on this revision."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser UI/gameplay/performance tests. HTTP delivery checks only."
+      }
+    },
+    "2b79a50d19fe12730ad6ef8102ac800475f6e777": {
       "checks": {
         "status": "not_run",
         "approvedByUser": false,
