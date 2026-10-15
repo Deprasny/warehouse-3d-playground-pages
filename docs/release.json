@@ -1,9 +1,9 @@
 {
-  "release": "riverside-passenger-gangways-20261015-abb6cb6",
-  "sourceCommit": "abb6cb60acbbcb5d38f3100341cd332346897f46",
-  "sourceFingerprint": "e85268e2a18ee883e058a0ab8c824b456c224e95",
+  "release": "riverside-close-couplers-20261015-bd89b4b",
+  "sourceCommit": "bd89b4b8cb431711a7a1c52db9a1137ccdac3d7a",
+  "sourceFingerprint": "e773178cf6fc079e32fb4fa2591b0fcd8eb9551e",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T09:09:53.140864+00:00",
+  "builtAt": "2026-10-15T09:26:21.651024+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "8ad971c3f513ab4f56d0b1583b54a1cdee8f8673",
+  "previousSourceCommit": "abb6cb60acbbcb5d38f3100341cd332346897f46",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -587,6 +587,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-DdpqSRzh.js",
+      "sha256": "5b75049aa185ab25881ce881717c4eed8a7ef7d12f3de5cd384b6ff8d5b44230",
+      "bytes": 24445
+    },
+    {
       "path": "assets/AssetCatalogPage-DEwrXZCx.js",
       "sha256": "96d7ae1553cc6ab0cdce1c8040fc997631247676871f019a4f2682ab6b16e9d5",
       "bytes": 24445
@@ -750,6 +755,11 @@
       "path": "assets/AssetThumbnail-DEmSpwRs.js",
       "sha256": "24b882a3d77b9ded71ade4ae791b97413ce29219702878dc388b4d93d629cfa5",
       "bytes": 802652
+    },
+    {
+      "path": "assets/AssetThumbnail-DJQqXSuh.js",
+      "sha256": "2f127591eb9910880251ad5718bb3d8e674fee38db996efdde3ccd41025a0afd",
+      "bytes": 618537
     },
     {
       "path": "assets/AssetThumbnail-DVp-UxNi.js",
@@ -992,6 +1002,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DyEUoAzP.js",
+      "sha256": "1a6787f2680115b223b17bb1ddd0373467f05b8ec4c6468f30478952ac62da0d",
+      "bytes": 11973
+    },
+    {
       "path": "assets/Cc206ReviewPage-DYuFBd6h.js",
       "sha256": "0b9473df3bd08a880098c924db8263896f6daba09a5064a159635f9868cb6707",
       "bytes": 11982
@@ -1035,6 +1050,11 @@
       "path": "assets/ConsistsPage-B9O1mPhk.js",
       "sha256": "e64dff7f6018d7f2484a8065e036083e093cf28930156de3dd8cde8791837f0a",
       "bytes": 8488
+    },
+    {
+      "path": "assets/ConsistsPage-B_HfR5l-.js",
+      "sha256": "780188229354947abc9034d2e94ec3711166fbc3502f8a5306e071554a6d5163",
+      "bytes": 8442
     },
     {
       "path": "assets/ConsistsPage-Bg5TnmR0.js",
@@ -1517,6 +1537,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DssYBDfL.js",
+      "sha256": "e1939e11bd5d16d72276e59d569387e8d3b7021dd935de80b307ad94a5225369",
+      "bytes": 2061
+    },
+    {
       "path": "assets/DownloadSimple.es-DV03Ia5J.js",
       "sha256": "d2e299890fa5d716555acc056e97b00d2ee1e2b9d5899fc48a79c711d55f8880",
       "bytes": 2061
@@ -1702,6 +1727,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-D_Ynldhf.js",
+      "sha256": "59e05e0c295c0ad97408c0e93939aff964ff06ca701831cc0d73ca19c0b10a4e",
+      "bytes": 18024
+    },
+    {
       "path": "assets/GaugeReviewPage-DcYl4b4t.js",
       "sha256": "0eab98f78080d4ee56d797efd42ffa123a9e58d561a781be8bf4d54919391d0f",
       "bytes": 10825
@@ -1825,6 +1855,11 @@
       "path": "assets/GLTFLoader-B0OtCTzX.js",
       "sha256": "cc966104b9d10fe419622fcf6acd536c49920ca5763aaa65105225d815e89f06",
       "bytes": 44395
+    },
+    {
+      "path": "assets/GLTFLoader-B22J8H7k.js",
+      "sha256": "0ff43e6926e7d823b7f55682122c534945ea349e6d249e3f7f456a21f906b1e0",
+      "bytes": 44398
     },
     {
       "path": "assets/GLTFLoader-B6dXDznl.js",
@@ -2014,6 +2049,11 @@
     {
       "path": "assets/HudPreviewPanel-CGyS_FRu.js",
       "sha256": "c673143e0a2f352e988174559d8ecb67ac6dcc69ce4298340a0fd72b22fb43f7",
+      "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-CJ5qRmY0.js",
+      "sha256": "96126add6b716c3386b229a706c24983b15d3ea5ac337193b0a9eb9d84a0c1df",
       "bytes": 421
     },
     {
@@ -2270,6 +2310,11 @@
       "path": "assets/ImportedCc206Page-Cu5SxR52.js",
       "sha256": "062f23ef4f6d3d19ea6270464f1402b0f743f2e404115c415d92fbc67d2f237a",
       "bytes": 13958
+    },
+    {
+      "path": "assets/ImportedCc206Page-CxVq49-r.js",
+      "sha256": "c8ff5e184cf08c2f4df77ccf7f205f79b8b9fa064e8513b2d1a6c34617bff8e5",
+      "bytes": 13962
     },
     {
       "path": "assets/ImportedCc206Page-D9LwQwOq.js",
@@ -2572,6 +2617,11 @@
       "bytes": 801344
     },
     {
+      "path": "assets/index-nJLp8QWy.js",
+      "sha256": "84e64dd7e52813d12fce6c54e9afb4d7456801465145b7135c4d76856db7388c",
+      "bytes": 739450
+    },
+    {
       "path": "assets/index-PQGmcJX-.js",
       "sha256": "7d9a3ba6095c81b11972f4211322ede38c0b9802ff5ff20adb07e6a03122a0ac",
       "bytes": 610457
@@ -2703,7 +2753,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "7a35733239d2d07fca449a3e7e3829894a8d1896dceb244226d191e67f5d052f",
+      "sha256": "95b984b56d05daaf35d3aecb7e4d4becd603b34869a65968448c8de562805dc9",
       "bytes": 1004
     },
     {
@@ -3531,23 +3581,45 @@
   },
   "passengerGangways": {
     "pairs": "Adjacent executive/economy coaches including mixed passenger pairs",
-    "shape": "Opaque hollow beveled rectangular rubber accordion with thick rims and eight folds",
+    "shape": "Slim hollow rubber accordion with subdued collars and six shallow folds",
     "deformation": "Endpoint positions, scale and quaternion interpolation from both physical coach ends",
     "attachmentZRaw": 7.2,
     "foldWidthRaw": [
-      1.26,
-      1.44
+      1.12,
+      1.18
     ],
     "foldHeightRaw": [
-      1.94,
-      2.12
+      1.78,
+      1.84
     ],
-    "wallThicknessRaw": 0.075,
-    "trianglesPerPair": 672,
+    "wallThicknessRaw": 0.025,
+    "trianglesPerPair": 544,
     "maxAddedDrawCallsPerTrain": 1,
     "unchangedPoseBufferUploads": false,
-    "couplerAndPhysicsSpacing": "unchanged",
+    "couplerAndPhysicsSpacing": "Short rest coupling shared with all six carriage types; extension on bends within previous maximum reach",
     "storageLifecycle": "Connections rebuilt on detach/attach and disposed before pooling",
     "visualGameplayVerification": "not_run"
+  },
+  "closeCoupling": {
+    "carriages": [
+      "executive",
+      "economy",
+      "harvest",
+      "ballast",
+      "container",
+      "tank"
+    ],
+    "pivotRaw": 7.48,
+    "restDrawbarRaw": 0.18,
+    "maxDrawbarRaw": 0.56,
+    "straightCentreSpacingRaw": 15.32,
+    "previousCentreSpacingRaw": 16.2,
+    "passengerShellGapWorld": 0.616,
+    "previousPassengerShellGapWorld": 1.232,
+    "curveBehaviour": "Limited drawbar extension based on relative rigid-body angle and end-corner clearance",
+    "bodyAndBogies": "Rigid body chord through bogie pivots; bogies follow local rail tangents independently",
+    "safetyEnvelope": "Retains maximum drawbar extension for block clearance and platform admission",
+    "sourceGLBGeometry": "unchanged; runtime-owned pivot and longitudinal scale adaptation",
+    "gameplayVerification": "not_run"
   }
 }
