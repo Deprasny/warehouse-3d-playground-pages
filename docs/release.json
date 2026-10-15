@@ -1,9 +1,9 @@
 {
-  "release": "riverside-natural-foreground-20261015-a70c9dd",
-  "sourceCommit": "a70c9dd2283dc86c2c79094f79a6b5f733a9b5c0",
-  "sourceFingerprint": "da49a561190775403d2ef3737c40545e56db3e49",
+  "release": "riverside-max-graphics-hamlet-20261015-e894767",
+  "sourceCommit": "e894767bb03454723bd3dec4f0bc062dd16f0780",
+  "sourceFingerprint": "983a248f67fdfd6cb9a5de5e22faeee5de61c1ac",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T14:39:31.906717+00:00",
+  "builtAt": "2026-10-15T15:03:34.806923+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,20 +20,19 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "7121dce9958db6fd2fdd0e6ec5476b6b740d92eb",
+  "previousSourceCommit": "a70c9dd2283dc86c2c79094f79a6b5f733a9b5c0",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
     "status": "not_run",
-    "approvedByUser": false,
     "run": [],
-    "scope": "No simulation, automated tests or profiling; static source review and production build only."
+    "scope": "No automated tests, rail/traffic simulations or profiling suite; source review and production build only."
   },
   "browserChecks": {
     "status": "not_run_at_build",
-    "scope": "Targeted foreground screenshot follows deployment; no interaction or simulation suite."
+    "scope": "Targeted Max graphics screenshot/visible render diagnostics follows deployment; no simulation or gameplay suite."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -607,6 +606,11 @@
       "bytes": 24488
     },
     {
+      "path": "assets/AssetCatalogPage-D0KKgYBY.js",
+      "sha256": "6c281966817a4fb49869f16a29688268ce7663f82fc95ea9466be9bb2da6f18f",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-d4A7ZVtj.js",
       "sha256": "12701ec2111a8a4ee8a700d9167d43cd3ce116fc4852b6be6a57d8074b531fc2",
       "bytes": 24446
@@ -1017,6 +1021,11 @@
       "bytes": 12019
     },
     {
+      "path": "assets/Cc206ReviewPage-BTPKqFcM.js",
+      "sha256": "8058812ee395763566b521699e37490934287829c873fdb58a36b0a60eebe2c3",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-BvBjZJB1.js",
       "sha256": "17f2788ce1ec6738d1c89936988d38eccda7fbf8b9d4368bd17835a57364e805",
       "bytes": 11982
@@ -1267,6 +1276,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-BX6maxhJ.js",
+      "sha256": "47161dd5f0dd4ad9dac3a22168d6e07b325f89e1c72af3a8409cbfeb9c1c5e66",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-BX8LeLUl.js",
       "sha256": "2940a27667364b7b87694706a56900a0920c8399638d2f4b765cabd686df8a31",
       "bytes": 8448
@@ -1480,6 +1494,11 @@
       "path": "assets/ConsistsPage-ZnPkbMHI.js",
       "sha256": "dd82a4635c3ad54c721b2080c001f9903616d0926b001e1cab42a2b5068c8935",
       "bytes": 8470
+    },
+    {
+      "path": "assets/diorama-postprocessing-1tfOF8qq.js",
+      "sha256": "1bc07cd88ce568039b8cf0e52e6d60b13f0f2fb6e9c767f96d2b9e9e1cb6eda5",
+      "bytes": 41445
     },
     {
       "path": "assets/diorama-postprocessing-B1oTgmMR.js",
@@ -1792,6 +1811,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-DN4NblP4.js",
+      "sha256": "7457f48124f91ce1b1ef1f3e60d72af5313d30e5aef879b3ae87f87542546437",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-Do2Jz5qE.js",
       "sha256": "f80f898c5a565cdfaeb8e648419d0df8a9d8cd3b04d34ccce4c4ee734c489210",
       "bytes": 2061
@@ -1890,6 +1914,11 @@
       "path": "assets/DownloadSimple.es-YpAhwte1.js",
       "sha256": "0e155d35aa0d3a57ef1f0b9470d7ef89288ffb5b35746cd78679f49da9b829dc",
       "bytes": 2061
+    },
+    {
+      "path": "assets/GaugeReviewPage--O58ziDx.js",
+      "sha256": "af04cbc3d89cda2f2824fb5bce85be86d68c9ca822372c441064d75608149eee",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-2fqi3M6S.js",
@@ -2417,6 +2446,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-C6ps2YWR.js",
+      "sha256": "71bd3b3a783da11a589654c56562708343dd086c9659b875083b3ac88848c904",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-C_t6OEQb.js",
       "sha256": "b8a4b68702004989f6e88e0da575b8ae3723b483b6e5e08f90a90a2b3431615b",
       "bytes": 421
@@ -2727,6 +2761,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-ButUlnuk.js",
+      "sha256": "b3735c6ffc6cee28b13f9ac37cb34edc04d7fcf7d6a2964a6f80233d99e6ae56",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-C0mfy2A3.js",
       "sha256": "f74686aef39ee021b47af7541016b6b9b6e7d971c27a01fc73d6ed5e3efdc574",
       "bytes": 13963
@@ -2970,6 +3009,11 @@
       "path": "assets/index-Bboidc0D.css",
       "sha256": "b4a03f5d6b323eae89a02219847886372ca2d6a2cf47b45d28b42602c807f40a",
       "bytes": 79204
+    },
+    {
+      "path": "assets/index-BbSIyjhz.js",
+      "sha256": "4913b450bbf92b1287672c9938ea6cc0b94c7390f365f77ceea4e8941740d907",
+      "bytes": 801055
     },
     {
       "path": "assets/index-BcbFvQjx.js",
@@ -3362,6 +3406,11 @@
       "bytes": 594128
     },
     {
+      "path": "assets/use-hud-browser-CXi0lnKc.js",
+      "sha256": "2121d759ec3c79df01a2fefc1092ed83f57dbed314dcadf62b492a976fde1221",
+      "bytes": 594128
+    },
+    {
       "path": "assets/use-hud-browser-cy4jKBHt.js",
       "sha256": "e4aeec34e5f4a5ed757932fc7207c05f207f73983ce83d72515c1600427d1a4f",
       "bytes": 594128
@@ -3738,7 +3787,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "8fb2d775ecf31c3b5fb0e1536cefe5ac0c8a7b84f63905c38f20c3e0e051fc24",
+      "sha256": "957bea9f171d148202e497c865c763af62679cecadb2eab79ad365776a7491af",
       "bytes": 1595
     },
     {
@@ -4960,6 +5009,18 @@
         "status": "not_run",
         "scope": "No browser visual or interaction checks; live HTTP delivery verified separately."
       }
+    },
+    "a70c9dd2283dc86c2c79094f79a6b5f733a9b5c0": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "scope": "No simulation, automated tests or profiling; static source review and production build only."
+      },
+      "browserChecks": {
+        "status": "not_run_at_build",
+        "scope": "Targeted foreground screenshot follows deployment; no interaction or simulation suite."
+      }
     }
   },
   "northBridgeJunction": {
@@ -5032,9 +5093,24 @@
     "readiness": "layout-only",
     "places": "Household vegetable garden with potting pergola, irregular fenced pasture with open shelter and water trough",
     "access": "Continuous dirt lane outside the rails, explicit field gate approaches; no railway crossing or new live vehicle route",
-    "landscape": "Six repeated grove patterns and all south random scatter removed; unequal west/east woodland masses, low central meadow and two landmark trees",
+    "landscape": "Asymmetric west/east woodland with low plants; former central vacant meadow now contains neighbouring hamlet roofs and shared courts",
     "landforms": "Three broad smooth rises, maximum 1.5/0.45/1.3 metres, shared by terrain mesh and scenery height queries",
     "style": "Existing matte low-poly palette and instanced kit; plain terrain, no new textures",
     "runtime": "No new actors, livestock animation or cargo inventory; existing traffic and rail controllers retain authority"
+  },
+  "maxGraphics": {
+    "entry": "Settings Max2x or explicit quality=max URL; Auto remains the ordinary default",
+    "resolution": "2 physical pixels per CSS axis, capped by actual GPU dimensions and 8388608 desktop / 4194304 coarse-touch drawing pixels",
+    "shadows": "4096 desktop / 2048 coarse-touch, hardware bounded, existing PCF and caster policy",
+    "postprocessing": "HDR beauty + GTAO32 samples with 0.8 resolution capped2560/2048 + OutputPass; format-supported MSAA up to8 small /4 large",
+    "lifecycle": "Atomic drawing buffer resize, one lazy graph, only beauty has depth/MSAA, direct modes dispose graph",
+    "telemetry": "Effective ratio and resolution-limited state shown in settings diagnostics; no measured FPS claim at build time"
+  },
+  "hamletComposition": {
+    "readiness": "layout-only",
+    "architecture": "Six staggered roof volumes around connected neighbour courts and low open balai; full authored yaw including90 degree wing",
+    "pasture": "Smaller enclosure moved east beside hamlet, same source anchors for gate/shelter/trough and static cattle figures",
+    "tableaux": "Three cows, vendor/customer and two seated passengers are display-only figurines; no new actor, clock, cargo or navigation authority",
+    "style": "Shared matte low-poly palette and terracotta roofs; no bloom/DOF or new material family"
   }
 }
