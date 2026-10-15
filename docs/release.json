@@ -1,9 +1,9 @@
 {
-  "release": "riverside-single-bore-portals-20261015-ac90c58",
-  "sourceCommit": "ac90c58de338ba268bbac5f6daa7d5e5bb257409",
-  "sourceFingerprint": "8becb648e472b454cc4953ce0463ced0ab89ff9d",
+  "release": "riverside-composed-villages-meander-20261015-e1ae2d2",
+  "sourceCommit": "e1ae2d21eb186642527e98be7faac1e552fa8249",
+  "sourceFingerprint": "a9a6027d8b5a1ff60ddb57dfc1e8995605bfbcc2",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T12:19:45.701838+00:00",
+  "builtAt": "2026-10-15T12:49:05.570180+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "3dd9e070baaedc074725d3f644ff45fb0e647660",
+  "previousSourceCommit": "ac90c58de338ba268bbac5f6daa7d5e5bb257409",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -29,12 +29,12 @@
     "status": "not_run",
     "approvedByUser": false,
     "run": [],
-    "scope": "Portal appearance correction: production build and static source review only. No simulations, browser or visual tests run.",
-    "note": "Earlier authorized Auto verification is preserved under historicalVerification for the previous source commit. Train movement/planner unchanged in this revision."
+    "scope": "Village/farm composition and retirement of north exit branches: source review and production build only.",
+    "note": "Prior targeted simulations are historical evidence only and do not validate this layout or the revised rail geometry."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No portal/HUD browser appearance, interaction or performance tests for this portal correction; HTTP delivery checks only."
+    "scope": "No browser visual, interaction, gameplay or performance checks for this release. HTTP delivery inspection only."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -493,6 +493,11 @@
       "bytes": 24488
     },
     {
+      "path": "assets/AssetCatalogPage-Bun89IIz.js",
+      "sha256": "bdfe8da881cb14cb774ac1bd1820cd5ae0de58970587ab8d3a2bc9d87b2b78fd",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-BuTWYvr2.js",
       "sha256": "cce3fbd812027bb57e9953f059f5648e6a37d67304d5a7b313d7141b952b3bda",
       "bytes": 24488
@@ -701,6 +706,11 @@
       "path": "assets/AssetCatalogPage-P5KPCFTO.js",
       "sha256": "57629bd4c0d68a0e4f3046c90261e8d3ae016b610a51adb24c13656491552f45",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-Povyyw4-.js",
+      "sha256": "e99aace388a4c2f8bcc9d06d61b5a47c8584fea959c1bbb4b0368c7b4cc48a70",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-qcyiq1Ix.js",
@@ -948,6 +958,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-BKJMnu48.js",
+      "sha256": "57f51a604fee261dee3d191a3c3963d4f4f5d95542330f71039c37441103861a",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-BMHdAxYv.js",
       "sha256": "030b1a68be13ffa6b49d2cec2429bf6b2fb0f5f45ac006bc35b1092b1ac6a8eb",
       "bytes": 11982
@@ -1091,6 +1106,11 @@
       "path": "assets/Cc206ReviewPage-DxH61K4u.js",
       "sha256": "c7dfa8b99643e2642cf387282f7179607fa5848892a9c0bd78bfd60e9c854c1f",
       "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-DXR2yo2H.js",
+      "sha256": "7fc53740b3b2e195ad06d1d5091a6dc798b65757fdc7c6d111033ab564f040ef",
+      "bytes": 12019
     },
     {
       "path": "assets/Cc206ReviewPage-DxWrV85W.js",
@@ -1348,6 +1368,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-DU1Jxk9H.js",
+      "sha256": "aa8291c2835901434b55b86f8533e8c49dabf1328afc56dabd3c0b8f331b864f",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-DUS_dc9K.js",
       "sha256": "764637f941d5b0206c835512b1407b486c940a2868d882bf74bb9cdc228f0479",
       "bytes": 8450
@@ -1406,6 +1431,11 @@
       "path": "assets/ConsistsPage-ZdxcRYpI.js",
       "sha256": "8b58dc9e66d7a77e223790fa71954a8d9bb5c3026f2b2ab07532188d3b4a0657",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-ZnPkbMHI.js",
+      "sha256": "dd82a4635c3ad54c721b2080c001f9903616d0926b001e1cab42a2b5068c8935",
+      "bytes": 8470
     },
     {
       "path": "assets/diorama-postprocessing-B1oTgmMR.js",
@@ -1633,6 +1663,11 @@
       "bytes": 2099
     },
     {
+      "path": "assets/DownloadSimple.es-Cfedqya5.js",
+      "sha256": "83f6ce3a7cbbe6917f4f3f78d0b8c7ba26501765d02628d312867d8a11c20d7b",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-Cg9jrIyp.js",
       "sha256": "71d5ac027bc0c60eace62fac54d0884fada7835d65b0b8cf6ba43ec032752d08",
       "bytes": 2099
@@ -1773,6 +1808,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-u81PZiPi.js",
+      "sha256": "2ea79b4b78f12c79bc7aba5389847a383e95208dd454cf9b266df56241ed3ffe",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-vbe0NmQg.js",
       "sha256": "1885988e7bd1cbd39d3f560decdf538808e15881d92c319abd7c4f4d1e2bf516",
       "bytes": 2061
@@ -1853,6 +1893,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-BSSHB3DY.js",
+      "sha256": "2f586f52006686b6162165ebfde17e520a0ad543e374e54ec15d88cd26e15bf5",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-BuwfDt8d.js",
       "sha256": "fb40ab44b437a9e4ed9e4a989029bf816888c8ff2847d54d55a9e0dbc0c07ca2",
       "bytes": 10815
@@ -1901,6 +1946,11 @@
       "path": "assets/GaugeReviewPage-CbNCgCrf.js",
       "sha256": "5936f82b957769c56c246f42d00a1436bf14ac55d33a09a5a69a911caa84ad50",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-Cn2WUl_E.js",
+      "sha256": "1acc98c849199acfd44097d5e797f4fe06916ba4affdf8f9c7f41b84204c2d9e",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-Cn4ClQc_.js",
@@ -2243,6 +2293,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-BH6ovHL_.js",
+      "sha256": "8132f31d75f1552103232f0370d3af8bf698340dceb5d0ae7876e78477f9383a",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-BJG42N6r.js",
       "sha256": "e33bc3a368621225ceb07d77d7082fd415a65d96a6e1d832c9b606f77768a94e",
       "bytes": 421
@@ -2256,6 +2311,11 @@
       "path": "assets/HudPreviewPanel-Br1DcFOr.js",
       "sha256": "a5af1a1867711f6ea08dd134e962060cb65a60ffd8b4ac196858e9d719abee8b",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BwAe2SiM.js",
+      "sha256": "c4f6aaf0e23d5080c0e13950b5808c1b7ddbdfe4db24dbda15a8ca669cb190f6",
+      "bytes": 422
     },
     {
       "path": "assets/HudPreviewPanel-By2PJEKe.js",
@@ -2488,6 +2548,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-B11BjMqz.js",
+      "sha256": "2e121fd03a6c8127ce105bd2dfd9036a48108e5db7999c428c1096ab510bb1c5",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-B2q_ZhNg.js",
       "sha256": "62cae7c3039376cb759a34c1122ce1ac814d32e83281b872f5d8faca7a6ecc57",
       "bytes": 13963
@@ -2633,6 +2698,11 @@
       "bytes": 13958
     },
     {
+      "path": "assets/ImportedCc206Page-CUEjCfDc.js",
+      "sha256": "4fd87c19d36c0d48398e94575cc92f9791c08eaad676e1ca383b9908869eb157",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-CxVq49-r.js",
       "sha256": "c8ff5e184cf08c2f4df77ccf7f205f79b8b9fa064e8513b2d1a6c34617bff8e5",
       "bytes": 13962
@@ -2746,6 +2816,11 @@
       "path": "assets/index-3r2Lr6B3.js",
       "sha256": "bbceb513bd57eb1ded8442d542c557cb021a7d3a364a1bfce1ed9cb096cad216",
       "bytes": 730179
+    },
+    {
+      "path": "assets/index-A6GQSEBO.js",
+      "sha256": "606704f1ae85f631daf656824de45f8891ce6d7c1a18f4e3782a6e9cc14a3136",
+      "bytes": 749327
     },
     {
       "path": "assets/index-aHRQ1-VX.js",
@@ -2968,6 +3043,11 @@
       "bytes": 783558
     },
     {
+      "path": "assets/index-DJqFutiQ.js",
+      "sha256": "e355991d35047f047432a1df1c37d2daa1d22db8865dad2efb3c027973061bfc",
+      "bytes": 749509
+    },
+    {
       "path": "assets/index-DM5z6BDf.js",
       "sha256": "410c41c70055789aed05a1ead28c5e56c4469da27385c991bad0eba9ca458a4c",
       "bytes": 600675
@@ -3158,9 +3238,19 @@
       "bytes": 594128
     },
     {
+      "path": "assets/use-hud-browser-cy4jKBHt.js",
+      "sha256": "e4aeec34e5f4a5ed757932fc7207c05f207f73983ce83d72515c1600427d1a4f",
+      "bytes": 594128
+    },
+    {
       "path": "assets/use-hud-browser-D487qnNe.js",
       "sha256": "d6920478111f1363b023bb51e9267bcda2b35e28a30d535df9f04184ebd1481d",
       "bytes": 591615
+    },
+    {
+      "path": "assets/use-hud-browser-DMrCcVm5.js",
+      "sha256": "f8d4ef9d16782f56f2b1459b27a33422a2ef40ff99965855eb0c4a05abbaa38a",
+      "bytes": 594128
     },
     {
       "path": "assets/use-hud-browser-Nqe127WI.js",
@@ -3514,7 +3604,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "877058f6e977ed465ae1a3a9933193dad3ded02d9016429fccd6e2ca8633e6ee",
+      "sha256": "ab4a5a53fb13494d7fa4a1311e4b43b674bf74332be037e6e182610d90715486",
       "bytes": 1595
     },
     {
@@ -4322,17 +4412,15 @@
     "maxActiveAutomatic": 8,
     "maxQueuedAutomatic": 2,
     "physicalDeadlockAutoRecoveryGuaranteed": false,
-    "gameplayVerification": "Previous targeted Auto simulation passed; historical evidence retained. No current simulation/browser/broad suite run for portal-only correction",
+    "gameplayVerification": "No current simulation/browser/broad suite run. Earlier results apply only to their recorded source commits.",
     "automaticMix": {
-      "pass": 20,
-      "stop": 15,
-      "overtake": 20,
-      "meet": 10,
-      "store": 15,
-      "northStraight": 10,
-      "northTurn": 10
+      "pass": 25,
+      "stop": 20,
+      "overtake": 25,
+      "meet": 15,
+      "store": 15
     },
-    "northExitScheduling": "Fixed east/J2 straight and west/J3 right-turn approaches; independent accepted-dispatch stop/pass alternation"
+    "northExitScheduling": "Removed from Auto and manual route options; legacy north-exit dispatch requests rejected with a retirement message"
   },
   "riverWater": {
     "revision": 3,
@@ -4686,14 +4774,25 @@
         "status": "not_run",
         "scope": "Current approval covers targeted headless Auto verification. No portal/HUD browser appearance, interaction or performance tests; HTTP delivery checks only."
       }
+    },
+    "ac90c58de338ba268bbac5f6daa7d5e5bb257409": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "scope": "Portal appearance correction: production build and static source review only. No simulations, browser or visual tests run.",
+        "note": "Earlier authorized Auto verification is preserved under historicalVerification for the previous source commit. Train movement/planner unchanged in this revision."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No portal/HUD browser appearance, interaction or performance tests for this portal correction; HTTP delivery checks only."
+      }
     }
   },
   "northBridgeJunction": {
-    "shape": "Double-track T: existing North-station curves plus straight north exits at Z=-100",
-    "exits": "Playable dispatch choice north-exit: South station straight out or North station right-turn out; full tail clears hidden Z=-300 approach",
-    "protection": "Six guarded points and three diamonds in one shared conflict block; granted authority remains held through braking until tail clearance",
-    "signals": "Gate-specific unready point guards; controlled braking to protected boundary instead of immediate speed resets",
-    "verification": "Historical Auto simulation completed straight and right-turn exits in stop/pass operation; no movement tests rerun for portal-only correction"
+    "status": "removed",
+    "replacement": "Continuous double-track approach with a gentle meander; no north exit or diamond conflict block",
+    "verification": "Source integration and production build only; no movement simulation for this revision"
   },
   "carriageWheelVisibility": {
     "cause": "Stationary bogie frame and axleboxes obscure rotating discs and marker",
@@ -4714,18 +4813,24 @@
   "railMapPortals": {
     "arms": [
       "south-east",
-      "north-east",
-      "north-exit"
+      "north-east"
     ],
-    "geometry": "Three low-poly stone arch portals, each with ONE wide shared bore for both tracks and no centre pier; enclosed dark throat and opaque arched rear occluder",
+    "geometry": "Two low-poly stone portals, each with one wide shared bore for both tracks; obsolete north-exit portal removed",
     "frontCoordinateMagnitude": 94.5,
     "rearCoordinateMagnitude": 99.7,
     "openingsPerArm": 1,
-    "openingsTotal": 3,
+    "openingsTotal": 2,
     "openingWidth": 7.3,
     "openingCrownAboveRail": 4.5,
     "textures": 0,
     "addedLights": 0,
-    "verification": "Static source dimensions and production build only; portal browser/appearance checks not run"
+    "verification": "Source integration and build only; no portal browser review"
+  },
+  "miniatureComposition": {
+    "south": "Five existing houses composed as two hamlets, doors facing road or common court; transformed property anchors, short shared footpaths, clustered planting and open station arrival view",
+    "north": "Grouped crop phases, shared farm access and west haul stop aligned with actual R4 extension; clear walking aisle and fewer redundant field boundaries",
+    "stations": "South public arrival court separated from broad rail court; North passenger court separated from storage and warehouse yard",
+    "style": "Approved stylized low-poly kit, plain ground and shared palette; no new textures or asset downloads",
+    "verification": "Source review and production build only; no runtime/visual test"
   }
 }
