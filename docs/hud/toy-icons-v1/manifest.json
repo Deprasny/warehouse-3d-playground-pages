@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "revision": 2,
+  "size": [
+    256,
+    256
+  ],
+  "alpha": true,
+  "icons": [
+    "formation",
+    "station",
+    "nature",
+    "camera",
+    "settings",
+    "play",
+    "pause",
+    "sun",
+    "moon"
+  ],
+  "authoring": "Blender 4.5.10 LTS / Cycles 96 samples, own scene/material namespace",
+  "geometry": "Custom chunky locomotive/station icon meshes, original nature miniatures and V4 low-poly controls",
+  "camera": {
+    "type": "orthographic",
+    "direction": [
+      4,
+      -6,
+      4.8
+    ],
+    "framing": "projected extent x1.24"
+  },
+  "postprocess": {
+    "sourcePixelsPerLogical64": 4,
+    "darkSilhouetteRadius": 7,
+    "paleRimRadius": 3,
+    "shadowOpacity": 0.16,
+    "source": "render alpha only"
+  },
+  "sources": {
+    "formation": "Purpose-built Blender diesel locomotive glyph; no imported train asset",
+    "station": "Purpose-built Blender gabled station with clock/canopy; no imported station asset",
+    "nature": "models/riverside-diorama-kit.glb",
+    "controls": "SCN-Woodland-HUD-V4 original meshes"
+  },
+  "referenceRole": "TrainCity supplies silhouette/readability direction; none of its artwork is copied",
+  "metrics": {
+    "formation": {
+      "rawAlphaBounds": [
+        25,
+        27,
+        229,
+        225
+      ],
+      "finalAlphaBounds": [
+        10,
+        17,
+        244,
+        245
+      ],
+      "opaqueMeanSaturation": 0.289,
+      "opaqueMeanValue": 0.454
+    },
+    "station": {
+      "rawAlphaBounds": [
+        25,
+        25,
+        230,
+        229
+      ],
+      "finalAlphaBounds": [
+        10,
+        16,
+        245,
+        249
+      ],
+      "opaqueMeanSaturation": 0.45,
+      "opaqueMeanValue": 0.693
+    },
+    "nature": {
+      "rawAlphaBounds": [
+        42,
+        63,
+        214,
+        196
+      ],
+      "finalAlphaBounds": [
+        26,
+        53,
+        229,
+        216
+      ],
+      "opaqueMeanSaturation": 0.463,
+      "opaqueMeanValue": 0.481
+    },
+    "camera": {
+      "rawAlphaBounds": [
+        31,
+        32,
+        225,
+        219
+      ],
+      "finalAlphaBounds": [
+        16,
+        22,
+        240,
+        240
+      ],
+      "opaqueMeanSaturation": 0.464,
+      "opaqueMeanValue": 0.649
+    },
+    "settings": {
+      "rawAlphaBounds": [
+        25,
+        24,
+        231,
+        232
+      ],
+      "finalAlphaBounds": [
+        10,
+        14,
+        246,
+        252
+      ],
+      "opaqueMeanSaturation": 0.441,
+      "opaqueMeanValue": 0.507
+    },
+    "play": {
+      "rawAlphaBounds": [
+        31,
+        23,
+        224,
+        233
+      ],
+      "finalAlphaBounds": [
+        17,
+        14,
+        239,
+        252
+      ],
+      "opaqueMeanSaturation": 0.561,
+      "opaqueMeanValue": 0.672
+    },
+    "pause": {
+      "rawAlphaBounds": [
+        42,
+        23,
+        214,
+        233
+      ],
+      "finalAlphaBounds": [
+        27,
+        14,
+        229,
+        252
+      ],
+      "opaqueMeanSaturation": 0.563,
+      "opaqueMeanValue": 0.665
+    },
+    "sun": {
+      "rawAlphaBounds": [
+        27,
+        26,
+        229,
+        230
+      ],
+      "finalAlphaBounds": [
+        12,
+        16,
+        244,
+        250
+      ],
+      "opaqueMeanSaturation": 0.53,
+      "opaqueMeanValue": 0.794
+    },
+    "moon": {
+      "rawAlphaBounds": [
+        50,
+        23,
+        206,
+        232
+      ],
+      "finalAlphaBounds": [
+        35,
+        14,
+        221,
+        252
+      ],
+      "opaqueMeanSaturation": 0.265,
+      "opaqueMeanValue": 0.864
+    }
+  },
+  "files": {
+    "formation.png": 45740,
+    "station.png": 42270,
+    "nature.png": 19028,
+    "camera.png": 34521,
+    "settings.png": 37375,
+    "play.png": 24215,
+    "pause.png": 23031,
+    "sun.png": 30552,
+    "moon.png": 23717
+  },
+  "verification": {
+    "assetProof": "48px/64px render composition only; visually inspected separately",
+    "browser": "not_run",
+    "tests": "not_run"
+  }
+}
