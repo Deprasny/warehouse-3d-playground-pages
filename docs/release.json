@@ -1,9 +1,9 @@
 {
-  "release": "riverside-close-couplers-20261015-bd89b4b",
-  "sourceCommit": "bd89b4b8cb431711a7a1c52db9a1137ccdac3d7a",
-  "sourceFingerprint": "e773178cf6fc079e32fb4fa2591b0fcd8eb9551e",
+  "release": "riverside-diorama-hud-traffic-trace-20261015-b499f94",
+  "sourceCommit": "b499f94492ebbeee3223489b0bdd2eded7b12d1a",
+  "sourceFingerprint": "11ebebc9d63aef8110df178faffed4efe60c1d7d",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T09:26:21.651024+00:00",
+  "builtAt": "2026-10-15T09:44:24.906994+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,16 +20,21 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "abb6cb60acbbcb5d38f3100341cd332346897f46",
+  "previousSourceCommit": "bd89b4b8cb431711a7a1c52db9a1137ccdac3d7a",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "not_run",
-    "approvedByUser": false,
-    "run": [],
-    "note": "Static code and asset review, ballast authoring render review, and TypeScript/Vite build only. No automated tests, simulation harness, browser gameplay or performance runs executed."
+    "status": "targeted_passed",
+    "approvedByUser": true,
+    "run": [
+      "node --experimental-transform-types scripts/trace-riverside-road.ts --seconds=600",
+      "node --experimental-transform-types scripts/trace-riverside-road.ts --seconds=1200 --gates",
+      "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=1200 --label=coupled-final",
+      "node --experimental-transform-types scripts/trace-riverside-rail.ts --seconds=600 --scenario=crossovers --label=crossovers-before"
+    ],
+    "note": "User explicitly requested rail/road engine simulation and trace. Focused headless regressions passed; no broad suite, HUD browser/gameplay check or performance measurement run."
   },
   "browserChecks": {
     "status": "not_run",
@@ -582,6 +587,11 @@
       "bytes": 24445
     },
     {
+      "path": "assets/AssetCatalogPage-DAe61sQb.js",
+      "sha256": "320b53eff7b08a06a4121197353b1cd614f92362c067dbc8534c730711af52d0",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-DBCwo1f4.js",
       "sha256": "5cbbbffa3227e3b5177021049f914cec1b193b18b78a3cdf14eb8e09901f3d82",
       "bytes": 24446
@@ -812,6 +822,16 @@
       "bytes": 36743
     },
     {
+      "path": "assets/cc201-game-template-BsHkA4x2.js",
+      "sha256": "e6c6d7f892dbae7a71aeb82f579981c1c7625aa0c7cd5ba04bdc2f0506114335",
+      "bytes": 3975
+    },
+    {
+      "path": "assets/cc206-game-template-PYUi4XTX.js",
+      "sha256": "8083476a5c76cafde63c88dc6663edf704b456117440836c6b5a72330df159a4",
+      "bytes": 8129
+    },
+    {
       "path": "assets/Cc206ReviewPage-2bUYq9gS.js",
       "sha256": "4c9c10f9c4c7b04ae60d8fcfa2fad0ea605ee5033577bfb760e29862cdf5afd4",
       "bytes": 11982
@@ -840,6 +860,11 @@
       "path": "assets/Cc206ReviewPage-B1IAlfSD.js",
       "sha256": "903ce04cb888f4f15acda9e31b67c90430b19b255c19360524d82c1f7dfdc703",
       "bytes": 11982
+    },
+    {
+      "path": "assets/Cc206ReviewPage-B4RH1YQr.js",
+      "sha256": "1181d2b76b3fc48e5fdb9de0469e6ae41fd8017f47b3206114e81a6000d9a347",
+      "bytes": 12019
     },
     {
       "path": "assets/Cc206ReviewPage-Bb05YUQA.js",
@@ -1192,6 +1217,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-DQ7Yldg1.js",
+      "sha256": "0d29cd8df7a4e5ac2d4581bdffbed9ca53d48886399e1e9f53f30eff006671f4",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-DQq1JOM_.js",
       "sha256": "4f2a1cfa48db3eb008f002331aa6bbcc773292f59c1c243b4811d1d30fb5723a",
       "bytes": 8448
@@ -1467,6 +1497,11 @@
       "bytes": 2061
     },
     {
+      "path": "assets/DownloadSimple.es-CCCOogy1.js",
+      "sha256": "01cc31a5fdfaf8a7121df393072454643ac6fd0db0d77d13c0fcb9a2f246c8fe",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-CM_3U2Hh.js",
       "sha256": "c1247eb519892606978e11a52d531760d13347bfc80c69395c60a63f5b3a2018",
       "bytes": 2061
@@ -1605,6 +1640,11 @@
       "path": "assets/GaugeReviewPage-3XlliPX0.js",
       "sha256": "6b31264b9b12d6f88a351ea9ea93aca52ad05034f72ed97eba2bcaf9d124769e",
       "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-AIZzcWB6.js",
+      "sha256": "f6bf5cee8644ef488632446ee57bb3abdd59689147e80f4f8f2c342f6766810d",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-B7zPIkpJ.js",
@@ -1947,6 +1987,11 @@
       "bytes": 44396
     },
     {
+      "path": "assets/GLTFLoader-q3on3VVu.js",
+      "sha256": "8b7a25dc553281402bbe6cce0a8abdce38275457486dd8d04f3baa1df1d3f82f",
+      "bytes": 44399
+    },
+    {
       "path": "assets/GLTFLoader-Rzofna9p.js",
       "sha256": "950baf84fe780ff32aaf37a9d153332769e25bf08f02dbebf8662d63b9cc9d01",
       "bytes": 44394
@@ -2147,6 +2192,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-kJRNBORP.js",
+      "sha256": "2004f8b1503c1b7134c951d9b089cc2150f7d9cf8c6a5f4ae9878e1509d92e21",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-LJ64GhfH.js",
       "sha256": "c5fa08018126a602322c5c9f64e2bffa654d55b55e404d55b618febb2840c7e1",
       "bytes": 421
@@ -2255,6 +2305,11 @@
       "path": "assets/ImportedCc206Page-BrT0YaI-.js",
       "sha256": "51b91cd80db16688534e400a3304d21d9603b0a2238ddca06cf78880ce3f5c21",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-BRYS2N1z.js",
+      "sha256": "abb4210803879b6ceda4622a34c24e0d1d7bb8e920fc366b933e71e3823d2579",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-BSlD59S9.js",
@@ -2477,6 +2532,11 @@
       "bytes": 777502
     },
     {
+      "path": "assets/index-BsAiCEsE.js",
+      "sha256": "f6cdc9ce3a938fd2ca9db9e5250383c2513e1fba97013dc9f173331613f28634",
+      "bytes": 728465
+    },
+    {
       "path": "assets/index-BTWV0U60.js",
       "sha256": "a28715145f0eb50a080368ef5f426cd710207a9fdbb0d7f43dd71728697fce72",
       "bytes": 760668
@@ -2525,6 +2585,11 @@
       "path": "assets/index-CNk6SLOU.js",
       "sha256": "6fb7ed6b629a1bba2de2558bba6d821c512f55ef5cd033ff4cffccd11f242e8b",
       "bytes": 592688
+    },
+    {
+      "path": "assets/index-Co5C3Sy9.css",
+      "sha256": "6f0102e905dfdff26f7b9e1538e7fb9f7b725a77b314492f43056ae664b63ee0",
+      "bytes": 70080
     },
     {
       "path": "assets/index-CPBlo3r2.js",
@@ -2647,6 +2712,11 @@
       "bytes": 585194
     },
     {
+      "path": "assets/locomotive-finish-vp4rAFTI.js",
+      "sha256": "cb7569c8fa6334533f2d3432b957e5e1de0ea596e9ce110edb90b6dfc2b6af2b",
+      "bytes": 14089
+    },
+    {
       "path": "assets/main-5NURGPow.js",
       "sha256": "79fc4f58b3f93603b4a42e7dcc28e95b1797bdbafeba90d9943efefa261cb2e8",
       "bytes": 587822
@@ -2660,6 +2730,16 @@
       "path": "assets/meshopt_decoder.module-DXTYc6wn.js",
       "sha256": "6bf68170d437477fb3411dfb24339df33257d69a4322c3907e14af33cff083c7",
       "bytes": 26486
+    },
+    {
+      "path": "assets/preload-helper-iCJmfHIe.js",
+      "sha256": "5704cda5e5189ad129bfc41bd8079acdc33bb9bd305954dfd1114cfd57339c75",
+      "bytes": 3729
+    },
+    {
+      "path": "assets/rolldown-runtime-hePW80VL.js",
+      "sha256": "580ad8c58061a4dde99bde0a56905e382f0568516ee2f5b84dbfb52085709021",
+      "bytes": 716
     },
     {
       "path": "assets/sandbox-bounds-CN-GgZog.js",
@@ -2705,6 +2785,11 @@
       "path": "assets/three.core-nbKIHe-i.js",
       "sha256": "55cb74ad2dca6ec1da63747a91e4325c658c5fba4a11a2a48b04efa3e709249b",
       "bytes": 261234
+    },
+    {
+      "path": "assets/use-hud-browser-qTapQkaX.js",
+      "sha256": "d292fd114f36257438aa4e12a9db4f38f3a7ae7f460bc95fa93c4c541b53062e",
+      "bytes": 591615
     },
     {
       "path": "audio/ambient-birds.mp3",
@@ -2753,8 +2838,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "95b984b56d05daaf35d3aecb7e4d4becd603b34869a65968448c8de562805dc9",
-      "bytes": 1004
+      "sha256": "5b74921047f498501bda5c9d59e6428638376a1c1f19b1830841b40b968bc165",
+      "bytes": 1595
     },
     {
       "path": "models/catalog.json",
@@ -3621,5 +3706,51 @@
     "safetyEnvelope": "Retains maximum drawbar extension for block clearance and platform admission",
     "sourceGLBGeometry": "unchanged; runtime-owned pivot and longitudinal scale adaptation",
     "gameplayVerification": "not_run"
+  },
+  "dioramaHUD": {
+    "direction": "A, selected by user",
+    "composition": "Persistent left roster, compact upper-right time/playback, floating lower dock, selected details at right",
+    "style": "Matte cream, olive text, terracotta actions, sage states, shallow bevel and shadow",
+    "icons": "Cached actual CC201/CC206, station-selatan and approved scenery-kit model thumbnails",
+    "renderer": "One existing serial on-demand thumbnail renderer; no per-icon animation loop",
+    "stationMenu": "Progressive disclosure for farm, storage, Auto mix and real journey history",
+    "cinematicDefault": "Off; explicit existing preferences retained",
+    "verification": "Production build and static React/layout/accessibility review only; browser visuals not checked"
+  },
+  "trafficDiagnosis": {
+    "reproduced": [
+      "Station inbound traffic blocking the previous vehicle parking/U-turn exit",
+      "Long vehicle swept corners deadlocking outside the protected R5 bend and R3 bridge heads"
+    ],
+    "fix": "Station bay booking before inbound spawn and contiguous reservation over road turns; physical collision and barrier guards retained",
+    "railReservationDeadlockReproduced": false,
+    "rail": {
+      "simulatedSeconds": 1200,
+      "completedJourneys": 49,
+      "scenarios": "All five Auto scenarios plus stored-wagon retrieval",
+      "maximumSampledWaitSeconds": 143,
+      "persistentFailureThresholdSeconds": 180
+    },
+    "crossovers": {
+      "simulatedSeconds": 600,
+      "completedOpposingJourneys": 4
+    },
+    "roadOpen": {
+      "simulatedSeconds": 600,
+      "completedJourneys": 12,
+      "maximumWaitSeconds": 31.2,
+      "footprintChecks": 36236
+    },
+    "roadGates": {
+      "simulatedSeconds": 1200,
+      "completedJourneys": 23,
+      "maximumWaitSeconds": 42.1,
+      "footprintChecks": 80408,
+      "barrierChecks": 3007
+    },
+    "railAdapter": "Production runtime/routes/planner/authority/locks/turnout timing/consist motion/storage/farm/road; scenery and rail visual mesh factories omitted",
+    "roadAdapter": "Production modules and original local vehicle GLB; planar height callback and periodic gates",
+    "trace": "Optional read-only callback for actors, blocks, owners, stop limits, signals and crossing state; ignored JSON artifacts from CLI runners",
+    "browserGameplay": "not_run"
   }
 }
