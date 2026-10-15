@@ -1,9 +1,9 @@
 {
-  "release": "riverside-livestock-actions-18ca788",
-  "sourceCommit": "18ca7887ff82319b1852fd14e00848f7a544c316",
-  "sourceFingerprint": "bacaf3e32f1cecb76508a100adcf60555d4a7671",
+  "release": "lintas-lembah-initial-2a58606",
+  "sourceCommit": "2a58606920f33fca4339a36bd409a6c2abcd699f",
+  "sourceFingerprint": "1fcfd916f304e2ff4a4285a16887691fac9593a8",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T17:56:10.418125+00:00",
+  "builtAt": "2026-10-15T18:20:23.758369+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "7f7aa71f746765085658ede9431de55ece7657ae",
+  "previousSourceCommit": "18ca7887ff82319b1852fd14e00848f7a544c316",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,14 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "No user authorization for tests or simulations in this change; build and source review only"
+    "scope": "Source review and production build only; no simulation or test suite run"
   },
   "browserChecks": {
-    "status": "not_run",
-    "scope": "Runtime visual interaction and animation not inspected in browser"
+    "status": "blocked",
+    "authorizedScope": "One overview and one station/farm screenshot; no simulation or other interaction tests",
+    "reason": "Computer Use stopped because Chrome URL could not be verified confidently",
+    "screenshotsObtained": 0,
+    "result": "New map appearance and runtime motion not verified"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -571,6 +574,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-CKIb9dyW.js",
+      "sha256": "7710078d78b5580534813a4eaf41821db8b19685aa0684e2164149998edee0ef",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-CM-Au4Mq.js",
       "sha256": "d4e5ba30f8aee797164a9f98ab97e2841134fba8d882cf9d54b02bb5c705a726",
       "bytes": 24445
@@ -1101,6 +1109,11 @@
       "bytes": 12019
     },
     {
+      "path": "assets/Cc206ReviewPage-CmFraDNG.js",
+      "sha256": "722883ef8bcb293d36a58aed567a14d6d43737a1f664578ebd821f39d59be7ea",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-CW2pK1z9.js",
       "sha256": "0e2b67fab5fb05ca006f1c4c28fa9c3aa2c5c590645425d4a316804ca441fc7c",
       "bytes": 12019
@@ -1356,6 +1369,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-CEUNq4U8.js",
+      "sha256": "4b88e051457917c43801f8ff31991ccdbe9d751115226e64fb7835e1eaa92a34",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-CK-ZptOP.js",
       "sha256": "87e57b5b11a721cf057f078a283c5d9783c0f8f6b641c9082bd36c6ff0bd3c85",
       "bytes": 8470
@@ -1559,6 +1577,11 @@
       "path": "assets/diorama-postprocessing-1tfOF8qq.js",
       "sha256": "1bc07cd88ce568039b8cf0e52e6d60b13f0f2fb6e9c767f96d2b9e9e1cb6eda5",
       "bytes": 41445
+    },
+    {
+      "path": "assets/diorama-postprocessing-3S8VLFIe.js",
+      "sha256": "6e6558bf7fd8a3357ac4378174b73fb02b07cbd1fd100a7cb6985dff097b9a86",
+      "bytes": 41254
     },
     {
       "path": "assets/diorama-postprocessing-B1oTgmMR.js",
@@ -1846,6 +1869,11 @@
       "bytes": 2099
     },
     {
+      "path": "assets/DownloadSimple.es-CQdDuWI6.js",
+      "sha256": "1d83185f2ecbd6ae0bdd589f42eb774425b3001e0e731613f08a8e7d87315bb0",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-CQzNVcoe.js",
       "sha256": "9e53c08632c0aaa054d0b3e80cc61b2c773a7ad7dae06c8c1490f255428d9e35",
       "bytes": 2061
@@ -2059,6 +2087,11 @@
       "path": "assets/GaugeReviewPage-B8vKKQZD.js",
       "sha256": "6b407b80528b3470eddae6ce2fdabcd39ca8f421fb1230f1978bb3a6352e84dd",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-BE5PZrAb.js",
+      "sha256": "a61e34c2651e3b08c383d0bee549acb0eb0b73a6514fbc4087ef85f413bc87f1",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-BFe5seZ9.js",
@@ -2539,6 +2572,11 @@
       "path": "assets/HudPreviewPanel-BJG42N6r.js",
       "sha256": "e33bc3a368621225ceb07d77d7082fd415a65d96a6e1d832c9b606f77768a94e",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BmhvSWt6.js",
+      "sha256": "307fb73cda606c2ddaf5e8d66400b75625a955ee49fbfab4da145cadb36ca840",
+      "bytes": 422
     },
     {
       "path": "assets/HudPreviewPanel-BPi7Wp9f.js",
@@ -3056,6 +3094,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-DW36lDUO.js",
+      "sha256": "189021cfc060f2b298705c36eb4782f6dc0cc0f0cabe335c2715ec87ac3ad4b2",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-DzxaaFCn.js",
       "sha256": "41beb2fae4bee9e0bde7804bfa9b85f2d419ba1294e8fb93431ea1fe9b9b961f",
       "bytes": 13958
@@ -3284,6 +3327,11 @@
       "path": "assets/index-CI7k24M3.js",
       "sha256": "82789e73e828bd99d024db630f931dfce4f4113a95d022866ee1a775ddfc9783",
       "bytes": 777500
+    },
+    {
+      "path": "assets/index-Ci_rXbot.js",
+      "sha256": "61c965356070c84154d01cd64096a5a497bc1536fb289def9c1cba2c5bc099b8",
+      "bytes": 842981
     },
     {
       "path": "assets/index-CiYWWwAO.js",
@@ -3573,6 +3621,11 @@
     {
       "path": "assets/use-hud-browser-Bc9_u348.js",
       "sha256": "f5a33bcca299e0c20693df20245871e832397afd75066cba166cf2787583452f",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-BDm4Yz6K.js",
+      "sha256": "40594a0d006cef857d62fba934659c7f56569f4f80d039b3e241f298a72a7d65",
       "bytes": 594128
     },
     {
@@ -3992,7 +4045,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "2c4d82546a724a3a4c7edb547b2fdcb9201fbd4e88cac031d35dd29ee313e911",
+      "sha256": "7150873b0343fbb46f670337f7fdc6d0d6b4d0d829c4734b81257a296ba24e5c",
       "bytes": 1595
     },
     {
@@ -5295,6 +5348,17 @@
         "status": "not_run",
         "scope": "No browser or visual gameplay check for this correction"
       }
+    },
+    "18ca7887ff82319b1852fd14e00848f7a544c316": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "No user authorization for tests or simulations in this change; build and source review only"
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "Runtime visual interaction and animation not inspected in browser"
+      }
     }
   },
   "northBridgeJunction": {
@@ -5399,7 +5463,8 @@
     "clock": "session simulation seconds",
     "handoff": "Different visible moving train after continuous signal hold; regular scheduled dwell excluded; keep current if no alternative",
     "manualSelection": "unchanged",
-    "newMap": "Design documents only; current live map unchanged"
+    "newMap": "Lintas Lembah added as separate selectable map with its own Auto dispatcher",
+    "scope": "Existing Riverside runtime; new map has separate initial runtime"
   },
   "northCrossingDemandFix": {
     "cause": "Exit signal waited for barrier while zero speed suppressed the old50m demand trigger",
@@ -5443,9 +5508,58 @@
     "verification": "Production build and independent code review; no runtime/simulation/browser tests"
   },
   "newVillageMasterplan": {
-    "status": "design_only",
+    "status": "initial_separate_map_implemented",
     "source": "docs/design/riverside-two-station-winding-masterplan.md",
-    "network": "Two stations on one open winding double-track corridor, one local goods access; no closed circuit",
-    "runtime": "Full 400x300 redesign not implemented; this release adds livestock to current map"
+    "implementation": "docs/lintas-lembah-map.md",
+    "network": "Open winding double-track corridor with two stations; no closed circuit",
+    "runtime": "Directional main tracks 2/3 operational; city loops 1/4 and goods sidings scenic only",
+    "defaultMap": "Riverside remains default"
+  },
+  "lintasLembah": {
+    "id": "lintas-lembah",
+    "name": "Lintas Lembah",
+    "url": "?map=lintas-lembah#/game",
+    "size": [
+      400,
+      300
+    ],
+    "selection": "Display settings map selector; Riverside stays default",
+    "rail": "Open S-shaped double track, hidden portals, village station and city station",
+    "operations": [
+      "main 2 eastbound",
+      "main 3 westbound",
+      "pass",
+      "stop at both stations",
+      "manual departure",
+      "Auto"
+    ],
+    "scenicOnly": [
+      "city outer tracks 1/4",
+      "goods sidings",
+      "receiving pickups"
+    ],
+    "capacity": 8,
+    "maximumTrainSpan": 84,
+    "scenery": [
+      "village courts",
+      "school",
+      "terrace fields",
+      "orchard",
+      "market",
+      "mill",
+      "warehouse",
+      "livestock farm",
+      "river",
+      "hills"
+    ],
+    "ambientMotion": [
+      "nine livestock actors",
+      "crop and grass wind",
+      "kitchen smoke",
+      "rowing boat",
+      "sparse water glints"
+    ],
+    "limits": "No new moving road traffic, loading/unloading, overtaking, stock simulation or yard movements",
+    "verification": "Build and independent source review only; visual attempt blocked and no simulation run"
   }
 }
