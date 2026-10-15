@@ -1,6 +1,19 @@
 {
   "synthesized": {
-    "description": "Locomotive engines are silent. Moving trains use synthesized rail-joint knocks; horns and facility effects are synthesized locally using Web Audio. No Wikimedia train recordings are used."
+    "description": "Locomotive engines are silent. Moving trains use synthesized rail-joint knocks. Horns use the locally stored CC0 locomotive recording below, with a multi-chime Web Audio fallback if it cannot load. Facility effects are synthesized locally."
+  },
+  "horn": {
+    "file": "train-horn.mp3",
+    "source": "https://freesound.org/people/thet00nedl00n/sounds/799291/",
+    "download": "https://cdn.freesound.org/previews/799/799291_17211552-hq.mp3",
+    "title": "Locomotive Train Horn",
+    "author": "thet00nedl00n",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Public high-quality MP3 preview; excerpt starts at 0.19 seconds and lasts 2.72 seconds; mono 44100 Hz / 128 kbit MP3; high-pass 65 Hz, 25 ms fade-in, 200 ms fade-out, loudness normalization -16 LUFS / -3 dBTP. Short calls use a runtime envelope; not a recording of a specific KAI locomotive.",
+    "durationSeconds": 2.72,
+    "bytes": 44765,
+    "sha256": "b5254cdbb5ae09add0ad611c221f646b9d4fc6e614662884e8b6318456434c9d"
   },
   "ambient": {
     "birds": {

@@ -1,34 +1,39 @@
 {
-  "release": "riverside-north-farm-20261015",
-  "sourceCommit": "fa20c82c670823fa379acbe6411dd26d784cea8c",
-  "sourceFingerprint": "f1c0dcdf9b3b13e65bcfa5bfd006a7964554f36b9df39de462342f803d543f9f",
+  "release": "riverside-traffic-horn-20261015-f73c5ca",
+  "sourceCommit": "f73c5ca0d76b8179db860bc3ec5caae36e6d699d",
+  "sourceFingerprint": "f9e6e2aed5a4e98432825c9eeacb2d7c4e470a25",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T06:33:26.960Z",
+  "builtAt": "2026-10-15T07:24:48.9817557Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
-    "railJointKnocks": "distance-driven"
+    "railJointKnocks": "distance-driven",
+    "horn": {
+      "kind": "local CC0 locomotive recording",
+      "file": "audio/train-horn.mp3",
+      "sha256": "b5254cdbb5ae09add0ad611c221f646b9d4fc6e614662884e8b6318456434c9d",
+      "fallback": "four-chime Web Audio",
+      "manualPatternSeconds": [
+        2.4,
+        0.8
+      ]
+    }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "8a6bc60ae75c48579c6339b5d4b55ccf93b510fe",
+  "previousSourceCommit": "fa20c82c670823fa379acbe6411dd26d784cea8c",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "targeted_passed",
-    "approvedByUser": true,
-    "run": [
-      "check-module-boundaries",
-      "check-asset-registry",
-      "check-map-definition",
-      "check-render-batching"
-    ],
-    "note": "Full suite not run; map-definition and render-batching re-run after the R5 grade fix."
+    "status": "not_run",
+    "approvedByUser": false,
+    "run": [],
+    "note": "User authorized implementation, build and production deployment only; no simulation, audio or regression tests run."
   },
   "browserChecks": {
-    "status": "passed",
-    "scope": "Headless Chrome on local dev server: Riverside loads without console errors, crop phases, haul pickup and road traffic visible, farm HUD card populated. Barrier closing for a passing train and badug wagon loading not observed."
+    "status": "not_run",
+    "scope": "User will inspect the published game; no browser automation or playback checks run."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -2967,9 +2972,10 @@
       ]
     },
     "houseWindows": "glass palette triangles retain geometry and use a separate emissive material group",
-    "locomotiveMarkers": "day/night including stationary and paused",
-    "locomotiveProjection": "night envelope plus bounded weather contribution; no clear-day projections",
-    "fixedSourceBudgets": true
+    "locomotiveMarkers": "clock-controlled; moving only; off while stationary and paused",
+    "locomotiveProjection": "clock-controlled; moving only; off while stationary and paused",
+    "fixedSourceBudgets": true,
+    "roadVehicles": "clock-controlled headlights; lights off when stopped/loading/unloading or paused; brake lights during moving deceleration"
   },
   "riversideStorage": {
     "maximumWagons": 4,
@@ -3011,6 +3017,19 @@
       "models/riverside-farm-kit.glb",
       "models/riverside-road-kit.glb",
       "models/riverside-vehicles.glb"
+    ],
+    "persistentFleet": [
+      "farm-pickup",
+      "farm-flatbed"
     ]
+  },
+  "sourceFingerprintAlgorithm": "git-tree-sha1",
+  "roadTraffic": {
+    "stationParking": "same visible vehicle through arrival, parking, turnaround and departure",
+    "edgeFadeMetres": 6,
+    "farmFleet": "permanent two-vehicle fleet with parking bays and a return-to-bay stage",
+    "crossing": "body-length stop limits; admitted vehicles clear before arms lower; trains wait for closure",
+    "collision": "shared world footprints across routes and fleet",
+    "runtimeValidation": "not run"
   }
 }
