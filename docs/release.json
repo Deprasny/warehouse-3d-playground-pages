@@ -1,9 +1,9 @@
 {
-  "release": "riverside-toy-hud-north-junction-20261015-e5ce0b5",
-  "sourceCommit": "e5ce0b5b591eaa230c0159b82d654d89fdaca633",
-  "sourceFingerprint": "03c1dc28d4183666699b588bdea9a5e4a54b8470",
+  "release": "riverside-stable-authority-north-turn-shore-20261015-4326f78",
+  "sourceCommit": "4326f78461e023e2e2bc490742aaf20e32bf9d8e",
+  "sourceFingerprint": "883e47093f0afcce13a3740f898c70fa9e4ac6d9",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T11:33:39.213257+00:00",
+  "builtAt": "2026-10-15T11:54:14.469793+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,16 +20,32 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "fa6e21821b88546741fc54b6f21c06aca52e5f07",
+  "previousSourceCommit": "e5ce0b5b591eaa230c0159b82d654d89fdaca633",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "not_run",
-    "approvedByUser": false,
-    "run": [],
-    "note": "Production build, source review and asset authoring only. Earlier approved traffic simulations are historical evidence, not rerun on this revision."
+    "status": "passed",
+    "approvedByUser": true,
+    "run": [
+      "stability-single",
+      "stability-opposed",
+      "stability-north-straight",
+      "stability-north-turn",
+      "stability-north-opposed",
+      "check-riverside-movement-stability"
+    ],
+    "scope": "Targeted headless rail stability and north-exit verification only; no full suite, road stress, browser or water visual tests.",
+    "results": {
+      "completedTrains": 7,
+      "abruptFreeApproachResets": 0,
+      "conflictEnvelopeChecks": 11800,
+      "turnoutConfigs": 6,
+      "diamondRailHits": 12,
+      "railGaps": 24
+    },
+    "note": "Stop/advance reproduced red at 28.6 simulated seconds before correction. Five final scenarios passed with require-smooth; geometry rerun after explicit public constructor correction. See docs/rail-movement-stability.md."
   },
   "browserChecks": {
     "status": "blocked",
@@ -484,6 +500,11 @@
     {
       "path": "assets/AssetCatalogPage-BuBTHt8x.js",
       "sha256": "0c52d14324d41630216c8f8cf9d78589d4c3f407823cc814c72eae37764a3378",
+      "bytes": 24488
+    },
+    {
+      "path": "assets/AssetCatalogPage-BuTWYvr2.js",
+      "sha256": "cce3fbd812027bb57e9953f059f5648e6a37d67304d5a7b313d7141b952b3bda",
       "bytes": 24488
     },
     {
@@ -997,6 +1018,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-CW2pK1z9.js",
+      "sha256": "0e2b67fab5fb05ca006f1c4c28fa9c3aa2c5c590645425d4a316804ca441fc7c",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-CZXHlkFc.js",
       "sha256": "34ed3a1251330b936f93afafaffcebff1b4994086d566ac226769610be5af59e",
       "bytes": 11982
@@ -1240,6 +1266,11 @@
       "path": "assets/ConsistsPage-Dam5vk_b.js",
       "sha256": "04e4192b89fbf6b757c1c4eef18c99a2c6ac6d86f27b5e83aaf0dca943035e4f",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-DAyKq8_d.js",
+      "sha256": "262f42bfbe588a8a4156558ed7f59898575ee09e799aac90dacdc28c47833e12",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-DbxpPbm7.js",
@@ -1520,6 +1551,11 @@
       "path": "assets/DownloadSimple.es-BbTrM_pF.js",
       "sha256": "250bc80c04cc66dfc1297cc72ef2d23b4d34bb60fa64531fc07ea22522b76c6e",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-Be1RglIR.js",
+      "sha256": "beccb3510b56439a57dc40a34fc3f8d78b4039b6019da70a9f414dfa975c023a",
+      "bytes": 2099
     },
     {
       "path": "assets/DownloadSimple.es-BgNAoaNR.js",
@@ -1952,6 +1988,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-nqu57pOB.js",
+      "sha256": "02884e36f43b6577cd85646c01df9f9135c96a26da8aacc1d1f7b666e7f6349e",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-pUxyPM6L.js",
       "sha256": "af57aee52c782245a7f675666d1afd49fb2992e0e791eba7072d5af12ebb7b93",
       "bytes": 10822
@@ -2297,6 +2338,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-Du5kIc1g.js",
+      "sha256": "3d752c2d4702283b1c0cba1e6409cfbce8150f0cfe5abcf39855dc249d4c7c0b",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-DueElmvd.js",
       "sha256": "9562f25f626855f9401ede50e91751bdb531ceccc4bbafde7a6cbe4eda87f752",
       "bytes": 421
@@ -2430,6 +2476,11 @@
       "path": "assets/ImportedCc206Page-BHKJenjH.js",
       "sha256": "4cf362cfbb2865251052e19cc2a95d920f70689dbcb29ab8f9ace0b4c57de6b1",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-BiqxWFRI.js",
+      "sha256": "e8f3a1b549def9b4bc5de46222c5ebffc569b7126f82ea60425e955e2c1da836",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-BIrNguSC.js",
@@ -2817,6 +2868,11 @@
       "bytes": 734916
     },
     {
+      "path": "assets/index-CWXGGavj.js",
+      "sha256": "de27a5c272227c66da226f66f8725a25bf97aadd52f014a744389da3ac09b2fa",
+      "bytes": 752604
+    },
+    {
       "path": "assets/index-Cz7cQ3vK.js",
       "sha256": "f70b2acb989aaf0ba30ee2efa02d4b2d8d58359a2d7ae763664938cbdc01b4c6",
       "bytes": 738633
@@ -2900,6 +2956,11 @@
       "path": "assets/index-PQGmcJX-.js",
       "sha256": "7d9a3ba6095c81b11972f4211322ede38c0b9802ff5ff20adb07e6a03122a0ac",
       "bytes": 610457
+    },
+    {
+      "path": "assets/index-sJHRreVG.css",
+      "sha256": "a36c6c798de4e5d80ee69b38f5bd858e2e2280c145d683b7fe4fe4ce1603d8b8",
+      "bytes": 79231
     },
     {
       "path": "assets/index-uU4w-7NK.js",
@@ -3010,6 +3071,11 @@
       "path": "assets/three.core-nbKIHe-i.js",
       "sha256": "55cb74ad2dca6ec1da63747a91e4325c658c5fba4a11a2a48b04efa3e709249b",
       "bytes": 261234
+    },
+    {
+      "path": "assets/use-hud-browser-BrfKDmwU.js",
+      "sha256": "6800e9d481ec1d218fb32050cee803872715c4034e083de6a382bd7c89875ff8",
+      "bytes": 594128
     },
     {
       "path": "assets/use-hud-browser-CFhoAaBq.js",
@@ -3373,7 +3439,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "534b241e5f444f8500995c6b1ae8a8534d114a91c39955c2cd9b570b8280f0af",
+      "sha256": "b472b8415082d8f2ef47ec3d3c8dd75431333dd63f61822575e44fe06a3ec468",
       "bytes": 1595
     },
     {
@@ -4184,15 +4250,15 @@
     "gameplayVerification": "not_run"
   },
   "riverWater": {
-    "revision": 2,
-    "surface": "Shared diorama palette, asymmetric channel color, blended shallow shoreline, low-amplitude coherent surface motion",
-    "details": "Sparse irregular fading current glints; repeated ripple rings removed",
+    "revision": 3,
+    "surface": "Quiet constant-color teal channel, narrow faceted shallow margin, no shoreline alpha fade; shore terrain palette is constant per face",
+    "details": "Thin angular glints with uniform spatial alpha and lifetime fade; tiny coherent waves retained",
     "maxDrawCallsTotal": 2,
     "textures": 0,
     "addedShadowCasters": 0,
     "clock": "Session clock, pause and reset shared with world ambience",
     "gameVisualReview": "not_run",
-    "note": "See docs/river-water-refinement.md for implementation and verification limits"
+    "note": "See docs/river-shore-crispness.md. Water and terrain visual review not run; rail-only test approval does not include browser/performance checks."
   },
   "passengerGangways": {
     "pairs": "Adjacent executive/economy coaches including mixed passenger pairs",
@@ -4469,14 +4535,26 @@
         "status": "not_run",
         "scope": "No browser UI/gameplay/performance tests. HTTP delivery checks only."
       }
+    },
+    "e5ce0b5b591eaa230c0159b82d654d89fdaca633": {
+      "checks": {
+        "status": "not_run",
+        "approvedByUser": false,
+        "run": [],
+        "note": "Production build, source review and asset authoring only. Earlier approved traffic simulations are historical evidence, not rerun on this revision."
+      },
+      "browserChecks": {
+        "status": "blocked",
+        "scope": "Requested HUD hover review could not run: browser control inventory had no connected browser. No gameplay/performance tests. HTTP delivery checks only."
+      }
     }
   },
   "northBridgeJunction": {
     "shape": "Double-track T: existing North-station curves plus straight north exits at Z=-100",
-    "exits": "Connected reserved infrastructure, hidden geometry paths to Z=-300; no new destination chooser",
-    "protection": "Two guarded points and one shared diamond conflict block; tail-clearance ownership",
-    "signals": "Approach heads from all three arms; reserved exit heads remain red",
-    "verification": "Source review and production build only; no movement simulation run"
+    "exits": "Playable dispatch choice north-exit: South station straight out or North station right-turn out; full tail clears hidden Z=-300 approach",
+    "protection": "Six guarded points and three diamonds in one shared conflict block; granted authority remains held through braking until tail clearance",
+    "signals": "Gate-specific unready point guards; controlled braking to protected boundary instead of immediate speed resets",
+    "verification": "Five authorized targeted runtime simulations and exact turnout/diamond geometry check passed"
   },
   "carriageWheelVisibility": {
     "cause": "Stationary bogie frame and axleboxes obscure rotating discs and marker",
