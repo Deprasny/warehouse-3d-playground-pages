@@ -1,9 +1,9 @@
 {
-  "release": "riverside-s-corridor-8abe55b",
-  "sourceCommit": "8abe55b2534c99d03bf6d66213442f3bf4c7f761",
-  "sourceFingerprint": "f1726b2227f823676e959136700f1fc47229bd97",
+  "release": "riverside-rail-only-north-u-9b9dbbf",
+  "sourceCommit": "9b9dbbfed646637910516aa3570c0b41ff36c1e7",
+  "sourceFingerprint": "2543146e80aac7d75cbbce37be8010193faf7fc2",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T16:06:41.309522+00:00",
+  "builtAt": "2026-10-16T16:26:03.679021+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+  "previousSourceCommit": "8abe55b2534c99d03bf6d66213442f3bf4c7f761",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "No tests or simulations authorized for the S railway redesign. Source review and production build only."
+    "scope": "No tests or simulation authorized for rail-only North-U; source review and production build only."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser or visual checks for the S redesign; earlier layout screenshots do not validate this version."
+    "scope": "No browser inspection or visual validation of this layout."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -109,7 +109,7 @@
         "position": [
           -42,
           3.35,
-          -85
+          -79
         ],
         "tracks": 3,
         "front": [
@@ -122,14 +122,15 @@
         "buffer": [
           -92,
           3.35,
-          -49.9
+          -69.9
         ],
         "model": "models/station-utara.glb",
         "platformLength": 78,
         "railCenter": [
           -42,
-          -72
-        ]
+          -92
+        ],
+        "facade": "north (-Z)"
       }
     ],
     "river": {
@@ -138,17 +139,11 @@
       "flow": "west-east"
     },
     "bridge": {
-      "approachNorth": [
-        28,
-        -14
-      ],
-      "approachSouth": [
-        -30,
-        18
-      ],
+      "x": -82,
+      "direction": "straight north-south across river",
       "tracks": 2,
       "deckWidth": 8.2,
-      "style": "matte bowstring side trusses; longitudinal deck covers both actual rail bank ranges"
+      "style": "matte bowstring side trusses and masonry abutments"
     },
     "northHeight": 3,
     "southHeight": 0,
@@ -160,7 +155,7 @@
       "sourceAssets": 14,
       "sourceTriangles": 10591,
       "bytes": 912132,
-      "houses": 9,
+      "houses": 0,
       "stations": {
         "count": 2,
         "construction": "Blender via MCP",
@@ -214,7 +209,8 @@
         "station glows on lens centers"
       ],
       "instancing": "per asset per map quadrant",
-      "rendering": "ACES Filmic exposure 1, six lighting presets; Auto shadows, High GTAO/MSAA; weather softens directional light without changing exposure"
+      "rendering": "ACES Filmic exposure 1, six lighting presets; Auto shadows, High GTAO/MSAA; weather softens directional light without changing exposure",
+      "sceneryKitLoaded": false
     },
     "terrainPalette": {
       "grass": "#91b96c",
@@ -224,10 +220,20 @@
     },
     "disabledModules": [
       "bbm-yard",
-      "locomotive-depot",
       "cargo-port",
+      "earthworks",
+      "livestock",
+      "locomotive-depot",
+      "nature-actors",
+      "north-farm",
+      "old-city",
+      "river-boats",
+      "road-crossing",
+      "road-traffic",
+      "tractor",
+      "village-scenery",
       "wagon-siding",
-      "old-city"
+      "warehouse-stock"
     ],
     "traffic": {
       "startingTrains": 0,
@@ -285,7 +291,7 @@
         "doubleLocoFourWagonsSpan": 66.304,
         "fourStoredWagonsSpan": 45.36,
         "badugUsableLength": 65,
-        "limitation": "Source geometry and operations integrated; runtime train movement, clearance and visual checks not run."
+        "limitation": "Build and source review only; North-U operations and clearance not simulated."
       },
       "normalDirection": {
         "south": {
@@ -309,10 +315,13 @@
         "meet": 15,
         "store": 15
       },
-      "mixMeaning": "intent per 20 scenario deck; storage unavailable falls back to stop; pairs spawn two trains; counters count dispatched scenarios"
+      "mixMeaning": "intent per 20 scenario deck; storage unavailable falls back to stop; pairs spawn two trains; counters count dispatched scenarios",
+      "roadVehiclesEnabled": false,
+      "farmEnabled": false,
+      "crossingActive": false
     },
     "trackPlan": {
-      "revision": "S-corridor-1",
+      "revision": "rail-only-north-u-1",
       "spacing": 4.2,
       "south": {
         "centerX": 24,
@@ -354,12 +363,16 @@
       },
       "north": {
         "centerX": -42,
-        "buildingZ": -85,
-        "storageTrackZ": -49.9,
+        "buildingZ": -79,
+        "storageTrackZ": -69.9,
         "bufferX": -92,
-        "storageToeX": 8,
+        "storageToeX": 32,
         "storageStraightFromX": -22,
-        "platformLength": 78
+        "platformLength": 78,
+        "platformZ": [
+          -96.3,
+          -87.7
+        ]
       },
       "totalRoutes": 9,
       "totalTurnouts": 13,
@@ -369,26 +382,39 @@
         -260,
         260
       ],
-      "source": "src/rail/riverside-s-path.ts"
+      "source": "src/rail/riverside-s-path.ts",
+      "shape": "South long straight -> west bridge -> North U -> North station -> west portal",
+      "westLeg": {
+        "x": -82,
+        "fromZ": 54,
+        "toZ": -18
+      },
+      "northU": {
+        "startX": 48,
+        "nearZ": -42,
+        "returnZ": -92,
+        "nominalRadius": 25
+      }
     },
     "isMainMap": true,
     "gameRuntime": {
       "defaultSession": "free",
       "implementation": "riverside-game-runtime",
       "initialState": "empty, manual",
-      "legacyDemo": "Explicit rail-demo enables Auto on the same S engine."
+      "legacyDemo": "Explicit rail-demo enables Auto on the same North-U rail engine."
     },
-    "geometryVerification": "Curvature-eased S implemented; minimum radius and runtime envelopes not measured in this release."
+    "geometryVerification": "Continuous-turn joins implemented; geometry/runtime/visual checks not run.",
+    "layout": "rail-only South straight, west bridge, North U"
   },
   "vegetation": {
-    "active": "original diorama trees, shrubs, grass and flowers",
+    "active": false,
     "cachedAsset": "models/riverside-diorama-kit.glb",
     "sourceTypes": [
       "round",
       "cluster",
       "pine"
     ],
-    "placement": "deterministic; excludes river, track, station and house footprints"
+    "placement": "No vegetation constructed on active rail-only map."
   },
   "camera": {
     "gameplayRotation": "locked isometric",
@@ -411,15 +437,11 @@
       ],
       "north": [
         -42,
-        -85
+        -79
       ],
       "bridge": [
-        0,
-        2
-      ],
-      "earthworks": [
-        -91,
-        44
+        -82,
+        0
       ]
     },
     "maxZoom": 12,
@@ -552,6 +574,11 @@
       "path": "assets/AssetCatalogPage-CbOB2uyO.js",
       "sha256": "303b36d27b7731eea3daba83953042b4181fd58e9996f0f378891dbf43e3a274",
       "bytes": 24445
+    },
+    {
+      "path": "assets/AssetCatalogPage-CCA4jUkZ.js",
+      "sha256": "6700dafe459aa09264c22aa9a098845b0277d32e2b228a133b295d6b63496dfa",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-CCXtrOt8.js",
@@ -1144,6 +1171,11 @@
       "bytes": 12019
     },
     {
+      "path": "assets/Cc206ReviewPage-COhUYEWj.js",
+      "sha256": "8b5fcb4e51aba56ef4b56ceaade8e9a93d8b7bd385bab18e3e911c7945742ce2",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-Cot9ivlD.js",
       "sha256": "9c0a941ed01be662952d821e41d73cb67f70e01f2c088477055d7fc04aa930da",
       "bytes": 12019
@@ -1549,6 +1581,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-DOhQ9nec.js",
+      "sha256": "478949d45b8fe033bc4cb7bbb003755c22c29b6ead88b9590958b3031f7185e1",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-DQ7Yldg1.js",
       "sha256": "0d29cd8df7a4e5ac2d4581bdffbed9ca53d48886399e1e9f53f30eff006671f4",
       "bytes": 8470
@@ -1637,6 +1674,11 @@
       "path": "assets/ConsistsPage-ZnPkbMHI.js",
       "sha256": "dd82a4635c3ad54c721b2080c001f9903616d0926b001e1cab42a2b5068c8935",
       "bytes": 8470
+    },
+    {
+      "path": "assets/diorama-kit-DP_i1WJg.js",
+      "sha256": "1d90020ac0284cab46b384172e914d849a486abff6845cc696febac637b7792a",
+      "bytes": 5456
     },
     {
       "path": "assets/diorama-postprocessing-1tfOF8qq.js",
@@ -1767,6 +1809,11 @@
       "path": "assets/diorama-postprocessing-DTPZuMwy.js",
       "sha256": "02b39c09fbb7598a7f77c7860464fc91b52291c4a6607279ef9f7843853bd295",
       "bytes": 40937
+    },
+    {
+      "path": "assets/diorama-postprocessing-Garb5DLE.js",
+      "sha256": "fd44f95652217ffe18378be7ca48974ffc6426963e50a7d83a7c639835e5a3f0",
+      "bytes": 41254
     },
     {
       "path": "assets/diorama-postprocessing-hq_4T6WH.js",
@@ -2001,6 +2048,11 @@
     {
       "path": "assets/DownloadSimple.es-D01Bf66D.js",
       "sha256": "a8379ab01ad005114ed2247dfba276aff361466bbc7de656d5e1aa457a84ea10",
+      "bytes": 2099
+    },
+    {
+      "path": "assets/DownloadSimple.es-D1TLNgVH.js",
+      "sha256": "28d1706c2365e6e12a6e7a71d1943511ef8656242302166f7227b646dc83a46d",
       "bytes": 2099
     },
     {
@@ -2372,6 +2424,11 @@
       "path": "assets/GaugeReviewPage-DcYl4b4t.js",
       "sha256": "0eab98f78080d4ee56d797efd42ffa123a9e58d561a781be8bf4d54919391d0f",
       "bytes": 10825
+    },
+    {
+      "path": "assets/GaugeReviewPage-DdUKIiZg.js",
+      "sha256": "722f446560cac1ec6af35b30aa89ba38ef64f6f1bab2181f8747e9f6c75f0df2",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-DhMSIO16.js",
@@ -2864,6 +2921,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-DhR2z3Mi.js",
+      "sha256": "c3b60daead00cea9a39c8d6ce4ff056fe20e98bf19295398a1a7f42c7919b2c1",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-DKrVlBD7.js",
       "sha256": "ea35af75d879afcabd678d8b378520a4cfdd0ea883d0e00d424a0c1abfac5f37",
       "bytes": 421
@@ -3169,6 +3231,11 @@
       "bytes": 18413
     },
     {
+      "path": "assets/ImportedCc206Page-Co4NVEAl.js",
+      "sha256": "66912bb1b0abeb2c28bf947341b14c7af5975f2219661bfc1dc73063d4951085",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-Cr_WnEji.js",
       "sha256": "4ad4ebacbdf1f36eb8331841a88e183640fe6c78ceea50fe017db86f213fcbc8",
       "bytes": 13962
@@ -3332,6 +3399,11 @@
       "path": "assets/index-3r2Lr6B3.js",
       "sha256": "bbceb513bd57eb1ded8442d542c557cb021a7d3a364a1bfce1ed9cb096cad216",
       "bytes": 730179
+    },
+    {
+      "path": "assets/index-4w58Sc-u.js",
+      "sha256": "723c621c9c6f9897cbbd1c6916d6e545bfc568a59510192494b73f251b3b4c4a",
+      "bytes": 668012
     },
     {
       "path": "assets/index-A6GQSEBO.js",
@@ -3804,6 +3876,11 @@
       "bytes": 594128
     },
     {
+      "path": "assets/use-hud-browser-b-__o_NL.js",
+      "sha256": "58d1fc899f1c2784655af794285a214a8f8904f7482ac3da0e32c8c5d6023b28",
+      "bytes": 594142
+    },
+    {
       "path": "assets/use-hud-browser-Bc9_u348.js",
       "sha256": "f5a33bcca299e0c20693df20245871e832397afd75066cba166cf2787583452f",
       "bytes": 594128
@@ -4250,7 +4327,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "c1bc6b65d490428c3a797dd9ce43df2fdbd1dd6981296dfe166b53b6e94c01a6",
+      "sha256": "ddfb731d5b505cdd9116c1081e495bc4d119a6dfd06687139a35deb9ccb1500b",
       "bytes": 1595
     },
     {
@@ -4841,7 +4918,39 @@
         ],
         "darkness": 1
       }
-    }
+    },
+    "northLampPositions": [
+      [
+        -66,
+        7.8,
+        -96.3
+      ],
+      [
+        -66,
+        7.8,
+        -87.7
+      ],
+      [
+        -42,
+        7.8,
+        -96.3
+      ],
+      [
+        -42,
+        7.8,
+        -87.7
+      ],
+      [
+        -18,
+        7.8,
+        -96.3
+      ],
+      [
+        -18,
+        7.8,
+        -87.7
+      ]
+    ]
   },
   "defaultMap": "riverside",
   "hotfix": {
@@ -4950,13 +5059,16 @@
     "roadVehicles": "clock-controlled headlights; lights off when stopped/loading/unloading or paused; brake lights during moving deceleration"
   },
   "riversideStorage": {
-    "maximumWagons": 4,
-    "locomotives": 1,
-    "passengerAllowed": false,
-    "minimumStoredSeconds": 30,
-    "collectAfterStoreEngineExits": true,
-    "actualWagonMeshesRetained": true,
-    "manualCollectButton": true
+    "active": true,
+    "toeX": 32,
+    "straightX": [
+      -22,
+      -92
+    ],
+    "trackZ": -69.9,
+    "physicalStraightLength": 70,
+    "usableLength": 65,
+    "verification": "source review and build only"
   },
   "headwayFix": {
     "previous": "entry head checked only section 3 units beyond pole",
@@ -4985,74 +5097,29 @@
     "loadingAndExternalBrowserProtected": true
   },
   "northFarm": {
-    "models": [
-      "models/riverside-farm-kit.glb",
-      "models/riverside-road-kit.glb",
-      "models/riverside-vehicles.glb"
-    ],
-    "persistentFleet": [
-      "farm-pickup",
-      "farm-flatbed"
-    ],
-    "sLayout": {
-      "shiftX": -42,
-      "northernCropRowLimit": -43.4,
-      "tractor": [
-        -74,
-        -44.3
-      ],
-      "shed": [
-        -17,
-        -43.6
-      ],
-      "warehouse": "original east coordinates retained"
-    }
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "roadTraffic": {
-    "stationParking": "same visible vehicle through arrival, parking, turnaround and departure",
-    "edgeFadeMetres": 6,
-    "farmFleet": "permanent two-vehicle fleet with parking bays and a return-to-bay stage",
-    "crossing": "body-length stop limits; admitted vehicles clear before arms lower; trains wait for closure",
-    "collision": "shared world footprints across routes and fleet",
-    "runtimeValidation": "not run",
-    "sLayout": {
-      "southStop": [
-        24,
-        55
-      ],
-      "northStop": [
-        -42,
-        -94
-      ],
-      "northDetour": "R5 east, Z-78.4, X-8, Z-95",
-      "crossing": "actual oblique R4 crossing Z-20.8, derived from spline; road axis X",
-      "oldR5CrossingRemoved": true
-    }
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "natureLife": {
-    "kit": "models/riverside-nature-kit.glb",
-    "bytes": 56496,
-    "sha256": "e723b436e5712f9ec7cf17ba5777a9a93fb2e78c9e1aafd01312b62d524a9113",
-    "templateTriangles": 614,
-    "materials": 1,
-    "textures": 0,
-    "birds": 8,
-    "butterflies": 3,
-    "maxDrawCalls": 9,
-    "motion": "Sparse staggered flocks with flap/glide bursts; small flower-bed loops; session clock owns motion",
-    "environment": "Daytime only; heavy rain, storms and snow suppress activity",
-    "assetReview": "Original Blender kit visually reviewed through a presentation render and eight-frame wing-motion contact sheet; game appearance and performance unmeasured"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "quietAmbience": {
-    "riverRipples": "Repeated ripple arcs removed in water revision 2; water motion remains owned by riverWater",
-    "wind": "Root-pinned grass shear using existing instances",
-    "kitchenChimneys": 3,
-    "smokePuffs": 15,
-    "smokeSchedule": "Breakfast 05:45-09:15; lunch 11:00-13:45; dinner 16:30-20:00, with gradual fades",
-    "maxAdditionalDrawCalls": 2,
-    "pauseAndReset": "Absolute session clock; camera only reorients smoke",
-    "weather": "Wind affects motion; rain, storms and darkness reduce smoke"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "carriageKit": {
     "asset": "models/riverside-carriage-kit.glb?v=carriages-2",
@@ -5080,11 +5147,10 @@
     "assetReview": "Revised ballast authoring render visually reviewed; other five carriage geometry payloads retained. Gameplay articulation and performance unmeasured."
   },
   "crossingQueue": {
-    "change": "Shared one-vehicle reservation for decorative traffic and farm hauls, including north station/yard turns",
-    "admission": "Check continuous vehicle footprint path through exit; other approaches wait outside conflict corridor",
-    "clearance": "Retain reservation until vehicle rear clears; retain existing rail gate and collision checks",
-    "reset": "Clears reservation and waiting order",
-    "validation": "Static review and build only; exact screenshot scenario not replayed in simulation"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "locomotiveFinish": {
     "models": [
@@ -5322,40 +5388,10 @@
     "frameAssetDirectory": "hud/woodland-v4/"
   },
   "trafficDiagnosis": {
-    "reproduced": [
-      "Station inbound traffic blocking the previous vehicle parking/U-turn exit",
-      "Long vehicle swept corners deadlocking outside the protected R5 bend and R3 bridge heads"
-    ],
-    "fix": "Station bay booking before inbound spawn and contiguous reservation over road turns; physical collision and barrier guards retained",
-    "railReservationDeadlockReproduced": false,
-    "rail": {
-      "simulatedSeconds": 1200,
-      "completedJourneys": 49,
-      "scenarios": "All five Auto scenarios plus stored-wagon retrieval",
-      "maximumSampledWaitSeconds": 143,
-      "persistentFailureThresholdSeconds": 180
-    },
-    "crossovers": {
-      "simulatedSeconds": 600,
-      "completedOpposingJourneys": 4
-    },
-    "roadOpen": {
-      "simulatedSeconds": 600,
-      "completedJourneys": 12,
-      "maximumWaitSeconds": 31.2,
-      "footprintChecks": 36236
-    },
-    "roadGates": {
-      "simulatedSeconds": 1200,
-      "completedJourneys": 23,
-      "maximumWaitSeconds": 42.1,
-      "footprintChecks": 80408,
-      "barrierChecks": 3007
-    },
-    "railAdapter": "Production runtime/routes/planner/authority/locks/turnout timing/consist motion/storage/farm/road; scenery and rail visual mesh factories omitted",
-    "roadAdapter": "Production modules and original local vehicle GLB; planar height callback and periodic gates",
-    "trace": "Optional read-only callback for actors, blocks, owners, stop limits, signals and crossing state; ignored JSON artifacts from CLI runners",
-    "browserGameplay": "not_run"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "historicalVerification": {
     "b499f94492ebbeee3223489b0bdd2eded7b12d1a": {
@@ -6148,12 +6184,999 @@
           "runtime": "Current U corridor, station locations, train routes and crossings unchanged by this release"
         }
       }
+    },
+    "8abe55b2534c99d03bf6d66213442f3bf4c7f761": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "No tests or simulations authorized for the S railway redesign. Source review and production build only."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser or visual checks for the S redesign; earlier layout screenshots do not validate this version."
+      },
+      "layoutMetadata": {
+        "map": {
+          "id": "riverside",
+          "mode": "main-game",
+          "visibleSize": [
+            200,
+            200
+          ],
+          "bounds": {
+            "minX": -100,
+            "maxX": 100,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "simulationBounds": {
+            "minX": -320,
+            "maxX": 320,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "stations": [
+            {
+              "name": "Stasiun Selatan",
+              "position": [
+                24,
+                0.35,
+                66
+              ],
+              "tracks": 4,
+              "main": [
+                2,
+                3
+              ],
+              "loops": [
+                1,
+                4
+              ],
+              "facade": "south (+Z)",
+              "platformLength": 72,
+              "model": "models/station-selatan.glb",
+              "railCenter": [
+                24,
+                82
+              ]
+            },
+            {
+              "name": "Stasiun Utara",
+              "position": [
+                -42,
+                3.35,
+                -79
+              ],
+              "tracks": 3,
+              "front": [
+                1,
+                2
+              ],
+              "rearStorage": [
+                3
+              ],
+              "buffer": [
+                -92,
+                3.35,
+                -69.9
+              ],
+              "model": "models/station-utara.glb",
+              "platformLength": 78,
+              "railCenter": [
+                -42,
+                -92
+              ],
+              "facade": "north (-Z)"
+            }
+          ],
+          "river": {
+            "width": 22,
+            "waterY": -1.25,
+            "flow": "west-east"
+          },
+          "bridge": {
+            "x": -82,
+            "direction": "straight north-south across river",
+            "tracks": 2,
+            "deckWidth": 8.2,
+            "style": "matte bowstring side trusses and masonry abutments"
+          },
+          "northHeight": 3,
+          "southHeight": 0,
+          "terrain": "plain matte vertex colors; no grass texture/noise",
+          "artDirection": "stylized low-poly diorama",
+          "diorama": {
+            "source": "original Blender kit",
+            "asset": "models/riverside-diorama-kit.glb",
+            "sourceAssets": 14,
+            "sourceTriangles": 10591,
+            "bytes": 912132,
+            "houses": 0,
+            "stations": {
+              "count": 2,
+              "construction": "Blender via MCP",
+              "source": "station concepts V01",
+              "exports": [
+                {
+                  "id": "station-utara",
+                  "file": "station-utara.glb",
+                  "bytes": 1245240,
+                  "triangles": 16088,
+                  "materials": 2,
+                  "textures": 0,
+                  "dimensionsBlenderXYZ": [
+                    26.9,
+                    10.815,
+                    6.275
+                  ],
+                  "upAxis": "Y",
+                  "facadeDirectionGLTF": "+Z",
+                  "windows": "separate material for night emission"
+                },
+                {
+                  "id": "station-selatan",
+                  "file": "station-selatan.glb",
+                  "bytes": 1291008,
+                  "triangles": 16388,
+                  "materials": 2,
+                  "textures": 0,
+                  "dimensionsBlenderXYZ": [
+                    33.3,
+                    13.525,
+                    7.22
+                  ],
+                  "upAxis": "Y",
+                  "facadeDirectionGLTF": "+Z",
+                  "windows": "separate material for night emission"
+                }
+              ]
+            },
+            "railway": {
+              "gauge": "existing calibrated gauge",
+              "ballast": "sloped matte shoulders; absent on bridge",
+              "sleepers": "two timber colors, instanced",
+              "fasteners": "instanced plates"
+            },
+            "atmosphereFixes": [
+              "relative vertex grass tint with separate bank/bed paint",
+              "wet roughness 0.78",
+              "minimum ambient 0.55",
+              "consistent toneMapped flags for locomotive/signal/bolt",
+              "station glows on lens centers"
+            ],
+            "instancing": "per asset per map quadrant",
+            "rendering": "ACES Filmic exposure 1, six lighting presets; Auto shadows, High GTAO/MSAA; weather softens directional light without changing exposure",
+            "sceneryKitLoaded": false
+          },
+          "terrainPalette": {
+            "grass": "#91b96c",
+            "bank": "#b7a47b",
+            "bed": "#788e7c",
+            "soil": "#a98b62"
+          },
+          "disabledModules": [
+            "bbm-yard",
+            "cargo-port",
+            "earthworks",
+            "livestock",
+            "locomotive-depot",
+            "nature-actors",
+            "north-farm",
+            "old-city",
+            "river-boats",
+            "road-crossing",
+            "road-traffic",
+            "tractor",
+            "village-scenery",
+            "wagon-siding",
+            "warehouse-stock"
+          ],
+          "traffic": {
+            "startingTrains": 0,
+            "automaticDefault": false,
+            "playerDispatch": true,
+            "savedConsists": true,
+            "southTracks": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "approachTracks": [
+              2,
+              3
+            ],
+            "operations": [
+              "stop",
+              "pass"
+            ],
+            "departure": "manual at both stations; optional auto dwell",
+            "southLoopRoutingEnabled": true,
+            "southCrossoverRoutingEnabled": true,
+            "turnoutReadiness": true,
+            "interlocking": "physical section locks; retain occupied blocks until tail clears; acquire braking lead ahead",
+            "northStorageParkingEnabled": true,
+            "autoRoster": {
+              "source": "built-in and saved collection",
+              "selection": "round-robin",
+              "preservesFormation": true,
+              "engines": [
+                "cc201",
+                "cc206"
+              ],
+              "carriages": [
+                "freight",
+                "passenger",
+                "tank",
+                "container"
+              ],
+              "maximumLiveTrains": 8,
+              "dispatchIntervalSeconds": 18,
+              "longFormationOperation": "pass",
+              "stopSpanLimit": 68,
+              "hiddenApproachSpanLimit": 146,
+              "maximumWagons": 4,
+              "legacyCollection": "preserve IDs/names and ordered first four cars in memory; no storage writes on read"
+            },
+            "capacity": {
+              "southPlatformLength": 72,
+              "southLoopParallelLength": 72,
+              "southLoopToeSeparation": 114,
+              "northPlatformLength": 78,
+              "singleLocoFourWagonsSpan": 55.832,
+              "doubleLocoFourWagonsSpan": 66.304,
+              "fourStoredWagonsSpan": 45.36,
+              "badugUsableLength": 65,
+              "limitation": "Build and source review only; North-U operations and clearance not simulated."
+            },
+            "normalDirection": {
+              "south": {
+                "2": "west",
+                "3": "east"
+              },
+              "north": {
+                "1": "west",
+                "2": "east"
+              },
+              "runningSide": "right",
+              "loopExit": "return to normal lane via downstream crossover"
+            },
+            "singleSection": false,
+            "automaticTrains": "up to 8",
+            "stagedReservation": true,
+            "activityMix": {
+              "pass": 25,
+              "stop": 20,
+              "overtake": 25,
+              "meet": 15,
+              "store": 15
+            },
+            "mixMeaning": "intent per 20 scenario deck; storage unavailable falls back to stop; pairs spawn two trains; counters count dispatched scenarios",
+            "roadVehiclesEnabled": false,
+            "farmEnabled": false,
+            "crossingActive": false
+          },
+          "trackPlan": {
+            "revision": "rail-only-north-u-1",
+            "spacing": 4.2,
+            "south": {
+              "centerX": 24,
+              "buildingZ": 66,
+              "mainTracks": [
+                2,
+                3
+              ],
+              "tracks": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "loopNorthZ": 75.7,
+              "loopSouthZ": 88.3,
+              "westToeX": -32,
+              "eastToeX": 82,
+              "parallelFromX": -12,
+              "parallelToX": 60,
+              "platformLength": 72,
+              "platformZ": [
+                73.5,
+                77.8,
+                86.2
+              ],
+              "crossovers": [
+                {
+                  "id": "west",
+                  "fromX": -44,
+                  "toX": -36
+                },
+                {
+                  "id": "east",
+                  "fromX": 84,
+                  "toX": 106
+                }
+              ]
+            },
+            "north": {
+              "centerX": -42,
+              "buildingZ": -79,
+              "storageTrackZ": -69.9,
+              "bufferX": -92,
+              "storageToeX": 32,
+              "storageStraightFromX": -22,
+              "platformLength": 78,
+              "platformZ": [
+                -96.3,
+                -87.7
+              ]
+            },
+            "totalRoutes": 9,
+            "totalTurnouts": 13,
+            "storageStraightLength": 70,
+            "storageUsableNominal": 65,
+            "hiddenApproachX": [
+              -260,
+              260
+            ],
+            "source": "src/rail/riverside-s-path.ts",
+            "shape": "South long straight -> west bridge -> North U -> North station -> west portal",
+            "westLeg": {
+              "x": -82,
+              "fromZ": 54,
+              "toZ": -18
+            },
+            "northU": {
+              "startX": 48,
+              "nearZ": -42,
+              "returnZ": -92,
+              "nominalRadius": 25
+            }
+          },
+          "isMainMap": true,
+          "gameRuntime": {
+            "defaultSession": "free",
+            "implementation": "riverside-game-runtime",
+            "initialState": "empty, manual",
+            "legacyDemo": "Explicit rail-demo enables Auto on the same North-U rail engine."
+          },
+          "geometryVerification": "Continuous-turn joins implemented; geometry/runtime/visual checks not run.",
+          "layout": "rail-only South straight, west bridge, North U"
+        },
+        "camera": {
+          "gameplayRotation": "locked isometric",
+          "pan": "ground plane",
+          "defaultZoom": {
+            "riverside": 3.2,
+            "mini-station": 2,
+            "square-example": 3
+          },
+          "minZoom": {
+            "riverside": 1.2,
+            "mini-station": 1.1
+          },
+          "initialZoom": 1.3,
+          "fullMapOverview": true,
+          "focusPoints": {
+            "south": [
+              24,
+              66
+            ],
+            "north": [
+              -42,
+              -79
+            ],
+            "bridge": [
+              -82,
+              0
+            ]
+          },
+          "maxZoom": 12,
+          "navigationBounds": {
+            "minX": -100,
+            "maxX": 100,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "viewportAwareClamp": true,
+          "followHandoff": "after last car envelope clears visible map",
+          "stationaryFollowRetained": true,
+          "freePan": "locked at minimum zoom; opens progressively; full map target range at zoom 2.16",
+          "followPan": "viewport inset retained while the entire formation clears"
+        },
+        "railMapPortals": {
+          "layout": "S",
+          "west": [
+            -100,
+            -72
+          ],
+          "east": [
+            100,
+            82
+          ],
+          "boresPerPortal": 1,
+          "hiddenApproachX": [
+            -260,
+            260
+          ],
+          "visualVerification": "not_run"
+        },
+        "proposedRailLayout": {
+          "status": "implemented",
+          "source": "docs/riverside-s-corridor-plan.md",
+          "runtime": "Open S double track, two stations, both directions, local loops/crossovers/storage and same Auto engine",
+          "verification": "Production build only; no S simulation/browser check"
+        },
+        "northFarm": {
+          "models": [
+            "models/riverside-farm-kit.glb",
+            "models/riverside-road-kit.glb",
+            "models/riverside-vehicles.glb"
+          ],
+          "persistentFleet": [
+            "farm-pickup",
+            "farm-flatbed"
+          ],
+          "sLayout": {
+            "shiftX": -42,
+            "northernCropRowLimit": -43.4,
+            "tractor": [
+              -74,
+              -44.3
+            ],
+            "shed": [
+              -17,
+              -43.6
+            ],
+            "warehouse": "original east coordinates retained"
+          }
+        },
+        "roadTraffic": {
+          "stationParking": "same visible vehicle through arrival, parking, turnaround and departure",
+          "edgeFadeMetres": 6,
+          "farmFleet": "permanent two-vehicle fleet with parking bays and a return-to-bay stage",
+          "crossing": "body-length stop limits; admitted vehicles clear before arms lower; trains wait for closure",
+          "collision": "shared world footprints across routes and fleet",
+          "runtimeValidation": "not run",
+          "sLayout": {
+            "southStop": [
+              24,
+              55
+            ],
+            "northStop": [
+              -42,
+              -94
+            ],
+            "northDetour": "R5 east, Z-78.4, X-8, Z-95",
+            "crossing": "actual oblique R4 crossing Z-20.8, derived from spline; road axis X",
+            "oldR5CrossingRemoved": true
+          }
+        },
+        "natureLife": {
+          "kit": "models/riverside-nature-kit.glb",
+          "bytes": 56496,
+          "sha256": "e723b436e5712f9ec7cf17ba5777a9a93fb2e78c9e1aafd01312b62d524a9113",
+          "templateTriangles": 614,
+          "materials": 1,
+          "textures": 0,
+          "birds": 8,
+          "butterflies": 3,
+          "maxDrawCalls": 9,
+          "motion": "Sparse staggered flocks with flap/glide bursts; small flower-bed loops; session clock owns motion",
+          "environment": "Daytime only; heavy rain, storms and snow suppress activity",
+          "assetReview": "Original Blender kit visually reviewed through a presentation render and eight-frame wing-motion contact sheet; game appearance and performance unmeasured"
+        },
+        "quietAmbience": {
+          "riverRipples": "Repeated ripple arcs removed in water revision 2; water motion remains owned by riverWater",
+          "wind": "Root-pinned grass shear using existing instances",
+          "kitchenChimneys": 3,
+          "smokePuffs": 15,
+          "smokeSchedule": "Breakfast 05:45-09:15; lunch 11:00-13:45; dinner 16:30-20:00, with gradual fades",
+          "maxAdditionalDrawCalls": 2,
+          "pauseAndReset": "Absolute session clock; camera only reorients smoke",
+          "weather": "Wind affects motion; rain, storms and darkness reduce smoke"
+        },
+        "crossingQueue": {
+          "change": "Shared one-vehicle reservation for decorative traffic and farm hauls, including north station/yard turns",
+          "admission": "Check continuous vehicle footprint path through exit; other approaches wait outside conflict corridor",
+          "clearance": "Retain reservation until vehicle rear clears; retain existing rail gate and collision checks",
+          "reset": "Clears reservation and waiting order",
+          "validation": "Static review and build only; exact screenshot scenario not replayed in simulation"
+        },
+        "trafficDiagnosis": {
+          "reproduced": [
+            "Station inbound traffic blocking the previous vehicle parking/U-turn exit",
+            "Long vehicle swept corners deadlocking outside the protected R5 bend and R3 bridge heads"
+          ],
+          "fix": "Station bay booking before inbound spawn and contiguous reservation over road turns; physical collision and barrier guards retained",
+          "railReservationDeadlockReproduced": false,
+          "rail": {
+            "simulatedSeconds": 1200,
+            "completedJourneys": 49,
+            "scenarios": "All five Auto scenarios plus stored-wagon retrieval",
+            "maximumSampledWaitSeconds": 143,
+            "persistentFailureThresholdSeconds": 180
+          },
+          "crossovers": {
+            "simulatedSeconds": 600,
+            "completedOpposingJourneys": 4
+          },
+          "roadOpen": {
+            "simulatedSeconds": 600,
+            "completedJourneys": 12,
+            "maximumWaitSeconds": 31.2,
+            "footprintChecks": 36236
+          },
+          "roadGates": {
+            "simulatedSeconds": 1200,
+            "completedJourneys": 23,
+            "maximumWaitSeconds": 42.1,
+            "footprintChecks": 80408,
+            "barrierChecks": 3007
+          },
+          "railAdapter": "Production runtime/routes/planner/authority/locks/turnout timing/consist motion/storage/farm/road; scenery and rail visual mesh factories omitted",
+          "roadAdapter": "Production modules and original local vehicle GLB; planar height callback and periodic gates",
+          "trace": "Optional read-only callback for actors, blocks, owners, stop limits, signals and crossing state; ignored JSON artifacts from CLI runners",
+          "browserGameplay": "not_run"
+        },
+        "northBridgeJunction": {
+          "status": "removed",
+          "replacement": "Continuous double-track approach with a gentle meander; no north exit or diamond conflict block",
+          "verification": "Source integration and production build only; no movement simulation for this revision"
+        },
+        "miniatureDetails": {
+          "riverbank": "Sparse asymmetric approved-kit rock/shrub/reed groups with bridge and rail keep-outs",
+          "riverbankMaxDrawCalls": 2,
+          "riverLife": "One persistent rowboat and rower, 280-second patrol including fishing pause",
+          "riverLifeDrawCalls": 2,
+          "stationContacts": "One vertex-alpha batch beneath two station plinths; shared atmosphere opacity",
+          "stationContactDrawCalls": 1,
+          "verification": "Source review and production build; no browser or simulation tests"
+        },
+        "miniatureComposition": {
+          "revision": "S parcels",
+          "hamletCourtCenters": [
+            [
+              6,
+              42.5
+            ],
+            [
+              39,
+              42.75
+            ]
+          ],
+          "southStationAvenueX": 24,
+          "gardenBounds": [
+            -43,
+            -30,
+            45.3,
+            53.7
+          ],
+          "livestockBounds": [
+            61.4,
+            93,
+            38.8,
+            53.6
+          ],
+          "orchardBounds": [
+            58,
+            83,
+            -64,
+            -46
+          ],
+          "workshop": [
+            75.6,
+            60.9
+          ],
+          "workshopAccessX": 95,
+          "market": {
+            "center": [
+              -35,
+              34
+            ],
+            "uniformScale": 0.7
+          },
+          "riceMill": [
+            4,
+            -88.5
+          ],
+          "dryingCourt": [
+            -18,
+            -86
+          ],
+          "bankPlaceShiftX": 35,
+          "visualVerification": "not_run"
+        },
+        "functionalWorkLayout": {
+          "readiness": "layout-only",
+          "farm": "Tractor shed/headland and reserved field access, crop collection positions and loading ports tied to existing R4 stops",
+          "yard": "Receiving awning, truck unloading bay, protected walking spine, commodity staging and folded dock transfer equipment",
+          "contract": "Stable site/area/path/port IDs, explicit terrain/absolute heights and reserved crossings for future reusable action adapters",
+          "scenery": "Authored work areas and approaches exclude generated trees, rocks and grass",
+          "traffic": "Existing rail routes, R4/R5 fleet movement, crossing and warehouse stock ownership retained",
+          "animations": "Not implemented in this stage; no new moving actors or live port/crossing permissions",
+          "style": "Shared stylized low-poly palette, cream/terracotta architecture and plain matte soil/paving",
+          "verification": "Source review and production build only; runtime, appearance and swept-path checks not run"
+        },
+        "villagePlaces": {
+          "layoutRevision": "S parcels",
+          "contract": {
+            "revision": "S parcels",
+            "hamletCourtCenters": [
+              [
+                6,
+                42.5
+              ],
+              [
+                39,
+                42.75
+              ]
+            ],
+            "southStationAvenueX": 24,
+            "gardenBounds": [
+              -43,
+              -30,
+              45.3,
+              53.7
+            ],
+            "livestockBounds": [
+              61.4,
+              93,
+              38.8,
+              53.6
+            ],
+            "orchardBounds": [
+              58,
+              83,
+              -64,
+              -46
+            ],
+            "workshop": [
+              75.6,
+              60.9
+            ],
+            "workshopAccessX": 95,
+            "market": {
+              "center": [
+                -35,
+                34
+              ],
+              "uniformScale": 0.7
+            },
+            "riceMill": [
+              4,
+              -88.5
+            ],
+            "dryingCourt": [
+              -18,
+              -86
+            ],
+            "bankPlaceShiftX": 35,
+            "visualVerification": "not_run"
+          },
+          "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+          "verification": "source review and build only"
+        },
+        "naturalForeground": {
+          "layoutRevision": "S parcels",
+          "contract": {
+            "revision": "S parcels",
+            "hamletCourtCenters": [
+              [
+                6,
+                42.5
+              ],
+              [
+                39,
+                42.75
+              ]
+            ],
+            "southStationAvenueX": 24,
+            "gardenBounds": [
+              -43,
+              -30,
+              45.3,
+              53.7
+            ],
+            "livestockBounds": [
+              61.4,
+              93,
+              38.8,
+              53.6
+            ],
+            "orchardBounds": [
+              58,
+              83,
+              -64,
+              -46
+            ],
+            "workshop": [
+              75.6,
+              60.9
+            ],
+            "workshopAccessX": 95,
+            "market": {
+              "center": [
+                -35,
+                34
+              ],
+              "uniformScale": 0.7
+            },
+            "riceMill": [
+              4,
+              -88.5
+            ],
+            "dryingCourt": [
+              -18,
+              -86
+            ],
+            "bankPlaceShiftX": 35,
+            "visualVerification": "not_run"
+          },
+          "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+          "verification": "source review and build only"
+        },
+        "hamletComposition": {
+          "layoutRevision": "S parcels",
+          "contract": {
+            "revision": "S parcels",
+            "hamletCourtCenters": [
+              [
+                6,
+                42.5
+              ],
+              [
+                39,
+                42.75
+              ]
+            ],
+            "southStationAvenueX": 24,
+            "gardenBounds": [
+              -43,
+              -30,
+              45.3,
+              53.7
+            ],
+            "livestockBounds": [
+              61.4,
+              93,
+              38.8,
+              53.6
+            ],
+            "orchardBounds": [
+              58,
+              83,
+              -64,
+              -46
+            ],
+            "workshop": [
+              75.6,
+              60.9
+            ],
+            "workshopAccessX": 95,
+            "market": {
+              "center": [
+                -35,
+                34
+              ],
+              "uniformScale": 0.7
+            },
+            "riceMill": [
+              4,
+              -88.5
+            ],
+            "dryingCourt": [
+              -18,
+              -86
+            ],
+            "bankPlaceShiftX": 35,
+            "visualVerification": "not_run"
+          },
+          "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+          "verification": "source review and build only"
+        },
+        "northCrossingDemandFix": {
+          "cause": "Exit signal waited for barrier while zero speed suppressed the old50m demand trigger",
+          "behavior": "Active route intending to cross within50m requests closure even when stopped at signal; physical body/tail detection retained",
+          "safety": "Existing road evacuation, full barrier closure and interlocking still govern permission",
+          "runtimeSha256": "3489555d353e721c54dca0740828259b6fd72d45299c53b09ec66ca031bb01c3"
+        },
+        "livestock": {
+          "templates": [
+            "cow",
+            "calf",
+            "goat",
+            "kid",
+            "chicken",
+            "duck"
+          ],
+          "file": "models/riverside-livestock-kit.glb",
+          "sha256": "52e6a7fabc552c74902c37dcfe8b54044e59c9a4c1cecd148bbd31fcb9b0c572",
+          "trianglesPerLibrary": 4590,
+          "materialsPerSession": 1,
+          "texturesInLibrary": 0,
+          "residents": {
+            "cow": 2,
+            "calf": 1,
+            "goat": 1,
+            "kid": 1,
+            "chicken": 2,
+            "duck": 2
+          },
+          "actions": [
+            "idle",
+            "graze",
+            "look",
+            "walk"
+          ],
+          "placement": "Current south foreground X34.5..74 Z77..95.5; authored pens and short bounded arcs",
+          "clock": "Session simulation seconds; pause holds pose, reset returns phase",
+          "scenery": "Existing cattle shelter/trough plus goat shelter, feed store, chicken coop/run and retained faceted duck pond",
+          "replacement": "Three static procedural cattle replaced; public display figurines retained",
+          "inventory": "Ambient actors only; no livestock stock/business simulation",
+          "verification": "Production build and independent code review; no runtime/simulation/browser tests",
+          "sPlacement": {
+            "scale": 0.8,
+            "offsetX": 33.8,
+            "offsetZ": -22.8,
+            "terrain": "inverse transformed shared height query",
+            "residentCount": 9
+          }
+        },
+        "riversideHouseBlocks": {
+          "layoutRevision": "S parcels",
+          "contract": {
+            "revision": "S parcels",
+            "hamletCourtCenters": [
+              [
+                6,
+                42.5
+              ],
+              [
+                39,
+                42.75
+              ]
+            ],
+            "southStationAvenueX": 24,
+            "gardenBounds": [
+              -43,
+              -30,
+              45.3,
+              53.7
+            ],
+            "livestockBounds": [
+              61.4,
+              93,
+              38.8,
+              53.6
+            ],
+            "orchardBounds": [
+              58,
+              83,
+              -64,
+              -46
+            ],
+            "workshop": [
+              75.6,
+              60.9
+            ],
+            "workshopAccessX": 95,
+            "market": {
+              "center": [
+                -35,
+                34
+              ],
+              "uniformScale": 0.7
+            },
+            "riceMill": [
+              4,
+              -88.5
+            ],
+            "dryingCourt": [
+              -18,
+              -86
+            ],
+            "bankPlaceShiftX": 35,
+            "visualVerification": "not_run"
+          },
+          "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+          "verification": "source review and build only"
+        },
+        "tractor": {
+          "file": "models/riverside-tractor-kit.glb",
+          "sha256": "f1432613e2adb2e5df40a01f9f8cc09643bb97c05de95980638741571b7ce189",
+          "triangles": 3036,
+          "materials": 1,
+          "textures": 0,
+          "sizeMetres": [
+            3.665,
+            2.63,
+            2.188
+          ],
+          "lengthWithPloughMetres": 4.975,
+          "placement": [
+            -32,
+            -44.3
+          ],
+          "surface": "Existing dry north paddy headland",
+          "state": "parked",
+          "motion": "No tractor navigation, ploughing or crop-phase simulation",
+          "rig": [
+            "four wheel pivots",
+            "front steering pivots",
+            "rear hitch",
+            "modular plough"
+          ],
+          "authoring": "Actual Blender GLB and inspected Cycles preview",
+          "verification": "Source review and build; no runtime or browser tests",
+          "sPlacement": [
+            -74,
+            -44.3
+          ]
+        },
+        "earthworks": {
+          "file": "models/riverside-earthworks-kit.glb",
+          "sha256": "9e73c51a769ec6e7a4273e04571d44000bd6b99afa8c5df30348286df88869b6",
+          "bytes": 791948,
+          "triangles": 10880,
+          "materials": 1,
+          "textures": 0,
+          "models": [
+            "Detailed backhoe excavator with concave inward-facing bucket, five teeth and four-bar linkage",
+            "Six-wheel dump truck (geometry retained)"
+          ],
+          "location": "Separate western parcel X-99..-83.2 Z31..58, outside railway",
+          "focus": "Galian tanah",
+          "pitDepth": 0.45,
+          "cycleSeconds": 80,
+          "actions": [
+            "dig",
+            "curl",
+            "raise",
+            "slew",
+            "bucket-dump",
+            "return-arm",
+            "haul",
+            "tip",
+            "reverse",
+            "wait"
+          ],
+          "motion": "Cutting lip pulls inward 5.1 to 3.9m; cupped carry and positive-pitch pour use actual negative-X tooth port",
+          "clock": "Session seconds; pause/reset use existing session time",
+          "limits": "Bounded ambient scene; no public road traffic route, soil physics or business inventory",
+          "verification": "Independent source review and production build only; no V2 runtime, render or pose tests",
+          "version": 2,
+          "geometry": {
+            "boomLength": 3.6,
+            "stickLength": 3.0,
+            "bucketTip": [
+              -1.22,
+              -0.67,
+              0
+            ],
+            "linkLengths": [
+              0.52,
+              0.57
+            ]
+          },
+          "retainedDuringSRedesign": true
+        },
+        "riversideStorage": {
+          "maximumWagons": 4,
+          "locomotives": 1,
+          "passengerAllowed": false,
+          "minimumStoredSeconds": 30,
+          "collectAfterStoreEngineExits": true,
+          "actualWagonMeshesRetained": true,
+          "manualCollectButton": true
+        }
+      }
     }
   },
   "northBridgeJunction": {
-    "status": "removed",
-    "replacement": "Continuous double-track approach with a gentle meander; no north exit or diamond conflict block",
-    "verification": "Source integration and production build only; no movement simulation for this revision"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "carriageWheelVisibility": {
     "cause": "Stationary bogie frame and axleboxes obscure rotating discs and marker",
@@ -6163,19 +7186,15 @@
     "verification": "GLB metadata and source inspection; no runtime motion review"
   },
   "miniatureDetails": {
-    "riverbank": "Sparse asymmetric approved-kit rock/shrub/reed groups with bridge and rail keep-outs",
-    "riverbankMaxDrawCalls": 2,
-    "riverLife": "One persistent rowboat and rower, 280-second patrol including fishing pause",
-    "riverLifeDrawCalls": 2,
-    "stationContacts": "One vertex-alpha batch beneath two station plinths; shared atmosphere opacity",
-    "stationContactDrawCalls": 1,
-    "verification": "Source review and production build; no browser or simulation tests"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "railMapPortals": {
-    "layout": "S",
     "west": [
       -100,
-      -72
+      -92
     ],
     "east": [
       100,
@@ -6189,246 +7208,43 @@
     "visualVerification": "not_run"
   },
   "miniatureComposition": {
-    "revision": "S parcels",
-    "hamletCourtCenters": [
-      [
-        6,
-        42.5
-      ],
-      [
-        39,
-        42.75
-      ]
+    "active": "rail-only",
+    "kept": [
+      "plain terrain and river",
+      "two stations",
+      "perons and rail forecourts",
+      "rails and bridge",
+      "signals/turnouts",
+      "station lamps",
+      "rail portals"
     ],
-    "southStationAvenueX": 24,
-    "gardenBounds": [
-      -43,
-      -30,
-      45.3,
-      53.7
-    ],
-    "livestockBounds": [
-      61.4,
-      93,
-      38.8,
-      53.6
-    ],
-    "orchardBounds": [
-      58,
-      83,
-      -64,
-      -46
-    ],
-    "workshop": [
-      75.6,
-      60.9
-    ],
-    "workshopAccessX": 95,
-    "market": {
-      "center": [
-        -35,
-        34
-      ],
-      "uniformScale": 0.7
-    },
-    "riceMill": [
-      4,
-      -88.5
-    ],
-    "dryingCourt": [
-      -18,
-      -86
-    ],
-    "bankPlaceShiftX": 35,
-    "visualVerification": "not_run"
+    "sceneryActors": 0,
+    "workLayoutSites": 0,
+    "crossingActive": false
   },
   "functionalWorkLayout": {
-    "readiness": "layout-only",
-    "farm": "Tractor shed/headland and reserved field access, crop collection positions and loading ports tied to existing R4 stops",
-    "yard": "Receiving awning, truck unloading bay, protected walking spine, commodity staging and folded dock transfer equipment",
-    "contract": "Stable site/area/path/port IDs, explicit terrain/absolute heights and reserved crossings for future reusable action adapters",
-    "scenery": "Authored work areas and approaches exclude generated trees, rocks and grass",
-    "traffic": "Existing rail routes, R4/R5 fleet movement, crossing and warehouse stock ownership retained",
-    "animations": "Not implemented in this stage; no new moving actors or live port/crossing permissions",
-    "style": "Shared stylized low-poly palette, cream/terracotta architecture and plain matte soil/paving",
-    "verification": "Source review and production build only; runtime, appearance and swept-path checks not run"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "villagePlaces": {
-    "layoutRevision": "S parcels",
-    "contract": {
-      "revision": "S parcels",
-      "hamletCourtCenters": [
-        [
-          6,
-          42.5
-        ],
-        [
-          39,
-          42.75
-        ]
-      ],
-      "southStationAvenueX": 24,
-      "gardenBounds": [
-        -43,
-        -30,
-        45.3,
-        53.7
-      ],
-      "livestockBounds": [
-        61.4,
-        93,
-        38.8,
-        53.6
-      ],
-      "orchardBounds": [
-        58,
-        83,
-        -64,
-        -46
-      ],
-      "workshop": [
-        75.6,
-        60.9
-      ],
-      "workshopAccessX": 95,
-      "market": {
-        "center": [
-          -35,
-          34
-        ],
-        "uniformScale": 0.7
-      },
-      "riceMill": [
-        4,
-        -88.5
-      ],
-      "dryingCourt": [
-        -18,
-        -86
-      ],
-      "bankPlaceShiftX": 35,
-      "visualVerification": "not_run"
-    },
-    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
-    "verification": "source review and build only"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "naturalForeground": {
-    "layoutRevision": "S parcels",
-    "contract": {
-      "revision": "S parcels",
-      "hamletCourtCenters": [
-        [
-          6,
-          42.5
-        ],
-        [
-          39,
-          42.75
-        ]
-      ],
-      "southStationAvenueX": 24,
-      "gardenBounds": [
-        -43,
-        -30,
-        45.3,
-        53.7
-      ],
-      "livestockBounds": [
-        61.4,
-        93,
-        38.8,
-        53.6
-      ],
-      "orchardBounds": [
-        58,
-        83,
-        -64,
-        -46
-      ],
-      "workshop": [
-        75.6,
-        60.9
-      ],
-      "workshopAccessX": 95,
-      "market": {
-        "center": [
-          -35,
-          34
-        ],
-        "uniformScale": 0.7
-      },
-      "riceMill": [
-        4,
-        -88.5
-      ],
-      "dryingCourt": [
-        -18,
-        -86
-      ],
-      "bankPlaceShiftX": 35,
-      "visualVerification": "not_run"
-    },
-    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
-    "verification": "source review and build only"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "hamletComposition": {
-    "layoutRevision": "S parcels",
-    "contract": {
-      "revision": "S parcels",
-      "hamletCourtCenters": [
-        [
-          6,
-          42.5
-        ],
-        [
-          39,
-          42.75
-        ]
-      ],
-      "southStationAvenueX": 24,
-      "gardenBounds": [
-        -43,
-        -30,
-        45.3,
-        53.7
-      ],
-      "livestockBounds": [
-        61.4,
-        93,
-        38.8,
-        53.6
-      ],
-      "orchardBounds": [
-        58,
-        83,
-        -64,
-        -46
-      ],
-      "workshop": [
-        75.6,
-        60.9
-      ],
-      "workshopAccessX": 95,
-      "market": {
-        "center": [
-          -35,
-          34
-        ],
-        "uniformScale": 0.7
-      },
-      "riceMill": [
-        4,
-        -88.5
-      ],
-      "dryingCourt": [
-        -18,
-        -86
-      ],
-      "bankPlaceShiftX": 35,
-      "visualVerification": "not_run"
-    },
-    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
-    "verification": "source review and build only"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "graphics": {
     "presets": [
@@ -6454,52 +7270,16 @@
     "scope": "Riverside runtime"
   },
   "northCrossingDemandFix": {
-    "cause": "Exit signal waited for barrier while zero speed suppressed the old50m demand trigger",
-    "behavior": "Active route intending to cross within50m requests closure even when stopped at signal; physical body/tail detection retained",
-    "safety": "Existing road evacuation, full barrier closure and interlocking still govern permission",
-    "runtimeSha256": "3489555d353e721c54dca0740828259b6fd72d45299c53b09ec66ca031bb01c3"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "livestock": {
-    "templates": [
-      "cow",
-      "calf",
-      "goat",
-      "kid",
-      "chicken",
-      "duck"
-    ],
-    "file": "models/riverside-livestock-kit.glb",
-    "sha256": "52e6a7fabc552c74902c37dcfe8b54044e59c9a4c1cecd148bbd31fcb9b0c572",
-    "trianglesPerLibrary": 4590,
-    "materialsPerSession": 1,
-    "texturesInLibrary": 0,
-    "residents": {
-      "cow": 2,
-      "calf": 1,
-      "goat": 1,
-      "kid": 1,
-      "chicken": 2,
-      "duck": 2
-    },
-    "actions": [
-      "idle",
-      "graze",
-      "look",
-      "walk"
-    ],
-    "placement": "Current south foreground X34.5..74 Z77..95.5; authored pens and short bounded arcs",
-    "clock": "Session simulation seconds; pause holds pose, reset returns phase",
-    "scenery": "Existing cattle shelter/trough plus goat shelter, feed store, chicken coop/run and retained faceted duck pond",
-    "replacement": "Three static procedural cattle replaced; public display figurines retained",
-    "inventory": "Ambient actors only; no livestock stock/business simulation",
-    "verification": "Production build and independent code review; no runtime/simulation/browser tests",
-    "sPlacement": {
-      "scale": 0.8,
-      "offsetX": 33.8,
-      "offsetZ": -22.8,
-      "terrain": "inverse transformed shared height query",
-      "residentCount": 9
-    }
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "newVillageMasterplan": {
     "status": "archived",
@@ -6514,147 +7294,27 @@
     "design": "Archived documents only"
   },
   "riversideHouseBlocks": {
-    "layoutRevision": "S parcels",
-    "contract": {
-      "revision": "S parcels",
-      "hamletCourtCenters": [
-        [
-          6,
-          42.5
-        ],
-        [
-          39,
-          42.75
-        ]
-      ],
-      "southStationAvenueX": 24,
-      "gardenBounds": [
-        -43,
-        -30,
-        45.3,
-        53.7
-      ],
-      "livestockBounds": [
-        61.4,
-        93,
-        38.8,
-        53.6
-      ],
-      "orchardBounds": [
-        58,
-        83,
-        -64,
-        -46
-      ],
-      "workshop": [
-        75.6,
-        60.9
-      ],
-      "workshopAccessX": 95,
-      "market": {
-        "center": [
-          -35,
-          34
-        ],
-        "uniformScale": 0.7
-      },
-      "riceMill": [
-        4,
-        -88.5
-      ],
-      "dryingCourt": [
-        -18,
-        -86
-      ],
-      "bankPlaceShiftX": 35,
-      "visualVerification": "not_run"
-    },
-    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
-    "verification": "source review and build only"
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "tractor": {
-    "file": "models/riverside-tractor-kit.glb",
-    "sha256": "f1432613e2adb2e5df40a01f9f8cc09643bb97c05de95980638741571b7ce189",
-    "triangles": 3036,
-    "materials": 1,
-    "textures": 0,
-    "sizeMetres": [
-      3.665,
-      2.63,
-      2.188
-    ],
-    "lengthWithPloughMetres": 4.975,
-    "placement": [
-      -32,
-      -44.3
-    ],
-    "surface": "Existing dry north paddy headland",
-    "state": "parked",
-    "motion": "No tractor navigation, ploughing or crop-phase simulation",
-    "rig": [
-      "four wheel pivots",
-      "front steering pivots",
-      "rear hitch",
-      "modular plough"
-    ],
-    "authoring": "Actual Blender GLB and inspected Cycles preview",
-    "verification": "Source review and build; no runtime or browser tests",
-    "sPlacement": [
-      -74,
-      -44.3
-    ]
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "earthworks": {
-    "file": "models/riverside-earthworks-kit.glb",
-    "sha256": "9e73c51a769ec6e7a4273e04571d44000bd6b99afa8c5df30348286df88869b6",
-    "bytes": 791948,
-    "triangles": 10880,
-    "materials": 1,
-    "textures": 0,
-    "models": [
-      "Detailed backhoe excavator with concave inward-facing bucket, five teeth and four-bar linkage",
-      "Six-wheel dump truck (geometry retained)"
-    ],
-    "location": "Separate western parcel X-99..-83.2 Z31..58, outside railway",
-    "focus": "Galian tanah",
-    "pitDepth": 0.45,
-    "cycleSeconds": 80,
-    "actions": [
-      "dig",
-      "curl",
-      "raise",
-      "slew",
-      "bucket-dump",
-      "return-arm",
-      "haul",
-      "tip",
-      "reverse",
-      "wait"
-    ],
-    "motion": "Cutting lip pulls inward 5.1 to 3.9m; cupped carry and positive-pitch pour use actual negative-X tooth port",
-    "clock": "Session seconds; pause/reset use existing session time",
-    "limits": "Bounded ambient scene; no public road traffic route, soil physics or business inventory",
-    "verification": "Independent source review and production build only; no V2 runtime, render or pose tests",
-    "version": 2,
-    "geometry": {
-      "boomLength": 3.6,
-      "stickLength": 3.0,
-      "bucketTip": [
-        -1.22,
-        -0.67,
-        0
-      ],
-      "linkLengths": [
-        0.52,
-        0.57
-      ]
-    },
-    "retainedDuringSRedesign": true
+    "active": false,
+    "reason": "Removed from active rail-only Riverside at user request",
+    "reusableSourceAssetsPreserved": true,
+    "historicalSource": "8abe55b2534c99d03bf6d66213442f3bf4c7f761"
   },
   "proposedRailLayout": {
     "status": "implemented",
-    "source": "docs/riverside-s-corridor-plan.md",
-    "runtime": "Open S double track, two stations, both directions, local loops/crossovers/storage and same Auto engine",
-    "verification": "Production build only; no S simulation/browser check"
+    "source": "docs/riverside-rail-only-layout.md",
+    "intent": "User-confirmed U after straight western river bridge; long South straight",
+    "verification": "Production build only; no browser/simulation"
   }
 }
