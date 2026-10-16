@@ -1,9 +1,9 @@
 {
-  "release": "riverside-peron-passengers-d2f07e6",
-  "sourceCommit": "d2f07e65986279bb47f56c82f3226ecb9de90e49",
-  "sourceFingerprint": "7a2a2a4323af4c7c46edd33a1141049fd7daff09",
+  "release": "riverside-headlight-shadow-fix-9803a1a",
+  "sourceCommit": "9803a1a666043f65f60cae468fca3337a0d8c593",
+  "sourceFingerprint": "2e02dbe69be6d9e55953e609cbc340079d62eccf",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T21:13:14.891Z",
+  "builtAt": "2026-10-16T21:16:23.134Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e90ab25d458e7ced843ea9b2e551c5179ffb733b",
+  "previousSourceCommit": "d2f07e65986279bb47f56c82f3226ecb9de90e49",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -32,7 +32,7 @@
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "Headless preview renders only (portals, signals/turnouts, MTT); no in-game browser validation."
+    "scope": "No browser validation for the headlight shadow-map fix."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -591,6 +591,11 @@
       "bytes": 24488
     },
     {
+      "path": "assets/AssetCatalogPage-C2-damWR.js",
+      "sha256": "73f36a29dad54b9f35b9be482746a32a1ee4fd970da5e74230064ce0f43a7ecc",
+      "bytes": 27457
+    },
+    {
       "path": "assets/AssetCatalogPage-C2OsvIAK.js",
       "sha256": "9765e8d48cb4849c561f0b8a60cefcf00d49ec1c564890f4791b84ba8879b643",
       "bytes": 24488
@@ -961,6 +966,11 @@
       "bytes": 802241
     },
     {
+      "path": "assets/AssetThumbnail-DAS8lsfh.js",
+      "sha256": "f9eff4065a9828dce14eb43467deb93c6afd04f90acdd5ca078feb393713647d",
+      "bytes": 596013
+    },
+    {
       "path": "assets/AssetThumbnail-DEmSpwRs.js",
       "sha256": "24b882a3d77b9ded71ade4ae791b97413ce29219702878dc388b4d93d629cfa5",
       "bytes": 802652
@@ -1251,6 +1261,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-CeeT0uli.js",
+      "sha256": "7cc22efadc19e95219b8a18c01aed7de73735ab12ed121b27e4bb8da4f4d4a56",
+      "bytes": 12022
+    },
+    {
       "path": "assets/Cc206ReviewPage-CgKFYTTp.js",
       "sha256": "f8c757023ead101fa8b0dd27c9cb2dc930a7db2481053c8f4ba26e7e82a77c09",
       "bytes": 11982
@@ -1484,6 +1499,11 @@
       "path": "assets/ConsistsPage-BG8z15b2.js",
       "sha256": "c3367e892e3b9a223fc2b8eab7e8657dc0bb9cf874ac5a4723ef8e8b1bb90cc1",
       "bytes": 8470
+    },
+    {
+      "path": "assets/ConsistsPage-BIBh4dpK.js",
+      "sha256": "0c74364825c27b8e4d9bdb2232a92b0690454b54e252d58b2d03be9ebbfd3293",
+      "bytes": 11757
     },
     {
       "path": "assets/ConsistsPage-BIlaSUSl.js",
@@ -1906,6 +1926,11 @@
       "bytes": 41735
     },
     {
+      "path": "assets/diorama-postprocessing-CDvN6oLf.js",
+      "sha256": "6c58e13f699932d59d43779585e7a22935d02c0abd933a836408fe6512fa48a5",
+      "bytes": 41254
+    },
+    {
       "path": "assets/diorama-postprocessing-CKj4PqRo.js",
       "sha256": "ce652ac74005d8abeaeac6afd0f3bd28b3d4421c4478d8c2147a482bf613f831",
       "bytes": 41405
@@ -2154,6 +2179,11 @@
       "path": "assets/DownloadSimple.es-bvXXCKpl.js",
       "sha256": "27cd4cebd82dd01612978f38a250aeb0074f39d66d1415ec603e2ccb18d5e74d",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-BwDVwbYI.js",
+      "sha256": "1347f4aced592462c8df5848a3836be9c4f7b919065e3508bb288d24ac5b7c5b",
+      "bytes": 2110
     },
     {
       "path": "assets/DownloadSimple.es-Bya2zbNQ.js",
@@ -2534,6 +2564,11 @@
       "path": "assets/GaugeReviewPage-Bw5lhQYn.js",
       "sha256": "61dad171dec242c0bc02c289f783b22e8dfa829ab6c9926773efd7123aefb5ca",
       "bytes": 10822
+    },
+    {
+      "path": "assets/GaugeReviewPage-BWvS6cDp.js",
+      "sha256": "10f8753996c4231bcd5b1eb78af582425965774e51bfec3dbea4a336c08d10ab",
+      "bytes": 18205
     },
     {
       "path": "assets/GaugeReviewPage-BxMrEpAC.js",
@@ -3251,6 +3286,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-DV9qLcUa.js",
+      "sha256": "11460222e6c8beb94dc0681b85b4c10f0eb92450fa959a54d2e44365577c77dc",
+      "bytes": 428
+    },
+    {
       "path": "assets/HudPreviewPanel-DYHy9TjT.js",
       "sha256": "db55c026ce22bbdeea28ceb446a34d1f5ab56d4e481756f21b58af371a3d82a6",
       "bytes": 420
@@ -3336,6 +3376,11 @@
       "bytes": 3432
     },
     {
+      "path": "assets/IconBase.es-D1MEk3Ag.js",
+      "sha256": "9cb4ff3a57e5df6e036df5190e8028fbd0498b3930bdd5ab297b7c7265dd41d2",
+      "bytes": 3432
+    },
+    {
       "path": "assets/ImportedCc206Page-1ZXZUWU4.js",
       "sha256": "2aa99e5e2d85b770f76d2f2efd934c929244aa9d6e7eae1b9d75a80fa3d25121",
       "bytes": 13963
@@ -3364,6 +3409,11 @@
       "path": "assets/ImportedCc206Page-B2q_ZhNg.js",
       "sha256": "62cae7c3039376cb759a34c1122ce1ac814d32e83281b872f5d8faca7a6ecc57",
       "bytes": 13963
+    },
+    {
+      "path": "assets/ImportedCc206Page-B4s21Zxl.js",
+      "sha256": "188b4b2040aa363fb2dd48f3eeac067418e536a7c6c458df566ac431bbe65349",
+      "bytes": 18451
     },
     {
       "path": "assets/ImportedCc206Page-B5H3B18M.js",
@@ -4061,6 +4111,11 @@
       "bytes": 783965
     },
     {
+      "path": "assets/index-DS-EWplk.js",
+      "sha256": "b45fc0b3a4b930282cc4d5f61acc82c98208dbddd3b1d5ca16852e0c101a9a4c",
+      "bytes": 826456
+    },
+    {
       "path": "assets/index-Dv7hS-WD.css",
       "sha256": "906b41092059834a4de78f53efaa7254275dde6653bfc5351ebf351307605387",
       "bytes": 59226
@@ -4737,7 +4792,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "1f03d5d1e9b3902ba08253aaeb1d4cb20cd783cb4e2f82afbfcaac6e8b714905",
+      "sha256": "746982a12650071f2c99dda2e4a59095bcef44e7de607eadf9cf75db6ecfc2af",
       "bytes": 1594
     },
     {
@@ -9253,5 +9308,6 @@
     "revision": 3,
     "fix": "coplanar side stripes/labels separated from door panels (flicker)"
   },
-  "lampPoolFix": "additive light pools use zero specular and no fog"
+  "lampPoolFix": "additive light pools use zero specular and no fog",
+  "headlightShadowFix": "missing headlight shadow maps are primed so lit draws never bind a null shadow texture"
 }
