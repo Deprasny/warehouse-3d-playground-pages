@@ -1,9 +1,9 @@
 {
-  "release": "riverside-curved-bridge-1392c4b",
-  "sourceCommit": "1392c4bb0bfa42980c656f296f05d2a840862d0a",
-  "sourceFingerprint": "2aa4051a1473e1f88b39d3ba9a00a481a1002977",
+  "release": "riverside-edge-u-grade-9c640a4",
+  "sourceCommit": "9c640a4b7635a2646fa318d8387a560d71a4eed6",
+  "sourceFingerprint": "dc85f5135c746732605653ad6c884adf27a429e6",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T16:37:09.239791+00:00",
+  "builtAt": "2026-10-16T16:48:51.747296+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9b9dbbfed646637910516aa3570c0b41ff36c1e7",
+  "previousSourceCommit": "1392c4bb0bfa42980c656f296f05d2a840862d0a",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "Source review and production build only; no authorized simulation/tests for curved bridge and siding removal."
+    "scope": "Production build and source review only; no simulation, radius/envelope measurement or tests authorized."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No visual/browser inspection of this revision."
+    "scope": "No visual/browser validation for extended U and new hillside."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -147,11 +147,13 @@
         "deckMaxStep": 1.25,
         "trussMaxStep": 2.5
       },
-      "verification": "source configuration; no geometry or visual test run"
+      "verification": "source configuration; no geometry or visual test run",
+      "railHeadY": 0.35,
+      "longitudinalGrade": 0
     },
     "northHeight": 3,
     "southHeight": 0,
-    "terrain": "plain matte vertex colors; no grass texture/noise",
+    "terrain": "Broad matte hillside between low inbound terrace and high North station; actual rail shoulders blend 2.6 to 24 m; river geometry retained",
     "artDirection": "stylized low-poly diorama",
     "diorama": {
       "source": "original Blender kit",
@@ -293,7 +295,7 @@
         "northPlatformLength": 78,
         "singleLocoFourWagonsSpan": 55.832,
         "doubleLocoFourWagonsSpan": 66.304,
-        "limitation": "Revised geometry/operations integrated and built; no runtime or visual validation."
+        "limitation": "New grade and extended U built successfully; runtime movement, physical envelope and visual result unverified."
       },
       "normalDirection": {
         "south": {
@@ -323,7 +325,7 @@
       "crossingActive": false
     },
     "trackPlan": {
-      "revision": "rail-only-curved-bridge-2",
+      "revision": "rail-only-edge-u-grade-3",
       "spacing": 4.2,
       "south": {
         "centerX": 24,
@@ -388,19 +390,30 @@
         260
       ],
       "source": "src/rail/riverside-s-path.ts",
-      "shape": "South straight -> curved western river bridge -> west-shifted North U -> North station",
+      "shape": "South straight -> level curved river bridge -> uphill U near east edge -> level North station",
       "westLeg": {
         "x": -82,
         "fromZ": 54,
         "toZ": 8
       },
       "northU": {
-        "startX": 12,
+        "startX": 66,
         "nearZ": -24,
         "returnZ": -78,
-        "nominalRadius": 27
+        "nominalRadius": 27,
+        "edgeEnvelope": "Authored near eastern edge; body/ballast bounds not programmatically validated"
       },
-      "storageEnabled": false
+      "storageEnabled": false,
+      "elevation": {
+        "basis": "horizontal centreline chainage, shared across running lines",
+        "bridgeGroundY": 0,
+        "northStationGroundY": 3,
+        "gradeStartBeforeU": 50,
+        "gradeEndAfterU": 10,
+        "inboundStartX": 16,
+        "returnEndX": 56,
+        "profile": "quintic smoothstep; zero grade and grade derivative at transition ends"
+      }
     },
     "isMainMap": true,
     "gameRuntime": {
@@ -409,8 +422,8 @@
       "initialState": "empty, manual",
       "legacyDemo": "Explicit rail-demo enables Auto on the same North-U rail engine."
     },
-    "geometryVerification": "Continuous-turn joins implemented; geometry/runtime/visual checks not run.",
-    "layout": "rail-only, curved western bridge and west-shifted North U"
+    "geometryVerification": "Source geometry/grade configuration implemented; no measured clearance, simulation or visual check.",
+    "layout": "rail-only, level curved bridge, rising U near eastern board edge"
   },
   "vegetation": {
     "active": false,
@@ -605,6 +618,11 @@
       "path": "assets/AssetCatalogPage-ChE5bHbK.js",
       "sha256": "93d088b3b68e828a7504da6c7233b0a1f14d3a9296e007e25ff15408b4d971a1",
       "bytes": 24445
+    },
+    {
+      "path": "assets/AssetCatalogPage-ChiBpQ2o.js",
+      "sha256": "85605578e739e1cf9fe34a17a311374f949d5975a525f5c464259e405f6b306f",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-CIwM8h4c.js",
@@ -1217,6 +1235,11 @@
       "bytes": 12019
     },
     {
+      "path": "assets/Cc206ReviewPage-deX7ghdH.js",
+      "sha256": "d5f65ba03d84172741470ab730bf1a05154a6d9d14e1fd32deee42fd86fa9195",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-DHajkNSV.js",
       "sha256": "ba7d35a8a2a7bde4d4f064d98036ec388f472d37ed88f09a38ad7681012cf34e",
       "bytes": 11982
@@ -1682,6 +1705,11 @@
       "bytes": 8448
     },
     {
+      "path": "assets/ConsistsPage-uLMbtwdr.js",
+      "sha256": "d55e16fa095215dba68edec47d66c9f711d112dc140c4879d7a5f17cf725d9e8",
+      "bytes": 8470
+    },
+    {
       "path": "assets/ConsistsPage-WAtPFu4W.js",
       "sha256": "cd36edd794079b587f46ef8176f65cbe358c70d818c68f9f89998bd29414798f",
       "bytes": 8448
@@ -1785,6 +1813,11 @@
       "path": "assets/diorama-postprocessing-CRrToWuU.js",
       "sha256": "828970bb3e8bf17953728d63e19d5f0a1948ed19c4e1448ee4519b9e110e3c8b",
       "bytes": 41405
+    },
+    {
+      "path": "assets/diorama-postprocessing-CsH_1w1f.js",
+      "sha256": "38b58a8ded568c1e53b7f819d8c03ff87cbbf2e4b58a7b0bcf68e8eafb84b51d",
+      "bytes": 41254
     },
     {
       "path": "assets/diorama-postprocessing-CsKabjsi.js",
@@ -2014,6 +2047,11 @@
     {
       "path": "assets/DownloadSimple.es-Cg9jrIyp.js",
       "sha256": "71d5ac027bc0c60eace62fac54d0884fada7835d65b0b8cf6ba43ec032752d08",
+      "bytes": 2099
+    },
+    {
+      "path": "assets/DownloadSimple.es-CkEBGI_Y.js",
+      "sha256": "fc3671d433f7c7fc8b481b98d4f2e25ac04c1bd74f8c79b4e95bb731bd4e988f",
       "bytes": 2099
     },
     {
@@ -2567,6 +2605,11 @@
       "bytes": 10822
     },
     {
+      "path": "assets/GaugeReviewPage-Sv_xMg26.js",
+      "sha256": "f144682b3841c255eb92abc0397c0a13f034e13ba37282afa46eec77f6a71ca7",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-uxWANs4I.js",
       "sha256": "1468efa9af903c6fc75e6535ba033f7e60c3e8794339c7903b926f389faec2ba",
       "bytes": 18024
@@ -2820,6 +2863,11 @@
       "path": "assets/HudPreviewPanel-Br1DcFOr.js",
       "sha256": "a5af1a1867711f6ea08dd134e962060cb65a60ffd8b4ac196858e9d719abee8b",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BrzUIkqe.js",
+      "sha256": "29174471805a21285738428ced068873880c139df5bcbef1fa840523b2657b09",
+      "bytes": 422
     },
     {
       "path": "assets/HudPreviewPanel-BSRrMwzu.js",
@@ -3352,6 +3400,11 @@
       "bytes": 18413
     },
     {
+      "path": "assets/ImportedCc206Page-DlO1w1Jz.js",
+      "sha256": "b637b974d5135268620e06c041f9d72ea854dbe9175262f5c796b4d74683acc0",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-DMsQAxZF.js",
       "sha256": "f974bbf1541d810246dbc2df29468faa22c4ce72ac5c96d5222c25fac3621811",
       "bytes": 13958
@@ -3777,6 +3830,11 @@
       "bytes": 586896
     },
     {
+      "path": "assets/index-gVNYw_pu.js",
+      "sha256": "9f9dd0d93ff88de280c31dd1818bb481f0effbde068be6fe3550c56f98cf34c5",
+      "bytes": 664817
+    },
+    {
       "path": "assets/index-jUXURaGz.js",
       "sha256": "d5fb05691791d966e91327e17bed2361f685826c82d11eb26dd89518df7ecdee",
       "bytes": 747551
@@ -3965,6 +4023,11 @@
       "path": "assets/use-hud-browser-BTAU6Sgt.js",
       "sha256": "bc5f61245b324f21144c0260bc67462c23c417fa1fd3c26d535d1bd3bbb02ecb",
       "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-BxZZwxUt.js",
+      "sha256": "4d2230488bdff3bceb2c24860c0147de4769d67fec4ece4fcbf4284bde257b68",
+      "bytes": 594142
     },
     {
       "path": "assets/use-hud-browser-CFhoAaBq.js",
@@ -4383,7 +4446,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "41368d2e3b12d0e773f677301bafe911d45a0967b7784983e06b633a6befeda3",
+      "sha256": "efa3afeaa6106c3a688fc201f76a078bf1c0388a5a5c6b39d264c5833f577777",
       "bytes": 1595
     },
     {
@@ -7688,6 +7751,413 @@
           "verification": "Production build only; no browser/simulation"
         }
       }
+    },
+    "1392c4bb0bfa42980c656f296f05d2a840862d0a": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "Source review and production build only; no authorized simulation/tests for curved bridge and siding removal."
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No visual/browser inspection of this revision."
+      },
+      "layoutMetadata": {
+        "map": {
+          "id": "riverside",
+          "mode": "main-game",
+          "visibleSize": [
+            200,
+            200
+          ],
+          "bounds": {
+            "minX": -100,
+            "maxX": 100,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "simulationBounds": {
+            "minX": -320,
+            "maxX": 320,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "stations": [
+            {
+              "name": "Stasiun Selatan",
+              "position": [
+                24,
+                0.35,
+                66
+              ],
+              "tracks": 4,
+              "main": [
+                2,
+                3
+              ],
+              "loops": [
+                1,
+                4
+              ],
+              "facade": "south (+Z)",
+              "platformLength": 72,
+              "model": "models/station-selatan.glb",
+              "railCenter": [
+                24,
+                82
+              ]
+            },
+            {
+              "name": "Stasiun Utara",
+              "position": [
+                -42,
+                3.35,
+                -91
+              ],
+              "tracks": 2,
+              "front": [
+                1,
+                2
+              ],
+              "model": "models/station-utara.glb",
+              "platformLength": 78,
+              "railCenter": [
+                -42,
+                -78
+              ],
+              "facade": "south (+Z)"
+            }
+          ],
+          "river": {
+            "width": 22,
+            "waterY": -1.25,
+            "flow": "west-east"
+          },
+          "bridge": {
+            "turnStart": [
+              -82,
+              8
+            ],
+            "turnEnd": [
+              -50,
+              -24
+            ],
+            "tracks": 2,
+            "deckWidth": 8.2,
+            "construction": "continuous swept deck and curved bowstring trusses",
+            "bankCoverage": "union of both actual rail bank intervals plus 2m landings",
+            "sampling": {
+              "deckMaxStep": 1.25,
+              "trussMaxStep": 2.5
+            },
+            "verification": "source configuration; no geometry or visual test run",
+            "railHeadY": 0.35,
+            "longitudinalGrade": 0
+          },
+          "northHeight": 3,
+          "southHeight": 0,
+          "terrain": "Broad matte hillside between low inbound terrace and high North station; actual rail shoulders blend 2.6 to 24 m; river geometry retained",
+          "artDirection": "stylized low-poly diorama",
+          "diorama": {
+            "source": "original Blender kit",
+            "asset": "models/riverside-diorama-kit.glb",
+            "sourceAssets": 14,
+            "sourceTriangles": 10591,
+            "bytes": 912132,
+            "houses": 0,
+            "stations": {
+              "count": 2,
+              "construction": "Blender via MCP",
+              "source": "station concepts V01",
+              "exports": [
+                {
+                  "id": "station-utara",
+                  "file": "station-utara.glb",
+                  "bytes": 1245240,
+                  "triangles": 16088,
+                  "materials": 2,
+                  "textures": 0,
+                  "dimensionsBlenderXYZ": [
+                    26.9,
+                    10.815,
+                    6.275
+                  ],
+                  "upAxis": "Y",
+                  "facadeDirectionGLTF": "+Z",
+                  "windows": "separate material for night emission"
+                },
+                {
+                  "id": "station-selatan",
+                  "file": "station-selatan.glb",
+                  "bytes": 1291008,
+                  "triangles": 16388,
+                  "materials": 2,
+                  "textures": 0,
+                  "dimensionsBlenderXYZ": [
+                    33.3,
+                    13.525,
+                    7.22
+                  ],
+                  "upAxis": "Y",
+                  "facadeDirectionGLTF": "+Z",
+                  "windows": "separate material for night emission"
+                }
+              ]
+            },
+            "railway": {
+              "gauge": "existing calibrated gauge",
+              "ballast": "sloped matte shoulders; absent on bridge",
+              "sleepers": "two timber colors, instanced",
+              "fasteners": "instanced plates"
+            },
+            "atmosphereFixes": [
+              "relative vertex grass tint with separate bank/bed paint",
+              "wet roughness 0.78",
+              "minimum ambient 0.55",
+              "consistent toneMapped flags for locomotive/signal/bolt",
+              "station glows on lens centers"
+            ],
+            "instancing": "per asset per map quadrant",
+            "rendering": "ACES Filmic exposure 1, six lighting presets; Auto shadows, High GTAO/MSAA; weather softens directional light without changing exposure",
+            "sceneryKitLoaded": false
+          },
+          "terrainPalette": {
+            "grass": "#91b96c",
+            "bank": "#b7a47b",
+            "bed": "#788e7c",
+            "soil": "#a98b62"
+          },
+          "disabledModules": [
+            "bbm-yard",
+            "cargo-port",
+            "earthworks",
+            "livestock",
+            "locomotive-depot",
+            "nature-actors",
+            "north-farm",
+            "old-city",
+            "river-boats",
+            "road-crossing",
+            "road-traffic",
+            "tractor",
+            "village-scenery",
+            "wagon-siding",
+            "warehouse-stock"
+          ],
+          "traffic": {
+            "startingTrains": 0,
+            "automaticDefault": false,
+            "playerDispatch": true,
+            "savedConsists": true,
+            "southTracks": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "approachTracks": [
+              2,
+              3
+            ],
+            "operations": [
+              "stop",
+              "pass"
+            ],
+            "departure": "manual at both stations; optional auto dwell",
+            "southLoopRoutingEnabled": true,
+            "southCrossoverRoutingEnabled": true,
+            "turnoutReadiness": true,
+            "interlocking": "physical section locks; retain occupied blocks until tail clears; acquire braking lead ahead",
+            "northStorageParkingEnabled": false,
+            "autoRoster": {
+              "source": "built-in and saved collection",
+              "selection": "round-robin",
+              "preservesFormation": true,
+              "engines": [
+                "cc201",
+                "cc206"
+              ],
+              "carriages": [
+                "freight",
+                "passenger",
+                "tank",
+                "container"
+              ],
+              "maximumLiveTrains": 8,
+              "dispatchIntervalSeconds": 18,
+              "longFormationOperation": "pass",
+              "stopSpanLimit": 68,
+              "hiddenApproachSpanLimit": 146,
+              "maximumWagons": 4,
+              "legacyCollection": "preserve IDs/names and ordered first four cars in memory; no storage writes on read"
+            },
+            "capacity": {
+              "southPlatformLength": 72,
+              "southLoopParallelLength": 72,
+              "southLoopToeSeparation": 114,
+              "northPlatformLength": 78,
+              "singleLocoFourWagonsSpan": 55.832,
+              "doubleLocoFourWagonsSpan": 66.304,
+              "limitation": "New grade and extended U built successfully; runtime movement, physical envelope and visual result unverified."
+            },
+            "normalDirection": {
+              "south": {
+                "2": "west",
+                "3": "east"
+              },
+              "north": {
+                "1": "west",
+                "2": "east"
+              },
+              "runningSide": "right",
+              "loopExit": "return to normal lane via downstream crossover"
+            },
+            "singleSection": false,
+            "automaticTrains": "up to 8",
+            "stagedReservation": true,
+            "activityMix": {
+              "pass": 30,
+              "stop": 25,
+              "overtake": 25,
+              "meet": 20,
+              "store": 0
+            },
+            "mixMeaning": "Four active scenarios; no storage/retrieval dispatch. Store count retained as zero for status compatibility.",
+            "roadVehiclesEnabled": false,
+            "farmEnabled": false,
+            "crossingActive": false
+          },
+          "trackPlan": {
+            "revision": "rail-only-edge-u-grade-3",
+            "spacing": 4.2,
+            "south": {
+              "centerX": 24,
+              "buildingZ": 66,
+              "mainTracks": [
+                2,
+                3
+              ],
+              "tracks": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "loopNorthZ": 75.7,
+              "loopSouthZ": 88.3,
+              "westToeX": -32,
+              "eastToeX": 82,
+              "parallelFromX": -12,
+              "parallelToX": 60,
+              "platformLength": 72,
+              "platformZ": [
+                73.5,
+                77.8,
+                86.2
+              ],
+              "crossovers": [
+                {
+                  "id": "west",
+                  "fromX": -44,
+                  "toX": -36
+                },
+                {
+                  "id": "east",
+                  "fromX": 84,
+                  "toX": 106
+                }
+              ]
+            },
+            "north": {
+              "centerX": -42,
+              "railCenterZ": -78,
+              "buildingZ": -91,
+              "platformLength": 78,
+              "platformZ": [
+                -82.3,
+                -73.7
+              ],
+              "tracks": [
+                1,
+                2
+              ],
+              "mainTracks": [
+                1,
+                2
+              ]
+            },
+            "totalRoutes": 8,
+            "totalTurnouts": 12,
+            "hiddenApproachX": [
+              -260,
+              260
+            ],
+            "source": "src/rail/riverside-s-path.ts",
+            "shape": "South straight -> level curved river bridge -> uphill U near east edge -> level North station",
+            "westLeg": {
+              "x": -82,
+              "fromZ": 54,
+              "toZ": 8
+            },
+            "northU": {
+              "startX": 66,
+              "nearZ": -24,
+              "returnZ": -78,
+              "nominalRadius": 27,
+              "edgeEnvelope": "Authored near eastern edge; body/ballast bounds not programmatically validated"
+            },
+            "storageEnabled": false,
+            "elevation": {
+              "basis": "horizontal centreline chainage, shared across running lines",
+              "bridgeGroundY": 0,
+              "northStationGroundY": 3,
+              "gradeStartBeforeU": 50,
+              "gradeEndAfterU": 10,
+              "inboundStartX": 16,
+              "returnEndX": 56,
+              "profile": "quintic smoothstep; zero grade and grade derivative at transition ends"
+            }
+          },
+          "isMainMap": true,
+          "gameRuntime": {
+            "defaultSession": "free",
+            "implementation": "riverside-game-runtime",
+            "initialState": "empty, manual",
+            "legacyDemo": "Explicit rail-demo enables Auto on the same North-U rail engine."
+          },
+          "geometryVerification": "Source geometry/grade configuration implemented; no measured clearance, simulation or visual check.",
+          "layout": "rail-only, level curved bridge, rising U near eastern board edge"
+        },
+        "miniatureComposition": {
+          "active": "rail-only",
+          "kept": [
+            "plain terrain and river",
+            "two stations",
+            "perons and rail forecourts",
+            "rails and bridge",
+            "signals/turnouts",
+            "station lamps",
+            "rail portals"
+          ],
+          "sceneryActors": 0,
+          "workLayoutSites": 0,
+          "crossingActive": false,
+          "landform": {
+            "source": "src/maps/riverside/graded-landform.ts",
+            "northStationHeight": 3,
+            "bridgeFlat": true,
+            "terrainShoulderWidth": 2.6,
+            "terrainBlendWidth": 24,
+            "style": "plain broad hillside; no props or noise"
+          }
+        },
+        "proposedRailLayout": {
+          "status": "implemented",
+          "source": "docs/riverside-rail-only-layout.md",
+          "intent": "South-facing North station, no siding, U shifted west, turn begins on curved bridge",
+          "verification": "Production build only; no browser/simulation"
+        }
+      }
     }
   },
   "northBridgeJunction": {
@@ -7738,7 +8208,15 @@
     ],
     "sceneryActors": 0,
     "workLayoutSites": 0,
-    "crossingActive": false
+    "crossingActive": false,
+    "landform": {
+      "source": "src/maps/riverside/graded-landform.ts",
+      "northStationHeight": 3,
+      "bridgeFlat": true,
+      "terrainShoulderWidth": 2.6,
+      "terrainBlendWidth": 24,
+      "style": "plain broad hillside; no props or noise"
+    }
   },
   "functionalWorkLayout": {
     "active": false,
@@ -7832,7 +8310,7 @@
   "proposedRailLayout": {
     "status": "implemented",
     "source": "docs/riverside-rail-only-layout.md",
-    "intent": "South-facing North station, no siding, U shifted west, turn begins on curved bridge",
+    "intent": "U to eastern edge; bridge level; smooth uphill U with broad supporting hillside",
     "verification": "Production build only; no browser/simulation"
   }
 }
