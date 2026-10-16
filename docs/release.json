@@ -1,9 +1,9 @@
 {
-  "release": "riverside-backhoe-v2-f51b69a",
-  "sourceCommit": "f51b69a4107a4939ceb9abf5032067d40a04f346",
-  "sourceFingerprint": "be3f31c2678f349eb89e19a71d5d88e3fdb903fe",
+  "release": "riverside-s-corridor-8abe55b",
+  "sourceCommit": "8abe55b2534c99d03bf6d66213442f3bf4c7f761",
+  "sourceFingerprint": "f1726b2227f823676e959136700f1fc47229bd97",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T15:41:28.234666+00:00",
+  "builtAt": "2026-10-16T16:06:41.309522+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "ef359c85cc63b8ba424bc763e027987420ebfeea",
+  "previousSourceCommit": "f51b69a4107a4939ceb9abf5032067d40a04f346",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "User chose correction and build only; directed three-pose check and simulations not run"
+    "scope": "No tests or simulations authorized for the S railway redesign. Source review and production build only."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No browser or render check for V2; V1 preview is historical"
+    "scope": "No browser or visual checks for the S redesign; earlier layout screenshots do not validate this version."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -74,7 +74,7 @@
       "maxZ": 100
     },
     "simulationBounds": {
-      "minX": -100,
+      "minX": -320,
       "maxX": 320,
       "minZ": -100,
       "maxZ": 100
@@ -83,9 +83,9 @@
       {
         "name": "Stasiun Selatan",
         "position": [
-          12,
+          24,
           0.35,
-          39.5
+          66
         ],
         "tracks": 4,
         "main": [
@@ -98,14 +98,18 @@
         ],
         "facade": "south (+Z)",
         "platformLength": 72,
-        "model": "models/station-selatan.glb"
+        "model": "models/station-selatan.glb",
+        "railCenter": [
+          24,
+          82
+        ]
       },
       {
         "name": "Stasiun Utara",
         "position": [
-          28,
+          -42,
           3.35,
-          -69
+          -85
         ],
         "tracks": 3,
         "front": [
@@ -116,12 +120,16 @@
           3
         ],
         "buffer": [
-          82,
+          -92,
           3.35,
-          -79.2
+          -49.9
         ],
         "model": "models/station-utara.glb",
-        "platformLength": 78
+        "platformLength": 78,
+        "railCenter": [
+          -42,
+          -72
+        ]
       }
     ],
     "river": {
@@ -130,14 +138,18 @@
       "flow": "west-east"
     },
     "bridge": {
-      "x": -76.1,
-      "fromZ": 18,
-      "toZ": -18,
+      "approachNorth": [
+        28,
+        -14
+      ],
+      "approachSouth": [
+        -30,
+        18
+      ],
       "tracks": 2,
       "deckWidth": 8.2,
-      "style": "matte bowstring side trusses and masonry abutments"
+      "style": "matte bowstring side trusses; longitudinal deck covers both actual rail bank ranges"
     },
-    "curveRadius": 24,
     "northHeight": 3,
     "southHeight": 0,
     "terrain": "plain matte vertex colors; no grass texture/noise",
@@ -260,20 +272,20 @@
         "dispatchIntervalSeconds": 18,
         "longFormationOperation": "pass",
         "stopSpanLimit": 68,
-        "hiddenApproachSpanLimit": 188,
+        "hiddenApproachSpanLimit": 146,
         "maximumWagons": 4,
         "legacyCollection": "preserve IDs/names and ordered first four cars in memory; no storage writes on read"
       },
       "capacity": {
         "southPlatformLength": 72,
         "southLoopParallelLength": 72,
-        "southLoopToeSeparation": 116,
+        "southLoopToeSeparation": 114,
         "northPlatformLength": 78,
         "singleLocoFourWagonsSpan": 55.832,
         "doubleLocoFourWagonsSpan": 66.304,
         "fourStoredWagonsSpan": 45.36,
         "badugUsableLength": 65,
-        "limitation": "Four-car geometric limits retained; staged overtaking and physical storage/collect implemented but end-to-end playback unverified."
+        "limitation": "Source geometry and operations integrated; runtime train movement, clearance and visual checks not run."
       },
       "normalDirection": {
         "south": {
@@ -281,8 +293,8 @@
           "3": "east"
         },
         "north": {
-          "1": "east",
-          "2": "west"
+          "1": "west",
+          "2": "east"
         },
         "runningSide": "right",
         "loopExit": "return to normal lane via downstream crossover"
@@ -300,81 +312,73 @@
       "mixMeaning": "intent per 20 scenario deck; storage unavailable falls back to stop; pairs spawn two trains; counters count dispatched scenarios"
     },
     "trackPlan": {
-      "revision": "V4",
+      "revision": "S-corridor-1",
       "spacing": 4.2,
       "south": {
-        "centerX": 12,
-        "buildingZ": 39.5,
+        "centerX": 24,
+        "buildingZ": 66,
+        "mainTracks": [
+          2,
+          3
+        ],
         "tracks": [
           1,
           2,
           3,
           4
         ],
-        "mainTracks": [
-          2,
-          3
-        ],
-        "loopNorthZ": 50.8,
-        "loopSouthZ": 63.4,
-        "westToeX": -44,
-        "eastToeX": 72,
-        "parallelFromX": -24,
-        "parallelToX": 48,
+        "loopNorthZ": 75.7,
+        "loopSouthZ": 88.3,
+        "westToeX": -32,
+        "eastToeX": 82,
+        "parallelFromX": -12,
+        "parallelToX": 60,
         "platformLength": 72,
         "platformZ": [
-          48.6,
-          52.9,
-          61.3
-        ],
-        "lampX": [
-          -12,
-          12,
-          36
+          73.5,
+          77.8,
+          86.2
         ],
         "crossovers": [
           {
             "id": "west",
-            "fromX": -82,
-            "toX": -54
+            "fromX": -44,
+            "toX": -36
           },
           {
             "id": "east",
-            "fromX": 76,
-            "toX": 98
+            "fromX": 84,
+            "toX": 106
           }
         ]
       },
       "north": {
-        "centerX": 28,
-        "buildingZ": -69,
-        "storageTrackZ": -79.2,
-        "bufferX": 82,
-        "tracks": [
-          1,
-          2,
-          3
-        ],
-        "mainTracks": [
-          1,
-          2
-        ]
+        "centerX": -42,
+        "buildingZ": -85,
+        "storageTrackZ": -49.9,
+        "bufferX": -92,
+        "storageToeX": 8,
+        "storageStraightFromX": -22,
+        "platformLength": 78
       },
-      "entryOrder": "crossover -> loop fork -> station",
-      "access": "Right-hand operation: J2 -> J4 from east; J3 -> J1 from west; opposite-end crossover restores normal running lane",
       "totalRoutes": 9,
       "totalTurnouts": 13,
       "storageStraightLength": 70,
       "storageUsableNominal": 65,
-      "hiddenApproachX": 300
+      "hiddenApproachX": [
+        -260,
+        260
+      ],
+      "source": "src/rail/riverside-s-path.ts"
     },
     "isMainMap": true,
     "gameRuntime": {
       "defaultSession": "free",
       "implementation": "riverside-game-runtime",
       "initialState": "empty, manual",
-      "legacyDemo": "only explicit rail-demo sessions"
-    }
+      "legacyDemo": "Explicit rail-demo enables Auto on the same S engine."
+    },
+    "geometryVerification": "Curvature-eased S implemented; minimum radius and runtime envelopes not measured in this release."
   },
   "vegetation": {
     "active": "original diorama trees, shrubs, grass and flowers",
@@ -402,16 +406,20 @@
     "fullMapOverview": true,
     "focusPoints": {
       "south": [
-        12,
-        39.5
+        24,
+        66
       ],
       "north": [
-        28,
-        -69
+        -42,
+        -85
       ],
       "bridge": [
-        -76.1,
-        0
+        0,
+        2
+      ],
+      "earthworks": [
+        -91,
+        44
       ]
     },
     "maxZoom": 12,
@@ -639,6 +647,11 @@
       "path": "assets/AssetCatalogPage-d4A7ZVtj.js",
       "sha256": "12701ec2111a8a4ee8a700d9167d43cd3ce116fc4852b6be6a57d8074b531fc2",
       "bytes": 24446
+    },
+    {
+      "path": "assets/AssetCatalogPage-D5mIcs8U.js",
+      "sha256": "31f1ddbdfd61f478870e82755406a173df734b01073da7b4b5d4888120c19007",
+      "bytes": 24488
     },
     {
       "path": "assets/AssetCatalogPage-D5tHdIa6.js",
@@ -1131,6 +1144,11 @@
       "bytes": 12019
     },
     {
+      "path": "assets/Cc206ReviewPage-Cot9ivlD.js",
+      "sha256": "9c0a941ed01be662952d821e41d73cb67f70e01f2c088477055d7fc04aa930da",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-CW2pK1z9.js",
       "sha256": "0e2b67fab5fb05ca006f1c4c28fa9c3aa2c5c590645425d4a316804ca441fc7c",
       "bytes": 12019
@@ -1334,6 +1352,11 @@
       "path": "assets/ConsistsPage-BL41W6uq.js",
       "sha256": "9f9255704bb9c29576e7404041cbcb0d8c14a676c10cd340dd0ffcba508dfdfe",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-BnrCgUOr.js",
+      "sha256": "1d06f23ec9cc12f810912a0797d8344172a1ea96212f2826114a37f39247a60b",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-Bp1wAFfI.js",
@@ -1696,6 +1719,11 @@
       "bytes": 41405
     },
     {
+      "path": "assets/diorama-postprocessing-CsKabjsi.js",
+      "sha256": "51cfa567bf5cfd552ee00b36001daec1cf4cc8a70abcb74ade2feed615bf8973",
+      "bytes": 41254
+    },
+    {
       "path": "assets/diorama-postprocessing-CSQ9MSUB.js",
       "sha256": "c05bb282fadd2b1d87ea7465fa990d15af48086c4044c0ad059b2cff30166ac4",
       "bytes": 41405
@@ -1814,6 +1842,11 @@
       "path": "assets/DownloadSimple.es-B7QXsWVV.js",
       "sha256": "b95c3b797b6a9e7f45d3f07618cb8fdb72fdae3b4c8012a5339678bef95e020b",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-B949hUEQ.js",
+      "sha256": "3f5778c4b6829a040e27d0044084a25b7627dd9f26eb26e3aeedaf06d5778d18",
+      "bytes": 2099
     },
     {
       "path": "assets/DownloadSimple.es-BbTrM_pF.js",
@@ -2311,6 +2344,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-CYTCzUu6.js",
+      "sha256": "979990be300414bf3b0002041d3f20bb93ad6ea4bb77f779898ba25a4d4796c2",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-D-qsYcnN.js",
       "sha256": "873ac3ff60ae3da9b3ea4e872c6741732feb75c80368b4438705d82af1de262d",
       "bytes": 10825
@@ -2776,6 +2814,11 @@
       "bytes": 422
     },
     {
+      "path": "assets/HudPreviewPanel-Cx79oxVN.js",
+      "sha256": "25a98ddc61c9df0398c01698e65cf9cc5db71b8aa2ec733381c321bf508ee84c",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-CXHalgAS.js",
       "sha256": "5914da872084348c18fffa26a901263d2c8dd18ad009fbf675ad6130086eb205",
       "bytes": 422
@@ -2988,6 +3031,11 @@
     {
       "path": "assets/ImportedCc206Page-BEnPcn9N.js",
       "sha256": "e7ea457070e2e64d4fe954ef2fb3b9771cc1aafd587431e451a121863a5faebd",
+      "bytes": 18413
+    },
+    {
+      "path": "assets/ImportedCc206Page-Bexsb7Id.js",
+      "sha256": "94ac0846604b7314ed216b59c779d6c4f3e2174434448a945a2747090eea0793",
       "bytes": 18413
     },
     {
@@ -3269,6 +3317,11 @@
       "path": "assets/ImportedCc206Page-yFUA-ewm.js",
       "sha256": "e9177111b24ffd9700b7d5c18575a10f74bf4b42842e8578a95db107a45b02d4",
       "bytes": 13962
+    },
+    {
+      "path": "assets/index-02rirJvD.js",
+      "sha256": "e90b1afb31b9cb3e193a286fc3e5e530dc13952b8447f351a8599fbea64e8f02",
+      "bytes": 832868
     },
     {
       "path": "assets/index-3H24Mfi8.js",
@@ -3781,6 +3834,11 @@
       "bytes": 594128
     },
     {
+      "path": "assets/use-hud-browser-BTAU6Sgt.js",
+      "sha256": "bc5f61245b324f21144c0260bc67462c23c417fa1fd3c26d535d1bd3bbb02ecb",
+      "bytes": 594128
+    },
+    {
       "path": "assets/use-hud-browser-CFhoAaBq.js",
       "sha256": "ae27bbc54879bb888cfaa3b2b56b9202d496f9b930465361c2841c410aa0c7e4",
       "bytes": 594128
@@ -4192,7 +4250,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "633ae1f48dddd3852b5e5917ba78da410d0b2fec93925b2e1cd2293991da5e2e",
+      "sha256": "c1bc6b65d490428c3a797dd9ce43df2fdbd1dd6981296dfe166b53b6e94c01a6",
       "bytes": 1595
     },
     {
@@ -4627,34 +4685,34 @@
     ],
     "southLampPositions": [
       [
-        -12,
-        4.67,
-        48.6
+        0,
+        4.8,
+        73.5
       ],
       [
-        -12,
-        4.67,
-        61.3
+        0,
+        4.8,
+        86.2
       ],
       [
-        12,
-        4.67,
-        48.6
+        24,
+        4.8,
+        73.5
       ],
       [
-        12,
-        4.67,
-        61.3
+        24,
+        4.8,
+        86.2
       ],
       [
-        36,
-        4.67,
-        48.6
+        48,
+        4.8,
+        73.5
       ],
       [
-        36,
-        4.67,
-        61.3
+        48,
+        4.8,
+        86.2
       ]
     ],
     "seasonsEnabled": false,
@@ -4935,7 +4993,20 @@
     "persistentFleet": [
       "farm-pickup",
       "farm-flatbed"
-    ]
+    ],
+    "sLayout": {
+      "shiftX": -42,
+      "northernCropRowLimit": -43.4,
+      "tractor": [
+        -74,
+        -44.3
+      ],
+      "shed": [
+        -17,
+        -43.6
+      ],
+      "warehouse": "original east coordinates retained"
+    }
   },
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "roadTraffic": {
@@ -4944,7 +5015,20 @@
     "farmFleet": "permanent two-vehicle fleet with parking bays and a return-to-bay stage",
     "crossing": "body-length stop limits; admitted vehicles clear before arms lower; trains wait for closure",
     "collision": "shared world footprints across routes and fleet",
-    "runtimeValidation": "not run"
+    "runtimeValidation": "not run",
+    "sLayout": {
+      "southStop": [
+        24,
+        55
+      ],
+      "northStop": [
+        -42,
+        -94
+      ],
+      "northDetour": "R5 east, Z-78.4, X-8, Z-95",
+      "crossing": "actual oblique R4 crossing Z-20.8, derived from spline; road axis X",
+      "oldR5CrossingRemoved": true
+    }
   },
   "natureLife": {
     "kit": "models/riverside-nature-kit.glb",
@@ -5565,6 +5649,505 @@
         "screenshotsObtained": 0,
         "runtimeMotionVerified": false
       }
+    },
+    "f51b69a4107a4939ceb9abf5032067d40a04f346": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "User chose correction and build only; directed three-pose check and simulations not run"
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser or render check for V2; V1 preview is historical"
+      },
+      "layoutMetadata": {
+        "map": {
+          "id": "riverside",
+          "mode": "main-game",
+          "visibleSize": [
+            200,
+            200
+          ],
+          "bounds": {
+            "minX": -100,
+            "maxX": 100,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "simulationBounds": {
+            "minX": -320,
+            "maxX": 320,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "stations": [
+            {
+              "name": "Stasiun Selatan",
+              "position": [
+                24,
+                0.35,
+                66
+              ],
+              "tracks": 4,
+              "main": [
+                2,
+                3
+              ],
+              "loops": [
+                1,
+                4
+              ],
+              "facade": "south (+Z)",
+              "platformLength": 72,
+              "model": "models/station-selatan.glb",
+              "railCenter": [
+                24,
+                82
+              ]
+            },
+            {
+              "name": "Stasiun Utara",
+              "position": [
+                -42,
+                3.35,
+                -85
+              ],
+              "tracks": 3,
+              "front": [
+                1,
+                2
+              ],
+              "rearStorage": [
+                3
+              ],
+              "buffer": [
+                -92,
+                3.35,
+                -49.9
+              ],
+              "model": "models/station-utara.glb",
+              "platformLength": 78,
+              "railCenter": [
+                -42,
+                -72
+              ]
+            }
+          ],
+          "river": {
+            "width": 22,
+            "waterY": -1.25,
+            "flow": "west-east"
+          },
+          "bridge": {
+            "approachNorth": [
+              28,
+              -14
+            ],
+            "approachSouth": [
+              -30,
+              18
+            ],
+            "tracks": 2,
+            "deckWidth": 8.2,
+            "style": "matte bowstring side trusses; longitudinal deck covers both actual rail bank ranges"
+          },
+          "northHeight": 3,
+          "southHeight": 0,
+          "terrain": "plain matte vertex colors; no grass texture/noise",
+          "artDirection": "stylized low-poly diorama",
+          "diorama": {
+            "source": "original Blender kit",
+            "asset": "models/riverside-diorama-kit.glb",
+            "sourceAssets": 14,
+            "sourceTriangles": 10591,
+            "bytes": 912132,
+            "houses": 9,
+            "stations": {
+              "count": 2,
+              "construction": "Blender via MCP",
+              "source": "station concepts V01",
+              "exports": [
+                {
+                  "id": "station-utara",
+                  "file": "station-utara.glb",
+                  "bytes": 1245240,
+                  "triangles": 16088,
+                  "materials": 2,
+                  "textures": 0,
+                  "dimensionsBlenderXYZ": [
+                    26.9,
+                    10.815,
+                    6.275
+                  ],
+                  "upAxis": "Y",
+                  "facadeDirectionGLTF": "+Z",
+                  "windows": "separate material for night emission"
+                },
+                {
+                  "id": "station-selatan",
+                  "file": "station-selatan.glb",
+                  "bytes": 1291008,
+                  "triangles": 16388,
+                  "materials": 2,
+                  "textures": 0,
+                  "dimensionsBlenderXYZ": [
+                    33.3,
+                    13.525,
+                    7.22
+                  ],
+                  "upAxis": "Y",
+                  "facadeDirectionGLTF": "+Z",
+                  "windows": "separate material for night emission"
+                }
+              ]
+            },
+            "railway": {
+              "gauge": "existing calibrated gauge",
+              "ballast": "sloped matte shoulders; absent on bridge",
+              "sleepers": "two timber colors, instanced",
+              "fasteners": "instanced plates"
+            },
+            "atmosphereFixes": [
+              "relative vertex grass tint with separate bank/bed paint",
+              "wet roughness 0.78",
+              "minimum ambient 0.55",
+              "consistent toneMapped flags for locomotive/signal/bolt",
+              "station glows on lens centers"
+            ],
+            "instancing": "per asset per map quadrant",
+            "rendering": "ACES Filmic exposure 1, six lighting presets; Auto shadows, High GTAO/MSAA; weather softens directional light without changing exposure"
+          },
+          "terrainPalette": {
+            "grass": "#91b96c",
+            "bank": "#b7a47b",
+            "bed": "#788e7c",
+            "soil": "#a98b62"
+          },
+          "disabledModules": [
+            "bbm-yard",
+            "locomotive-depot",
+            "cargo-port",
+            "wagon-siding",
+            "old-city"
+          ],
+          "traffic": {
+            "startingTrains": 0,
+            "automaticDefault": false,
+            "playerDispatch": true,
+            "savedConsists": true,
+            "southTracks": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "approachTracks": [
+              2,
+              3
+            ],
+            "operations": [
+              "stop",
+              "pass"
+            ],
+            "departure": "manual at both stations; optional auto dwell",
+            "southLoopRoutingEnabled": true,
+            "southCrossoverRoutingEnabled": true,
+            "turnoutReadiness": true,
+            "interlocking": "physical section locks; retain occupied blocks until tail clears; acquire braking lead ahead",
+            "northStorageParkingEnabled": true,
+            "autoRoster": {
+              "source": "built-in and saved collection",
+              "selection": "round-robin",
+              "preservesFormation": true,
+              "engines": [
+                "cc201",
+                "cc206"
+              ],
+              "carriages": [
+                "freight",
+                "passenger",
+                "tank",
+                "container"
+              ],
+              "maximumLiveTrains": 8,
+              "dispatchIntervalSeconds": 18,
+              "longFormationOperation": "pass",
+              "stopSpanLimit": 68,
+              "hiddenApproachSpanLimit": 146,
+              "maximumWagons": 4,
+              "legacyCollection": "preserve IDs/names and ordered first four cars in memory; no storage writes on read"
+            },
+            "capacity": {
+              "southPlatformLength": 72,
+              "southLoopParallelLength": 72,
+              "southLoopToeSeparation": 114,
+              "northPlatformLength": 78,
+              "singleLocoFourWagonsSpan": 55.832,
+              "doubleLocoFourWagonsSpan": 66.304,
+              "fourStoredWagonsSpan": 45.36,
+              "badugUsableLength": 65,
+              "limitation": "Source geometry and operations integrated; runtime train movement, clearance and visual checks not run."
+            },
+            "normalDirection": {
+              "south": {
+                "2": "west",
+                "3": "east"
+              },
+              "north": {
+                "1": "west",
+                "2": "east"
+              },
+              "runningSide": "right",
+              "loopExit": "return to normal lane via downstream crossover"
+            },
+            "singleSection": false,
+            "automaticTrains": "up to 8",
+            "stagedReservation": true,
+            "activityMix": {
+              "pass": 25,
+              "stop": 20,
+              "overtake": 25,
+              "meet": 15,
+              "store": 15
+            },
+            "mixMeaning": "intent per 20 scenario deck; storage unavailable falls back to stop; pairs spawn two trains; counters count dispatched scenarios"
+          },
+          "trackPlan": {
+            "revision": "S-corridor-1",
+            "spacing": 4.2,
+            "south": {
+              "centerX": 24,
+              "buildingZ": 66,
+              "mainTracks": [
+                2,
+                3
+              ],
+              "tracks": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "loopNorthZ": 75.7,
+              "loopSouthZ": 88.3,
+              "westToeX": -32,
+              "eastToeX": 82,
+              "parallelFromX": -12,
+              "parallelToX": 60,
+              "platformLength": 72,
+              "platformZ": [
+                73.5,
+                77.8,
+                86.2
+              ],
+              "crossovers": [
+                {
+                  "id": "west",
+                  "fromX": -44,
+                  "toX": -36
+                },
+                {
+                  "id": "east",
+                  "fromX": 84,
+                  "toX": 106
+                }
+              ]
+            },
+            "north": {
+              "centerX": -42,
+              "buildingZ": -85,
+              "storageTrackZ": -49.9,
+              "bufferX": -92,
+              "storageToeX": 8,
+              "storageStraightFromX": -22,
+              "platformLength": 78
+            },
+            "totalRoutes": 9,
+            "totalTurnouts": 13,
+            "storageStraightLength": 70,
+            "storageUsableNominal": 65,
+            "hiddenApproachX": [
+              -260,
+              260
+            ],
+            "source": "src/rail/riverside-s-path.ts"
+          },
+          "isMainMap": true,
+          "gameRuntime": {
+            "defaultSession": "free",
+            "implementation": "riverside-game-runtime",
+            "initialState": "empty, manual",
+            "legacyDemo": "Explicit rail-demo enables Auto on the same S engine."
+          },
+          "geometryVerification": "Curvature-eased S implemented; minimum radius and runtime envelopes not measured in this release."
+        },
+        "camera": {
+          "gameplayRotation": "locked isometric",
+          "pan": "ground plane",
+          "defaultZoom": {
+            "riverside": 3.2,
+            "mini-station": 2,
+            "square-example": 3
+          },
+          "minZoom": {
+            "riverside": 1.2,
+            "mini-station": 1.1
+          },
+          "initialZoom": 1.3,
+          "fullMapOverview": true,
+          "focusPoints": {
+            "south": [
+              24,
+              66
+            ],
+            "north": [
+              -42,
+              -85
+            ],
+            "bridge": [
+              0,
+              2
+            ],
+            "earthworks": [
+              -91,
+              44
+            ]
+          },
+          "maxZoom": 12,
+          "navigationBounds": {
+            "minX": -100,
+            "maxX": 100,
+            "minZ": -100,
+            "maxZ": 100
+          },
+          "viewportAwareClamp": true,
+          "followHandoff": "after last car envelope clears visible map",
+          "stationaryFollowRetained": true,
+          "freePan": "locked at minimum zoom; opens progressively; full map target range at zoom 2.16",
+          "followPan": "viewport inset retained while the entire formation clears"
+        },
+        "northFarm": {
+          "models": [
+            "models/riverside-farm-kit.glb",
+            "models/riverside-road-kit.glb",
+            "models/riverside-vehicles.glb"
+          ],
+          "persistentFleet": [
+            "farm-pickup",
+            "farm-flatbed"
+          ],
+          "sLayout": {
+            "shiftX": -42,
+            "northernCropRowLimit": -43.4,
+            "tractor": [
+              -74,
+              -44.3
+            ],
+            "shed": [
+              -17,
+              -43.6
+            ],
+            "warehouse": "original east coordinates retained"
+          }
+        },
+        "roadTraffic": {
+          "stationParking": "same visible vehicle through arrival, parking, turnaround and departure",
+          "edgeFadeMetres": 6,
+          "farmFleet": "permanent two-vehicle fleet with parking bays and a return-to-bay stage",
+          "crossing": "body-length stop limits; admitted vehicles clear before arms lower; trains wait for closure",
+          "collision": "shared world footprints across routes and fleet",
+          "runtimeValidation": "not run",
+          "sLayout": {
+            "southStop": [
+              24,
+              55
+            ],
+            "northStop": [
+              -42,
+              -94
+            ],
+            "northDetour": "R5 east, Z-78.4, X-8, Z-95",
+            "crossing": "actual oblique R4 crossing Z-20.8, derived from spline; road axis X",
+            "oldR5CrossingRemoved": true
+          }
+        },
+        "railMapPortals": {
+          "arms": [
+            "south-east",
+            "north-east"
+          ],
+          "geometry": "Two low-poly stone portals, each with one wide shared bore for both tracks; obsolete north-exit portal removed",
+          "frontCoordinateMagnitude": 94.5,
+          "rearCoordinateMagnitude": 99.7,
+          "openingsPerArm": 1,
+          "openingsTotal": 2,
+          "openingWidth": 7.3,
+          "openingCrownAboveRail": 4.5,
+          "textures": 0,
+          "addedLights": 0,
+          "verification": "Source integration and build only; no portal browser review"
+        },
+        "miniatureComposition": {
+          "south": "Five existing houses composed as two hamlets, doors facing road or common court; transformed property anchors, short shared footpaths, clustered planting and open station arrival view",
+          "north": "Grouped crop phases, shared farm access and west haul stop aligned with actual R4 extension; clear walking aisle and fewer redundant field boundaries",
+          "stations": "South public arrival court separated from broad rail court; North passenger court separated from storage and warehouse yard",
+          "style": "Approved stylized low-poly kit, plain ground and shared palette; no new textures or asset downloads",
+          "verification": "Source review and production build only; no runtime/visual test"
+        },
+        "villagePlaces": {
+          "readiness": "layout-only",
+          "westVillage": "Open warung, three market stalls, communal well, courtyard and household garden",
+          "eastVillage": "Open workshop, lean-to workbay and village approach",
+          "northProduction": "Rice mill, drying court, lumbung, office, water tank and service approach",
+          "landscape": "Orchard and composed foreground groves; south station keepout no longer suppresses distant foreground vegetation",
+          "river": "Raised southbank leisure deck, small open pavilion, benches and connected shore walk",
+          "style": "Shared low-poly palette, cream plaster, layered terracotta roofs and matte plain ground",
+          "ownership": "Session-owned static geometry; approved vegetation kit remains instanced; traffic and inventory retain existing controllers",
+          "animations": "New activities and actors are not implemented by this layout release"
+        },
+        "naturalForeground": {
+          "readiness": "layout-only",
+          "places": "Household vegetable garden with potting pergola, irregular fenced pasture with open shelter and water trough",
+          "access": "Continuous dirt lane outside the rails, explicit field gate approaches; no railway crossing or new live vehicle route",
+          "landscape": "Asymmetric west/east woodland with low plants; former central vacant meadow now contains neighbouring hamlet roofs and shared courts",
+          "landforms": "Three broad smooth rises, maximum 1.5/0.45/1.3 metres, shared by terrain mesh and scenery height queries",
+          "style": "Existing matte low-poly palette and instanced kit; plain terrain, no new textures",
+          "runtime": "Nine ambient livestock actors with joint actions; existing rail/traffic and stock controllers retain authority"
+        },
+        "hamletComposition": {
+          "readiness": "layout-only",
+          "architecture": "Existing six roof volumes reorganized around a connected village street and shared courts",
+          "access": "Explicit building entrance-to-court connections replace nearest-court heuristics",
+          "landscape": "Reduced, asymmetric foreground framing; no rail or live road routing change",
+          "tableaux": "Public display figures remain static; old procedural cattle replaced by articulated kit actors",
+          "layout": "Two courtyard compounds; no repeated double frontage strip"
+        },
+        "riversideHouseBlocks": {
+          "authoringGridMetres": 0.5,
+          "visibleGrid": false,
+          "frontage": "R1 houses share broad compound frontages and exterior boundaries; individual fence/path clutter removed",
+          "foreground": "Six existing volumes form two courtyard compounds with rotated side wings",
+          "garden": "Aligned four-bed rectangular household garden X-66..-46 Z83..96 beside western compound",
+          "access": "Service spine Z69 X-57..30, court entry X-12, internal court lane Z82, livestock frontage ends X64",
+          "preserved": [
+            "rail routes",
+            "public road traffic",
+            "crop production plots",
+            "livestock positions"
+          ],
+          "source": [
+            "docs/riverside-house-blocks.md",
+            "docs/riverside-r1-parcels.md"
+          ],
+          "verification": "Source review and build; browser screenshot attempt blocked"
+        },
+        "proposedRailLayout": {
+          "status": "design_only",
+          "source": "docs/riverside-s-corridor-plan.md",
+          "intent": "Open winding double-track S within existing 200x200 Riverside; north station west and south station foreground",
+          "runtime": "Current U corridor, station locations, train routes and crossings unchanged by this release"
+        }
+      }
     }
   },
   "northBridgeJunction": {
@@ -5589,27 +6172,75 @@
     "verification": "Source review and production build; no browser or simulation tests"
   },
   "railMapPortals": {
-    "arms": [
-      "south-east",
-      "north-east"
+    "layout": "S",
+    "west": [
+      -100,
+      -72
     ],
-    "geometry": "Two low-poly stone portals, each with one wide shared bore for both tracks; obsolete north-exit portal removed",
-    "frontCoordinateMagnitude": 94.5,
-    "rearCoordinateMagnitude": 99.7,
-    "openingsPerArm": 1,
-    "openingsTotal": 2,
-    "openingWidth": 7.3,
-    "openingCrownAboveRail": 4.5,
-    "textures": 0,
-    "addedLights": 0,
-    "verification": "Source integration and build only; no portal browser review"
+    "east": [
+      100,
+      82
+    ],
+    "boresPerPortal": 1,
+    "hiddenApproachX": [
+      -260,
+      260
+    ],
+    "visualVerification": "not_run"
   },
   "miniatureComposition": {
-    "south": "Five existing houses composed as two hamlets, doors facing road or common court; transformed property anchors, short shared footpaths, clustered planting and open station arrival view",
-    "north": "Grouped crop phases, shared farm access and west haul stop aligned with actual R4 extension; clear walking aisle and fewer redundant field boundaries",
-    "stations": "South public arrival court separated from broad rail court; North passenger court separated from storage and warehouse yard",
-    "style": "Approved stylized low-poly kit, plain ground and shared palette; no new textures or asset downloads",
-    "verification": "Source review and production build only; no runtime/visual test"
+    "revision": "S parcels",
+    "hamletCourtCenters": [
+      [
+        6,
+        42.5
+      ],
+      [
+        39,
+        42.75
+      ]
+    ],
+    "southStationAvenueX": 24,
+    "gardenBounds": [
+      -43,
+      -30,
+      45.3,
+      53.7
+    ],
+    "livestockBounds": [
+      61.4,
+      93,
+      38.8,
+      53.6
+    ],
+    "orchardBounds": [
+      58,
+      83,
+      -64,
+      -46
+    ],
+    "workshop": [
+      75.6,
+      60.9
+    ],
+    "workshopAccessX": 95,
+    "market": {
+      "center": [
+        -35,
+        34
+      ],
+      "uniformScale": 0.7
+    },
+    "riceMill": [
+      4,
+      -88.5
+    ],
+    "dryingCourt": [
+      -18,
+      -86
+    ],
+    "bankPlaceShiftX": 35,
+    "visualVerification": "not_run"
   },
   "functionalWorkLayout": {
     "readiness": "layout-only",
@@ -5623,32 +6254,181 @@
     "verification": "Source review and production build only; runtime, appearance and swept-path checks not run"
   },
   "villagePlaces": {
-    "readiness": "layout-only",
-    "westVillage": "Open warung, three market stalls, communal well, courtyard and household garden",
-    "eastVillage": "Open workshop, lean-to workbay and village approach",
-    "northProduction": "Rice mill, drying court, lumbung, office, water tank and service approach",
-    "landscape": "Orchard and composed foreground groves; south station keepout no longer suppresses distant foreground vegetation",
-    "river": "Raised southbank leisure deck, small open pavilion, benches and connected shore walk",
-    "style": "Shared low-poly palette, cream plaster, layered terracotta roofs and matte plain ground",
-    "ownership": "Session-owned static geometry; approved vegetation kit remains instanced; traffic and inventory retain existing controllers",
-    "animations": "New activities and actors are not implemented by this layout release"
+    "layoutRevision": "S parcels",
+    "contract": {
+      "revision": "S parcels",
+      "hamletCourtCenters": [
+        [
+          6,
+          42.5
+        ],
+        [
+          39,
+          42.75
+        ]
+      ],
+      "southStationAvenueX": 24,
+      "gardenBounds": [
+        -43,
+        -30,
+        45.3,
+        53.7
+      ],
+      "livestockBounds": [
+        61.4,
+        93,
+        38.8,
+        53.6
+      ],
+      "orchardBounds": [
+        58,
+        83,
+        -64,
+        -46
+      ],
+      "workshop": [
+        75.6,
+        60.9
+      ],
+      "workshopAccessX": 95,
+      "market": {
+        "center": [
+          -35,
+          34
+        ],
+        "uniformScale": 0.7
+      },
+      "riceMill": [
+        4,
+        -88.5
+      ],
+      "dryingCourt": [
+        -18,
+        -86
+      ],
+      "bankPlaceShiftX": 35,
+      "visualVerification": "not_run"
+    },
+    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+    "verification": "source review and build only"
   },
   "naturalForeground": {
-    "readiness": "layout-only",
-    "places": "Household vegetable garden with potting pergola, irregular fenced pasture with open shelter and water trough",
-    "access": "Continuous dirt lane outside the rails, explicit field gate approaches; no railway crossing or new live vehicle route",
-    "landscape": "Asymmetric west/east woodland with low plants; former central vacant meadow now contains neighbouring hamlet roofs and shared courts",
-    "landforms": "Three broad smooth rises, maximum 1.5/0.45/1.3 metres, shared by terrain mesh and scenery height queries",
-    "style": "Existing matte low-poly palette and instanced kit; plain terrain, no new textures",
-    "runtime": "Nine ambient livestock actors with joint actions; existing rail/traffic and stock controllers retain authority"
+    "layoutRevision": "S parcels",
+    "contract": {
+      "revision": "S parcels",
+      "hamletCourtCenters": [
+        [
+          6,
+          42.5
+        ],
+        [
+          39,
+          42.75
+        ]
+      ],
+      "southStationAvenueX": 24,
+      "gardenBounds": [
+        -43,
+        -30,
+        45.3,
+        53.7
+      ],
+      "livestockBounds": [
+        61.4,
+        93,
+        38.8,
+        53.6
+      ],
+      "orchardBounds": [
+        58,
+        83,
+        -64,
+        -46
+      ],
+      "workshop": [
+        75.6,
+        60.9
+      ],
+      "workshopAccessX": 95,
+      "market": {
+        "center": [
+          -35,
+          34
+        ],
+        "uniformScale": 0.7
+      },
+      "riceMill": [
+        4,
+        -88.5
+      ],
+      "dryingCourt": [
+        -18,
+        -86
+      ],
+      "bankPlaceShiftX": 35,
+      "visualVerification": "not_run"
+    },
+    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+    "verification": "source review and build only"
   },
   "hamletComposition": {
-    "readiness": "layout-only",
-    "architecture": "Existing six roof volumes reorganized around a connected village street and shared courts",
-    "access": "Explicit building entrance-to-court connections replace nearest-court heuristics",
-    "landscape": "Reduced, asymmetric foreground framing; no rail or live road routing change",
-    "tableaux": "Public display figures remain static; old procedural cattle replaced by articulated kit actors",
-    "layout": "Two courtyard compounds; no repeated double frontage strip"
+    "layoutRevision": "S parcels",
+    "contract": {
+      "revision": "S parcels",
+      "hamletCourtCenters": [
+        [
+          6,
+          42.5
+        ],
+        [
+          39,
+          42.75
+        ]
+      ],
+      "southStationAvenueX": 24,
+      "gardenBounds": [
+        -43,
+        -30,
+        45.3,
+        53.7
+      ],
+      "livestockBounds": [
+        61.4,
+        93,
+        38.8,
+        53.6
+      ],
+      "orchardBounds": [
+        58,
+        83,
+        -64,
+        -46
+      ],
+      "workshop": [
+        75.6,
+        60.9
+      ],
+      "workshopAccessX": 95,
+      "market": {
+        "center": [
+          -35,
+          34
+        ],
+        "uniformScale": 0.7
+      },
+      "riceMill": [
+        4,
+        -88.5
+      ],
+      "dryingCourt": [
+        -18,
+        -86
+      ],
+      "bankPlaceShiftX": 35,
+      "visualVerification": "not_run"
+    },
+    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+    "verification": "source review and build only"
   },
   "graphics": {
     "presets": [
@@ -5712,7 +6492,14 @@
     "scenery": "Existing cattle shelter/trough plus goat shelter, feed store, chicken coop/run and retained faceted duck pond",
     "replacement": "Three static procedural cattle replaced; public display figurines retained",
     "inventory": "Ambient actors only; no livestock stock/business simulation",
-    "verification": "Production build and independent code review; no runtime/simulation/browser tests"
+    "verification": "Production build and independent code review; no runtime/simulation/browser tests",
+    "sPlacement": {
+      "scale": 0.8,
+      "offsetX": 33.8,
+      "offsetZ": -22.8,
+      "terrain": "inverse transformed shared height query",
+      "residentCount": 9
+    }
   },
   "newVillageMasterplan": {
     "status": "archived",
@@ -5727,23 +6514,63 @@
     "design": "Archived documents only"
   },
   "riversideHouseBlocks": {
-    "authoringGridMetres": 0.5,
-    "visibleGrid": false,
-    "frontage": "R1 houses share broad compound frontages and exterior boundaries; individual fence/path clutter removed",
-    "foreground": "Six existing volumes form two courtyard compounds with rotated side wings",
-    "garden": "Aligned four-bed rectangular household garden X-66..-46 Z83..96 beside western compound",
-    "access": "Service spine Z69 X-57..30, court entry X-12, internal court lane Z82, livestock frontage ends X64",
-    "preserved": [
-      "rail routes",
-      "public road traffic",
-      "crop production plots",
-      "livestock positions"
-    ],
-    "source": [
-      "docs/riverside-house-blocks.md",
-      "docs/riverside-r1-parcels.md"
-    ],
-    "verification": "Source review and build; browser screenshot attempt blocked"
+    "layoutRevision": "S parcels",
+    "contract": {
+      "revision": "S parcels",
+      "hamletCourtCenters": [
+        [
+          6,
+          42.5
+        ],
+        [
+          39,
+          42.75
+        ]
+      ],
+      "southStationAvenueX": 24,
+      "gardenBounds": [
+        -43,
+        -30,
+        45.3,
+        53.7
+      ],
+      "livestockBounds": [
+        61.4,
+        93,
+        38.8,
+        53.6
+      ],
+      "orchardBounds": [
+        58,
+        83,
+        -64,
+        -46
+      ],
+      "workshop": [
+        75.6,
+        60.9
+      ],
+      "workshopAccessX": 95,
+      "market": {
+        "center": [
+          -35,
+          34
+        ],
+        "uniformScale": 0.7
+      },
+      "riceMill": [
+        4,
+        -88.5
+      ],
+      "dryingCourt": [
+        -18,
+        -86
+      ],
+      "bankPlaceShiftX": 35,
+      "visualVerification": "not_run"
+    },
+    "historicalSource": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+    "verification": "source review and build only"
   },
   "tractor": {
     "file": "models/riverside-tractor-kit.glb",
@@ -5771,7 +6598,11 @@
       "modular plough"
     ],
     "authoring": "Actual Blender GLB and inspected Cycles preview",
-    "verification": "Source review and build; no runtime or browser tests"
+    "verification": "Source review and build; no runtime or browser tests",
+    "sPlacement": [
+      -74,
+      -44.3
+    ]
   },
   "earthworks": {
     "file": "models/riverside-earthworks-kit.glb",
@@ -5817,12 +6648,13 @@
         0.52,
         0.57
       ]
-    }
+    },
+    "retainedDuringSRedesign": true
   },
   "proposedRailLayout": {
-    "status": "design_only",
+    "status": "implemented",
     "source": "docs/riverside-s-corridor-plan.md",
-    "intent": "Open winding double-track S within existing 200x200 Riverside; north station west and south station foreground",
-    "runtime": "Current U corridor, station locations, train routes and crossings unchanged by this release"
+    "runtime": "Open S double track, two stations, both directions, local loops/crossovers/storage and same Auto engine",
+    "verification": "Production build only; no S simulation/browser check"
   }
 }
