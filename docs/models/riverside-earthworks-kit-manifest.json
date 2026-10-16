@@ -1,0 +1,79 @@
+{
+  "schema": "riverside-earthworks-v1",
+  "asset": "riverside-earthworks-kit.glb",
+  "artStyle": "stylized-low-poly-diorama",
+  "units": "metres",
+  "up": "+Y",
+  "forward": "+X",
+  "templates": [
+    {
+      "root": "ASSET-earthworks-excavator",
+      "triangles": 4008,
+      "size": [
+        6.949429512023926,
+        4.163755321875215,
+        2.940000057220459
+      ]
+    },
+    {
+      "root": "ASSET-earthworks-dumptruck",
+      "triangles": 4520,
+      "size": [
+        5.985000133514404,
+        2.858000159263611,
+        2.8420000076293945
+      ]
+    }
+  ],
+  "triangleCount": 8528,
+  "materials": 1,
+  "textures": 0,
+  "animations": [],
+  "excavator": {
+    "boomPivot": [
+      0.51,
+      1.63,
+      0.34
+    ],
+    "boomLength": 2.65,
+    "stickLength": 2.05,
+    "bucketTip": [
+      1.25,
+      -0.64,
+      0
+    ],
+    "jointAxis": "+Z",
+    "turretAxis": "+Y",
+    "defaultPose": {
+      "boom": 0.9,
+      "stick": -1.8,
+      "bucket": 0.6
+    }
+  },
+  "truck": {
+    "bedHinge": [
+      -2.61,
+      1.27,
+      0
+    ],
+    "bedTipAxis": "+Z",
+    "wheelRadius": 0.55,
+    "payloadMount": [
+      1.62,
+      0.13,
+      0
+    ],
+    "dischargePort": [
+      -0.12,
+      0.14,
+      0
+    ],
+    "payloadRegionSize": [
+      3.0,
+      0.85,
+      1.91
+    ]
+  },
+  "byteLength": 618892,
+  "sha256": "36073573a12717a52c1707215f2a30650102de3b04fb9212e7c56029718fc770"
+}

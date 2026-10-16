@@ -1,9 +1,9 @@
 {
-  "release": "riverside-house-blocks-tractor-9571bf0",
-  "sourceCommit": "9571bf0bf59490d9b5130b82f4b1cd12893b470e",
-  "sourceFingerprint": "e805044062ff13a3ec08f69223f869c2368afe86",
+  "release": "riverside-courtyards-earthworks-ef359c8",
+  "sourceCommit": "ef359c85cc63b8ba424bc763e027987420ebfeea",
+  "sourceFingerprint": "8c3b0fea54911b26b7e23d9e0c79a592703db91f",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T15:04:07.679459+00:00",
+  "builtAt": "2026-10-16T15:24:59.231077+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "2a58606920f33fca4339a36bd409a6c2abcd699f",
+  "previousSourceCommit": "9571bf0bf59490d9b5130b82f4b1cd12893b470e",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,14 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "Production build and source review only; no tests or simulation run"
+    "scope": "Source review and production build; no simulation or test suite"
   },
   "browserChecks": {
-    "status": "not_run",
-    "scope": "No browser or in-game visual checks in this change; tractor preview is a Blender authoring render"
+    "status": "blocked",
+    "authorizedScope": "One overview and one house/garden screenshot, no simulation",
+    "reason": "IAB/Chrome adapters unavailable; Windows Computer Use stopped due to URL confidence guard",
+    "screenshotsObtained": 0,
+    "runtimeMotionVerified": false
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -616,6 +619,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-CxAlvQ6V.js",
+      "sha256": "865c02cea681fd07d79241eb1f4cc590fa539efeb1be44a6679bb91b99c5db31",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-CXjIsToV.js",
       "sha256": "28e0e2d42b705194c13b5c2858ee7f66aa7b22d594a5ae034b884240d145ca9c",
       "bytes": 24488
@@ -1161,6 +1169,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-DQX9Ot9n.js",
+      "sha256": "c2c553028564796d182d56d0e7d7ccf8fd8c00cea8370f1061a0eb01f30798ba",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-DRCmBni6.js",
       "sha256": "440d3383382cefc55c829f31b33ace7d41d4166f4b10d17389de885ef76d4308",
       "bytes": 11973
@@ -1409,6 +1422,11 @@
       "path": "assets/ConsistsPage-CtqJ93SD.js",
       "sha256": "fee33a518cd09bd5ae6b37cb25820127f928ed322f593588e61bba411f7307e6",
       "bytes": 8448
+    },
+    {
+      "path": "assets/ConsistsPage-CUd2cozx.js",
+      "sha256": "a0f7cc032edab21e72c73044a3e5c097ac5112ffdefdb41585287d810ef6c783",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-CuernzGn.js",
@@ -1711,6 +1729,11 @@
       "bytes": 40937
     },
     {
+      "path": "assets/diorama-postprocessing-hq_4T6WH.js",
+      "sha256": "48e8103d92c50727e47ec76b3f77b061cf3994ce935614c8dc8f8d770ae8e70e",
+      "bytes": 41254
+    },
+    {
       "path": "assets/diorama-postprocessing-OFCPMJlr.js",
       "sha256": "debfbe00a6d5c4a4c33ad3720bde2b0ce51c603113ed5801b31757f286ccfdc9",
       "bytes": 41405
@@ -2001,6 +2024,11 @@
       "bytes": 2099
     },
     {
+      "path": "assets/DownloadSimple.es-DvzJFolA.js",
+      "sha256": "6805ebacc26627a7f0e9adb1c5709adcd25159bea4ccffb7d2cc6618b6b06bdc",
+      "bytes": 2099
+    },
+    {
       "path": "assets/DownloadSimple.es-DzE4FrcB.js",
       "sha256": "8e0044bd767d47db58e95d8281e8af02cdf88d4ae715b908ecae73dc8b8a72e2",
       "bytes": 2061
@@ -2234,6 +2262,11 @@
       "path": "assets/GaugeReviewPage-CSBIm8lE.js",
       "sha256": "4d5adc83572333e92815ee76e4d63921de09dc9ee6441815ae6d78b34164069b",
       "bytes": 10815
+    },
+    {
+      "path": "assets/GaugeReviewPage-Cv2xNxCN.js",
+      "sha256": "4350a8f19c2524d6ac96e49d5cbcfe7cbe8e95bf915d28f420e8d24549df5137",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage-CWCBiOJ2.js",
@@ -2554,6 +2587,11 @@
       "path": "assets/HudPreviewPanel-B2e9hGYN.js",
       "sha256": "fd59ea74d026581b94210126796a94d19fd90bd77a38ab0c59be0ee97c0bf99a",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-B46NXfS_.js",
+      "sha256": "b9cb014d384ec4952b43433674e69dd280e1f8b9836550c4c4d8c6c0b5e11fd5",
+      "bytes": 422
     },
     {
       "path": "assets/HudPreviewPanel-B4RFl-QU.js",
@@ -3036,6 +3074,11 @@
       "bytes": 18413
     },
     {
+      "path": "assets/ImportedCc206Page-ChsjLr8u.js",
+      "sha256": "51196eab9eab8b71d4f4826827cf54f329ebd0cf8c60c5246475e4c6c50e5668",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-CLM7wV9h.js",
       "sha256": "7cc8dcc5895d2c9a0bab946daa80275df7c9452c7bbaf7fdcbd11e492fe59825",
       "bytes": 18413
@@ -3466,6 +3509,11 @@
       "bytes": 55455
     },
     {
+      "path": "assets/index-DDj-JglC.js",
+      "sha256": "f2f8238941cb869239d9d724799a84293896a95c76174f623bb9df8a903e29c1",
+      "bytes": 825297
+    },
+    {
       "path": "assets/index-Dg-2gX-o.js",
       "sha256": "1ba1e50587bd06030913db91ab52ac6f4ba0146543b6c52f219d1d9e29b7720b",
       "bytes": 783558
@@ -3668,6 +3716,11 @@
     {
       "path": "assets/use-hud-browser-BDm4Yz6K.js",
       "sha256": "40594a0d006cef857d62fba934659c7f56569f4f80d039b3e241f298a72a7d65",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-BIIqHZdv.js",
+      "sha256": "52b03d9080bc5bfd8631a1a916c56ab80bd1037fee7b9dc16cfc7db28e6f7bb9",
       "bytes": 594128
     },
     {
@@ -4092,7 +4145,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "f89125115c7ba05606a9935b2300665031b6e98b081dfb5e2cd635ec3986ac56",
+      "sha256": "2953a235bffb14f858db05928218682cde3b070ca225084143271ab19d9044ad",
       "bytes": 1595
     },
     {
@@ -4374,6 +4427,16 @@
       "path": "models/riverside-diorama-kit.glb",
       "sha256": "7c56b8fb6473c0c88c84b26452847c8e02686171bb87c30a18f4b65d084464fb",
       "bytes": 912132
+    },
+    {
+      "path": "models/riverside-earthworks-kit-manifest.json",
+      "sha256": "cdbde448ff62143d64777c3b469a3204cb44c554ee8eb47688390c63485de116",
+      "bytes": 1480
+    },
+    {
+      "path": "models/riverside-earthworks-kit.glb",
+      "sha256": "36073573a12717a52c1707215f2a30650102de3b04fb9212e7c56029718fc770",
+      "bytes": 618892
     },
     {
       "path": "models/riverside-farm-kit.glb",
@@ -5430,6 +5493,17 @@
         "screenshotsObtained": 0,
         "result": "New map appearance and runtime motion not verified"
       }
+    },
+    "9571bf0bf59490d9b5130b82f4b1cd12893b470e": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "Production build and source review only; no tests or simulation run"
+      },
+      "browserChecks": {
+        "status": "not_run",
+        "scope": "No browser or in-game visual checks in this change; tractor preview is a Blender authoring render"
+      }
     }
   },
   "northBridgeJunction": {
@@ -5513,7 +5587,7 @@
     "access": "Explicit building entrance-to-court connections replace nearest-court heuristics",
     "landscape": "Reduced, asymmetric foreground framing; no rail or live road routing change",
     "tableaux": "Public display figures remain static; old procedural cattle replaced by articulated kit actors",
-    "layout": "Two aligned frontage rows around common courts; existing six volumes retained"
+    "layout": "Two courtyard compounds; no repeated double frontage strip"
   },
   "graphics": {
     "presets": [
@@ -5594,18 +5668,21 @@
   "riversideHouseBlocks": {
     "authoringGridMetres": 0.5,
     "visibleGrid": false,
-    "frontage": "Four R1 houses aligned at Z32; rear cottage linked to perpendicular shared lane",
-    "foreground": "Six existing volumes on two rows Z75.5/92 facing shared courts at Z84",
-    "parcels": "Shared data for plots, door approaches, low boundaries and scenery keep-outs",
+    "frontage": "R1 houses share broad compound frontages and exterior boundaries; individual fence/path clutter removed",
+    "foreground": "Six existing volumes form two courtyard compounds with rotated side wings",
+    "garden": "Aligned four-bed rectangular household garden X-66..-46 Z83..96 beside western compound",
+    "access": "Service spine Z69 X-57..30, court entry X-12, internal court lane Z82, livestock frontage ends X64",
     "preserved": [
-      "road traffic routes",
-      "rail geometry",
-      "farm plot locations",
-      "market",
-      "livestock enclosures"
+      "rail routes",
+      "public road traffic",
+      "crop production plots",
+      "livestock positions"
     ],
-    "source": "docs/riverside-house-blocks.md",
-    "verification": "Source review and build; no in-game visual check"
+    "source": [
+      "docs/riverside-house-blocks.md",
+      "docs/riverside-r1-parcels.md"
+    ],
+    "verification": "Source review and build; browser screenshot attempt blocked"
   },
   "tractor": {
     "file": "models/riverside-tractor-kit.glb",
@@ -5634,5 +5711,37 @@
     ],
     "authoring": "Actual Blender GLB and inspected Cycles preview",
     "verification": "Source review and build; no runtime or browser tests"
+  },
+  "earthworks": {
+    "file": "models/riverside-earthworks-kit.glb",
+    "sha256": "36073573a12717a52c1707215f2a30650102de3b04fb9212e7c56029718fc770",
+    "bytes": 618892,
+    "triangles": 8528,
+    "materials": 1,
+    "textures": 0,
+    "models": [
+      "detailed tracked excavator",
+      "six-wheel tipping dump truck"
+    ],
+    "location": "Separate western parcel X-99..-83.2 Z31..58, outside railway",
+    "focus": "Galian tanah",
+    "pitDepth": 0.45,
+    "cycleSeconds": 80,
+    "actions": [
+      "dig",
+      "curl",
+      "raise",
+      "slew",
+      "bucket-dump",
+      "return-arm",
+      "haul",
+      "tip",
+      "reverse",
+      "wait"
+    ],
+    "motion": "Three scoops; actual bucket/bed ports transfer soil; loaded haul and empty reverse retrace bounded western curve",
+    "clock": "Session seconds; pause/reset use existing session time",
+    "limits": "Bounded ambient scene; no public road traffic route, soil physics or business inventory",
+    "verification": "Actual Blender authoring render inspected, independent source review and build; game motion not visually verified"
   }
 }
