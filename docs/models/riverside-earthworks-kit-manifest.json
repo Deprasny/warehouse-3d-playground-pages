@@ -1,5 +1,5 @@
 {
-  "schema": "riverside-earthworks-v1",
+  "schema": "riverside-earthworks-v2",
   "asset": "riverside-earthworks-kit.glb",
   "artStyle": "stylized-low-poly-diorama",
   "units": "metres",
@@ -8,10 +8,10 @@
   "templates": [
     {
       "root": "ASSET-earthworks-excavator",
-      "triangles": 4008,
+      "triangles": 6360,
       "size": [
-        6.949429512023926,
-        4.163755321875215,
+        7.557074546813965,
+        5.006126785650849,
         2.940000057220459
       ]
     },
@@ -25,7 +25,7 @@
       ]
     }
   ],
-  "triangleCount": 8528,
+  "triangleCount": 10880,
   "materials": 1,
   "textures": 0,
   "animations": [],
@@ -35,11 +35,21 @@
       1.63,
       0.34
     ],
-    "boomLength": 2.65,
-    "stickLength": 2.05,
+    "boomLength": 3.6,
+    "stickLength": 3.0,
     "bucketTip": [
-      1.25,
-      -0.64,
+      -1.22,
+      -0.67,
+      0
+    ],
+    "bucketPayload": [
+      -0.46,
+      -0.28,
+      0
+    ],
+    "mouthNormalLocal": [
+      -0.7071067811865476,
+      0.7071067811865476,
       0
     ],
     "jointAxis": "+Z",
@@ -48,6 +58,21 @@
       "boom": 0.9,
       "stick": -1.8,
       "bucket": 0.6
+    },
+    "linkage": {
+      "rockerA": [
+        2.51,
+        0.28,
+        0
+      ],
+      "bucketB": [
+        0.16,
+        0.23,
+        0
+      ],
+      "rockerLength": 0.52,
+      "linkLength": 0.57,
+      "elbow": "positiveY"
     }
   },
   "truck": {
@@ -74,6 +99,6 @@
       1.91
     ]
   },
-  "byteLength": 618892,
-  "sha256": "36073573a12717a52c1707215f2a30650102de3b04fb9212e7c56029718fc770"
+  "byteLength": 791948,
+  "sha256": "9e73c51a769ec6e7a4273e04571d44000bd6b99afa8c5df30348286df88869b6"
 }

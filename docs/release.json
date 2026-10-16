@@ -1,9 +1,9 @@
 {
-  "release": "riverside-courtyards-earthworks-ef359c8",
-  "sourceCommit": "ef359c85cc63b8ba424bc763e027987420ebfeea",
-  "sourceFingerprint": "8c3b0fea54911b26b7e23d9e0c79a592703db91f",
+  "release": "riverside-backhoe-v2-f51b69a",
+  "sourceCommit": "f51b69a4107a4939ceb9abf5032067d40a04f346",
+  "sourceFingerprint": "be3f31c2678f349eb89e19a71d5d88e3fdb903fe",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T15:24:59.231077+00:00",
+  "builtAt": "2026-10-16T15:41:28.234666+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9571bf0bf59490d9b5130b82f4b1cd12893b470e",
+  "previousSourceCommit": "ef359c85cc63b8ba424bc763e027987420ebfeea",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,14 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "Source review and production build; no simulation or test suite"
+    "scope": "User chose correction and build only; directed three-pose check and simulations not run"
   },
   "browserChecks": {
-    "status": "blocked",
-    "authorizedScope": "One overview and one house/garden screenshot, no simulation",
-    "reason": "IAB/Chrome adapters unavailable; Windows Computer Use stopped due to URL confidence guard",
-    "screenshotsObtained": 0,
-    "runtimeMotionVerified": false
+    "status": "not_run",
+    "scope": "No browser or render check for V2; V1 preview is historical"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -524,6 +521,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-C-Xa4JRY.js",
+      "sha256": "cc50824ac6d2b5ead15379dcd2cb4268c44b68fb35c1529fc13178028b8f49d0",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-C2OsvIAK.js",
       "sha256": "9765e8d48cb4849c561f0b8a60cefcf00d49ec1c564890f4791b84ba8879b643",
       "bytes": 24488
@@ -949,6 +951,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-2rX6wZtd.js",
+      "sha256": "1a974b1ea64c432966ca5970f1ab4b61856bdbbdb9d3dac3ad713d06dbc51054",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-3JfwuMTm.js",
       "sha256": "892defcf8d40c6fffd50128fcd523d4d39ae534bcef18170e997c7824f32fd66",
       "bytes": 11978
@@ -1307,6 +1314,11 @@
       "path": "assets/ConsistsPage-BIlaSUSl.js",
       "sha256": "eb278a5ae0d3eb282b2dbe9b87cdd52ab2efff404b2960d3f86c77008812259c",
       "bytes": 8442
+    },
+    {
+      "path": "assets/ConsistsPage-Bj8Bexfk.js",
+      "sha256": "5f67fa975c71bac85ee906566afaefd78d3dc8604392614b499bd106f80f4c87",
+      "bytes": 8470
     },
     {
       "path": "assets/ConsistsPage-BKUPBVvS.js",
@@ -1734,6 +1746,11 @@
       "bytes": 41254
     },
     {
+      "path": "assets/diorama-postprocessing-MdzfSDny.js",
+      "sha256": "81dd80e35d7a3545b18c12fcb52c3575d7feaff6cee8a7c6697444acc80053cd",
+      "bytes": 41254
+    },
+    {
       "path": "assets/diorama-postprocessing-OFCPMJlr.js",
       "sha256": "debfbe00a6d5c4a4c33ad3720bde2b0ce51c603113ed5801b31757f286ccfdc9",
       "bytes": 41405
@@ -1862,6 +1879,11 @@
       "path": "assets/DownloadSimple.es-Bya2zbNQ.js",
       "sha256": "e14af7969bd55fcc2741766b82ff201b66e4f6f696be27bc02bf3360627b6b9c",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-C4TR50B4.js",
+      "sha256": "68a8c131e7a519994a0966e771213062e4444576793e68d755bfe85f9861500c",
+      "bytes": 2099
     },
     {
       "path": "assets/DownloadSimple.es-C9LYz7m7.js",
@@ -2092,6 +2114,11 @@
       "path": "assets/DownloadSimple.es-YpAhwte1.js",
       "sha256": "0e155d35aa0d3a57ef1f0b9470d7ef89288ffb5b35746cd78679f49da9b829dc",
       "bytes": 2061
+    },
+    {
+      "path": "assets/GaugeReviewPage--J27jdL0.js",
+      "sha256": "879996b17ab3bdd0515976987803af51a4a1b3df7b32eb4b8301ed85da4a1497",
+      "bytes": 18201
     },
     {
       "path": "assets/GaugeReviewPage--O58ziDx.js",
@@ -2869,6 +2896,11 @@
       "bytes": 421
     },
     {
+      "path": "assets/HudPreviewPanel-M-Bvq6LV.js",
+      "sha256": "7495e26aec597f0dbff62623de2179f44b942ee4a34f9efea10e8521e0bf3606",
+      "bytes": 422
+    },
+    {
       "path": "assets/HudPreviewPanel-SWsAdHfA.js",
       "sha256": "69449eaf99f22fa5c886b5ab27790f9fe9938ef0569829fd1249cc60ee4cdb9c",
       "bytes": 421
@@ -3137,6 +3169,11 @@
       "path": "assets/ImportedCc206Page-DF6LLEke.js",
       "sha256": "9a6439644ec2933e458e961583fa250fae85cd81dbbabe3641ede367b20854f6",
       "bytes": 13962
+    },
+    {
+      "path": "assets/ImportedCc206Page-DfLartG5.js",
+      "sha256": "e3b5768a395e1b55245978b8e150d8f8b8592f20211a806a01296bf2529ae8a0",
+      "bytes": 18413
     },
     {
       "path": "assets/ImportedCc206Page-Dgr33cUw.js",
@@ -3519,6 +3556,11 @@
       "bytes": 783558
     },
     {
+      "path": "assets/index-DGqol66c.js",
+      "sha256": "e73ea043ba2b01ee1b6496c6cf65180a56aaa63ebfe5cdb64cbb0e417d2c854a",
+      "bytes": 826222
+    },
+    {
       "path": "assets/index-DJqFutiQ.js",
       "sha256": "e355991d35047f047432a1df1c37d2daa1d22db8865dad2efb3c027973061bfc",
       "bytes": 749509
@@ -3781,6 +3823,11 @@
     {
       "path": "assets/use-hud-browser-DMrCcVm5.js",
       "sha256": "f8d4ef9d16782f56f2b1459b27a33422a2ef40ff99965855eb0c4a05abbaa38a",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-DzgaZxuu.js",
+      "sha256": "3230f8b3b3cbc0b343c3667eb78fdf9bb60d258a7461a7495d2d725b3cd30c44",
       "bytes": 594128
     },
     {
@@ -4145,7 +4192,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "2953a235bffb14f858db05928218682cde3b070ca225084143271ab19d9044ad",
+      "sha256": "633ae1f48dddd3852b5e5917ba78da410d0b2fec93925b2e1cd2293991da5e2e",
       "bytes": 1595
     },
     {
@@ -4430,13 +4477,13 @@
     },
     {
       "path": "models/riverside-earthworks-kit-manifest.json",
-      "sha256": "cdbde448ff62143d64777c3b469a3204cb44c554ee8eb47688390c63485de116",
-      "bytes": 1480
+      "sha256": "ca60e12bbaf098f38639f76d08b080129465b24807467fbc19df92300d44ff97",
+      "bytes": 1900
     },
     {
       "path": "models/riverside-earthworks-kit.glb",
-      "sha256": "36073573a12717a52c1707215f2a30650102de3b04fb9212e7c56029718fc770",
-      "bytes": 618892
+      "sha256": "9e73c51a769ec6e7a4273e04571d44000bd6b99afa8c5df30348286df88869b6",
+      "bytes": 791948
     },
     {
       "path": "models/riverside-farm-kit.glb",
@@ -5504,6 +5551,20 @@
         "status": "not_run",
         "scope": "No browser or in-game visual checks in this change; tractor preview is a Blender authoring render"
       }
+    },
+    "ef359c85cc63b8ba424bc763e027987420ebfeea": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "Source review and production build; no simulation or test suite"
+      },
+      "browserChecks": {
+        "status": "blocked",
+        "authorizedScope": "One overview and one house/garden screenshot, no simulation",
+        "reason": "IAB/Chrome adapters unavailable; Windows Computer Use stopped due to URL confidence guard",
+        "screenshotsObtained": 0,
+        "runtimeMotionVerified": false
+      }
     }
   },
   "northBridgeJunction": {
@@ -5714,14 +5775,14 @@
   },
   "earthworks": {
     "file": "models/riverside-earthworks-kit.glb",
-    "sha256": "36073573a12717a52c1707215f2a30650102de3b04fb9212e7c56029718fc770",
-    "bytes": 618892,
-    "triangles": 8528,
+    "sha256": "9e73c51a769ec6e7a4273e04571d44000bd6b99afa8c5df30348286df88869b6",
+    "bytes": 791948,
+    "triangles": 10880,
     "materials": 1,
     "textures": 0,
     "models": [
-      "detailed tracked excavator",
-      "six-wheel tipping dump truck"
+      "Detailed backhoe excavator with concave inward-facing bucket, five teeth and four-bar linkage",
+      "Six-wheel dump truck (geometry retained)"
     ],
     "location": "Separate western parcel X-99..-83.2 Z31..58, outside railway",
     "focus": "Galian tanah",
@@ -5739,9 +5800,29 @@
       "reverse",
       "wait"
     ],
-    "motion": "Three scoops; actual bucket/bed ports transfer soil; loaded haul and empty reverse retrace bounded western curve",
+    "motion": "Cutting lip pulls inward 5.1 to 3.9m; cupped carry and positive-pitch pour use actual negative-X tooth port",
     "clock": "Session seconds; pause/reset use existing session time",
     "limits": "Bounded ambient scene; no public road traffic route, soil physics or business inventory",
-    "verification": "Actual Blender authoring render inspected, independent source review and build; game motion not visually verified"
+    "verification": "Independent source review and production build only; no V2 runtime, render or pose tests",
+    "version": 2,
+    "geometry": {
+      "boomLength": 3.6,
+      "stickLength": 3.0,
+      "bucketTip": [
+        -1.22,
+        -0.67,
+        0
+      ],
+      "linkLengths": [
+        0.52,
+        0.57
+      ]
+    }
+  },
+  "proposedRailLayout": {
+    "status": "design_only",
+    "source": "docs/riverside-s-corridor-plan.md",
+    "intent": "Open winding double-track S within existing 200x200 Riverside; north station west and south station foreground",
+    "runtime": "Current U corridor, station locations, train routes and crossings unchanged by this release"
   }
 }
