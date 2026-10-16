@@ -1,9 +1,9 @@
 {
-  "release": "riverside-cut-bank-6e11fe7",
-  "sourceCommit": "6e11fe7c9f66fdc94140b9af0fe6a9d1463bda3f",
-  "sourceFingerprint": "a7abec8460851b0c31652388ed3d22c6333e0c58",
+  "release": "riverside-pier-bridge-e90ab25",
+  "sourceCommit": "e90ab25d458e7ced843ea9b2e551c5179ffb733b",
+  "sourceFingerprint": "318ab9bcc864e0fdd4eda105c54c327b6abfb48c",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T17:06:31.575Z",
+  "builtAt": "2026-10-16T17:21:24.482Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "315ac0636960b10ceff2aca682d0b934f8fcaed7",
+  "previousSourceCommit": "6e11fe7c9f66fdc94140b9af0fe6a9d1463bda3f",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -32,7 +32,7 @@
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No visual/browser validation for river cut bank, shallows and board-edge water section."
+    "scope": "No visual/browser validation for the two-span pier bridge."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -144,15 +144,16 @@
       ],
       "tracks": 2,
       "deckWidth": 8.2,
-      "construction": "continuous swept deck and curved bowstring trusses",
+      "construction": "two bowstring spans on a mid-river cutwater pier, plate-girder deck edges, overhead bracing",
       "bankCoverage": "union of both actual rail bank intervals plus 2m landings",
       "sampling": {
         "deckMaxStep": 1.25,
         "trussMaxStep": 2.5
       },
-      "verification": "source configuration; no geometry or visual test run",
+      "verification": "tsc and Node geometry metadata; no visual test run",
       "railHeadY": 0.35,
-      "longitudinalGrade": 0
+      "longitudinalGrade": 0,
+      "abutmentZFightFix": true
     },
     "northHeight": 8,
     "southHeight": 0,
