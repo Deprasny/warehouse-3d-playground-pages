@@ -1,0 +1,80 @@
+{
+  "schema": "riverside-tractor-v1",
+  "asset": "riverside-tractor-kit.glb",
+  "artStyle": "stylized-low-poly-diorama",
+  "units": "metres",
+  "up": "+Y",
+  "forward": "+X",
+  "pivot": "ground origin",
+  "templates": [
+    {
+      "id": "tractor-compact",
+      "root": "ASSET-tractor-compact",
+      "triangles": 2876,
+      "meshes": 5,
+      "bounds": {
+        "min": [
+          -1.8200000524520874,
+          0.00014907121658325195,
+          -1.093999981880188
+        ],
+        "max": [
+          1.8450000286102295,
+          2.630000114440918,
+          1.093999981880188
+        ]
+      },
+      "size": [
+        3.665000081062317,
+        2.6298510432243347,
+        2.187999963760376
+      ]
+    },
+    {
+      "id": "tractor-plough",
+      "root": "ASSET-tractor-plough",
+      "triangles": 160,
+      "meshes": 1,
+      "bounds": {
+        "min": [
+          -1.309999942779541,
+          -0.4147487282752991,
+          -0.8600000143051147
+        ],
+        "max": [
+          0.13547062873840332,
+          0.05429080128669739,
+          0.8600000143051147
+        ]
+      },
+      "size": [
+        1.4454705715179443,
+        0.46903952956199646,
+        1.7200000286102295
+      ]
+    }
+  ],
+  "triangleCount": 3036,
+  "material": {
+    "vertexColors": "COLOR_0",
+    "roughness": 0.88,
+    "metalness": 0,
+    "textures": 0
+  },
+  "wheelRadius": {
+    "FL": 0.43,
+    "FR": 0.43,
+    "RL": 0.72,
+    "RR": 0.72
+  },
+  "wheelSpinAxis": "+Z local",
+  "frontSteeringAxis": "+Y local",
+  "hitch": [
+    -1.82,
+    0.42,
+    0
+  ],
+  "animations": [],
+  "byteLength": 224560,
+  "sha256": "f1432613e2adb2e5df40a01f9f8cc09643bb97c05de95980638741571b7ce189"
+}

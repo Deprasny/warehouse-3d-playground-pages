@@ -1,9 +1,9 @@
 {
-  "release": "lintas-lembah-initial-2a58606",
-  "sourceCommit": "2a58606920f33fca4339a36bd409a6c2abcd699f",
-  "sourceFingerprint": "1fcfd916f304e2ff4a4285a16887691fac9593a8",
+  "release": "riverside-house-blocks-tractor-9571bf0",
+  "sourceCommit": "9571bf0bf59490d9b5130b82f4b1cd12893b470e",
+  "sourceFingerprint": "e805044062ff13a3ec08f69223f869c2368afe86",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-15T18:20:23.758369+00:00",
+  "builtAt": "2026-10-16T15:04:07.679459+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "18ca7887ff82319b1852fd14e00848f7a544c316",
+  "previousSourceCommit": "2a58606920f33fca4339a36bd409a6c2abcd699f",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,14 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "Source review and production build only; no simulation or test suite run"
+    "scope": "Production build and source review only; no tests or simulation run"
   },
   "browserChecks": {
-    "status": "blocked",
-    "authorizedScope": "One overview and one station/farm screenshot; no simulation or other interaction tests",
-    "reason": "Computer Use stopped because Chrome URL could not be verified confidently",
-    "screenshotsObtained": 0,
-    "result": "New map appearance and runtime motion not verified"
+    "status": "not_run",
+    "scope": "No browser or in-game visual checks in this change; tractor preview is a Blender authoring render"
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -764,6 +761,11 @@
       "bytes": 24446
     },
     {
+      "path": "assets/AssetCatalogPage-R7E0hoTM.js",
+      "sha256": "88aed5365d8d1da7b81ea895d40a25bd17051f1daa821661255f6de50572e6ab",
+      "bytes": 24488
+    },
+    {
       "path": "assets/AssetCatalogPage-TsJg2oFB.js",
       "sha256": "5403336fff76d50aa2fe6eac6b4d323b60be27060482b5b70ae3b4e5ff9b6e8e",
       "bytes": 24488
@@ -1234,6 +1236,11 @@
       "bytes": 11982
     },
     {
+      "path": "assets/Cc206ReviewPage-ltcNWQYB.js",
+      "sha256": "924e05806f02b16018270400fa9c024701485d13acaf40df72f0f46cc69eb01d",
+      "bytes": 12019
+    },
+    {
       "path": "assets/Cc206ReviewPage-mGQZ7vrF.js",
       "sha256": "6595757bee5c0d9588c84c2b549094664efe96cacfa22dfcd8c865b8ae9719aa",
       "bytes": 11982
@@ -1386,6 +1393,11 @@
     {
       "path": "assets/ConsistsPage-CnQHP32l.js",
       "sha256": "6e71dd08f653194be09dcd0bfd9cd952d2c17a81950a23c1197e7cf28da1b144",
+      "bytes": 8470
+    },
+    {
+      "path": "assets/ConsistsPage-CpNvWpn_.js",
+      "sha256": "db68cd184e381b5f4e6c8ff6c17b9d55b9b82bddd8a98ceef96ae181cecdafc1",
       "bytes": 8470
     },
     {
@@ -1619,6 +1631,11 @@
       "bytes": 41254
     },
     {
+      "path": "assets/diorama-postprocessing-BwUSBXFJ.js",
+      "sha256": "79c88708bac62ee2ab94a86a174ff95c1ea3f21da5cde5f0ce52c41d33ba0496",
+      "bytes": 41254
+    },
+    {
       "path": "assets/diorama-postprocessing-C5n2mWYa.js",
       "sha256": "1428f08305c45ddaeccda8f05cb8ddc1fff8a38e49466243e2dea9ba9c906005",
       "bytes": 40932
@@ -1777,6 +1794,11 @@
       "path": "assets/DownloadSimple.es-BIaXvn8f.js",
       "sha256": "1f6704cd83120cd103051c73799a24077b23472cf2fb0c1939eb682a0a17017c",
       "bytes": 2061
+    },
+    {
+      "path": "assets/DownloadSimple.es-BiGkVCC9.js",
+      "sha256": "78a36c5174e4bee1087edbe0b207c05607a45e65c88101873a49b843c818995d",
+      "bytes": 2099
     },
     {
       "path": "assets/DownloadSimple.es-BLSPxvnZ.js",
@@ -2254,6 +2276,11 @@
       "bytes": 10825
     },
     {
+      "path": "assets/GaugeReviewPage-DhMSIO16.js",
+      "sha256": "8338e2956d5e6bc4c38143ff02657ecabd5d7ea71f5c97b5744beec49e7415a3",
+      "bytes": 18201
+    },
+    {
       "path": "assets/GaugeReviewPage-DinPhDzx.js",
       "sha256": "3f43647cb4d42db25a556f3e6667ac180b8032f739a8641df7af6c02f8a06bb1",
       "bytes": 18201
@@ -2592,6 +2619,11 @@
       "path": "assets/HudPreviewPanel-Br1DcFOr.js",
       "sha256": "a5af1a1867711f6ea08dd134e962060cb65a60ffd8b4ac196858e9d719abee8b",
       "bytes": 421
+    },
+    {
+      "path": "assets/HudPreviewPanel-BSRrMwzu.js",
+      "sha256": "7bcef354a61c18bc63a0b5c469173ee41ca294e2afa44054e075ef3af511f01a",
+      "bytes": 422
     },
     {
       "path": "assets/HudPreviewPanel-BwAe2SiM.js",
@@ -2994,6 +3026,11 @@
       "bytes": 13963
     },
     {
+      "path": "assets/ImportedCc206Page-CEwNpSC1.js",
+      "sha256": "8462d0448a49fd6906832c0971378403c31b252a07c9c7f55e84bf3c15ba6f37",
+      "bytes": 18413
+    },
+    {
       "path": "assets/ImportedCc206Page-CfCJ0_uR.js",
       "sha256": "3a69289f6e8dfd97ada81ec8b35a5aad91a17eeb5e40052c3caa90256106a987",
       "bytes": 18413
@@ -3282,6 +3319,11 @@
       "path": "assets/index-BxQEDhG4.js",
       "sha256": "27c6e73a601a7b564c59589fe3aad6df0fc3bd18653a8ed1ec9055aaa62ac2fc",
       "bytes": 797410
+    },
+    {
+      "path": "assets/index-BzGDmBb_.js",
+      "sha256": "706ce26b1e0d2dbc88832bac54d47366ef06df055d09cbd4ad38c2e59e8a354a",
+      "bytes": 815023
     },
     {
       "path": "assets/index-BZKIMRr9.js",
@@ -3646,6 +3688,11 @@
     {
       "path": "assets/use-hud-browser-CFhoAaBq.js",
       "sha256": "ae27bbc54879bb888cfaa3b2b56b9202d496f9b930465361c2841c410aa0c7e4",
+      "bytes": 594128
+    },
+    {
+      "path": "assets/use-hud-browser-CSrul0uS.js",
+      "sha256": "94d479b1f13408d0719e362de9ceae34a417fc83b5e6094e54aec0fe0c8d4ce5",
       "bytes": 594128
     },
     {
@@ -4045,7 +4092,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "7150873b0343fbb46f670337f7fdc6d0d6b4d0d829c4734b81257a296ba24e5c",
+      "sha256": "f89125115c7ba05606a9935b2300665031b6e98b081dfb5e2cd635ec3986ac56",
       "bytes": 1595
     },
     {
@@ -4362,6 +4409,16 @@
       "path": "models/riverside-station-export.json",
       "sha256": "b9034036a7771e08fafd65c0c59542ed501ce2569f044920afc084d60d400fbc",
       "bytes": 708
+    },
+    {
+      "path": "models/riverside-tractor-kit-manifest.json",
+      "sha256": "92b6dc06460585ec4e9526bc8c765547036ca9652ac9b8edec69372f609de876",
+      "bytes": 1756
+    },
+    {
+      "path": "models/riverside-tractor-kit.glb",
+      "sha256": "f1432613e2adb2e5df40a01f9f8cc09643bb97c05de95980638741571b7ce189",
+      "bytes": 224560
     },
     {
       "path": "models/riverside-vehicles.glb",
@@ -5359,6 +5416,20 @@
         "status": "not_run",
         "scope": "Runtime visual interaction and animation not inspected in browser"
       }
+    },
+    "2a58606920f33fca4339a36bd409a6c2abcd699f": {
+      "checks": {
+        "status": "not_run",
+        "run": [],
+        "scope": "Source review and production build only; no simulation or test suite run"
+      },
+      "browserChecks": {
+        "status": "blocked",
+        "authorizedScope": "One overview and one station/farm screenshot; no simulation or other interaction tests",
+        "reason": "Computer Use stopped because Chrome URL could not be verified confidently",
+        "screenshotsObtained": 0,
+        "result": "New map appearance and runtime motion not verified"
+      }
     }
   },
   "northBridgeJunction": {
@@ -5441,7 +5512,8 @@
     "architecture": "Existing six roof volumes reorganized around a connected village street and shared courts",
     "access": "Explicit building entrance-to-court connections replace nearest-court heuristics",
     "landscape": "Reduced, asymmetric foreground framing; no rail or live road routing change",
-    "tableaux": "Public display figures remain static; old procedural cattle replaced by articulated kit actors"
+    "tableaux": "Public display figures remain static; old procedural cattle replaced by articulated kit actors",
+    "layout": "Two aligned frontage rows around common courts; existing six volumes retained"
   },
   "graphics": {
     "presets": [
@@ -5463,8 +5535,8 @@
     "clock": "session simulation seconds",
     "handoff": "Different visible moving train after continuous signal hold; regular scheduled dwell excluded; keep current if no alternative",
     "manualSelection": "unchanged",
-    "newMap": "Lintas Lembah added as separate selectable map with its own Auto dispatcher",
-    "scope": "Existing Riverside runtime; new map has separate initial runtime"
+    "newMap": "Lintas Lembah removed; Riverside remains default",
+    "scope": "Riverside runtime"
   },
   "northCrossingDemandFix": {
     "cause": "Exit signal waited for barrier while zero speed suppressed the old50m demand trigger",
@@ -5508,58 +5580,59 @@
     "verification": "Production build and independent code review; no runtime/simulation/browser tests"
   },
   "newVillageMasterplan": {
-    "status": "initial_separate_map_implemented",
+    "status": "archived",
     "source": "docs/design/riverside-two-station-winding-masterplan.md",
-    "implementation": "docs/lintas-lembah-map.md",
-    "network": "Open winding double-track corridor with two stations; no closed circuit",
-    "runtime": "Directional main tracks 2/3 operational; city loops 1/4 and goods sidings scenic only",
-    "defaultMap": "Riverside remains default"
+    "runtime": "Lintas Lembah removed at user request; focus returned to Riverside"
   },
   "lintasLembah": {
     "id": "lintas-lembah",
-    "name": "Lintas Lembah",
-    "url": "?map=lintas-lembah#/game",
-    "size": [
-      400,
-      300
-    ],
-    "selection": "Display settings map selector; Riverside stays default",
-    "rail": "Open S-shaped double track, hidden portals, village station and city station",
-    "operations": [
-      "main 2 eastbound",
-      "main 3 westbound",
-      "pass",
-      "stop at both stations",
-      "manual departure",
-      "Auto"
-    ],
-    "scenicOnly": [
-      "city outer tracks 1/4",
-      "goods sidings",
-      "receiving pickups"
-    ],
-    "capacity": 8,
-    "maximumTrainSpan": 84,
-    "scenery": [
-      "village courts",
-      "school",
-      "terrace fields",
-      "orchard",
+    "status": "removed",
+    "runtime": "Implementation and registration deleted",
+    "legacyURL": "Unknown map parameter falls back to Riverside",
+    "design": "Archived documents only"
+  },
+  "riversideHouseBlocks": {
+    "authoringGridMetres": 0.5,
+    "visibleGrid": false,
+    "frontage": "Four R1 houses aligned at Z32; rear cottage linked to perpendicular shared lane",
+    "foreground": "Six existing volumes on two rows Z75.5/92 facing shared courts at Z84",
+    "parcels": "Shared data for plots, door approaches, low boundaries and scenery keep-outs",
+    "preserved": [
+      "road traffic routes",
+      "rail geometry",
+      "farm plot locations",
       "market",
-      "mill",
-      "warehouse",
-      "livestock farm",
-      "river",
-      "hills"
+      "livestock enclosures"
     ],
-    "ambientMotion": [
-      "nine livestock actors",
-      "crop and grass wind",
-      "kitchen smoke",
-      "rowing boat",
-      "sparse water glints"
+    "source": "docs/riverside-house-blocks.md",
+    "verification": "Source review and build; no in-game visual check"
+  },
+  "tractor": {
+    "file": "models/riverside-tractor-kit.glb",
+    "sha256": "f1432613e2adb2e5df40a01f9f8cc09643bb97c05de95980638741571b7ce189",
+    "triangles": 3036,
+    "materials": 1,
+    "textures": 0,
+    "sizeMetres": [
+      3.665,
+      2.63,
+      2.188
     ],
-    "limits": "No new moving road traffic, loading/unloading, overtaking, stock simulation or yard movements",
-    "verification": "Build and independent source review only; visual attempt blocked and no simulation run"
+    "lengthWithPloughMetres": 4.975,
+    "placement": [
+      -32,
+      -44.3
+    ],
+    "surface": "Existing dry north paddy headland",
+    "state": "parked",
+    "motion": "No tractor navigation, ploughing or crop-phase simulation",
+    "rig": [
+      "four wheel pivots",
+      "front steering pivots",
+      "rear hitch",
+      "modular plough"
+    ],
+    "authoring": "Actual Blender GLB and inspected Cycles preview",
+    "verification": "Source review and build; no runtime or browser tests"
   }
 }
