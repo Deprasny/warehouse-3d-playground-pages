@@ -1,5 +1,5 @@
 {
-  "schema": "riverside-earthworks-v2",
+  "schema": "riverside-earthworks-v3",
   "asset": "riverside-earthworks-kit.glb",
   "artStyle": "stylized-low-poly-diorama",
   "units": "metres",
@@ -8,24 +8,24 @@
   "templates": [
     {
       "root": "ASSET-earthworks-excavator",
-      "triangles": 6360,
+      "triangles": 9756,
       "size": [
-        7.557074546813965,
-        5.006126785650849,
-        2.940000057220459
+        7.535484313964844,
+        4.976802711375058,
+        2.8299999237060547
       ]
     },
     {
       "root": "ASSET-earthworks-dumptruck",
-      "triangles": 4520,
+      "triangles": 9168,
       "size": [
-        5.985000133514404,
-        2.858000159263611,
-        2.8420000076293945
+        6.049999952316284,
+        2.8600001335144043,
+        2.7699999809265137
       ]
     }
   ],
-  "triangleCount": 10880,
+  "triangleCount": 18924,
   "materials": 1,
   "textures": 0,
   "animations": [],
@@ -59,6 +59,131 @@
       "stick": -1.8,
       "bucket": 0.6
     },
+    "trackGauge": 2.04,
+    "trackSpin": "rotation.z = -distance / radius (all wheels, both sides; pivot turn: sides opposite)",
+    "trackWheels": [
+      {
+        "index": 0,
+        "kind": "idler",
+        "centerXY": [
+          1.62,
+          0.56
+        ],
+        "radius": 0.43,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-0",
+          "RIG-excavator-track-R-wheel-0"
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "roller",
+        "centerXY": [
+          1.0,
+          0.205
+        ],
+        "radius": 0.135,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-1",
+          "RIG-excavator-track-R-wheel-1"
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "carrier",
+        "centerXY": [
+          0.6,
+          0.95
+        ],
+        "radius": 0.085,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-2",
+          "RIG-excavator-track-R-wheel-2"
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "roller",
+        "centerXY": [
+          0.5,
+          0.205
+        ],
+        "radius": 0.135,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-3",
+          "RIG-excavator-track-R-wheel-3"
+        ]
+      },
+      {
+        "index": 4,
+        "kind": "roller",
+        "centerXY": [
+          0,
+          0.205
+        ],
+        "radius": 0.135,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-4",
+          "RIG-excavator-track-R-wheel-4"
+        ]
+      },
+      {
+        "index": 5,
+        "kind": "roller",
+        "centerXY": [
+          -0.5,
+          0.205
+        ],
+        "radius": 0.135,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-5",
+          "RIG-excavator-track-R-wheel-5"
+        ]
+      },
+      {
+        "index": 6,
+        "kind": "carrier",
+        "centerXY": [
+          -0.6,
+          0.95
+        ],
+        "radius": 0.085,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-6",
+          "RIG-excavator-track-R-wheel-6"
+        ]
+      },
+      {
+        "index": 7,
+        "kind": "roller",
+        "centerXY": [
+          -1.0,
+          0.205
+        ],
+        "radius": 0.135,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-7",
+          "RIG-excavator-track-R-wheel-7"
+        ]
+      },
+      {
+        "index": 8,
+        "kind": "sprocket",
+        "centerXY": [
+          -1.62,
+          0.56
+        ],
+        "radius": 0.43,
+        "nodes": [
+          "RIG-excavator-track-L-wheel-8",
+          "RIG-excavator-track-R-wheel-8"
+        ]
+      }
+    ],
+    "trackBelts": [
+      "RIG-excavator-track-L-belt",
+      "RIG-excavator-track-R-belt"
+    ],
     "linkage": {
       "rockerA": [
         2.51,
@@ -99,6 +224,6 @@
       1.91
     ]
   },
-  "byteLength": 791948,
-  "sha256": "9e73c51a769ec6e7a4273e04571d44000bd6b99afa8c5df30348286df88869b6"
+  "byteLength": 1363900,
+  "sha256": "87359b7758d8f285cb14ca934e016a635815c23fadf0475935cca4c8bfd83782"
 }
