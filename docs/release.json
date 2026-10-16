@@ -1,9 +1,9 @@
 {
-  "release": "riverside-north-highland-315ac06",
-  "sourceCommit": "315ac0636960b10ceff2aca682d0b934f8fcaed7",
-  "sourceFingerprint": "3aeebc604f27e5ec3633e56bd2b60c1e76274034",
+  "release": "riverside-cut-bank-6e11fe7",
+  "sourceCommit": "6e11fe7c9f66fdc94140b9af0fe6a9d1463bda3f",
+  "sourceFingerprint": "a7abec8460851b0c31652388ed3d22c6333e0c58",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T17:00:56.628963+00:00",
+  "builtAt": "2026-10-16T17:06:31.575Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,7 +20,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9c640a4b7635a2646fa318d8387a560d71a4eed6",
+  "previousSourceCommit": "315ac0636960b10ceff2aca682d0b934f8fcaed7",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
@@ -28,11 +28,11 @@
   "checks": {
     "status": "not_run",
     "run": [],
-    "scope": "Production build and source review only; no simulation, geometry measurement or tests authorized."
+    "scope": "Production build only; no tests authorized."
   },
   "browserChecks": {
     "status": "not_run",
-    "scope": "No visual/browser validation for 8 m highland and revised grade."
+    "scope": "No visual/browser validation for river cut bank, shallows and board-edge water section."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -128,7 +128,10 @@
     "river": {
       "width": 22,
       "waterY": -1.25,
-      "flow": "west-east"
+      "flow": "west-east",
+      "shore": "river-aligned cut bank, waterline slope ~0.5, water surface tucked 0.8 m under bank",
+      "waterOpacity": 0.8,
+      "boardEdgeSection": "solid water cross-section"
     },
     "bridge": {
       "turnStart": [
@@ -7314,7 +7317,7 @@
           "version": 2,
           "geometry": {
             "boomLength": 3.6,
-            "stickLength": 3.0,
+            "stickLength": 3,
             "bucketTip": [
               -1.22,
               -0.67,
