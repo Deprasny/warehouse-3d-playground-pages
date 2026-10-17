@@ -1,8 +1,8 @@
 {
-  "release": "riverside-train-warmup-headlights-c02b133",
-  "sourceCommit": "c02b1333445a1853fc3eada667b21eb2c7763214",
+  "release": "riverside-dermaga-langsir-85b00a4",
+  "sourceCommit": "85b00a4da47803699871e642063d1f79f3311313",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T18:24:39.607Z",
+  "builtAt": "2026-10-17T19:34:28.248Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "533af4a90ec23b9d1351f72f0317491a555d764a",
+  "previousSourceCommit": "c02b1333445a1853fc3eada667b21eb2c7763214",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -28,13 +28,23 @@
     "status": "partial",
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
-      "npm run build"
+      "npm run build",
+      "check-riverside-north-points",
+      "check-north-signal-clearance",
+      "check-dermaga-geometry",
+      "check-dermaga-route",
+      "check-dermaga-choreography",
+      "check-travel-requests",
+      "check-travel-request-planner",
+      "check-dermaga-crossovers",
+      "headless Auto probe 900s+1800s",
+      "headless langsir A/B probe"
     ],
-    "scope": "No check-* scripts run (awaiting user approval); full check:all not run."
+    "scope": "Run for the dermaga langsir change only; check:all not run."
   },
   "browserChecks": {
-    "status": "partial",
-    "scope": "Train-material warmup verified in dev (0 in-game train shader links, day and night/rain). Headlight changes not browser-checked; user verifies on prod."
+    "status": "skipped",
+    "scope": "User verifies on prod."
   },
   "cc206": {
     "revision": "sketchfab-old",

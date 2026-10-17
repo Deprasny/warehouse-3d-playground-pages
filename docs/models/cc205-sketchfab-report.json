@@ -7,7 +7,14 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "url": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a",
     "triangles": 326943,
-    "components": 1465
+    "components": 1465,
+    "roofLineFlattenedTriangles": {
+      "thin": 7394,
+      "collapsedUv": 4143,
+      "slivers": 2809,
+      "thinDetail": 0.1,
+      "minUvStretch": 0.1
+    }
   },
   "scale": {
     "realLengthMetres": {
@@ -99,9 +106,9 @@
   "levels": {
     "high": {
       "file": "cc205-sketchfab-high-packed.glb",
-      "bytes": 2496632,
-      "sha256": "4c280d9dae8bb8841a6f054e459b319bef7091111547b757e68f59a0e3a74ddd",
-      "triangles": 97102,
+      "bytes": 2490256,
+      "sha256": "758baaf8e64b5e3c126906351e6f39f241cea6ca25779a9410694cb9f877a7a8",
+      "triangles": 97095,
       "primitives": 19,
       "materials": 4,
       "textures": 1,
@@ -149,9 +156,9 @@
         {
           "node": "locomotive-body",
           "material": "livery",
-          "before": 21826,
-          "after": 20733,
-          "error": 0.00005
+          "before": 12732,
+          "after": 12087,
+          "error": 0.00001
         },
         {
           "node": "locomotive-body",
@@ -163,8 +170,8 @@
         {
           "node": "locomotive-body",
           "material": "paint",
-          "before": 33984,
-          "after": 32284,
+          "before": 43078,
+          "after": 40923,
           "error": 0
         },
         {
@@ -283,9 +290,9 @@
     },
     "medium": {
       "file": "cc205-sketchfab-medium-packed.glb",
-      "bytes": 1137496,
-      "sha256": "7652bedee05f776c118bd31b17297a2a5295bfb126dbd3c4487f9657f39ae6cb",
-      "triangles": 43418,
+      "bytes": 1190656,
+      "sha256": "6ae928fb06fb0cd4d76c88dd5ff2990efd72200699f290f6a367e122036e6421",
+      "triangles": 40474,
       "primitives": 19,
       "materials": 4,
       "textures": 1,
@@ -333,9 +340,9 @@
         {
           "node": "locomotive-body",
           "material": "livery",
-          "before": 21826,
-          "after": 13526,
-          "error": 0.00037
+          "before": 12732,
+          "after": 7861,
+          "error": 0.00022
         },
         {
           "node": "locomotive-body",
@@ -347,9 +354,9 @@
         {
           "node": "locomotive-body",
           "material": "paint",
-          "before": 33984,
-          "after": 10161,
-          "error": 0.00106
+          "before": 43078,
+          "after": 12882,
+          "error": 0.00221
         },
         {
           "node": "rail-bogie--1",
@@ -467,9 +474,9 @@
     },
     "low": {
       "file": "cc205-sketchfab-low-packed.glb",
-      "bytes": 711416,
-      "sha256": "15375a0dddc298af2401bfa2d9c0dc3be5228a284f1362a47330ea25b8b2e2bd",
-      "triangles": 27032,
+      "bytes": 664580,
+      "sha256": "d9b06624c3e123270c6240c8c7b0e019ad68c83bae64c7c5efbeb35ec785e875",
+      "triangles": 24508,
       "primitives": 19,
       "materials": 4,
       "textures": 1,
@@ -481,7 +488,7 @@
       ],
       "bounds": {
         "min": [
-          -1.421581745147705,
+          -1.4216092824935913,
           -8.344650248570673e-9,
           -8.465898180611314
         ],
@@ -517,9 +524,9 @@
         {
           "node": "locomotive-body",
           "material": "livery",
-          "before": 21826,
-          "after": 8713,
-          "error": 0.004
+          "before": 12732,
+          "after": 5084,
+          "error": 0.00142
         },
         {
           "node": "locomotive-body",
@@ -531,9 +538,9 @@
         {
           "node": "locomotive-body",
           "material": "paint",
-          "before": 33984,
-          "after": 5906,
-          "error": 0.00701
+          "before": 43078,
+          "after": 7011,
+          "error": 0.01232
         },
         {
           "node": "rail-bogie--1",
