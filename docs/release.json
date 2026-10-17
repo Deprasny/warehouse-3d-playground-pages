@@ -1,8 +1,8 @@
 {
-  "release": "riverside-station-lamp-pools-98ed56a",
-  "sourceCommit": "98ed56a367f0567e87d5f6c99b11078c3ea4f512",
+  "release": "riverside-north-station-shift-1b9f0ec",
+  "sourceCommit": "1b9f0ec92536ae893d9c4f48ea96ce89e4bbc510",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T15:11:13.960Z",
+  "builtAt": "2026-10-17T16:23:25.340Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "3ddd34549fcdbb78a883e32712c1be32c290790b",
+  "previousSourceCommit": "98ed56a367f0567e87d5f6c99b11078c3ea4f512",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -29,13 +29,20 @@
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
       "npm run build",
-      "scripts/check-station-lamp-pools.ts"
+      "scripts/check-north-signal-clearance.ts",
+      "scripts/check-riverside-north-points.ts",
+      "scripts/check-dermaga-geometry.ts",
+      "scripts/check-dermaga-route.ts",
+      "scripts/check-station-lamp-pools.ts",
+      "scripts/check-travel-requests.ts",
+      "scripts/check-travel-request-planner.ts",
+      "headless Auto probe 900 s x4"
     ],
     "scope": "Only checks the user approved; full check:all suite not run."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Dev-server ego browser: station lamp pools at night (far and near), clean by day, 0 shader links through night/rain/dusk/day."
+    "scope": "Dev-server ego browser: shifted North station, softer west portal turnouts, signal clear of goods shed, Auto flowing at 4x."
   },
   "cc206": {
     "revision": "sketchfab-old",
