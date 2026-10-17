@@ -1,8 +1,8 @@
 {
-  "release": "riverside-dermaga-kit-cycle2-9a150c3",
-  "sourceCommit": "9a150c3b7ad4deb31f05dbfc20ccbef090c536df",
+  "release": "riverside-single-line-north-j3-fd2b7b3",
+  "sourceCommit": "fd2b7b37134f65b8d0476b27e995be8a74d857e3",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T10:56:25.777Z",
+  "builtAt": "2026-10-17T12:36:34.158266Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,25 +19,25 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "2df5e812c5f024b6b7ed9d9f1b84882c1744117c",
+  "previousSourceCommit": "9a150c3b7ad4deb31f05dbfc20ccbef090c536df",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
   },
   "checks": {
-    "status": "partial",
+    "status": "passed",
     "run": [
-      "npx tsc --noEmit -p tsconfig.json",
-      "scripts/check-dermaga-geometry.ts",
-      "scripts/check-dermaga-route.ts",
-      "scripts/check-travel-requests.ts",
-      "scripts/check-travel-request-planner.ts"
+      "trace-riverside-rail auto 600s",
+      "trace-riverside-rail stability-opposed 600s",
+      "trace-riverside-rail crossovers 600s",
+      "trace-riverside-rail through 600s",
+      "trace-riverside-rail auto 900s (Auto J3)"
     ],
-    "scope": "Only checks the user approved for this stage; full check:all suite not run."
+    "scope": "Headless rail simulation for single-line portals, three-track North, J3 through routing and Auto J3. Full check suite not run. Build via npm run build:pages passed."
   },
   "browserChecks": {
-    "status": "passed",
-    "scope": "Dev-server ego browser: dermaga kit day/night/rain, train loading beside deck, rowboat on south lane; Light-mode +8 draws, +5.1k tris, GPU within noise."
+    "status": "partial",
+    "scope": "Headless Chrome: South merge and single portal, North station east throat and three tracks, rain colour. North west merge and portal not captured (hidden by HUD)."
   },
   "cc206": {
     "revision": "sketchfab-old",
