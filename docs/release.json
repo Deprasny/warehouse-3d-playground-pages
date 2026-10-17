@@ -1,8 +1,8 @@
 {
-  "release": "riverside-four-seasons-d00bf4e",
-  "sourceCommit": "d00bf4e145c1b093ea743a9141293f0b67302498",
+  "release": "riverside-dermaga-cycle1-b2e546b",
+  "sourceCommit": "b2e546be462e56ef42660c00c194681467178057",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T08:27:43.389846Z",
+  "builtAt": "2026-10-17T08:45:06.475Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,21 +19,25 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "a8f08620969a21f839804ab69a87d81244399e85",
+  "previousSourceCommit": "d00bf4e145c1b093ea743a9141293f0b67302498",
   "build": {
     "status": "passed",
-    "command": "npm run build:pages"
+    "command": "npm run build:pages (clean git archive of sourceCommit)"
   },
   "checks": {
     "status": "partial",
     "run": [
-      "scripts/check-atmosphere.ts"
+      "npx tsc --noEmit -p tsconfig.json",
+      "scripts/check-dermaga-geometry.ts",
+      "scripts/check-dermaga-route.ts",
+      "scripts/check-travel-requests.ts",
+      "scripts/check-travel-request-planner.ts"
     ],
-    "scope": "check-atmosphere.ts failed at the pre-existing darkness-jumped assertion (also fails on 935cd75); season logic not covered by it. Build via npm run build:pages passed."
+    "scope": "Only checks the user approved for this stage; full check:all suite not run."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Headless Chrome screenshots of spring, summer night, autumn and winter on the dev server."
+    "scope": "Dev-server ego browser: dermaga layout, manual gabah via Siapkan (load 20 s, delivered North), Auto serving gabah and pupuk with max one train at the dermaga, disabled reasons."
   },
   "cc206": {
     "revision": "sketchfab-old",
