@@ -1,0 +1,342 @@
+{
+  "schema": 1,
+  "file": "riverside-dermaga-kit.glb",
+  "bytes": 353356,
+  "triangles": 4454,
+  "meshes": 19,
+  "materials": 1,
+  "textures": 0,
+  "units": "meters",
+  "pivot": "base centre; stilted pieces at the pile/leg foot; moving parts per animation",
+  "coordinates": "glTF Y-up, front +Z; bounds [minX, maxX, minZ, maxZ]; footprint [width, depth]",
+  "windowGroup": [
+    "gudang-panggung",
+    "warung-kopi",
+    "lampu-dermaga",
+    "tongkang-kayu"
+  ],
+  "paletteSource": "src/art/diorama-style.ts",
+  "author": "Original project assets",
+  "animation": {
+    "derek-arm": {
+      "pivot": "vertical slew axis on top of the derek-kayu mast",
+      "mount": {
+        "on": "derek-kayu",
+        "at": [
+          0.0,
+          6.0,
+          0.0
+        ]
+      }
+    },
+    "derek-hook": {
+      "pivot": "rope top under the jib tip; rope and hook hang along -Y",
+      "mount": {
+        "on": "derek-arm",
+        "at": [
+          0.0,
+          1.0,
+          7.9
+        ]
+      }
+    },
+    "tongkang-cargo": {
+      "pivot": "keel bottom centre, shared with tongkang-kayu",
+      "mount": {
+        "on": "tongkang-kayu",
+        "at": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "assets": [
+    {
+      "id": "derek-arm",
+      "triangles": 120,
+      "bounds": [
+        -0.3,
+        0.3,
+        -1.9,
+        8.05
+      ],
+      "footprint": [
+        0.6,
+        9.95
+      ],
+      "height": 1.77
+    },
+    {
+      "id": "derek-hook",
+      "triangles": 72,
+      "bounds": [
+        -0.09,
+        0.09,
+        -0.06,
+        0.26
+      ],
+      "footprint": [
+        0.18,
+        0.32
+      ],
+      "height": 0.0
+    },
+    {
+      "id": "derek-kayu",
+      "triangles": 206,
+      "bounds": [
+        -0.8,
+        0.8,
+        -0.8,
+        0.8
+      ],
+      "footprint": [
+        1.6,
+        1.6
+      ],
+      "height": 6.0
+    },
+    {
+      "id": "dermaga-deck-6m",
+      "triangles": 244,
+      "bounds": [
+        -2.99,
+        2.99,
+        -3.53,
+        3.53
+      ],
+      "footprint": [
+        5.98,
+        7.06
+      ],
+      "height": 5.68
+    },
+    {
+      "id": "dermaga-steps",
+      "triangles": 244,
+      "bounds": [
+        -2.2,
+        2.19,
+        -0.62,
+        0.69
+      ],
+      "footprint": [
+        4.39,
+        1.31
+      ],
+      "height": 5.65
+    },
+    {
+      "id": "drum",
+      "triangles": 100,
+      "bounds": [
+        -0.3,
+        0.3,
+        -0.29,
+        0.29
+      ],
+      "footprint": [
+        0.6,
+        0.58
+      ],
+      "height": 0.88
+    },
+    {
+      "id": "gerobak-dorong",
+      "triangles": 234,
+      "bounds": [
+        -1.26,
+        0.75,
+        -0.47,
+        0.47
+      ],
+      "footprint": [
+        2.01,
+        0.94
+      ],
+      "height": 1.07
+    },
+    {
+      "id": "gudang-panggung",
+      "triangles": 671,
+      "bounds": [
+        -3.35,
+        3.35,
+        -4.1,
+        6.0
+      ],
+      "footprint": [
+        6.7,
+        10.1
+      ],
+      "height": 9.55
+    },
+    {
+      "id": "karung",
+      "triangles": 38,
+      "bounds": [
+        -0.45,
+        0.45,
+        -0.28,
+        0.28
+      ],
+      "footprint": [
+        0.9,
+        0.56
+      ],
+      "height": 0.3
+    },
+    {
+      "id": "karung-stack-a",
+      "triangles": 342,
+      "bounds": [
+        -0.92,
+        0.92,
+        -0.57,
+        0.57
+      ],
+      "footprint": [
+        1.84,
+        1.14
+      ],
+      "height": 0.78
+    },
+    {
+      "id": "karung-stack-b",
+      "triangles": 308,
+      "bounds": [
+        -0.6,
+        0.6,
+        -0.56,
+        0.56
+      ],
+      "footprint": [
+        1.2,
+        1.12
+      ],
+      "height": 0.92
+    },
+    {
+      "id": "karung-stack-c",
+      "triangles": 266,
+      "bounds": [
+        -1.83,
+        1.83,
+        -0.28,
+        0.28
+      ],
+      "footprint": [
+        3.66,
+        0.56
+      ],
+      "height": 0.54
+    },
+    {
+      "id": "lampu-dermaga",
+      "triangles": 54,
+      "bounds": [
+        -0.17,
+        0.17,
+        -0.17,
+        0.82
+      ],
+      "footprint": [
+        0.34,
+        0.99
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "palet",
+      "triangles": 80,
+      "bounds": [
+        -0.6,
+        0.6,
+        -0.5,
+        0.5
+      ],
+      "footprint": [
+        1.2,
+        1.0
+      ],
+      "height": 0.14
+    },
+    {
+      "id": "tiang-tambat",
+      "triangles": 52,
+      "bounds": [
+        -0.19,
+        0.19,
+        -0.16,
+        0.16
+      ],
+      "footprint": [
+        0.38,
+        0.32
+      ],
+      "height": 0.9
+    },
+    {
+      "id": "timbangan",
+      "triangles": 180,
+      "bounds": [
+        -0.52,
+        0.52,
+        -0.37,
+        0.35
+      ],
+      "footprint": [
+        1.04,
+        0.72
+      ],
+      "height": 1.2
+    },
+    {
+      "id": "tongkang-cargo",
+      "triangles": 486,
+      "bounds": [
+        -5.9,
+        4.9,
+        -1.7,
+        1.7
+      ],
+      "footprint": [
+        10.8,
+        3.4
+      ],
+      "height": 2.92
+    },
+    {
+      "id": "tongkang-kayu",
+      "triangles": 527,
+      "bounds": [
+        -12.0,
+        12.35,
+        -2.66,
+        2.5
+      ],
+      "footprint": [
+        24.35,
+        5.16
+      ],
+      "height": 4.77
+    },
+    {
+      "id": "warung-kopi",
+      "triangles": 230,
+      "bounds": [
+        -2.2,
+        2.2,
+        -1.6,
+        1.9
+      ],
+      "footprint": [
+        4.4,
+        3.5
+      ],
+      "height": 4.45
+    }
+  ]
+}
