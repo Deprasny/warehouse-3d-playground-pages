@@ -1,9 +1,9 @@
 {
-  "release": "riverside-south-town-and-travel-requests-b400146",
-  "sourceCommit": "b4001460b464c2dc59f81bc5bdb899992237fb0a",
+  "release": "riverside-softer-rain-a8f0862",
+  "sourceCommit": "a8f08620969a21f839804ab69a87d81244399e85",
   "sourceFingerprint": "fe20c2b7726aa837d7aaa60182acde62f9245df2",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T06:42:47.632Z",
+  "builtAt": "2026-10-17T07:18:45.553Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,24 +20,19 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9803a1a666043f65f60cae468fca3337a0d8c593",
+  "previousSourceCommit": "b4001460b464c2dc59f81bc5bdb899992237fb0a",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "partial",
-    "run": [
-      "npx tsc --noEmit -p tsconfig.json",
-      "scripts/check-travel-requests.ts",
-      "scripts/check-travel-request-planner.ts",
-      "scripts/check-town-layout.ts"
-    ],
-    "scope": "Only checks the user approved for this stage; full check:all suite not run."
+    "status": "not-run",
+    "run": [],
+    "scope": "Weather tweak only; no tests run (not approved). Build via npm run build:pages (tsc --noEmit + vite build)."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Dev-server checks in ego browser: rain streaks, all weathers, tilt-shift, board base, river current, lawn scenery, travel requests (manual + Auto), south town day/night/snow, Light-mode GPU timing."
+    "scope": "Dev-server ego browser screenshots: rain and storm, wide and zoomed."
   },
   "cc206": {
     "revision": "sketchfab-old",
