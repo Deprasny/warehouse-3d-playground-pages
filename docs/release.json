@@ -1,8 +1,8 @@
 {
-  "release": "riverside-north-station-shift-1b9f0ec",
-  "sourceCommit": "1b9f0ec92536ae893d9c4f48ea96ce89e4bbc510",
+  "release": "riverside-cc205-templates-camera-533af4a",
+  "sourceCommit": "533af4a90ec23b9d1351f72f0317491a555d764a",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T16:23:25.340Z",
+  "builtAt": "2026-10-17T17:31:15.471Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "98ed56a367f0567e87d5f6c99b11078c3ea4f512",
+  "previousSourceCommit": "1b9f0ec92536ae893d9c4f48ea96ce89e4bbc510",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -28,21 +28,13 @@
     "status": "partial",
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
-      "npm run build",
-      "scripts/check-north-signal-clearance.ts",
-      "scripts/check-riverside-north-points.ts",
-      "scripts/check-dermaga-geometry.ts",
-      "scripts/check-dermaga-route.ts",
-      "scripts/check-station-lamp-pools.ts",
-      "scripts/check-travel-requests.ts",
-      "scripts/check-travel-request-planner.ts",
-      "headless Auto probe 900 s x4"
+      "npm run build"
     ],
-    "scope": "Only checks the user approved; full check:all suite not run."
+    "scope": "New checks (check-cc205-lods, check-camera-follow) written but not run - awaiting user approval; full check:all not run."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Dev-server ego browser: shifted North station, softer west portal turnouts, signal clear of goods shed, Auto flowing at 4x."
+    "scope": "Dev-server ego browser: CC205 Barang running, 2x CC205/CC201 back-to-back pairs, 14 Indonesian templates listed and dispatched, follow camera hand-off in Auto."
   },
   "cc206": {
     "revision": "sketchfab-old",
@@ -9319,5 +9311,12 @@
     "fix": "coplanar side stripes/labels separated from door panels (flicker)"
   },
   "lampPoolFix": "additive light pools use zero specular and no fog",
-  "headlightShadowFix": "missing headlight shadow maps are primed so lit draws never bind a null shadow texture"
+  "headlightShadowFix": "missing headlight shadow maps are primed so lit draws never bind a null shadow texture",
+  "credits": {
+    "cc205": {
+      "author": "haykal12321",
+      "license": "CC BY 4.0",
+      "source": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a"
+    }
+  }
 }

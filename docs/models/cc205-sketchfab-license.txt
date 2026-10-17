@@ -1,0 +1,10 @@
+CC 205 Indonesian Coal Train (locomotive only)
+Author: haykal12321 (https://sketchfab.com/haykal12321)
+Source: https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a
+License: CC BY 4.0 - https://creativecommons.org/licenses/by/4.0/
+Modifications: rescaled to the game's CC206-relative length (CC205 17.678 m vs CC206 15.849 m over couplers);
+wheels grown to the shared 0.46 rim radius with the body lifted to meet them and running gear squeezed onto the
+game gauge; material-merged source segmented into wheel, bogie and body pivots; plain drawheads added; photo
+livery packed into one texture atlas and tiling/grunge maps averaged into vertex colours; three simplified LODs
+(meshoptimizer) with rebuilt normals; Meshopt-packed GLB. The original livery is retained.
+The downloaded source file is not redistributed and remains unchanged.

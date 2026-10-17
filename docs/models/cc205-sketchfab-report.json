@@ -1,0 +1,653 @@
+{
+  "source": {
+    "file": "cc_205_indonesian_coal_train.glb",
+    "bytes": 28291832,
+    "sha256": "354f334374c16760ab69204600b4fda357228760e4adc2e8faafffecddd95ea8",
+    "author": "haykal12321",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a",
+    "triangles": 326943,
+    "components": 1465
+  },
+  "scale": {
+    "realLengthMetres": {
+      "cc205": 17.678,
+      "cc206": 15.849
+    },
+    "cc206GameLength": 15.18,
+    "targetLength": 16.931796327844026,
+    "lengthScale": 1.1011839085626853,
+    "lift": 0.1041079829808802,
+    "wheelGrow": 1.292526884567032,
+    "gaugeSqueeze": 0.8222887785681806,
+    "sourceWheelRadius": 0.3231903538107872,
+    "sourceAxles": [
+      -5.684826612472534,
+      -4.276936054229736,
+      -2.857236623764038,
+      2.7331548929214478,
+      4.141045808792114,
+      5.560745000839233
+    ],
+    "bogieZ": 4.634872975673306,
+    "couplerZ": 7.795898163922013,
+    "couplerTip": 8.465898163922013
+  },
+  "atlas": {
+    "size": [
+      512,
+      256
+    ],
+    "bytes": 25945,
+    "cells": 10
+  },
+  "locomotiveLights": {
+    "frontLower": [
+      [
+        -0.7747065770407474,
+        1.1151494133813864,
+        8.035062447810413
+      ],
+      [
+        0.7747066098585852,
+        1.1151494133813864,
+        8.035062447810413
+      ]
+    ],
+    "rearLower": [
+      [
+        -0.7978395755814666,
+        1.1151494133813864,
+        -7.894091237465039
+      ],
+      [
+        0.7978396083993043,
+        1.1151494133813864,
+        -7.894091237465039
+      ]
+    ],
+    "frontUpper": [
+      [
+        -0.10193477543808631,
+        3.1678877118796773,
+        7.444101675995161
+      ],
+      [
+        0.10193480210257956,
+        3.1678877118796773,
+        7.444101675995161
+      ]
+    ],
+    "rearUpper": [],
+    "spot": [
+      0,
+      3.1678877118796773,
+      7.604101675995161
+    ],
+    "rearSpot": [
+      0,
+      2.913107740435963,
+      -7.935351552365596
+    ],
+    "bulbRadii": {
+      "upper": 0.08809471268501483,
+      "lower": 0.08148760923363871,
+      "frontLower": 0.08148760923363871,
+      "rearLower": 0.08148760923363871
+    }
+  },
+  "levels": {
+    "high": {
+      "file": "cc205-sketchfab-high-packed.glb",
+      "bytes": 2496632,
+      "sha256": "4c280d9dae8bb8841a6f054e459b319bef7091111547b757e68f59a0e3a74ddd",
+      "triangles": 97102,
+      "primitives": 19,
+      "materials": 4,
+      "textures": 1,
+      "textureSizes": [
+        [
+          512,
+          256
+        ]
+      ],
+      "bounds": {
+        "min": [
+          -1.46970534324646,
+          -8.344650248570673e-9,
+          -8.465898180611314
+        ],
+        "max": [
+          1.46970534324646,
+          3.552586793899536,
+          8.465898180611314
+        ]
+      },
+      "vertexAttributesExact": true,
+      "orientedTrianglesExact": true,
+      "rigNodes": [
+        "cc205-sketchfab-rig",
+        "locomotive-body",
+        "rail-bogie--1",
+        "rail-bogie-1",
+        "rail-wheel-0--1",
+        "rail-wheel-0-1",
+        "rail-wheel-1--1",
+        "rail-wheel-1-1",
+        "rail-wheel-2--1",
+        "rail-wheel-2-1",
+        "rail-wheel-3--1",
+        "rail-wheel-3-1",
+        "rail-wheel-4--1",
+        "rail-wheel-4-1",
+        "rail-wheel-5--1",
+        "rail-wheel-5-1",
+        "rail-coupler-1",
+        "rail-coupler--1"
+      ],
+      "reductions": [
+        {
+          "node": "locomotive-body",
+          "material": "livery",
+          "before": 21826,
+          "after": 20733,
+          "error": 0.00005
+        },
+        {
+          "node": "locomotive-body",
+          "material": "lens",
+          "before": 304,
+          "after": 304,
+          "error": 0
+        },
+        {
+          "node": "locomotive-body",
+          "material": "paint",
+          "before": 33984,
+          "after": 32284,
+          "error": 0
+        },
+        {
+          "node": "rail-bogie--1",
+          "material": "gear",
+          "before": 125624,
+          "after": 18739,
+          "error": 0.00138
+        },
+        {
+          "node": "rail-bogie-1",
+          "material": "gear",
+          "before": 125621,
+          "after": 18730,
+          "error": 0.00138
+        },
+        {
+          "node": "rail-wheel-0--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00256
+        },
+        {
+          "node": "rail-wheel-0-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00261
+        },
+        {
+          "node": "rail-wheel-1--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00265
+        },
+        {
+          "node": "rail-wheel-1-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00256
+        },
+        {
+          "node": "rail-wheel-2--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00259
+        },
+        {
+          "node": "rail-wheel-2-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00259
+        },
+        {
+          "node": "rail-wheel-3--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00268
+        },
+        {
+          "node": "rail-wheel-3-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00259
+        },
+        {
+          "node": "rail-wheel-4--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00259
+        },
+        {
+          "node": "rail-wheel-4-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00259
+        },
+        {
+          "node": "rail-wheel-5--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00275
+        },
+        {
+          "node": "rail-wheel-5-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 522,
+          "error": 0.00275
+        },
+        {
+          "node": "rail-coupler-1",
+          "material": "gear",
+          "before": 24,
+          "after": 24,
+          "error": 0.00014
+        },
+        {
+          "node": "rail-coupler--1",
+          "material": "gear",
+          "before": 24,
+          "after": 24,
+          "error": 0.00016
+        }
+      ]
+    },
+    "medium": {
+      "file": "cc205-sketchfab-medium-packed.glb",
+      "bytes": 1137496,
+      "sha256": "7652bedee05f776c118bd31b17297a2a5295bfb126dbd3c4487f9657f39ae6cb",
+      "triangles": 43418,
+      "primitives": 19,
+      "materials": 4,
+      "textures": 1,
+      "textureSizes": [
+        [
+          512,
+          256
+        ]
+      ],
+      "bounds": {
+        "min": [
+          -1.46970534324646,
+          -8.344650248570673e-9,
+          -8.465898180611314
+        ],
+        "max": [
+          1.46970534324646,
+          3.552586793899536,
+          8.465898180611314
+        ]
+      },
+      "vertexAttributesExact": true,
+      "orientedTrianglesExact": true,
+      "rigNodes": [
+        "cc205-sketchfab-rig",
+        "locomotive-body",
+        "rail-bogie--1",
+        "rail-bogie-1",
+        "rail-wheel-0--1",
+        "rail-wheel-0-1",
+        "rail-wheel-1--1",
+        "rail-wheel-1-1",
+        "rail-wheel-2--1",
+        "rail-wheel-2-1",
+        "rail-wheel-3--1",
+        "rail-wheel-3-1",
+        "rail-wheel-4--1",
+        "rail-wheel-4-1",
+        "rail-wheel-5--1",
+        "rail-wheel-5-1",
+        "rail-coupler-1",
+        "rail-coupler--1"
+      ],
+      "reductions": [
+        {
+          "node": "locomotive-body",
+          "material": "livery",
+          "before": 21826,
+          "after": 13526,
+          "error": 0.00037
+        },
+        {
+          "node": "locomotive-body",
+          "material": "lens",
+          "before": 304,
+          "after": 304,
+          "error": 0
+        },
+        {
+          "node": "locomotive-body",
+          "material": "paint",
+          "before": 33984,
+          "after": 10161,
+          "error": 0.00106
+        },
+        {
+          "node": "rail-bogie--1",
+          "material": "gear",
+          "before": 125624,
+          "after": 7305,
+          "error": 0.00496
+        },
+        {
+          "node": "rail-bogie-1",
+          "material": "gear",
+          "before": 125621,
+          "after": 7278,
+          "error": 0.00507
+        },
+        {
+          "node": "rail-wheel-0--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.00906
+        },
+        {
+          "node": "rail-wheel-0-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 326,
+          "error": 0.00992
+        },
+        {
+          "node": "rail-wheel-1--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.00906
+        },
+        {
+          "node": "rail-wheel-1-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.0116
+        },
+        {
+          "node": "rail-wheel-2--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.00907
+        },
+        {
+          "node": "rail-wheel-2-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.0116
+        },
+        {
+          "node": "rail-wheel-3--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.00909
+        },
+        {
+          "node": "rail-wheel-3-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.0116
+        },
+        {
+          "node": "rail-wheel-4--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 327,
+          "error": 0.00993
+        },
+        {
+          "node": "rail-wheel-4-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 329,
+          "error": 0.00994
+        },
+        {
+          "node": "rail-wheel-5--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 326,
+          "error": 0.00992
+        },
+        {
+          "node": "rail-wheel-5-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 436,
+          "error": 0.0116
+        },
+        {
+          "node": "rail-coupler-1",
+          "material": "gear",
+          "before": 24,
+          "after": 24,
+          "error": 0.00014
+        },
+        {
+          "node": "rail-coupler--1",
+          "material": "gear",
+          "before": 24,
+          "after": 24,
+          "error": 0.00016
+        }
+      ]
+    },
+    "low": {
+      "file": "cc205-sketchfab-low-packed.glb",
+      "bytes": 711416,
+      "sha256": "15375a0dddc298af2401bfa2d9c0dc3be5228a284f1362a47330ea25b8b2e2bd",
+      "triangles": 27032,
+      "primitives": 19,
+      "materials": 4,
+      "textures": 1,
+      "textureSizes": [
+        [
+          512,
+          256
+        ]
+      ],
+      "bounds": {
+        "min": [
+          -1.421581745147705,
+          -8.344650248570673e-9,
+          -8.465898180611314
+        ],
+        "max": [
+          1.46970534324646,
+          3.552586793899536,
+          8.465898180611314
+        ]
+      },
+      "vertexAttributesExact": true,
+      "orientedTrianglesExact": true,
+      "rigNodes": [
+        "cc205-sketchfab-rig",
+        "locomotive-body",
+        "rail-bogie--1",
+        "rail-bogie-1",
+        "rail-wheel-0--1",
+        "rail-wheel-0-1",
+        "rail-wheel-1--1",
+        "rail-wheel-1-1",
+        "rail-wheel-2--1",
+        "rail-wheel-2-1",
+        "rail-wheel-3--1",
+        "rail-wheel-3-1",
+        "rail-wheel-4--1",
+        "rail-wheel-4-1",
+        "rail-wheel-5--1",
+        "rail-wheel-5-1",
+        "rail-coupler-1",
+        "rail-coupler--1"
+      ],
+      "reductions": [
+        {
+          "node": "locomotive-body",
+          "material": "livery",
+          "before": 21826,
+          "after": 8713,
+          "error": 0.004
+        },
+        {
+          "node": "locomotive-body",
+          "material": "lens",
+          "before": 304,
+          "after": 304,
+          "error": 0
+        },
+        {
+          "node": "locomotive-body",
+          "material": "paint",
+          "before": 33984,
+          "after": 5906,
+          "error": 0.00701
+        },
+        {
+          "node": "rail-bogie--1",
+          "material": "gear",
+          "before": 125624,
+          "after": 4980,
+          "error": 0.02998
+        },
+        {
+          "node": "rail-bogie-1",
+          "material": "gear",
+          "before": 125621,
+          "after": 4954,
+          "error": 0.02971
+        },
+        {
+          "node": "rail-wheel-0--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 166,
+          "error": 0.01991
+        },
+        {
+          "node": "rail-wheel-0-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 173,
+          "error": 0.01989
+        },
+        {
+          "node": "rail-wheel-1--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 173,
+          "error": 0.01991
+        },
+        {
+          "node": "rail-wheel-1-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 170,
+          "error": 0.01981
+        },
+        {
+          "node": "rail-wheel-2--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 172,
+          "error": 0.02
+        },
+        {
+          "node": "rail-wheel-2-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 166,
+          "error": 0.01991
+        },
+        {
+          "node": "rail-wheel-3--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 168,
+          "error": 0.01991
+        },
+        {
+          "node": "rail-wheel-3-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 171,
+          "error": 0.01998
+        },
+        {
+          "node": "rail-wheel-4--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 161,
+          "error": 0.01991
+        },
+        {
+          "node": "rail-wheel-4-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 172,
+          "error": 0.01988
+        },
+        {
+          "node": "rail-wheel-5--1",
+          "material": "gear",
+          "before": 1632,
+          "after": 272,
+          "error": 0.04654
+        },
+        {
+          "node": "rail-wheel-5-1",
+          "material": "gear",
+          "before": 1632,
+          "after": 163,
+          "error": 0.01999
+        },
+        {
+          "node": "rail-coupler-1",
+          "material": "gear",
+          "before": 24,
+          "after": 24,
+          "error": 0.00014
+        },
+        {
+          "node": "rail-coupler--1",
+          "material": "gear",
+          "before": 24,
+          "after": 24,
+          "error": 0.00016
+        }
+      ]
+    }
+  }
+}
