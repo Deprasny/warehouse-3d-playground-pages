@@ -1,8 +1,8 @@
 {
-  "release": "riverside-single-line-north-j3-fd2b7b3",
-  "sourceCommit": "fd2b7b37134f65b8d0476b27e995be8a74d857e3",
+  "release": "riverside-dermaga-animation-cycle3-bc49191",
+  "sourceCommit": "bc4919170ae77d81dcb98ffc171dad9734befe68",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T12:36:34.158266Z",
+  "builtAt": "2026-10-17T12:59:00.309Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,25 +19,26 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9a150c3b7ad4deb31f05dbfc20ccbef090c536df",
+  "previousSourceCommit": "fd2b7b37134f65b8d0476b27e995be8a74d857e3",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
   },
   "checks": {
-    "status": "passed",
+    "status": "partial",
     "run": [
-      "trace-riverside-rail auto 600s",
-      "trace-riverside-rail stability-opposed 600s",
-      "trace-riverside-rail crossovers 600s",
-      "trace-riverside-rail through 600s",
-      "trace-riverside-rail auto 900s (Auto J3)"
+      "npx tsc --noEmit -p tsconfig.json",
+      "scripts/check-dermaga-choreography.ts",
+      "scripts/check-dermaga-route.ts",
+      "scripts/check-dermaga-geometry.ts",
+      "scripts/check-travel-requests.ts",
+      "scripts/check-travel-request-planner.ts"
     ],
-    "scope": "Headless rail simulation for single-line portals, three-track North, J3 through routing and Auto J3. Full check suite not run. Build via npm run build:pages passed."
+    "scope": "Only checks the user approved for this stage; full check:all suite not run."
   },
   "browserChecks": {
     "status": "partial",
-    "scope": "Headless Chrome: South merge and single portal, North station east throat and three tracks, rain colour. North west merge and portal not captured (hidden by HUD)."
+    "scope": "Ego browser: gabah full cycle (barge arrive/moor/leave, crane, dock workers, wagons empty->full) on worktree and merged main. Not browser-checked: pupuk cycle, night, pause, reset, kit fallback."
   },
   "cc206": {
     "revision": "sketchfab-old",
