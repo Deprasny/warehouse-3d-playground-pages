@@ -1,8 +1,8 @@
 {
-  "release": "riverside-north-j3-deadlock-fix-8819efd",
-  "sourceCommit": "8819efdc9ac4290374136282ea1d8a457c072000",
+  "release": "riverside-weather-shader-warmup-3ddd345",
+  "sourceCommit": "3ddd34549fcdbb78a883e32712c1be32c290790b",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T13:39:20.159Z",
+  "builtAt": "2026-10-17T14:19:55.826Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "bc4919170ae77d81dcb98ffc171dad9734befe68",
+  "previousSourceCommit": "8819efdc9ac4290374136282ea1d8a457c072000",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -28,19 +28,16 @@
     "status": "partial",
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
-      "scripts/check-riverside-north-points.ts",
-      "scripts/check-dermaga-route.ts",
-      "scripts/check-dermaga-geometry.ts",
-      "scripts/check-dermaga-choreography.ts",
-      "scripts/check-travel-requests.ts",
-      "scripts/check-travel-request-planner.ts",
-      "headless Auto probe 900 s x4 (no deadlock)"
+      "npm run build",
+      "scripts/check-gpu-light-configurations.ts",
+      "scripts/check-gpu-warmup-target.ts",
+      "scripts/check-mobile-gpu-startup.ts"
     ],
     "scope": "Only checks the user approved; full check:all suite not run."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Dev-server ego browser: Auto at 4x long run, 7 trains flowing, no deadlock at North J3."
+    "scope": "Dev-server ego browser, Ringan + tilt-shift: first rain, seasons, night, dusk -> 0 shader links, max frame 83 ms (was 2.1-5.7 s stall)."
   },
   "cc206": {
     "revision": "sketchfab-old",
