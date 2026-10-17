@@ -1,8 +1,8 @@
 {
-  "release": "riverside-cc205-templates-camera-533af4a",
-  "sourceCommit": "533af4a90ec23b9d1351f72f0317491a555d764a",
+  "release": "riverside-train-warmup-headlights-c02b133",
+  "sourceCommit": "c02b1333445a1853fc3eada667b21eb2c7763214",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T17:31:15.471Z",
+  "builtAt": "2026-10-17T18:24:39.607Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "1b9f0ec92536ae893d9c4f48ea96ce89e4bbc510",
+  "previousSourceCommit": "533af4a90ec23b9d1351f72f0317491a555d764a",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -30,11 +30,11 @@
       "npx tsc --noEmit -p tsconfig.json",
       "npm run build"
     ],
-    "scope": "New checks (check-cc205-lods, check-camera-follow) written but not run - awaiting user approval; full check:all not run."
+    "scope": "No check-* scripts run (awaiting user approval); full check:all not run."
   },
   "browserChecks": {
-    "status": "passed",
-    "scope": "Dev-server ego browser: CC205 Barang running, 2x CC205/CC201 back-to-back pairs, 14 Indonesian templates listed and dispatched, follow camera hand-off in Auto."
+    "status": "partial",
+    "scope": "Train-material warmup verified in dev (0 in-game train shader links, day and night/rain). Headlight changes not browser-checked; user verifies on prod."
   },
   "cc206": {
     "revision": "sketchfab-old",
