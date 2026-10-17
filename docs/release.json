@@ -1,8 +1,8 @@
 {
-  "release": "riverside-weather-shader-warmup-3ddd345",
-  "sourceCommit": "3ddd34549fcdbb78a883e32712c1be32c290790b",
+  "release": "riverside-station-lamp-pools-98ed56a",
+  "sourceCommit": "98ed56a367f0567e87d5f6c99b11078c3ea4f512",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T14:19:55.826Z",
+  "builtAt": "2026-10-17T15:11:13.960Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "8819efdc9ac4290374136282ea1d8a457c072000",
+  "previousSourceCommit": "3ddd34549fcdbb78a883e32712c1be32c290790b",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -29,15 +29,13 @@
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
       "npm run build",
-      "scripts/check-gpu-light-configurations.ts",
-      "scripts/check-gpu-warmup-target.ts",
-      "scripts/check-mobile-gpu-startup.ts"
+      "scripts/check-station-lamp-pools.ts"
     ],
     "scope": "Only checks the user approved; full check:all suite not run."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Dev-server ego browser, Ringan + tilt-shift: first rain, seasons, night, dusk -> 0 shader links, max frame 83 ms (was 2.1-5.7 s stall)."
+    "scope": "Dev-server ego browser: station lamp pools at night (far and near), clean by day, 0 shader links through night/rain/dusk/day."
   },
   "cc206": {
     "revision": "sketchfab-old",
