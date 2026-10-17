@@ -1,8 +1,8 @@
 {
-  "release": "riverside-dermaga-langsir-85b00a4",
-  "sourceCommit": "85b00a4da47803699871e642063d1f79f3311313",
+  "release": "riverside-dermaga-runaround-110e915",
+  "sourceCommit": "110e915f5d0082dfa15a63f14b514898e119511d",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T19:34:28.248Z",
+  "builtAt": "2026-10-17T19:59:20.223Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "c02b1333445a1853fc3eada667b21eb2c7763214",
+  "previousSourceCommit": "85b00a4da47803699871e642063d1f79f3311313",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -29,18 +29,16 @@
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
       "npm run build",
-      "check-riverside-north-points",
-      "check-north-signal-clearance",
-      "check-dermaga-geometry",
       "check-dermaga-route",
+      "check-dermaga-crossovers",
+      "check-riverside-north-points",
       "check-dermaga-choreography",
       "check-travel-requests",
       "check-travel-request-planner",
-      "check-dermaga-crossovers",
-      "headless Auto probe 900s+1800s",
-      "headless langsir A/B probe"
+      "headless langsir A/B probe",
+      "headless Auto probe 1800s"
     ],
-    "scope": "Run for the dermaga langsir change only; check:all not run."
+    "scope": "Run-around change only; check:all not run."
   },
   "browserChecks": {
     "status": "skipped",
