@@ -1,9 +1,8 @@
 {
-  "release": "riverside-softer-rain-a8f0862",
-  "sourceCommit": "a8f08620969a21f839804ab69a87d81244399e85",
-  "sourceFingerprint": "fe20c2b7726aa837d7aaa60182acde62f9245df2",
+  "release": "riverside-four-seasons-d00bf4e",
+  "sourceCommit": "d00bf4e145c1b093ea743a9141293f0b67302498",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T07:18:45.553Z",
+  "builtAt": "2026-10-17T08:27:43.389846Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,19 +19,21 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "b4001460b464c2dc59f81bc5bdb899992237fb0a",
+  "previousSourceCommit": "a8f08620969a21f839804ab69a87d81244399e85",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "not-run",
-    "run": [],
-    "scope": "Weather tweak only; no tests run (not approved). Build via npm run build:pages (tsc --noEmit + vite build)."
+    "status": "partial",
+    "run": [
+      "scripts/check-atmosphere.ts"
+    ],
+    "scope": "check-atmosphere.ts failed at the pre-existing darkness-jumped assertion (also fails on 935cd75); season logic not covered by it. Build via npm run build:pages passed."
   },
   "browserChecks": {
     "status": "passed",
-    "scope": "Dev-server ego browser screenshots: rain and storm, wide and zoomed."
+    "scope": "Headless Chrome screenshots of spring, summer night, autumn and winter on the dev server."
   },
   "cc206": {
     "revision": "sketchfab-old",
