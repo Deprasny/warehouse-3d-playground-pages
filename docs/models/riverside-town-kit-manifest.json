@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "file": "riverside-town-kit.glb",
+  "bytes": 203300,
+  "triangles": 2438,
+  "meshes": 20,
+  "materials": 1,
+  "textures": 0,
+  "units": "meters",
+  "pivot": "ground-center",
+  "coordinates": "glTF Y-up, front +Z; bounds [minX, maxX, minZ, maxZ]",
+  "wallPaint": "#ffffff is replaced per instance in game",
+  "paletteSource": "src/art/diorama-style.ts",
+  "author": "Original project assets",
+  "assets": [
+    {
+      "id": "banana-tree",
+      "triangles": 30,
+      "bounds": [
+        -1.42,
+        1.43,
+        -1.5,
+        1.23
+      ]
+    },
+    {
+      "id": "bengkel-motor",
+      "triangles": 250,
+      "bounds": [
+        -3.03,
+        3.03,
+        -3.85,
+        4.3
+      ]
+    },
+    {
+      "id": "coconut-palm",
+      "triangles": 94,
+      "bounds": [
+        -1.74,
+        3.2,
+        -2.53,
+        2.53
+      ]
+    },
+    {
+      "id": "food-cart",
+      "triangles": 130,
+      "bounds": [
+        -0.8,
+        1.2,
+        -0.45,
+        0.45
+      ]
+    },
+    {
+      "id": "house-kampung",
+      "triangles": 138,
+      "bounds": [
+        -3.03,
+        3.03,
+        -5.73,
+        5.1
+      ],
+      "stack": [
+        1.4,
+        5.6,
+        -1.6
+      ]
+    },
+    {
+      "id": "house-limasan",
+      "triangles": 118,
+      "bounds": [
+        -3.5,
+        3.5,
+        -3.75,
+        4.9
+      ],
+      "stack": [
+        1.6,
+        5.8,
+        -1.4
+      ]
+    },
+    {
+      "id": "house-terrace",
+      "triangles": 134,
+      "bounds": [
+        -4.0,
+        4.0,
+        -4.0,
+        5.6
+      ]
+    },
+    {
+      "id": "house-two-storey",
+      "triangles": 162,
+      "bounds": [
+        -2.53,
+        2.53,
+        -3.85,
+        4.7
+      ]
+    },
+    {
+      "id": "laundry-line",
+      "triangles": 38,
+      "bounds": [
+        -1.64,
+        1.64,
+        -0.04,
+        0.04
+      ]
+    },
+    {
+      "id": "mosque",
+      "triangles": 314,
+      "bounds": [
+        -9.5,
+        6.0,
+        -5.1,
+        5.1
+      ]
+    },
+    {
+      "id": "mosque-minaret",
+      "triangles": 176,
+      "bounds": [
+        -1.2,
+        1.2,
+        -1.2,
+        1.2
+      ]
+    },
+    {
+      "id": "motorbike",
+      "triangles": 122,
+      "bounds": [
+        -0.97,
+        0.97,
+        -0.31,
+        0.31
+      ]
+    },
+    {
+      "id": "plant-pot",
+      "triangles": 38,
+      "bounds": [
+        -0.28,
+        0.28,
+        -0.28,
+        0.28
+      ]
+    },
+    {
+      "id": "pln-pole",
+      "triangles": 50,
+      "bounds": [
+        -0.9,
+        0.9,
+        -0.13,
+        0.13
+      ]
+    },
+    {
+      "id": "pos-ronda",
+      "triangles": 106,
+      "bounds": [
+        -1.5,
+        1.5,
+        -1.45,
+        1.45
+      ]
+    },
+    {
+      "id": "shop-sign",
+      "triangles": 30,
+      "bounds": [
+        -0.62,
+        0.62,
+        -0.06,
+        0.06
+      ]
+    },
+    {
+      "id": "shophouse",
+      "triangles": 134,
+      "bounds": [
+        -2.03,
+        2.03,
+        -4.85,
+        5.7
+      ]
+    },
+    {
+      "id": "shophouse-corner",
+      "triangles": 130,
+      "bounds": [
+        -2.03,
+        2.03,
+        -4.85,
+        5.7
+      ]
+    },
+    {
+      "id": "toko-kelontong",
+      "triangles": 130,
+      "bounds": [
+        -2.53,
+        2.53,
+        -3.85,
+        4.1
+      ]
+    },
+    {
+      "id": "warung",
+      "triangles": 114,
+      "bounds": [
+        -2.03,
+        2.03,
+        -2.6,
+        4.05
+      ]
+    }
+  ]
+}

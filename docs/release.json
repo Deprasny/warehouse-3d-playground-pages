@@ -1,9 +1,9 @@
 {
-  "release": "riverside-headlight-shadow-fix-9803a1a",
-  "sourceCommit": "9803a1a666043f65f60cae468fca3337a0d8c593",
-  "sourceFingerprint": "2e02dbe69be6d9e55953e609cbc340079d62eccf",
+  "release": "riverside-south-town-and-travel-requests-b400146",
+  "sourceCommit": "b4001460b464c2dc59f81bc5bdb899992237fb0a",
+  "sourceFingerprint": "fe20c2b7726aa837d7aaa60182acde62f9245df2",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-16T21:16:23.134Z",
+  "builtAt": "2026-10-17T06:42:47.632Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -20,19 +20,24 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "d2f07e65986279bb47f56c82f3226ecb9de90e49",
+  "previousSourceCommit": "9803a1a666043f65f60cae468fca3337a0d8c593",
   "build": {
     "status": "passed",
     "command": "npm run build:pages"
   },
   "checks": {
-    "status": "not_run",
-    "run": [],
-    "scope": "Production build only; no tests authorized."
+    "status": "partial",
+    "run": [
+      "npx tsc --noEmit -p tsconfig.json",
+      "scripts/check-travel-requests.ts",
+      "scripts/check-travel-request-planner.ts",
+      "scripts/check-town-layout.ts"
+    ],
+    "scope": "Only checks the user approved for this stage; full check:all suite not run."
   },
   "browserChecks": {
-    "status": "not_run",
-    "scope": "No browser validation for the headlight shadow-map fix."
+    "status": "passed",
+    "scope": "Dev-server checks in ego browser: rain streaks, all weathers, tilt-shift, board base, river current, lawn scenery, travel requests (manual + Auto), south town day/night/snow, Light-mode GPU timing."
   },
   "cc206": {
     "revision": "sketchfab-old",
