@@ -1,8 +1,8 @@
 {
-  "release": "riverside-dermaga-animation-cycle3-bc49191",
-  "sourceCommit": "bc4919170ae77d81dcb98ffc171dad9734befe68",
+  "release": "riverside-north-j3-deadlock-fix-8819efd",
+  "sourceCommit": "8819efdc9ac4290374136282ea1d8a457c072000",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T12:59:00.309Z",
+  "builtAt": "2026-10-17T13:39:20.159Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "fd2b7b37134f65b8d0476b27e995be8a74d857e3",
+  "previousSourceCommit": "bc4919170ae77d81dcb98ffc171dad9734befe68",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -28,17 +28,19 @@
     "status": "partial",
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
-      "scripts/check-dermaga-choreography.ts",
+      "scripts/check-riverside-north-points.ts",
       "scripts/check-dermaga-route.ts",
       "scripts/check-dermaga-geometry.ts",
+      "scripts/check-dermaga-choreography.ts",
       "scripts/check-travel-requests.ts",
-      "scripts/check-travel-request-planner.ts"
+      "scripts/check-travel-request-planner.ts",
+      "headless Auto probe 900 s x4 (no deadlock)"
     ],
-    "scope": "Only checks the user approved for this stage; full check:all suite not run."
+    "scope": "Only checks the user approved; full check:all suite not run."
   },
   "browserChecks": {
-    "status": "partial",
-    "scope": "Ego browser: gabah full cycle (barge arrive/moor/leave, crane, dock workers, wagons empty->full) on worktree and merged main. Not browser-checked: pupuk cycle, night, pause, reset, kit fallback."
+    "status": "passed",
+    "scope": "Dev-server ego browser: Auto at 4x long run, 7 trains flowing, no deadlock at North J3."
   },
   "cc206": {
     "revision": "sketchfab-old",
