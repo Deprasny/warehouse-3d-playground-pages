@@ -1,8 +1,8 @@
 {
-  "release": "cc203-cab-v5-1f5df69",
-  "sourceCommit": "1f5df690c5f3e7de01e9af48b45dbf19f883c986",
+  "release": "ssng-coaches-9d148e7",
+  "sourceCommit": "9d148e71c25b346a19ba0b233a8a3eb00e362b64",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T07:30:57.413806+00:00",
+  "builtAt": "2026-10-18T11:20:53.370040+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,12 +19,12 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "088d619a12a0c7bd6de2d7fee38bdee14ea05ce3",
+  "previousSourceCommit": "1f5df690c5f3e7de01e9af48b45dbf19f883c986",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 1f5df690c5f3e7de01e9af48b45dbf19f883c986",
-    "compatibility": "Existing compiled chunks and standalone terrain preview retained."
+    "source": "detached clean checkout of 9d148e71c25b346a19ba0b233a8a3eb00e362b64",
+    "compatibility": "Historical compiled chunks and standalone terrain preview retained."
   },
   "checks": {
     "status": "not-run",
@@ -33,7 +33,7 @@
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser/gameplay checks or FPS benchmarks run."
+    "scope": "No browser gameplay or FPS benchmarks authorized/run."
   },
   "cc206": {
     "appearanceRevision": "closed-pilot-6",
@@ -962,6 +962,11 @@
       "sha256": "3de80945a85ba02b78eb4c2d99f6569b9b84e5d73b7bbfb55ac1390a05195720"
     },
     {
+      "path": "assets/AssetCatalogPage-l7m6b740.js",
+      "bytes": 27457,
+      "sha256": "f0bd38fbf6db2639adc9eea5dc419415f0b78501fc703d21091424bd569c6e00"
+    },
+    {
       "path": "assets/AssetCatalogPage-l9Qg4_IQ.js",
       "bytes": 24446,
       "sha256": "67d13c8eae5301486f434bc4fbd7b36ea5821314217bb57d78eded1abe0ee213"
@@ -1100,6 +1105,11 @@
       "path": "assets/AssetThumbnail-C3JjJkDx.js",
       "bytes": 802655,
       "sha256": "e06baadfb70bdf54d2d118dd10bf38c6b126fda66b1e5a3cf4136412efb6fa17"
+    },
+    {
+      "path": "assets/AssetThumbnail-C54K_7tt.js",
+      "bytes": 599927,
+      "sha256": "9f565edf80d95047fed453318d3ce22401ecaac9bd19cf658ebeb8da67d5271d"
     },
     {
       "path": "assets/AssetThumbnail-C_cHWIOp.js",
@@ -1322,6 +1332,11 @@
       "sha256": "00c1adcfb41954e4a8b7412ef27f1fe82608c298ee19fc065c2613ca1b08a442"
     },
     {
+      "path": "assets/cc201-game-template-CBAuXUrp.js",
+      "bytes": 4799,
+      "sha256": "e1d4935cd2125f683335753bb75c382e3b1fe7b6a379df34ef4ad44ca7931329"
+    },
+    {
       "path": "assets/cc201-game-template-CEItQJrC.js",
       "bytes": 3976,
       "sha256": "289baa796e5dfe84b99c806cb6c78f509ee07aebdf74eac2185ce27e5225adf4"
@@ -1367,6 +1382,11 @@
       "sha256": "dfbc65bec5bb1d78d1f2a85df786427e5836f0deeecdcb52f075ca4b457a345c"
     },
     {
+      "path": "assets/cc203-game-template-CNI7T0VY.js",
+      "bytes": 7133,
+      "sha256": "aced6a0d769ba97d53f599f8e81e4ca9d4fb227c6ef97434335b4bc49e0079de"
+    },
+    {
       "path": "assets/cc203-game-template-CtQBaLtv.js",
       "bytes": 7138,
       "sha256": "63437b2dad401bac4f3edcb90b83b5c77c27388c094e81f9fab46ca424efd3ab"
@@ -1400,6 +1420,11 @@
       "path": "assets/cc205-game-template-CDJGNjIh.js",
       "bytes": 3980,
       "sha256": "af8305590b31857a597a39fbca94e0fb9cd216813ee430f57435577323f47f97"
+    },
+    {
+      "path": "assets/cc205-game-template-CzEBxbY3.js",
+      "bytes": 4052,
+      "sha256": "e9b6ba619b61a1e83199568e2f90313993b860390a9d4d721cf43cb980764854"
     },
     {
       "path": "assets/cc205-game-template-Dc7ef0M_.js",
@@ -1440,6 +1465,11 @@
       "path": "assets/cc206-game-template-BShfwkDB.js",
       "bytes": 8130,
       "sha256": "c277e860abc66a63b46dc051b026c4b0f5c047c0b9f83bd5b6dc187925639a0e"
+    },
+    {
+      "path": "assets/cc206-game-template-CBMCirkg.js",
+      "bytes": 7590,
+      "sha256": "de59da786a4787c68bbebbd7c22e816ec68932d37968bd0ef682ac7bd7da5af2"
     },
     {
       "path": "assets/cc206-game-template-CMIjHWMs.js",
@@ -1555,6 +1585,11 @@
       "path": "assets/Cc206ReviewPage-BdHhn5kM.js",
       "bytes": 11977,
       "sha256": "0f738677373d8274f7c1c56398b173f54c7eac6b92a326e7aa457d7a24546d57"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BdHjqDxJ.js",
+      "bytes": 12022,
+      "sha256": "78b7256574b544e9cb77787be0c9f6b678377856f114860d7570c3a35ea39141"
     },
     {
       "path": "assets/Cc206ReviewPage-BhGXjc6Z.js",
@@ -2377,6 +2412,11 @@
       "sha256": "a73b31844dbc83128c55989c356b345c63f20a4a62e2db736c174eefc56ed632"
     },
     {
+      "path": "assets/ConsistsPage-DSv628YW.js",
+      "bytes": 11763,
+      "sha256": "2225a6f9aa72b432f2311fde44484faa2e664af716821819ceac7d92003af5ab"
+    },
+    {
       "path": "assets/ConsistsPage-DU1Jxk9H.js",
       "bytes": 8470,
       "sha256": "aa8291c2835901434b55b86f8533e8c49dabf1328afc56dabd3c0b8f331b864f"
@@ -2727,6 +2767,11 @@
       "sha256": "b3d8062451fe545ac4d81e42786696bd1201923d396bf37b5ae91a485f2e9f89"
     },
     {
+      "path": "assets/diorama-postprocessing-DnVbtvj0.js",
+      "bytes": 40373,
+      "sha256": "adfe9073ce2bff359bf53a00153d7657f856f79a1d0ed247f858dc984cafb636"
+    },
+    {
       "path": "assets/diorama-postprocessing-DoVZZv5j.js",
       "bytes": 40373,
       "sha256": "f5ae657f6ae4e74334aa4080336843bb7270395a30e6361f2bc2e66d6034f2d2"
@@ -2850,6 +2895,11 @@
       "path": "assets/diorama-style-CZvQapl5.js",
       "bytes": 2580,
       "sha256": "35c006189c5e1d7987e762dae1bc5025cbc81b5b534cf8abe29ad79b04c9b8fc"
+    },
+    {
+      "path": "assets/diorama-style-DsBODVk-.js",
+      "bytes": 5944,
+      "sha256": "f1004135242c399242862056ce4f283517f3a92490833564cedbfe6db7931eba"
     },
     {
       "path": "assets/diorama-style-DsjoP1cK.js",
@@ -3030,6 +3080,11 @@
       "path": "assets/DownloadSimple.es-C9LYz7m7.js",
       "bytes": 2061,
       "sha256": "6f8a999a367d86d1b60da25ef65b73c987ec327cb792a602e1768bf5d2872ccd"
+    },
+    {
+      "path": "assets/DownloadSimple.es-C_eGJP5T.js",
+      "bytes": 2110,
+      "sha256": "ee91c1db068ad25d79a030c4e1f3fd3fcca73446af94ecd6492c74e8608825a4"
     },
     {
       "path": "assets/DownloadSimple.es-CAo5ZrUt.js",
@@ -3365,6 +3420,11 @@
       "path": "assets/DownloadSimple.es-YpAhwte1.js",
       "bytes": 2061,
       "sha256": "0e155d35aa0d3a57ef1f0b9470d7ef89288ffb5b35746cd78679f49da9b829dc"
+    },
+    {
+      "path": "assets/GaugeReviewPage--DGWMncl.js",
+      "bytes": 18289,
+      "sha256": "6c86501d989f12e56f86453cea1a8bde5f647146c80dbdbb1c27a03c90df2195"
     },
     {
       "path": "assets/GaugeReviewPage--J27jdL0.js",
@@ -3872,6 +3932,11 @@
       "sha256": "16f9640ab04c57ce5ec60bd4943ff4a60abea062b9254471aca06892a9e0515c"
     },
     {
+      "path": "assets/gear-gauge-BFa2PAoh.js",
+      "bytes": 1421,
+      "sha256": "a56c1a13cda6488a7b3e10b0dab601f52c98a800331172e7bfb5c8f9ce5f0cf9"
+    },
+    {
       "path": "assets/gear-gauge-GAoo0xeK.js",
       "bytes": 1421,
       "sha256": "dd4708ccadb3433360824723bacf255342e8a44289ad0d250e91c570093e58c8"
@@ -4115,6 +4180,11 @@
       "path": "assets/HudPreviewPanel-BHjs0iBw.js",
       "bytes": 428,
       "sha256": "7321b7b5560dd68f4ffd28d7807599ad1bda08b8578e6f87011d2f3a15f8d2bd"
+    },
+    {
+      "path": "assets/HudPreviewPanel-BjBKdZL-.js",
+      "bytes": 428,
+      "sha256": "d1e2400896259f54f2815b989ad44c06d89d47080baa697ba60df05389f47d7a"
     },
     {
       "path": "assets/HudPreviewPanel-BJG42N6r.js",
@@ -4540,6 +4610,11 @@
       "path": "assets/HudPreviewPanel-y9cw1Qql.js",
       "bytes": 421,
       "sha256": "6318c02c280f393f5c0be87a1ec7e89ccb3adb8a0287e5b44c0b71d80679efdd"
+    },
+    {
+      "path": "assets/IconBase.es-8xrdCkJr.js",
+      "bytes": 3740,
+      "sha256": "563280b470aaed5448e6799f8c0bd9ad9144d8e65822d40f78ac81049c5e8f3f"
     },
     {
       "path": "assets/IconBase.es-B_mDIV5K.js",
@@ -5147,6 +5222,11 @@
       "sha256": "e4a19eff18fb2ba3cf235e41ca8b633a4ad4e305c7ad6640faf581cc59cdba1f"
     },
     {
+      "path": "assets/ImportedCc206Page-mmtYwi_i.js",
+      "bytes": 18456,
+      "sha256": "12af4c47085f6ff30c160ef69b72f86e3b118970caa8b3c0268177b19edfef9a"
+    },
+    {
       "path": "assets/ImportedCc206Page-NOieOF4s.js",
       "bytes": 18456,
       "sha256": "d883207bd913053dfb481f33d4b61eaa6ada8bae3ec0f480e3001a235a8d466f"
@@ -5537,6 +5617,11 @@
       "sha256": "d2af960c737de8205e2aa81e92dccdef9b3fdadc8ded676f84519bd6af03c329"
     },
     {
+      "path": "assets/index-CuhC4Lh2.js",
+      "bytes": 919775,
+      "sha256": "250d1e84eb1c5caf8735dde75e750444a0c63ded2f3bae926e07ae21bd721d9b"
+    },
+    {
       "path": "assets/index-CVb2w6it.js",
       "bytes": 734916,
       "sha256": "e399263affe2b9f03da11fec74dc277a158a48721b356ec488d27e3d3ddbaa1e"
@@ -5770,6 +5855,11 @@
       "path": "assets/locomotive-finish-D7ZeQKVp.js",
       "bytes": 14085,
       "sha256": "525a54aee9da3a5ee468dc387f2d3c0d7c82a169e6ec04279a342dfef60b7fcb"
+    },
+    {
+      "path": "assets/locomotive-finish-DgLPgt68.js",
+      "bytes": 14165,
+      "sha256": "1992eb0b1744ed37e73387c3c654df2cc01ade96d724197dc4f232cebdbc0dc5"
     },
     {
       "path": "assets/locomotive-finish-DM6e7XqX.js",
@@ -6374,7 +6464,7 @@
     {
       "path": "index.html",
       "bytes": 2059,
-      "sha256": "6a29eb65b4738eee027303257cad57225624bf6cd601544773cf6a2953a5fd85"
+      "sha256": "4476580ac5d66c8e8f96b8e9d790dbec0e5807d016230d7583eedac39308aaaf"
     },
     {
       "path": "models/catalog.json",
@@ -6428,28 +6518,28 @@
     },
     {
       "path": "models/cc203-rebuild-credits.txt",
-      "bytes": 1308,
-      "sha256": "f83204b68b7a64ca500ebe24bfac766178ca1c3e7e83a4f9d996ffe7e27fc394"
+      "bytes": 1683,
+      "sha256": "88e869bd7a0ec8c6e4fa33432adb2ba5f4aba500e1b62627753699b04e6b2c22"
     },
     {
       "path": "models/cc203-rebuild-game-report.json",
       "bytes": 814,
-      "sha256": "0f89c4c0b508cf34cd3fd38d2b2df891a1c45739f455afe26b144396130fcc74"
+      "sha256": "7108e4d2b7ffa9c9035052686ed143604c9c424a29c8a0237023a0f758dc1ff4"
     },
     {
       "path": "models/cc203-rebuild-high-packed.glb",
-      "bytes": 605836,
-      "sha256": "ec7d4bc7169fb0f602f473ea18e6de3b3fa162b310ed64bdb8b21deb4b3b115a"
+      "bytes": 643792,
+      "sha256": "82edcc9328e15fa28009b4f9caa55473f3e709e31423f212a5deab7d0c4b60f2"
     },
     {
       "path": "models/cc203-rebuild-low-packed.glb",
-      "bytes": 212852,
-      "sha256": "012cd875a8aa706a86d74ed813d56c539042a70c50287319925572912e62bfa9"
+      "bytes": 205712,
+      "sha256": "3ee118f0d01feb20880ff565b46e01e8c95c9f81164bc0c3e444cfe760b8ada4"
     },
     {
       "path": "models/cc203-rebuild-medium-packed.glb",
-      "bytes": 427516,
-      "sha256": "abf3d06989a836294328692ae86a6f39b31ec2c88d7cdbc4ad3a9f4e46b8061c"
+      "bytes": 435416,
+      "sha256": "c06ee62a3bb1dc2ad7a1cea6795d96c7c67617fb3ecbd9d8cfb11fbb738370e7"
     },
     {
       "path": "models/cc205-rebuild-credits.txt",
@@ -6625,6 +6715,31 @@
       "path": "models/jacaranda-game.glb",
       "bytes": 3065800,
       "sha256": "cf7c30c5fc2cfee334acffe451359514006eeda67bd5e7c2a2111ddc12b83d35"
+    },
+    {
+      "path": "models/lodaya-ssng-credits.txt",
+      "bytes": 1161,
+      "sha256": "e774249fa0af3e189bad25c51b5cb2e65d17522682ce2b4d099924375bf004c5"
+    },
+    {
+      "path": "models/lodaya-ssng-game-report.json",
+      "bytes": 1734,
+      "sha256": "da4c09ef11b37a8f8e57ce1f15e093c57fb70c389fdfecc26921c92cacf3956f"
+    },
+    {
+      "path": "models/lodaya-ssng-high-packed.glb",
+      "bytes": 315480,
+      "sha256": "0ce14cbc3bb3d17d88eee461ea96ae70aea61e115e4b76eae62247e0b10673d5"
+    },
+    {
+      "path": "models/lodaya-ssng-low-packed.glb",
+      "bytes": 107844,
+      "sha256": "a1dfd79400013d970ba0c6153ee2996a66add8ea06faded8e4590b15b0736a0e"
+    },
+    {
+      "path": "models/lodaya-ssng-medium-packed.glb",
+      "bytes": 233576,
+      "sha256": "6342e05d16784a6f6b9ac7c6770f1094be825bb6dffcda83648dc9495aee4af7"
     },
     {
       "path": "models/pallet-0-blue.glb",
@@ -7261,7 +7376,14 @@
     "ballastLoad": "175 irregular angular crushed rocks in a two-bin discharge hopper",
     "legacyIds": "passenger selects economy; freight selects harvest; saved collection IDs and names preserved",
     "farmLoading": "Only harvest carriages contribute farm loading capacity",
-    "assetReview": "Revised ballast authoring render visually reviewed; other five carriage geometry payloads retained. Gameplay articulation and performance unmeasured."
+    "assetReview": "Revised ballast authoring render visually reviewed; other five carriage geometry payloads retained. Gameplay articulation and performance unmeasured.",
+    "passengerSource": "lodaya-ssng-v1; three LODs",
+    "legacyKitActiveTypes": [
+      "freight",
+      "ballast",
+      "container",
+      "tank"
+    ]
   },
   "crossingQueue": {
     "active": false,
@@ -7337,7 +7459,14 @@
     "unchangedPoseBufferUploads": false,
     "couplerAndPhysicsSpacing": "Short rest coupling shared with all six carriage types; extension on bends within previous maximum reach",
     "storageLifecycle": "Connections rebuilt on detach/attach and disposed before pooling",
-    "visualGameplayVerification": "not_run"
+    "visualGameplayVerification": "not_run",
+    "anchorSource": "Per-coach passengerGangway metadata; legacy fallback retained",
+    "ssngPhysicalProfile": {
+      "along": 10.225,
+      "height": 2.21,
+      "halfWidth": 0.735,
+      "halfHeight": 1.06
+    }
   },
   "closeCoupling": {
     "carriages": [
@@ -10950,7 +11079,8 @@
   "peronPassengers": {
     "layer": "src/world/riverside/station-passengers.ts",
     "figures": "diorama toy figures, five baked meshes each",
-    "boarding": "economy/executive coach doors at body Z \u00c2\u00b16.32 (authored), display only"
+    "boarding": "economy/executive coach doors at body Z \u00c2\u00b16.32 (authored), display only",
+    "boardingDoorSource": "Per-coach passengerDoors metadata; boards after 80 percent opening"
   },
   "signalTurnoutRestyle": {
     "palette": "diorama",
@@ -10970,7 +11100,7 @@
       "source": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a"
     }
   },
-  "previousPublishedCommit": "29dd117805965cddb97175226bc3a39614afcf2a",
+  "previousPublishedCommit": "75d6f0ce3e9f28d37a5e7c3aaf7be72d54ada0a4",
   "locomotiveFleet": {
     "default": "rebuilt",
     "rollbackQuery": "?models=original",
@@ -10980,7 +11110,7 @@
       "cc206=original"
     ],
     "originalAssetsRetained": true,
-    "totalPackedBytes": 4624484,
+    "totalPackedBytes": 4663200,
     "sourceRelease": "docs/cc203-rebuild-game.md",
     "activeTypes": [
       "cc201",
@@ -11084,12 +11214,12 @@
     "walkwayEdge": "graphite #292c2e"
   },
   "cc203": {
-    "sourceRevision": "rebuilt-cc203-v5",
-    "packedBytes": 1246204,
+    "sourceRevision": "rebuilt-cc203-v9",
+    "packedBytes": 1284920,
     "lodTriangles": [
-      32908,
-      21278,
-      9006
+      36156,
+      23086,
+      9078
     ],
     "couplerPivot": 6.656634487980314,
     "couplerHeight": 0.83,
@@ -11102,34 +11232,34 @@
     "autoRoster": true,
     "saveSchema": 3,
     "legacyCc203MapsToCc206": true,
-    "cabProfile": "v5: shorter cab, upper face and lamps forward 0.30m, upright side sashes and aligned entry steps",
+    "cabProfile": "v7: reference-sized cab and refined glazing/roof; v8 reference-sized hood; v9 deeper casting and inner bogie equipment",
     "levels": {
       "high": {
         "file": "cc203-rebuild-high-packed.glb",
-        "bytes": 605836,
-        "triangles": 32908,
-        "uniqueGeometryTriangles": 32908,
+        "bytes": 643792,
+        "triangles": 36156,
+        "uniqueGeometryTriangles": 36156,
         "primitives": 33,
         "materials": 5,
-        "sha256": "ec7d4bc7169fb0f602f473ea18e6de3b3fa162b310ed64bdb8b21deb4b3b115a"
+        "sha256": "82edcc9328e15fa28009b4f9caa55473f3e709e31423f212a5deab7d0c4b60f2"
       },
       "medium": {
         "file": "cc203-rebuild-medium-packed.glb",
-        "bytes": 427516,
-        "triangles": 21278,
-        "uniqueGeometryTriangles": 21278,
+        "bytes": 435416,
+        "triangles": 23086,
+        "uniqueGeometryTriangles": 23086,
         "primitives": 33,
         "materials": 5,
-        "sha256": "abf3d06989a836294328692ae86a6f39b31ec2c88d7cdbc4ad3a9f4e46b8061c"
+        "sha256": "c06ee62a3bb1dc2ad7a1cea6795d96c7c67617fb3ecbd9d8cfb11fbb738370e7"
       },
       "low": {
         "file": "cc203-rebuild-low-packed.glb",
-        "bytes": 212852,
-        "triangles": 9006,
-        "uniqueGeometryTriangles": 9006,
+        "bytes": 205712,
+        "triangles": 9078,
+        "uniqueGeometryTriangles": 9078,
         "primitives": 33,
         "materials": 5,
-        "sha256": "012cd875a8aa706a86d74ed813d56c539042a70c50287319925572912e62bfa9"
+        "sha256": "3ee118f0d01feb20880ff565b46e01e8c95c9f81164bc0c3e444cfe760b8ada4"
       }
     }
   },
@@ -11155,5 +11285,120 @@
       "cc206-blue.glb"
     ],
     "cc204": "retired; legacy aliases retained"
+  },
+  "ssng": {
+    "revision": "lodaya-ssng-v1",
+    "levels": {
+      "high": {
+        "file": "lodaya-ssng-high-packed.glb",
+        "bytes": 315480,
+        "assets": {
+          "executive": {
+            "triangles": 15202,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          },
+          "economy": {
+            "triangles": 14712,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          }
+        },
+        "materials": 3,
+        "sha256": "0ce14cbc3bb3d17d88eee461ea96ae70aea61e115e4b76eae62247e0b10673d5"
+      },
+      "medium": {
+        "file": "lodaya-ssng-medium-packed.glb",
+        "bytes": 233576,
+        "assets": {
+          "executive": {
+            "triangles": 10562,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          },
+          "economy": {
+            "triangles": 10242,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          }
+        },
+        "materials": 3,
+        "sha256": "6342e05d16784a6f6b9ac7c6770f1094be825bb6dffcda83648dc9495aee4af7"
+      },
+      "low": {
+        "file": "lodaya-ssng-low-packed.glb",
+        "bytes": 107844,
+        "assets": {
+          "executive": {
+            "triangles": 3632,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          },
+          "economy": {
+            "triangles": 3460,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          }
+        },
+        "materials": 3,
+        "sha256": "a1dfd79400013d970ba0c6153ee2996a66add8ea06faded8e4590b15b0736a0e"
+      }
+    },
+    "textures": 0,
+    "activeGameReplacement": true,
+    "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+    "packedBytes": 656900,
+    "activeClasses": [
+      "passenger",
+      "executive"
+    ],
+    "doorAnimation": {
+      "mode": "automatic sliding on platform side at passenger station stops",
+      "durationSeconds": 1.1,
+      "autoCloseLeadSeconds": 1.25,
+      "departureWaitsForClosedDoors": true
+    },
+    "passengerPresets": {
+      "coaches": 3,
+      "mixed": [
+        "executive",
+        "passenger",
+        "passenger"
+      ],
+      "largestConservativeSpanMeters": 64.618,
+      "northPlatformSafeMeters": 66
+    },
+    "autoCapacityFilter": true,
+    "sourceRelease": "docs/lodaya-ssng-game.md"
+  },
+  "nightVisibility": {
+    "ambientAndFillIncreasePercent": "25-27",
+    "moonIncreasePercent": "19-22",
+    "addedLights": 0,
+    "sourceRelease": "docs/night-visibility-refinement.md"
+  },
+  "winterParticles": {
+    "flakesPerMillionCssPixels": 250,
+    "previous": 1500,
+    "sameDensityAsSpring": true,
+    "sourceRelease": "docs/winter-particle-density.md"
   }
 }

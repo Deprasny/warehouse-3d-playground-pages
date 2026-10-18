@@ -1,0 +1,17 @@
+Lodaya SSNG K1 / K3 ? original game exterior reconstruction, 18 October 2026.
+Original procedural geometry authored for this project. No reference mesh, image texture or UV imported.
+Primitive construction helpers share the project's original carriage kit toolkit.
+KAI and INKA marks identify the prototype operator/manufacturer.
+
+Official exterior/size references:
+https://www.inka.co.id/produk/kereta-kelas-eksekutif-stainless-steel-new-generation
+https://www.inka.co.id/produk/kereta-kelas-ekonomi-stainless-steel-new-generation
+https://www.kai.id/publikasi/artikel-berita/7508-kai-operasikan-39-trainset-stainless-steel-new-generation-di-berbagai-relasi-kereta-api
+
+TB1014 family references (photographic comparison / engineering research only):
+https://prosiding.pnj.ac.id/index.php/sntm/article/view/3605
+https://www.linkedin.com/posts/prasetyaadinug_railwayengineering-bogiedesign-rollingstock-activity-7315206764562370560-C3LX
+https://id.scribd.com/presentation/754608728/BOGIE-TB-1014-NG-2023
+
+Reference photos retained locally for authoring, not bundled in runtime GLBs.
+Reconstruction assumptions and game scale exceptions: docs/lodaya-ssng-game.md.

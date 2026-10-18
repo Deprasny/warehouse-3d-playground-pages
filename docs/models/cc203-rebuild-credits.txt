@@ -1,4 +1,4 @@
-CC203 independent exterior rebuild v5 / game adapter
+CC203 independent exterior rebuild v9 / game adapter
 Authored for Depras, 18 October 2026.
 
 New hand-authored locomotive geometry; no imported train vertices or generated AI mesh.
@@ -21,3 +21,10 @@ Photographic references (not embedded as textures in the model):
 Source notes, perspective limitations and dimension provenance:
 outputs/cc203-reference/sources.json and reference-notes.md.
 The research PDF/layout and generated 2D guide sheets are not distributed game textures.
+
+V7 bogie visuals reuse the independently authored CC206 V15 truck builder,
+adapted to CC203 wheel stations, gauge and radius. The supplied JIONS GLB
+was only a local visual comparator; its geometry/textures are not included.
+
+V9 deepens the shared cast web for CC203 and adds lightweight approximate
+inner motor/gearcase/support masses. Default CC206 geometry is unchanged.

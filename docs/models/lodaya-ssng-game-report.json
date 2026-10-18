@@ -1,0 +1,77 @@
+{
+  "revision": "lodaya-ssng-v1",
+  "levels": {
+    "high": {
+      "file": "lodaya-ssng-high-packed.glb",
+      "bytes": 315480,
+      "assets": {
+        "executive": {
+          "triangles": 15202,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        },
+        "economy": {
+          "triangles": 14712,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        }
+      },
+      "materials": 3
+    },
+    "medium": {
+      "file": "lodaya-ssng-medium-packed.glb",
+      "bytes": 233576,
+      "assets": {
+        "executive": {
+          "triangles": 10562,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        },
+        "economy": {
+          "triangles": 10242,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        }
+      },
+      "materials": 3
+    },
+    "low": {
+      "file": "lodaya-ssng-low-packed.glb",
+      "bytes": 107844,
+      "assets": {
+        "executive": {
+          "triangles": 3632,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        },
+        "economy": {
+          "triangles": 3460,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        }
+      },
+      "materials": 3
+    }
+  },
+  "textures": 0,
+  "activeGameReplacement": true,
+  "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior."
+}
