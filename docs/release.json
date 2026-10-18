@@ -1,8 +1,8 @@
 {
-  "release": "fleet-pilot-roof-457d99d",
-  "sourceCommit": "457d99dc6af06c73a9b72ed7019374d5e247f03e",
+  "release": "fleet-bogie-detail-226bdce",
+  "sourceCommit": "226bdce650d4a11e37d841af7d4c6b29c1d9d1e2",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T04:01:44.791964+00:00",
+  "builtAt": "2026-10-18T04:19:48.126765+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,52 +19,52 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "31ede76631626d02c782267bccb2726bfe8ed632",
+  "previousSourceCommit": "457d99dc6af06c73a9b72ed7019374d5e247f03e",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 457d99dc6af06c73a9b72ed7019374d5e247f03e"
+    "source": "detached clean checkout of 226bdce650d4a11e37d841af7d4c6b29c1d9d1e2"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "No automated tests authorized for this fleet release; TypeScript/Vite build only."
+    "scope": "No automated tests authorized; TypeScript/Vite deployment build only."
   },
   "browserChecks": {
     "status": "skipped",
     "scope": "No browser/gameplay checks or FPS benchmarks run."
   },
   "cc206": {
-    "appearanceRevision": "pilot-roof-4",
+    "appearanceRevision": "bogie-5",
     "sourceRevision": "original-v15",
     "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
     "levels": {
       "optimized": {
         "file": "cc206-v15-optimized-packed.glb",
-        "bytes": 663880,
-        "triangles": 38488,
-        "uniqueGeometryTriangles": 38452,
+        "bytes": 677244,
+        "triangles": 39256,
+        "uniqueGeometryTriangles": 39220,
         "primitives": 38,
         "materials": 5,
-        "sha256": "0208c6aadde338d805b66013fc9316440fb2e7ea4a6828c6a2be3be333d150e3"
+        "sha256": "badb8cd2450abd26fb60b86fff62d343ec40cc6ec98c4d6f4f480b924e1056ed"
       },
       "medium": {
         "file": "cc206-v15-medium-packed.glb",
-        "bytes": 476772,
+        "bytes": 476768,
         "triangles": 26556,
         "uniqueGeometryTriangles": 26192,
         "primitives": 38,
         "materials": 5,
-        "sha256": "8dc377b3da835668f169de3f32a59411fc1a502c56e0b7b55b4c096ab630f181"
+        "sha256": "58fbede854af9fe8d4538e24560db5067c904d112815904730d44ea820e4052e"
       },
       "low": {
         "file": "cc206-v15-low-packed.glb",
-        "bytes": 240656,
+        "bytes": 240652,
         "triangles": 11566,
         "uniqueGeometryTriangles": 11386,
         "primitives": 38,
         "materials": 5,
-        "sha256": "bdad0518526be392e06efb4b0b7a8e49d990c5c76d857212ff446675da82bc99"
+        "sha256": "5439da983116109d24506b852cb76eca8ecb98b8536239afb5667891b9c13e5b"
       }
     },
     "default": true,
@@ -9327,7 +9327,7 @@
       "source": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a"
     }
   },
-  "previousPublishedCommit": "7e2cfcf41e5d4e066f88ca587dfc6c786ad0306f",
+  "previousPublishedCommit": "b0cb0251506dbd6481f9c67815ddfc6bad29ccdc",
   "locomotiveFleet": {
     "default": "rebuilt",
     "rollbackQuery": "?models=original",
@@ -9337,21 +9337,21 @@
       "cc206=original"
     ],
     "originalAssetsRetained": true,
-    "totalPackedBytes": 3104376,
-    "sourceRelease": "docs/fleet-pilot-roof-update.md"
+    "totalPackedBytes": 3207284,
+    "sourceRelease": "docs/fleet-bogie-detail.md"
   },
   "cc201": {
-    "sourceRevision": "rebuilt-cc201-v4",
+    "sourceRevision": "rebuilt-cc201-v5",
     "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
     "levels": {
       "high": {
         "file": "cc201-rebuild-high-packed.glb",
-        "bytes": 503972,
-        "triangles": 26944,
-        "uniqueGeometryTriangles": 26944,
+        "bytes": 517524,
+        "triangles": 27760,
+        "uniqueGeometryTriangles": 27760,
         "primitives": 33,
         "materials": 5,
-        "sha256": "5317c592fcb36097e71a883fa1405fb14487a720fa2597ac31dd40214eed66bc"
+        "sha256": "d04eed531f715b1cc488e9874a38b5ee927cc726373190b41f4fe34146b1e153"
       },
       "medium": {
         "file": "cc201-rebuild-medium-packed.glb",
@@ -9360,7 +9360,7 @@
         "uniqueGeometryTriangles": 18828,
         "primitives": 33,
         "materials": 5,
-        "sha256": "ca9d57620b3ce08ba56c1fb400ac0d53afd9f9a440ba0631811ce6e8a8741fb2"
+        "sha256": "45d83a7d7ac544c3e81e314dcf03f2699fb1949321419b2456596d6deff53527"
       },
       "low": {
         "file": "cc201-rebuild-low-packed.glb",
@@ -9369,24 +9369,24 @@
         "uniqueGeometryTriangles": 7452,
         "primitives": 33,
         "materials": 5,
-        "sha256": "57bdda102f244f289a1506fa379df88102b7886b65272cb249f59ec2f243965a"
+        "sha256": "4290531d946444edb007a2c7462e23aa43f30c2df319970237557b68195899e0"
       }
     },
     "default": true,
     "creditFile": "cc201-rebuild-credits.txt"
   },
   "cc205": {
-    "sourceRevision": "rebuilt-cc205-v2",
+    "sourceRevision": "rebuilt-cc205-v3",
     "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
     "levels": {
       "high": {
         "file": "cc205-rebuild-high-packed.glb",
-        "bytes": 315724,
-        "triangles": 18580,
-        "uniqueGeometryTriangles": 18580,
+        "bytes": 391724,
+        "triangles": 22412,
+        "uniqueGeometryTriangles": 22412,
         "primitives": 33,
         "materials": 5,
-        "sha256": "20a3bdd1a9ecbb1a3cbc85312e098f05901d2dd8fa07028661df95a9ef87535d"
+        "sha256": "ae1ba85461593d6a0d31cc54c3b5bca49ee2f39dd84a988db9fff3ab64b1e937"
       },
       "medium": {
         "file": "cc205-rebuild-medium-packed.glb",
@@ -9395,7 +9395,7 @@
         "uniqueGeometryTriangles": 11836,
         "primitives": 33,
         "materials": 5,
-        "sha256": "0118400a1945595051d0d06cfa778c66b397a655898e47b1fa930877b90cd4a1"
+        "sha256": "23ea4bb98049ff49b9c8c3d085f4dfb2e903ad5cc6e5670d2f09573601a8c670"
       },
       "low": {
         "file": "cc205-rebuild-low-packed.glb",
@@ -9404,7 +9404,7 @@
         "uniqueGeometryTriangles": 5448,
         "primitives": 33,
         "materials": 5,
-        "sha256": "8f01b81014a4a372e62e11a594cfaba29c9e451fe0b44f22a946983e373a246a"
+        "sha256": "7d5d3350f333b47b66d64f6590af6b927b8a66f254a735c6e1545b3674cf3273"
       }
     },
     "default": true,

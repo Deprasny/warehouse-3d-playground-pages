@@ -1,19 +1,19 @@
 {
-  "appearanceRevision": "pilot-roof-4",
+  "appearanceRevision": "bogie-5",
   "sourceRevision": "original-v15",
   "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
   "levels": {
     "optimized": {
       "file": "cc206-v15-optimized-packed.glb",
-      "bytes": 663880,
-      "triangles": 38488,
-      "uniqueGeometryTriangles": 38452,
+      "bytes": 677244,
+      "triangles": 39256,
+      "uniqueGeometryTriangles": 39220,
       "primitives": 38,
       "materials": 5
     },
     "medium": {
       "file": "cc206-v15-medium-packed.glb",
-      "bytes": 476772,
+      "bytes": 476768,
       "triangles": 26556,
       "uniqueGeometryTriangles": 26192,
       "primitives": 38,
@@ -21,7 +21,7 @@
     },
     "low": {
       "file": "cc206-v15-low-packed.glb",
-      "bytes": 240656,
+      "bytes": 240652,
       "triangles": 11566,
       "uniqueGeometryTriangles": 11386,
       "primitives": 38,
