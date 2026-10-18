@@ -1,8 +1,8 @@
 {
-  "release": "game-update-cc203-v11-55ff0ba",
-  "sourceCommit": "55ff0baf27badfbe6100db977a172b39a112e6da",
+  "release": "game-update-cc203-v11-57e0a7e",
+  "sourceCommit": "57e0a7e501d016b843182188dde477733297f891",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T12:56:54.783844+00:00",
+  "builtAt": "2026-10-18T12:58:47.209931+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,11 +19,11 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9d148e71c25b346a19ba0b233a8a3eb00e362b64",
+  "previousSourceCommit": "55ff0baf27badfbe6100db977a172b39a112e6da",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 55ff0baf27badfbe6100db977a172b39a112e6da",
+    "source": "detached clean checkout of 57e0a7e501d016b843182188dde477733297f891",
     "compatibility": "Historical compiled chunks and standalone terrain preview retained."
   },
   "checks": {
@@ -11280,7 +11280,7 @@
       "source": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a"
     }
   },
-  "previousPublishedCommit": "2a0936b0a1f4521e7cb22a907e0b05298ffdafc9",
+  "previousPublishedCommit": "c434e9ec36bd0cf1db93d52d577f2757c895c436",
   "locomotiveFleet": {
     "default": "rebuilt",
     "rollbackQuery": "?models=original",
@@ -11585,7 +11585,7 @@
     "sameDensityAsSpring": true,
     "sourceRelease": "docs/winter-particle-density.md"
   },
-  "sourceFingerprint": "7aa24e409a747f91370d6998ca233b12b2ce433b",
+  "sourceFingerprint": "ac1d5f5f33df727bd672a8e22d9858203924a06e",
   "ssngSupport": {
     "revision": "ssng-support-v1",
     "levels": {
