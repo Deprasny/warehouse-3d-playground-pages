@@ -1,8 +1,8 @@
 {
-  "release": "game-update-cc203-v11-57e0a7e",
-  "sourceCommit": "57e0a7e501d016b843182188dde477733297f891",
+  "release": "graphics-quality-loading-e3795d6",
+  "sourceCommit": "e3795d6d5896ac3643f87d0d1774f07b0516af2f",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T12:58:47.209931+00:00",
+  "builtAt": "2026-10-18T14:12:49.417Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,21 +19,29 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "55ff0baf27badfbe6100db977a172b39a112e6da",
+  "previousSourceCommit": "57e0a7e501d016b843182188dde477733297f891",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 57e0a7e501d016b843182188dde477733297f891",
-    "compatibility": "Historical compiled chunks and standalone terrain preview retained."
+    "source": "detached committed checkout e3795d6d5896ac3643f87d0d1774f07b0516af2f",
+    "compatibility": "Historical hashed chunks and standalone terrain preview retained; retired MTT GLB removed."
   },
   "checks": {
-    "status": "not-run",
-    "run": [],
-    "scope": "No new automated tests run for this release; deployment build only. Historical audit validation is documented separately."
+    "status": "passed-scoped",
+    "run": [
+      "check-gpu-light-configurations.ts",
+      "check-mobile-gpu-startup.ts",
+      "check-gpu-warmup-target.ts",
+      "check-gpu-warmup.ts",
+      "check-audit-rendering.ts",
+      "check-startup-task.ts"
+    ],
+    "scope": "Explicitly approved local validation before deployment; no tests repeated for deployment; check:all not run."
   },
   "browserChecks": {
-    "status": "not-run",
-    "scope": "No browser gameplay or FPS benchmarks run for this release."
+    "status": "passed-scoped",
+    "scope": "Local production/diagnostic startup, per-quality transitions, first-use weather, session/camera preservation and visual comparison; focus-only repair retested on final production build. No browser tests repeated on deployed hosting.",
+    "report": "https://github.com/Deprasny/warehouse-3d-playground/blob/e3795d6d5896ac3643f87d0d1774f07b0516af2f/docs/graphics-quality-validation-2026-10-18.md"
   },
   "cc206": {
     "appearanceRevision": "closed-pilot-6",
@@ -11267,10 +11275,6 @@
     "metalness": 0,
     "behaviourChanged": false
   },
-  "mtt": {
-    "revision": 3,
-    "fix": "coplanar side stripes/labels separated from door panels (flicker)"
-  },
   "lampPoolFix": "additive light pools use zero specular and no fog",
   "headlightShadowFix": "missing headlight shadow maps are primed so lit draws never bind a null shadow texture",
   "credits": {
@@ -11672,10 +11676,27 @@
     "sourceRelease": "docs/ssng-support-game.md"
   },
   "currentChangeScope": {
-    "cc203": "V11 cab and hood refinement",
-    "coaches": "Unified SSNG livery, dining/generator coaches and runtime route displays",
-    "runtime": "Cooperative startup, shader warmup and resource/rendering optimizations",
-    "riverside": "Track layout, shared turnout routing, weather and water updates",
-    "verification": "TypeScript/Vite build and publication byte verification only; no new gameplay/automated tests"
+    "runtime": "Prepare only selected graphics quality; in-game loading gate for quality changes; preserve live session and reuse prepared programs; restore keyboard focus after DOM readiness.",
+    "assets": "Retire MTT roster, loader, animation and public GLB; save 2390140 bytes of startup model downloads.",
+    "visual": "Existing rendering presets retained; scoped local comparison visually consistent, not pixel-identical.",
+    "riverside": "Include the validated current SSNG and station/routing fixes."
+  },
+  "previousPublicationCommit": "ebf473c88d0ea063da4c904fbf7e373c287d769d",
+  "graphicsQualityLoading": {
+    "preferences": "riverside.graphics-quality.v1",
+    "defaultQuality": "light",
+    "localMeasurements": {
+      "device": "i5-12400F / RTX 2060 SUPER / Chrome / 1440x900 DPR1",
+      "referenceLightReadySeconds": 35.7801,
+      "lightReadySeconds": 12.9465,
+      "productionLightReadySeconds": 12.9544,
+      "autoReadySeconds": 26.5929,
+      "highReadySeconds": 27.1691,
+      "firstHighSelectionSeconds": 23.24,
+      "scope": "Local single captures, not internet-hosting timing guarantees. CPU spikes during preparation remain."
+    },
+    "mttRemoved": true,
+    "validatedSourceHash": "c4882919588e615803d214d2145dad684340989cba821351ccd099708278480d",
+    "sourceEquivalentExceptCheckoutLineEndings": true
   }
 }
