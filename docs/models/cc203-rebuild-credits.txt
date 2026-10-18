@@ -1,4 +1,4 @@
-CC203 independent exterior rebuild v4 / game adapter
+CC203 independent exterior rebuild v5 / game adapter
 Authored for Depras, 18 October 2026.
 
 New hand-authored locomotive geometry; no imported train vertices or generated AI mesh.
