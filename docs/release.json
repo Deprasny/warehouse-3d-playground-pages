@@ -1,8 +1,8 @@
 {
-  "release": "fleet-density-solid-pilot-7414bd9",
-  "sourceCommit": "7414bd9f18f72195c3e3d6c2573071d7531c2b88",
+  "release": "cc205-rear-headlights-7ce6c4c",
+  "sourceCommit": "7ce6c4ce6ccd7e2c601cbd9c38dcc5f210934bd2",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T04:38:21.553926+00:00",
+  "builtAt": "2026-10-18T04:57:59.425411+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,11 +19,11 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "226bdce650d4a11e37d841af7d4c6b29c1d9d1e2",
+  "previousSourceCommit": "7414bd9f18f72195c3e3d6c2573071d7531c2b88",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 7414bd9f18f72195c3e3d6c2573071d7531c2b88"
+    "source": "detached clean checkout of 7ce6c4ce6ccd7e2c601cbd9c38dcc5f210934bd2"
   },
   "checks": {
     "status": "not-run",
@@ -32,7 +32,7 @@
   },
   "browserChecks": {
     "status": "skipped",
-    "scope": "No browser/gameplay checks or FPS benchmarks run."
+    "scope": "No browser/gameplay reverse-light checks or FPS benchmarks run."
   },
   "cc206": {
     "appearanceRevision": "closed-pilot-6",
@@ -9327,7 +9327,7 @@
       "source": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a"
     }
   },
-  "previousPublishedCommit": "fba42ed097eb3ce4f0cef5d628a57a66433133d9",
+  "previousPublishedCommit": "3e38773b9dbae55c9ec2cf5e1e1769b877714c44",
   "locomotiveFleet": {
     "default": "rebuilt",
     "rollbackQuery": "?models=original",
@@ -9337,8 +9337,8 @@
       "cc206=original"
     ],
     "originalAssetsRetained": true,
-    "totalPackedBytes": 3369724,
-    "sourceRelease": "docs/fleet-bogie-density-v2.md"
+    "totalPackedBytes": 3378280,
+    "sourceRelease": "docs/cc205-rear-headlights.md"
   },
   "cc201": {
     "sourceRevision": "rebuilt-cc201-v6",
@@ -9376,38 +9376,56 @@
     "creditFile": "cc201-rebuild-credits.txt"
   },
   "cc205": {
-    "sourceRevision": "rebuilt-cc205-v4",
+    "sourceRevision": "rebuilt-cc205-v5",
     "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
     "levels": {
       "high": {
         "file": "cc205-rebuild-high-packed.glb",
-        "bytes": 473276,
-        "triangles": 26940,
-        "uniqueGeometryTriangles": 26940,
+        "bytes": 477756,
+        "triangles": 27180,
+        "uniqueGeometryTriangles": 27180,
         "primitives": 33,
         "materials": 5,
-        "sha256": "017ca186631a443e8e6a9c3bbe543c2631edd0982cfbe432d5710b568be79d6e"
+        "sha256": "5b5c2986a2c4c8fc0c53caf7d1d96bc6a20caa03e6a407e3ba5f47100efaf97c"
       },
       "medium": {
         "file": "cc205-rebuild-medium-packed.glb",
-        "bytes": 230196,
-        "triangles": 11836,
-        "uniqueGeometryTriangles": 11836,
+        "bytes": 232464,
+        "triangles": 11948,
+        "uniqueGeometryTriangles": 11948,
         "primitives": 33,
         "materials": 5,
-        "sha256": "7ac8a7e95c249b48059ffeb9636dd26d34beefa9a4a18f4a274899b2db350e43"
+        "sha256": "ca704e1517d72bc7a68b76b68df93de936a458c4a92f49bec9a880e079c1d800"
       },
       "low": {
         "file": "cc205-rebuild-low-packed.glb",
-        "bytes": 123628,
-        "triangles": 5544,
-        "uniqueGeometryTriangles": 5448,
+        "bytes": 125436,
+        "triangles": 5624,
+        "uniqueGeometryTriangles": 5528,
         "primitives": 33,
         "materials": 5,
-        "sha256": "186a3410d1a6c3679dab299fd6863961631308ce880ae9c3b30b86084a42bcae"
+        "sha256": "ea95ad87098a5d763f34adac60c2be9e50dcc92519219c0b8bbbaaa15fe130f0"
       }
     },
     "default": true,
-    "creditFile": "cc205-rebuild-credits.txt"
+    "creditFile": "cc205-rebuild-credits.txt",
+    "rearUpper": [
+      [
+        -0.1019348,
+        3.04,
+        -7.794
+      ],
+      [
+        0.1019348,
+        3.04,
+        -7.794
+      ]
+    ],
+    "rearSpot": [
+      0,
+      3.04,
+      -7.954
+    ],
+    "walkwayEdge": "graphite #292c2e"
   }
 }
