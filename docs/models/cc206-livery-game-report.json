@@ -1,0 +1,35 @@
+{
+  "appearanceRevision": "reusable-livery-1",
+  "sourceRevision": "original-v15",
+  "liveryContract": "cc206-livery-v1",
+  "externalLiveries": "/liveries/cc206/manifest.json",
+  "texturesEmbedded": 0,
+  "geometrySharedAcrossLiveries": true,
+  "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+  "levels": {
+    "optimized": {
+      "file": "cc206-livery-optimized-packed.glb",
+      "bytes": 693120,
+      "triangles": 37016,
+      "uniqueGeometryTriangles": 36980,
+      "primitives": 40,
+      "materials": 6
+    },
+    "medium": {
+      "file": "cc206-livery-medium-packed.glb",
+      "bytes": 487144,
+      "triangles": 24316,
+      "uniqueGeometryTriangles": 23952,
+      "primitives": 40,
+      "materials": 6
+    },
+    "low": {
+      "file": "cc206-livery-low-packed.glb",
+      "bytes": 259284,
+      "triangles": 11330,
+      "uniqueGeometryTriangles": 11150,
+      "primitives": 40,
+      "materials": 6
+    }
+  }
+}

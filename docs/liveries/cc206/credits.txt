@@ -1,0 +1,29 @@
+CC206 reusable paint atlases, revision 1
+
+Editable artwork: scripts/generate-cc206-liveries.py
+Original vector/raster paint reconstruction for this game; no photograph pixels,
+downloaded model textures, baked lighting, normal maps or generative images used.
+KAI marks and The Nusantara Explorer name identify their respective operator.
+
+Reference photographs:
+- Ghazy2007, ArgoSemeru1376.jpg, own work, 7 October 2026, CC0 1.0.
+  https://commons.wikimedia.org/wiki/File:ArgoSemeru1376.jpg
+  https://creativecommons.org/publicdomain/zero/1.0/
+- TyewongX, Manahan Train with The Nusantara Explorer Locomotive.jpg,
+  own work, 23 September 2026, CC BY 4.0.
+  https://commons.wikimedia.org/wiki/File:Manahan_Train_with_The_Nusantara_Explorer_Locomotive.jpg
+  https://creativecommons.org/licenses/by/4.0/
+  Used to observe paint placement; image is not redistributed in the game.
+- Kereta Api Kita, Lokomotif Livery Khusus The Nusantara Explorer,
+  photographer's published CC206 13 61 views, September 2026.
+  https://keretaapikita.com/lokomotif-livery-khusus-the-nusantara-explorer/
+  Used as visual reference only; photographs are not game textures.
+
+Unit identity corroboration:
+Muhammad Pascal Fajrin / IRPS, 17 September 2026:
+https://irps.or.id/2026/09/lokomotif-cc2061602-kenakan-vintage-livery-merah-biru-pertama-untuk-cipinang/
+
+Limits: the opposite side uses separately readable common paint placement inferred
+from the available oblique views. Small cab scroll flourishes are simplified for
+the miniature game and are not a reproduction of factory vector artwork.
+Gray roof finish follows the game's approved shared locomotive palette.

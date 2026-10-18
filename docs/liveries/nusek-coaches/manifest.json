@@ -1,0 +1,247 @@
+{
+  "schema": "nusek-coach-livery-v1",
+  "revision": "v1",
+  "image": "nusantara-explorer-v1.png",
+  "size": [
+    1024,
+    1024
+  ],
+  "mode": "RGB",
+  "colorSpace": "sRGB",
+  "opaque": true,
+  "flipY": false,
+  "bytes": 269411,
+  "sha256": "9cc5c87f84c372510d6bf0a1b84a091980a98f2ba8faa094c5da7e093dc15c40",
+  "sharedAcrossAllRolesAndLods": true,
+  "gutterPixels": 4,
+  "imageOrigin": "top-left",
+  "authoringBasis": "X-width/Y-up/Z-longitudinal, physical metres before uniform game scale",
+  "bounds": {
+    "longitudinal": [
+      -10,
+      10
+    ],
+    "width": [
+      -1.5,
+      1.5
+    ],
+    "sideUp": [
+      1.18,
+      3.4
+    ],
+    "endUp": [
+      1.18,
+      3.8
+    ]
+  },
+  "regions": {
+    "near": [
+      0,
+      0,
+      1024,
+      256
+    ],
+    "far": [
+      0,
+      256,
+      1024,
+      512
+    ],
+    "front": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "back": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "top": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "bottom": [
+      768,
+      512,
+      1024,
+      768
+    ]
+  },
+  "labels": [
+    {
+      "role": "signature",
+      "paintedClass": "SIGNATURE CLASS",
+      "registration": "T1 0 86 02 SLO",
+      "titleRect": [
+        0,
+        768,
+        512,
+        800
+      ],
+      "unitRect": [
+        512,
+        768,
+        1024,
+        800
+      ],
+      "gutterPixels": 4
+    },
+    {
+      "role": "advanced",
+      "paintedClass": "ADVANCE CLASS",
+      "registration": "T1 0 86 03 SLO",
+      "titleRect": [
+        0,
+        800,
+        512,
+        832
+      ],
+      "unitRect": [
+        512,
+        800,
+        1024,
+        832
+      ],
+      "gutterPixels": 4
+    },
+    {
+      "role": "compact",
+      "paintedClass": "COMPACT CLASS",
+      "registration": "T1 0 86 01 SLO",
+      "titleRect": [
+        0,
+        832,
+        512,
+        864
+      ],
+      "unitRect": [
+        512,
+        832,
+        1024,
+        864
+      ],
+      "gutterPixels": 4
+    },
+    {
+      "role": "lounge",
+      "paintedClass": "LOUNGE",
+      "registration": "M1 0 86 09 SLO",
+      "titleRect": [
+        0,
+        864,
+        512,
+        896
+      ],
+      "unitRect": [
+        512,
+        864,
+        1024,
+        896
+      ],
+      "gutterPixels": 4
+    },
+    {
+      "role": "restaurant",
+      "paintedClass": "GRAND RESTAURANT",
+      "registration": "M1 0 96 03 SLO",
+      "titleRect": [
+        0,
+        896,
+        512,
+        928
+      ],
+      "unitRect": [
+        512,
+        896,
+        1024,
+        928
+      ],
+      "gutterPixels": 4
+    },
+    {
+      "role": "kitchen",
+      "paintedClass": "KITCHEN AND CREW",
+      "registration": "M1 0 86 10 SLO",
+      "titleRect": [
+        0,
+        928,
+        512,
+        960
+      ],
+      "unitRect": [
+        512,
+        928,
+        1024,
+        960
+      ],
+      "gutterPixels": 4
+    },
+    {
+      "role": "power",
+      "paintedClass": "",
+      "registration": "P 0 01 01 YK",
+      "titleRect": [
+        0,
+        960,
+        512,
+        992
+      ],
+      "unitRect": [
+        512,
+        960,
+        1024,
+        992
+      ],
+      "gutterPixels": 4
+    }
+  ],
+  "orientation": {
+    "near": "X negative side: image left→right is Z -10→+10",
+    "far": "X positive side: image left→right is Z +10→-10",
+    "front": "Z positive: image left→right X -1.5→+1.5",
+    "back": "Z negative: image left→right X +1.5→-1.5"
+  },
+  "labelPlacement": {
+    "title": {
+      "along": 6.2,
+      "up": 3.245,
+      "width": 2.7,
+      "height": 0.18,
+      "atlasPadding": 6,
+      "nearZ": 6.2,
+      "farZ": -6.2
+    },
+    "unit": {
+      "along": 0,
+      "up": 1.32,
+      "width": 2.2,
+      "height": 0.1,
+      "atlasPadding": 4
+    },
+    "trainTitle": {
+      "along": 4.1,
+      "up": 1.68,
+      "width": 7.0,
+      "height": 0.13
+    }
+  },
+  "operatorMarkPlacement": {
+    "nearZ": 8.2,
+    "farZ": -8.2,
+    "up": 2.49,
+    "width": 0.4,
+    "height": 0.174,
+    "powerVisibility": "Occluded by opaque gold machinery vent; no logo drawn over vent"
+  },
+  "notes": [
+    "Only paint: geometry supplies glass, gold opening rims, handrails, roof and running gear.",
+    "Atlas uses original redrawn vectors; no photo pixels or photographic lighting baked in.",
+    "Small ornamental bow-ties/scrolls simplified for miniature scale.",
+    "P 0 01 01 YK uses painted body registration; photographer article captions call it P1 0 01 01 YK."
+  ]
+}

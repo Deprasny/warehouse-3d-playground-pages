@@ -1,0 +1,276 @@
+{
+  "revision": "nusantara-explorer-v1",
+  "levels": {
+    "high": {
+      "file": "nusantara-explorer-high-packed.glb",
+      "bytes": 681328,
+      "assets": {
+        "signature": {
+          "triangles": 13182,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "advanced": {
+          "triangles": 13182,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "compact": {
+          "triangles": 13182,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "lounge": {
+          "triangles": 12716,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "restaurant": {
+          "triangles": 12832,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "kitchen": {
+          "triangles": 11968,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "power": {
+          "triangles": 14768,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        }
+      },
+      "materials": 4,
+      "uniqueMeshes": 16,
+      "accessors": 95
+    },
+    "medium": {
+      "file": "nusantara-explorer-medium-packed.glb",
+      "bytes": 563432,
+      "assets": {
+        "signature": {
+          "triangles": 9950,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "advanced": {
+          "triangles": 9950,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "compact": {
+          "triangles": 9950,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "lounge": {
+          "triangles": 9604,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "restaurant": {
+          "triangles": 9660,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "kitchen": {
+          "triangles": 8904,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "power": {
+          "triangles": 10608,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        }
+      },
+      "materials": 4,
+      "uniqueMeshes": 16,
+      "accessors": 95
+    },
+    "low": {
+      "file": "nusantara-explorer-low-packed.glb",
+      "bytes": 284244,
+      "assets": {
+        "signature": {
+          "triangles": 4202,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "advanced": {
+          "triangles": 4202,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "compact": {
+          "triangles": 4202,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "lounge": {
+          "triangles": 3688,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "restaurant": {
+          "triangles": 3912,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "kitchen": {
+          "triangles": 3324,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        },
+        "power": {
+          "triangles": 4664,
+          "primitives": 16,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "bodyLength": 19.155782699223924,
+          "bogieZ": 6.704523944728374,
+          "couplerZ": 9.838474351694114
+        }
+      },
+      "materials": 4,
+      "uniqueMeshes": 15,
+      "accessors": 94
+    }
+  },
+  "textures": 0,
+  "activeGameReplacement": false,
+  "processing": "Original photo-derived LODs; static sibling batches; shared mesh/accessor dedup; Meshopt FILTER; external shared atlas.",
+  "totalGeometryBytes": 1529004,
+  "sharedLivery": {
+    "file": "liveries/nusek-coaches/nusantara-explorer-v1.png",
+    "bytes": 269411,
+    "size": [
+      1024,
+      1024
+    ],
+    "roleCount": 7
+  }
+}

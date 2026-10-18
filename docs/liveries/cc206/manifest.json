@@ -1,0 +1,124 @@
+{
+  "schema": "cc206-paint-atlas-v1",
+  "size": [
+    1024,
+    1024
+  ],
+  "mode": "RGB",
+  "colorSpace": "sRGB",
+  "gutterPixels": 4,
+  "imageOrigin": "top-left",
+  "authoringBasis": "X-length/Y-width/Z-up",
+  "bounds": {
+    "x": [
+      -7.35,
+      7.35
+    ],
+    "y": [
+      -1.45,
+      1.45
+    ],
+    "z": [
+      1.3,
+      3.35
+    ],
+    "endZ": [
+      0.1,
+      3.35
+    ]
+  },
+  "rectangles": {
+    "near": [
+      0,
+      0,
+      1024,
+      256
+    ],
+    "far": [
+      0,
+      256,
+      1024,
+      512
+    ],
+    "front": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "back": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "top": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "bottom": [
+      768,
+      512,
+      1024,
+      768
+    ]
+  },
+  "orientation": {
+    "near": "X increases right",
+    "far": "X decreases right",
+    "front": "Y increases right",
+    "back": "Y decreases right",
+    "top": "X increases right; Y decreases down",
+    "bottom": "X increases right; Y increases down"
+  },
+  "swatches": {
+    "row": [
+      0,
+      768,
+      192,
+      800
+    ],
+    "width": 32,
+    "order": [
+      "white",
+      "orange",
+      "pilotRed",
+      "black",
+      "handrail",
+      "pilotHardware"
+    ]
+  },
+  "runtime": {
+    "opaque": true,
+    "flipY": false,
+    "generateMipmaps": true,
+    "sharedAcrossLods": true
+  },
+  "liveries": [
+    {
+      "id": "kai-standard",
+      "revision": "v1",
+      "image": "kai-standard-v1.png",
+      "bytes": 50522,
+      "sha256": "ad686f46aac5f2b76f9e54280747f8e2a6406b23b44e093d9d1cf6375935c222",
+      "unit": "CC 206 13 84",
+      "depot": "YK"
+    },
+    {
+      "id": "nusantara-explorer",
+      "revision": "v1",
+      "image": "nusantara-explorer-v1.png",
+      "bytes": 122218,
+      "sha256": "b489b3357355551f6e56fe776051a6c3470df9e015303f0ae0234dfde9c63bfe",
+      "unit": "CC 206 13 76",
+      "depot": "CPN"
+    }
+  ],
+  "notes": [
+    "Paint only: no glass, lamp emission, normal map or photograph lighting baked in.",
+    "Opposite-side lettering is separately drawn, never mirrored.",
+    "Explorer small cab scroll motifs are simplified from photographs; not factory vector artwork."
+  ]
+}

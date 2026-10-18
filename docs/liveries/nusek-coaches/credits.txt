@@ -1,0 +1,30 @@
+Nusantara Explorer coach shared paint atlas v1
+
+Original reconstructed vector/raster artwork:
+scripts/generate-nusek-coach-livery.py
+No photograph pixels, downloaded model textures or generated image references
+are included in this texture. The KAI mark and train name identify the operator.
+
+Direct photographic references (not redistributed with game):
+- JABODETABEK COMMUTERS NEWS Vol.430, September 2026, photographer's own records.
+  https://krl.ldblog.jp/archives/47823170.html
+  Seven individually numbered coach side photographs; ornamental placement,
+  role names, original exterior layouts and machinery-vent grouping observed.
+- Gyr200, T1 0 86 02 SLO sleeper car of Nusantara-Explorer.jpg,
+  28 September 2026, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:T1_0_86_02_SLO_sleeper_car_of_Nusantara-Explorer.jpg
+- Gyr200, M1 0 96 03 SLO dining car of Nusantara-Explorer.jpg,
+  28 September 2026, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:M1_0_96_03_SLO_dining_car_of_Nusantara-Explorer.jpg
+  https://creativecommons.org/licenses/by-sa/4.0/
+  Used to observe opposite-side opening layouts and roof equipment.
+
+Operational/reference context:
+https://www.kai.id/publikasi/artikel-berita/nusantara-explorer-cara-baru-menikmati-indonesia-dari-atas-rel
+https://www.kai.id/publikasi/siaran-pers/nusantara-explorer-hadir-atas-gagasan-dan-perintah-presiden-prabowo-untuk-memperkuat-pariwisata-indonesia
+https://keretaapikita.com/perjalanan-kereta-api-the-nusantara-explorer-surabaya-gubeng-bandung/
+
+Scope: small decorative scrolls are simplified for miniature scale. Unseen
+opposite sides of Advanced, Compact, Lounge, Kitchen/Crew and power coach are
+provisional and documented in docs/nusantara-explorer-coaches.md. Factory
+dimensions and exact bogie model of each rebuilt unit remain unverified.
