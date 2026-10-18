@@ -1,17 +1,17 @@
 {
-  "release": "riverside-cc206-service-presets-81c6c39",
-  "sourceCommit": "81c6c39668ee19521bfd76e7d97c488ffebf705d",
-  "sourceFingerprint": "41a2fbd7e6ff1888e5760bdbd806a2ecf0acbe88",
+  "release": "riverside-signal-clearance-ssng-curve-entry-9386f73",
+  "sourceCommit": "9386f7366ff764efc596b8276b9e5ddf3778b6b1",
+  "sourceFingerprint": "0d6b3d47556ce2eb426889d02601d59c8d0cc35d",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T16:33:38.889350+00:00",
+  "builtAt": "2026-10-18T16:47:23.033290+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "52d0ab6bfc590afdebd7b5ff4dadef73cbb892f6",
-  "previousPublishedCommit": "8fc977244d5c164d58f198924b91a865fd452e3a",
+  "previousSourceCommit": "81c6c39668ee19521bfd76e7d97c488ffebf705d",
+  "previousPublishedCommit": "4a2857315690bb6ef26374185fdf39233ac2c614",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 81c6c39668ee19521bfd76e7d97c488ffebf705d",
+    "source": "detached clean checkout of 9386f7366ff764efc596b8276b9e5ddf3778b6b1",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,8 +24,8 @@
     "scope": "No browser/gameplay checks or FPS benchmarks run"
   },
   "currentChangeScope": {
-    "presets": "Built-in KA Sancaka and KA Progo now use CC206 instead of CC203; authored formations preserved",
-    "audit": "Follow-up signal and SSNG source analysis only; no further geometry or dynamics changes in this release",
+    "signals": "S-M-T3 gate and mast before LC3; L-T2 footing farther from verge; D-K-T/D-K-B widened to 2.6/2.05m; four relocated footings seated on terrain",
+    "motion": "Main curve easements 1.5 to 6 percent; C1 coupling opening target; exact bogie chords retained; maximum drawbar reach and board size unchanged",
     "verification": "TypeScript/Vite build, publication state and release/entry identity only; no automated tests or audio/gameplay playback"
   },
   "files": [
@@ -33,6 +33,11 @@
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/AssetCatalogPage-0mPneOna.js",
+      "bytes": 27446,
+      "sha256": "591a6678d0538b9492bbbdf1ded79b8775fd147844a124cd239be0b7e66c8753"
     },
     {
       "path": "assets/AssetCatalogPage-4_EwdK_C.js",
@@ -1025,6 +1030,11 @@
       "sha256": "f29b7bec234e0780cee5a8524b07f1cf8afed1b7296869f7b331fabff445b24e"
     },
     {
+      "path": "assets/Cc206ReviewPage-Bm4-0tMv.js",
+      "bytes": 12049,
+      "sha256": "0012990a397a0a7ec50ff3f33e9cc4f324b5eaf2e7a0f30b680a9dca86b83417"
+    },
+    {
       "path": "assets/Cc206ReviewPage-BmGIFEkq.js",
       "bytes": 12049,
       "sha256": "ef8fc865b16a80d25b277e87e7d9a60c7a570cd756f6c082690c4661a1abaec7"
@@ -1800,6 +1810,11 @@
       "sha256": "2d88a5439e1fe76cea433c9d0a53af332bd0e2089f065ff662cb42c30978e154"
     },
     {
+      "path": "assets/ConsistsPage-DiJmrjFQ.js",
+      "bytes": 13572,
+      "sha256": "b756be40e0a24eac7e7cbe7e4137110e5127fcc25e4bb424f6bfd3a7100b9209"
+    },
+    {
       "path": "assets/ConsistsPage-DiPu0LlR.js",
       "bytes": 11762,
       "sha256": "763892daec4a8cdb9913389df44ac78bf91b60a24745fad6051a9db2f98c3f09"
@@ -1938,6 +1953,11 @@
       "path": "assets/ConsistsPage-uLMbtwdr.js",
       "bytes": 8470,
       "sha256": "d55e16fa095215dba68edec47d66c9f711d112dc140c4879d7a5f17cf725d9e8"
+    },
+    {
+      "path": "assets/DownloadSimple.es-0XKYI5az.js",
+      "bytes": 2100,
+      "sha256": "a8b3febfb6eb3fe5a0b644815585e44634664ad117bdcf4209ea19b406f2396d"
     },
     {
       "path": "assets/DownloadSimple.es-0hhsaX4O.js",
@@ -2690,6 +2710,11 @@
       "sha256": "6abed13f907058bcaf9d6dd6bdcb064779dc32335185ca0d7683e84a2600d329"
     },
     {
+      "path": "assets/GaugeReviewPage-67qzQGZ9.js",
+      "bytes": 18299,
+      "sha256": "c75304439aa0298c1fba68dc7fc73711f9ed03e18712cb5e2e4e45d27ef632bb"
+    },
+    {
       "path": "assets/GaugeReviewPage-AIZzcWB6.js",
       "bytes": 18201,
       "sha256": "f6bf5cee8644ef488632446ee57bb3abdd59689147e80f4f8f2c342f6766810d"
@@ -3390,6 +3415,11 @@
       "sha256": "91523d5fa2cd4866e25ba57f13e894a5e0a0a3a4b1d936951f2a03a90feb7ad9"
     },
     {
+      "path": "assets/HudPreviewPanel-CS7GHF1t.js",
+      "bytes": 418,
+      "sha256": "50c44c4ddde67dc6dd900841abfe0670b9d285346299de4a9998905ac8fb4a42"
+    },
+    {
       "path": "assets/HudPreviewPanel-CSCBvQ6_.js",
       "bytes": 422,
       "sha256": "ab309d86699e1af57975b5b3021531962c3bdc77dc0a44cc85475529d4f4145b"
@@ -3785,6 +3815,11 @@
       "sha256": "f6d43ccff96d9e8369d8e96b444af28c6eb5e402bec55148cc7dd68bec0d30eb"
     },
     {
+      "path": "assets/IconBase.es-C0ymbIZd.js",
+      "bytes": 3729,
+      "sha256": "69e75c8b98a9e432e70ebf361e904bc4c12d4d55f55cdcbb133d476427c35990"
+    },
+    {
       "path": "assets/IconBase.es-C7mjG6Ow.js",
       "bytes": 3740,
       "sha256": "bfd2ae0d2636aeb4f910d5b53cfe3f8ed859f514fa1709a3e3f920878fc747d7"
@@ -4133,6 +4168,11 @@
       "path": "assets/ImportedCc206Page-CWNrw6aJ.js",
       "bytes": 18413,
       "sha256": "b7ec9ff1942a3a802d6b30d9b5b1a7699c5a5d3a3d396b752d37e5a8b5f0da2d"
+    },
+    {
+      "path": "assets/ImportedCc206Page-CYq9qclf.js",
+      "bytes": 18446,
+      "sha256": "f6525bfed44f2594aa6799f94b32de3f0c9bdf3c8997e0e47270662fafe7de71"
     },
     {
       "path": "assets/ImportedCc206Page-CbZZqpx_.js",
@@ -4805,6 +4845,11 @@
       "sha256": "ccb7f0d7307febe5fa0dc7df108a36cfff75285ce2faa9cb9b8b2d4864142f24"
     },
     {
+      "path": "assets/diorama-postprocessing-BqAmVXYi.js",
+      "bytes": 42405,
+      "sha256": "8ffec648afa1ebfc2b9da64ca7c06e8f2bc4f53ab12843c3e4b70e7dff9d8227"
+    },
+    {
       "path": "assets/diorama-postprocessing-BrZVcqeN.js",
       "bytes": 40300,
       "sha256": "98301c94cf30e1dc3ed8a863dcd539adc4b14bc9298b2d0f789f72788c965c16"
@@ -5288,6 +5333,11 @@
       "path": "assets/index-BTWV0U60.js",
       "bytes": 760544,
       "sha256": "00e93137b1aa26701768f24b0fa65eae85d4f8584f0253fdd233cd4b7991d979"
+    },
+    {
+      "path": "assets/index-BULCvV-2.js",
+      "bytes": 1203304,
+      "sha256": "537325c57ac10a70ea75ac945afe890d68f7787799003bf7b01acb4fb824732f"
     },
     {
       "path": "assets/index-BWGCKe7T.js",
@@ -6472,7 +6522,7 @@
     {
       "path": "index.html",
       "bytes": 2868,
-      "sha256": "ee829e8c450a78eecef694e17b636204f8cdeb796659640923410620737805e4"
+      "sha256": "724613b91b0bed0cc4adcff222dcdcb33814474926c07046f8ee5ba174377dc9"
     },
     {
       "path": "liveries/cc206/credits.txt",
