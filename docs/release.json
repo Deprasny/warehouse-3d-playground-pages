@@ -1,17 +1,17 @@
 {
-  "release": "riverside-fleet-crowd-hud-da6a0c9",
-  "sourceCommit": "da6a0c9bab5bd06de48c740d95f601a67e919289",
-  "sourceFingerprint": "891f0eda70aa1de7c2b749ffbc825a4ff170a0f1",
+  "release": "riverside-soft-audio-cinematic-clock-3e6bbff",
+  "sourceCommit": "3e6bbff4013551d7c8ccb5e64c83d860aea854e2",
+  "sourceFingerprint": "72d4b623e4055278aebd0a08b308576228636078",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T15:33:45.252284+00:00",
+  "builtAt": "2026-10-18T16:01:54.617150+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e3795d6d5896ac3643f87d0d1774f07b0516af2f",
-  "previousPublishedCommit": "d30600ca6e104d1d2552d132fc4e83039d0b15bc",
+  "previousSourceCommit": "da6a0c9bab5bd06de48c740d95f601a67e919289",
+  "previousPublishedCommit": "3d41f92f4adb6bf0c9f23189320ff57322cc6e4c",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of da6a0c9bab5bd06de48c740d95f601a67e919289",
+    "source": "detached clean checkout of 3e6bbff4013551d7c8ccb5e64c83d860aea854e2",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,14 +24,11 @@
     "scope": "No browser/gameplay checks or FPS benchmarks run"
   },
   "currentChangeScope": {
-    "fleet": "Reusable CC206 liveries, seven Nusantara Explorer coaches and cab glass night illumination",
-    "riverside": "North crossing, roads, platform clearance and goods-shed scenery updates",
-    "trains": "Curve speed limits, coupler allowances and SSNG passenger boarding geometry",
-    "people": "Shared passenger/rider family, seven outfits, corrected hair and maximum pool of 80 station figures",
-    "vehicles": "Complete motorcycle riders and connected vehicle mirrors",
-    "weather": "Lighter rain",
-    "hud": "Followed train name and speed remain visible while normal HUD hides",
-    "verification": "Build, publication state and release/asset identity only"
+    "audio": "Shared quiet carriage rolling/joints and power-car generator hum; 3 rolling + 2 generator voice cap, reused context/noise, no new downloads",
+    "weather": "Rain density 200 to 260 drops per CSS megapixel; allocation and splash caps unchanged",
+    "hud": "Approved cinematic corners with day/night transition and actual HH:mm game clock",
+    "speed": "21 km/j shunting, 36 km/j curves; signal and stopping restrictions retained",
+    "verification": "TypeScript/Vite build, publication state and release/entry identity only; no automated tests or audio/gameplay playback"
   },
   "files": [
     {
@@ -63,6 +60,11 @@
       "path": "assets/AssetCatalogPage-BAneos-p.js",
       "bytes": 24446,
       "sha256": "d7f117ed25aa372a585171ded8d64bebff21fcb4925d65bc5f94fc8b3f1bcbe0"
+    },
+    {
+      "path": "assets/AssetCatalogPage-BS7al83r.js",
+      "bytes": 27446,
+      "sha256": "e4472b1ff02205dc2cf179dffaad2301f975551e28b96786580f8708f994a013"
     },
     {
       "path": "assets/AssetCatalogPage-BTAisi6G.js",
@@ -1150,6 +1152,11 @@
       "sha256": "9c0a941ed01be662952d821e41d73cb67f70e01f2c088477055d7fc04aa930da"
     },
     {
+      "path": "assets/Cc206ReviewPage-CpmEh1ph.js",
+      "bytes": 12049,
+      "sha256": "fffa98897cbd7d4fb722e25474e006d5cc31b3ad818cd26cbb6b7553153c3239"
+    },
+    {
       "path": "assets/Cc206ReviewPage-CzYzOV-3.js",
       "bytes": 12022,
       "sha256": "3ac0ecceefd7ad9e41cd4025566969eec9f964bd62bdf653a3103d00a3b2f693"
@@ -1653,6 +1660,11 @@
       "path": "assets/ConsistsPage-D7ZhTcun.js",
       "bytes": 11762,
       "sha256": "3fc1f12a8bb0af124aa5599c222d14568010aca05439e880b4fce4505f39a1fe"
+    },
+    {
+      "path": "assets/ConsistsPage-D826sZxZ.js",
+      "bytes": 13572,
+      "sha256": "6cb066f3372917838d748ea79f796a8aa987f8008615ffd7ac1104a242046d54"
     },
     {
       "path": "assets/ConsistsPage-DAyKq8_d.js",
@@ -2275,6 +2287,11 @@
       "sha256": "d442ab01365251a425dfa789831e233e10a320015e8a6f607daab0c103c4161a"
     },
     {
+      "path": "assets/DownloadSimple.es-DZiM8mGP.js",
+      "bytes": 2100,
+      "sha256": "b5babdfec9f210deca9f06d3d7737f9967dc6b2cae14bb07b9b599de294b88af"
+    },
+    {
       "path": "assets/DownloadSimple.es-D_tfP7ET.js",
       "bytes": 2110,
       "sha256": "72e37e424a097aafa5840993f65c26277d568373c15b4bec2f411eeeb7e49d67"
@@ -2823,6 +2840,11 @@
       "path": "assets/GaugeReviewPage-CSBIm8lE.js",
       "bytes": 10815,
       "sha256": "4d5adc83572333e92815ee76e4d63921de09dc9ee6441815ae6d78b34164069b"
+    },
+    {
+      "path": "assets/GaugeReviewPage-CUApbnA9.js",
+      "bytes": 18299,
+      "sha256": "f93403bb21bc9f0c8d2f4982f119117cb476eb32215b47802b5c1ca443c3c99c"
     },
     {
       "path": "assets/GaugeReviewPage-CWCBiOJ2.js",
@@ -3580,6 +3602,11 @@
       "sha256": "5989003b9e1cfff9b821b218f8e75bdc9aa40ed2d893da6d25be4800a8c5b5b6"
     },
     {
+      "path": "assets/HudPreviewPanel-VRrj1bVZ.js",
+      "bytes": 418,
+      "sha256": "aedbee389cf8c4a6b51b5dcc269d1faaa47b35664986b47cc2d7a7d49fddd41f"
+    },
+    {
       "path": "assets/HudPreviewPanel-VVntN73J.js",
       "bytes": 428,
       "sha256": "af45b4a40c49c3351ecf7fdf47b80394767b906f1b0fa7ea333815b415273701"
@@ -3648,6 +3675,11 @@
       "path": "assets/IconBase.es-8xrdCkJr.js",
       "bytes": 3740,
       "sha256": "563280b470aaed5448e6799f8c0bd9ad9144d8e65822d40f78ac81049c5e8f3f"
+    },
+    {
+      "path": "assets/IconBase.es-BCNeRjOF.js",
+      "bytes": 3729,
+      "sha256": "f82ab9a33eb7331d1e7d8dbe34c348be9d739e3985ef3a67ec6e2954d8924af1"
     },
     {
       "path": "assets/IconBase.es-BDj7HP-G.js",
@@ -4123,6 +4155,11 @@
       "path": "assets/ImportedCc206Page-D9iKqo8j.js",
       "bytes": 18456,
       "sha256": "5ff29e255c6bf84dde97a3542f19ba998b94f9b06ec183b48d28a71c3d6c3199"
+    },
+    {
+      "path": "assets/ImportedCc206Page-D9kQ1M8E.js",
+      "bytes": 18446,
+      "sha256": "b9f7acd3500d56fbbdb2e9916d1120f0ede481ef3b64c519ff5e72bcc8e380dc"
     },
     {
       "path": "assets/ImportedCc206Page-DDxZ2oRD.js",
@@ -4713,6 +4750,11 @@
       "path": "assets/diorama-postprocessing-C5n2mWYa.js",
       "bytes": 40932,
       "sha256": "1428f08305c45ddaeccda8f05cb8ddc1fff8a38e49466243e2dea9ba9c906005"
+    },
+    {
+      "path": "assets/diorama-postprocessing-C7krvrYn.js",
+      "bytes": 42405,
+      "sha256": "c6b2201889702e66d2b61fc81c478480037bfd6e12cdb81c7876968942274df3"
     },
     {
       "path": "assets/diorama-postprocessing-C9lscMlz.js",
@@ -5375,6 +5417,11 @@
       "sha256": "7984a8b59824e6e1bc772f6e9c0755c0dd980a2773767b0e6749d6952a37ab53"
     },
     {
+      "path": "assets/index-CnynyU4x.css",
+      "bytes": 117560,
+      "sha256": "b52bc4b361c566ae52ac9f6f59d9255bcc1255178064f0f058a20cc6176dfed8"
+    },
+    {
       "path": "assets/index-Co5C3Sy9.css",
       "bytes": 70080,
       "sha256": "6f0102e905dfdff26f7b9e1538e7fb9f7b725a77b314492f43056ae664b63ee0"
@@ -5538,6 +5585,11 @@
       "path": "assets/index-PQGmcJX-.js",
       "bytes": 610333,
       "sha256": "5395d34e063767f832e255c162eea878d7c3793dfe3fe1ba2cf81255753954ff"
+    },
+    {
+      "path": "assets/index-U0L91utQ.js",
+      "bytes": 1202655,
+      "sha256": "f533870a53d33b9e25c797eb00ca28a4b5e3f767edd580d1434b224aea21dd13"
     },
     {
       "path": "assets/index-VefjSXLo.js",
@@ -6006,8 +6058,8 @@
     },
     {
       "path": "audio/sources.json",
-      "bytes": 4179,
-      "sha256": "1460df160e99a1ede3ef68bd83a6c9a7ff7293e278976d6a6e324bdca374cfea"
+      "bytes": 4402,
+      "sha256": "34914eee6aeee3da7c856bccfd035d4704c7e4126b73d816228903b4a6a75540"
     },
     {
       "path": "audio/train-horn.mp3",
@@ -6317,7 +6369,7 @@
     {
       "path": "index.html",
       "bytes": 2868,
-      "sha256": "0680426757e54886170b06967863b65f1ccfc0d77a2606ffbaa5f59070acf3b3"
+      "sha256": "dc2c2536d0b84797037e18f3991f20f2939f8c0cdf82ba38f1b7095cb8acbdd2"
     },
     {
       "path": "liveries/cc206/credits.txt",

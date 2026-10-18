@@ -1,6 +1,6 @@
 {
   "synthesized": {
-    "description": "Locomotive engines are silent. Moving trains use synthesized rail-joint knocks. Horns use the locally stored CC0 locomotive recording below, with a multi-chime Web Audio fallback if it cannot load. Facility effects are synthesized locally."
+    "description": "Locomotive engines are silent. Moving trains use synthesized rail-joint knocks. Carriages share quiet filtered-noise rolling and soft distance-based joint sounds; power cars share a low generator hum, including while stopped. These use the same bounded spatial Web Audio engine with no extra downloads. Horns use the locally stored CC0 locomotive recording below, with a multi-chime Web Audio fallback if it cannot load. Facility effects are synthesized locally."
   },
   "horn": {
     "file": "train-horn.mp3",
