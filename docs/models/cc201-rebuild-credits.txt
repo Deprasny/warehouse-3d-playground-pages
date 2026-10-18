@@ -1,4 +1,4 @@
-CC201 rebuilt exterior, revision rebuilt-cc201-v3, 18 October 2026.
+CC201 rebuilt exterior, revision rebuilt-cc201-v4, 18 October 2026.
 
 New procedural geometry authored for warehouse-3d-playground from visual and
 scalar measurements of the project's existing CC201 reference asset. No source
