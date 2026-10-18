@@ -1,8 +1,8 @@
 {
-  "release": "riverside-dermaga-runaround-110e915",
-  "sourceCommit": "110e915f5d0082dfa15a63f14b514898e119511d",
+  "release": "riverside-traffic-langsir-deadlock-6a1c05a",
+  "sourceCommit": "6a1c05a5fb6eaac7ff72fa91a80680fe7f70305e",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-17T19:59:20.223Z",
+  "builtAt": "2026-10-18T02:34:47.203Z",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,7 +19,7 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "85b00a4da47803699871e642063d1f79f3311313",
+  "previousSourceCommit": "110e915f5d0082dfa15a63f14b514898e119511d",
   "build": {
     "status": "passed",
     "command": "npm run build:pages (clean git archive of sourceCommit)"
@@ -29,16 +29,17 @@
     "run": [
       "npx tsc --noEmit -p tsconfig.json",
       "npm run build",
+      "check-riverside-north-points",
       "check-dermaga-route",
       "check-dermaga-crossovers",
-      "check-riverside-north-points",
-      "check-dermaga-choreography",
-      "check-travel-requests",
+      "check-north-signal-clearance",
       "check-travel-request-planner",
-      "headless langsir A/B probe",
-      "headless Auto probe 1800s"
+      "check-dermaga-langsir-deadlock",
+      "headless traffic probe 1800s/3600s",
+      "headless Auto probe 4x3600s",
+      "forced-traffic langsir batch 2x96 seeds"
     ],
-    "scope": "Run-around change only; check:all not run."
+    "scope": "Road traffic + langsir deadlock fixes only; check:all not run."
   },
   "browserChecks": {
     "status": "skipped",
