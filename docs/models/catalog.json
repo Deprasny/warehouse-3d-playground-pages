@@ -238,20 +238,6 @@
     ]
   },
   {
-    "category": "train",
-    "variant": 0,
-    "name": "CC206 · putih-oranye",
-    "file": "cc206-blue.glb",
-    "bytes": 1909996,
-    "meshes": 103,
-    "triangles": 19768,
-    "size": [
-      3.509999990463257,
-      4.574999966621399,
-      15.180000305175781
-    ]
-  },
-  {
     "category": "wagon",
     "variant": 0,
     "name": "Gerbong datar",

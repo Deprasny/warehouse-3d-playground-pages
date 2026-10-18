@@ -1,0 +1,1 @@
+function e(e){if(typeof window>`u`)return`rebuild`;let t=new URLSearchParams(window.location.search),n=t.get(e)??t.get(`models`);return e===`cc206`&&n===`exact`?`exact`:n===`original`||n===`sketchfab`?`original`:`rebuild`}export{e as t};

@@ -1,0 +1,23 @@
+CC203 independent exterior rebuild v4 / game adapter
+Authored for Depras, 18 October 2026.
+
+New hand-authored locomotive geometry; no imported train vertices or generated AI mesh.
+KAI livery and unit markings are retained for identification.
+Three Meshopt LODs, restored rigid anchors and shared miniature material finish.
+The game adapter retargets gauge and raises/re-anchors the two couplers.
+
+Photographic references (not embedded as textures in the model):
+- Ghazy2007, GEU20CCC2039508.jpg, CC0 1.0:
+  https://commons.wikimedia.org/wiki/File:GEU20CCC2039508.jpg
+- Warga bks, KA Serayu longhood menuju kroya untuk putar loko.jpg, CC BY 4.0:
+  https://commons.wikimedia.org/wiki/File:KA_Serayu_longhood_menuju_kroya_untuk_putar_loko.jpg
+- Midori, Diesel locomotive side view.JPG, CC BY-SA 3.0:
+  https://commons.wikimedia.org/wiki/File:Diesel_locomotive_side_view.JPG
+- Ghazy2007, CC20335MNexCN.jpg, CC0 1.0:
+  https://commons.wikimedia.org/wiki/File:CC20335MNexCN.jpg
+- Warga bks, CC203 95 01 (CC203 01).jpg, CC BY 4.0:
+  https://commons.wikimedia.org/wiki/File:CC203_95_01_(CC203_01).jpg
+
+Source notes, perspective limitations and dimension provenance:
+outputs/cc203-reference/sources.json and reference-notes.md.
+The research PDF/layout and generated 2D guide sheets are not distributed game textures.
