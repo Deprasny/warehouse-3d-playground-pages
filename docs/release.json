@@ -1,32 +1,34 @@
 {
-  "release": "riverside-signal-clearance-ssng-curve-entry-9386f73",
-  "sourceCommit": "9386f7366ff764efc596b8276b9e5ddf3778b6b1",
-  "sourceFingerprint": "0d6b3d47556ce2eb426889d02601d59c8d0cc35d",
+  "release": "riverside-ssng-axial-recovery-gabah25-76bfc00",
+  "sourceCommit": "76bfc005357eab61fbe1686f431c8442a6a8af65",
+  "sourceFingerprint": "c0977bc2c8c295d1c43d9d4787a142f022baf3c9",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T16:47:23.033290+00:00",
+  "builtAt": "2026-10-18T17:15:23.695904+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "81c6c39668ee19521bfd76e7d97c488ffebf705d",
-  "previousPublishedCommit": "4a2857315690bb6ef26374185fdf39233ac2c614",
+  "previousSourceCommit": "9386f7366ff764efc596b8276b9e5ddf3778b6b1",
+  "previousPublishedCommit": "d66c559a50d07fc7a0f198033dde5a8ba3e5385b",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 9386f7366ff764efc596b8276b9e5ddf3778b6b1",
+    "source": "detached clean checkout of 76bfc005357eab61fbe1686f431c8442a6a8af65",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
-    "status": "not-run",
-    "run": [],
-    "scope": "No automated tests authorized or run for this deployment"
+    "status": "passed",
+    "run": [
+      "node --experimental-transform-types scripts/check-ssng-curve-exit.ts --label=regression"
+    ],
+    "scope": "Explicitly approved SSNG 2 CC206 + 4 coaches, east J2 and west J3, constant 36 km/h; numerical motion, metadata rectangle separation and drawbar reach only; no Gabah speed or broad suite checks"
   },
   "browserChecks": {
     "status": "not-run",
     "scope": "No browser/gameplay checks or FPS benchmarks run"
   },
   "currentChangeScope": {
-    "signals": "S-M-T3 gate and mast before LC3; L-T2 footing farther from verge; D-K-T/D-K-B widened to 2.6/2.05m; four relocated footings seated on terrain",
-    "motion": "Main curve easements 1.5 to 6 percent; C1 coupling opening target; exact bogie chords retained; maximum drawbar reach and board size unchanged",
-    "verification": "TypeScript/Vite build, publication state and release/entry identity only; no automated tests or audio/gameplay playback"
+    "motion": "Telescoping pairs solve continuous mean-body axial spacing; recover accepted axial extension rather than lateral deflection; physical drawbar reach and exact bogie chords retained",
+    "speed": "KA Angkutan Gabah shunting and detached dermaga run-around capped at 25 km/h; lower block/signal, braking and coupling crawl limits retained",
+    "verification": "Approved focused SSNG numerical regression, TypeScript/Vite production build and publication identity; no browser playback, Gabah speed test or broad suite"
   },
   "files": [
     {
@@ -538,6 +540,11 @@
       "path": "assets/AssetCatalogPage-Zxi8DMbW.js",
       "bytes": 27457,
       "sha256": "17ff3ca9f94d044392c09139397bd2ea1ee6b096cd145bd25c35fdacdbb5c50f"
+    },
+    {
+      "path": "assets/AssetCatalogPage-aXMTYedk.js",
+      "bytes": 27446,
+      "sha256": "81c6b4337f97d09ad631007af11ae064a901126b9d4433aa5d32ffad562bfca8"
     },
     {
       "path": "assets/AssetCatalogPage-d4A7ZVtj.js",
@@ -1380,6 +1387,11 @@
       "sha256": "9a45e1fb85a250148c51bbe6cf35c63dc92bb0017a13375739afcfc125796688"
     },
     {
+      "path": "assets/Cc206ReviewPage-fuqs64zH.js",
+      "bytes": 12049,
+      "sha256": "e83bd2af0d3245a65abbefde992eb167e5b0b6d3f19b39db40599c1189cc230c"
+    },
+    {
       "path": "assets/Cc206ReviewPage-gp0-lZdo.js",
       "bytes": 12022,
       "sha256": "81658c9719c6ec198668867964205d9270188080af9562faa9e36647c33f0623"
@@ -1538,6 +1550,11 @@
       "path": "assets/ConsistsPage-Bg5TnmR0.js",
       "bytes": 8448,
       "sha256": "953ff2012a7fc9d526716d6038006b25112650181cbfe8422969d2cbee7cde46"
+    },
+    {
+      "path": "assets/ConsistsPage-Bg8Kxgw6.js",
+      "bytes": 13572,
+      "sha256": "9637f01c2659c892c97fab3007d8e0edfa65838e56c86ad9bed303cc3e5a0664"
     },
     {
       "path": "assets/ConsistsPage-Bj8Bexfk.js",
@@ -2168,6 +2185,11 @@
       "path": "assets/DownloadSimple.es-CQzNVcoe.js",
       "bytes": 2061,
       "sha256": "9e53c08632c0aaa054d0b3e80cc61b2c773a7ad7dae06c8c1490f255428d9e35"
+    },
+    {
+      "path": "assets/DownloadSimple.es-CSEFoRMF.js",
+      "bytes": 2100,
+      "sha256": "4c3b2c9a7f8f8a0d06bf9d9f02a34710997e7bfdc4d62f2195e9b4db3a6a8e7e"
     },
     {
       "path": "assets/DownloadSimple.es-CUPH2JoF.js",
@@ -2883,6 +2905,11 @@
       "path": "assets/GaugeReviewPage-CB_j9z3V.js",
       "bytes": 10825,
       "sha256": "25cd3e9825d7176d957a4e88d048b84adb4f1baedc0a4a73e749f80445f9b145"
+    },
+    {
+      "path": "assets/GaugeReviewPage-CBwWl0SR.js",
+      "bytes": 18299,
+      "sha256": "f45744f91e56a63e680103c67f77cc707d8a8a7338d7881b0bc9975226d65c1f"
     },
     {
       "path": "assets/GaugeReviewPage-CHgE7wWJ.js",
@@ -3710,6 +3737,11 @@
       "sha256": "cca39423080403b1c458c12bf50099d6b58c6ed2329cb3970dc5057b597ef6f4"
     },
     {
+      "path": "assets/HudPreviewPanel-cCoUlCyu.js",
+      "bytes": 418,
+      "sha256": "17770cc7b8d6d9f71c6585919f0ffb5f6052efe6ed43db4ce727ec3ace504694"
+    },
+    {
       "path": "assets/HudPreviewPanel-hhE8l5Al.js",
       "bytes": 421,
       "sha256": "22794a1589194c7ee0a4e2b582c89991e6ec13a0759073145390940c22e19e89"
@@ -3903,6 +3935,11 @@
       "path": "assets/IconBase.es-Db-3ADVM.js",
       "bytes": 3729,
       "sha256": "af1eedb66cf0875ba6e79188bbf7bf7e03ad2bf20ef18026f6b81c4e2f50cdfe"
+    },
+    {
+      "path": "assets/IconBase.es-DcE3zWbx.js",
+      "bytes": 3729,
+      "sha256": "ce661e13c5f6b21a5df85ddbecac0b6b33febdf170333861f70498c765fe8104"
     },
     {
       "path": "assets/IconBase.es-DeoGtqP6.js",
@@ -4223,6 +4260,11 @@
       "path": "assets/ImportedCc206Page-Cr_WnEji.js",
       "bytes": 13962,
       "sha256": "4ad4ebacbdf1f36eb8331841a88e183640fe6c78ceea50fe017db86f213fcbc8"
+    },
+    {
+      "path": "assets/ImportedCc206Page-Cretswi4.js",
+      "bytes": 18446,
+      "sha256": "ed7bb61cc01e0060b77998cc1d9c3d3013ed610b63506214ad63d8d6f4becc6d"
     },
     {
       "path": "assets/ImportedCc206Page-CsrbFeJL.js",
@@ -5050,6 +5092,11 @@
       "sha256": "fc7d353b355d5ae3c73ce5ead9ad2a384662df6d2fb9a522d6a567454b07ed56"
     },
     {
+      "path": "assets/diorama-postprocessing-DsizG0kb.js",
+      "bytes": 42405,
+      "sha256": "e0fa505ead24c887b1a3414dfcfbf934072cce2a2e7548db923b999eb9078627"
+    },
+    {
       "path": "assets/diorama-postprocessing-Dwd1DXtD.js",
       "bytes": 40373,
       "sha256": "1b0ffbbb0314bfe9711591b5531e35ed916f701c2c0cbfa605f3b5fc94cc0e81"
@@ -5523,6 +5570,11 @@
       "path": "assets/index-CPBlo3r2.js",
       "bytes": 777071,
       "sha256": "f7d7aba8356cbbb729c8de6cf32b74c27b21cfd13f227b611a402de3168bcded"
+    },
+    {
+      "path": "assets/index-CTVsiSFl.js",
+      "bytes": 1204305,
+      "sha256": "4fb4f92ffda1d2c1a21b0919a390d8a7c129f7f72a8aa05315408434eab78f91"
     },
     {
       "path": "assets/index-CVb2w6it.js",
@@ -6522,7 +6574,7 @@
     {
       "path": "index.html",
       "bytes": 2868,
-      "sha256": "724613b91b0bed0cc4adcff222dcdcb33814474926c07046f8ee5ba174377dc9"
+      "sha256": "c41b93331aad06e16125539dd3cd1e97e00b1ddc626410f461b924409187c716"
     },
     {
       "path": "liveries/cc206/credits.txt",
