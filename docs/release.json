@@ -1,17 +1,17 @@
 {
-  "release": "riverside-hud-signals-coupler-recovery-52d0ab6",
-  "sourceCommit": "52d0ab6bfc590afdebd7b5ff4dadef73cbb892f6",
-  "sourceFingerprint": "bd6986019afb3ca6f9641c1507ec70c1e71d5f26",
+  "release": "riverside-cc206-service-presets-81c6c39",
+  "sourceCommit": "81c6c39668ee19521bfd76e7d97c488ffebf705d",
+  "sourceFingerprint": "41a2fbd7e6ff1888e5760bdbd806a2ecf0acbe88",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T16:17:38.665335+00:00",
+  "builtAt": "2026-10-18T16:33:38.889350+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "3e6bbff4013551d7c8ccb5e64c83d860aea854e2",
-  "previousPublishedCommit": "6521827741a934a89045588437fac025daf73052",
+  "previousSourceCommit": "52d0ab6bfc590afdebd7b5ff4dadef73cbb892f6",
+  "previousPublishedCommit": "8fc977244d5c164d58f198924b91a865fd452e3a",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 52d0ab6bfc590afdebd7b5ff4dadef73cbb892f6",
+    "source": "detached clean checkout of 81c6c39668ee19521bfd76e7d97c488ffebf705d",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,9 +24,8 @@
     "scope": "No browser/gameplay checks or FPS benchmarks run"
   },
   "currentChangeScope": {
-    "hud": "Increased name line height to preserve descenders in the two-line clamp; cinematic clock removed",
-    "signals": "22-head source-geometry audit; S-M-T3 mast clear of LC3, L-T2 mast and red-stop gate before LC2 after the J3 join",
-    "couplers": "Slower simulation-time drawbar recovery after curves, with immediate clearance extension and bounded existing travel",
+    "presets": "Built-in KA Sancaka and KA Progo now use CC206 instead of CC203; authored formations preserved",
+    "audit": "Follow-up signal and SSNG source analysis only; no further geometry or dynamics changes in this release",
     "verification": "TypeScript/Vite build, publication state and release/entry identity only; no automated tests or audio/gameplay playback"
   },
   "files": [
@@ -499,6 +498,11 @@
       "path": "assets/AssetCatalogPage-P5KPCFTO.js",
       "bytes": 24446,
       "sha256": "57629bd4c0d68a0e4f3046c90261e8d3ae016b610a51adb24c13656491552f45"
+    },
+    {
+      "path": "assets/AssetCatalogPage-PIfhYoiR.js",
+      "bytes": 27446,
+      "sha256": "c574b9720f89f60a10e8132d0e7709a1462894655b138fb3c46bf2bc67e5241c"
     },
     {
       "path": "assets/AssetCatalogPage-Povyyw4-.js",
@@ -1084,6 +1088,11 @@
       "path": "assets/Cc206ReviewPage-CGTe1cGo.js",
       "bytes": 11982,
       "sha256": "d46be1f557cedb72961a9e83b07d30ac81f0d57ef703ced73d76e31db781dbb1"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-CKuxfd7v.js",
+      "bytes": 12049,
+      "sha256": "a9422a31878b72441973713fad41539eb34508252ae77e395c3445993fa3878c"
     },
     {
       "path": "assets/Cc206ReviewPage-CMAzgTah.js",
@@ -1851,6 +1860,11 @@
       "sha256": "4eb66d629fbfc6b98de40be94d96690a78cdc2ce6240165e60ecb94feb184679"
     },
     {
+      "path": "assets/ConsistsPage-S0bfQaYk.js",
+      "bytes": 13572,
+      "sha256": "7e9b1c059c8096f2c8822fe580bd286c9107c1241dcb7227e907b390b2e3776d"
+    },
+    {
       "path": "assets/ConsistsPage-Su4PEaQe.js",
       "bytes": 8448,
       "sha256": "4572c0502a5179e1a1c6271c559281253657b196c27d07b5130a65a834f455ce"
@@ -2034,6 +2048,11 @@
       "path": "assets/DownloadSimple.es-BkZVjIdc.js",
       "bytes": 2099,
       "sha256": "e77ec18acee8909e43e1ec3fad536422236efc6e129bc23152469588536b188c"
+    },
+    {
+      "path": "assets/DownloadSimple.es-Bo2sXtqn.js",
+      "bytes": 2100,
+      "sha256": "821ad2c4bff7c05b45bc54bc44eb6ba83d5e6281ca1f6591aa7e0b306bf84571"
     },
     {
       "path": "assets/DownloadSimple.es-Bq-UQK_q.js",
@@ -2694,6 +2713,11 @@
       "path": "assets/GaugeReviewPage-B8vKKQZD.js",
       "bytes": 10822,
       "sha256": "6b407b80528b3470eddae6ce2fdabcd39ca8f421fb1230f1978bb3a6352e84dd"
+    },
+    {
+      "path": "assets/GaugeReviewPage-BAcZH3S5.js",
+      "bytes": 18299,
+      "sha256": "c587ce99b3f35defaa5aee36b7a86782771381c2ac6b2a70ff76db456fe4e0c2"
     },
     {
       "path": "assets/GaugeReviewPage-BE5PZrAb.js",
@@ -3686,6 +3710,11 @@
       "sha256": "a830f6bad4446169ab97f81d2c404a8b7dd4c18ad8579bdedda783aea20f4471"
     },
     {
+      "path": "assets/HudPreviewPanel-tvo3N4e0.js",
+      "bytes": 418,
+      "sha256": "a45c9193c6808772982a23c85d0a7284d493f50260e6477d0cb8f8a6cf847644"
+    },
+    {
       "path": "assets/HudPreviewPanel-uYNA7cUb.js",
       "bytes": 422,
       "sha256": "2b5862ecddb50afd68d90f667994751acfa053b0e0119f85d265a89b470e0fc8"
@@ -3834,6 +3863,11 @@
       "path": "assets/IconBase.es-DadP-87W.js",
       "bytes": 3432,
       "sha256": "d34b5e926c7f0a4725b8aed0f1406f1649419a11de4545bc0235a4ab2d04c982"
+    },
+    {
+      "path": "assets/IconBase.es-Db-3ADVM.js",
+      "bytes": 3729,
+      "sha256": "af1eedb66cf0875ba6e79188bbf7bf7e03ad2bf20ef18026f6b81c4e2f50cdfe"
     },
     {
       "path": "assets/IconBase.es-DeoGtqP6.js",
@@ -4316,6 +4350,11 @@
       "sha256": "32da39f92c0ca14fd8102623b840cd500309c7bd2889dc76e8869b4d6242884b"
     },
     {
+      "path": "assets/ImportedCc206Page-DuhdS5Ra.js",
+      "bytes": 18446,
+      "sha256": "c32d8a7e9202dc50c472ab1fb604fe6e6bd6072cb9989586eaf9ddd9c8e5446a"
+    },
+    {
       "path": "assets/ImportedCc206Page-DzxaaFCn.js",
       "bytes": 13958,
       "sha256": "41beb2fae4bee9e0bde7804bfa9b85f2d419ba1294e8fb93431ea1fe9b9b961f"
@@ -4739,6 +4778,11 @@
       "path": "assets/diorama-postprocessing-BRakQTr4.js",
       "bytes": 40300,
       "sha256": "e9a5bd00d77a2fd9db937b7a0d345b2290b572c5c3b6bfc8a211f1d46b71b463"
+    },
+    {
+      "path": "assets/diorama-postprocessing-BVXV6k3s.js",
+      "bytes": 42405,
+      "sha256": "6b7bc314c8723d62279fdc4931502584c1141b9e851a13e0cef36e42bb992fcd"
     },
     {
       "path": "assets/diorama-postprocessing-BYL7RObX.js",
@@ -5384,6 +5428,11 @@
       "path": "assets/index-CGqyE2J2.js",
       "bytes": 804185,
       "sha256": "05658284c03f897abf34fc513cdb7b45bb8e6d72294cf4a2723900812a6c462a"
+    },
+    {
+      "path": "assets/index-CHgRq1sR.js",
+      "bytes": 1202922,
+      "sha256": "01087ea6298695d57a6ceed654832418c23bf4d9ba2ea17e31553c2d7182b862"
     },
     {
       "path": "assets/index-CI7k24M3.js",
@@ -6423,7 +6472,7 @@
     {
       "path": "index.html",
       "bytes": 2868,
-      "sha256": "46b3497cd9719b8bcf4e424beb541ac864592fc54b1a8ca45f18ba2770abce5b"
+      "sha256": "ee829e8c450a78eecef694e17b636204f8cdeb796659640923410620737805e4"
     },
     {
       "path": "liveries/cc206/credits.txt",
