@@ -1,0 +1,18 @@
+CC205 rebuilt exterior — rebuilt-cc205-v1, 18 October 2026.
+
+Reference: "CC 205 Indonesian Coal Train" by haykal12321.
+https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a
+Reference license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Modifications: new authored topology, clean vertex-color red/navy/white livery,
+manually drawn old rail-logo swashes, shared miniature material treatment,
+independent three-LOD geometry, preserved game length/gauge/pivots/lamp anchors,
+static parent/material batching and Meshopt packing. No original source mesh,
+texture images, indices or decimated geometry are embedded in these new GLBs.
+Brand marks retain their owners' identity; no endorsement is implied.
+
+Editable sources: scripts/blender/cc205_rebuild_*.py
+Master: outputs/cc205-rebuild/cc205-rebuild-master.blend
+Documentation: docs/cc205-rebuild-game.md
+Attribution to the visual reference remains in the game's existing CC205 entry.

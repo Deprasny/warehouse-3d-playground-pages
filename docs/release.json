@@ -1,8 +1,8 @@
 {
-  "release": "riverside-traffic-langsir-deadlock-6a1c05a",
-  "sourceCommit": "6a1c05a5fb6eaac7ff72fa91a80680fe7f70305e",
+  "release": "rebuilt-locomotive-fleet-31ede76",
+  "sourceCommit": "31ede76631626d02c782267bccb2726bfe8ed632",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-18T02:34:47.203Z",
+  "builtAt": "2026-10-18T03:34:37.480029+00:00",
   "preservesPublishedAudioFix": true,
   "audio": {
     "locomotiveEngines": "silent",
@@ -19,57 +19,55 @@
     }
   },
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "110e915f5d0082dfa15a63f14b514898e119511d",
+  "previousSourceCommit": "6a1c05a5fb6eaac7ff72fa91a80680fe7f70305e",
   "build": {
     "status": "passed",
-    "command": "npm run build:pages (clean git archive of sourceCommit)"
+    "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
+    "source": "detached clean checkout of 31ede76631626d02c782267bccb2726bfe8ed632"
   },
   "checks": {
-    "status": "partial",
-    "run": [
-      "npx tsc --noEmit -p tsconfig.json",
-      "npm run build",
-      "check-riverside-north-points",
-      "check-dermaga-route",
-      "check-dermaga-crossovers",
-      "check-north-signal-clearance",
-      "check-travel-request-planner",
-      "check-dermaga-langsir-deadlock",
-      "headless traffic probe 1800s/3600s",
-      "headless Auto probe 4x3600s",
-      "forced-traffic langsir batch 2x96 seeds"
-    ],
-    "scope": "Road traffic + langsir deadlock fixes only; check:all not run."
+    "status": "not-run",
+    "run": [],
+    "scope": "No automated tests authorized for this fleet release; TypeScript/Vite build only."
   },
   "browserChecks": {
     "status": "skipped",
-    "scope": "User verifies on prod."
+    "scope": "No browser/gameplay checks or FPS benchmarks run."
   },
   "cc206": {
-    "revision": "sketchfab-old",
-    "author": "pucohensap",
-    "license": "CC BY 4.0",
-    "sourceSha256": "8bb55144eff8054dd518a933f0805791d40e502947f2189633dbb35f054f6256",
+    "sourceRevision": "original-v15",
+    "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
     "levels": {
-      "high": {
-        "file": "models/cc206-sketchfab-optimized-packed.glb",
-        "bytes": 2198004,
-        "triangles": 114575,
-        "materials": 20
+      "optimized": {
+        "file": "cc206-v15-optimized-packed.glb",
+        "bytes": 658716,
+        "triangles": 37472,
+        "uniqueGeometryTriangles": 37436,
+        "primitives": 38,
+        "materials": 5,
+        "sha256": "e35235d651363bd979e1d6f94e6ed8ce93e8597a3a60389e8225656d7a0498b1"
       },
       "medium": {
-        "file": "models/cc206-sketchfab-medium-packed.glb",
-        "bytes": 844308,
-        "triangles": 22632,
-        "materials": 20
+        "file": "cc206-v15-medium-packed.glb",
+        "bytes": 473308,
+        "triangles": 26036,
+        "uniqueGeometryTriangles": 25672,
+        "primitives": 38,
+        "materials": 5,
+        "sha256": "06f2f7a751a8ef1cdd4a8431f98d9feb55b45daa7ac81e29ebb25cd4fc78781c"
       },
       "low": {
-        "file": "models/cc206-sketchfab-low-packed.glb",
-        "bytes": 645084,
-        "triangles": 15617,
-        "materials": 20
+        "file": "cc206-v15-low-packed.glb",
+        "bytes": 240760,
+        "triangles": 11542,
+        "uniqueGeometryTriangles": 11362,
+        "primitives": 38,
+        "materials": 5,
+        "sha256": "11a4264758dbdbd60b92e6df27dd980e1b3525cf590dfe499cc1948dbb3fd60a"
       }
-    }
+    },
+    "default": true,
+    "creditFile": "cc206-v15-credits.txt"
   },
   "map": {
     "id": "riverside",
@@ -9327,5 +9325,88 @@
       "license": "CC BY 4.0",
       "source": "https://sketchfab.com/3d-models/cc-205-indonesian-coal-train-420fb4341f6847ee9a81de652957ba7a"
     }
+  },
+  "previousPublishedCommit": "7b34b0cd0a32b70858d7bb66d397ae6ff2186f9b",
+  "locomotiveFleet": {
+    "default": "rebuilt",
+    "rollbackQuery": "?models=original",
+    "perModelOverride": [
+      "cc201=original",
+      "cc205=original",
+      "cc206=original"
+    ],
+    "originalAssetsRetained": true,
+    "totalPackedBytes": 3096064,
+    "sourceRelease": "docs/locomotive-rebuild-release.md"
+  },
+  "cc201": {
+    "sourceRevision": "rebuilt-cc201-v3",
+    "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+    "levels": {
+      "high": {
+        "file": "cc201-rebuild-high-packed.glb",
+        "bytes": 503896,
+        "triangles": 26944,
+        "uniqueGeometryTriangles": 26944,
+        "primitives": 33,
+        "materials": 5,
+        "sha256": "ded6e5bf2a8663045afbbd305c77c9c177c1caff47bcf64f5473ff5d9b839652"
+      },
+      "medium": {
+        "file": "cc201-rebuild-medium-packed.glb",
+        "bytes": 375284,
+        "triangles": 18828,
+        "uniqueGeometryTriangles": 18828,
+        "primitives": 33,
+        "materials": 5,
+        "sha256": "b1d44551a57d0fdd274c58ab374381ace40fe9fa7d0a087e9f202c6cd8539746"
+      },
+      "low": {
+        "file": "cc201-rebuild-low-packed.glb",
+        "bytes": 174196,
+        "triangles": 7452,
+        "uniqueGeometryTriangles": 7452,
+        "primitives": 33,
+        "materials": 5,
+        "sha256": "918f819e2132587bf2d53d79e926d851478ea24f977ea0c220ebb45598464481"
+      }
+    },
+    "default": true,
+    "creditFile": "cc201-rebuild-credits.txt"
+  },
+  "cc205": {
+    "sourceRevision": "rebuilt-cc205-v1",
+    "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+    "levels": {
+      "high": {
+        "file": "cc205-rebuild-high-packed.glb",
+        "bytes": 315844,
+        "triangles": 18580,
+        "uniqueGeometryTriangles": 18580,
+        "primitives": 33,
+        "materials": 5,
+        "sha256": "cb5a64f9ae5112b257185b07a6312b25530215a099bb59f58c9e421fffb15879"
+      },
+      "medium": {
+        "file": "cc205-rebuild-medium-packed.glb",
+        "bytes": 230312,
+        "triangles": 11836,
+        "uniqueGeometryTriangles": 11836,
+        "primitives": 33,
+        "materials": 5,
+        "sha256": "c819850e3b796fea1f036ce00adb09e7d9bfac5e28a0e829518387fe797a58b4"
+      },
+      "low": {
+        "file": "cc205-rebuild-low-packed.glb",
+        "bytes": 123748,
+        "triangles": 5544,
+        "uniqueGeometryTriangles": 5448,
+        "primitives": 33,
+        "materials": 5,
+        "sha256": "71f7dd237dd892532b46aee339f98f8f1ed75c02fbdea2ccdfa80119cb9205cb"
+      }
+    },
+    "default": true,
+    "creditFile": "cc205-rebuild-credits.txt"
   }
 }

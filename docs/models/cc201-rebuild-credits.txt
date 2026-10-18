@@ -1,0 +1,18 @@
+CC201 rebuilt exterior, revision rebuilt-cc201-v3, 18 October 2026.
+
+New procedural geometry authored for warehouse-3d-playground from visual and
+scalar measurements of the project's existing CC201 reference asset. No source
+model vertices, indices or texture images are embedded in these rebuilt GLBs.
+Generic primitive/text helpers and manually drawn KAI logo contours are shared
+with the project's CC206 rebuilding scripts. KAI branding retains its original
+owner's identity; no endorsement is implied.
+
+Reference: local cc201-game-lossless.bin / CC201 GE U18C project import.
+Original reference author and redistribution license could not be established
+from the available local files. This note does not grant third-party rights.
+Font outlines use locally installed Arial Bold and Times New Roman Bold.
+
+Editable master: outputs/cc201-rebuild/cc201-rebuild-master.blend
+Sources: scripts/blender/cc201_rebuild_*.py, build-cc201-rebuild.py
+Packing: scripts/pack-cc201-rebuild.mjs
+Details and limitations: docs/cc201-rebuild-game.md

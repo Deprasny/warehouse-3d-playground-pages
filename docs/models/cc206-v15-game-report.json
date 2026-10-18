@@ -1,0 +1,30 @@
+{
+  "sourceRevision": "original-v15",
+  "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+  "levels": {
+    "optimized": {
+      "file": "cc206-v15-optimized-packed.glb",
+      "bytes": 658716,
+      "triangles": 37472,
+      "uniqueGeometryTriangles": 37436,
+      "primitives": 38,
+      "materials": 5
+    },
+    "medium": {
+      "file": "cc206-v15-medium-packed.glb",
+      "bytes": 473308,
+      "triangles": 26036,
+      "uniqueGeometryTriangles": 25672,
+      "primitives": 38,
+      "materials": 5
+    },
+    "low": {
+      "file": "cc206-v15-low-packed.glb",
+      "bytes": 240760,
+      "triangles": 11542,
+      "uniqueGeometryTriangles": 11362,
+      "primitives": 38,
+      "materials": 5
+    }
+  }
+}

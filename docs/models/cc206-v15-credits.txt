@@ -1,0 +1,16 @@
+CC206 V15 — newly authored game reconstruction
+
+Geometry: new procedural mesh authored for Depras, October 2026.
+No old GLB geometry, vertex/index buffers, texture atlas or decimated source mesh
+is included in this reconstruction. Generic mesh construction/export utilities
+are reused; the rejected V14 locomotive geometry is not used as its base.
+
+Visual and dimensional reference:
+“CC 206 GE CM20EMP locomotive PT KAI” by pucohensap, CC BY 4.0.
+https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: rebuilt topology, source-view landmark fitting, separate authored LODs,
+batched vertex-color materials, game wheel/bogie/coupler anchors, Meshopt packing.
+KAI name, logo and locomotive livery identify the referenced real locomotive.
+This is a visual reconstruction, not a factory drawing or a certified exact copy.

@@ -1,0 +1,30 @@
+{
+  "sourceRevision": "rebuilt-cc201-v3",
+  "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+  "levels": {
+    "high": {
+      "file": "cc201-rebuild-high-packed.glb",
+      "bytes": 503896,
+      "triangles": 26944,
+      "uniqueGeometryTriangles": 26944,
+      "primitives": 33,
+      "materials": 5
+    },
+    "medium": {
+      "file": "cc201-rebuild-medium-packed.glb",
+      "bytes": 375284,
+      "triangles": 18828,
+      "uniqueGeometryTriangles": 18828,
+      "primitives": 33,
+      "materials": 5
+    },
+    "low": {
+      "file": "cc201-rebuild-low-packed.glb",
+      "bytes": 174196,
+      "triangles": 7452,
+      "uniqueGeometryTriangles": 7452,
+      "primitives": 33,
+      "materials": 5
+    }
+  }
+}
