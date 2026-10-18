@@ -1,0 +1,329 @@
+{
+  "schema": 2,
+  "name": "Riverside Grand Locomotive Depot",
+  "file": "riverside-depot-kit.glb",
+  "author": "Original project assets",
+  "units": "game metres",
+  "coordinates": "Y-up; front +Z",
+  "paletteSource": "src/art/diorama-style.ts",
+  "meshes": 25,
+  "triangles": 15550,
+  "materials": 1,
+  "textures": 0,
+  "bytes": 1223236,
+  "assets": [
+    {
+      "id": "depot-shed",
+      "triangles": 3747,
+      "assemblyPosition": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-roof-1",
+      "triangles": 1676,
+      "assemblyPosition": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": "removable roof for cutaway; no automatic animation"
+    },
+    {
+      "id": "depot-roof-2",
+      "triangles": 1636,
+      "assemblyPosition": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": "removable roof for cutaway; no automatic animation"
+    },
+    {
+      "id": "depot-roof-3",
+      "triangles": 1676,
+      "assemblyPosition": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": "removable roof for cutaway; no automatic animation"
+    },
+    {
+      "id": "depot-door-1-left",
+      "triangles": 156,
+      "assemblyPosition": [
+        -8.399999618530273,
+        0.0,
+        13.300000190734863
+      ],
+      "assemblyYaw": 1.5707963705062866,
+      "motion": "hinge local Y in glTF; closed yaw 0; open +/-pi/2"
+    },
+    {
+      "id": "depot-door-1-right",
+      "triangles": 156,
+      "assemblyPosition": [
+        -3.5999999046325684,
+        0.0,
+        13.300000190734863
+      ],
+      "assemblyYaw": -1.5707963705062866,
+      "motion": "hinge local Y in glTF; closed yaw 0; open +/-pi/2"
+    },
+    {
+      "id": "depot-door-2-left",
+      "triangles": 156,
+      "assemblyPosition": [
+        -2.4000000953674316,
+        0.0,
+        13.300000190734863
+      ],
+      "assemblyYaw": 1.5707963705062866,
+      "motion": "hinge local Y in glTF; closed yaw 0; open +/-pi/2"
+    },
+    {
+      "id": "depot-door-2-right",
+      "triangles": 156,
+      "assemblyPosition": [
+        2.4000000953674316,
+        0.0,
+        13.300000190734863
+      ],
+      "assemblyYaw": -1.5707963705062866,
+      "motion": "hinge local Y in glTF; closed yaw 0; open +/-pi/2"
+    },
+    {
+      "id": "depot-door-3-left",
+      "triangles": 156,
+      "assemblyPosition": [
+        3.5999999046325684,
+        0.0,
+        13.300000190734863
+      ],
+      "assemblyYaw": 1.5707963705062866,
+      "motion": "hinge local Y in glTF; closed yaw 0; open +/-pi/2"
+    },
+    {
+      "id": "depot-door-3-right",
+      "triangles": 156,
+      "assemblyPosition": [
+        8.399999618530273,
+        0.0,
+        13.300000190734863
+      ],
+      "assemblyYaw": -1.5707963705062866,
+      "motion": "hinge local Y in glTF; closed yaw 0; open +/-pi/2"
+    },
+    {
+      "id": "depot-office",
+      "triangles": 1967,
+      "assemblyPosition": [
+        14.0,
+        0.0,
+        -3.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-clock-tower",
+      "triangles": 1214,
+      "assemblyPosition": [
+        14.0,
+        0.0,
+        10.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-water-tower",
+      "triangles": 586,
+      "assemblyPosition": [
+        15.0,
+        0.0,
+        -15.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-workbench",
+      "triangles": 270,
+      "assemblyPosition": [
+        -7.800000190734863,
+        0.10000000149011612,
+        -11.600000381469727
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-compressor",
+      "triangles": 242,
+      "assemblyPosition": [
+        7.900000095367432,
+        0.10000000149011612,
+        -11.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-tool-trolley",
+      "triangles": 192,
+      "assemblyPosition": [
+        1.399999976158142,
+        0.10000000149011612,
+        9.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-wheelset-rack",
+      "triangles": 508,
+      "assemblyPosition": [
+        -12.0,
+        0.0,
+        -5.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-lifting-jack",
+      "triangles": 106,
+      "assemblyPosition": [
+        -12.0,
+        0.0,
+        2.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-hoist-rails",
+      "triangles": 20,
+      "assemblyPosition": [
+        2.75,
+        0.699999988079071,
+        -0.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-hoist-bridge",
+      "triangles": 40,
+      "assemblyPosition": [
+        6.0,
+        5.649999618530273,
+        -3.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": "independent crane travel/lift part; stowed pose, no animation"
+    },
+    {
+      "id": "depot-hoist-hook",
+      "triangles": 84,
+      "assemblyPosition": [
+        6.0,
+        5.299999713897705,
+        -3.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": "independent crane travel/lift part; stowed pose, no animation"
+    },
+    {
+      "id": "depot-service-pump",
+      "triangles": 76,
+      "assemblyPosition": [
+        -12.0,
+        0.0,
+        10.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-apron",
+      "triangles": 444,
+      "assemblyPosition": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-track-buffer",
+      "triangles": 40,
+      "assemblyPosition": [
+        -6.0,
+        0.10000000149011612,
+        -11.300000190734863
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    },
+    {
+      "id": "depot-service-platform",
+      "triangles": 90,
+      "assemblyPosition": [
+        -3.9000000953674316,
+        0.10000000149011612,
+        -3.0
+      ],
+      "assemblyYaw": 0.0,
+      "motion": null
+    }
+  ],
+  "windowGroup": [
+    "depot-shed",
+    "depot-office"
+  ],
+  "contract": {
+    "bayCentersX": [
+      -6.0,
+      0.0,
+      6.0
+    ],
+    "railHeadY": 0.35,
+    "doorClearWidth": 4.8,
+    "doorClearHeightAboveRailAtJamb": 4.8,
+    "shedLength": 26,
+    "shedWidth": 19.8,
+    "entranceZ": 13.3,
+    "pitDepth": 0.6,
+    "pitTerrainCutRequired": true,
+    "approxCompoundFootprint": [
+      39,
+      45
+    ],
+    "clockTowerHeight": 14.2,
+    "railGeometry": "runtime supplied; presentation rails excluded from GLB"
+  },
+  "animationReady": [
+    "six hinged doors",
+    "three detachable roofs",
+    "crane bridge",
+    "crane hook"
+  ],
+  "validation": {
+    "visual": "not run: user requested assets only",
+    "gameTests": "not run",
+    "browser": "not run",
+    "gameIntegration": "not placed; no functional depot route"
+  },
+  "source": "scripts/blender/build-riverside-grand-depot.py"
+}

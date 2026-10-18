@@ -1,0 +1,1 @@
+var e=15.849,t=15.18,n=t/e,r=1.067,i={referenceMeters:r,referenceCC206LengthMeters:e,authoredCC206Length:t,unitScale:n,innerGap:r*n,centerHalf:1.1219610070035964/2,headWidth:.1,sleeperLength:2,ballastWidth:2.4,legacy:{centerHalf:.95,innerGap:1.8,sleeperLength:2.85,ballastWidth:3.2}};export{i as t};

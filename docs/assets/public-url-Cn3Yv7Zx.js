@@ -1,0 +1,1 @@
+function e(e,t=`/warehouse-3d-playground-pages/`){return`${t.replace(/\/?$/,`/`)}${e.replace(/^\/+/,``)}`}export{e as t};

@@ -3,10 +3,10 @@
   "levels": {
     "high": {
       "file": "lodaya-ssng-high-packed.glb",
-      "bytes": 315480,
+      "bytes": 308764,
       "assets": {
         "executive": {
-          "triangles": 15202,
+          "triangles": 14966,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -14,7 +14,7 @@
           "doors": 4
         },
         "economy": {
-          "triangles": 14712,
+          "triangles": 15090,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -26,10 +26,10 @@
     },
     "medium": {
       "file": "lodaya-ssng-medium-packed.glb",
-      "bytes": 233576,
+      "bytes": 227140,
       "assets": {
         "executive": {
-          "triangles": 10562,
+          "triangles": 10326,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -37,7 +37,7 @@
           "doors": 4
         },
         "economy": {
-          "triangles": 10242,
+          "triangles": 10428,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -49,10 +49,10 @@
     },
     "low": {
       "file": "lodaya-ssng-low-packed.glb",
-      "bytes": 107844,
+      "bytes": 105408,
       "assets": {
         "executive": {
-          "triangles": 3632,
+          "triangles": 3640,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -60,7 +60,7 @@
           "doors": 4
         },
         "economy": {
-          "triangles": 3460,
+          "triangles": 3700,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -73,5 +73,7 @@
   },
   "textures": 0,
   "activeGameReplacement": true,
-  "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior."
+  "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+  "liveryId": "ssng-orange-ribbon-v1",
+  "routeDisplay": "runtime name, two sides; no baked route lettering"
 }

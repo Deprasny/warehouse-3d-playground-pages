@@ -1,4 +1,4 @@
-CC203 independent exterior rebuild v9 / game adapter
+CC203 independent exterior rebuild v11 / game adapter
 Authored for Depras, 18 October 2026.
 
 New hand-authored locomotive geometry; no imported train vertices or generated AI mesh.
@@ -28,3 +28,11 @@ was only a local visual comparator; its geometry/textures are not included.
 
 V9 deepens the shared cast web for CC203 and adds lightweight approximate
 inner motor/gearcase/support masses. Default CC206 geometry is unchanged.
+
+V11 promotes the reviewed original cab/hood rebuild: tapered upper shoulders,
+planar three-pane side glazing, primary95 08 sash proportions, shorter nose
+fillet and a more upright front profile. Front optical groups stay rigid and
+night-light positions follow the exported lens centers. The local red-orange
+body band is separate from KAI logo orange. V9 dense bogies and all wheel,
+bogie and coupler contracts are retained. No new photo textures are embedded.
+Photo/camera fits remain approximate, not factory-certified measurements.

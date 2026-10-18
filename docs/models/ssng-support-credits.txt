@@ -1,0 +1,37 @@
+SSNG M / P - original procedural game exterior, 18 October 2026.
+Author: Depras. Stylized low-poly diorama; three authored LODs.
+No third-party mesh, image texture, UV atlas or advertising artwork is embedded.
+Shared original project SSNG body/end/rig toolkit and TB1014-family running gear.
+
+Photographic study sources (reference photos are separate from the game GLBs):
+
+Jauhsekali, own work, CC BY-SA 4.0:
+https://commons.wikimedia.org/wiki/File:M1_0_24_09_di_Stasiun_Lempuyangan_110525.jpg
+https://commons.wikimedia.org/wiki/File:P_0_23_03_di_Stasiun_Lempuyangan_110525.jpg
+https://creativecommons.org/licenses/by-sa/4.0/
+
+M1 0 24 06: Rayyns and related 168Railway gallery photographers.
+https://168railway.com/galeri/foto/rolling_stock/757
+P 0 24 11: 168Railway contributors (individual source entries in reference manifest).
+https://168railway.com/rolling-stock/1309
+No open reuse license verified; used for visual study of roof/reverse-side forms.
+Advertising wraps seen in these photographs are not included in the assets.
+
+JABODETABEK COMMUTERS NEWS, first-person Majapahit report / M002 and P002 photos:
+https://krl.ldblog.jp/archives/40370602.html
+Farrell Dzaudan / Railway Enthusiast Digest, first-person SSNG construction report:
+https://redigest.web.id/2023/12/penasaran-dengan-kereta-eksekutif-stainless-steel-new-generation-berikut-reviewnya/
+No open reuse license verified; visual study only.
+
+Manufacturer context, New Generation trainsets include dining and power cars:
+https://www.inka.co.id/berita/928?locale=en
+https://www.inka.co.id/artikel/pt-inka-persero-telah-selesaikan-11-train-set-kereta-new-generation
+
+Original M009 magenta/P003 blue-orange liveries informed the first authored version.
+User correction, 18 October 2026: K1, K3, M and P now share the game default
+ssng-orange-ribbon-v1, based on the existing K1 silver/orange ribbon.
+Source photos remain form references; their different liveries are not claimed
+to match this shared game default. Service-specific motif selection is not in the UI.
+Reverse-side M details and P003 roof details are family-level reconstruction using other serials.
+No claim of factory-drawing accuracy. See docs/ssng-support-game.md and
+outputs/ssng-support/reference_manifest.json for source roles and limitations.

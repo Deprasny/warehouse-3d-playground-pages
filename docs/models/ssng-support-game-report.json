@@ -1,0 +1,79 @@
+{
+  "revision": "ssng-support-v1",
+  "levels": {
+    "high": {
+      "file": "ssng-support-high-packed.glb",
+      "bytes": 350176,
+      "assets": {
+        "dining": {
+          "triangles": 12686,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator": {
+          "triangles": 19156,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3
+    },
+    "medium": {
+      "file": "ssng-support-medium-packed.glb",
+      "bytes": 265180,
+      "assets": {
+        "dining": {
+          "triangles": 9254,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator": {
+          "triangles": 13506,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3
+    },
+    "low": {
+      "file": "ssng-support-low-packed.glb",
+      "bytes": 120204,
+      "assets": {
+        "dining": {
+          "triangles": 3128,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator": {
+          "triangles": 4316,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3
+    }
+  },
+  "textures": 0,
+  "activeGameReplacement": false,
+  "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+  "liveryId": "ssng-orange-ribbon-v1",
+  "routeDisplay": "runtime name, two sides; no baked route lettering"
+}

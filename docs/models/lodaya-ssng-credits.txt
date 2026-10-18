@@ -14,4 +14,9 @@ https://www.linkedin.com/posts/prasetyaadinug_railwayengineering-bogiedesign-rol
 https://id.scribd.com/presentation/754608728/BOGIE-TB-1014-NG-2023
 
 Reference photos retained locally for authoring, not bundled in runtime GLBs.
+User correction, 18 October 2026: K1, K3, M and P share the game default
+ssng-orange-ribbon-v1, based on the existing K1 silver/orange ribbon.
+The blue K3 reference remains a source for form, not the active game livery.
+This shared default does not claim matching liveries in all source photos.
+Service-specific motif selection (including Taksaka) is not available in the UI.
 Reconstruction assumptions and game scale exceptions: docs/lodaya-ssng-game.md.
