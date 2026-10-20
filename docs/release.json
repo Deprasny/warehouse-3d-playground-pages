@@ -1,17 +1,17 @@
 {
-  "release": "spatial-speed-braking-43d9c31",
-  "sourceCommit": "43d9c31d08583952e5b309660ea66fc7b55156ad",
-  "sourceFingerprint": "bb84586bb11a63c1082d0be19337853c287307fb",
+  "release": "geometry-debug-ebd03e8",
+  "sourceCommit": "ebd03e8aca480eebb643a8ea6f8d7807fae80872",
+  "sourceFingerprint": "f10ea442c782235e6caea13aab0b0e3cb13b9aa9",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T06:41:15.419160+00:00",
+  "builtAt": "2026-10-20T07:04:26.214453+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "9fcdd4edadcc006beea22a0f08914de6842adacc",
-  "previousPublishedCommit": "ea75064b1ab5f9b80df3edd5d53de3cc6aae5374",
+  "previousSourceCommit": "43d9c31d08583952e5b309660ea66fc7b55156ad",
+  "previousPublishedCommit": "aaec794886623650af3be385dff79183d9e055b0",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 43d9c31d08583952e5b309660ea66fc7b55156ad",
+    "source": "detached clean checkout of ebd03e8aca480eebb643a8ea6f8d7807fae80872",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,12 +24,12 @@
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "speedZones": "Cached turnout and shunting intervals per journey; retain restrictions until the complete consist clears",
-    "braking": "Analytical speed-distance envelope with response reserve and bounded acceleration/service braking; explicit emergency and safety-stop modes",
-    "authority": "Stop at the earliest berth, red signal, unowned block or infrastructure boundary; caution alone has no blanket speed cap",
-    "departure": "Keep manual and Auto trains stopped at their platform until the requested exit route is reserved and its points are ready",
-    "performance": "Reuse immutable zone metadata and existing cached curve profile; optional rail motion traces only when requested",
-    "verification": "Source analysis and clean-commit TypeScript/Vite build; publication identity/bytes only; no automated tests, browser gameplay or FPS benchmarks"
+    "debugPanel": "Settings geometry mapping shows categories, source contributions, render passes and top 16 submitted objects",
+    "attribution": "Actual renderer counter deltas on one sampled frame per two seconds while debug is active; includes instancing and repeated passes",
+    "batchSources": "Preserve bounded static-world source metadata at merge time without splitting render batches",
+    "reports": "Copy reports include the latest geometry sample, per-frame sample IDs and geometry snapshots retained with spikes",
+    "lifecycle": "Restore sampled renderer interceptor after capture, rendering failure and disposal; normal rendering does not install it",
+    "verification": "Static source review, clean-commit TypeScript/Vite build and publication identity/bytes only; automated tests, browser gameplay and benchmarks not run"
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -677,6 +677,11 @@
       "sha256": "4128f777dcfb180493007c5b463b5d7b420c9aeedec498bca2cc9acbf3047cc8"
     },
     {
+      "path": "assets/AssetCatalogPage-Dop3D8E_.js",
+      "bytes": 27446,
+      "sha256": "76a8d5b367997ed399cc27e034dc5a3cf39ed6c5f777dadf8a8e0abfdd83cb8b"
+    },
+    {
       "path": "assets/AssetCatalogPage-DqX8Y7U3.js",
       "bytes": 27446,
       "sha256": "ea2bc4a787483637eb76d14a833dfbedc9b17ed78d5526f64596ea3c16fde5bf"
@@ -1300,6 +1305,11 @@
       "path": "assets/Cc206ReviewPage-BkHD2KjH.js",
       "bytes": 12022,
       "sha256": "f29b7bec234e0780cee5a8524b07f1cf8afed1b7296869f7b331fabff445b24e"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BlqR3gbb.js",
+      "bytes": 12049,
+      "sha256": "472d9d3e71b807917170ea812d728a7ad7380d0f5dcaee43740270b4153ae545"
     },
     {
       "path": "assets/Cc206ReviewPage-Bm4-0tMv.js",
@@ -2117,6 +2127,11 @@
       "sha256": "2225a6f9aa72b432f2311fde44484faa2e664af716821819ceac7d92003af5ab"
     },
     {
+      "path": "assets/ConsistsPage-DTxEXcMF.js",
+      "bytes": 13572,
+      "sha256": "061e72966f4d1530af40c0a1e3d69cabe219f00c63072239ddfe937473916104"
+    },
+    {
       "path": "assets/ConsistsPage-DU1Jxk9H.js",
       "bytes": 8470,
       "sha256": "aa8291c2835901434b55b86f8533e8c49dabf1328afc56dabd3c0b8f331b864f"
@@ -2550,6 +2565,11 @@
       "path": "assets/DownloadSimple.es-CH_LhgPt.js",
       "bytes": 2100,
       "sha256": "4ad6180a4c52ce5a4392b2708e64e20d03d824f28bf69b5c7f698377fd62619a"
+    },
+    {
+      "path": "assets/DownloadSimple.es-CKoZM3Yf.js",
+      "bytes": 2100,
+      "sha256": "8d04f4f77d9288cf9677b50a3a7617c238313c76daf2afd2c7cb8915a3264d32"
     },
     {
       "path": "assets/DownloadSimple.es-CM_3U2Hh.js",
@@ -3290,6 +3310,11 @@
       "path": "assets/GaugeReviewPage-BfLX8LvX.js",
       "bytes": 18304,
       "sha256": "2964584e01978428bf31351bdccf5be5bed9a9495bc070bbda23bbe78bd10991"
+    },
+    {
+      "path": "assets/GaugeReviewPage-Bj1d_A7L.js",
+      "bytes": 18304,
+      "sha256": "c373db093d7d11fc7a684a2897c3eb711bc611d243ce87130a71e3e1eafb9548"
     },
     {
       "path": "assets/GaugeReviewPage-BjmDnGPw.js",
@@ -4092,6 +4117,11 @@
       "sha256": "9e030610bafef9622f20dd5b8d7be530cf4593e8c4888d903b7a5e088e3d71e6"
     },
     {
+      "path": "assets/HudPreviewPanel-DBuXJ5XO.js",
+      "bytes": 418,
+      "sha256": "a21b2350b92ae6137b2253aba2732128429d42d2bc4d53c2516890d043ffee67"
+    },
+    {
       "path": "assets/HudPreviewPanel-DC0UT3T_.js",
       "bytes": 418,
       "sha256": "93f78b94fe252f5a32353af70e9c12c34f2ccc5983dc643c73b974fbc7d8e285"
@@ -4350,6 +4380,11 @@
       "path": "assets/HudPreviewPanel-y9cw1Qql.js",
       "bytes": 421,
       "sha256": "6318c02c280f393f5c0be87a1ec7e89ccb3adb8a0287e5b44c0b71d80679efdd"
+    },
+    {
+      "path": "assets/IconBase.es-2Yu1fzNg.js",
+      "bytes": 3729,
+      "sha256": "07d44c71da84559bd9a3099622e516021339d670086e8de27f75a04c18de6745"
     },
     {
       "path": "assets/IconBase.es-4KYJ97PV.js",
@@ -4935,6 +4970,11 @@
       "path": "assets/ImportedCc206Page-D4xs6RlW.js",
       "bytes": 18446,
       "sha256": "c6c9dd0bca82efd3a7efdff6fdc4790910364591958814382739811c33251d4b"
+    },
+    {
+      "path": "assets/ImportedCc206Page-D5meoL4W.js",
+      "bytes": 18446,
+      "sha256": "d3966b04f58e316d77aca795d53106e47b2b84209893e0f5c56b033512f03ad2"
     },
     {
       "path": "assets/ImportedCc206Page-D7N7CAyV.js",
@@ -5912,6 +5952,11 @@
       "sha256": "02b39c09fbb7598a7f77c7860464fc91b52291c4a6607279ef9f7843853bd295"
     },
     {
+      "path": "assets/diorama-postprocessing-Dd-DnFKT.js",
+      "bytes": 42439,
+      "sha256": "212d8d47530f67ed018f7fa1780d9737ab55edf0b657d3305a9211a636a5eeac"
+    },
+    {
       "path": "assets/diorama-postprocessing-DgxSTxIm.js",
       "bytes": 40924,
       "sha256": "4ab62e93cd467a49b8724e8a12c726f9279862602030e589ad495f6625893873"
@@ -6607,6 +6652,11 @@
       "sha256": "b4ba94ef34660351814b491c517411e6bd7ebbfe5dcdff550d3628a489db899b"
     },
     {
+      "path": "assets/index-Cxcq7Unu.css",
+      "bytes": 157493,
+      "sha256": "1f73de93b15ebbc474082c7051a41c7eca27ae064be8505ec6dedd88b483775e"
+    },
+    {
       "path": "assets/index-Cz7cQ3vK.js",
       "bytes": 738633,
       "sha256": "f70b2acb989aaf0ba30ee2efa02d4b2d8d58359a2d7ae763664938cbdc01b4c6"
@@ -6665,6 +6715,11 @@
       "path": "assets/index-DM5z6BDf.js",
       "bytes": 600551,
       "sha256": "66e8bd80a4a80c8aae4da40f2eba2a96f9e12b905acd41dbea9382ef6e4854ce"
+    },
+    {
+      "path": "assets/index-DQL62QL4.js",
+      "bytes": 1267116,
+      "sha256": "41771299d0bb6bd1af6e48abbf1f50849fe1a7f927d5e4e3b6d345d1116b458f"
     },
     {
       "path": "assets/index-DS-EWplk.js",
@@ -7684,7 +7739,7 @@
     {
       "path": "index.html",
       "bytes": 2989,
-      "sha256": "6214c431ff2403b3331f41b0f325e1e22d54aae9eb4b65866bd48d5569811170"
+      "sha256": "d9ab16a5249608c6ae7bd53ceb68c44673e27dd14bd5db24f2c8d99e77877260"
     },
     {
       "path": "liveries/cc206/credits.txt",
