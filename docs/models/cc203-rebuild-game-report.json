@@ -4,23 +4,23 @@
   "levels": {
     "high": {
       "file": "cc203-rebuild-high-packed.glb",
-      "bytes": 665844,
-      "triangles": 36688,
-      "uniqueGeometryTriangles": 36688,
+      "bytes": 656116,
+      "triangles": 36280,
+      "uniqueGeometryTriangles": 36280,
       "primitives": 35,
       "materials": 3
     },
     "medium": {
       "file": "cc203-rebuild-medium-packed.glb",
-      "bytes": 456968,
-      "triangles": 23928,
-      "uniqueGeometryTriangles": 23928,
+      "bytes": 450872,
+      "triangles": 23680,
+      "uniqueGeometryTriangles": 23680,
       "primitives": 35,
       "materials": 3
     },
     "low": {
       "file": "cc203-rebuild-low-packed.glb",
-      "bytes": 219020,
+      "bytes": 219064,
       "triangles": 10028,
       "uniqueGeometryTriangles": 10028,
       "primitives": 35,
@@ -44,5 +44,7 @@
   },
   "bodyRevision": "CC201 hood cross-section; cabin roof level with hood; glazing and optical groups moved rigidly",
   "wheelRotationCues": "three-hex-heads-v1",
-  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
+  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop",
+  "cabWipers": "runtime-instanced-rain-wipers-v1",
+  "cabWiperNotes": "Baked static wipers removed; runtime uses one shared instanced draw, rain driven and paused with simulation time"
 }

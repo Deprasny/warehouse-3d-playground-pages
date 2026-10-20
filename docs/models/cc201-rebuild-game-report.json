@@ -4,23 +4,23 @@
   "levels": {
     "high": {
       "file": "cc201-rebuild-high-packed.glb",
-      "bytes": 534508,
-      "triangles": 30064,
-      "uniqueGeometryTriangles": 30064,
+      "bytes": 531352,
+      "triangles": 29896,
+      "uniqueGeometryTriangles": 29896,
       "primitives": 35,
       "materials": 5
     },
     "medium": {
       "file": "cc201-rebuild-medium-packed.glb",
-      "bytes": 377268,
-      "triangles": 20516,
-      "uniqueGeometryTriangles": 20164,
+      "bytes": 375108,
+      "triangles": 20412,
+      "uniqueGeometryTriangles": 20060,
       "primitives": 35,
       "materials": 5
     },
     "low": {
       "file": "cc201-rebuild-low-packed.glb",
-      "bytes": 184768,
+      "bytes": 184816,
       "triangles": 9044,
       "uniqueGeometryTriangles": 8860,
       "primitives": 35,
@@ -43,5 +43,7 @@
     ]
   },
   "wheelRotationCues": "three-hex-heads-v1",
-  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
+  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop",
+  "cabWipers": "runtime-instanced-rain-wipers-v1",
+  "cabWiperNotes": "Baked static wipers removed; runtime uses one shared instanced draw, rain driven and paused with simulation time"
 }

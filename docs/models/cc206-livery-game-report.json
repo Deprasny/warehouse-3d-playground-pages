@@ -9,7 +9,7 @@
   "levels": {
     "optimized": {
       "file": "cc206-livery-optimized-packed.glb",
-      "bytes": 706508,
+      "bytes": 706556,
       "triangles": 37616,
       "uniqueGeometryTriangles": 37580,
       "primitives": 40,
@@ -17,7 +17,7 @@
     },
     "medium": {
       "file": "cc206-livery-medium-packed.glb",
-      "bytes": 496692,
+      "bytes": 496736,
       "triangles": 24748,
       "uniqueGeometryTriangles": 24360,
       "primitives": 40,
@@ -25,7 +25,7 @@
     },
     "low": {
       "file": "cc206-livery-low-packed.glb",
-      "bytes": 264304,
+      "bytes": 264352,
       "triangles": 11546,
       "uniqueGeometryTriangles": 11342,
       "primitives": 40,
@@ -36,5 +36,7 @@
   "bogieDensityNotes": "Shared inner motor/gearcase masses; medium structural brake detail; CC203 raised-deck mount. Body/wheel/pivot geometry preserved.",
   "wheelRotationCues": "three-hex-heads-v1",
   "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop",
-  "runningGearContract": "cc206-standard-20261020"
+  "runningGearContract": "cc206-standard-20261020",
+  "cabWipers": "runtime-instanced-rain-wipers-v1",
+  "cabWiperNotes": "Baked static wipers removed; runtime uses one shared instanced draw, rain driven and paused with simulation time"
 }
