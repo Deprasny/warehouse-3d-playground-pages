@@ -1,12 +1,26 @@
-CC203 independent exterior rebuild v11 / game adapter
-Authored for Depras, 18 October 2026.
+CC203 independent exterior rebuild v13 / game adapter
+Updated for Depras, 20 October 2026.
 
 New hand-authored locomotive geometry; no imported train vertices or generated AI mesh.
 KAI livery and unit markings are retained for identification.
 Three Meshopt LODs, restored rigid anchors and shared miniature material finish.
 The game adapter retargets gauge and raises/re-anchors the two couplers.
 
+V13 follows scalar body/cab/hood/glazing landmarks from the user's supplied
+JIONS CC203 V8 model by JIONS 1080 HD:
+https://sketchfab.com/3d-models/jions-cc-203-locomotive-v80-3d-model-c0fdd66b2c8547a694596d1ee9835f66
+The supplied model is a local visual reference only. Its mesh, texture and UV
+data are not included in these independently authored game assets.
+
 Photographic references (not embedded as textures in the model):
+- Railway Enthusiast Digest, additional original cab/front/side photographs:
+  https://redigest.web.id/2020/07/25-tahun-cc-203-karir-panjang-sang-railsprinter/
+- Wesley van Drongelen, CC203 95 08, 13 July 2024:
+  https://www.flickr.com/photos/wesleyvandrongelen/53985638411/
+- Ian Antono, CC203 95 08, 13 March 2021:
+  https://www.flickr.com/photos/ian_antono/51324096592/
+- Youth With, CC203 98 02, 13 May 2023:
+  https://www.flickr.com/photos/youthwith/52925312021/
 - Ghazy2007, GEU20CCC2039508.jpg, CC0 1.0:
   https://commons.wikimedia.org/wiki/File:GEU20CCC2039508.jpg
 - Warga bks, KA Serayu longhood menuju kroya untuk putar loko.jpg, CC BY 4.0:
