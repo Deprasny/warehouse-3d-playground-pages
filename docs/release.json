@@ -1,17 +1,17 @@
 {
-  "release": "riverside-double-track-52b7b3c",
-  "sourceCommit": "52b7b3cfd3317ab0cfacfd2391bc45cf40a69360",
-  "sourceFingerprint": "82b19065cb8129efd06cc5db2cd16c5df3ce17bd",
+  "release": "riverside-double-track-a9b640f",
+  "sourceCommit": "a9b640ffc71999d22ef2719f486436f7166a1f12",
+  "sourceFingerprint": "1cb28c142ebeddba8006f140159eb7359752c017",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T17:41:53.926411+00:00",
+  "builtAt": "2026-10-20T17:55:59.738765+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "221a040f31867c342c1a9edbff60318c14153019",
-  "previousPublishedCommit": "1d92138d75a6a2ab8281a4616c049e7de1727f51",
+  "previousSourceCommit": "52b7b3cfd3317ab0cfacfd2391bc45cf40a69360",
+  "previousPublishedCommit": "8c9875d306a75cd4e5490f1abf8fd674b24d5bb7",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 52b7b3cfd3317ab0cfacfd2391bc45cf40a69360",
+    "source": "detached clean checkout of a9b640ffc71999d22ef2719f486436f7166a1f12",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -26,7 +26,14 @@
       "6 Auto fairness cases"
     ],
     "scope": "User explicitly authorized tests before deployment. These are prior targeted workspace results, not a full suite or re-execution on the isolated publication checkout. Clean isolated release is TypeScript/Vite-built; delivered identity and bytes are verified.",
-    "evidence": "outputs/double-track-hill-portals-2026-10-20/tests/test-summary.json"
+    "evidence": "outputs/double-track-hill-portals-2026-10-20/tests/test-summary.json",
+    "hotfix": {
+      "status": "passed",
+      "command": "node --experimental-transform-types scripts/check-riverside-crowd-platforms.ts",
+      "redBeforeFix": "TypeError: Cannot read properties of undefined (reading 'map') in residentIntervals",
+      "greenAfterFix": "South22 and North17 finite crowd slots across all3platformstrips.",
+      "scope": "Only the directly affected crowd-layout CPU regression rerun for this hotfix; no browser/full-suite tests."
+    }
   },
   "browserChecks": {
     "status": "not-run",
@@ -39,7 +46,8 @@
     "interlocking": "North arrival berth promised before committing the U, preventing the reproduced opposed J1 wait.",
     "autoFairness": "Actual South berth overlap controls stopping admission; waiting plans preserve needed capacity/lanes instead of starvation by pass fallback.",
     "depotCollection": "Collection gets new-arrival priority from bay exit; existing traffic and progressive physical block release retained.",
-    "baseline": "Includes previously deployed SSNG proportion correction 221a040 and LOD door pivot hotfix."
+    "baseline": "Includes previously deployed SSNG proportion correction 221a040 and LOD door pivot hotfix.",
+    "northCrowdHotfix": "Additional North platform slabs default to no fixed-resident exclusions; prevents undefined.map during actual station crowd initialization."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -485,6 +493,11 @@
       "path": "assets/AssetCatalogPage-CKIb9dyW.js",
       "bytes": 24488,
       "sha256": "7710078d78b5580534813a4eaf41821db8b19685aa0684e2164149998edee0ef"
+    },
+    {
+      "path": "assets/AssetCatalogPage-CLxnITpU.js",
+      "bytes": 27446,
+      "sha256": "4bafeafaa2a414f118452eb0ebe1554f727fce825451159e3345796a95069ef7"
     },
     {
       "path": "assets/AssetCatalogPage-CM-Au4Mq.js",
@@ -1492,6 +1505,11 @@
       "sha256": "f21408c6a4e8aae496822bd87cbcff35a2dff28310c43d98799e54ed5c3f8cb8"
     },
     {
+      "path": "assets/Cc206ReviewPage-CVr0utCN.js",
+      "bytes": 12049,
+      "sha256": "f136c1b3c240b186103f6bbd58fddcaae23b3fbb59f3f47b3129a99bf4015153"
+    },
+    {
       "path": "assets/Cc206ReviewPage-CW2pK1z9.js",
       "bytes": 12019,
       "sha256": "0e2b67fab5fb05ca006f1c4c28fa9c3aa2c5c590645425d4a316804ca441fc7c"
@@ -2057,6 +2075,11 @@
       "sha256": "5fb6b092de81991b643e046757bb44e99594d6d4d4d90c4912f183a985188c6a"
     },
     {
+      "path": "assets/ConsistsPage-C7yRUe9C.js",
+      "bytes": 14577,
+      "sha256": "e4c68ca6afb957246bef7babaaba79d12aa51bec29688f1f656d410901876cc3"
+    },
+    {
       "path": "assets/ConsistsPage-CAJJy3wB.js",
       "bytes": 8470,
       "sha256": "98d1fa3b402d5a1570746910e4a378dcfcda51d4a5cc44b6a760146d301595e5"
@@ -2545,6 +2568,11 @@
       "path": "assets/DownloadSimple.es-BIaXvn8f.js",
       "bytes": 2061,
       "sha256": "1f6704cd83120cd103051c73799a24077b23472cf2fb0c1939eb682a0a17017c"
+    },
+    {
+      "path": "assets/DownloadSimple.es-BKxISLqd.js",
+      "bytes": 2100,
+      "sha256": "16764dcf7b2c5671b6730ca297f582e16139d5b6cb5e0de5c4b0770173bd9702"
     },
     {
       "path": "assets/DownloadSimple.es-BLSPxvnZ.js",
@@ -3947,6 +3975,11 @@
       "sha256": "af57aee52c782245a7f675666d1afd49fb2992e0e791eba7072d5af12ebb7b93"
     },
     {
+      "path": "assets/GaugeReviewPage-qiNInQ-1.js",
+      "bytes": 18304,
+      "sha256": "e2614e7cda8949ca8a236bb33574f1268bf9d82e97e6d4cfd6707200bc972c5f"
+    },
+    {
       "path": "assets/GaugeReviewPage-s4SHeMOR.js",
       "bytes": 10825,
       "sha256": "3e360661abbb4696f2c8b9f91fd6d861ce0da78bb563c8c20ab2e52b6822efc9"
@@ -4507,6 +4540,11 @@
       "sha256": "e2732ac864db76e75802d47b1679d563765f193b216a301e14dad5ff45b0e3aa"
     },
     {
+      "path": "assets/HudPreviewPanel-SJIa6Uzt.js",
+      "bytes": 418,
+      "sha256": "0cd8a35086524886c018e14ea90add096f2cb20d3a5188ecd71614e84795a665"
+    },
+    {
       "path": "assets/HudPreviewPanel-SWsAdHfA.js",
       "bytes": 421,
       "sha256": "69449eaf99f22fa5c886b5ab27790f9fe9938ef0569829fd1249cc60ee4cdb9c"
@@ -4845,6 +4883,11 @@
       "path": "assets/IconBase.es-Div1orLI.js",
       "bytes": 3432,
       "sha256": "fed59153f86c1767fc50085bbf47ff7bd46782bf8b9602a71c7f4ea2abc2780e"
+    },
+    {
+      "path": "assets/IconBase.es-DlBBc_3Y.js",
+      "bytes": 3729,
+      "sha256": "85d1a4dc085952372b38324da072c4ba4ee7c8f3e598dd5052770b41762306a8"
     },
     {
       "path": "assets/IconBase.es-DmiolQsU.js",
@@ -5460,6 +5503,11 @@
       "path": "assets/ImportedCc206Page-PQIAg_Ml.js",
       "bytes": 13963,
       "sha256": "2b83a7873f87ee3324c9417887f4211562b5b8ba123e4f940c1d7494d7cd94ca"
+    },
+    {
+      "path": "assets/ImportedCc206Page-R_wB-nYF.js",
+      "bytes": 18446,
+      "sha256": "7cd8ebb7f4d698ca35dbf4913c21ffd8ca424282be96feff6db3a2a975d12d86"
     },
     {
       "path": "assets/ImportedCc206Page-UexMnxYb.js",
@@ -6205,6 +6253,11 @@
       "path": "assets/diorama-postprocessing-BwUSBXFJ.js",
       "bytes": 41254,
       "sha256": "79c88708bac62ee2ab94a86a174ff95c1ea3f21da5cde5f0ce52c41d33ba0496"
+    },
+    {
+      "path": "assets/diorama-postprocessing-Bx1ieUhK.js",
+      "bytes": 42434,
+      "sha256": "f1ea20260de34d2779bc899de7d10e855009e9d09d2a5c649fc23e745c2db0a7"
     },
     {
       "path": "assets/diorama-postprocessing-C-fxGEak.js",
@@ -7362,6 +7415,11 @@
       "sha256": "a21164637e7fe6a3ab79c9dac0987684512635df28f61f106a92bd69abed614e"
     },
     {
+      "path": "assets/index-Yqe8KpPn.js",
+      "bytes": 1239980,
+      "sha256": "6ac2f87a5df2330c7b49393a9604604149857b49b14bf1bc9932b3e40f36f001"
+    },
+    {
       "path": "assets/index-ZbbQOOE9.js",
       "bytes": 585072,
       "sha256": "9cb36a99d89118fe5c19d24d48729f526bde03470dad3153fd1b2616a9ee2e57"
@@ -8374,7 +8432,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "b116904c4eabd9feed9e03d2c6de67550e6c4300efd3bc986a301651128f18e1"
+      "sha256": "c6f9068e70b4d680129e3f05b7f4105a04cea9b0cca8bbda17486761abbd6a65"
     },
     {
       "path": "liveries/cc206/credits.txt",
