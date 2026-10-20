@@ -50,3 +50,23 @@ night-light positions follow the exported lens centers. The local red-orange
 body band is separate from KAI logo orange. V9 dense bogies and all wheel,
 bogie and coupler contracts are retained. No new photo textures are embedded.
 Photo/camera fits remain approximate, not factory-certified measurements.
+
+V14 follows the user-selected CC201 miniature hood cross-section: wider and
+lower skin, retaining the CC203 cabin, longitudinal joins, livery and dense
+bogie rig. This is an art-direction adjustment, not a factory dimension claim.
+Logo shapes and round rear optics remain rigid; light metadata follows them.
+
+V15 lowers the upper cabin rigidly to align the roof with the selected hood
+crown, shortening only the lower transition zone. Window proportions and
+optical circles are preserved. Body-mounted end-bay equipment fills the ends.
+
+V16 follows the user's miniature art direction: the accepted original CC206
+bogie/wheel kit, gauge, radius, axle stations and pivots replace CC203-specific
+running gear on all three LODs. Supports and end-bay equipment adapt to the body.
+This is a shared game kit, not a claim that prototype locomotive trucks match.
+No geometry or textures from the supplied JIONS comparison GLB are included.
+
+Three small cosmetic hex heads at each visible inspection circle are parented
+to the existing wheel anchors to make miniature wheel rotation readable.
+The bearing housings remain bogie-owned. This adds 144 triangles per LOD,
+using existing vertex colors/materials, with no new per-frame animation code.

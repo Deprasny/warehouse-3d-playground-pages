@@ -4,27 +4,44 @@
   "levels": {
     "high": {
       "file": "cc205-rebuild-high-packed.glb",
-      "bytes": 477756,
-      "triangles": 27180,
-      "uniqueGeometryTriangles": 27180,
-      "primitives": 33,
+      "bytes": 425820,
+      "triangles": 24636,
+      "uniqueGeometryTriangles": 24636,
+      "primitives": 35,
       "materials": 5
     },
     "medium": {
       "file": "cc205-rebuild-medium-packed.glb",
-      "bytes": 232464,
-      "triangles": 11948,
-      "uniqueGeometryTriangles": 11948,
-      "primitives": 33,
+      "bytes": 311740,
+      "triangles": 16924,
+      "uniqueGeometryTriangles": 16572,
+      "primitives": 35,
       "materials": 5
     },
     "low": {
       "file": "cc205-rebuild-low-packed.glb",
-      "bytes": 125436,
-      "triangles": 5624,
-      "uniqueGeometryTriangles": 5528,
-      "primitives": 33,
+      "bytes": 155452,
+      "triangles": 7360,
+      "uniqueGeometryTriangles": 7176,
+      "primitives": 35,
       "materials": 5
     }
-  }
+  },
+  "runningGearContract": "cc206-standard-20261020",
+  "bogieDensityRevision": "cc206-standard-20261020",
+  "runningGearRaw": {
+    "bogieHalf": 4.3,
+    "wheelRadius": 0.46,
+    "gaugeHalf": 0.5609805035017982,
+    "wheelStations": [
+      -5.749341,
+      -4.241306,
+      -2.397106,
+      2.397106,
+      4.241306,
+      5.749341
+    ]
+  },
+  "wheelRotationCues": "three-hex-heads-v1",
+  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
 }

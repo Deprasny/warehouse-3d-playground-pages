@@ -1,63 +1,287 @@
 {
-  "release": "cc203-v13-fleet-roofs-timetable-317ac38",
-  "sourceCommit": "317ac382a3031e383dffaa9cd099b41048cfb504",
-  "sourceFingerprint": "3c8e95b5971a4a6683d9de3d0b055ce96316f393",
+  "release": "fleet-standard206-wheel-cues-b00af33",
+  "sourceCommit": "b00af338acc1c17364c9b68d3a66c19b18347e63",
+  "sourceFingerprint": "598453ae9c738f99a283d37f9aefa8c128d3fdc7",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T03:15:33.582459+00:00",
+  "builtAt": "2026-10-20T04:38:16.344657+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "7ea299f5eb15cc2382e27dcb05062cdb56b94fed",
-  "previousPublishedCommit": "db1fabd4b9573771f244b60a1678e16ec2e21779",
+  "previousSourceCommit": "317ac382a3031e383dffaa9cd099b41048cfb504",
+  "previousPublishedCommit": "228e3a7b198ba7d48d9aeeb39451e803eb4bb1da",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 317ac382a3031e383dffaa9cd099b41048cfb504",
+    "source": "detached clean checkout of b00af338acc1c17364c9b68d3a66c19b18347e63",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "No automated tests authorized for this release; production build only"
+    "scope": "No automated tests authorized; deployment build and publication byte verification only"
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser/gameplay checks or FPS benchmarks run for this release"
+    "scope": "No browser/gameplay checks or FPS benchmarks run"
   },
   "currentChangeScope": {
-    "cc203": "Independent V13 cab/body/hood recipe fitted to scalar landmarks from the supplied 3D reference; game mechanical rig retained",
-    "fleetRoofs": "Shared light-grey #b5b5b2 base roof swatch for CC201, CC203, CC205 and CC206; dark fittings and livery details retained",
-    "timetable": "Built-in KA Sancaka and KA Progo each use one CC203 in the normal automatic passenger rotation, including existing saved collections after reload",
-    "verification": "TypeScript/Vite build, Pages publication state and published release/asset bytes only"
+    "cc203": "V16: CC201 hood cross-section, cabin roof aligned with hood, static body-end infill",
+    "runningGear": "Exact CC206 bogies, wheels, radius, gauge, axle stations and pivots on CC201/CC203/CC205",
+    "wheelRotation": "Three visible hex-head cues on each existing wheel pivot of all four locomotive types; +144 triangles per model per LOD",
+    "roofs": "Standard #8a8d89, CC206 Nusantara Explorer #1c2522",
+    "presetRoster": "Unchanged: Taksaka remains two CC206; Sancaka and Progo each one CC203",
+    "verification": "TypeScript/Vite build, GitHub Pages state, published release identity and asset SHA256 only"
+  },
+  "locomotiveFleet": {
+    "totalPackedBytes": 4798892,
+    "runningGearContract": "cc206-standard-20261020",
+    "wheelRotationCues": "three-hex-heads-v1"
+  },
+  "locomotives": {
+    "cc201": {
+      "sourceRevision": "rebuilt-cc201-v6",
+      "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+      "levels": {
+        "high": {
+          "file": "cc201-rebuild-high-packed.glb",
+          "bytes": 534508,
+          "triangles": 30064,
+          "uniqueGeometryTriangles": 30064,
+          "primitives": 35,
+          "materials": 5,
+          "sha256": "9e5edecf4d97017923cd2e0c86b26ab576501cf2e720fb6adb1b7d8b83b2a5cd"
+        },
+        "medium": {
+          "file": "cc201-rebuild-medium-packed.glb",
+          "bytes": 377268,
+          "triangles": 20516,
+          "uniqueGeometryTriangles": 20164,
+          "primitives": 35,
+          "materials": 5,
+          "sha256": "249cf0a50646c45c99e572738f11a836889ca104d03149cbc71123c718005ce2"
+        },
+        "low": {
+          "file": "cc201-rebuild-low-packed.glb",
+          "bytes": 184768,
+          "triangles": 9044,
+          "uniqueGeometryTriangles": 8860,
+          "primitives": 35,
+          "materials": 5,
+          "sha256": "74c6159f0606b69804caaae324bd0d44105729b96d7744cf3f06e46fe714a2b5"
+        }
+      },
+      "runningGearContract": "cc206-standard-20261020",
+      "bogieDensityRevision": "cc206-standard-20261020",
+      "runningGearRaw": {
+        "bogieHalf": 4.3,
+        "wheelRadius": 0.46,
+        "gaugeHalf": 0.5609805035017982,
+        "wheelStations": [
+          -5.749341,
+          -4.241306,
+          -2.397106,
+          2.397106,
+          4.241306,
+          5.749341
+        ]
+      },
+      "wheelRotationCues": "three-hex-heads-v1",
+      "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
+    },
+    "cc203": {
+      "sourceRevision": "rebuilt-cc203-v16",
+      "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+      "levels": {
+        "high": {
+          "file": "cc203-rebuild-high-packed.glb",
+          "bytes": 665844,
+          "triangles": 36688,
+          "uniqueGeometryTriangles": 36688,
+          "primitives": 35,
+          "materials": 3,
+          "sha256": "3c1eac269ac82a88765324e622206dc356794c5b3736c0d78778ad1cc0b3a6f8"
+        },
+        "medium": {
+          "file": "cc203-rebuild-medium-packed.glb",
+          "bytes": 456968,
+          "triangles": 23928,
+          "uniqueGeometryTriangles": 23928,
+          "primitives": 35,
+          "materials": 3,
+          "sha256": "f4cde07a65fd57ae5ab6269eb587b20fbefae1ab2b8ecb9369f9a0faeb86036e"
+        },
+        "low": {
+          "file": "cc203-rebuild-low-packed.glb",
+          "bytes": 219020,
+          "triangles": 10028,
+          "uniqueGeometryTriangles": 10028,
+          "primitives": 35,
+          "materials": 3,
+          "sha256": "54371f8300062e6e70e76db6a49989832b29026f371276e6a39fc1d3d0c08d69"
+        }
+      },
+      "runningGearContract": "cc206-standard-20261020",
+      "bogieDensityRevision": "cc206-standard-20261020",
+      "runningGearRaw": {
+        "bogieHalf": 4.3,
+        "wheelRadius": 0.46,
+        "gaugeHalf": 0.5609805035017982,
+        "wheelStations": [
+          -5.749341,
+          -4.241306,
+          -2.397106,
+          2.397106,
+          4.241306,
+          5.749341
+        ]
+      },
+      "bodyRevision": "CC201 hood cross-section; cabin roof level with hood; glazing and optical groups moved rigidly",
+      "wheelRotationCues": "three-hex-heads-v1",
+      "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
+    },
+    "cc205": {
+      "sourceRevision": "rebuilt-cc205-v5",
+      "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+      "levels": {
+        "high": {
+          "file": "cc205-rebuild-high-packed.glb",
+          "bytes": 425820,
+          "triangles": 24636,
+          "uniqueGeometryTriangles": 24636,
+          "primitives": 35,
+          "materials": 5,
+          "sha256": "883832124fd75de56866bc553c4dd83760b6095beb93e4d2d1673d63f12ef890"
+        },
+        "medium": {
+          "file": "cc205-rebuild-medium-packed.glb",
+          "bytes": 311740,
+          "triangles": 16924,
+          "uniqueGeometryTriangles": 16572,
+          "primitives": 35,
+          "materials": 5,
+          "sha256": "6bf51a2f1fd7117ec40d07e09915699d121d934936602b6b8b5b03bb9a15e53b"
+        },
+        "low": {
+          "file": "cc205-rebuild-low-packed.glb",
+          "bytes": 155452,
+          "triangles": 7360,
+          "uniqueGeometryTriangles": 7176,
+          "primitives": 35,
+          "materials": 5,
+          "sha256": "6c6be2169dcdcf5a820ffa62e4899ebdc3fe9a2840b99737e55ed1bdb822b4a7"
+        }
+      },
+      "runningGearContract": "cc206-standard-20261020",
+      "bogieDensityRevision": "cc206-standard-20261020",
+      "runningGearRaw": {
+        "bogieHalf": 4.3,
+        "wheelRadius": 0.46,
+        "gaugeHalf": 0.5609805035017982,
+        "wheelStations": [
+          -5.749341,
+          -4.241306,
+          -2.397106,
+          2.397106,
+          4.241306,
+          5.749341
+        ]
+      },
+      "wheelRotationCues": "three-hex-heads-v1",
+      "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
+    },
+    "cc206": {
+      "appearanceRevision": "reusable-livery-1",
+      "sourceRevision": "original-v15",
+      "liveryContract": "cc206-livery-v1",
+      "externalLiveries": "/liveries/cc206/manifest.json",
+      "texturesEmbedded": 0,
+      "geometrySharedAcrossLiveries": true,
+      "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
+      "levels": {
+        "optimized": {
+          "file": "cc206-livery-optimized-packed.glb",
+          "bytes": 706508,
+          "triangles": 37616,
+          "uniqueGeometryTriangles": 37580,
+          "primitives": 40,
+          "materials": 6,
+          "sha256": "158cda50d15bbaf904edcd64d5be66270d6f757795e2b365fd1fb7d14922a82d"
+        },
+        "medium": {
+          "file": "cc206-livery-medium-packed.glb",
+          "bytes": 496692,
+          "triangles": 24748,
+          "uniqueGeometryTriangles": 24360,
+          "primitives": 40,
+          "materials": 6,
+          "sha256": "7f4af369a0cffa5d273e9692a16e8f987d7c100c1a5f6e69e4d99546765ad647"
+        },
+        "low": {
+          "file": "cc206-livery-low-packed.glb",
+          "bytes": 264304,
+          "triangles": 11546,
+          "uniqueGeometryTriangles": 11342,
+          "primitives": 40,
+          "materials": 6,
+          "sha256": "ba9362fda45dbd7c4a7427ac4820f6c035a2b41a93241aba2fac1490630772e7"
+        }
+      },
+      "bogieDensityRevision": "fleet-density-20261020",
+      "bogieDensityNotes": "Shared inner motor/gearcase masses; medium structural brake detail; CC203 raised-deck mount. Body/wheel/pivot geometry preserved.",
+      "wheelRotationCues": "three-hex-heads-v1",
+      "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop",
+      "runningGearContract": "cc206-standard-20261020"
+    }
   },
   "cc203": {
-    "sourceRevision": "rebuilt-cc203-v13",
+    "sourceRevision": "rebuilt-cc203-v16",
     "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
     "levels": {
       "high": {
         "file": "cc203-rebuild-high-packed.glb",
-        "bytes": 652204,
-        "triangles": 36314,
-        "uniqueGeometryTriangles": 36314,
-        "primitives": 33,
-        "materials": 3
+        "bytes": 665844,
+        "triangles": 36688,
+        "uniqueGeometryTriangles": 36688,
+        "primitives": 35,
+        "materials": 3,
+        "sha256": "3c1eac269ac82a88765324e622206dc356794c5b3736c0d78778ad1cc0b3a6f8"
       },
       "medium": {
         "file": "cc203-rebuild-medium-packed.glb",
-        "bytes": 441452,
-        "triangles": 23218,
-        "uniqueGeometryTriangles": 23218,
-        "primitives": 33,
-        "materials": 3
+        "bytes": 456968,
+        "triangles": 23928,
+        "uniqueGeometryTriangles": 23928,
+        "primitives": 35,
+        "materials": 3,
+        "sha256": "f4cde07a65fd57ae5ab6269eb587b20fbefae1ab2b8ecb9369f9a0faeb86036e"
       },
       "low": {
         "file": "cc203-rebuild-low-packed.glb",
-        "bytes": 209552,
-        "triangles": 9178,
-        "uniqueGeometryTriangles": 9178,
-        "primitives": 33,
-        "materials": 3
+        "bytes": 219020,
+        "triangles": 10028,
+        "uniqueGeometryTriangles": 10028,
+        "primitives": 35,
+        "materials": 3,
+        "sha256": "54371f8300062e6e70e76db6a49989832b29026f371276e6a39fc1d3d0c08d69"
       }
-    }
+    },
+    "runningGearContract": "cc206-standard-20261020",
+    "bogieDensityRevision": "cc206-standard-20261020",
+    "runningGearRaw": {
+      "bogieHalf": 4.3,
+      "wheelRadius": 0.46,
+      "gaugeHalf": 0.5609805035017982,
+      "wheelStations": [
+        -5.749341,
+        -4.241306,
+        -2.397106,
+        2.397106,
+        4.241306,
+        5.749341
+      ]
+    },
+    "bodyRevision": "CC201 hood cross-section; cabin roof level with hood; glazing and optical groups moved rigidly",
+    "wheelRotationCues": "three-hex-heads-v1",
+    "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
   },
   "files": [
     {
@@ -434,6 +658,11 @@
       "path": "assets/AssetCatalogPage-DOEcNEV9.js",
       "bytes": 24446,
       "sha256": "7fcc0a60422efe2ad9952d6d7d2c5ba93f2b681147e9fafeeb2814f9e69ff03a"
+    },
+    {
+      "path": "assets/AssetCatalogPage-DOKLDxb5.js",
+      "bytes": 27446,
+      "sha256": "4a558ae0e859f46130e97b0a2e478b9e9caaa2a449c2860516625967ce5b3edf"
     },
     {
       "path": "assets/AssetCatalogPage-DQC_iCiL.js",
@@ -1371,6 +1600,11 @@
       "sha256": "97c56a70c6235c5fefe1cb7a81b9bcf2e7fcb218f964e717bf7054ae745ff3a9"
     },
     {
+      "path": "assets/Cc206ReviewPage-DkiP5sAL.js",
+      "bytes": 12049,
+      "sha256": "39cafd99e9b7b0d5b1ea78898a501091d7886407b693e729967bce5273e26cfb"
+    },
+    {
       "path": "assets/Cc206ReviewPage-DmqmwXy2.js",
       "bytes": 12019,
       "sha256": "b5a5eaa27dad741372a7fa9f158e7ab578fcf78ee0a080c09e1bcac2855746b6"
@@ -1911,6 +2145,11 @@
       "sha256": "4b024602eccf13ec59ada1bdd1349887b3f903f14a7c6d49a4945dcd053015ae"
     },
     {
+      "path": "assets/ConsistsPage-Dal9dTvw.js",
+      "bytes": 13572,
+      "sha256": "f7953c2c750f4ce9a8a033b22a58652a1a4131cd04ee045cc917f91d94915563"
+    },
+    {
       "path": "assets/ConsistsPage-Dam5vk_b.js",
       "bytes": 8448,
       "sha256": "04e4192b89fbf6b757c1c4eef18c99a2c6ac6d86f27b5e83aaf0dca943035e4f"
@@ -2134,6 +2373,11 @@
       "path": "assets/DownloadSimple.es-8RC51OYD.js",
       "bytes": 2110,
       "sha256": "aa5b43e5c2711bfe00b938e379fe300826cdb01ac03da5a3958eae6f3d1567c8"
+    },
+    {
+      "path": "assets/DownloadSimple.es-9YDxBUcD.js",
+      "bytes": 2100,
+      "sha256": "0da32eedd0b55aa5af5a24eeb7867d6187df424aebeb058477140a4625d6eded"
     },
     {
       "path": "assets/DownloadSimple.es-AioCQP4z.js",
@@ -2951,6 +3195,11 @@
       "sha256": "d15926efe848f1137959237ccfcf2995f5ef45b9797c3f2de121c4ea13271b09"
     },
     {
+      "path": "assets/GaugeReviewPage-BHsz6U5t.js",
+      "bytes": 18304,
+      "sha256": "f4c329877342583a843ba510361decad742cd539c7a20c4da8c317099fe9867c"
+    },
+    {
       "path": "assets/GaugeReviewPage-BK9TQbBm.js",
       "bytes": 10822,
       "sha256": "5f10e5a136442e64bb5b832cf2cee7ebd858f54746294974110ac9079bb1a564"
@@ -3454,6 +3703,11 @@
       "path": "assets/HudPreviewPanel-6Z3QwZ32.js",
       "bytes": 422,
       "sha256": "37107500d71b2a66866d8cfe09922c4d05426dacf7fa1256bc92534ae499402a"
+    },
+    {
+      "path": "assets/HudPreviewPanel-6mnaWd56.js",
+      "bytes": 418,
+      "sha256": "da4121088c1321d3d50df09e747609c47aff91194c933d17d786a610a1e0481c"
     },
     {
       "path": "assets/HudPreviewPanel-8niBBabQ.js",
@@ -4226,6 +4480,11 @@
       "sha256": "2c94d051d448b2f452605cfb8903b03f1dc14171617175bb258174ecde669037"
     },
     {
+      "path": "assets/IconBase.es-bQb0Op5x.js",
+      "bytes": 3729,
+      "sha256": "db262f4878f37c628ca7dec2abeb46cfe163900901bd7192c87913158332c226"
+    },
+    {
       "path": "assets/IconBase.es-uFGiVkkd.js",
       "bytes": 3740,
       "sha256": "6c95d9e12e2e240e61cbd056ce80f67b4da23781a64652d33763330ded281403"
@@ -4529,6 +4788,11 @@
       "path": "assets/ImportedCc206Page-ChsjLr8u.js",
       "bytes": 18413,
       "sha256": "51196eab9eab8b71d4f4826827cf54f329ebd0cf8c60c5246475e4c6c50e5668"
+    },
+    {
+      "path": "assets/ImportedCc206Page-CiGQRlHk.js",
+      "bytes": 18446,
+      "sha256": "bd8fade34be02c4d8e1ffc6eee91db6e43a48d7c5035de8be5d22a6efce425ff"
     },
     {
       "path": "assets/ImportedCc206Page-CmYZKu4L.js",
@@ -4921,6 +5185,11 @@
       "sha256": "e4be51acd5303aade2ed63f4ae8709674520d64675de0313664d91b6edf6e5f9"
     },
     {
+      "path": "assets/cc201-game-template-ScRZuYNI.js",
+      "bytes": 5072,
+      "sha256": "6108441936dc70bb40bc32ae442639fe98f1d5d42f11acb04eb97eafe48bfdab"
+    },
+    {
       "path": "assets/cc201-game-template-TO8kppby.js",
       "bytes": 4754,
       "sha256": "dfbc65bec5bb1d78d1f2a85df786427e5836f0deeecdcb52f075ca4b457a345c"
@@ -4964,6 +5233,11 @@
       "path": "assets/cc203-game-template-DukENdbz.js",
       "bytes": 6923,
       "sha256": "47b7a0478c5a401017c1495b83b434be4ca4e27d8c7c1f7d76440092317af99c"
+    },
+    {
+      "path": "assets/cc203-game-template-d2tncry7.js",
+      "bytes": 6988,
+      "sha256": "1482dd50fa7b6fe47a33eebffabeab9475e1a4500d066bf4bc07525de7156652"
     },
     {
       "path": "assets/cc203-game-template-nXGbpqsQ.js",
@@ -5049,6 +5323,11 @@
       "path": "assets/cc205-game-template-Dye4Cg8n.js",
       "bytes": 4122,
       "sha256": "f21ca76077fe59cc5049984939225b66687c0e7e25652810220cd35549672429"
+    },
+    {
+      "path": "assets/cc205-game-template-NQuP-hwt.js",
+      "bytes": 4235,
+      "sha256": "cd79ddb6a1df43ce770382c670b414bbcbddb38a9a22a2bc6892f2fe0093571e"
     },
     {
       "path": "assets/cc205-game-template-uHJ-Hugu.js",
@@ -5146,6 +5425,11 @@
       "sha256": "8083476a5c76cafde63c88dc6663edf704b456117440836c6b5a72330df159a4"
     },
     {
+      "path": "assets/cc206-game-template-YVOlLXZ3.js",
+      "bytes": 10865,
+      "sha256": "377ba92d88754bd1e84b230549293ce579a47abd0ea6c6ad09fe34dbb89d485b"
+    },
+    {
       "path": "assets/cc206-game-template-eiKEJQ6U.js",
       "bytes": 8129,
       "sha256": "44c8e745a0fd35e8b89d8a95b1ed19c4c923099f43892226765e9c7f8b45c24d"
@@ -5159,6 +5443,11 @@
       "path": "assets/cc206-game-visuals-CbWczwbC.js",
       "bytes": 7662,
       "sha256": "b3450c2cab71da9f79a519e452978a6d025f05f542f3dee5e9b2058f2165497d"
+    },
+    {
+      "path": "assets/cc206-game-visuals-CcLqnxjH.js",
+      "bytes": 8042,
+      "sha256": "9b0236cbfa0b278532267965461d127eeed8a4d86a811fad43fbc807bbd67b34"
     },
     {
       "path": "assets/cc206-game-visuals-DrnTQRXM.js",
@@ -5471,6 +5760,11 @@
       "sha256": "79c26d2ef630831dcfac29804adecc6aeaded27a9123fc6cc4704062521799c8"
     },
     {
+      "path": "assets/diorama-postprocessing-DrWZwr6R.js",
+      "bytes": 42439,
+      "sha256": "f232182b47ec900b198c1b7797e840957c110b5736072122f9fd7adb7749288d"
+    },
+    {
       "path": "assets/diorama-postprocessing-Dsb2-vKb.js",
       "bytes": 41254,
       "sha256": "1b07b2ba3260cf81be002a2b3a17f7dd1da23a8537ff6249bf355b383bc26909"
@@ -5599,6 +5893,11 @@
       "path": "assets/diorama-style-C0tTkoVw.js",
       "bytes": 5944,
       "sha256": "ad7d32eb5e093324baebab867f1cd50a85e58b324ab7c98b54135048f536169a"
+    },
+    {
+      "path": "assets/diorama-style-CMv8LXhz.js",
+      "bytes": 6045,
+      "sha256": "4540d618cacbea3aad18647a3cdf00a8f37e629caad06a8bd6411e94e2809437"
     },
     {
       "path": "assets/diorama-style-CZvQapl5.js",
@@ -6246,6 +6545,11 @@
       "sha256": "dc721b504ec39ccc39c6fdb5f9c01f0d9af11a39cd861047a212b19a84584f75"
     },
     {
+      "path": "assets/index-Kbn8r23G.js",
+      "bytes": 1244027,
+      "sha256": "01944a7181e1bf6a0093c49390a6fa2e8efe01a4a2ebe03ff8e22b9f0c32aa71"
+    },
+    {
       "path": "assets/index-MvSwAGjx.js",
       "bytes": 1234846,
       "sha256": "8eae9cf1dd2bf590fb2d24beb0aedd7ce9ccf508efb14612ed8459cc81a4db6d"
@@ -6441,6 +6745,11 @@
       "sha256": "e44e2e2bbe101ae3c404ad53d560cc2655e5d8c44a023103236b0562f4417104"
     },
     {
+      "path": "assets/locomotive-roof-CIKu3EX6.js",
+      "bytes": 9195,
+      "sha256": "ad95be2219cf52c4e8a663bb9e6d6bae3ef942bbb3ce6a429b5a9a1225f97f79"
+    },
+    {
       "path": "assets/locomotive-roof-HxSEHFn0.js",
       "bytes": 9022,
       "sha256": "8d547e0f4c5ea66f12ff0efd887eb8faf5cb9362e960db2f6d4bad2f4495a1ff"
@@ -6474,6 +6783,11 @@
       "path": "assets/nusantara-coaches-Bw3kiaPK.js",
       "bytes": 7782,
       "sha256": "3a8676348203b08a6d0697fcf3569d8f9f205aa32ca0f3fba047f3d16f52ea69"
+    },
+    {
+      "path": "assets/nusantara-coaches-DS8RDI4d.js",
+      "bytes": 7782,
+      "sha256": "32aef75e90b79a96fb2f1dcebe0d8c5fd7ce4b03afc7e4fb6bdf53b8001edadd"
     },
     {
       "path": "assets/nusantara-coaches-LFFVL15n.js",
@@ -7103,7 +7417,7 @@
     {
       "path": "index.html",
       "bytes": 2989,
-      "sha256": "be7db41ad150a59d6b5f3b01c49b6ae793bfa03712c5d591fb7b14a4a2897f22"
+      "sha256": "50fe89c5b7f76883992e4255a46b757f567905fd3626d22f3b649b64671e61d3"
     },
     {
       "path": "liveries/cc206/credits.txt",
@@ -7167,23 +7481,23 @@
     },
     {
       "path": "models/cc201-rebuild-game-report.json",
-      "bytes": 814,
-      "sha256": "32c41d8ef3cf55135dcf4a4e9e7c3eddf691d2cb9a3a295c8ae1c19ecc3d7709"
+      "bytes": 1364,
+      "sha256": "c3c6774b6791923a5d130e89a03742dbb9b5ec4e662ea343ddd985b9623d53d4"
     },
     {
       "path": "models/cc201-rebuild-high-packed.glb",
-      "bytes": 604180,
-      "sha256": "61eac02b15179526f2e5816c8a124e51c4823289c8574c8fd5b59d2cb3510758"
+      "bytes": 534508,
+      "sha256": "9e5edecf4d97017923cd2e0c86b26ab576501cf2e720fb6adb1b7d8b83b2a5cd"
     },
     {
       "path": "models/cc201-rebuild-low-packed.glb",
-      "bytes": 174224,
-      "sha256": "47964efb78d7ba99f9c59c0555082f36f8dc380544cfceaf4c1c854a2e890aeb"
+      "bytes": 184768,
+      "sha256": "74c6159f0606b69804caaae324bd0d44105729b96d7744cf3f06e46fe714a2b5"
     },
     {
       "path": "models/cc201-rebuild-medium-packed.glb",
-      "bytes": 375324,
-      "sha256": "e7401be9984dcca6d8d33a8b7e7414540198fe9166d0506ec9455c6a2594fd8a"
+      "bytes": 377268,
+      "sha256": "249cf0a50646c45c99e572738f11a836889ca104d03149cbc71123c718005ce2"
     },
     {
       "path": "models/cc201-warehouse-preview.glb",
@@ -7192,28 +7506,28 @@
     },
     {
       "path": "models/cc203-rebuild-credits.txt",
-      "bytes": 3050,
-      "sha256": "b01c6367780764ac55eee0ed62d6976d8b4308f2866ec11fc31b7f9f030ac5a9"
+      "bytes": 4286,
+      "sha256": "79a0bc744cab145cea021bf4deac6bd66042630217d458e83e655371d0e24439"
     },
     {
       "path": "models/cc203-rebuild-game-report.json",
-      "bytes": 815,
-      "sha256": "9e49c8d49addd2c9e168044c9aa41cbd2a1457fd3a62b3d8290359e61aa32ed6"
+      "bytes": 1483,
+      "sha256": "68e263b00d9ddd979b9d463d255fe250dbb1f8bceca3581543539610fb5a4d66"
     },
     {
       "path": "models/cc203-rebuild-high-packed.glb",
-      "bytes": 652204,
-      "sha256": "f0b0ce862f039ce746b9bf3a1d1445c40f47baf7fc1086829f4c1b8d27dc9f5f"
+      "bytes": 665844,
+      "sha256": "3c1eac269ac82a88765324e622206dc356794c5b3736c0d78778ad1cc0b3a6f8"
     },
     {
       "path": "models/cc203-rebuild-low-packed.glb",
-      "bytes": 209552,
-      "sha256": "4100126b72ff86d854817cab770689d331063a194ee2a23c86f0ce4dce016b70"
+      "bytes": 219020,
+      "sha256": "54371f8300062e6e70e76db6a49989832b29026f371276e6a39fc1d3d0c08d69"
     },
     {
       "path": "models/cc203-rebuild-medium-packed.glb",
-      "bytes": 441452,
-      "sha256": "8302564d42127730e4f6f642e9150a50a43691737f6eb6e6c686fc134ef17129"
+      "bytes": 456968,
+      "sha256": "f4cde07a65fd57ae5ab6269eb587b20fbefae1ab2b8ecb9369f9a0faeb86036e"
     },
     {
       "path": "models/cc205-rebuild-credits.txt",
@@ -7222,23 +7536,23 @@
     },
     {
       "path": "models/cc205-rebuild-game-report.json",
-      "bytes": 814,
-      "sha256": "d86a817633190947a4d96e51b337dab56e3349ddbf47b171cf78ed7dd7bc811e"
+      "bytes": 1364,
+      "sha256": "9a83a83453104955a26376aeb45cdeef37f13d0a4862600ad5c340958decd276"
     },
     {
       "path": "models/cc205-rebuild-high-packed.glb",
-      "bytes": 477756,
-      "sha256": "5b5c2986a2c4c8fc0c53caf7d1d96bc6a20caa03e6a407e3ba5f47100efaf97c"
+      "bytes": 425820,
+      "sha256": "883832124fd75de56866bc553c4dd83760b6095beb93e4d2d1673d63f12ef890"
     },
     {
       "path": "models/cc205-rebuild-low-packed.glb",
-      "bytes": 125436,
-      "sha256": "ea95ad87098a5d763f34adac60c2be9e50dcc92519219c0b8bbbaaa15fe130f0"
+      "bytes": 155452,
+      "sha256": "6c6be2169dcdcf5a820ffa62e4899ebdc3fe9a2840b99737e55ed1bdb822b4a7"
     },
     {
       "path": "models/cc205-rebuild-medium-packed.glb",
-      "bytes": 232464,
-      "sha256": "ca704e1517d72bc7a68b76b68df93de936a458c4a92f49bec9a880e079c1d800"
+      "bytes": 311740,
+      "sha256": "6bf51a2f1fd7117ec40d07e09915699d121d934936602b6b8b5b03bb9a15e53b"
     },
     {
       "path": "models/cc205-sketchfab-high-packed.glb",
@@ -7267,23 +7581,23 @@
     },
     {
       "path": "models/cc206-livery-game-report.json",
-      "bytes": 1023,
-      "sha256": "fcbdbea75cc8d8221ed4ac4b5e75847212fc1782af5578f0bdbe9ce292a66ae4"
+      "bytes": 1490,
+      "sha256": "39b4efcebc1efe1b574c0cb84c401c630a68c6619e2edc6b1bbfc73d2fd049df"
     },
     {
       "path": "models/cc206-livery-low-packed.glb",
-      "bytes": 259284,
-      "sha256": "00e9239012d2ebedee4cb47a5a060872a58a33d232c6a3fd86d60ef8ee652430"
+      "bytes": 264304,
+      "sha256": "ba9362fda45dbd7c4a7427ac4820f6c035a2b41a93241aba2fac1490630772e7"
     },
     {
       "path": "models/cc206-livery-medium-packed.glb",
-      "bytes": 487144,
-      "sha256": "52c7686589694ff9c6d3d30a20eb675c11ec22fbc482a5e9e90bdce156a5ef64"
+      "bytes": 496692,
+      "sha256": "7f4af369a0cffa5d273e9692a16e8f987d7c100c1a5f6e69e4d99546765ad647"
     },
     {
       "path": "models/cc206-livery-optimized-packed.glb",
-      "bytes": 693120,
-      "sha256": "6e0d5aeaeae11b3d9b85b2e07fd411a2d76ee7d1a6b1fa00996c449f3ff7de80"
+      "bytes": 706508,
+      "sha256": "158cda50d15bbaf904edcd64d5be66270d6f757795e2b365fd1fb7d14922a82d"
     },
     {
       "path": "models/cc206-lossless-pack-report.json",

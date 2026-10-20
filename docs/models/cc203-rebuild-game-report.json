@@ -1,30 +1,48 @@
 {
-  "sourceRevision": "rebuilt-cc203-v13",
+  "sourceRevision": "rebuilt-cc203-v16",
   "processing": "Hand-authored LODs; static siblings batched per parent/material; rigid pivots retained; Meshopt compression; no simplification.",
   "levels": {
     "high": {
       "file": "cc203-rebuild-high-packed.glb",
-      "bytes": 652204,
-      "triangles": 36314,
-      "uniqueGeometryTriangles": 36314,
-      "primitives": 33,
+      "bytes": 665844,
+      "triangles": 36688,
+      "uniqueGeometryTriangles": 36688,
+      "primitives": 35,
       "materials": 3
     },
     "medium": {
       "file": "cc203-rebuild-medium-packed.glb",
-      "bytes": 441452,
-      "triangles": 23218,
-      "uniqueGeometryTriangles": 23218,
-      "primitives": 33,
+      "bytes": 456968,
+      "triangles": 23928,
+      "uniqueGeometryTriangles": 23928,
+      "primitives": 35,
       "materials": 3
     },
     "low": {
       "file": "cc203-rebuild-low-packed.glb",
-      "bytes": 209552,
-      "triangles": 9178,
-      "uniqueGeometryTriangles": 9178,
-      "primitives": 33,
+      "bytes": 219020,
+      "triangles": 10028,
+      "uniqueGeometryTriangles": 10028,
+      "primitives": 35,
       "materials": 3
     }
-  }
+  },
+  "runningGearContract": "cc206-standard-20261020",
+  "bogieDensityRevision": "cc206-standard-20261020",
+  "runningGearRaw": {
+    "bogieHalf": 4.3,
+    "wheelRadius": 0.46,
+    "gaugeHalf": 0.5609805035017982,
+    "wheelStations": [
+      -5.749341,
+      -4.241306,
+      -2.397106,
+      2.397106,
+      4.241306,
+      5.749341
+    ]
+  },
+  "bodyRevision": "CC201 hood cross-section; cabin roof level with hood; glazing and optical groups moved rigidly",
+  "wheelRotationCues": "three-hex-heads-v1",
+  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop"
 }
