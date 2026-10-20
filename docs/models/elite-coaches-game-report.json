@@ -1,9 +1,10 @@
 {
   "revision": "elite-coaches-v3",
+  "shapeRevision": "elite-proportion-v4",
   "levels": {
     "high": {
       "file": "elite-coaches-high-packed.glb",
-      "bytes": 927740,
+      "bytes": 930324,
       "assets": {
         "panoramic": {
           "triangles": 19948,
@@ -66,7 +67,7 @@
     },
     "medium": {
       "file": "elite-coaches-medium-packed.glb",
-      "bytes": 654060,
+      "bytes": 656476,
       "assets": {
         "panoramic": {
           "triangles": 12490,
@@ -129,7 +130,7 @@
     },
     "low": {
       "file": "elite-coaches-low-packed.glb",
-      "bytes": 286356,
+      "bytes": 289108,
       "assets": {
         "panoramic": {
           "triangles": 4736,
@@ -143,7 +144,7 @@
           "hingedDoors": 4
         },
         "luxury-ng": {
-          "triangles": 4120,
+          "triangles": 4124,
           "primitives": 21,
           "wheels": 8,
           "bogies": 2,
@@ -154,7 +155,7 @@
           "hingedDoors": 0
         },
         "compartment": {
-          "triangles": 4624,
+          "triangles": 4628,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
@@ -165,7 +166,7 @@
           "hingedDoors": 2
         },
         "priority": {
-          "triangles": 4084,
+          "triangles": 4088,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -176,7 +177,7 @@
           "hingedDoors": 4
         },
         "imperial": {
-          "triangles": 4066,
+          "triangles": 4070,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -188,7 +189,7 @@
         }
       },
       "materials": 3,
-      "uniqueTriangles": 16050
+      "uniqueTriangles": 16066
     }
   },
   "textures": 0,
