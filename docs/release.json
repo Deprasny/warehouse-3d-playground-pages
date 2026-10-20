@@ -1,17 +1,17 @@
 {
-  "release": "auto-request-randomization-9fcdd4e",
-  "sourceCommit": "9fcdd4edadcc006beea22a0f08914de6842adacc",
-  "sourceFingerprint": "23bea09c1117424bc5aaded0456904fb3c5c56f3",
+  "release": "spatial-speed-braking-43d9c31",
+  "sourceCommit": "43d9c31d08583952e5b309660ea66fc7b55156ad",
+  "sourceFingerprint": "bb84586bb11a63c1082d0be19337853c287307fb",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T05:50:01.312991+00:00",
+  "builtAt": "2026-10-20T06:41:15.419160+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "f3fd963c783431adea5067f6ea6434dca382dae3",
-  "previousPublishedCommit": "4777e9660f384ee0b2ad9b036885f7a426345510",
+  "previousSourceCommit": "9fcdd4edadcc006beea22a0f08914de6842adacc",
+  "previousPublishedCommit": "ea75064b1ab5f9b80df3edd5d53de3cc6aae5374",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 9fcdd4edadcc006beea22a0f08914de6842adacc",
+    "source": "detached clean checkout of 43d9c31d08583952e5b309660ea66fc7b55156ad",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,10 +24,12 @@
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "auto": "Randomize compatible request-driven formations, including the first passenger request at startup; avoid immediate repeats when alternatives exist",
-    "filters": "Apply request carriage and route-capacity filters before random selection; keep request priority",
-    "mix": "Request-driven services do not consume normal timetable 90:10 counters or shuffle bags",
-    "verification": "Source analysis, TypeScript/Vite production build, and publication source/bytes only; user declined tests"
+    "speedZones": "Cached turnout and shunting intervals per journey; retain restrictions until the complete consist clears",
+    "braking": "Analytical speed-distance envelope with response reserve and bounded acceleration/service braking; explicit emergency and safety-stop modes",
+    "authority": "Stop at the earliest berth, red signal, unowned block or infrastructure boundary; caution alone has no blanket speed cap",
+    "departure": "Keep manual and Auto trains stopped at their platform until the requested exit route is reserved and its points are ready",
+    "performance": "Reuse immutable zone metadata and existing cached curve profile; optional rail motion traces only when requested",
+    "verification": "Source analysis and clean-commit TypeScript/Vite build; publication identity/bytes only; no automated tests, browser gameplay or FPS benchmarks"
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -248,6 +250,11 @@
       "path": "assets/AssetCatalogPage-B1naMGjB.js",
       "bytes": 24488,
       "sha256": "bc7c87d4981ab125d4b2d3a2dffe287d783e346059639aa8b1ec3086033017ec"
+    },
+    {
+      "path": "assets/AssetCatalogPage-B4HcQJ2L.js",
+      "bytes": 27446,
+      "sha256": "9e3d9af9bf7b0af44ced4440f3bddb1cbdc39e47b59661b473ae2b52e8b210bb"
     },
     {
       "path": "assets/AssetCatalogPage-B7a8I4mk.js",
@@ -1570,6 +1577,11 @@
       "sha256": "97c56a70c6235c5fefe1cb7a81b9bcf2e7fcb218f964e717bf7054ae745ff3a9"
     },
     {
+      "path": "assets/Cc206ReviewPage-DeNAYd4D.js",
+      "bytes": 12049,
+      "sha256": "1b25b08a020f0de72657574b919bf061a99f22fa07bef6ae16f0b03c5b42629e"
+    },
+    {
       "path": "assets/Cc206ReviewPage-DkiP5sAL.js",
       "bytes": 12049,
       "sha256": "39cafd99e9b7b0d5b1ea78898a501091d7886407b693e729967bce5273e26cfb"
@@ -2250,6 +2262,11 @@
       "sha256": "4572c0502a5179e1a1c6271c559281253657b196c27d07b5130a65a834f455ce"
     },
     {
+      "path": "assets/ConsistsPage-URjtqE0M.js",
+      "bytes": 13572,
+      "sha256": "8a0365f790a325a94b6dd59037e9ecc5efdbafe61c75a9ed0a23314f471b6e80"
+    },
+    {
       "path": "assets/ConsistsPage-WAtPFu4W.js",
       "bytes": 8448,
       "sha256": "cd36edd794079b587f46ef8176f65cbe358c70d818c68f9f89998bd29414798f"
@@ -2753,6 +2770,11 @@
       "path": "assets/DownloadSimple.es-DZiM8mGP.js",
       "bytes": 2100,
       "sha256": "b5babdfec9f210deca9f06d3d7737f9967dc6b2cae14bb07b9b599de294b88af"
+    },
+    {
+      "path": "assets/DownloadSimple.es-D_3iWhZl.js",
+      "bytes": 2100,
+      "sha256": "3ec686f6769dd15646d263167f2937c242ad344247baf35dc472e6c78a9688f6"
     },
     {
       "path": "assets/DownloadSimple.es-D_tfP7ET.js",
@@ -3720,6 +3742,11 @@
       "sha256": "8d0447af95b3b54c726d9f899c86b179b8cad016dd22a3788ca61c8bdf63b185"
     },
     {
+      "path": "assets/GaugeReviewPage-xVuvFyya.js",
+      "bytes": 18304,
+      "sha256": "e3e242791a7bbb0c69e4b080f1f7dbc1f416ff2010dba75ec69d95da06ab1537"
+    },
+    {
       "path": "assets/HudPreviewPanel-63UD9lxi.js",
       "bytes": 422,
       "sha256": "f758a3599ccd5563760c867addf2033658d660e4a07af7353d32e5b26774ba05"
@@ -3763,6 +3790,11 @@
       "path": "assets/HudPreviewPanel-BDbWRkO7.js",
       "bytes": 428,
       "sha256": "2f9646cb04ed4ad9411cb42411cfa9d7b869991183203d4fca11c3dca57f1caa"
+    },
+    {
+      "path": "assets/HudPreviewPanel-BErCxQUe.js",
+      "bytes": 418,
+      "sha256": "1bb012001072c10a01b0688d5ad236e64d10bba228c1b7d2e5aa58a36e1064cc"
     },
     {
       "path": "assets/HudPreviewPanel-BGaGcowQ.js",
@@ -4410,6 +4442,11 @@
       "sha256": "6f8f742e424d26d02b5b83d6f97bf8e26f4c8bdfb7e8cd137900c7002aafbe78"
     },
     {
+      "path": "assets/IconBase.es-CPv4CU1D.js",
+      "bytes": 3729,
+      "sha256": "e25a6f79b04b71c8684f74ffab08eb4cc3613445695602407fb41401e2635089"
+    },
+    {
       "path": "assets/IconBase.es-CbOQKneo.js",
       "bytes": 3729,
       "sha256": "fc46e1ef775964b15697eed6b7463581ba091d1412a346cabbdcd3669b1416b3"
@@ -5048,6 +5085,11 @@
       "path": "assets/ImportedCc206Page-DogVzaZA.js",
       "bytes": 18446,
       "sha256": "3fa29463f499bba58f896b876d0f4e247571fbf20ebacf63ff929cb364dc8416"
+    },
+    {
+      "path": "assets/ImportedCc206Page-Dtc8svTi.js",
+      "bytes": 18446,
+      "sha256": "acd4b4b57c7491e9255b21efecb393e2e67e404a90d2b3bc11aa56e7f9d82197"
     },
     {
       "path": "assets/ImportedCc206Page-Du5wQUma.js",
@@ -5980,6 +6022,11 @@
       "sha256": "48e8103d92c50727e47ec76b3f77b061cf3994ce935614c8dc8f8d770ae8e70e"
     },
     {
+      "path": "assets/diorama-postprocessing-hsm6eIvh.js",
+      "bytes": 42439,
+      "sha256": "0fa71204dc849336f412bcc816e7e3a432ade9f90b7eaae55e93e01e1b4ba254"
+    },
+    {
       "path": "assets/diorama-postprocessing-kdoxAS9U.js",
       "bytes": 40373,
       "sha256": "81c8b1288c9c19cdd1b8a293b103dc5ff3d7b02c917993b4551f2ed860c4e2e7"
@@ -6333,6 +6380,11 @@
       "path": "assets/index-BgBxt5Y9.css",
       "bytes": 75470,
       "sha256": "94958d4d2ae1cba8936854d00846d415e12181b1025ad5c4414c35543d564c94"
+    },
+    {
+      "path": "assets/index-BhIEf-5G.js",
+      "bytes": 1254272,
+      "sha256": "1d19b37fca063adc677264463cc166195084d34a4426bc3e94129eff2b79c197"
     },
     {
       "path": "assets/index-BhkjDfbm.js",
@@ -7632,7 +7684,7 @@
     {
       "path": "index.html",
       "bytes": 2989,
-      "sha256": "7075c2152744595dfb9309fd7360d7de3875b38f5f97662694fcdfaa07f892e1"
+      "sha256": "6214c431ff2403b3331f41b0f325e1e22d54aae9eb4b65866bd48d5569811170"
     },
     {
       "path": "liveries/cc206/credits.txt",
