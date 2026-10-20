@@ -1,17 +1,17 @@
 {
-  "release": "depot-doors-camera-4e71479",
-  "sourceCommit": "4e7147966a6c64e7aa6ceba2bece283ecaf390b0",
-  "sourceFingerprint": "cdee4ad401c1a352e123113e8953a14d87445b8c",
+  "release": "door-lod-fix-6dff83c",
+  "sourceCommit": "6dff83c48e376e206c2c318de4c544e1f111f37a",
+  "sourceFingerprint": "64939d8983284385f7c57fbbd5b83cc4a9d8a060",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T14:11:02.775280+00:00",
+  "builtAt": "2026-10-20T14:22:02.444036+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "312e3e8b45d11c1eada9b32e71351f58e65ca663",
-  "previousPublishedCommit": "e67c9704f16115bff3a6e0ff98bbb4d62c25f566",
+  "previousSourceCommit": "4e7147966a6c64e7aa6ceba2bece283ecaf390b0",
+  "previousPublishedCommit": "9926591d9ca7d2a7a20855bb6167575b60c5ecb4",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 4e7147966a6c64e7aa6ceba2bece283ecaf390b0",
+    "source": "detached clean checkout of 6dff83c48e376e206c2c318de4c544e1f111f37a",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,6 +24,7 @@
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
+    "doorLodFix": "Door anchors require rig_role=door; shared glTF primitive surface names no longer become duplicate animation pivots during medium/low LOD attachment",
     "depotCamera": "Active depot shunting takes Auto camera priority; completed parking hands off to another active train or overview, including a previously followed selection during Auto",
     "depotPace": "Depot-specific 40 km/j travel limit with matching acceleration and braking; final coupling approach remains about 2.6 km/j; route ownership and stop boundaries retained",
     "stationDoors": "Sliding and inward-hinged station-side leaves across SSNG, Taksaka, Elite, Nusantara and procedural advertising coaches, including M/P service doors without public boarding",
@@ -732,6 +733,11 @@
       "sha256": "9a967411d1224ca17d15cf5b6068c9d3d76ce9e217f90e4a987388eabc73af26"
     },
     {
+      "path": "assets/AssetCatalogPage-Dy-jvkTq.js",
+      "bytes": 27446,
+      "sha256": "09f2fe75c1343a515f5b742e368c289945b32d929bdb28a3882951b76d990123"
+    },
+    {
       "path": "assets/AssetCatalogPage-Dytz2v1n.js",
       "bytes": 24446,
       "sha256": "8633af7578bba3a75d4b886f2d205969eb2f4e06f964fe612ba1b51f948664c6"
@@ -1347,6 +1353,11 @@
       "sha256": "ef8fc865b16a80d25b277e87e7d9a60c7a570cd756f6c082690c4661a1abaec7"
     },
     {
+      "path": "assets/Cc206ReviewPage-Bo4weG8F.js",
+      "bytes": 12049,
+      "sha256": "c3bfc5de25ab84e2c1dc7250c27eb2cf6132d66b13e8bcf5421bb7ed5e4ec175"
+    },
+    {
       "path": "assets/Cc206ReviewPage-BqhVKH53.js",
       "bytes": 12019,
       "sha256": "0911daccfb647d904b8607acb9d2686723af519012a3489c40e9879eeacebab9"
@@ -1830,6 +1841,11 @@
       "path": "assets/ConsistsPage-B5_LLpcP.js",
       "bytes": 11762,
       "sha256": "7d6c42b3f03b04a291695ca6be12f2a09a9d6a72971d78a3edc645da200d9f3b"
+    },
+    {
+      "path": "assets/ConsistsPage-B6U1FTb6.js",
+      "bytes": 14577,
+      "sha256": "75420feed4e32e478cba6787af0492520dcd26b3480d7ec023f64cd1658b2934"
     },
     {
       "path": "assets/ConsistsPage-B9O1mPhk.js",
@@ -2510,6 +2526,11 @@
       "path": "assets/DownloadSimple.es-BRX5rCQ0.js",
       "bytes": 2110,
       "sha256": "55613fb5eb71b0bb5b59582e3a33cd96d35bc74ac3ec5448f19e68888b3ed3a6"
+    },
+    {
+      "path": "assets/DownloadSimple.es-BWiylJzR.js",
+      "bytes": 2100,
+      "sha256": "448f438fd7a4bf7be9a4d8b15fb5c08f962cb750671809849bab8da9716e3ae4"
     },
     {
       "path": "assets/DownloadSimple.es-BYM12YnK.js",
@@ -3482,6 +3503,11 @@
       "sha256": "e0b79e259f62da68c4a524aedea2770c137971abdedf95f052df2f8642642fa1"
     },
     {
+      "path": "assets/GaugeReviewPage-C6kTRSx8.js",
+      "bytes": 18304,
+      "sha256": "1b82e792810370b4b7fd469521d721d891126980afdb01c5c704d078f1b53358"
+    },
+    {
       "path": "assets/GaugeReviewPage-C7hZblp0.js",
       "bytes": 18201,
       "sha256": "04ff5abccb0bad424ce636ce92467ec0ad6230c91460355bcdb693e8ef25a166"
@@ -3980,6 +4006,11 @@
       "path": "assets/HudPreviewPanel-BUESiGPn.js",
       "bytes": 418,
       "sha256": "f564f560c8117593b97153ff903977ccc0480d923433cbe3388775d19296b74e"
+    },
+    {
+      "path": "assets/HudPreviewPanel-BWLdDjMo.js",
+      "bytes": 418,
+      "sha256": "5c125b3457a0d08c302434f4785c257514e5e9dc060176c2ec71829d6033cfca"
     },
     {
       "path": "assets/HudPreviewPanel-BWgTSOVi.js",
@@ -4682,6 +4713,11 @@
       "sha256": "24a98666ee1a82cce854811ea531e7abd9b71b33ed5a0cc1f20b369fdbebd0c4"
     },
     {
+      "path": "assets/IconBase.es-DTnlwuDb.js",
+      "bytes": 3729,
+      "sha256": "538e1f502bf087ba6e6ba9add98181193d268e542a34fdc2fb6248fa4654532e"
+    },
+    {
       "path": "assets/IconBase.es-DU7LkYHW.js",
       "bytes": 3740,
       "sha256": "f8a381bea44c043d5b85bd02cd38d70ebbbb0c0636787efe3b97074b86bee033"
@@ -5020,6 +5056,11 @@
       "path": "assets/ImportedCc206Page-CMFiWxDI.js",
       "bytes": 18456,
       "sha256": "f74dd3ae978ea160f36719d0ef87407fc39f90e14268c578f2a6d1cb82071a91"
+    },
+    {
+      "path": "assets/ImportedCc206Page-CRcE4bTD.js",
+      "bytes": 18446,
+      "sha256": "3c38b5e0716eda8ece3bf09b9ab5c40fbcafec5b7b40a1e9a756cafac1d91600"
     },
     {
       "path": "assets/ImportedCc206Page-CTlz7N8e.js",
@@ -5432,6 +5473,11 @@
       "sha256": "40a19e36b41cf8cdf4c910748d76a91e0e89fd27eef6d773e59b9cf507a68c83"
     },
     {
+      "path": "assets/cc201-game-template-BCZgOesl.js",
+      "bytes": 5086,
+      "sha256": "2883834aa18acd044f2cde76cdf52c511b8cd7e9be85be24a72ccff437740d56"
+    },
+    {
       "path": "assets/cc201-game-template-BDDrkzOo.js",
       "bytes": 3975,
       "sha256": "223bb07b807bb053cd8e57c704af74ab4343c5d28d37f23ce71406d8ba2d0618"
@@ -5565,6 +5611,11 @@
       "path": "assets/cc203-game-template-9s4ta1XY.js",
       "bytes": 6867,
       "sha256": "7b4b2cc3ecefd99d707017da67caa40ff25342d5da19243f4d018b66879c4f5d"
+    },
+    {
+      "path": "assets/cc203-game-template-B6CaOW6g.js",
+      "bytes": 7002,
+      "sha256": "038242eedf80c4299b1b79a69a455d171648f0e986c0294b23eacf65b04848a2"
     },
     {
       "path": "assets/cc203-game-template-BBm0_37W.js",
@@ -5712,6 +5763,11 @@
       "sha256": "d58a367b61cb13f223d2472f8938b996c3f5abe6e55ef98e35c82836d8708c31"
     },
     {
+      "path": "assets/cc205-game-template-Dn3WtNSj.js",
+      "bytes": 4249,
+      "sha256": "f5446d8e19b624b322c4ad5ab4e011d6def81bae36aa8ebdcbf40c50fa0d3f16"
+    },
+    {
       "path": "assets/cc205-game-template-Do35stW8.js",
       "bytes": 4249,
       "sha256": "a8036fc878e263f9bc382a54932985241ff8d7ac203c18ac474bcc225cfbac97"
@@ -5812,6 +5868,11 @@
       "sha256": "b81ee19d62bd814dd4c3640c4a32d8d45aeb850e2ef28d195a77779b2fe44019"
     },
     {
+      "path": "assets/cc206-game-template-DgWERxVt.js",
+      "bytes": 10866,
+      "sha256": "daa0d160c3e030ad7bf98298f5eb7cf192f124bc63e93d72da73775f9a46c9a4"
+    },
+    {
       "path": "assets/cc206-game-template-DptT6roI.js",
       "bytes": 8129,
       "sha256": "4c220382944c0e54633da6ad40c0ac49866183ef6cbff8b9919168e7a3e08bda"
@@ -5897,6 +5958,11 @@
       "sha256": "76243e1368300974a6f21bf59e3ea42f09b302f7bc98430d47218c6a2a0129ad"
     },
     {
+      "path": "assets/cc206-game-visuals-aVJP_8Pt.js",
+      "bytes": 8080,
+      "sha256": "c22676697e603546b9d7e030117bdff6484fd821f3b83f46bba3a50c5d24a466"
+    },
+    {
       "path": "assets/coach-bodies-BPleEKND.js",
       "bytes": 9117,
       "sha256": "85868cf9ee07045159e9f4e729ea9165f6b64d7e666b09a95c6525cb210f842a"
@@ -5905,6 +5971,11 @@
       "path": "assets/coach-bodies-Bfg62STT.js",
       "bytes": 1291,
       "sha256": "cd566f35c541cf6c6d3288a8d45d58cf4d5d413271732bd10df9888f1ce1d20c"
+    },
+    {
+      "path": "assets/coach-bodies-Cz2gxvP_.js",
+      "bytes": 9117,
+      "sha256": "dc9425353607d4a5033d0be205d214d5d8c30cbd13784ed0f982cd2ac6c6c9ef"
     },
     {
       "path": "assets/coach-bodies-Dh9UW0hS.js",
@@ -6202,6 +6273,11 @@
       "sha256": "3da83a0aff69397b4977d2b4a5a28a94f7e1cb83c0519407f26bfed8c4a9d4bc"
     },
     {
+      "path": "assets/diorama-postprocessing-DNrAnXq_.js",
+      "bytes": 42434,
+      "sha256": "bac96768df781b3b6c3967a5e3b9a791e8c57a6efbd95e1b89767788bf467c76"
+    },
+    {
       "path": "assets/diorama-postprocessing-DSR7KuED.js",
       "bytes": 40373,
       "sha256": "f74abe083b20a9212ac51a670ab13fb0a8373c11f986ea7317ef46ef633320d2"
@@ -6455,6 +6531,11 @@
       "path": "assets/elite-coaches-BRWoxsrL.js",
       "bytes": 6107,
       "sha256": "20c965b3488f227bf11d989fa5018d4f9af45e0fc2b527a0b38f44ee796aa492"
+    },
+    {
+      "path": "assets/elite-coaches-BcyM3uou.js",
+      "bytes": 7164,
+      "sha256": "9bc46b5f9a3084a490647d8b01db53e87aac162e013f51b5ad200f5caf5e0baf"
     },
     {
       "path": "assets/elite-coaches-BucrIO_5.js",
@@ -7197,6 +7278,11 @@
       "sha256": "1db22192ec3ee9dd6679401ce23e2b0ce90a8629da61ad8b2b4589c8379ff2c2"
     },
     {
+      "path": "assets/index-liQ9U4MQ.js",
+      "bytes": 1237761,
+      "sha256": "af46c8f30d2e18821c4f8bdb9ec78b30908e19345880f8c884856507b53a3f15"
+    },
+    {
       "path": "assets/index-ls_9x9Z0.css",
       "bytes": 157724,
       "sha256": "5b282e20c3c5720ef9397531446000c0048feabfe1df0749ac5b9e3488e15138"
@@ -7372,6 +7458,11 @@
       "sha256": "ad95be2219cf52c4e8a663bb9e6d6bae3ef942bbb3ce6a429b5a9a1225f97f79"
     },
     {
+      "path": "assets/locomotive-roof-DxRtTnER.js",
+      "bytes": 9195,
+      "sha256": "f52378a4bf5ab11fbb6157ae65252e8cbbf04974d359921d1631cc632e60cd5d"
+    },
+    {
       "path": "assets/locomotive-roof-HxSEHFn0.js",
       "bytes": 9022,
       "sha256": "8d547e0f4c5ea66f12ff0efd887eb8faf5cb9362e960db2f6d4bad2f4495a1ff"
@@ -7430,6 +7521,11 @@
       "path": "assets/nusantara-coaches-C66Cj4Y4.js",
       "bytes": 7782,
       "sha256": "0155d8088b702f1565ab0062c8443c6ebd4adbddb94da907eaf90dcfdeb0ffa0"
+    },
+    {
+      "path": "assets/nusantara-coaches-CCXqZ1hQ.js",
+      "bytes": 8028,
+      "sha256": "6793462c884309cfdde20b5c01312c87cf88bcc18efe271940d3a6e040f1de37"
     },
     {
       "path": "assets/nusantara-coaches-D09N4JlZ.js",
@@ -7555,6 +7651,11 @@
       "path": "assets/taksaka-ssng-BWrGE193.js",
       "bytes": 9778,
       "sha256": "c56b1faae89352e5327efcf633838f9906a0f5384330f7b5a2935cc6ace76e77"
+    },
+    {
+      "path": "assets/taksaka-ssng-DZiPoHqw.js",
+      "bytes": 16597,
+      "sha256": "a78613fcaf3066b9695a4d433d3efbb7e8b67528b63538ad8431748564ea0b1f"
     },
     {
       "path": "assets/taksaka-ssng-FIAHiVFo.js",
@@ -8134,7 +8235,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "326482a441ca8b6d5191cbc33c10b1fecef622037dad44e2e477931e5d485314"
+      "sha256": "a33e995fd165b1438958ee7eef13d84488bad874c677398be6e3199fde34bccb"
     },
     {
       "path": "liveries/cc206/credits.txt",
