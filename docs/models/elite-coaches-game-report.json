@@ -3,147 +3,192 @@
   "levels": {
     "high": {
       "file": "elite-coaches-high-packed.glb",
-      "bytes": 908208,
+      "bytes": 927740,
       "assets": {
         "panoramic": {
-          "triangles": 19516,
-          "primitives": 15,
+          "triangles": 19948,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         },
         "luxury-ng": {
-          "triangles": 23388,
+          "triangles": 23646,
           "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 3
+          "doors": 3,
+          "doorMotion": "slide",
+          "slidingDoors": 3,
+          "hingedDoors": 0
         },
         "compartment": {
-          "triangles": 19148,
-          "primitives": 15,
+          "triangles": 19352,
+          "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 2,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 2
         },
         "priority": {
-          "triangles": 19560,
-          "primitives": 15,
+          "triangles": 19968,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         },
         "imperial": {
-          "triangles": 18424,
-          "primitives": 15,
+          "triangles": 18832,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         }
       },
       "materials": 3,
-      "uniqueTriangles": 71020
+      "uniqueTriangles": 71830
     },
     "medium": {
       "file": "elite-coaches-medium-packed.glb",
-      "bytes": 637544,
+      "bytes": 654060,
       "assets": {
         "panoramic": {
-          "triangles": 12138,
-          "primitives": 15,
+          "triangles": 12490,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         },
         "luxury-ng": {
-          "triangles": 16752,
+          "triangles": 16950,
           "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 3
+          "doors": 3,
+          "doorMotion": "slide",
+          "slidingDoors": 3,
+          "hingedDoors": 0
         },
         "compartment": {
-          "triangles": 12660,
-          "primitives": 15,
+          "triangles": 12824,
+          "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 2,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 2
         },
         "priority": {
-          "triangles": 12766,
-          "primitives": 15,
+          "triangles": 13094,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         },
         "imperial": {
-          "triangles": 11494,
-          "primitives": 15,
+          "triangles": 11822,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         }
       },
       "materials": 3,
-      "uniqueTriangles": 46226
+      "uniqueTriangles": 46792
     },
     "low": {
       "file": "elite-coaches-low-packed.glb",
-      "bytes": 266128,
+      "bytes": 286356,
       "assets": {
         "panoramic": {
-          "triangles": 4512,
-          "primitives": 15,
+          "triangles": 4736,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         },
         "luxury-ng": {
-          "triangles": 4018,
+          "triangles": 4120,
           "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 3
+          "doors": 3,
+          "doorMotion": "slide",
+          "slidingDoors": 3,
+          "hingedDoors": 0
         },
         "compartment": {
-          "triangles": 4524,
-          "primitives": 15,
+          "triangles": 4624,
+          "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 2,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 2
         },
         "priority": {
-          "triangles": 3884,
-          "primitives": 15,
+          "triangles": 4084,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         },
         "imperial": {
-          "triangles": 3866,
-          "primitives": 15,
+          "triangles": 4066,
+          "primitives": 23,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 4,
+          "doorMotion": "hinge",
+          "slidingDoors": 0,
+          "hingedDoors": 4
         }
       },
       "materials": 3,
-      "uniqueTriangles": 15572
+      "uniqueTriangles": 16050
     }
   },
   "textures": 0,

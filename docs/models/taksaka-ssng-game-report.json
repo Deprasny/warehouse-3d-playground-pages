@@ -1,9 +1,9 @@
 {
-  "revision": "taksaka-ssng-v1",
+  "revision": "taksaka-ssng-v2-station-doors",
   "levels": {
     "high": {
       "file": "taksaka-ssng-high-packed.glb",
-      "bytes": 519828,
+      "bytes": 539980,
       "assets": {
         "executive": {
           "triangles": 17138,
@@ -11,31 +11,37 @@
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 4
+          "doors": 4,
+          "slidingDoors": 4,
+          "hingedDoors": 0
         },
         "dining": {
-          "triangles": 14614,
+          "triangles": 14704,
+          "primitives": 21,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
+        },
+        "generator": {
+          "triangles": 21873,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
-        },
-        "generator": {
-          "triangles": 21693,
-          "primitives": 15,
-          "wheels": 8,
-          "bogies": 2,
-          "couplers": 2,
-          "doors": 0
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         }
       },
       "materials": 3,
-      "uniqueTriangles": 34505
+      "uniqueTriangles": 34775
     },
     "medium": {
       "file": "taksaka-ssng-medium-packed.glb",
-      "bytes": 380008,
+      "bytes": 399764,
       "assets": {
         "executive": {
           "triangles": 11594,
@@ -43,31 +49,37 @@
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 4
+          "doors": 4,
+          "slidingDoors": 4,
+          "hingedDoors": 0
         },
         "dining": {
-          "triangles": 10198,
+          "triangles": 10288,
+          "primitives": 21,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
+        },
+        "generator": {
+          "triangles": 14973,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
-        },
-        "generator": {
-          "triangles": 14793,
-          "primitives": 15,
-          "wheels": 8,
-          "bogies": 2,
-          "couplers": 2,
-          "doors": 0
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         }
       },
       "materials": 3,
-      "uniqueTriangles": 23885
+      "uniqueTriangles": 24155
     },
     "low": {
       "file": "taksaka-ssng-low-packed.glb",
-      "bytes": 172508,
+      "bytes": 191236,
       "assets": {
         "executive": {
           "triangles": 3954,
@@ -75,27 +87,33 @@
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 4
+          "doors": 4,
+          "slidingDoors": 4,
+          "hingedDoors": 0
         },
         "dining": {
-          "triangles": 3458,
+          "triangles": 3548,
+          "primitives": 21,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
+        },
+        "generator": {
+          "triangles": 4974,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
-        },
-        "generator": {
-          "triangles": 4794,
-          "primitives": 15,
-          "wheels": 8,
-          "bogies": 2,
-          "couplers": 2,
-          "doors": 0
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         }
       },
       "materials": 3,
-      "uniqueTriangles": 8734
+      "uniqueTriangles": 9004
     }
   },
   "textures": 0,

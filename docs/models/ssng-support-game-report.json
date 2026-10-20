@@ -1,125 +1,149 @@
 {
-  "revision": "ssng-support-v1",
+  "revision": "ssng-support-v2-station-doors",
   "levels": {
     "high": {
       "file": "ssng-support-high-packed.glb",
-      "bytes": 645580,
+      "bytes": 680184,
       "assets": {
         "dining": {
-          "triangles": 14418,
-          "primitives": 19,
+          "triangles": 14508,
+          "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
         },
         "generator": {
-          "triangles": 20756,
-          "primitives": 15,
-          "wheels": 8,
-          "bogies": 2,
-          "couplers": 2,
-          "doors": 0
-        },
-        "dining-blue": {
-          "triangles": 13857,
+          "triangles": 20936,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         },
-        "generator-blue": {
-          "triangles": 20110,
-          "primitives": 15,
+        "dining-blue": {
+          "triangles": 13947,
+          "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
+        },
+        "generator-blue": {
+          "triangles": 20290,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         }
       },
       "materials": 3,
-      "uniqueTriangles": 41669
+      "uniqueTriangles": 42209
     },
     "medium": {
       "file": "ssng-support-medium-packed.glb",
-      "bytes": 474628,
+      "bytes": 508632,
       "assets": {
         "dining": {
-          "triangles": 9914,
-          "primitives": 19,
+          "triangles": 10004,
+          "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
         },
         "generator": {
-          "triangles": 14098,
-          "primitives": 15,
-          "wheels": 8,
-          "bogies": 2,
-          "couplers": 2,
-          "doors": 0
-        },
-        "dining-blue": {
-          "triangles": 9545,
+          "triangles": 14278,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         },
-        "generator-blue": {
-          "triangles": 13702,
-          "primitives": 15,
+        "dining-blue": {
+          "triangles": 9635,
+          "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
+        },
+        "generator-blue": {
+          "triangles": 13882,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         }
       },
       "materials": 3,
-      "uniqueTriangles": 28899
+      "uniqueTriangles": 29439
     },
     "low": {
       "file": "ssng-support-low-packed.glb",
-      "bytes": 207596,
+      "bytes": 240860,
       "assets": {
         "dining": {
-          "triangles": 3132,
-          "primitives": 19,
+          "triangles": 3222,
+          "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
         },
         "generator": {
-          "triangles": 4316,
-          "primitives": 15,
-          "wheels": 8,
-          "bogies": 2,
-          "couplers": 2,
-          "doors": 0
-        },
-        "dining-blue": {
-          "triangles": 2891,
+          "triangles": 4496,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 2
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         },
-        "generator-blue": {
-          "triangles": 4066,
-          "primitives": 15,
+        "dining-blue": {
+          "triangles": 2981,
+          "primitives": 21,
           "wheels": 8,
           "bogies": 2,
           "couplers": 2,
-          "doors": 0
+          "doors": 3,
+          "slidingDoors": 2,
+          "hingedDoors": 1
+        },
+        "generator-blue": {
+          "triangles": 4246,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2,
+          "slidingDoors": 0,
+          "hingedDoors": 2
         }
       },
       "materials": 3,
-      "uniqueTriangles": 9829
+      "uniqueTriangles": 10369
     }
   },
   "textures": 0,

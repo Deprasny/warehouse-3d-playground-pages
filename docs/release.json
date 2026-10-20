@@ -1,36 +1,35 @@
 {
-  "release": "south-depot-auto-312e3e8",
-  "sourceCommit": "312e3e8b45d11c1eada9b32e71351f58e65ca663",
-  "sourceFingerprint": "ff35cf5e0f8d382936d056960533ebb52274cb05",
+  "release": "depot-doors-camera-4e71479",
+  "sourceCommit": "4e7147966a6c64e7aa6ceba2bece283ecaf390b0",
+  "sourceFingerprint": "cdee4ad401c1a352e123113e8953a14d87445b8c",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T13:29:10.313962+00:00",
+  "builtAt": "2026-10-20T14:11:02.775280+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "87a006dea81629649b6ab234b4291e0b3d05aa3b",
-  "previousPublishedCommit": "e691adbbe6521e8e6d0dc82cf5ddfc46d2af5cbd",
+  "previousSourceCommit": "312e3e8b45d11c1eada9b32e71351f58e65ca663",
+  "previousPublishedCommit": "e67c9704f16115bff3a6e0ff98bbb4d62c25f566",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 312e3e8b45d11c1eada9b32e71351f58e65ca663",
+    "source": "detached clean checkout of 4e7147966a6c64e7aa6ceba2bece283ecaf390b0",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "No additional tests run for publication. User chose manual verification of progressive mainline release; earlier authorized depot/fleet/Auto results are documented in docs/south-depot-operating-concept-2026-10-20.md"
+    "scope": "No automated or gameplay tests run for this release. User chose manual verification. Authored door render reviews and asset build reports are documented in docs/station-door-motion.md"
   },
   "browserChecks": {
     "status": "not-run",
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "depot": "Operational South depot with two storage tracks, three bays and access from J1-J4 inside the existing 200x200 board",
-    "formations": "85.6-unit storage capacity supports all 20 built-in formations, including coupled locomotive pairs; actual custom formations retain physical limits",
-    "auto": "25 percent storage chance per eligible South visit, original-stock collection after 90-120 simulation seconds; passenger-only roster policy retained",
-    "runAround": "East arrivals physically change locomotive ends before storage and again after collection, preserving original vehicles and facing",
-    "mainline": "Release the mainline only after the complete tail plus margin clears W0; yard uncoupling and pickup do not reserve the station return corridor",
-    "road": "Shared main-road styling; public approach ends at the east side of South station without wrapping behind it",
-    "verification": "Clean-commit TypeScript/Vite build and publication identity/bytes. Earlier depot/fleet/Auto tests documented separately; latest progressive block release left for user manual verification. No new automated tests, browser/gameplay checks or FPS benchmarks for publication"
+    "depotCamera": "Active depot shunting takes Auto camera priority; completed parking hands off to another active train or overview, including a previously followed selection during Auto",
+    "depotPace": "Depot-specific 40 km/j travel limit with matching acceleration and braking; final coupling approach remains about 2.6 km/j; route ownership and stop boundaries retained",
+    "stationDoors": "Sliding and inward-hinged station-side leaves across SSNG, Taksaka, Elite, Nusantara and procedural advertising coaches, including M/P service doors without public boarding",
+    "doorAssets": "Rebuilt high/medium/low geometry with real apertures and rigid leaf pivots; original liveries and shared Nusantara atlas retained",
+    "locomotiveFacing": "Each non-CC206 locomotive independently chooses body facing, including double locomotives; headlight and wiper mounts follow that facing",
+    "verification": "Clean-commit TypeScript/Vite build and publication identity/bytes. Representative authored open/closed door renders inspected. No automated tests, browser/gameplay checks or FPS benchmarks for publication"
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -696,6 +695,11 @@
       "path": "assets/AssetCatalogPage-Dop3D8E_.js",
       "bytes": 27446,
       "sha256": "76a8d5b367997ed399cc27e034dc5a3cf39ed6c5f777dadf8a8e0abfdd83cb8b"
+    },
+    {
+      "path": "assets/AssetCatalogPage-DpmLuxWg.js",
+      "bytes": 27446,
+      "sha256": "d4bebf178c678e0469d3cb5f410e65f5a1f61b172daf11263f96537abf274d9f"
     },
     {
       "path": "assets/AssetCatalogPage-DqX8Y7U3.js",
@@ -1738,6 +1742,11 @@
       "sha256": "d5f65ba03d84172741470ab730bf1a05154a6d9d14e1fd32deee42fd86fa9195"
     },
     {
+      "path": "assets/Cc206ReviewPage-e3JCTYfI.js",
+      "bytes": 12049,
+      "sha256": "58b154df5e70432410b3dd417de13061ab275e55589bc51df4480dd865ec7892"
+    },
+    {
       "path": "assets/Cc206ReviewPage-eEbmyuGn.js",
       "bytes": 11978,
       "sha256": "dc479dd18f3791c50125e44b060a4a5f2bdc45699728a02a010f82ef02e396c3"
@@ -2338,6 +2347,11 @@
       "sha256": "cd36edd794079b587f46ef8176f65cbe358c70d818c68f9f89998bd29414798f"
     },
     {
+      "path": "assets/ConsistsPage-YMzJBqoi.js",
+      "bytes": 14577,
+      "sha256": "4ae4ace640c82da8321e7c815570f0b9c8718ac4434c68c1c5726e7ac1a08d6a"
+    },
+    {
       "path": "assets/ConsistsPage-ZdxcRYpI.js",
       "bytes": 8448,
       "sha256": "8b58dc9e66d7a77e223790fa71954a8d9bb5c3026f2b2ab07532188d3b4a0657"
@@ -2556,6 +2570,11 @@
       "path": "assets/DownloadSimple.es-Bs9Vhcmr.js",
       "bytes": 2099,
       "sha256": "50b511f0b3b81cde5eaed542f4bf7cedb81f647044b4afb38d150de81413ef62"
+    },
+    {
+      "path": "assets/DownloadSimple.es-BsLkWaIe.js",
+      "bytes": 2100,
+      "sha256": "570085ae8a8a0eae79d9ee15e3c35bd66008dc83a3f229a0d5baef6320155130"
     },
     {
       "path": "assets/DownloadSimple.es-BvUYGQlE.js",
@@ -3513,6 +3532,11 @@
       "sha256": "a083982c52090b068d0253a838d9b233667462588941afe9afd960d5b20cd129"
     },
     {
+      "path": "assets/GaugeReviewPage-CQjv03LW.js",
+      "bytes": 18304,
+      "sha256": "20d47e0bbcf428ffd994a7a8cce50177a5827ad39c5a31194400ff43b32ec489"
+    },
+    {
       "path": "assets/GaugeReviewPage-CRDn1RT-.js",
       "bytes": 18304,
       "sha256": "1a15747fa107b69a696f9d03703c06bc704cb43a4c173cad8ae3c7bb85521166"
@@ -4293,6 +4317,11 @@
       "sha256": "313c80e3fe607f6393b598e3e69cf9aca2aaf9c734d7802900316373f9fb57f0"
     },
     {
+      "path": "assets/HudPreviewPanel-DcCFmWaV.js",
+      "bytes": 418,
+      "sha256": "dcafbbe20d0a521362817185811f44c9c716ce3ecb28c347f15689e7eaf84364"
+    },
+    {
       "path": "assets/HudPreviewPanel-DdGOgx3i.js",
       "bytes": 422,
       "sha256": "81e18b022ebf62b40a366aac58657e2c38e985fa26547a42c973ab95a5221fa8"
@@ -4683,6 +4712,11 @@
       "sha256": "ce661e13c5f6b21a5df85ddbecac0b6b33febdf170333861f70498c765fe8104"
     },
     {
+      "path": "assets/IconBase.es-DdEjKuou.js",
+      "bytes": 3729,
+      "sha256": "98f4bfc55b31ae20260aa06ce06c8cde59f508fe314815364f38b409a9ff2ac7"
+    },
+    {
       "path": "assets/IconBase.es-DeoGtqP6.js",
       "bytes": 3740,
       "sha256": "98f2cf52d92d8ca56c6f6668aba0b3a205e5f4ff9af5e04ee800b49259440394"
@@ -4961,6 +4995,11 @@
       "path": "assets/ImportedCc206Page-CIzgBTkW.js",
       "bytes": 18446,
       "sha256": "347dd1405ebc963b65ff7fcdb0aa7ae7051f95dd081b185c5a0258cdc5c7fd6b"
+    },
+    {
+      "path": "assets/ImportedCc206Page-CKH-VlN9.js",
+      "bytes": 18446,
+      "sha256": "e57290f2a080637902e696ba4112db52dcb5f9e7de8562d48e267a026b57e86a"
     },
     {
       "path": "assets/ImportedCc206Page-CKM0k0aN.js",
@@ -5488,6 +5527,11 @@
       "sha256": "4108429ee4c601f9c7528f8081e265ab72230b31c3b2a71d9c81c49a6e66a6d6"
     },
     {
+      "path": "assets/cc201-game-template-DhP31vOt.js",
+      "bytes": 5086,
+      "sha256": "68fe3224aaff7041c0f965784863f25d1f8fdad8e4dc94cead839c03978a1090"
+    },
+    {
       "path": "assets/cc201-game-template-OF1qNQZk.js",
       "bytes": 4794,
       "sha256": "e4be51acd5303aade2ed63f4ae8709674520d64675de0313664d91b6edf6e5f9"
@@ -5553,6 +5597,11 @@
       "sha256": "3dad7b679ba34b59d2e5c3f9464783b7eaa11bfc5df7eb1d6d464dd22254b5ee"
     },
     {
+      "path": "assets/cc203-game-template-DUoTI9U2.js",
+      "bytes": 7002,
+      "sha256": "241e108cb54274176f54388e425628e6643f3b7127df1c47a49ef876ecdd731e"
+    },
+    {
       "path": "assets/cc203-game-template-DukENdbz.js",
       "bytes": 6923,
       "sha256": "47b7a0478c5a401017c1495b83b434be4ca4e27d8c7c1f7d76440092317af99c"
@@ -5596,6 +5645,11 @@
       "path": "assets/cc205-game-template-BaeEc-Zi.js",
       "bytes": 4210,
       "sha256": "8988cb66235ba8d457c3d0849ec7ff95c453e55f7dbc9da3b5d19383725566c5"
+    },
+    {
+      "path": "assets/cc205-game-template-BcYyjV6q.js",
+      "bytes": 4249,
+      "sha256": "88fdec64e5d157884afd81e9880750f5762e908346a7cffa8ef9dbcc37995937"
     },
     {
       "path": "assets/cc205-game-template-BySOekww.js",
@@ -5793,6 +5847,11 @@
       "sha256": "44c8e745a0fd35e8b89d8a95b1ed19c4c923099f43892226765e9c7f8b45c24d"
     },
     {
+      "path": "assets/cc206-game-template-hsnu3eer.js",
+      "bytes": 10866,
+      "sha256": "626183d21b7a838dc62c655762670d84f53371c56b1d496be360e831371c527f"
+    },
+    {
       "path": "assets/cc206-game-visuals-B39AKTke.js",
       "bytes": 8042,
       "sha256": "aab14b89475d76f343c4d5ba3bf879e3b8fd819d8c8545e94de5ddedd310c576"
@@ -5818,6 +5877,11 @@
       "sha256": "9b0236cbfa0b278532267965461d127eeed8a4d86a811fad43fbc807bbd67b34"
     },
     {
+      "path": "assets/cc206-game-visuals-D0jxGjkj.js",
+      "bytes": 8050,
+      "sha256": "546428721795fb80f0fd0c47ecfc76b03b1e99f2b1800a5670713cc4bb225f3e"
+    },
+    {
       "path": "assets/cc206-game-visuals-D5wYj0HS.js",
       "bytes": 8042,
       "sha256": "632169a55e6f16fa337e657ee8b1b311cf409646fc3786ba12ba0d2fbb89ba84"
@@ -5831,6 +5895,11 @@
       "path": "assets/cc206-game-visuals-YACdLgJB.js",
       "bytes": 7662,
       "sha256": "76243e1368300974a6f21bf59e3ea42f09b302f7bc98430d47218c6a2a0129ad"
+    },
+    {
+      "path": "assets/coach-bodies-BPleEKND.js",
+      "bytes": 9117,
+      "sha256": "85868cf9ee07045159e9f4e729ea9165f6b64d7e666b09a95c6525cb210f842a"
     },
     {
       "path": "assets/coach-bodies-Bfg62STT.js",
@@ -5871,6 +5940,11 @@
       "path": "assets/diorama-postprocessing-B28O_h_t.js",
       "bytes": 42439,
       "sha256": "a42b602a9203644189bed52ebcefcd131666037bf654bbb14120762bc5683a0b"
+    },
+    {
+      "path": "assets/diorama-postprocessing-BCL6VaTS.js",
+      "bytes": 42434,
+      "sha256": "5bbf4028a20604e2dfd37baca58da450703cae13eadafc0ef8937dbc1f6694f4"
     },
     {
       "path": "assets/diorama-postprocessing-BEI3L2K0.js",
@@ -6381,6 +6455,11 @@
       "path": "assets/elite-coaches-BRWoxsrL.js",
       "bytes": 6107,
       "sha256": "20c965b3488f227bf11d989fa5018d4f9af45e0fc2b527a0b38f44ee796aa492"
+    },
+    {
+      "path": "assets/elite-coaches-BucrIO_5.js",
+      "bytes": 7164,
+      "sha256": "a3c9f3e65fc3f30510497b62bc2ed2505331586a78359aae92049eb0469518d6"
     },
     {
       "path": "assets/elite-coaches-D5omKRqY.js",
@@ -6993,6 +7072,11 @@
       "sha256": "6915725753de15b03b3ca4be383c79fb09da581eba3249de8c98b1800fbcb1cd"
     },
     {
+      "path": "assets/index-DmxRjDtF.js",
+      "bytes": 1237761,
+      "sha256": "80c9976fe554ef828e50c018f67708de8b4f632689666b74520a625998ed4914"
+    },
+    {
       "path": "assets/index-Dn51gkuz.js",
       "bytes": 783841,
       "sha256": "3d4d5164230a5a9721029789cda9dcd343805a19d069f24a661f416ac64c5fec"
@@ -7273,6 +7357,11 @@
       "sha256": "e1b7f3fc6d2ba440479be9135cca6bd20ca315c614739385d9761f0c39779a16"
     },
     {
+      "path": "assets/locomotive-roof-BaaS0psZ.js",
+      "bytes": 9195,
+      "sha256": "7ee219ac9dea5fb855e56bfee0bc06f7eb616f3978a5378627e515e80de0f9d5"
+    },
+    {
       "path": "assets/locomotive-roof-BlZnn446.js",
       "bytes": 9195,
       "sha256": "bc6b49717a79ef3bac73110f8cb7b4a7c797aa1242ba123c33a4064da6de371b"
@@ -7311,6 +7400,11 @@
       "path": "assets/nusantara-coaches--zEzaDIh.js",
       "bytes": 7227,
       "sha256": "15ed0ccb6720891b1a14fd38e8ed2a527587c31e79f4ab088ed57f04f920dc21"
+    },
+    {
+      "path": "assets/nusantara-coaches-B-ks0Z6k.js",
+      "bytes": 8028,
+      "sha256": "2b5521abc1c3aa8d3145a92f7ea1ea80d988f1bbf991b676ee4cc8ce8cab1c60"
     },
     {
       "path": "assets/nusantara-coaches-BMPJVriF.js",
@@ -7451,6 +7545,11 @@
       "path": "assets/ssng-coaches-ghYFzEB7.js",
       "bytes": 7096,
       "sha256": "152fdc56acf3b1cb9b808e86ff1468cfdc7c0776cc8f024a34582f1252fd96c8"
+    },
+    {
+      "path": "assets/taksaka-ssng-BQspx6eU.js",
+      "bytes": 16597,
+      "sha256": "4a68f6ac4dd2341ad80307a4d23a9cae03080a7b53095e4675c0e99c6dd2240f"
     },
     {
       "path": "assets/taksaka-ssng-BWrGE193.js",
@@ -8034,8 +8133,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3442,
-      "sha256": "78390957ee2635ce5617d6c9571e1e5be5cddcbae702242d88655526785cfbf4"
+      "bytes": 3329,
+      "sha256": "326482a441ca8b6d5191cbc33c10b1fecef622037dad44e2e477931e5d485314"
     },
     {
       "path": "liveries/cc206/credits.txt",
@@ -8309,23 +8408,23 @@
     },
     {
       "path": "models/elite-coaches-game-report.json",
-      "bytes": 3800,
-      "sha256": "082ac968a7f6ee169129ac09c54023a5019711fba783082c951db10087e16d7c"
+      "bytes": 5150,
+      "sha256": "99f4599365d3fec4ece15193a2ef04e6b30a9bc0067c3ce5506b888f0022f294"
     },
     {
       "path": "models/elite-coaches-high-packed.glb",
-      "bytes": 908208,
-      "sha256": "538464b78b2ab544b1b79d7dbb6e162fed6e7710ba32e1b0f532ae3742e64cc8"
+      "bytes": 927740,
+      "sha256": "8d772a42ce1785191334ea14d7afa2948611043b0626eb621600f2fe5a5c2e09"
     },
     {
       "path": "models/elite-coaches-low-packed.glb",
-      "bytes": 266128,
-      "sha256": "51b13a65a4cd1a396ad27098b9ba5f8220c031463eebacd8bc25da01b47f832a"
+      "bytes": 286356,
+      "sha256": "04334cfed940ae7abe0845b04fd737527987c782341d15e739d10006751aad2c"
     },
     {
       "path": "models/elite-coaches-medium-packed.glb",
-      "bytes": 637544,
-      "sha256": "fdf770901e1f8973c43769447ee7b809a232b3246c68b8dfe564c206d097aedc"
+      "bytes": 654060,
+      "sha256": "e53ef525eba46486f7fba26340142ed0ce12221d4d9b728cc15be695564e91a9"
     },
     {
       "path": "models/forklift-0-blue.glb",
@@ -8399,23 +8498,23 @@
     },
     {
       "path": "models/nusantara-explorer-game-report.json",
-      "bytes": 7456,
-      "sha256": "5352e0b9ad0009668095e8edb21fa32689946158d585661c4a9c31a49d99b8e0"
+      "bytes": 8743,
+      "sha256": "a016e5b85503d1cd341712f0e26ebf5d5bed3ce91cfd2dacc74ea17045e1adec"
     },
     {
       "path": "models/nusantara-explorer-high-packed.glb",
-      "bytes": 681328,
-      "sha256": "590186ae6314c3e00b83784a9ebd3c432a5ca4b171bbd036fd3b4954e86abd7d"
+      "bytes": 706844,
+      "sha256": "d2fee54397b5cce737217c689e0cfbe1c74b8f9703bb973e2bdb227c663af438"
     },
     {
       "path": "models/nusantara-explorer-low-packed.glb",
-      "bytes": 284244,
-      "sha256": "89f203da0ea1243310d9f6a27097bc5966477c365a32ba96c87bbe28846a0868"
+      "bytes": 313684,
+      "sha256": "ee23ca2ac43d8a90f7492907db66fef1d47db9e7d4f182890e433bb4e23ad3fd"
     },
     {
       "path": "models/nusantara-explorer-medium-packed.glb",
-      "bytes": 563432,
-      "sha256": "1c215067370a626f0b4725d068d84f4f9be06c1f7418b8fca75b9729bbc584f3"
+      "bytes": 589452,
+      "sha256": "964f65a08c0c1b773c0970f03401c777bc832cd850bc8e5d57bcd76d77c55f8c"
     },
     {
       "path": "models/pallet-0-blue.glb",
@@ -8644,23 +8743,23 @@
     },
     {
       "path": "models/ssng-support-game-report.json",
-      "bytes": 3118,
-      "sha256": "78303ba34f9c23443ec7020001e772aaa53506f400fd3399f93a25fcefa96533"
+      "bytes": 3818,
+      "sha256": "34e81abe387283ae3653b9200d63b020da5fc817d81d93b7cddd01379760c70d"
     },
     {
       "path": "models/ssng-support-high-packed.glb",
-      "bytes": 645580,
-      "sha256": "46995f8af31bb34e1e078bceb2f7a7a8893da3f32a1bec8b15a8fff4b93d601d"
+      "bytes": 680184,
+      "sha256": "d2a02622874236960b2cac391ca146840b0b29b8dfaf25432b29bafdee0c82f8"
     },
     {
       "path": "models/ssng-support-low-packed.glb",
-      "bytes": 207596,
-      "sha256": "cb85e55447cfddefbc4e6d85c0ba1a0f5b15558ab79a0fdd98da179984dce304"
+      "bytes": 240860,
+      "sha256": "7ecd0451995df66f684c362d9edebfccc1556180af798c52ede59e36039d3e4d"
     },
     {
       "path": "models/ssng-support-medium-packed.glb",
-      "bytes": 474628,
-      "sha256": "ea8a70e8caf0f1af767d8b8052092c6011ed6a6e7ccb3cc18f0c7efe3e3ae194"
+      "bytes": 508632,
+      "sha256": "11df22d8f2d0ca55021247c6e226ac16948894cd5dee2d5ef2589cfa4c5ca279"
     },
     {
       "path": "models/station-selatan-low.glb",
@@ -8689,23 +8788,23 @@
     },
     {
       "path": "models/taksaka-ssng-game-report.json",
-      "bytes": 2719,
-      "sha256": "cd228a8190da3e1d621f8b7a237ec51403a5d074f4d7831791f10ea5ed4ed085"
+      "bytes": 3246,
+      "sha256": "91104605a4390170e65a6bc374eaa4ab5c42986b2d7b93658e838c3ee7256956"
     },
     {
       "path": "models/taksaka-ssng-high-packed.glb",
-      "bytes": 519828,
-      "sha256": "3c146f98efd5a60a5460a39442b96a0934897e4d4516abd9c1295a67beed0603"
+      "bytes": 539980,
+      "sha256": "c19329df3eac808748f7dc231635642426dff779a94d388a13e4ab58037ef6f3"
     },
     {
       "path": "models/taksaka-ssng-low-packed.glb",
-      "bytes": 172508,
-      "sha256": "329e50792cece3ff4be238b1c86c4b0233e70d0141a5455f24746e4b2cb95929"
+      "bytes": 191236,
+      "sha256": "57f244db59f46260a5b7c2612c63348c61731b90ecbf8b6ba52ca657ea39b07f"
     },
     {
       "path": "models/taksaka-ssng-medium-packed.glb",
-      "bytes": 380008,
-      "sha256": "cf58963b8ec0748f1a827f0719b1177ae5a7e4f1bddd321047df2466aa14cf12"
+      "bytes": 399764,
+      "sha256": "cedcc7cba88b203b0f9057fb236ea1e62dc5cf2b74ad732febc993c88ec69848"
     },
     {
       "path": "models/tree-0-blue.glb",
@@ -8865,130 +8964,154 @@
     "packedBytes": 726980
   },
   "ssngSupport": {
-    "revision": "ssng-support-v1",
+    "revision": "ssng-support-v2-station-doors",
     "levels": {
       "high": {
         "file": "ssng-support-high-packed.glb",
-        "bytes": 645580,
+        "bytes": 680184,
         "assets": {
           "dining": {
-            "triangles": 14418,
-            "primitives": 19,
+            "triangles": 14508,
+            "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
           },
           "generator": {
-            "triangles": 20756,
-            "primitives": 15,
-            "wheels": 8,
-            "bogies": 2,
-            "couplers": 2,
-            "doors": 0
-          },
-          "dining-blue": {
-            "triangles": 13857,
+            "triangles": 20936,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           },
-          "generator-blue": {
-            "triangles": 20110,
-            "primitives": 15,
+          "dining-blue": {
+            "triangles": 13947,
+            "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
+          },
+          "generator-blue": {
+            "triangles": 20290,
+            "primitives": 19,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           }
         },
         "materials": 3,
-        "uniqueTriangles": 41669,
-        "sha256": "46995f8af31bb34e1e078bceb2f7a7a8893da3f32a1bec8b15a8fff4b93d601d"
+        "uniqueTriangles": 42209,
+        "sha256": "d2a02622874236960b2cac391ca146840b0b29b8dfaf25432b29bafdee0c82f8"
       },
       "medium": {
         "file": "ssng-support-medium-packed.glb",
-        "bytes": 474628,
+        "bytes": 508632,
         "assets": {
           "dining": {
-            "triangles": 9914,
-            "primitives": 19,
+            "triangles": 10004,
+            "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
           },
           "generator": {
-            "triangles": 14098,
-            "primitives": 15,
-            "wheels": 8,
-            "bogies": 2,
-            "couplers": 2,
-            "doors": 0
-          },
-          "dining-blue": {
-            "triangles": 9545,
+            "triangles": 14278,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           },
-          "generator-blue": {
-            "triangles": 13702,
-            "primitives": 15,
+          "dining-blue": {
+            "triangles": 9635,
+            "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
+          },
+          "generator-blue": {
+            "triangles": 13882,
+            "primitives": 19,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           }
         },
         "materials": 3,
-        "uniqueTriangles": 28899,
-        "sha256": "ea8a70e8caf0f1af767d8b8052092c6011ed6a6e7ccb3cc18f0c7efe3e3ae194"
+        "uniqueTriangles": 29439,
+        "sha256": "11df22d8f2d0ca55021247c6e226ac16948894cd5dee2d5ef2589cfa4c5ca279"
       },
       "low": {
         "file": "ssng-support-low-packed.glb",
-        "bytes": 207596,
+        "bytes": 240860,
         "assets": {
           "dining": {
-            "triangles": 3132,
-            "primitives": 19,
+            "triangles": 3222,
+            "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
           },
           "generator": {
-            "triangles": 4316,
-            "primitives": 15,
-            "wheels": 8,
-            "bogies": 2,
-            "couplers": 2,
-            "doors": 0
-          },
-          "dining-blue": {
-            "triangles": 2891,
+            "triangles": 4496,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           },
-          "generator-blue": {
-            "triangles": 4066,
-            "primitives": 15,
+          "dining-blue": {
+            "triangles": 2981,
+            "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
+          },
+          "generator-blue": {
+            "triangles": 4246,
+            "primitives": 19,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           }
         },
         "materials": 3,
-        "uniqueTriangles": 9829,
-        "sha256": "cb85e55447cfddefbc4e6d85c0ba1a0f5b15558ab79a0fdd98da179984dce304"
+        "uniqueTriangles": 10369,
+        "sha256": "7ecd0451995df66f684c362d9edebfccc1556180af798c52ede59e36039d3e4d"
       }
     },
     "textures": 0,
@@ -8999,157 +9122,202 @@
       "blue": "ssng-economy-blue-v1"
     },
     "routeDisplay": "runtime name, two sides; no baked route lettering",
-    "packedBytes": 1327804
+    "packedBytes": 1429676
   },
   "eliteCoaches": {
     "revision": "elite-coaches-v3",
     "levels": {
       "high": {
         "file": "elite-coaches-high-packed.glb",
-        "bytes": 908208,
+        "bytes": 927740,
         "assets": {
           "panoramic": {
-            "triangles": 19516,
-            "primitives": 15,
+            "triangles": 19948,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           },
           "luxury-ng": {
-            "triangles": 23388,
+            "triangles": 23646,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 3
+            "doors": 3,
+            "doorMotion": "slide",
+            "slidingDoors": 3,
+            "hingedDoors": 0
           },
           "compartment": {
-            "triangles": 19148,
-            "primitives": 15,
+            "triangles": 19352,
+            "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 2,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 2
           },
           "priority": {
-            "triangles": 19560,
-            "primitives": 15,
+            "triangles": 19968,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           },
           "imperial": {
-            "triangles": 18424,
-            "primitives": 15,
+            "triangles": 18832,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           }
         },
         "materials": 3,
-        "uniqueTriangles": 71020,
-        "sha256": "538464b78b2ab544b1b79d7dbb6e162fed6e7710ba32e1b0f532ae3742e64cc8"
+        "uniqueTriangles": 71830,
+        "sha256": "8d772a42ce1785191334ea14d7afa2948611043b0626eb621600f2fe5a5c2e09"
       },
       "medium": {
         "file": "elite-coaches-medium-packed.glb",
-        "bytes": 637544,
+        "bytes": 654060,
         "assets": {
           "panoramic": {
-            "triangles": 12138,
-            "primitives": 15,
+            "triangles": 12490,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           },
           "luxury-ng": {
-            "triangles": 16752,
+            "triangles": 16950,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 3
+            "doors": 3,
+            "doorMotion": "slide",
+            "slidingDoors": 3,
+            "hingedDoors": 0
           },
           "compartment": {
-            "triangles": 12660,
-            "primitives": 15,
+            "triangles": 12824,
+            "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 2,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 2
           },
           "priority": {
-            "triangles": 12766,
-            "primitives": 15,
+            "triangles": 13094,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           },
           "imperial": {
-            "triangles": 11494,
-            "primitives": 15,
+            "triangles": 11822,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           }
         },
         "materials": 3,
-        "uniqueTriangles": 46226,
-        "sha256": "fdf770901e1f8973c43769447ee7b809a232b3246c68b8dfe564c206d097aedc"
+        "uniqueTriangles": 46792,
+        "sha256": "e53ef525eba46486f7fba26340142ed0ce12221d4d9b728cc15be695564e91a9"
       },
       "low": {
         "file": "elite-coaches-low-packed.glb",
-        "bytes": 266128,
+        "bytes": 286356,
         "assets": {
           "panoramic": {
-            "triangles": 4512,
-            "primitives": 15,
+            "triangles": 4736,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           },
           "luxury-ng": {
-            "triangles": 4018,
+            "triangles": 4120,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 3
+            "doors": 3,
+            "doorMotion": "slide",
+            "slidingDoors": 3,
+            "hingedDoors": 0
           },
           "compartment": {
-            "triangles": 4524,
-            "primitives": 15,
+            "triangles": 4624,
+            "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 2,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 2
           },
           "priority": {
-            "triangles": 3884,
-            "primitives": 15,
+            "triangles": 4084,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           },
           "imperial": {
-            "triangles": 3866,
-            "primitives": 15,
+            "triangles": 4066,
+            "primitives": 23,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 0
+            "doors": 4,
+            "doorMotion": "hinge",
+            "slidingDoors": 0,
+            "hingedDoors": 4
           }
         },
         "materials": 3,
-        "uniqueTriangles": 15572,
-        "sha256": "51b13a65a4cd1a396ad27098b9ba5f8220c031463eebacd8bc25da01b47f832a"
+        "uniqueTriangles": 16050,
+        "sha256": "04334cfed940ae7abe0845b04fd737527987c782341d15e739d10006751aad2c"
       }
     },
     "textures": 0,
@@ -9163,14 +9331,14 @@
       "imperial": "elite-imperial-v3"
     },
     "routeDisplay": "Luxury NG only: runtime name, two sides; no baked route lettering",
-    "packedBytes": 1811880
+    "packedBytes": 1868156
   },
   "taksakaSsng": {
-    "revision": "taksaka-ssng-v1",
+    "revision": "taksaka-ssng-v2-station-doors",
     "levels": {
       "high": {
         "file": "taksaka-ssng-high-packed.glb",
-        "bytes": 519828,
+        "bytes": 539980,
         "assets": {
           "executive": {
             "triangles": 17138,
@@ -9178,32 +9346,38 @@
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 4
+            "doors": 4,
+            "slidingDoors": 4,
+            "hingedDoors": 0
           },
           "dining": {
-            "triangles": 14614,
+            "triangles": 14704,
+            "primitives": 21,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
+          },
+          "generator": {
+            "triangles": 21873,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
-          },
-          "generator": {
-            "triangles": 21693,
-            "primitives": 15,
-            "wheels": 8,
-            "bogies": 2,
-            "couplers": 2,
-            "doors": 0
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           }
         },
         "materials": 3,
-        "uniqueTriangles": 34505,
-        "sha256": "3c146f98efd5a60a5460a39442b96a0934897e4d4516abd9c1295a67beed0603"
+        "uniqueTriangles": 34775,
+        "sha256": "c19329df3eac808748f7dc231635642426dff779a94d388a13e4ab58037ef6f3"
       },
       "medium": {
         "file": "taksaka-ssng-medium-packed.glb",
-        "bytes": 380008,
+        "bytes": 399764,
         "assets": {
           "executive": {
             "triangles": 11594,
@@ -9211,32 +9385,38 @@
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 4
+            "doors": 4,
+            "slidingDoors": 4,
+            "hingedDoors": 0
           },
           "dining": {
-            "triangles": 10198,
+            "triangles": 10288,
+            "primitives": 21,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
+          },
+          "generator": {
+            "triangles": 14973,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
-          },
-          "generator": {
-            "triangles": 14793,
-            "primitives": 15,
-            "wheels": 8,
-            "bogies": 2,
-            "couplers": 2,
-            "doors": 0
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           }
         },
         "materials": 3,
-        "uniqueTriangles": 23885,
-        "sha256": "cf58963b8ec0748f1a827f0719b1177ae5a7e4f1bddd321047df2466aa14cf12"
+        "uniqueTriangles": 24155,
+        "sha256": "cedcc7cba88b203b0f9057fb236ea1e62dc5cf2b74ad732febc993c88ec69848"
       },
       "low": {
         "file": "taksaka-ssng-low-packed.glb",
-        "bytes": 172508,
+        "bytes": 191236,
         "assets": {
           "executive": {
             "triangles": 3954,
@@ -9244,28 +9424,34 @@
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 4
+            "doors": 4,
+            "slidingDoors": 4,
+            "hingedDoors": 0
           },
           "dining": {
-            "triangles": 3458,
+            "triangles": 3548,
+            "primitives": 21,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "slidingDoors": 2,
+            "hingedDoors": 1
+          },
+          "generator": {
+            "triangles": 4974,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
             "couplers": 2,
-            "doors": 2
-          },
-          "generator": {
-            "triangles": 4794,
-            "primitives": 15,
-            "wheels": 8,
-            "bogies": 2,
-            "couplers": 2,
-            "doors": 0
+            "doors": 2,
+            "slidingDoors": 0,
+            "hingedDoors": 2
           }
         },
         "materials": 3,
-        "uniqueTriangles": 8734,
-        "sha256": "329e50792cece3ff4be238b1c86c4b0233e70d0141a5455f24746e4b2cb95929"
+        "uniqueTriangles": 9004,
+        "sha256": "57f244db59f46260a5b7c2612c63348c61731b90ecbf8b6ba52ca657ea39b07f"
       }
     },
     "textures": 0,
@@ -9275,6 +9461,328 @@
     "reference": "K1 0 23 25, original REDigest observer photo, December 2023",
     "inferred": "M/P mask placements and exact paint HEX; opposite-side unit labeling adapted from canonical K1 25",
     "routeDisplay": "runtime LED name, two sides; static TAKSAKA heritage plaque in lower orange dome",
-    "packedBytes": 1072344
+    "packedBytes": 1130980
+  },
+  "nusantaraCoaches": {
+    "revision": "nusantara-explorer-v2",
+    "levels": {
+      "high": {
+        "file": "nusantara-explorer-high-packed.glb",
+        "bytes": 706844,
+        "assets": {
+          "signature": {
+            "triangles": 13344,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "advanced": {
+            "triangles": 13344,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "compact": {
+            "triangles": 13344,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "lounge": {
+            "triangles": 12932,
+            "primitives": 28,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4,
+            "hingedDoors": 4,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "restaurant": {
+            "triangles": 12994,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "kitchen": {
+            "triangles": 12076,
+            "primitives": 22,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "hingedDoors": 2,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "power": {
+            "triangles": 14876,
+            "primitives": 22,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "hingedDoors": 2,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          }
+        },
+        "materials": 4,
+        "uniqueMeshes": 22,
+        "accessors": 135,
+        "sha256": "d2fee54397b5cce737217c689e0cfbe1c74b8f9703bb973e2bdb227c663af438"
+      },
+      "medium": {
+        "file": "nusantara-explorer-medium-packed.glb",
+        "bytes": 589452,
+        "assets": {
+          "signature": {
+            "triangles": 10112,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "advanced": {
+            "triangles": 10112,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "compact": {
+            "triangles": 10112,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "lounge": {
+            "triangles": 9820,
+            "primitives": 28,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4,
+            "hingedDoors": 4,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "restaurant": {
+            "triangles": 9822,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "kitchen": {
+            "triangles": 9012,
+            "primitives": 22,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "hingedDoors": 2,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "power": {
+            "triangles": 10716,
+            "primitives": 22,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "hingedDoors": 2,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          }
+        },
+        "materials": 4,
+        "uniqueMeshes": 22,
+        "accessors": 135,
+        "sha256": "964f65a08c0c1b773c0970f03401c777bc832cd850bc8e5d57bcd76d77c55f8c"
+      },
+      "low": {
+        "file": "nusantara-explorer-low-packed.glb",
+        "bytes": 313684,
+        "assets": {
+          "signature": {
+            "triangles": 4400,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "advanced": {
+            "triangles": 4400,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "compact": {
+            "triangles": 4400,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "lounge": {
+            "triangles": 3952,
+            "primitives": 28,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4,
+            "hingedDoors": 4,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "restaurant": {
+            "triangles": 4110,
+            "primitives": 25,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3,
+            "hingedDoors": 3,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "kitchen": {
+            "triangles": 3456,
+            "primitives": 22,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "hingedDoors": 2,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          },
+          "power": {
+            "triangles": 4796,
+            "primitives": 22,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2,
+            "hingedDoors": 2,
+            "doorMotion": "hinge",
+            "bodyLength": 19.155782699223924,
+            "bogieZ": 6.704523944728374,
+            "couplerZ": 9.838474351694114
+          }
+        },
+        "materials": 4,
+        "uniqueMeshes": 21,
+        "accessors": 134,
+        "sha256": "ee23ca2ac43d8a90f7492907db66fef1d47db9e7d4f182890e433bb4e23ad3fd"
+      }
+    },
+    "textures": 0,
+    "activeGameReplacement": false,
+    "processing": "Original photo-derived LODs; static sibling batches; shared mesh/accessor dedup; Meshopt FILTER; external shared atlas.",
+    "totalGeometryBytes": 1609980,
+    "sharedLivery": {
+      "file": "liveries/nusek-coaches/nusantara-explorer-v1.png",
+      "bytes": 269411,
+      "size": [
+        1024,
+        1024
+      ],
+      "roleCount": 7
+    },
+    "packedBytes": 1609980
   }
 }
