@@ -1,0 +1,59 @@
+{
+  "processing": "Meshoptimizer simplification preserving vertex colours; flat normals regenerated; unchanged rigid hierarchy/materials; original GLBs retained.",
+  "assets": {
+    "riverside-earthworks-kit": {
+      "high": {
+        "ASSET-earthworks-excavator": 9756,
+        "ASSET-earthworks-dumptruck": 9168
+      },
+      "low": {
+        "ASSET-earthworks-excavator": 3854,
+        "ASSET-earthworks-dumptruck": 2584
+      }
+    },
+    "riverside-livestock-kit": {
+      "high": {
+        "ASSET-livestock-cow": 1148,
+        "ASSET-livestock-calf": 940,
+        "ASSET-livestock-goat": 752,
+        "ASSET-livestock-kid": 692,
+        "ASSET-livestock-chicken": 650,
+        "ASSET-livestock-duck": 408
+      },
+      "low": {
+        "ASSET-livestock-cow": 686,
+        "ASSET-livestock-calf": 618,
+        "ASSET-livestock-goat": 556,
+        "ASSET-livestock-kid": 518,
+        "ASSET-livestock-chicken": 438,
+        "ASSET-livestock-duck": 306
+      }
+    },
+    "riverside-carriage-kit": {
+      "high": {
+        "ASSET-carriage-executive": 3818,
+        "ASSET-carriage-economy": 4248,
+        "ASSET-carriage-harvest": 4098,
+        "ASSET-carriage-ballast": 5852,
+        "ASSET-carriage-container": 4224,
+        "ASSET-carriage-tank": 3830
+      },
+      "medium": {
+        "ASSET-carriage-executive": 2915,
+        "ASSET-carriage-economy": 3156,
+        "ASSET-carriage-harvest": 3422,
+        "ASSET-carriage-ballast": 4041,
+        "ASSET-carriage-container": 3139,
+        "ASSET-carriage-tank": 2928
+      },
+      "low": {
+        "ASSET-carriage-executive": 1951,
+        "ASSET-carriage-economy": 2058,
+        "ASSET-carriage-harvest": 2068,
+        "ASSET-carriage-ballast": 2453,
+        "ASSET-carriage-container": 2047,
+        "ASSET-carriage-tank": 1951
+      }
+    }
+  }
+}

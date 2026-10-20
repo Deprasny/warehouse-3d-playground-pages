@@ -1,17 +1,17 @@
 {
-  "release": "geometry-debug-ebd03e8",
-  "sourceCommit": "ebd03e8aca480eebb643a8ea6f8d7807fae80872",
-  "sourceFingerprint": "f10ea442c782235e6caea13aab0b0e3cb13b9aa9",
+  "release": "premium-presets-scenery-lod-be3e434",
+  "sourceCommit": "be3e4340e2f46706d6a7ad8d83545308ba591260",
+  "sourceFingerprint": "261fb626c89cb561995a7204d79d575ad72f5f8f",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T07:04:26.214453+00:00",
+  "builtAt": "2026-10-20T08:58:57.979101+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "43d9c31d08583952e5b309660ea66fc7b55156ad",
-  "previousPublishedCommit": "aaec794886623650af3be385dff79183d9e055b0",
+  "previousSourceCommit": "ebd03e8aca480eebb643a8ea6f8d7807fae80872",
+  "previousPublishedCommit": "34bbd7a4a7f31912f4d434012fbe519fe388a826",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of ebd03e8aca480eebb643a8ea6f8d7807fae80872",
+    "source": "detached clean checkout of be3e4340e2f46706d6a7ad8d83545308ba591260",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,11 +24,12 @@
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "debugPanel": "Settings geometry mapping shows categories, source contributions, render passes and top 16 submitted objects",
-    "attribution": "Actual renderer counter deltas on one sampled frame per two seconds while debug is active; includes instancing and repeated passes",
-    "batchSources": "Preserve bounded static-world source metadata at merge time without splitting render batches",
-    "reports": "Copy reports include the latest geometry sample, per-frame sample IDs and geometry snapshots retained with spikes",
-    "lifecycle": "Restore sampled renderer interceptor after capture, rendering failure and disposal; normal rendering does not install it",
+    "premiumCoaches": "Panoramic, Luxury NG, Compartment, Priority and Imperial v3 with three packed LODs",
+    "formations": "Five single-locomotive premium presets with five coaches; dual-locomotive passenger cap remains four; runtime platform span guard retained",
+    "scenery": "Lower-detail imported scenery, station, terrain, road and people geometry with screen-size selection",
+    "rollingStock": "Simpler distant running gear retaining original moving rig anchors",
+    "track": "Simplified sweep rings and distant sleeper/fastener geometry",
+    "archives": "Commit local model authoring sources, intermediate exports, research and review artifacts",
     "verification": "Static source review, clean-commit TypeScript/Vite build and publication identity/bytes only; automated tests, browser gameplay and benchmarks not run"
   },
   "locomotiveFleet": {
@@ -270,6 +271,11 @@
       "path": "assets/AssetCatalogPage-BAneos-p.js",
       "bytes": 24446,
       "sha256": "d7f117ed25aa372a585171ded8d64bebff21fcb4925d65bc5f94fc8b3f1bcbe0"
+    },
+    {
+      "path": "assets/AssetCatalogPage-BOI-WT8B.js",
+      "bytes": 27446,
+      "sha256": "079f5a12809b0bbab78a2626bbef705fa838e67c90581faade67009cacacef2f"
     },
     {
       "path": "assets/AssetCatalogPage-BS7al83r.js",
@@ -1507,6 +1513,11 @@
       "sha256": "4c56fadabd314b9f16a963378fc78a9cf8d01f37a3346d4e811847c57908e71e"
     },
     {
+      "path": "assets/Cc206ReviewPage-D4EWypcR.js",
+      "bytes": 12049,
+      "sha256": "ac6e005bf152026538772bd6aea2898e61827fad326e3e7009d0ead2cc3864b9"
+    },
+    {
       "path": "assets/Cc206ReviewPage-D5CAV3JV.js",
       "bytes": 12019,
       "sha256": "c5e86815e72574ee6955a8f57ffdeee8207eac6e06d8eb64b9804ac5f145539a"
@@ -1860,6 +1871,11 @@
       "path": "assets/ConsistsPage-BX8LeLUl.js",
       "bytes": 8448,
       "sha256": "2940a27667364b7b87694706a56900a0920c8399638d2f4b765cabd686df8a31"
+    },
+    {
+      "path": "assets/ConsistsPage-BXuO2FRK.js",
+      "bytes": 14062,
+      "sha256": "40c48a682760e8e4c1a6ac5df4c8613ca0d058e5e95e7d76457d5a1529054848"
     },
     {
       "path": "assets/ConsistsPage-BYLUnBml.js",
@@ -2745,6 +2761,11 @@
       "path": "assets/DownloadSimple.es-DLoqM-mS.js",
       "bytes": 2061,
       "sha256": "af583fe6d04bdd68c53e849d95e861421bd5673803931ef4bc2e9c04aa2f5d82"
+    },
+    {
+      "path": "assets/DownloadSimple.es-DM5r8xx3.js",
+      "bytes": 2100,
+      "sha256": "0191b13659f2e37e52f8223d7699348552457fcbc0b4200cd57cf9abefed31a2"
     },
     {
       "path": "assets/DownloadSimple.es-DN4NblP4.js",
@@ -3697,6 +3718,11 @@
       "sha256": "f144682b3841c255eb92abc0397c0a13f034e13ba37282afa46eec77f6a71ca7"
     },
     {
+      "path": "assets/GaugeReviewPage-U7XFDsCH.js",
+      "bytes": 18304,
+      "sha256": "f191e1f76f16d240ac10a87e14ac1a93914d73d2b1878292fc46245f675b4d00"
+    },
+    {
       "path": "assets/GaugeReviewPage-YfCxC8um.js",
       "bytes": 10815,
       "sha256": "16f9640ab04c57ce5ec60bd4943ff4a60abea062b9254471aca06892a9e0515c"
@@ -4327,6 +4353,11 @@
       "sha256": "5d3f7b8850006d2d445b7afec7f792bc696720b356ff256e61b688fb42c60cdd"
     },
     {
+      "path": "assets/HudPreviewPanel-b14HZTd2.js",
+      "bytes": 418,
+      "sha256": "ae138c767c8fea1eb7286a130d27665b09659b63c0e4e2d3a0d641f1896e8269"
+    },
+    {
       "path": "assets/HudPreviewPanel-cCoUlCyu.js",
       "bytes": 418,
       "sha256": "17770cc7b8d6d9f71c6585919f0ffb5f6052efe6ed43db4ce727ec3ace504694"
@@ -4590,6 +4621,11 @@
       "path": "assets/IconBase.es-DmzqJGYj.js",
       "bytes": 3432,
       "sha256": "27ee1e124dfeaad6bfa0bb8667cf9a340e606b4052b6d2fc91884068c16c09cf"
+    },
+    {
+      "path": "assets/IconBase.es-EPDKXzFr.js",
+      "bytes": 3729,
+      "sha256": "c88812a97d0f02b1c86001d87f86d3b5a1f15622e4c98fbcb8061e682babd2e8"
     },
     {
       "path": "assets/IconBase.es-Sxh2juJL.js",
@@ -4890,6 +4926,11 @@
       "path": "assets/ImportedCc206Page-CbxsjX-A.js",
       "bytes": 13962,
       "sha256": "e7f87ec58fab27759f77c94ee271039e7a5f5c54b83287ab50f184838da35c31"
+    },
+    {
+      "path": "assets/ImportedCc206Page-CdEF10gp.js",
+      "bytes": 18446,
+      "sha256": "4bd23897e91ed8ed30861ca2589d6c07184ac2fb09a0f8a86ac481489a0342e1"
     },
     {
       "path": "assets/ImportedCc206Page-CdZ6eNew.js",
@@ -5667,6 +5708,11 @@
       "sha256": "76243e1368300974a6f21bf59e3ea42f09b302f7bc98430d47218c6a2a0129ad"
     },
     {
+      "path": "assets/coach-bodies-Dh9UW0hS.js",
+      "bytes": 1014,
+      "sha256": "5f734dae9dd997259177d0683ffc9854dafb65e12c95bf46e7d586812af7d432"
+    },
+    {
       "path": "assets/diorama-kit-DP_i1WJg.js",
       "bytes": 5456,
       "sha256": "1d90020ac0284cab46b384172e914d849a486abff6845cc696febac637b7792a"
@@ -5875,6 +5921,11 @@
       "path": "assets/diorama-postprocessing-CY9rwbyy.js",
       "bytes": 40373,
       "sha256": "3510c82f85bf1bc1a3933f31c7d83eb116294247b68079eb5d03c173aedf9f64"
+    },
+    {
+      "path": "assets/diorama-postprocessing-Cow12_XO.js",
+      "bytes": 42439,
+      "sha256": "49fd068d17980bee8fb43a0e673c69b1ace426748064acaf3e3d7ed9939bbf7c"
     },
     {
       "path": "assets/diorama-postprocessing-CsH_1w1f.js",
@@ -6180,6 +6231,11 @@
       "path": "assets/diorama-style-QxZQ8-Ta.js",
       "bytes": 5153,
       "sha256": "2e533be517e6dfe5461dda33d1bd3ccb6ca3eb211d04f52ee44ef844f0efa3e0"
+    },
+    {
+      "path": "assets/elite-coaches-DDU_4vsr.js",
+      "bytes": 6055,
+      "sha256": "2aa85bb91c65da0351e3c8c303ea1b1f720526702bbfc075f7262bc44878bd64"
     },
     {
       "path": "assets/gauge-profile-BRPoYBvz.js",
@@ -6647,6 +6703,11 @@
       "sha256": "be6eeef5fa090dd02470467fc2f05f94fd9c7a0cd75e06d7ef75a1dbf03370b9"
     },
     {
+      "path": "assets/index-CvspkeaI.js",
+      "bytes": 1279305,
+      "sha256": "a45575c5bdf92f0e6c41cdfc00a8641cf25c36564c034aa9d92e3444443401a7"
+    },
+    {
       "path": "assets/index-CxG9g8uJ.js",
       "bytes": 1207288,
       "sha256": "b4ba94ef34660351814b491c517411e6bd7ebbfe5dcdff550d3628a489db899b"
@@ -7080,6 +7141,11 @@
       "path": "assets/nusantara-coaches-C66Cj4Y4.js",
       "bytes": 7782,
       "sha256": "0155d8088b702f1565ab0062c8443c6ebd4adbddb94da907eaf90dcfdeb0ffa0"
+    },
+    {
+      "path": "assets/nusantara-coaches-D09N4JlZ.js",
+      "bytes": 7227,
+      "sha256": "e26b9a46822b835c551008f98c6bc17b49998bf685240d23100585c36c3b7c92"
     },
     {
       "path": "assets/nusantara-coaches-DS8RDI4d.js",
@@ -7738,8 +7804,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 2989,
-      "sha256": "d9ab16a5249608c6ae7bd53ceb68c44673e27dd14bd5db24f2c8d99e77877260"
+      "bytes": 3216,
+      "sha256": "a54f00e111de6dfdc71f268d417b2fc7965c54c7d6e6ded2722515554b179aae"
     },
     {
       "path": "liveries/cc206/credits.txt",
@@ -8007,6 +8073,31 @@
       "sha256": "7a84af6d6304150da1f5b1c9146d7c95eb99880c74db80d4f1a6ed215d7b5f0b"
     },
     {
+      "path": "models/elite-coaches-credits.txt",
+      "bytes": 9842,
+      "sha256": "e7107aeb119bbed24141c4046c599784ec8631782bfe882110c264b4e5505ed8"
+    },
+    {
+      "path": "models/elite-coaches-game-report.json",
+      "bytes": 3800,
+      "sha256": "082ac968a7f6ee169129ac09c54023a5019711fba783082c951db10087e16d7c"
+    },
+    {
+      "path": "models/elite-coaches-high-packed.glb",
+      "bytes": 908208,
+      "sha256": "538464b78b2ab544b1b79d7dbb6e162fed6e7710ba32e1b0f532ae3742e64cc8"
+    },
+    {
+      "path": "models/elite-coaches-low-packed.glb",
+      "bytes": 266128,
+      "sha256": "51b13a65a4cd1a396ad27098b9ba5f8220c031463eebacd8bc25da01b47f832a"
+    },
+    {
+      "path": "models/elite-coaches-medium-packed.glb",
+      "bytes": 637544,
+      "sha256": "fdf770901e1f8973c43769447ee7b809a232b3246c68b8dfe564c206d097aedc"
+    },
+    {
       "path": "models/forklift-0-blue.glb",
       "bytes": 328696,
       "sha256": "836076ca961c61f31096769f49d106417c1a85b07023da37ca2ca62bee381376"
@@ -8162,6 +8253,21 @@
       "sha256": "48d0ec308eacc74b5c2afa3c9f371e086cc0c551b3b2757e8050baac4845fbf1"
     },
     {
+      "path": "models/rig-far-lod-report.json",
+      "bytes": 1813,
+      "sha256": "6dc716a37eb2f5f6855cf90ed58553a2dc4a81235a3468f2c3ba5caee88be2c3"
+    },
+    {
+      "path": "models/riverside-carriage-kit-low.glb",
+      "bytes": 686012,
+      "sha256": "3583a264275d49be1c6bec9267a2ba7fe5d50b92caf3393ac32e77de2fe7427d"
+    },
+    {
+      "path": "models/riverside-carriage-kit-medium.glb",
+      "bytes": 1067884,
+      "sha256": "bfb1c9e1eb0b6cf13491b8867173a07828c3046665e9a46160f838f841930e77"
+    },
+    {
       "path": "models/riverside-carriage-kit.glb",
       "bytes": 1015452,
       "sha256": "cbd3896c54ecd2541a4a1784a60fd0195096168143ba04013f76dbb840eb44f9"
@@ -8177,6 +8283,11 @@
       "sha256": "c0f8ebba72859b4a582b1e69535d34a18a45ac26d997b99ce651b7356ead5b8d"
     },
     {
+      "path": "models/riverside-dermaga-kit-low.glb",
+      "bytes": 318996,
+      "sha256": "2004e4c7428818e8403b7813fa071f8ef6762840694c8a17247cbc19482e099e"
+    },
+    {
       "path": "models/riverside-dermaga-kit-manifest.json",
       "bytes": 5503,
       "sha256": "a14225685191f5fcdf3f6cf4d412bd32322cf5cfe15188494e6f6e090f33fc37"
@@ -8187,6 +8298,16 @@
       "sha256": "6b95d64c5361cf1663df58090d3ff0e86ed6b9a4550d36fa46e434c61bf4f81f"
     },
     {
+      "path": "models/riverside-dermaga-lod-report.json",
+      "bytes": 1137,
+      "sha256": "2d3dcaa0648d940c4d5b2454bb220668ffbd8fb95b9eef6a76adc31994834126"
+    },
+    {
+      "path": "models/riverside-diorama-kit-low.glb",
+      "bytes": 425988,
+      "sha256": "1a1966e5273e4b0c1e0a0f2c60ce2db66bec99a68f1b272d9e54f439e7c03d4e"
+    },
+    {
       "path": "models/riverside-diorama-kit-manifest.json",
       "bytes": 5108,
       "sha256": "a3fcf7aadb61f0b6144b1a566a3dae12b64d371929d49256075b0ad4823f9740"
@@ -8195,6 +8316,11 @@
       "path": "models/riverside-diorama-kit.glb",
       "bytes": 912132,
       "sha256": "7c56b8fb6473c0c88c84b26452847c8e02686171bb87c30a18f4b65d084464fb"
+    },
+    {
+      "path": "models/riverside-earthworks-kit-low.glb",
+      "bytes": 1090088,
+      "sha256": "fdb5dcb27cfb89d6946bf7e9865af5d629f20d9718f684d33e18bafc5a664169"
     },
     {
       "path": "models/riverside-earthworks-kit-manifest.json",
@@ -8210,6 +8336,11 @@
       "path": "models/riverside-farm-kit.glb",
       "bytes": 718628,
       "sha256": "8894e573e9beb37d72124e71f82e70b495e8499360127dcfb882509955fbb5cf"
+    },
+    {
+      "path": "models/riverside-livestock-kit-low.glb",
+      "bytes": 491504,
+      "sha256": "867e46d36ba97b15a00d4818df54594c70cb446854108471dc88d1690a8437b2"
     },
     {
       "path": "models/riverside-livestock-kit-manifest.json",
@@ -8232,9 +8363,19 @@
       "sha256": "e723b436e5712f9ec7cf17ba5777a9a93fb2e78c9e1aafd01312b62d524a9113"
     },
     {
+      "path": "models/riverside-road-cargo-low.glb",
+      "bytes": 308184,
+      "sha256": "e63662c721bc37e034d2a9b87db64a457adec17fa61deb8491eef65df05a3f6e"
+    },
+    {
       "path": "models/riverside-road-kit.glb",
       "bytes": 175376,
       "sha256": "7e428c9eff6b771ae8baafddcaa50faf0ddfde3aff0483810b7563eadaf67a26"
+    },
+    {
+      "path": "models/riverside-scenery-lod-manifest.json",
+      "bytes": 1466,
+      "sha256": "a5402848e4e6735943a9654b281a8ed1be39d14ae0ee84c7c3140b59149c1618"
     },
     {
       "path": "models/riverside-station-export.json",
@@ -8292,9 +8433,19 @@
       "sha256": "ea8a70e8caf0f1af767d8b8052092c6011ed6a6e7ccb3cc18f0c7efe3e3ae194"
     },
     {
+      "path": "models/station-selatan-low.glb",
+      "bytes": 426200,
+      "sha256": "3105f925aa2ea2daf73e26bcc0bf1a73de2c00ab284b5644af81f84fcc37668b"
+    },
+    {
       "path": "models/station-selatan.glb",
       "bytes": 1291008,
       "sha256": "134d40409aa9e5886ad13ba520285e52e76304d758b6bb798e15713d8f2a4e81"
+    },
+    {
+      "path": "models/station-utara-low.glb",
+      "bytes": 469860,
+      "sha256": "2cbedbd7228222b5676dd0670385b4f3edf70f1fcef269923fc0b6967387c4e0"
     },
     {
       "path": "models/station-utara.glb",
@@ -8594,5 +8745,169 @@
     },
     "routeDisplay": "runtime name, two sides; no baked route lettering",
     "packedBytes": 1327804
+  },
+  "eliteCoaches": {
+    "revision": "elite-coaches-v3",
+    "levels": {
+      "high": {
+        "file": "elite-coaches-high-packed.glb",
+        "bytes": 908208,
+        "assets": {
+          "panoramic": {
+            "triangles": 19516,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "luxury-ng": {
+            "triangles": 23388,
+            "primitives": 21,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3
+          },
+          "compartment": {
+            "triangles": 19148,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "priority": {
+            "triangles": 19560,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "imperial": {
+            "triangles": 18424,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          }
+        },
+        "materials": 3,
+        "uniqueTriangles": 71020,
+        "sha256": "538464b78b2ab544b1b79d7dbb6e162fed6e7710ba32e1b0f532ae3742e64cc8"
+      },
+      "medium": {
+        "file": "elite-coaches-medium-packed.glb",
+        "bytes": 637544,
+        "assets": {
+          "panoramic": {
+            "triangles": 12138,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "luxury-ng": {
+            "triangles": 16752,
+            "primitives": 21,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3
+          },
+          "compartment": {
+            "triangles": 12660,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "priority": {
+            "triangles": 12766,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "imperial": {
+            "triangles": 11494,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          }
+        },
+        "materials": 3,
+        "uniqueTriangles": 46226,
+        "sha256": "fdf770901e1f8973c43769447ee7b809a232b3246c68b8dfe564c206d097aedc"
+      },
+      "low": {
+        "file": "elite-coaches-low-packed.glb",
+        "bytes": 266128,
+        "assets": {
+          "panoramic": {
+            "triangles": 4512,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "luxury-ng": {
+            "triangles": 4018,
+            "primitives": 21,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 3
+          },
+          "compartment": {
+            "triangles": 4524,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "priority": {
+            "triangles": 3884,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          },
+          "imperial": {
+            "triangles": 3866,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          }
+        },
+        "materials": 3,
+        "uniqueTriangles": 15572,
+        "sha256": "51b13a65a4cd1a396ad27098b9ba5f8220c031463eebacd8bc25da01b47f832a"
+      }
+    },
+    "textures": 0,
+    "activeGameReplacement": true,
+    "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+    "liveryIds": {
+      "panoramic": "elite-panoramic-v3",
+      "luxury-ng": "elite-luxury-ng-v3",
+      "compartment": "elite-compartment-v3",
+      "priority": "elite-priority-v3",
+      "imperial": "elite-imperial-v3"
+    },
+    "routeDisplay": "Luxury NG only: runtime name, two sides; no baked route lettering",
+    "packedBytes": 1811880
   }
 }

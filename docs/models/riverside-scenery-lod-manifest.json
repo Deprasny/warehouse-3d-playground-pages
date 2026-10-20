@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "generator": "scripts/build-riverside-scenery-lods.mjs",
+  "reports": [
+    {
+      "input": "station-utara",
+      "output": "station-utara-low",
+      "entries": [
+        {
+          "name": "GEO-station-utara.001",
+          "before": 16088,
+          "after": 4334
+        }
+      ]
+    },
+    {
+      "input": "station-selatan",
+      "output": "station-selatan-low",
+      "entries": [
+        {
+          "name": "GEO-station-selatan.001",
+          "before": 16388,
+          "after": 3930
+        }
+      ]
+    },
+    {
+      "input": "riverside-diorama-kit",
+      "output": "riverside-diorama-kit-low",
+      "entries": [
+        {
+          "name": "GEO-RD-house-gable",
+          "before": 4336,
+          "after": 1348
+        },
+        {
+          "name": "GEO-RD-house-long",
+          "before": 5356,
+          "after": 1600
+        }
+      ]
+    },
+    {
+      "input": "riverside-vehicles",
+      "output": "riverside-road-cargo-low",
+      "entries": [
+        {
+          "name": "CARGO-cargo-sacks",
+          "before": 380,
+          "after": 304
+        },
+        {
+          "name": "CARGO-cargo-sacks-flatbed",
+          "before": 1520,
+          "after": 1064
+        },
+        {
+          "name": "CARGO-cargo-basket",
+          "before": 364,
+          "after": 364
+        },
+        {
+          "name": "CARGO-cargo-basket-flatbed",
+          "before": 1170,
+          "after": 546
+        }
+      ]
+    }
+  ]
+}

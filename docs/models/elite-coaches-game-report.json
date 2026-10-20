@@ -1,0 +1,160 @@
+{
+  "revision": "elite-coaches-v3",
+  "levels": {
+    "high": {
+      "file": "elite-coaches-high-packed.glb",
+      "bytes": 908208,
+      "assets": {
+        "panoramic": {
+          "triangles": 19516,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "luxury-ng": {
+          "triangles": 23388,
+          "primitives": 21,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3
+        },
+        "compartment": {
+          "triangles": 19148,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "priority": {
+          "triangles": 19560,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "imperial": {
+          "triangles": 18424,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3,
+      "uniqueTriangles": 71020
+    },
+    "medium": {
+      "file": "elite-coaches-medium-packed.glb",
+      "bytes": 637544,
+      "assets": {
+        "panoramic": {
+          "triangles": 12138,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "luxury-ng": {
+          "triangles": 16752,
+          "primitives": 21,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3
+        },
+        "compartment": {
+          "triangles": 12660,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "priority": {
+          "triangles": 12766,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "imperial": {
+          "triangles": 11494,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3,
+      "uniqueTriangles": 46226
+    },
+    "low": {
+      "file": "elite-coaches-low-packed.glb",
+      "bytes": 266128,
+      "assets": {
+        "panoramic": {
+          "triangles": 4512,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "luxury-ng": {
+          "triangles": 4018,
+          "primitives": 21,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 3
+        },
+        "compartment": {
+          "triangles": 4524,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "priority": {
+          "triangles": 3884,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "imperial": {
+          "triangles": 3866,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3,
+      "uniqueTriangles": 15572
+    }
+  },
+  "textures": 0,
+  "activeGameReplacement": true,
+  "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+  "liveryIds": {
+    "panoramic": "elite-panoramic-v3",
+    "luxury-ng": "elite-luxury-ng-v3",
+    "compartment": "elite-compartment-v3",
+    "priority": "elite-priority-v3",
+    "imperial": "elite-imperial-v3"
+  },
+  "routeDisplay": "Luxury NG only: runtime name, two sides; no baked route lettering"
+}

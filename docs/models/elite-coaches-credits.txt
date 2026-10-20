@@ -1,0 +1,157 @@
+Elite coaches v3 - exterior refinements, 20 October 2026
+
+Current revision supersedes the historical v2 description below.
+Panoramic K1 0 01 03 uses six broad side bays and six shoulder skylights per
+side; unseen elevation and metric fit remain inferred. Luxury K1 0 23 01 uses
+a declared 2+1 entry hypothesis from unpaired 2023/2026 views; three doors is
+not asserted as a verified engineering layout. Gold/gray ribbon proportions
+use K1 0 23 02 as family evidence. Imperial now selects the serial-readable
+K1 0 14 05 February 2015 seven-pane elevation, replacing the mixed K101305 /
+unidentified family interpretation. Its reverse side and bogie assignment
+remain inferred. Compartment T1 0 08 02 and Priority K1 0 80 06 retain their
+identities with refined frames and ornaments.
+
+Priority and Imperial wordmarks use simplified geometric contours traced
+offline from original photographic/operator artwork, not generic script
+fonts. Source pixels have finite resolution; these are not official vectors.
+No photograph texture or runtime font is embedded. Marks remain their owners'.
+
+New source credits:
+168railway Panoramic K100103: bietajaya, displayed 20 February 2026
+https://168railway.com/rolling-stock/892
+Luxury K102302: Putra, 20 March 2026; entry closeup Rizza, 14 March 2026
+https://168railway.com/rolling-stock/2149
+Luxury K102301: Rava M Zaki / @LawuDwipangga__, caption 22 August 2026
+https://168railway.com/komunitas/post/3362
+Compartment T100802: rhdtya, 26 July 2026
+https://168railway.com/rolling-stock/2838
+Priority K108006: Muhammad Rizky Aditya, 1 May 2026
+https://168railway.com/rolling-stock/471
+Imperial K101405: Stefanus Andriawan, 22 February 2015
+https://www.flickr.com/photos/stefanusandriawan/16424313828/
+Imperial operator wordmark: KAI Wisata, 21 July 2014
+https://x.com/kaiwisata/status/491110892197937152
+Imperial roof family: Dzulfiqar Adefa, photographed 8 November 2017
+https://www.flickr.com/photos/119033997@N08/40505742821/
+Compartment/Imperial lettering detail corroboration: Walungan Jaya, Reza and
+Stefan; full attribution remains in the research audit/retained gallery pages.
+https://168railway.com/rolling-stock/474
+https://168railway.com/rolling-stock/475
+
+Full v3 scope, current measured budgets and limitations:
+docs/elite-coaches-v3.md
+Research provenance, source captures and additional corroborating credits:
+outputs/elite-coaches-reference-expansion-2026-10-20/README.md
+No reuse license for community photographs is granted by this notice.
+
+HISTORICAL V2 CREDIT / MODEL RECORD (superseded dimensions/layout details)
+
+Roles: Panoramic, Luxury New Generation, Compartment Suites, Priority, Imperial.
+Original procedural geometry authored for the Depras warehouse-3d-playground
+project. Construction, gear and rig helpers reuse the project's original SSNG
+toolkit. No third-party train mesh, source photograph texture, scanned geometry
+or UV atlas is included. Paint, ornaments and lettering are authored geometry
+and vertex colors. Each family has high, medium and low detail levels.
+
+These are photo-informed miniature exteriors, not certified engineering models.
+Hidden elevations, metric fitting and some opening counts are inferred. Imperial
+combines unit K1 0 13 05 paint evidence with an unidentified family side view;
+its full opening rhythm and exact bogie assignment remain provisional.
+Luxury NG targets operational K1 0 23 01: muted champagne/gold-olive door color
+#a89c61, one plug entry per side (two rigs total), white KAI contour mark and
+script Luxury on the opposite blank end panel. Ten main panes per side and
+their 0.62m station shift are game-fit estimates; opposite-side placement is
+inferred. The v1 blue test appearance is superseded. Its cause is unproved;
+it is not asserted to be protective film.
+
+PANORAMIC - official operator references, teal/gold appearance
+KAI Wisata product: https://kaiwisata.id/Kereta-Panoramic
+KAI release, 2 January 2026:
+https://www.kai.id/publikasi/siaran-pers/7122-wisata-dengan-kereta-panoramic-kian-diminati-pelanggan-tumbuh-386-persen-sepanjang-2025
+Official elevated exterior and close side photos:
+https://api.kai.id/msvc-webcorp/api/v2/media/berita/cf7fe0914e04f14cea0a11017c069971.jpeg
+https://api.kai.id/msvc-webcorp/api/v2/media/berita/242890a182b58a322e1a9398669a43bf.jpeg
+V2 uses an outlined title and KAI contours with a separate WISATA caption.
+Custom title typeface, full opening counts and hidden elevations are estimates.
+
+LUXURY NEW GENERATION - operational K1 0 23 01 master
+Exterior photo supplied by PT KAI Daop VI Yogyakarta, published in the
+18 December 2023 IDN Times launch gallery, item 6:
+https://jateng.idntimes.com/news/jawa-tengah/potret-fasilitas-baru-ka-argo-lawu-eksekutif-dan-luxury-new-generation-00-q9p11-4kc4mn/amp
+Displayed operational image:
+https://image.idntimes.com/post/20231218/screenshot-20231218-153153-9759e899ab249fc17650c18657fa12a2.jpg
+PT INKA manufacturer release, 13 December 2023:
+https://www.inka.co.id/berita/921
+INKA's broken exterior image was not treated as visually inspected evidence.
+Historical v1 test reference only: Nathan Aditya Putra Nugraha photograph;
+REDigest, 19 September 2023, by Ikko Haidar Farozy, K1 0 23 003:
+https://redigest.web.id/2023/09/inka-ujicobakan-armada-kereta-eksekutif-dan-luxury-stainless-steel-generasi-terbaru/
+
+PRIORITY - K1 0 80 06 side/bogie renewal, photographer Febri
+REDigest, 27 April 2022:
+https://redigest.web.id/2022/04/kereta-wisata-mulai-ganti-bogie-bisa-jalan-lebih-kencang/
+Family paint corroboration, Ghera Nugraha, firsthand journey, 27 September 2015:
+https://komunitasaleut.com/2015/09/27/bandung-bd-ke-semarang-tawang-smt-dengan-kereta-wisata-priority/
+Operator: https://www.kaiwisata.id/Kereta-Priority
+V2 retains nine main panes in narrow/wide/wide groups, fits script at natural
+aspect and orders technical stencils left-to-right independently on each side.
+Its unverified 35,500kg stencil has been removed.
+
+IMPERIAL - K1 0 13 05 paint; full family silhouette not serial-matched
+KAI-supplied exterior photo, republished detikTravel, 27 June 2025:
+https://travel.detik.com/travel-news/d-7984710/kereta-wisata-imperial-status-boleh-kereta-tambahan-tapi-fasilitas-bikin-nyaman
+Firsthand 2016 family trip photo, Zudi Susanto, republished detikTravel:
+https://travel.detik.com/cerita-perjalanan/d-5395299/begini-rasanya-naik-kereta-mewah-menuju-yogyakarta
+Operator: https://kaiwisata.id/Kereta-Imperial
+V2 fits the script at natural aspect and preserves the photographed 35,500kg
+stencil. The script is a calligraphic approximation, not a traced wordmark.
+
+COMPARTMENT SUITES - T1 0 08 02 ML first conversion batch
+RFurqon19, own-work exterior photograph, 29 September 2023, CC BY-SA 4.0:
+https://commons.wikimedia.org/wiki/File:Indonesian%27s_New_Compartment_Suites_Train_(T1_0_08_02_ML).jpg
+Photo license: https://creativecommons.org/licenses/by-sa/4.0/
+Firsthand history/photography, Armando Diaz Mansyur / IRPS Jawa Timur:
+https://irps.or.id/2025/06/sekilas-kereta-compartment-suites-kereta-termewah-kai/
+IRPS end photo depicts another conversion batch; used only as family evidence.
+KAI blue/gold identity:
+https://www.kai.id/publikasi/artikel-berita/semakin-nyaman-semakin-diminati-pelanggan-suite-class-compartment-melesat-6476-persen-pada-semester-i-2026
+V2 follows the photographed side's left-hand single entry and blank right-hand
+title end. Opposite-side chirality is inferred. The open floral badge is hand
+reconstructed below the glazing (authoring Y1.55-1.88), not an exact logo trace.
+Its unverified 35,500kg stencil has been removed.
+
+RUNNING GEAR AND PLATFORM REFERENCES
+PT INKA SSNG executive platform:
+https://www.inka.co.id/produk/kereta-kelas-eksekutif-stainless-steel-new-generation
+PT INKA bogie family guide, 14 February 2018:
+https://www.inka.co.id/artikel/mengenal-istilah-bogie-pada-kereta-api-bag2
+PNJ, Maulidin et al. 2024, TB1014 project612NG engineering research:
+https://prosiding.pnj.ac.id/index.php/sntm/article/view/3605
+Current renewed Priority / Compartment assignments also use REDigest 2022 and
+IRPS 2025 references above. Panoramic's assignment remains provisional.
+Imperial's separate coil-suspension bogie is an
+estimated family study; donor age alone does not identify current equipment.
+
+References are credited for visual and technical comparison. No open reuse
+license was established for KAI, INKA, REDigest, IRPS or travelogue photographs
+except the explicitly licensed RFurqon19 photograph; those pixels are not
+bundled in the game. KAI/INKA names and marks identify the prototype operator
+and manufacturer and remain their owners' marks. Authoring uses installed
+Arial/Arial Italic, Times New Roman Bold and Segoe Script outlines where
+available; no font files or runtime fonts are distributed. Custom lettering
+remains an approximation unless identified as the project's contour logo.
+This credit notice grants no rights to third-party photos,
+marks or fonts and does not create a new license for the project's geometry.
+
+Implementation, dimensions, limitations and measured pack budgets:
+docs/elite-coaches-game.md
+V2 high/medium/low GLBs: 900,032 / 625,960 / 278,748 bytes;
+total 1,804,740 bytes, zero textures, three materials per GLB. All roles have
+eight wheel pivots, two bogies and two couplers. Luxury has two plug-door rigs
+and 19 primitives; the other roles have fixed doors and 15 primitives.
+Candidate report: outputs/elite-coaches-refinement-v2-2026-10-20/packed/elite-coaches-game-report.json
+Detailed research and classic re-audit: outputs/elite-coaches-2026-10-20/references/
+Operational correction manifest: outputs/elite-coaches-refinement-v2-2026-10-20/reference_manifest.json
+The v2 kit is the local game asset, manually reviewed through packed GLB renders.
+TypeScript/Vite build succeeded. No production deployment, test or benchmark
+result is asserted.
