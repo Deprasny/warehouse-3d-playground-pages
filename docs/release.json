@@ -1,17 +1,17 @@
 {
-  "release": "premium-presets-scenery-lod-be3e434",
-  "sourceCommit": "be3e4340e2f46706d6a7ad8d83545308ba591260",
-  "sourceFingerprint": "261fb626c89cb561995a7204d79d575ad72f5f8f",
+  "release": "taksaka-passenger-auto-87a006d",
+  "sourceCommit": "87a006dea81629649b6ab234b4291e0b3d05aa3b",
+  "sourceFingerprint": "75565006b99d1a714255756d367b72d057947901",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T08:58:57.979101+00:00",
+  "builtAt": "2026-10-20T09:20:49.446600+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "ebd03e8aca480eebb643a8ea6f8d7807fae80872",
-  "previousPublishedCommit": "34bbd7a4a7f31912f4d434012fbe519fe388a826",
+  "previousSourceCommit": "be3e4340e2f46706d6a7ad8d83545308ba591260",
+  "previousPublishedCommit": "97599ec6a59698165eda8db6f7e630127a6119ee",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of be3e4340e2f46706d6a7ad8d83545308ba591260",
+    "source": "detached clean checkout of 87a006dea81629649b6ab234b4291e0b3d05aa3b",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -24,12 +24,12 @@
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "premiumCoaches": "Panoramic, Luxury NG, Compartment, Priority and Imperial v3 with three packed LODs",
-    "formations": "Five single-locomotive premium presets with five coaches; dual-locomotive passenger cap remains four; runtime platform span guard retained",
-    "scenery": "Lower-detail imported scenery, station, terrain, road and people geometry with screen-size selection",
-    "rollingStock": "Simpler distant running gear retaining original moving rig anchors",
-    "track": "Simplified sweep rings and distant sleeper/fastener geometry",
-    "archives": "Commit local model authoring sources, intermediate exports, research and review artifacts",
+    "taksaka": "Dedicated K1, dining and generator SSNG cyan/orange livery variants, three LODs, no image textures",
+    "formations": "Existing Taksaka preset now one CC206 plus executive/executive/dining/executive/generator; retains runtime platform span guard",
+    "auto": "Passenger-only automatic scheduling, including demand-request filtering; no freight/work/hybrid formations or freight fallback",
+    "manual": "Freight collections, manual dispatch, world demand and already-running journeys remain available",
+    "references": "Original-photo K1 livery reconstruction; M/P paint-mask placement and opposite-side handedness remain approximations",
+    "archives": "Taksaka authoring sources, intermediate exports, research and packed-model render reviews",
     "verification": "Static source review, clean-commit TypeScript/Vite build and publication identity/bytes only; automated tests, browser gameplay and benchmarks not run"
   },
   "locomotiveFleet": {
@@ -671,6 +671,11 @@
       "path": "assets/AssetCatalogPage-Dhmz6I23.js",
       "bytes": 27457,
       "sha256": "1d6c5870a12ea6800b4840114e774273f2d5fd1f4c5abbddbd7bf5f6a665ec42"
+    },
+    {
+      "path": "assets/AssetCatalogPage-DlYSNyyB.js",
+      "bytes": 27446,
+      "sha256": "367c89d17c002951d0d7c2cbc9d3af13c851d6d47716a97fa57f49f783536a4d"
     },
     {
       "path": "assets/AssetCatalogPage-DmxbA904.js",
@@ -1423,6 +1428,11 @@
       "sha256": "acfde3bb6c4e2801c8df4ccf4fd7536cb0be05e4f88b651ab087776b06068e34"
     },
     {
+      "path": "assets/Cc206ReviewPage-CSlk4fnW.js",
+      "bytes": 12049,
+      "sha256": "102e2a7b8d168087b6dd2988d077637dbcf96323062f471ae11d49ee8e8bc0e8"
+    },
+    {
       "path": "assets/Cc206ReviewPage-CUXbmCJX.js",
       "bytes": 12022,
       "sha256": "f21408c6a4e8aae496822bd87cbcff35a2dff28310c43d98799e54ed5c3f8cb8"
@@ -2056,6 +2066,11 @@
       "path": "assets/ConsistsPage-CuernzGn.js",
       "bytes": 8443,
       "sha256": "0511f077ad03f736afbf5542b4e0f1df82836f867f9b4ab2da10c8ef04f27bd9"
+    },
+    {
+      "path": "assets/ConsistsPage-CwyI_uUM.js",
+      "bytes": 14577,
+      "sha256": "e367f37fda4ee96518cf1f53edfd1e929d2a243afa4bd9164b4f90a7f30fac15"
     },
     {
       "path": "assets/ConsistsPage-Cyq0RJt9.js",
@@ -2756,6 +2771,11 @@
       "path": "assets/DownloadSimple.es-DIV_k3Qs.js",
       "bytes": 2061,
       "sha256": "1944a7bfdbbc66c100d901e7f5688678a33e6b41b9b14cdf2f5d076f85a8f07f"
+    },
+    {
+      "path": "assets/DownloadSimple.es-DJfL_amW.js",
+      "bytes": 2100,
+      "sha256": "c7e293a024e7b03ae53f46ab8f2e14a7c98be7e9903f1dd728df79e27b723423"
     },
     {
       "path": "assets/DownloadSimple.es-DLoqM-mS.js",
@@ -3568,6 +3588,11 @@
       "sha256": "3846f46eaa60d41d0909fde38ddcb58988fbcaa8d5d0eeb8d4a58ed53ce75f1b"
     },
     {
+      "path": "assets/GaugeReviewPage-D-IUk1GD.js",
+      "bytes": 18304,
+      "sha256": "c9163d6ddeb693e8c9dc99802815d0c9de9f07f1bd7fd94bd21054fd70feaf9c"
+    },
+    {
       "path": "assets/GaugeReviewPage-D-qsYcnN.js",
       "bytes": 10825,
       "sha256": "873ac3ff60ae3da9b3ea4e872c6741732feb75c80368b4438705d82af1de262d"
@@ -4133,6 +4158,11 @@
       "sha256": "49c05164d7583a66cf8fdaca947036d3e14e9d45f3fd8cc9e014f42cd7d72c70"
     },
     {
+      "path": "assets/HudPreviewPanel-D3CgTk_R.js",
+      "bytes": 418,
+      "sha256": "29d57e8dad1e8cf6a87b77bc45522722b8c8def69c42c0b56c14e8f12dd6f28f"
+    },
+    {
       "path": "assets/HudPreviewPanel-D57rKROl.js",
       "bytes": 428,
       "sha256": "69eae4ded51089e0defbd61f4b8187a20188e5e2af5c691abbecab915c5553db"
@@ -4486,6 +4516,11 @@
       "path": "assets/IconBase.es-C7mjG6Ow.js",
       "bytes": 3740,
       "sha256": "bfd2ae0d2636aeb4f910d5b53cfe3f8ed859f514fa1709a3e3f920878fc747d7"
+    },
+    {
+      "path": "assets/IconBase.es-CCU_ghEp.js",
+      "bytes": 3729,
+      "sha256": "cebb45cbb011d9ba73eb70761c18b4e4f4fbb4cedad8a94b13243f3ad28c8539"
     },
     {
       "path": "assets/IconBase.es-CCfaMpco.js",
@@ -5138,6 +5173,11 @@
       "sha256": "0a994fadfcf8c3861994ca21e05fc48c4146d874325c7fb6737844dc8ec2fee7"
     },
     {
+      "path": "assets/ImportedCc206Page-DkTsNdUJ.js",
+      "bytes": 18446,
+      "sha256": "1150477076debd78bbf667f01600592898ce1d44c7234e1bad283431a873ea26"
+    },
+    {
       "path": "assets/ImportedCc206Page-DlO1w1Jz.js",
       "bytes": 18413,
       "sha256": "b637b974d5135268620e06c041f9d72ea854dbe9175262f5c796b4d74683acc0"
@@ -5708,6 +5748,11 @@
       "sha256": "76243e1368300974a6f21bf59e3ea42f09b302f7bc98430d47218c6a2a0129ad"
     },
     {
+      "path": "assets/coach-bodies-Bfg62STT.js",
+      "bytes": 1291,
+      "sha256": "cd566f35c541cf6c6d3288a8d45d58cf4d5d413271732bd10df9888f1ce1d20c"
+    },
+    {
       "path": "assets/coach-bodies-Dh9UW0hS.js",
       "bytes": 1014,
       "sha256": "5f734dae9dd997259177d0683ffc9854dafb65e12c95bf46e7d586812af7d432"
@@ -5856,6 +5901,11 @@
       "path": "assets/diorama-postprocessing-C5u8hF3V.js",
       "bytes": 42405,
       "sha256": "3cea86636edeffe216fdea62c872bce002363d9a6bd7225bbbe64a3e73ff62fb"
+    },
+    {
+      "path": "assets/diorama-postprocessing-C6ixs6K6.js",
+      "bytes": 42439,
+      "sha256": "6e0a5e7bdcdf884352986e8865174c75eb2be6928990e05e3b4764fb38a55c85"
     },
     {
       "path": "assets/diorama-postprocessing-C7krvrYn.js",
@@ -6231,6 +6281,11 @@
       "path": "assets/diorama-style-QxZQ8-Ta.js",
       "bytes": 5153,
       "sha256": "2e533be517e6dfe5461dda33d1bd3ccb6ca3eb211d04f52ee44ef844f0efa3e0"
+    },
+    {
+      "path": "assets/elite-coaches-D5omKRqY.js",
+      "bytes": 6055,
+      "sha256": "d65a22a5424910c66e1318dd60aa7158e394507f343b80526c8484ca0dd79097"
     },
     {
       "path": "assets/elite-coaches-DDU_4vsr.js",
@@ -6903,6 +6958,11 @@
       "sha256": "797bc44719c48deea3d586c9c0658f394953b3458cd5e25508ad52548f6bd0aa"
     },
     {
+      "path": "assets/index-WTcAwD-E.js",
+      "bytes": 1270446,
+      "sha256": "2f6769db17df26084573878c2c2d11228f941ee9799eefefc3b2e9aa85619bb2"
+    },
+    {
       "path": "assets/index-XmtPqJZm.js",
       "bytes": 611990,
       "sha256": "a21164637e7fe6a3ab79c9dac0987684512635df28f61f106a92bd69abed614e"
@@ -7128,6 +7188,11 @@
       "sha256": "ceabddf9b07bff4118b12516785ad72b7abcd7938bf2694a6237cd5c6f068323"
     },
     {
+      "path": "assets/nusantara-coaches-BWNPPzST.js",
+      "bytes": 7227,
+      "sha256": "31f4803bcf03ce1a0f0681044f65c16b27a00842136b6ec2d4af3408e9dd7421"
+    },
+    {
       "path": "assets/nusantara-coaches-BcUftWob.js",
       "bytes": 8095,
       "sha256": "8ca2478e649224fdc467a5307c2fe560865393a136a5b933ba5f862af3c2eb00"
@@ -7241,6 +7306,11 @@
       "path": "assets/sandbox-bounds-CN-GgZog.js",
       "bytes": 709449,
       "sha256": "fdc8c62d2f1821cd152f49d9a36d768d02788ee249b8dc9dbe12c85111b7a4aa"
+    },
+    {
+      "path": "assets/taksaka-ssng-FIAHiVFo.js",
+      "bytes": 15645,
+      "sha256": "56b98ea96b88a7ca2f54485021cfff1fff3b0c920cdaeebcca9bf828d7ea9e94"
     },
     {
       "path": "assets/terrain-XPngmypu.js",
@@ -7804,8 +7874,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3216,
-      "sha256": "a54f00e111de6dfdc71f268d417b2fc7965c54c7d6e6ded2722515554b179aae"
+      "bytes": 3329,
+      "sha256": "374045eb47acdaf85c0efdf26088d827003bd25c296fa4de5fa3c5b685947aa6"
     },
     {
       "path": "liveries/cc206/credits.txt",
@@ -8453,6 +8523,31 @@
       "sha256": "d0dada84b604366623dcafbef93da30acb455bd6cca1c205d9f57f749ce4bf48"
     },
     {
+      "path": "models/taksaka-ssng-credits.txt",
+      "bytes": 387,
+      "sha256": "0cf133affb6b078d5e6fc3ce025af6834da181f81928f8e0d53066950af373d5"
+    },
+    {
+      "path": "models/taksaka-ssng-game-report.json",
+      "bytes": 2719,
+      "sha256": "cd228a8190da3e1d621f8b7a237ec51403a5d074f4d7831791f10ea5ed4ed085"
+    },
+    {
+      "path": "models/taksaka-ssng-high-packed.glb",
+      "bytes": 519828,
+      "sha256": "3c146f98efd5a60a5460a39442b96a0934897e4d4516abd9c1295a67beed0603"
+    },
+    {
+      "path": "models/taksaka-ssng-low-packed.glb",
+      "bytes": 172508,
+      "sha256": "329e50792cece3ff4be238b1c86c4b0233e70d0141a5455f24746e4b2cb95929"
+    },
+    {
+      "path": "models/taksaka-ssng-medium-packed.glb",
+      "bytes": 380008,
+      "sha256": "cf58963b8ec0748f1a827f0719b1177ae5a7e4f1bddd321047df2466aa14cf12"
+    },
+    {
       "path": "models/tree-0-blue.glb",
       "bytes": 5255292,
       "sha256": "b7bb0245f103527d8880c77240bca8d2824e3e1a8ae6bd823611dd0c076572af"
@@ -8909,5 +9004,117 @@
     },
     "routeDisplay": "Luxury NG only: runtime name, two sides; no baked route lettering",
     "packedBytes": 1811880
+  },
+  "taksakaSsng": {
+    "revision": "taksaka-ssng-v1",
+    "levels": {
+      "high": {
+        "file": "taksaka-ssng-high-packed.glb",
+        "bytes": 519828,
+        "assets": {
+          "executive": {
+            "triangles": 17138,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          },
+          "dining": {
+            "triangles": 14614,
+            "primitives": 19,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2
+          },
+          "generator": {
+            "triangles": 21693,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          }
+        },
+        "materials": 3,
+        "uniqueTriangles": 34505,
+        "sha256": "3c146f98efd5a60a5460a39442b96a0934897e4d4516abd9c1295a67beed0603"
+      },
+      "medium": {
+        "file": "taksaka-ssng-medium-packed.glb",
+        "bytes": 380008,
+        "assets": {
+          "executive": {
+            "triangles": 11594,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          },
+          "dining": {
+            "triangles": 10198,
+            "primitives": 19,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2
+          },
+          "generator": {
+            "triangles": 14793,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          }
+        },
+        "materials": 3,
+        "uniqueTriangles": 23885,
+        "sha256": "cf58963b8ec0748f1a827f0719b1177ae5a7e4f1bddd321047df2466aa14cf12"
+      },
+      "low": {
+        "file": "taksaka-ssng-low-packed.glb",
+        "bytes": 172508,
+        "assets": {
+          "executive": {
+            "triangles": 3954,
+            "primitives": 23,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 4
+          },
+          "dining": {
+            "triangles": 3458,
+            "primitives": 19,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 2
+          },
+          "generator": {
+            "triangles": 4794,
+            "primitives": 15,
+            "wheels": 8,
+            "bogies": 2,
+            "couplers": 2,
+            "doors": 0
+          }
+        },
+        "materials": 3,
+        "uniqueTriangles": 8734,
+        "sha256": "329e50792cece3ff4be238b1c86c4b0233e70d0141a5455f24746e4b2cb95929"
+      }
+    },
+    "textures": 0,
+    "activeGameReplacement": true,
+    "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+    "liveryId": "ssng-taksaka-geometric-v1",
+    "reference": "K1 0 23 25, original REDigest observer photo, December 2023",
+    "inferred": "M/P mask placements and exact paint HEX; opposite-side unit labeling adapted from canonical K1 25",
+    "routeDisplay": "runtime LED name, two sides; static TAKSAKA heritage plaque in lower orange dome",
+    "packedBytes": 1072344
   }
 }

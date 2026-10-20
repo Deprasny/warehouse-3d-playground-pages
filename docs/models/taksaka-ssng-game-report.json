@@ -1,0 +1,108 @@
+{
+  "revision": "taksaka-ssng-v1",
+  "levels": {
+    "high": {
+      "file": "taksaka-ssng-high-packed.glb",
+      "bytes": 519828,
+      "assets": {
+        "executive": {
+          "triangles": 17138,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        },
+        "dining": {
+          "triangles": 14614,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator": {
+          "triangles": 21693,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3,
+      "uniqueTriangles": 34505
+    },
+    "medium": {
+      "file": "taksaka-ssng-medium-packed.glb",
+      "bytes": 380008,
+      "assets": {
+        "executive": {
+          "triangles": 11594,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        },
+        "dining": {
+          "triangles": 10198,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator": {
+          "triangles": 14793,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3,
+      "uniqueTriangles": 23885
+    },
+    "low": {
+      "file": "taksaka-ssng-low-packed.glb",
+      "bytes": 172508,
+      "assets": {
+        "executive": {
+          "triangles": 3954,
+          "primitives": 23,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 4
+        },
+        "dining": {
+          "triangles": 3458,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator": {
+          "triangles": 4794,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        }
+      },
+      "materials": 3,
+      "uniqueTriangles": 8734
+    }
+  },
+  "textures": 0,
+  "activeGameReplacement": true,
+  "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
+  "liveryId": "ssng-taksaka-geometric-v1",
+  "reference": "K1 0 23 25, original REDigest observer photo, December 2023",
+  "inferred": "M/P mask placements and exact paint HEX; opposite-side unit labeling adapted from canonical K1 25",
+  "routeDisplay": "runtime LED name, two sides; static TAKSAKA heritage plaque in lower orange dome"
+}

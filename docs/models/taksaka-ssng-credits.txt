@@ -1,0 +1,4 @@
+Original procedural SSNG meshes; original Taksaka vertex-color geometry.
+Photographic research: Zacky Fahrid / REDigest, 17 Dec 2023, K1 0 23 25; Commuters News, Jan 2024, K1 0 23 35. Photos are references only, never model textures.
+M/P equipment geometry uses existing original SSNG platform; exact Taksaka mask placement is inferred.
+No Luxury NG gold repaint. No gameplay tests run.
