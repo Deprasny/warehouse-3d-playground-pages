@@ -3,10 +3,10 @@
   "levels": {
     "high": {
       "file": "ssng-support-high-packed.glb",
-      "bytes": 350176,
+      "bytes": 645580,
       "assets": {
         "dining": {
-          "triangles": 12686,
+          "triangles": 14418,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
@@ -14,7 +14,23 @@
           "doors": 2
         },
         "generator": {
-          "triangles": 19156,
+          "triangles": 20756,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "dining-blue": {
+          "triangles": 13857,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator-blue": {
+          "triangles": 20110,
           "primitives": 15,
           "wheels": 8,
           "bogies": 2,
@@ -22,14 +38,15 @@
           "doors": 0
         }
       },
-      "materials": 3
+      "materials": 3,
+      "uniqueTriangles": 41669
     },
     "medium": {
       "file": "ssng-support-medium-packed.glb",
-      "bytes": 265180,
+      "bytes": 474628,
       "assets": {
         "dining": {
-          "triangles": 9254,
+          "triangles": 9914,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
@@ -37,7 +54,23 @@
           "doors": 2
         },
         "generator": {
-          "triangles": 13506,
+          "triangles": 14098,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
+        },
+        "dining-blue": {
+          "triangles": 9545,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator-blue": {
+          "triangles": 13702,
           "primitives": 15,
           "wheels": 8,
           "bogies": 2,
@@ -45,14 +78,15 @@
           "doors": 0
         }
       },
-      "materials": 3
+      "materials": 3,
+      "uniqueTriangles": 28899
     },
     "low": {
       "file": "ssng-support-low-packed.glb",
-      "bytes": 120204,
+      "bytes": 207596,
       "assets": {
         "dining": {
-          "triangles": 3128,
+          "triangles": 3132,
           "primitives": 19,
           "wheels": 8,
           "bogies": 2,
@@ -66,14 +100,34 @@
           "bogies": 2,
           "couplers": 2,
           "doors": 0
+        },
+        "dining-blue": {
+          "triangles": 2891,
+          "primitives": 19,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 2
+        },
+        "generator-blue": {
+          "triangles": 4066,
+          "primitives": 15,
+          "wheels": 8,
+          "bogies": 2,
+          "couplers": 2,
+          "doors": 0
         }
       },
-      "materials": 3
+      "materials": 3,
+      "uniqueTriangles": 9829
     }
   },
   "textures": 0,
-  "activeGameReplacement": false,
+  "activeGameReplacement": true,
   "processing": "Hand-authored LODs; parent/material batches; Meshopt FILTER; no decimation; original procedural exterior.",
-  "liveryId": "ssng-orange-ribbon-v1",
+  "liveryIds": {
+    "orange": "ssng-orange-ribbon-v1",
+    "blue": "ssng-economy-blue-v1"
+  },
   "routeDisplay": "runtime name, two sides; no baked route lettering"
 }

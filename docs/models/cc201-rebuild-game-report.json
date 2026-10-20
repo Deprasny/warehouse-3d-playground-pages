@@ -4,46 +4,27 @@
   "levels": {
     "high": {
       "file": "cc201-rebuild-high-packed.glb",
-      "bytes": 531352,
-      "triangles": 29896,
-      "uniqueGeometryTriangles": 29896,
+      "bytes": 544380,
+      "triangles": 30488,
+      "uniqueGeometryTriangles": 30488,
       "primitives": 35,
       "materials": 5
     },
     "medium": {
       "file": "cc201-rebuild-medium-packed.glb",
-      "bytes": 375108,
-      "triangles": 20412,
-      "uniqueGeometryTriangles": 20060,
+      "bytes": 386228,
+      "triangles": 20932,
+      "uniqueGeometryTriangles": 20580,
       "primitives": 35,
       "materials": 5
     },
     "low": {
       "file": "cc201-rebuild-low-packed.glb",
-      "bytes": 184816,
-      "triangles": 9044,
-      "uniqueGeometryTriangles": 8860,
+      "bytes": 189864,
+      "triangles": 9308,
+      "uniqueGeometryTriangles": 9124,
       "primitives": 35,
       "materials": 5
     }
-  },
-  "runningGearContract": "cc206-standard-20261020",
-  "bogieDensityRevision": "cc206-standard-20261020",
-  "runningGearRaw": {
-    "bogieHalf": 4.3,
-    "wheelRadius": 0.46,
-    "gaugeHalf": 0.5609805035017982,
-    "wheelStations": [
-      -5.749341,
-      -4.241306,
-      -2.397106,
-      2.397106,
-      4.241306,
-      5.749341
-    ]
-  },
-  "wheelRotationCues": "three-hex-heads-v1",
-  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop",
-  "cabWipers": "runtime-instanced-rain-wipers-v1",
-  "cabWiperNotes": "Baked static wipers removed; runtime uses one shared instanced draw, rain driven and paused with simulation time"
+  }
 }

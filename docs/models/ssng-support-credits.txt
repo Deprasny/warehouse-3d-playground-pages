@@ -35,3 +35,12 @@ to match this shared game default. Service-specific motif selection is not in th
 Reverse-side M details and P003 roof details are family-level reconstruction using other serials.
 No claim of factory-drawing accuracy. See docs/ssng-support-game.md and
 outputs/ssng-support/reference_manifest.json for source roles and limitations.
+
+User addition, 20 October 2026: M and P also have ssng-economy-blue-v1 skins,
+derived from the blue K3 family cues in INKA's official product photograph:
+https://www.inka.co.id/produk/kereta-kelas-ekonomi-stainless-steel-new-generation
+This optional game-family skin is not a claim that the photographed M009/P003
+units wore this exact motif. Economy-only SSNG formations select blue M/P;
+executive/mixed formations retain orange M/P. No source image is embedded.
+Shared shape, three LODs and rigid running gear are retained. See
+docs/ssng-support-liveries.md for asset budgets and verification limits.

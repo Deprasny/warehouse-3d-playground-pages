@@ -4,47 +4,27 @@
   "levels": {
     "high": {
       "file": "cc203-rebuild-high-packed.glb",
-      "bytes": 656116,
-      "triangles": 36280,
-      "uniqueGeometryTriangles": 36280,
+      "bytes": 668528,
+      "triangles": 36856,
+      "uniqueGeometryTriangles": 36856,
       "primitives": 35,
       "materials": 3
     },
     "medium": {
       "file": "cc203-rebuild-medium-packed.glb",
-      "bytes": 450872,
-      "triangles": 23680,
-      "uniqueGeometryTriangles": 23680,
+      "bytes": 461660,
+      "triangles": 24192,
+      "uniqueGeometryTriangles": 24192,
       "primitives": 35,
       "materials": 3
     },
     "low": {
       "file": "cc203-rebuild-low-packed.glb",
-      "bytes": 219064,
-      "triangles": 10028,
-      "uniqueGeometryTriangles": 10028,
+      "bytes": 224084,
+      "triangles": 10292,
+      "uniqueGeometryTriangles": 10292,
       "primitives": 35,
       "materials": 3
     }
-  },
-  "runningGearContract": "cc206-standard-20261020",
-  "bogieDensityRevision": "cc206-standard-20261020",
-  "runningGearRaw": {
-    "bogieHalf": 4.3,
-    "wheelRadius": 0.46,
-    "gaugeHalf": 0.5609805035017982,
-    "wheelStations": [
-      -5.749341,
-      -4.241306,
-      -2.397106,
-      2.397106,
-      4.241306,
-      5.749341
-    ]
-  },
-  "bodyRevision": "CC201 hood cross-section; cabin roof level with hood; glazing and optical groups moved rigidly",
-  "wheelRotationCues": "three-hex-heads-v1",
-  "wheelRotationCueNotes": "Three flat hex heads on each wheel pivot; 144 additional triangles per LOD; existing vertex colors/materials; no new animation loop",
-  "cabWipers": "runtime-instanced-rain-wipers-v1",
-  "cabWiperNotes": "Baked static wipers removed; runtime uses one shared instanced draw, rain driven and paused with simulation time"
+  }
 }
