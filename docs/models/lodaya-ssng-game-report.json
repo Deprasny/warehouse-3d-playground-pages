@@ -1,9 +1,10 @@
 {
   "revision": "lodaya-ssng-v1",
+  "shapeRevision": "ssng-camber-v3",
   "levels": {
     "high": {
       "file": "lodaya-ssng-high-packed.glb",
-      "bytes": 358724,
+      "bytes": 358568,
       "assets": {
         "executive": {
           "triangles": 17134,
@@ -26,7 +27,7 @@
     },
     "medium": {
       "file": "lodaya-ssng-medium-packed.glb",
-      "bytes": 253680,
+      "bytes": 253752,
       "assets": {
         "executive": {
           "triangles": 11198,
@@ -49,10 +50,10 @@
     },
     "low": {
       "file": "lodaya-ssng-low-packed.glb",
-      "bytes": 114576,
+      "bytes": 115192,
       "assets": {
         "executive": {
-          "triangles": 3648,
+          "triangles": 3652,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,
@@ -60,7 +61,7 @@
           "doors": 4
         },
         "economy": {
-          "triangles": 3492,
+          "triangles": 3496,
           "primitives": 23,
           "wheels": 8,
           "bogies": 2,

@@ -1,36 +1,36 @@
 {
-  "release": "door-lod-fix-6dff83c",
-  "sourceCommit": "6dff83c48e376e206c2c318de4c544e1f111f37a",
-  "sourceFingerprint": "64939d8983284385f7c57fbbd5b83cc4a9d8a060",
+  "release": "ssng-camber-221a040",
+  "sourceCommit": "221a040f31867c342c1a9edbff60318c14153019",
+  "sourceFingerprint": "93685b0d29c2899a738fe113022fad6e592de933",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T14:22:02.444036+00:00",
+  "builtAt": "2026-10-20T15:43:12.835879+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "4e7147966a6c64e7aa6ceba2bece283ecaf390b0",
-  "previousPublishedCommit": "9926591d9ca7d2a7a20855bb6167575b60c5ecb4",
+  "previousSourceCommit": "6dff83c48e376e206c2c318de4c544e1f111f37a",
+  "previousPublishedCommit": "ee31ed9f8b89242acbea9809a90c845d2102375d",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 6dff83c48e376e206c2c318de4c544e1f111f37a",
+    "source": "detached clean checkout of 221a040f31867c342c1a9edbff60318c14153019",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "No automated or gameplay tests run for this release. User chose manual verification. Authored door render reviews and asset build reports are documented in docs/station-door-motion.md"
+    "scope": "No automated or gameplay tests run for this release. SSNG authoring geometry measurements and render comparisons are documented in docs/ssng-proportion-correction.md"
   },
   "browserChecks": {
     "status": "not-run",
     "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "doorLodFix": "Door anchors require rig_role=door; shared glTF primitive surface names no longer become duplicate animation pivots during medium/low LOD attachment",
-    "depotCamera": "Active depot shunting takes Auto camera priority; completed parking hands off to another active train or overview, including a previously followed selection during Auto",
-    "depotPace": "Depot-specific 40 km/j travel limit with matching acceleration and braking; final coupling approach remains about 2.6 km/j; route ownership and stop boundaries retained",
-    "stationDoors": "Sliding and inward-hinged station-side leaves across SSNG, Taksaka, Elite, Nusantara and procedural advertising coaches, including M/P service doors without public boarding",
-    "doorAssets": "Rebuilt high/medium/low geometry with real apertures and rigid leaf pivots; original liveries and shared Nusantara atlas retained",
-    "locomotiveFacing": "Each non-CC206 locomotive independently chooses body facing, including double locomotives; headlight and wiper mounts follow that facing",
-    "verification": "Clean-commit TypeScript/Vite build and publication identity/bytes. Representative authored open/closed door renders inspected. No automated tests, browser/gameplay checks or FPS benchmarks for publication"
+    "ssngShape": "Rounded roof shoulders and 3.62m photo-inferred bare crown; K1/K3 retain 20m body, 2.99m main body width, 14m bogie centres and 3.815m target including AC",
+    "ssngFamilies": "K1/K3, orange/blue M/P and Taksaka K1/M/P rebuilt across high, medium and low; original liveries retained",
+    "roofEquipment": "AC supports and service/equipment panels seated on revised roof; existing family roof-equipment height limits retained",
+    "lowPoly": "11 roof section points high/medium, 7 low; K1/K3 high/medium triangle counts unchanged, low adds 4 triangles per coach",
+    "assetLoading": "Nine packed GLBs with shape metadata consistency across LODs and refreshed family cache URLs; existing door pivot guard retained",
+    "calibration": "Shared game wheel/coupler calibration unchanged; known physical deviations documented; no 1:1 production drawing claim",
+    "verification": "Clean-commit TypeScript/Vite build and publication identity/bytes. Authoring measurements for 27 asset/LOD combinations and before/after render review. No automated tests, browser/gameplay checks or FPS benchmarks for publication"
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -858,6 +858,11 @@
       "sha256": "67d13c8eae5301486f434bc4fbd7b36ea5821314217bb57d78eded1abe0ee213"
     },
     {
+      "path": "assets/AssetCatalogPage-nRI_0AYt.js",
+      "bytes": 27446,
+      "sha256": "dc110b26a3177104559b1ca168465d5f11dbee14c3116b2afb44019fa9de52ca"
+    },
+    {
       "path": "assets/AssetCatalogPage-qcyiq1Ix.js",
       "bytes": 24446,
       "sha256": "7c9bedce13c0143ac14885829054d985af3b92b2175194e62b2feb91aa065da8"
@@ -1376,6 +1381,11 @@
       "path": "assets/Cc206ReviewPage-BvBjZJB1.js",
       "bytes": 11982,
       "sha256": "17f2788ce1ec6738d1c89936988d38eccda7fbf8b9d4368bd17835a57364e805"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BvMH9Xpx.js",
+      "bytes": 12049,
+      "sha256": "fa62fb91451b8c77a0a072dd133a22bae85b95c90a1ee3b59e695ae84882aa8d"
     },
     {
       "path": "assets/Cc206ReviewPage-ByK_-ncN.js",
@@ -2026,6 +2036,11 @@
       "path": "assets/ConsistsPage-CAJJy3wB.js",
       "bytes": 8470,
       "sha256": "98d1fa3b402d5a1570746910e4a378dcfcda51d4a5cc44b6a760146d301595e5"
+    },
+    {
+      "path": "assets/ConsistsPage-CCSsinJA.js",
+      "bytes": 14577,
+      "sha256": "ea50d131ac7e99186520b2e94d67561a5df10282dbc014a644d94996afbedfd3"
     },
     {
       "path": "assets/ConsistsPage-CEUNq4U8.js",
@@ -2848,6 +2863,11 @@
       "sha256": "0191b13659f2e37e52f8223d7699348552457fcbc0b4200cd57cf9abefed31a2"
     },
     {
+      "path": "assets/DownloadSimple.es-DMrKfk0G.js",
+      "bytes": 2100,
+      "sha256": "59cad4446da343e19740a4c7fd758de41049226221653a45f52f6f368a6a81cc"
+    },
+    {
       "path": "assets/DownloadSimple.es-DN4NblP4.js",
       "bytes": 2099,
       "sha256": "7457f48124f91ce1b1ef1f3e60d72af5313d30e5aef879b3ae87f87542546437"
@@ -3441,6 +3461,11 @@
       "path": "assets/GaugeReviewPage-BmUrV4OX.js",
       "bytes": 10815,
       "sha256": "45fd5883086e69163d022bec829161b226c70fe543df2bf8dd63d83c60ade2c0"
+    },
+    {
+      "path": "assets/GaugeReviewPage-BnZuycKf.js",
+      "bytes": 18304,
+      "sha256": "4e30877c734fdd1a2023909cefacf142b037162f1922fabd81a870c7663760a1"
     },
     {
       "path": "assets/GaugeReviewPage-BoFZ4HVm.js",
@@ -4148,6 +4173,11 @@
       "sha256": "91523d5fa2cd4866e25ba57f13e894a5e0a0a3a4b1d936951f2a03a90feb7ad9"
     },
     {
+      "path": "assets/HudPreviewPanel-CS0B47sq.js",
+      "bytes": 418,
+      "sha256": "f86e9108bde1ea56c915a6946f79e195ad8e2c3691a86b5d7da45d3d14371172"
+    },
+    {
       "path": "assets/HudPreviewPanel-CS7GHF1t.js",
       "bytes": 418,
       "sha256": "50c44c4ddde67dc6dd900841abfe0670b9d285346299de4a9998905ac8fb4a42"
@@ -4651,6 +4681,11 @@
       "path": "assets/IconBase.es-CPv4CU1D.js",
       "bytes": 3729,
       "sha256": "e25a6f79b04b71c8684f74ffab08eb4cc3613445695602407fb41401e2635089"
+    },
+    {
+      "path": "assets/IconBase.es-CR-thp3F.js",
+      "bytes": 3729,
+      "sha256": "230a541ae3f6d0c877a45416d51d99eca4d29e5cfa6cfaa3f18ab4defc391db0"
     },
     {
       "path": "assets/IconBase.es-CZ67plD6.js",
@@ -5438,6 +5473,11 @@
       "sha256": "ddf74c7a89942e16c520ad06138c659fb2650cc0de8a293d327cc5cea3524e6d"
     },
     {
+      "path": "assets/ImportedCc206Page-uLpoxUXt.js",
+      "bytes": 18446,
+      "sha256": "59073a819d0fd1b1099254aa68db5a8c7e9e80bf45c57e96bdd800b9405399d7"
+    },
+    {
       "path": "assets/ImportedCc206Page-wWZH7GT7.js",
       "bytes": 18446,
       "sha256": "d7633734c0338c889982ce602dd3fd662c98905342d2f098db6f33256cf636a9"
@@ -5978,6 +6018,11 @@
       "sha256": "dc9425353607d4a5033d0be205d214d5d8c30cbd13784ed0f982cd2ac6c6c9ef"
     },
     {
+      "path": "assets/coach-bodies-De82OcxW.js",
+      "bytes": 9177,
+      "sha256": "0b04e208df2cbf9a10df5415e10563aa0053715e2a289ece91ac944902214deb"
+    },
+    {
       "path": "assets/coach-bodies-Dh9UW0hS.js",
       "bytes": 1014,
       "sha256": "5f734dae9dd997259177d0683ffc9854dafb65e12c95bf46e7d586812af7d432"
@@ -6273,6 +6318,11 @@
       "sha256": "3da83a0aff69397b4977d2b4a5a28a94f7e1cb83c0519407f26bfed8c4a9d4bc"
     },
     {
+      "path": "assets/diorama-postprocessing-DLub35rl.js",
+      "bytes": 42434,
+      "sha256": "6c6d529a2a16e1c77cf649188e4be99d88af4d86b31f631dd628ef225ad3f3c7"
+    },
+    {
       "path": "assets/diorama-postprocessing-DNrAnXq_.js",
       "bytes": 42434,
       "sha256": "bac96768df781b3b6c3967a5e3b9a791e8c57a6efbd95e1b89767788bf467c76"
@@ -6551,6 +6601,11 @@
       "path": "assets/elite-coaches-DDU_4vsr.js",
       "bytes": 6055,
       "sha256": "2aa85bb91c65da0351e3c8c303ea1b1f720526702bbfc075f7262bc44878bd64"
+    },
+    {
+      "path": "assets/elite-coaches-DVsjrR60.js",
+      "bytes": 7164,
+      "sha256": "92567de44658fe4d02b234e9e919f2b25994ae955f8a99e9fe9ae828ded8ff6f"
     },
     {
       "path": "assets/gauge-profile-BRPoYBvz.js",
@@ -6956,6 +7011,11 @@
       "path": "assets/index-CWXGGavj.js",
       "bytes": 752604,
       "sha256": "de27a5c272227c66da226f66f8725a25bf97aadd52f014a744389da3ac09b2fa"
+    },
+    {
+      "path": "assets/index-CXxZhHMs.js",
+      "bytes": 1237761,
+      "sha256": "82e9744d582c12e55ee38b7c4a8ae59bae662dd4a23aca52f079033510f7b959"
     },
     {
       "path": "assets/index-ChjVvGIm.css",
@@ -7513,6 +7573,11 @@
       "sha256": "8ca2478e649224fdc467a5307c2fe560865393a136a5b933ba5f862af3c2eb00"
     },
     {
+      "path": "assets/nusantara-coaches-BiVR1Mi-.js",
+      "bytes": 8028,
+      "sha256": "81bc93dd48d62a55658e9714ced154b947581c5263510b4cdb9eb802d65fb3b9"
+    },
+    {
       "path": "assets/nusantara-coaches-Bw3kiaPK.js",
       "bytes": 7782,
       "sha256": "3a8676348203b08a6d0697fcf3569d8f9f205aa32ca0f3fba047f3d16f52ea69"
@@ -7651,6 +7716,11 @@
       "path": "assets/taksaka-ssng-BWrGE193.js",
       "bytes": 9778,
       "sha256": "c56b1faae89352e5327efcf633838f9906a0f5384330f7b5a2935cc6ace76e77"
+    },
+    {
+      "path": "assets/taksaka-ssng-B_QXk6KI.js",
+      "bytes": 16727,
+      "sha256": "fcc8134ded6f60d00fefb1e095ce517eb688f26bf2288288416de65ebde485a3"
     },
     {
       "path": "assets/taksaka-ssng-DZiPoHqw.js",
@@ -8235,7 +8305,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "a33e995fd165b1438958ee7eef13d84488bad874c677398be6e3199fde34bccb"
+      "sha256": "1a3d3b2d669fc1d6900896afc9b924fc0ecc49b1a0e5f7a4a80f290d7b985dcc"
     },
     {
       "path": "liveries/cc206/credits.txt",
@@ -8574,23 +8644,23 @@
     },
     {
       "path": "models/lodaya-ssng-game-report.json",
-      "bytes": 1907,
-      "sha256": "de8eae591977cde6f45e07effb0d774d0613337e978dd276d6f53c2744a69bb3"
+      "bytes": 1944,
+      "sha256": "a13a1b2f651e2c488fa52f473d99485d8cae2612948920e2fd92b7616bbdcd17"
     },
     {
       "path": "models/lodaya-ssng-high-packed.glb",
-      "bytes": 358724,
-      "sha256": "20d82483f3996b7963e6f3a741686948172ecc5a7db1e5a6e70b778aec22ea80"
+      "bytes": 358568,
+      "sha256": "442ea14d4a4798a872ecc020b52926d3e80a3d37a44641c448aa04009b48444c"
     },
     {
       "path": "models/lodaya-ssng-low-packed.glb",
-      "bytes": 114576,
-      "sha256": "b6b0a18d33133b1dd6a1d0999d1e1d90cb0cae3ae6efb824a12bce086b845bd3"
+      "bytes": 115192,
+      "sha256": "ca218ed5cb1dfb11ef20dcdfcd97a96bf6b5ed9c9a23d769924fd1d95bd62c06"
     },
     {
       "path": "models/lodaya-ssng-medium-packed.glb",
-      "bytes": 253680,
-      "sha256": "4f5d0b884220dad62df152c67e7f129d65875279910bb80f9e2c3a04e43a8b06"
+      "bytes": 253752,
+      "sha256": "02832e8230c7317153412f19e9f1368d29833e549fc2e0a82be7dfd9f332b109"
     },
     {
       "path": "models/nusantara-explorer-credits.txt",
@@ -8844,23 +8914,23 @@
     },
     {
       "path": "models/ssng-support-game-report.json",
-      "bytes": 3818,
-      "sha256": "34e81abe387283ae3653b9200d63b020da5fc817d81d93b7cddd01379760c70d"
+      "bytes": 3855,
+      "sha256": "f09ef189b19f26b6aa72e1b7c4ae9b1b194627d2fe955b3c768ad8d17aa680b9"
     },
     {
       "path": "models/ssng-support-high-packed.glb",
-      "bytes": 680184,
-      "sha256": "d2a02622874236960b2cac391ca146840b0b29b8dfaf25432b29bafdee0c82f8"
+      "bytes": 682556,
+      "sha256": "039c7af4d58b3a8e323e85c22b31ad71dd5548243df213262f00bd2bd992315d"
     },
     {
       "path": "models/ssng-support-low-packed.glb",
-      "bytes": 240860,
-      "sha256": "7ecd0451995df66f684c362d9edebfccc1556180af798c52ede59e36039d3e4d"
+      "bytes": 241872,
+      "sha256": "728ccbfcf38555781bf23380da738ca7172aa565d1e0a614e6c52bc7998638bf"
     },
     {
       "path": "models/ssng-support-medium-packed.glb",
-      "bytes": 508632,
-      "sha256": "11df22d8f2d0ca55021247c6e226ac16948894cd5dee2d5ef2589cfa4c5ca279"
+      "bytes": 511988,
+      "sha256": "3a4968d791eabb6df3c8a5501b8b3a6299d596ec2e087d2fc944271ceceb0c67"
     },
     {
       "path": "models/station-selatan-low.glb",
@@ -8889,23 +8959,23 @@
     },
     {
       "path": "models/taksaka-ssng-game-report.json",
-      "bytes": 3246,
-      "sha256": "91104605a4390170e65a6bc374eaa4ab5c42986b2d7b93658e838c3ee7256956"
+      "bytes": 3283,
+      "sha256": "af76a7bb559d39243c5f22973f5eb1bc158bc8085b6b490d0b740f6e1bedb5cf"
     },
     {
       "path": "models/taksaka-ssng-high-packed.glb",
-      "bytes": 539980,
-      "sha256": "c19329df3eac808748f7dc231635642426dff779a94d388a13e4ab58037ef6f3"
+      "bytes": 541188,
+      "sha256": "b95ef9050b3092379f027fab5bc161eec05b4b5810966067098326e121cc1a22"
     },
     {
       "path": "models/taksaka-ssng-low-packed.glb",
-      "bytes": 191236,
-      "sha256": "57f244db59f46260a5b7c2612c63348c61731b90ecbf8b6ba52ca657ea39b07f"
+      "bytes": 191808,
+      "sha256": "13c220e0d80e2cdca51ac605d3bce1aa0cbda1d78d3c96e04efe9a8cbb7e31fd"
     },
     {
       "path": "models/taksaka-ssng-medium-packed.glb",
-      "bytes": 399764,
-      "sha256": "cedcc7cba88b203b0f9057fb236ea1e62dc5cf2b74ad732febc993c88ec69848"
+      "bytes": 401616,
+      "sha256": "1f2b5abe39841cd12fd01e4cf9eb6e30fa5ce2da55fd1094311ad352a98e648c"
     },
     {
       "path": "models/tree-0-blue.glb",
@@ -8980,10 +9050,11 @@
   ],
   "ssng": {
     "revision": "lodaya-ssng-v1",
+    "shapeRevision": "ssng-camber-v3",
     "levels": {
       "high": {
         "file": "lodaya-ssng-high-packed.glb",
-        "bytes": 358724,
+        "bytes": 358568,
         "assets": {
           "executive": {
             "triangles": 17134,
@@ -9003,11 +9074,11 @@
           }
         },
         "materials": 3,
-        "sha256": "20d82483f3996b7963e6f3a741686948172ecc5a7db1e5a6e70b778aec22ea80"
+        "sha256": "442ea14d4a4798a872ecc020b52926d3e80a3d37a44641c448aa04009b48444c"
       },
       "medium": {
         "file": "lodaya-ssng-medium-packed.glb",
-        "bytes": 253680,
+        "bytes": 253752,
         "assets": {
           "executive": {
             "triangles": 11198,
@@ -9027,14 +9098,14 @@
           }
         },
         "materials": 3,
-        "sha256": "4f5d0b884220dad62df152c67e7f129d65875279910bb80f9e2c3a04e43a8b06"
+        "sha256": "02832e8230c7317153412f19e9f1368d29833e549fc2e0a82be7dfd9f332b109"
       },
       "low": {
         "file": "lodaya-ssng-low-packed.glb",
-        "bytes": 114576,
+        "bytes": 115192,
         "assets": {
           "executive": {
-            "triangles": 3648,
+            "triangles": 3652,
             "primitives": 23,
             "wheels": 8,
             "bogies": 2,
@@ -9042,7 +9113,7 @@
             "doors": 4
           },
           "economy": {
-            "triangles": 3492,
+            "triangles": 3496,
             "primitives": 23,
             "wheels": 8,
             "bogies": 2,
@@ -9051,7 +9122,7 @@
           }
         },
         "materials": 3,
-        "sha256": "b6b0a18d33133b1dd6a1d0999d1e1d90cb0cae3ae6efb824a12bce086b845bd3"
+        "sha256": "ca218ed5cb1dfb11ef20dcdfcd97a96bf6b5ed9c9a23d769924fd1d95bd62c06"
       }
     },
     "textures": 0,
@@ -9062,17 +9133,18 @@
       "economy": "ssng-economy-blue-v1"
     },
     "routeDisplay": "runtime name, two sides; no baked route lettering",
-    "packedBytes": 726980
+    "packedBytes": 727512
   },
   "ssngSupport": {
     "revision": "ssng-support-v2-station-doors",
+    "shapeRevision": "ssng-camber-v3",
     "levels": {
       "high": {
         "file": "ssng-support-high-packed.glb",
-        "bytes": 680184,
+        "bytes": 682556,
         "assets": {
           "dining": {
-            "triangles": 14508,
+            "triangles": 14556,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9082,7 +9154,7 @@
             "hingedDoors": 1
           },
           "generator": {
-            "triangles": 20936,
+            "triangles": 20984,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9092,7 +9164,7 @@
             "hingedDoors": 2
           },
           "dining-blue": {
-            "triangles": 13947,
+            "triangles": 13995,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9102,7 +9174,7 @@
             "hingedDoors": 1
           },
           "generator-blue": {
-            "triangles": 20290,
+            "triangles": 20338,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9113,15 +9185,15 @@
           }
         },
         "materials": 3,
-        "uniqueTriangles": 42209,
-        "sha256": "d2a02622874236960b2cac391ca146840b0b29b8dfaf25432b29bafdee0c82f8"
+        "uniqueTriangles": 42401,
+        "sha256": "039c7af4d58b3a8e323e85c22b31ad71dd5548243df213262f00bd2bd992315d"
       },
       "medium": {
         "file": "ssng-support-medium-packed.glb",
-        "bytes": 508632,
+        "bytes": 511988,
         "assets": {
           "dining": {
-            "triangles": 10004,
+            "triangles": 10052,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9131,7 +9203,7 @@
             "hingedDoors": 1
           },
           "generator": {
-            "triangles": 14278,
+            "triangles": 14326,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9141,7 +9213,7 @@
             "hingedDoors": 2
           },
           "dining-blue": {
-            "triangles": 9635,
+            "triangles": 9683,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9151,7 +9223,7 @@
             "hingedDoors": 1
           },
           "generator-blue": {
-            "triangles": 13882,
+            "triangles": 13930,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9162,15 +9234,15 @@
           }
         },
         "materials": 3,
-        "uniqueTriangles": 29439,
-        "sha256": "11df22d8f2d0ca55021247c6e226ac16948894cd5dee2d5ef2589cfa4c5ca279"
+        "uniqueTriangles": 29631,
+        "sha256": "3a4968d791eabb6df3c8a5501b8b3a6299d596ec2e087d2fc944271ceceb0c67"
       },
       "low": {
         "file": "ssng-support-low-packed.glb",
-        "bytes": 240860,
+        "bytes": 241872,
         "assets": {
           "dining": {
-            "triangles": 3222,
+            "triangles": 3226,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9180,7 +9252,7 @@
             "hingedDoors": 1
           },
           "generator": {
-            "triangles": 4496,
+            "triangles": 4500,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9190,7 +9262,7 @@
             "hingedDoors": 2
           },
           "dining-blue": {
-            "triangles": 2981,
+            "triangles": 2985,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9200,7 +9272,7 @@
             "hingedDoors": 1
           },
           "generator-blue": {
-            "triangles": 4246,
+            "triangles": 4250,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9211,8 +9283,8 @@
           }
         },
         "materials": 3,
-        "uniqueTriangles": 10369,
-        "sha256": "7ecd0451995df66f684c362d9edebfccc1556180af798c52ede59e36039d3e4d"
+        "uniqueTriangles": 10385,
+        "sha256": "728ccbfcf38555781bf23380da738ca7172aa565d1e0a614e6c52bc7998638bf"
       }
     },
     "textures": 0,
@@ -9223,7 +9295,7 @@
       "blue": "ssng-economy-blue-v1"
     },
     "routeDisplay": "runtime name, two sides; no baked route lettering",
-    "packedBytes": 1429676
+    "packedBytes": 1436416
   },
   "eliteCoaches": {
     "revision": "elite-coaches-v3",
@@ -9436,10 +9508,11 @@
   },
   "taksakaSsng": {
     "revision": "taksaka-ssng-v2-station-doors",
+    "shapeRevision": "ssng-camber-v3",
     "levels": {
       "high": {
         "file": "taksaka-ssng-high-packed.glb",
-        "bytes": 539980,
+        "bytes": 541188,
         "assets": {
           "executive": {
             "triangles": 17138,
@@ -9452,7 +9525,7 @@
             "hingedDoors": 0
           },
           "dining": {
-            "triangles": 14704,
+            "triangles": 14752,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9462,7 +9535,7 @@
             "hingedDoors": 1
           },
           "generator": {
-            "triangles": 21873,
+            "triangles": 21921,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9473,12 +9546,12 @@
           }
         },
         "materials": 3,
-        "uniqueTriangles": 34775,
-        "sha256": "c19329df3eac808748f7dc231635642426dff779a94d388a13e4ab58037ef6f3"
+        "uniqueTriangles": 34871,
+        "sha256": "b95ef9050b3092379f027fab5bc161eec05b4b5810966067098326e121cc1a22"
       },
       "medium": {
         "file": "taksaka-ssng-medium-packed.glb",
-        "bytes": 399764,
+        "bytes": 401616,
         "assets": {
           "executive": {
             "triangles": 11594,
@@ -9491,7 +9564,7 @@
             "hingedDoors": 0
           },
           "dining": {
-            "triangles": 10288,
+            "triangles": 10336,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9501,7 +9574,7 @@
             "hingedDoors": 1
           },
           "generator": {
-            "triangles": 14973,
+            "triangles": 15021,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9512,15 +9585,15 @@
           }
         },
         "materials": 3,
-        "uniqueTriangles": 24155,
-        "sha256": "cedcc7cba88b203b0f9057fb236ea1e62dc5cf2b74ad732febc993c88ec69848"
+        "uniqueTriangles": 24251,
+        "sha256": "1f2b5abe39841cd12fd01e4cf9eb6e30fa5ce2da55fd1094311ad352a98e648c"
       },
       "low": {
         "file": "taksaka-ssng-low-packed.glb",
-        "bytes": 191236,
+        "bytes": 191808,
         "assets": {
           "executive": {
-            "triangles": 3954,
+            "triangles": 3958,
             "primitives": 23,
             "wheels": 8,
             "bogies": 2,
@@ -9530,7 +9603,7 @@
             "hingedDoors": 0
           },
           "dining": {
-            "triangles": 3548,
+            "triangles": 3552,
             "primitives": 21,
             "wheels": 8,
             "bogies": 2,
@@ -9540,7 +9613,7 @@
             "hingedDoors": 1
           },
           "generator": {
-            "triangles": 4974,
+            "triangles": 4978,
             "primitives": 19,
             "wheels": 8,
             "bogies": 2,
@@ -9551,8 +9624,8 @@
           }
         },
         "materials": 3,
-        "uniqueTriangles": 9004,
-        "sha256": "57f244db59f46260a5b7c2612c63348c61731b90ecbf8b6ba52ca657ea39b07f"
+        "uniqueTriangles": 9016,
+        "sha256": "13c220e0d80e2cdca51ac605d3bce1aa0cbda1d78d3c96e04efe9a8cbb7e31fd"
       }
     },
     "textures": 0,
@@ -9562,7 +9635,7 @@
     "reference": "K1 0 23 25, original REDigest observer photo, December 2023",
     "inferred": "M/P mask placements and exact paint HEX; opposite-side unit labeling adapted from canonical K1 25",
     "routeDisplay": "runtime LED name, two sides; static TAKSAKA heritage plaque in lower orange dome",
-    "packedBytes": 1130980
+    "packedBytes": 1134612
   },
   "nusantaraCoaches": {
     "revision": "nusantara-explorer-v2",
