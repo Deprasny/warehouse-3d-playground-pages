@@ -1,37 +1,38 @@
 {
-  "release": "mobile-follow-culling-dbb694e",
-  "sourceCommit": "dbb694e56f5cc0f794148dd4dd46f8aca957a4ad",
-  "sourceFingerprint": "d968358b4bac547b0111d6681232c6139d6f06ac",
+  "release": "mobile-rail-culling-a1d3f5c",
+  "sourceCommit": "a1d3f5ca1e013baf35f5a018d0908a4277af7822",
+  "sourceFingerprint": "08facfeb7b5d5eb7dc5afe6f2bf2f08df4bcda0c",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T12:03:04.394563+00:00",
+  "builtAt": "2026-10-21T15:38:54.502097+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "062d04631e036c301d94eebd93e54ae9b9f41679",
-  "previousPublishedCommit": "6cbd8ff569bf4bd580c2be3cb6849a82985eab88",
+  "previousSourceCommit": "dbb694e56f5cc0f794148dd4dd46f8aca957a4ad",
+  "previousPublishedCommit": "1f799c211472f1beac1ad5e17a2daea1aa13070a",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of dbb694e56f5cc0f794148dd4dd46f8aca957a4ad",
+    "source": "detached clean checkout of a1d3f5ca1e013baf35f5a018d0908a4277af7822",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "passed-targeted",
     "run": [
-      "Seven targeted CPU geometry, tight bounds, layout/LOD/camera transform and fallback checks; rerun selector integration after zero-draw refinement"
+      "Eight approved CPU checks: exact rail/station triangles and attributes, bitwise instance matrices/colors, full bounds, LOD/exclusivity, transformed parents, native frustum/count agreement and conservative fallbacks",
+      "One approved deterministic same-camera baseline-versus-new native static mesh count comparison at eight desktop/mobile poses"
     ],
-    "scope": "User explicitly approved targeted CPU/browser checks then deployment. 14 layouts /328 cells retain exact triangles and shared attributes. TypeScript/Vite production build passed. No full suite or FPS benchmark."
+    "scope": "Explicit user approval for combined checks then deploy. TypeScript/Vite build passed. No full suite or FPS benchmark."
   },
   "browserChecks": {
     "status": "passed-targeted-with-limits",
-    "scope": "Chromium/RTX2060SUPER, Ringan, matched desktop/mobile viewport static cameras; auto-follow movement, sampled day/night and overview return screenshots. Final HP follow layout estimate58968->10005 triangles,8->23 draws on optimized layouts only. Final whole-frame HP profiler174042 triangles/116 calls day. No physical XS or high-quality shadow image check; no FPS claim."
+    "scope": "Chromium154/RTX2060SUPER, Ringan/pixelRatio1,1920x991 desktop and375x640 DPR3 viewport. Reviewed overview, close, auto-follow, curves/turnouts, extra close mobile, day/night and overview return. No observed static seams/detail/material loss. Follow before/after poses differ~17m, so whole-frame deltas are not claimed as matched. No physical iPhone/Safari or high-quality shadow image benchmark."
   },
   "currentChangeScope": {
-    "baseline": "Preserve mobile-safe-renderwork062d046 and interactive formation preview. No resolution, palette, train detail or scenery LOD threshold reductions.",
-    "spatialLayouts": "Exact whole/cell draw layouts for immutable opaque terrain near/far, shore, board, terraces and completed large static batches. 24m centroid cells share all vertex attributes and retain every full triangle, winding, material and render flags.",
-    "selection": "Main-camera frustum chooses cells only with meaningful triangle savings per added draw; hysteresis and settled-view cache. Original layout retained when already culled or near overview. No individual cell visibility suppression; native beauty and shadow camera culling remain independent.",
-    "ownership": "Extra subset index buffers/bounds/objects; immutable attributes and original material shared. Hidden banks skip render transform walks. Headlight ground classification uses original semantic source.",
-    "diagnostics": "latestScene.spatialCulling reports main-camera estimates for optimized layouts only, separate from actual whole-frame geometry profiler and GPU timing.",
-    "limits": "Draws can increase for close views. Retains full map in memory. No physical iPhone/Safari FPS benchmark, high-quality shadow image validation or full suite. See docs/mobile-follow-culling.md for matched static views, final same-camera layout estimates and nonmatched follow sample limits."
+    "baseline": "Preserve mobile-follow-culling-dbb694e, current formation preview and existing game behavior. No resolution, palette, train model or LOD threshold reductions.",
+    "railSurfaces": "Wrap completed merged rail surface batches inside both nested LOD banks in exact 24m whole/cell layouts; previously only top-level world batches were wrapped.",
+    "farHardware": "Exact immutable InstancedMesh whole/cell layouts for far sleepers and plates, 64m cells, shared primitive/material and bitwise matrix/color copies. Existing near chunks and nested plate LOD unchanged.",
+    "stations": "Wrap eligible static leaves of owned station high/low clones with exact spatial subsets, preserving parent transforms, import leases and window material semantics.",
+    "selection": "Use instance object bounds/population counts and existing conservative draw-cost guards, hysteresis and overview whole-layout fallback. Native per-pass shadow culling retained.",
+    "limits": "Extra cell/index/instance buffers and draws; full map remains in memory. Same-camera CPU follow estimates reduce static triangles9.4-16.3% on mobile viewport and38.1-38.8% desktop, not FPS/whole-frame results. See docs/mobile-rail-surface-culling.md."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -677,6 +678,11 @@
       "path": "assets/AssetCatalogPage-DRBD3Wd0.js",
       "bytes": 27457,
       "sha256": "8c9030e70f3cec782cfbc57b5171ed05962ac50925c7ea8b53c1991cbbb5ca83"
+    },
+    {
+      "path": "assets/AssetCatalogPage-DS3uH_WV.js",
+      "bytes": 27474,
+      "sha256": "50298de018d9498e3dae57b6191bd7db6b11690391cc5ff46d8e24742e52ac3d"
     },
     {
       "path": "assets/AssetCatalogPage-DUF5RzmW.js",
@@ -1327,6 +1333,11 @@
       "path": "assets/Cc206ReviewPage-BHhUN2IS.js",
       "bytes": 11982,
       "sha256": "c59d58cc54f1876e3a95901e547508d4106fc21a29ee3a1eb4dd0594a96a03d2"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BJLdt_LM.js",
+      "bytes": 12083,
+      "sha256": "c0299e1646951d12a4492c87d5582b8e5faff1ab0b61132857e6762e2338d2eb"
     },
     {
       "path": "assets/Cc206ReviewPage-BJRMs_1g.js",
@@ -2444,6 +2455,11 @@
       "sha256": "3eb7d943fb92d7f44eba5eb740374de225c93ea29b22efbdce7a0c1978b72618"
     },
     {
+      "path": "assets/ConsistsPage-Dc1naRaz.js",
+      "bytes": 25871,
+      "sha256": "055ea4c32e14001bf2031af7b4f82881a426638e20d57bdeec3e4c2afc6de293"
+    },
+    {
       "path": "assets/ConsistsPage-Dcd1g0uU.js",
       "bytes": 8443,
       "sha256": "923d7f1b033a862240767b80097c35d8e8ca8e9c9a6f0a25f9a8b63bdfa2899a"
@@ -3047,6 +3063,11 @@
       "path": "assets/DownloadSimple.es-D7cybiPB.js",
       "bytes": 2061,
       "sha256": "655fd6a6ef67074a7d2d18c7d514d64372005d8a499af6a298aeddb1082481f9"
+    },
+    {
+      "path": "assets/DownloadSimple.es-D8yWf0N_.js",
+      "bytes": 2100,
+      "sha256": "6629741d0af9f132e536bd2a72707419914e8701d9fb0b9ee85da48c8fca5398"
     },
     {
       "path": "assets/DownloadSimple.es-D9FMXXbR.js",
@@ -3749,6 +3770,11 @@
       "sha256": "7c9eb7864d41238944865b1fec46bc9c60a52c2b4a99d6aeb7fe8dc668f718cc"
     },
     {
+      "path": "assets/GaugeReviewPage-BZB5c9SD.js",
+      "bytes": 18338,
+      "sha256": "c055c2d225c99e42dbabec8208b8df2a6f1a1d6ef90112e18b41f22d0061bc9a"
+    },
+    {
       "path": "assets/GaugeReviewPage-BdUeeP0P.js",
       "bytes": 18299,
       "sha256": "1f05634d07a191897fa2464d660bcb3e93327b6d510ce669e2fce21a002f5634"
@@ -4437,6 +4463,11 @@
       "path": "assets/HudPreviewPanel-BbCIRh0r.js",
       "bytes": 421,
       "sha256": "4fd9ad75a68c75d1ea23064a9ce43d40d2d206a5292eb5379e2d271c61cb0a4c"
+    },
+    {
+      "path": "assets/HudPreviewPanel-BbLTqZ_C.js",
+      "bytes": 418,
+      "sha256": "64e2dc90b7b6af5325b5d08b540b69119278d9cdef3bfe5e6d146cdb05348275"
     },
     {
       "path": "assets/HudPreviewPanel-BbascsDA.js",
@@ -5202,6 +5233,11 @@
       "path": "assets/IconBase.es-D3ISpfnV.js",
       "bytes": 3740,
       "sha256": "7d33215561edbaafda8702d4c6214700e6b8b1ee1d65275fe66ac3f87b85fb82"
+    },
+    {
+      "path": "assets/IconBase.es-DDonsT35.js",
+      "bytes": 3734,
+      "sha256": "cdde20ec3cbc1526b787513d3c0f744d068e8515e623e043a51addd14df707d9"
     },
     {
       "path": "assets/IconBase.es-DFliPLEX.js",
@@ -5999,6 +6035,11 @@
       "sha256": "e4a19eff18fb2ba3cf235e41ca8b633a4ad4e305c7ad6640faf581cc59cdba1f"
     },
     {
+      "path": "assets/ImportedCc206Page-meiSD9Ee.js",
+      "bytes": 18478,
+      "sha256": "5be67826b310cb33b2bfaaa6b269c243b168d1a50d588f742cfc21b5b29435fa"
+    },
+    {
       "path": "assets/ImportedCc206Page-mmtYwi_i.js",
       "bytes": 18456,
       "sha256": "12af4c47085f6ff30c160ef69b72f86e3b118970caa8b3c0268177b19edfef9a"
@@ -6704,6 +6745,11 @@
       "sha256": "a8c2309a3a8af85a7a1effea4591a0c8336b1be6547b1be3b80a97ae161b9381"
     },
     {
+      "path": "assets/consist-preview-stage-DEMuXkU3.js",
+      "bytes": 10024,
+      "sha256": "a66f4232271917bf8f085cd29348f3c9dbdcfd591c8462cf9da2683f0e2f7f6c"
+    },
+    {
       "path": "assets/consist-preview-stage-Dec5T5UB.js",
       "bytes": 10024,
       "sha256": "fc6924f8822f2ffbc790ebd0b2ccf5a7c82b11c4c08d925a38988843dc7dca04"
@@ -6977,6 +7023,11 @@
       "path": "assets/diorama-postprocessing-CjeRq0tP.js",
       "bytes": 42440,
       "sha256": "2247e117fdb627ba73f6fd7352c3260177de120d2f45fe0e06b50abd1e8410d9"
+    },
+    {
+      "path": "assets/diorama-postprocessing-Cjurhqxt.js",
+      "bytes": 42440,
+      "sha256": "ba1168b9f98ebaf95c0212ce07bd31a2b3da4e0b5e36fb760266c0734ed49890"
     },
     {
       "path": "assets/diorama-postprocessing-Cow12_XO.js",
@@ -7737,6 +7788,11 @@
       "path": "assets/index-C4n99HSt.css",
       "bytes": 59573,
       "sha256": "e1df671e0de36305834820cb9b3c40941aae3f144f1379632d9f44fa8631664b"
+    },
+    {
+      "path": "assets/index-C8BKdSey.js",
+      "bytes": 1046202,
+      "sha256": "729d4ff464b3afa3cbfc93e71c058ca86edbd07ec4d2cc27d1196ebc97026752"
     },
     {
       "path": "assets/index-C8XmlTp5.js",
@@ -9331,7 +9387,7 @@
     {
       "path": "index.html",
       "bytes": 3434,
-      "sha256": "4759f6ff1c5b46dbf603a77d5dc02ea000eeb5746ee0b3975c324a1aa9809344"
+      "sha256": "a5c5b886dd70e2624d03b873492cb9889b4bc4b10e540e42f66b6e1af2787e2d"
     },
     {
       "path": "liveries/cc206/credits.txt",
