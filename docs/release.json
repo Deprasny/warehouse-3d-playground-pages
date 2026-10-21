@@ -1,35 +1,37 @@
 {
-  "release": "formation-shelf-d2a994e",
-  "sourceCommit": "d2a994e928a4e3df11cb9f8867c3f70aedaa9f91",
-  "sourceFingerprint": "38e4c8c1250fd194f8d04b41fee5ceb0430f1477",
+  "release": "mobile-rail-terrain-e63ea50",
+  "sourceCommit": "e63ea5036cfc86c453bcbce031a2cdec72e8bb14",
+  "sourceFingerprint": "cadcd524d68ea97414e4c60f5bc242c5561e0e2e",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T09:50:51.959148+00:00",
+  "builtAt": "2026-10-21T10:00:40.054942+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "8ef177352c93dbf60701adbbff149a9463c82b28",
-  "previousPublishedCommit": "cda824bc73843873ae366f5b372561be0ebbc290",
+  "previousSourceCommit": "d2a994e928a4e3df11cb9f8867c3f70aedaa9f91",
+  "previousPublishedCommit": "5e3dbc4a05c6cd8a19d084a50f65fb7998e0e93a",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of d2a994e928a4e3df11cb9f8867c3f70aedaa9f91",
+    "source": "detached clean checkout of e63ea5036cfc86c453bcbce031a2cdec72e8bb14",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
-    "status": "not-run",
-    "run": [],
-    "scope": "No automated tests run. The user authorized deployment without authorizing tests; only the production-base TypeScript/Vite build and publication status/identity verification were performed."
+    "status": "passed-targeted-only",
+    "run": [
+      "Approved CPU before/after geometry inventory and assertions in .cache/rail-terrain-check-20261021/inventory.mjs"
+    ],
+    "scope": "Explicit approval for targeted geometry/visual checks. Rail endpoints, visible head/foot geometry, normals/materials, terrain attributes/height queries and 49320 centroid surface comparisons passed. Largest sampled height change 8.052mm, normal change 1.579 degrees. TypeScript/Vite production build passed. Full suite and FPS benchmarks not run."
   },
   "browserChecks": {
-    "status": "not-run",
-    "scope": "No browser/gameplay checks or FPS benchmarks."
+    "status": "passed-targeted-only",
+    "scope": "Approved before/after overview and close screenshots plus geometry traces, Ringan at matched 1920x991 DPR1 with blur on and shadows off, Chromium/Windows RTX2060SUPER. No conspicuous rail breaks, terrain cracks or silhouette regressions observed in those views. Agent tabs and preview server closed. No iPhone/FPS benchmark."
   },
   "currentChangeScope": {
-    "baseline": "Production mobile-render-clarity-8ef1773 (8ef177352c93dbf60701adbbff149a9463c82b28); all existing production models, gameplay, terrain and render clarity settings retained.",
-    "builder": "Rangkaian opens directly into a wide horizontal vehicle shelf. Four locomotive choices and the production carriage catalogue use real asset thumbnails, search and category filters.",
-    "assembly": "Click a locomotive to change the engine type; click a carriage to append one at the rear. The connected composition strip updates immediately, with installed model counts and capacity feedback.",
-    "controls": "Inline move, duplicate and remove actions; optional unit details; searchable saved collection. Save retains the editor; Save and continue opens dispatch configuration.",
-    "accessibility": "Labelled native controls, visible selected state, native horizontal scrolling and keyboard focus. Assembly scrolling changes only the horizontal strip position, preserving consecutive shelf clicks.",
-    "isolation": "Only formation HUD, its editor hook and release documentation changed. Unpublished rail-carrier assets and other unrelated working-tree edits are excluded."
+    "baseline": "Published formation-shelf-d2a994e retained by merge. Geometry measurements compare 8ef1773, whose geometry is identical to d2a994e. Four geometry files changed; simulation, camera, graphics resolution, model assets and palette retained.",
+    "inheritedFormation": "Preserve the already published click-to-assemble formation shelf from d2a994e. The merge changes HUD/editor files only; tested geometry files remain identical. Final combined production build passed; formation tests not run in this task.",
+    "rails": "Rail head/web/foot retain 4mm corner sampling. Ballast uses 8mm sampling with a maximum backup span of 24m. Omit only the web top enclosed by the rail head. Named static rail parts retain batching and improve geometry attribution.",
+    "terrain": "Curved patch simplification validates height to 1cm and interpolated normals to 2 degrees against the original grid at vertices and triangulation-edge intersections. Preserve every patch border vertex, shore holes, color boundaries and height queries. Rejected patches retain the original grid.",
+    "measuredGeometry": "CPU sweep inventory main+depot 94776 to 75466 triangles; terrain ground 25988 to 23332. Matched desktop overview sampled frame 306887 to 284219 triangles, 472 to 469 draws; close 304757 to 282089 triangles, 457 to 454 draws. These are geometry results, not FPS gains.",
+    "limits": "No iPhone XS or mobile FPS benchmark. Full zoom/weather/gameplay matrix not checked. Desktop snapshots do not prove stable 60 FPS."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -570,6 +572,11 @@
       "path": "assets/AssetCatalogPage-CpUsHbyf.js",
       "bytes": 24446,
       "sha256": "734844e43ac184cdbc8e0d462f0e41a057d908dc4ffb23fd765a78cc243e08ef"
+    },
+    {
+      "path": "assets/AssetCatalogPage-Cr2i2Mgh.js",
+      "bytes": 27447,
+      "sha256": "a56a459530d0f40eb5bdb92f479ef994e0f3263f5c5bc164d36bf252a753da25"
     },
     {
       "path": "assets/AssetCatalogPage-CtljNy3N.js",
@@ -1265,6 +1272,11 @@
       "path": "assets/Cc206ReviewPage-B4RH1YQr.js",
       "bytes": 12019,
       "sha256": "1181d2b76b3fc48e5fdb9de0469e6ae41fd8017f47b3206114e81a6000d9a347"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-BB7ImzcY.js",
+      "bytes": 12050,
+      "sha256": "87fa9ccafe03359a41ddee13a571b5e1d9ca23ffddaa99b6516774b73785785c"
     },
     {
       "path": "assets/Cc206ReviewPage-BHhUN2IS.js",
@@ -2227,6 +2239,11 @@
       "sha256": "6cb066f3372917838d748ea79f796a8aa987f8008615ffd7ac1104a242046d54"
     },
     {
+      "path": "assets/ConsistsPage-D9aE_z-U.js",
+      "bytes": 19382,
+      "sha256": "55ff346d2be299720dc9fef253c61e894ef1ff60e7242de7257d00a4bc07a908"
+    },
+    {
       "path": "assets/ConsistsPage-DAyKq8_d.js",
       "bytes": 8470,
       "sha256": "262f42bfbe588a8a4156558ed7f59898575ee09e799aac90dacdc28c47833e12"
@@ -2912,6 +2929,11 @@
       "sha256": "15de47709486fc9cf0b7f674f63ff25ffdc346793a0535b7a6a1a48021b1a466"
     },
     {
+      "path": "assets/DownloadSimple.es-DAM8-aAt.js",
+      "bytes": 2101,
+      "sha256": "8cdab769c3ad6667639ba42a351cbe68b3ac1826f590d015092d1ec878f6af89"
+    },
+    {
       "path": "assets/DownloadSimple.es-DFTDkP_t.js",
       "bytes": 2110,
       "sha256": "b51160894197d90b26e46239a3e987ad77fa486dfda39d9c64d91b8234c16d29"
@@ -3485,6 +3507,11 @@
       "path": "assets/GaugeReviewPage-BFe5seZ9.js",
       "bytes": 18201,
       "sha256": "d15926efe848f1137959237ccfcf2995f5ef45b9797c3f2de121c4ea13271b09"
+    },
+    {
+      "path": "assets/GaugeReviewPage-BHbgUbo2.js",
+      "bytes": 18305,
+      "sha256": "768f02914579c834f6f57a08ad038c58550f5c6227587bcc1b2d87da87ae9d98"
     },
     {
       "path": "assets/GaugeReviewPage-BHsz6U5t.js",
@@ -4080,6 +4107,11 @@
       "path": "assets/HudPreviewPanel-6mnaWd56.js",
       "bytes": 418,
       "sha256": "da4121088c1321d3d50df09e747609c47aff91194c933d17d786a610a1e0481c"
+    },
+    {
+      "path": "assets/HudPreviewPanel-7tQskbLt.js",
+      "bytes": 418,
+      "sha256": "59c0218cb1ac400f882a14d93b4d202ccfcfc16681458b05bcd22c9036a562da"
     },
     {
       "path": "assets/HudPreviewPanel-8niBBabQ.js",
@@ -4760,6 +4792,11 @@
       "path": "assets/IconBase.es-BDj7HP-G.js",
       "bytes": 3432,
       "sha256": "50b46c9af1a5411d56f778e2275052dfe54a806c94ac6874e4962cce4bc0d13f"
+    },
+    {
+      "path": "assets/IconBase.es-BIsV2xuz.js",
+      "bytes": 3730,
+      "sha256": "183d5fafd95cf81c4ac3ccaecaf54dda31f5482a942f37c0a653bddce82d692a"
     },
     {
       "path": "assets/IconBase.es-BUL2eBQi.js",
@@ -5585,6 +5622,11 @@
       "path": "assets/ImportedCc206Page-DzxaaFCn.js",
       "bytes": 13958,
       "sha256": "41beb2fae4bee9e0bde7804bfa9b85f2d419ba1294e8fb93431ea1fe9b9b961f"
+    },
+    {
+      "path": "assets/ImportedCc206Page-Ghw1ObE2.js",
+      "bytes": 18447,
+      "sha256": "52d50399418144d9cebe42d4bbba205edb01f06bf25e3f3947bba794034ae55f"
     },
     {
       "path": "assets/ImportedCc206Page-IDKs1N02.js",
@@ -6417,6 +6459,11 @@
       "sha256": "2cb14feace1e511db0256dc393a5f1cf6eabddbd8873f069155f7b3a17f41be3"
     },
     {
+      "path": "assets/diorama-postprocessing-CC7nCYJ3.js",
+      "bytes": 42434,
+      "sha256": "92fac1cc5a0215035a725a05ead6360b09b6081492d58ad0772f4895eb459dc4"
+    },
+    {
       "path": "assets/diorama-postprocessing-CCJ-d49m.js",
       "bytes": 42434,
       "sha256": "4bebaf09e2c8b0f9fa24c94ce944b6ae8d2b855c43a034447341dd8aebbe95d0"
@@ -7095,6 +7142,11 @@
       "path": "assets/index-BgBxt5Y9.css",
       "bytes": 75470,
       "sha256": "94958d4d2ae1cba8936854d00846d415e12181b1025ad5c4414c35543d564c94"
+    },
+    {
+      "path": "assets/index-BgQ4YQlt.js",
+      "bytes": 1246781,
+      "sha256": "ca4f93e0cfbcda2c43d3ec457d2dee843ae0a220bd56794e288c9b82763cd81d"
     },
     {
       "path": "assets/index-BhIEf-5G.js",
@@ -8579,7 +8631,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "3b6c1b314346c2ecc10aa2bb2aeacd69a0d6554781aee061cd52ff2514ff7864"
+      "sha256": "47100881d440043751d08b680a5f360ba9e28bb5420f41ec31b4156d9475a537"
     },
     {
       "path": "liveries/cc206/credits.txt",
