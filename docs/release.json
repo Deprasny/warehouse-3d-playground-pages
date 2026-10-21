@@ -1,34 +1,35 @@
 {
-  "release": "mobile-render-clarity-8ef1773",
-  "sourceCommit": "8ef177352c93dbf60701adbbff149a9463c82b28",
-  "sourceFingerprint": "f71a1c545b251b6af6d230324cb3a4e194d3debf",
+  "release": "formation-shelf-d2a994e",
+  "sourceCommit": "d2a994e928a4e3df11cb9f8867c3f70aedaa9f91",
+  "sourceFingerprint": "38e4c8c1250fd194f8d04b41fee5ceb0430f1477",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T08:38:50.220006+00:00",
+  "builtAt": "2026-10-21T09:50:51.959148+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "4c0337dfef3d92a3c4e2d067a1cc04dae3f12c57",
-  "previousPublishedCommit": "acfd9d79bdfe9372f32d86d4fade615395314ea1",
+  "previousSourceCommit": "8ef177352c93dbf60701adbbff149a9463c82b28",
+  "previousPublishedCommit": "cda824bc73843873ae366f5b372561be0ebbc290",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 8ef177352c93dbf60701adbbff149a9463c82b28",
+    "source": "detached clean checkout of d2a994e928a4e3df11cb9f8867c3f70aedaa9f91",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "No automated tests or benchmarks; explicit test authorization not given. Existing frame-pacing assertions updated but not executed. TypeScript/Vite production build only."
+    "scope": "No automated tests run. The user authorized deployment without authorizing tests; only the production-base TypeScript/Vite build and publication status/identity verification were performed."
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser, iPhone, gameplay or FPS checks. Publication identity and served asset bytes verified separately."
+    "scope": "No browser/gameplay checks or FPS benchmarks."
   },
   "currentChangeScope": {
-    "baseline": "Deployed mobile-render-debug-4c0337d; only resolution policy, mobile blur defaults and corresponding preferences/debug UI changed.",
-    "resolution": "Independent Auto/Hemat/Tajam preference. Light Auto starts at 1.25x and adapts between 1x and 1.5x. Hemat requests 1x; Tajam up to 2x. Native DPR and an extra-density budget of 1.5 million pixels cap the request without reducing below the CSS 1x baseline for larger viewports.",
-    "effects": "Manual resolution does not raise the quality tier or enable shadow/AO/extra lighting. On coarse-pointer devices without a saved miniature-effect preference, blur defaults off. Explicit saved choices retained.",
-    "diagnostics": "Debug resolution section reports selected sharpness alongside actual ratio and WebGL buffer dimensions.",
-    "limits": "CSS viewport, camera, gameplay and model assets unchanged. No measured iPhone/FPS improvement claimed. Auto may return to 1x when output is slow."
+    "baseline": "Production mobile-render-clarity-8ef1773 (8ef177352c93dbf60701adbbff149a9463c82b28); all existing production models, gameplay, terrain and render clarity settings retained.",
+    "builder": "Rangkaian opens directly into a wide horizontal vehicle shelf. Four locomotive choices and the production carriage catalogue use real asset thumbnails, search and category filters.",
+    "assembly": "Click a locomotive to change the engine type; click a carriage to append one at the rear. The connected composition strip updates immediately, with installed model counts and capacity feedback.",
+    "controls": "Inline move, duplicate and remove actions; optional unit details; searchable saved collection. Save retains the editor; Save and continue opens dispatch configuration.",
+    "accessibility": "Labelled native controls, visible selected state, native horizontal scrolling and keyboard focus. Assembly scrolling changes only the horizontal strip position, preserving consecutive shelf clicks.",
+    "isolation": "Only formation HUD, its editor hook and release documentation changed. Unpublished rail-carrier assets and other unrelated working-tree edits are excluded."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -829,6 +830,11 @@
       "path": "assets/AssetCatalogPage-Zxi8DMbW.js",
       "bytes": 27457,
       "sha256": "17ff3ca9f94d044392c09139397bd2ea1ee6b096cd145bd25c35fdacdbb5c50f"
+    },
+    {
+      "path": "assets/AssetCatalogPage-_9z_H_FU.js",
+      "bytes": 27447,
+      "sha256": "263870b8a8a347198615928b6328705f44af4615279b35be1880d8391ec09fb2"
     },
     {
       "path": "assets/AssetCatalogPage-aXMTYedk.js",
@@ -1791,6 +1797,11 @@
       "sha256": "148fe50b8b5c6a27b168d9bec05912f6e65edcd8c1f5c382db577aee60b20a58"
     },
     {
+      "path": "assets/Cc206ReviewPage-bjS5cmmV.js",
+      "bytes": 12050,
+      "sha256": "fc8f6b1b6656b7f45c8838ce8553e847f7c8582b643efba41944dabdb2688d7d"
+    },
+    {
       "path": "assets/Cc206ReviewPage-deX7ghdH.js",
       "bytes": 12019,
       "sha256": "d5f65ba03d84172741470ab730bf1a05154a6d9d14e1fd32deee42fd86fa9195"
@@ -2201,6 +2212,11 @@
       "sha256": "c39f002592b9e05909cda4fdf0bfeb86e91e96b53bbf6a1da32ef0cb03c06c9b"
     },
     {
+      "path": "assets/ConsistsPage-D6BZL8nm.css",
+      "bytes": 3593,
+      "sha256": "57c6dd269f770a2154e7801cce8744806bd3134641985fb5261d14975d40bb5c"
+    },
+    {
       "path": "assets/ConsistsPage-D7ZhTcun.js",
       "bytes": 11762,
       "sha256": "3fc1f12a8bb0af124aa5599c222d14568010aca05439e880b4fce4505f39a1fe"
@@ -2429,6 +2445,11 @@
       "path": "assets/ConsistsPage-URjtqE0M.js",
       "bytes": 13572,
       "sha256": "8a0365f790a325a94b6dd59037e9ecc5efdbafe61c75a9ed0a23314f471b6e80"
+    },
+    {
+      "path": "assets/ConsistsPage-UhSV1yra.js",
+      "bytes": 19382,
+      "sha256": "ac823ba657bb016ffe1effc1ad6a83d33c85a65bcb645f433c9898e35afbed32"
     },
     {
       "path": "assets/ConsistsPage-WAtPFu4W.js",
@@ -3139,6 +3160,11 @@
       "path": "assets/DownloadSimple.es-oxv6GZY4.js",
       "bytes": 2061,
       "sha256": "9ba71d661ab5585aa774520124986235202b8ee662a1206286cd6041b9422df9"
+    },
+    {
+      "path": "assets/DownloadSimple.es-p_VWorJg.js",
+      "bytes": 2101,
+      "sha256": "3a54bbc80776d7991b71c7ecbd5b30d8f632f09cad378362ec51c90c7046d031"
     },
     {
       "path": "assets/DownloadSimple.es-qxDdLoMy.js",
@@ -3861,6 +3887,11 @@
       "sha256": "fc347ae2b2ff3021f3e331c94bd5d593c51aa56833f9cfa233474e51945077d8"
     },
     {
+      "path": "assets/GaugeReviewPage-DncMwLQV.js",
+      "bytes": 18305,
+      "sha256": "e7904ec156b5823bebafa594e456eaa109a30437087cf5884fba53758fe2974e"
+    },
+    {
       "path": "assets/GaugeReviewPage-DukJ7Gtl.js",
       "bytes": 18205,
       "sha256": "a1f0f422cccb7b29c903f8343e9d4492c124247ebf50b4ba7d8b1bcce7660e36"
@@ -4234,6 +4265,11 @@
       "path": "assets/HudPreviewPanel-C9IgTMTp.js",
       "bytes": 418,
       "sha256": "28e7c2e8b7d73711660dbe6fe381e3645f7e76175a1ff5046e80d631e1e1f02c"
+    },
+    {
+      "path": "assets/HudPreviewPanel-C9fUSzD_.js",
+      "bytes": 418,
+      "sha256": "7cbfac7d0bf337a78fe12718c57fbcc9d228dc87e0cee7afa3dd44c22b80f74f"
     },
     {
       "path": "assets/HudPreviewPanel-CBY5Dfuy.js",
@@ -4759,6 +4795,11 @@
       "path": "assets/IconBase.es-BwFmbv5e.js",
       "bytes": 3432,
       "sha256": "f6d43ccff96d9e8369d8e96b444af28c6eb5e402bec55148cc7dd68bec0d30eb"
+    },
+    {
+      "path": "assets/IconBase.es-ByZ3W4Dl.js",
+      "bytes": 3730,
+      "sha256": "02a0f63c1cea66fc236ddc859d76870af8cf9c9f8d5786d373e37953aba8a933"
     },
     {
       "path": "assets/IconBase.es-C0ymbIZd.js",
@@ -5554,6 +5595,11 @@
       "path": "assets/ImportedCc206Page-J7tdelCo.js",
       "bytes": 13958,
       "sha256": "bad833e22377c3a3401df1993541faf8bcae2c97f919988039293a289e930648"
+    },
+    {
+      "path": "assets/ImportedCc206Page-L5kU8iks.js",
+      "bytes": 18447,
+      "sha256": "fe0e203cee240e691004bb87fa530bdb3398f95cb634c3552314beaa5e2c21bd"
     },
     {
       "path": "assets/ImportedCc206Page-NOieOF4s.js",
@@ -6369,6 +6415,11 @@
       "path": "assets/diorama-postprocessing-C9sPRKSw.js",
       "bytes": 41254,
       "sha256": "2cb14feace1e511db0256dc393a5f1cf6eabddbd8873f069155f7b3a17f41be3"
+    },
+    {
+      "path": "assets/diorama-postprocessing-CCJ-d49m.js",
+      "bytes": 42434,
+      "sha256": "4bebaf09e2c8b0f9fa24c94ce944b6ae8d2b855c43a034447341dd8aebbe95d0"
     },
     {
       "path": "assets/diorama-postprocessing-CDvN6oLf.js",
@@ -7436,6 +7487,11 @@
       "sha256": "ed2a6d2041542bd8414078a1badd4413dc6e207fe9421cddf7da2491f2135a19"
     },
     {
+      "path": "assets/index-E6z2gcSj.css",
+      "bytes": 160839,
+      "sha256": "caeaef0b84e0942cad7d9c579ec1b4bd06c1f30c9194983c84e533f96214eaa5"
+    },
+    {
       "path": "assets/index-F98s9fsb.js",
       "bytes": 586774,
       "sha256": "ee3c0b3018424b6a300f41dd807c75eb89d5f503030e6754f498ac34ed0c339c"
@@ -7539,6 +7595,11 @@
       "path": "assets/index-jUXURaGz.js",
       "bytes": 747427,
       "sha256": "4e6bbbeef4058d99dae6101c44b9a7ca206e85e4b299fcd252308b309aee3c03"
+    },
+    {
+      "path": "assets/index-lcjjjmXU.js",
+      "bytes": 1244571,
+      "sha256": "02b6889f03b9d6ac985f821d81a6578494267f90d17afe272e3e3c47b0d0b032"
     },
     {
       "path": "assets/index-lcvunUGJ.js",
@@ -8518,7 +8579,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "73051d21730ff78a5488521662f59955d4057c8ffba8b202f070e51cd4d00c90"
+      "sha256": "3b6c1b314346c2ecc10aa2bb2aeacd69a0d6554781aee061cd52ff2514ff7864"
     },
     {
       "path": "liveries/cc206/credits.txt",
