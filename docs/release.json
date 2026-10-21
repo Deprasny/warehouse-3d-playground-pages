@@ -1,17 +1,17 @@
 {
-  "release": "formation-shelf-7028e35",
-  "sourceCommit": "7028e357bbbd72d26ea49d2cbf963da65945f65b",
-  "sourceFingerprint": "62b0bb70460372bd3f2cda75f8a2b4875256d10b",
+  "release": "formation-shelf-5189f93",
+  "sourceCommit": "5189f93e396ce3450ccaeb737a6d420b10331ae5",
+  "sourceFingerprint": "4f6c703198f72bf5b750334ee39f116e6c4ebb50",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T10:23:46.066690+00:00",
+  "builtAt": "2026-10-21T10:30:36.157247+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "e63ea5036cfc86c453bcbce031a2cdec72e8bb14",
-  "previousPublishedCommit": "6777bec4240488630bab62cc019ab5d2f63a55ff",
+  "previousSourceCommit": "7028e357bbbd72d26ea49d2cbf963da65945f65b",
+  "previousPublishedCommit": "a93353f9a21f47aa8d92dba3131b21fd6adb1066",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 7028e357bbbd72d26ea49d2cbf963da65945f65b",
+    "source": "detached clean checkout of 5189f93e396ce3450ccaeb737a6d420b10331ae5",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
@@ -21,15 +21,15 @@
   },
   "browserChecks": {
     "status": "passed-scoped",
-    "scope": "Local production-base source checked in Chromium at 1440x900 desktop and 390x844 mobile emulation. Verified visible name/header/categories/footer, engine selection, repeated carriage append without shelf movement (485px before/after), category-preserving search, empty-search recovery, shelf arrows, carriage reorder, detail popup/Escape, save, collection search, and saved composition persistence after reload. No train dispatch, device performance claim, automated suites or FPS benchmarks.",
+    "scope": "Follow-up checked locally at 1440x900 desktop and 390x844 Chromium mobile emulation: CC206 with three coaches, large preview, explicit order/type labels, contained thumbnails, selected carriage visible after viewport resize, fixed footer, and save. Workspace clientHeight equalled scrollHeight (454px desktop, 474px mobile). Earlier category/search/reorder/detail/persistence checks are recorded separately in the review document. No dispatch, real-device performance claim, automated suites or FPS benchmarks.",
     "evidence": "docs/formation-hud-ux-review-20261021.md"
   },
   "currentChangeScope": {
-    "baseline": "Latest published mobile-rail-terrain-e63ea50 (e63ea5036cfc86c453bcbce031a2cdec72e8bb14) merged before publication. Existing production models, gameplay, rail/terrain geometry optimization and render clarity settings retained.",
+    "baseline": "Published formation-shelf-7028e35 retained, including the merged mobile-rail-terrain-e63ea50 geometry optimization. This follow-up changes formation preview and shelf sizing only.",
     "builder": "Rangkaian opens directly into a wide horizontal vehicle shelf. Four locomotive choices and the production carriage catalogue use real asset thumbnails, search and category filters.",
     "assembly": "Click a locomotive to change the engine type; click a carriage to append one at the rear. The connected composition strip updates immediately, with installed model counts and capacity feedback.",
     "controls": "Fixed-height move, duplicate and remove actions; optional floating unit details; searchable saved collection. A persistent footer keeps Save and Atur keberangkatan visible; the latter opens dispatch configuration.",
-    "layout": "Four stable regions: compact name/header, composition, vehicle shelf, persistent footer. Desktop editor height 530px; mobile 550px, constrained by available viewport. Mobile header is one row; solid surfaces prevent background text interference.",
+    "layout": "Formation preview is primary: 184px-wide vehicle controls with 76px contained thumbnails (previously 108px and 32px), visible front/number/name/type labels and coupling indicators. Shelf tiles reduced to 128px with 64px thumbnails. Desktop editor height 570px; mobile 590px, constrained by available viewport. Selection stays visible after viewport resize; footer stays outside workspace scrolling.",
     "accessibility": "Labelled native controls, visible selected state, native horizontal scrolling and keyboard focus. Assembly scrolling changes only the horizontal strip position, preserving consecutive shelf clicks.",
     "isolation": "Only formation HUD, its editor hook and release documentation changed. Unpublished rail-carrier assets and other unrelated working-tree edits are excluded."
   },
@@ -392,6 +392,11 @@
       "path": "assets/AssetCatalogPage-Bw-OAWrU.js",
       "bytes": 27457,
       "sha256": "23ab25bcfc4413284983e6072ebe53dbcf0b8fc4d622806bd2bc792e933f56f0"
+    },
+    {
+      "path": "assets/AssetCatalogPage-BwgPF8Ii.js",
+      "bytes": 27446,
+      "sha256": "72371dcbfa007aed5a159c5cc654f9cacd574f32afe0632132a0f5f4f8b23f2a"
     },
     {
       "path": "assets/AssetCatalogPage-ByPtF1dA.js",
@@ -1644,6 +1649,11 @@
       "sha256": "1573a941a7e0c5aeb77fd5669fa3044d30671a4de0bbe8831a1399948c4bfcd2"
     },
     {
+      "path": "assets/Cc206ReviewPage-DIt4uriJ.js",
+      "bytes": 12049,
+      "sha256": "1a7c7746b462325be016fdcab628e6f0f9ac4aef457426c51e87042f7433bf68"
+    },
+    {
       "path": "assets/Cc206ReviewPage-DJ_elxHK.js",
       "bytes": 11982,
       "sha256": "2338b5ec61a16b8dce95be43e9ea066093b7d4bf8cd859ff367d6dcc6654902e"
@@ -2139,6 +2149,11 @@
       "sha256": "8232f3fde3835da98d170ea852282e88672dfdb2565dc8b8f866fc473fd8c2a6"
     },
     {
+      "path": "assets/ConsistsPage-CFrAR7T3.js",
+      "bytes": 22143,
+      "sha256": "d708aac81d6622df42a4878689a2ab78cf8d2e76b0bf746f2962bd7d628b32b9"
+    },
+    {
       "path": "assets/ConsistsPage-CK-ZptOP.js",
       "bytes": 8470,
       "sha256": "87e57b5b11a721cf057f078a283c5d9783c0f8f6b641c9082bd36c6ff0bd3c85"
@@ -2567,6 +2582,11 @@
       "path": "assets/ConsistsPage-uLMbtwdr.js",
       "bytes": 8470,
       "sha256": "d55e16fa095215dba68edec47d66c9f711d112dc140c4879d7a5f17cf725d9e8"
+    },
+    {
+      "path": "assets/ConsistsPage-vRRaTWkB.css",
+      "bytes": 4555,
+      "sha256": "82c375c783562994a741dbf9eae1f9ea27ec4ff6178b0d6851f9132105cac37e"
     },
     {
       "path": "assets/DownloadSimple.es-0XKYI5az.js",
@@ -3167,6 +3187,11 @@
       "path": "assets/DownloadSimple.es-TVH9sUdL.js",
       "bytes": 2110,
       "sha256": "bec6694d59f8ec3504edfc0741ed8250db771929dc852fd90e15ff2e00f4dc15"
+    },
+    {
+      "path": "assets/DownloadSimple.es-XY9RghqM.js",
+      "bytes": 2100,
+      "sha256": "8cad497c8ee64acd242c2175d6c6a5bd178aa9bf242557a70eb580b8ad3a94a8"
     },
     {
       "path": "assets/DownloadSimple.es-XxAprvsN.js",
@@ -4034,6 +4059,11 @@
       "sha256": "f191e1f76f16d240ac10a87e14ac1a93914d73d2b1878292fc46245f675b4d00"
     },
     {
+      "path": "assets/GaugeReviewPage-ULeqJ3Wa.js",
+      "bytes": 18304,
+      "sha256": "2d4b0451c83e7f59cd83b2d90503f0e156a4c9fd86842920c02b0d801a16e1df"
+    },
+    {
       "path": "assets/GaugeReviewPage-YfCxC8um.js",
       "bytes": 10815,
       "sha256": "16f9640ab04c57ce5ec60bd4943ff4a60abea062b9254471aca06892a9e0515c"
@@ -4122,6 +4152,11 @@
       "path": "assets/GaugeReviewPage-xVuvFyya.js",
       "bytes": 18304,
       "sha256": "e3e242791a7bbb0c69e4b080f1f7dbc1f416ff2010dba75ec69d95da06ab1537"
+    },
+    {
+      "path": "assets/HudPreviewPanel-4ZYeoB12.js",
+      "bytes": 418,
+      "sha256": "3251b3dd93cf7c083e8ca324cd31ea3358b6255519b319de621b98c1a36ba1ed"
     },
     {
       "path": "assets/HudPreviewPanel-63UD9lxi.js",
@@ -4902,6 +4937,11 @@
       "path": "assets/IconBase.es-CDp5ZVi5.js",
       "bytes": 3729,
       "sha256": "0da731d65315170db12bea4a4ca9fd1b960e465f51b38177b6b3c98cbe57aa1a"
+    },
+    {
+      "path": "assets/IconBase.es-CEhbQu6W.js",
+      "bytes": 3734,
+      "sha256": "9a405c677e8237464ff31c4cf444276008785af3c854e5ff10340986def140dc"
     },
     {
       "path": "assets/IconBase.es-CFHwuhd-.js",
@@ -5709,6 +5749,11 @@
       "sha256": "0ea1677d6a09f84f55e4a8e983c5a76a08cb33d22079ae6cca70ee7d99d4b2fa"
     },
     {
+      "path": "assets/ImportedCc206Page-VKHf1eSr.js",
+      "bytes": 18446,
+      "sha256": "d83b3896d6fe6a8f67006e0b95706c7ba45982ac7d9980d4a43e375fd601ad35"
+    },
+    {
       "path": "assets/ImportedCc206Page-e-0PUZNu.js",
       "bytes": 13963,
       "sha256": "66de49ebb8ee7e5b0ed4f06a4986256d7a2716756a58b31ff50b789647ff6085"
@@ -6429,6 +6474,11 @@
       "sha256": "ccb7f0d7307febe5fa0dc7df108a36cfff75285ce2faa9cb9b8b2d4864142f24"
     },
     {
+      "path": "assets/diorama-postprocessing-Bp70QLjs.js",
+      "bytes": 42436,
+      "sha256": "08694121819ad562d5d96beac9f8a0b7cff55733743838a57e346f5871e76dee"
+    },
+    {
       "path": "assets/diorama-postprocessing-BqAmVXYi.js",
       "bytes": 42405,
       "sha256": "8ffec648afa1ebfc2b9da64ca7c06e8f2bc4f53ab12843c3e4b70e7dff9d8227"
@@ -7044,6 +7094,11 @@
       "sha256": "3f520114abeca8afef6e25e5a94fab10d2707ad756cfdda185d8d403ca72ddc2"
     },
     {
+      "path": "assets/index-B2f33pDs.js",
+      "bytes": 1246772,
+      "sha256": "ebc1ccc30139f43ddac881a04ef1adc8a97918edee88393e5be35d186e8afac6"
+    },
+    {
       "path": "assets/index-B3bxH4tZ.js",
       "bytes": 623078,
       "sha256": "da90ef2c7062eda4879ef0b3599ac1336eeebb4ef2fefab74c76384df4a4574e"
@@ -7482,6 +7537,11 @@
       "path": "assets/index-DAWBlLZ-.js",
       "bytes": 1185434,
       "sha256": "16a2037f14d61f0a6975fab12f23119d6700612d0009789e1851dd408aa2c27a"
+    },
+    {
+      "path": "assets/index-DCcdte-Q.css",
+      "bytes": 163528,
+      "sha256": "a56ed6a838c1e0cc39ac61b6064db533c593825f5d476c783a0a963f4fc1234d"
     },
     {
       "path": "assets/index-DDj-JglC.js",
@@ -8691,7 +8751,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "2c452fd464edce8f1b9aef5525bf46dc804ea62379c63085b942909c80e58aff"
+      "sha256": "6e7fa7f39ef39d09cd8653f6775fcc1d25f9ae0f05bd5de1e7fbc1fc68293b18"
     },
     {
       "path": "liveries/cc206/credits.txt",
