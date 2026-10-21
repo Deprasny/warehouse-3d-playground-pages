@@ -1,53 +1,34 @@
 {
-  "release": "riverside-double-track-a9b640f",
-  "sourceCommit": "a9b640ffc71999d22ef2719f486436f7166a1f12",
-  "sourceFingerprint": "1cb28c142ebeddba8006f140159eb7359752c017",
+  "release": "mobile-render-debug-4c0337d",
+  "sourceCommit": "4c0337dfef3d92a3c4e2d067a1cc04dae3f12c57",
+  "sourceFingerprint": "08d835d21c98d685870557303895941b3d4bcd9f",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-20T17:55:59.738765+00:00",
+  "builtAt": "2026-10-21T07:44:57.287417+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "52b7b3cfd3317ab0cfacfd2391bc45cf40a69360",
-  "previousPublishedCommit": "8c9875d306a75cd4e5490f1abf8fd674b24d5bb7",
+  "previousSourceCommit": "a9b640ffc71999d22ef2719f486436f7166a1f12",
+  "previousPublishedCommit": "2b9351a30e0276c8f07f506bb85e43425177ff20",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of a9b640ffc71999d22ef2719f486436f7166a1f12",
+    "source": "detached clean checkout of 4c0337dfef3d92a3c4e2d067a1cc04dae3f12c57",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
-    "status": "passed-authorized-targeted-workspace",
-    "run": [
-      "Portal clearance/geometry and turnout joints",
-      "North J1-J4 route/point/signal and movement geometry",
-      "Opposed and crossover runtime scenarios",
-      "Auto4x with real depot paths: 1800 simulated seconds,40 journeys,4stored actors,2completed collections",
-      "Depot store/retrieve,run-around,parking authority and Auto policy",
-      "10 real-asset depot timing/priority cases;4235 yard-only samples",
-      "6 Auto fairness cases"
-    ],
-    "scope": "User explicitly authorized tests before deployment. These are prior targeted workspace results, not a full suite or re-execution on the isolated publication checkout. Clean isolated release is TypeScript/Vite-built; delivered identity and bytes are verified.",
-    "evidence": "outputs/double-track-hill-portals-2026-10-20/tests/test-summary.json",
-    "hotfix": {
-      "status": "passed",
-      "command": "node --experimental-transform-types scripts/check-riverside-crowd-platforms.ts",
-      "redBeforeFix": "TypeError: Cannot read properties of undefined (reading 'map') in residentIntervals",
-      "greenAfterFix": "South22 and North17 finite crowd slots across all3platformstrips.",
-      "scope": "Only the directly affected crowd-layout CPU regression rerun for this hotfix; no browser/full-suite tests."
-    }
+    "status": "not-run",
+    "run": [],
+    "scope": "Automated tests and benchmarks were not run; no explicit test authorization. TypeScript/Vite production build only."
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser/GPU/gameplay visual check or FPS benchmark for this publication."
+    "scope": "No browser, iPhone, GPU, gameplay or FPS checks. Deployment identity and served asset bytes verified separately."
   },
   "currentChangeScope": {
-    "premiumProportions": "Elite five variants and Nusantara seven variants, all high/medium/low; original liveries and rig retained. Updated cache identities and LOD shape contracts.",
-    "portals": "Separated double tracks through both natural low-poly hill mouths; board remains 200x200.",
-    "northStation": "J1/J4 loops and J2/J3 directional mains; all four platform-capable, 90m platforms; UI, Auto, points, signals and routes updated.",
-    "interlocking": "North arrival berth promised before committing the U, preventing the reproduced opposed J1 wait.",
-    "autoFairness": "Actual South berth overlap controls stopping admission; waiting plans preserve needed capacity/lanes instead of starvation by pass fallback.",
-    "depotCollection": "Collection gets new-arrival priority from bay exit; existing traffic and progressive physical block release retained.",
-    "baseline": "Includes previously deployed SSNG proportion correction 221a040 and LOD door pivot hotfix.",
-    "northCrowdHotfix": "Additional North platform slabs default to no fixed-resident exclusions; prevents undefined.map during actual station crowd initialization."
+    "baseline": "Currently deployed riverside-double-track-a9b640f; existing gameplay, map, assets and camera behavior retained.",
+    "renderDiagnostics": "Actual renderer pixel ratio, quality budget ratio, device DPR, canvas CSS size and WebGL drawing-buffer size, sampled once per second only during debug recording.",
+    "mobilePanel": "Resolusi render section displays resolution scale per axis, applied quality, FPS cap, miniature blur and sun/headlight shadow states.",
+    "report": "Resolution snapshot included in copied report summary, frame context and compact recording windows.",
+    "scope": "Debug instrumentation and UI only; no graphics-quality or performance tuning."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -673,6 +654,11 @@
       "path": "assets/AssetCatalogPage-DUIo9-5s.js",
       "bytes": 24446,
       "sha256": "a984c48b95513c62ea3a506ac8bb8e37966dfc07aa43279bee29075005e25207"
+    },
+    {
+      "path": "assets/AssetCatalogPage-DYklIQV1.js",
+      "bytes": 27446,
+      "sha256": "1af703fcb4f7cf98cda5dcff0c3e475a5f0574303046db396be8f43dbaef25e8"
     },
     {
       "path": "assets/AssetCatalogPage-D__6aJ6T.js",
@@ -1850,6 +1836,11 @@
       "sha256": "28b3b21918f01a757663d5ae016c7a89e16bfd40c40081f22cdf519800e73cbb"
     },
     {
+      "path": "assets/Cc206ReviewPage-zbsYkVu8.js",
+      "bytes": 12049,
+      "sha256": "4dd0f31ca418d3dcc6391e0d9a030a3f0c1e61b33507f3cb03e794e767543409"
+    },
+    {
       "path": "assets/ConsistsPage--GBLM79B.js",
       "bytes": 11762,
       "sha256": "961d294e9d882b5594bbb33d34a91e65492d7d2e7dddd6df192b9ef2761fb303"
@@ -2013,6 +2004,11 @@
       "path": "assets/ConsistsPage-Bj8Bexfk.js",
       "bytes": 8470,
       "sha256": "5f67fa975c71bac85ee906566afaefd78d3dc8604392614b499bd106f80f4c87"
+    },
+    {
+      "path": "assets/ConsistsPage-BlTRV-tE.js",
+      "bytes": 14577,
+      "sha256": "d6f423582d9276b2b300adbf2f60bf029a37bf1e868691a8daed73538fb1d06c"
     },
     {
       "path": "assets/ConsistsPage-BnrCgUOr.js",
@@ -2768,6 +2764,11 @@
       "path": "assets/DownloadSimple.es-CUPH2JoF.js",
       "bytes": 2061,
       "sha256": "e13ae862f310cb2534fa7ba8a0e9742f35ad0b928f518747e386e3fb42e32d94"
+    },
+    {
+      "path": "assets/DownloadSimple.es-CW3zWTTl.js",
+      "bytes": 2100,
+      "sha256": "012231a99f5b2c189471cd8990c1d34a4da2bc2c0bf99899fef5c5be53e64e35"
     },
     {
       "path": "assets/DownloadSimple.es-CX9wk0bo.js",
@@ -3955,6 +3956,11 @@
       "sha256": "b19d709932ed86fd20cfa93fe7ed6e3b1b04063df12191e51013c1ee48962327"
     },
     {
+      "path": "assets/GaugeReviewPage-lf_cqXeX.js",
+      "bytes": 18304,
+      "sha256": "0dcf3ccd6475b9a5495376e89e66714eb6e208925ff32d526ff8a3fde3c6ee07"
+    },
+    {
       "path": "assets/GaugeReviewPage-mSrmWpdW.js",
       "bytes": 18205,
       "sha256": "da40d40a9b33c811e046925f60beada46f54fe0782b0b321eaa76ba805eb6354"
@@ -4515,6 +4521,11 @@
       "sha256": "9dfe20b096f579f69fead0e6eb4c27d81214683b2dbc1a013c0492e8dea1f8d8"
     },
     {
+      "path": "assets/HudPreviewPanel-ImwMDJij.js",
+      "bytes": 418,
+      "sha256": "7e81151f441dc5fec9fe5f95726831b022b3b5332596676511f37fea97b24260"
+    },
+    {
       "path": "assets/HudPreviewPanel-JPMXrssH.js",
       "bytes": 428,
       "sha256": "7df8d975ce3eddd91392c0770443b732d397f217230994f9b7131c18ac999ac6"
@@ -4748,6 +4759,11 @@
       "path": "assets/IconBase.es-CDp5ZVi5.js",
       "bytes": 3729,
       "sha256": "0da731d65315170db12bea4a4ca9fd1b960e465f51b38177b6b3c98cbe57aa1a"
+    },
+    {
+      "path": "assets/IconBase.es-CFHwuhd-.js",
+      "bytes": 3729,
+      "sha256": "36e7923e158a0da4b73cfedda1fcfcec05cd3e4acd0ab8dca4a09c655fe86f93"
     },
     {
       "path": "assets/IconBase.es-CNi1KN4Z.js",
@@ -5208,6 +5224,11 @@
       "path": "assets/ImportedCc206Page-CbZZqpx_.js",
       "bytes": 13962,
       "sha256": "69683e2df8158c690dddb5c6cd2196d917989c3dad5bd9eb23fc500ce522eca9"
+    },
+    {
+      "path": "assets/ImportedCc206Page-CblCemsR.js",
+      "bytes": 18446,
+      "sha256": "afc944d2565d6a896a354b010f96ded052107f4be481506a758bb19ccabcb3c5"
     },
     {
       "path": "assets/ImportedCc206Page-CbxsjX-A.js",
@@ -6245,6 +6266,11 @@
       "sha256": "98301c94cf30e1dc3ed8a863dcd539adc4b14bc9298b2d0f789f72788c965c16"
     },
     {
+      "path": "assets/diorama-postprocessing-BtkXDL-C.js",
+      "bytes": 42434,
+      "sha256": "a9f894ac4574f42debd252f352c9eb379f05801fd048998856955b129b2f60d9"
+    },
+    {
       "path": "assets/diorama-postprocessing-BuIbbHYq.js",
       "bytes": 41254,
       "sha256": "64e9ed8fc59f594aaf0d9d974a590379dcbd943e62496f67107a3a798d9b32e3"
@@ -6945,6 +6971,11 @@
       "sha256": "b4a03f5d6b323eae89a02219847886372ca2d6a2cf47b45d28b42602c807f40a"
     },
     {
+      "path": "assets/index-BcCOEjEC.js",
+      "bytes": 1242996,
+      "sha256": "58049b41d140963044499f95336473b1237d02048b688d97d9d36fa42b33d3a0"
+    },
+    {
       "path": "assets/index-BcH1lZY1.js",
       "bytes": 809098,
       "sha256": "3f6d9c5b92a18f2a53b13d82a1281189523e1b4b401d7cf5b9e9a4f5cf0625f4"
@@ -7193,6 +7224,11 @@
       "path": "assets/index-CuhC4Lh2.js",
       "bytes": 919775,
       "sha256": "250d1e84eb1c5caf8735dde75e750444a0c63ded2f3bae926e07ae21bd721d9b"
+    },
+    {
+      "path": "assets/index-CvjmOiVS.css",
+      "bytes": 158576,
+      "sha256": "8de581eb4b8a7b3f3a9fb1661bdb8bf3e81f073f8d1ed450f27663591cde1e83"
     },
     {
       "path": "assets/index-Cvs8WC75.js",
@@ -8432,7 +8468,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "c6f9068e70b4d680129e3f05b7f4105a04cea9b0cca8bbda17486761abbd6a65"
+      "sha256": "7c604da0c7ab6ff7ada2313eed97a0687419f4ad408beafdb67d6e8a89892f5a"
     },
     {
       "path": "liveries/cc206/credits.txt",
