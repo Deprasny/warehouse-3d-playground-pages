@@ -1,36 +1,37 @@
 {
-  "release": "mobile-safe-renderwork-062d046",
-  "sourceCommit": "062d04631e036c301d94eebd93e54ae9b9f41679",
-  "sourceFingerprint": "6c859a7238a5a2752e3810fc0f5edacca39f4b2a",
+  "release": "mobile-follow-culling-dbb694e",
+  "sourceCommit": "dbb694e56f5cc0f794148dd4dd46f8aca957a4ad",
+  "sourceFingerprint": "d968358b4bac547b0111d6681232c6139d6f06ac",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T11:04:25.852739+00:00",
+  "builtAt": "2026-10-21T12:03:04.394563+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "7c74b99e36c2c4cc31a4c3c78edfb81355e4b8b7",
-  "previousPublishedCommit": "3b79f53b0d79955a0ca71106943c1d3b40107dff",
+  "previousSourceCommit": "062d04631e036c301d94eebd93e54ae9b9f41679",
+  "previousPublishedCommit": "6cbd8ff569bf4bd580c2be3cb6849a82985eab88",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 062d04631e036c301d94eebd93e54ae9b9f41679",
+    "source": "detached clean checkout of dbb694e56f5cc0f794148dd4dd46f8aca957a4ad",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
-    "status": "skipped-by-user",
-    "run": [],
-    "scope": "User explicitly selected skip tests and proceed to deploy. No new automated checks, geometry inventory, benchmarks or full suite executed. TypeScript/Vite build passed; independent source review performed."
+    "status": "passed-targeted",
+    "run": [
+      "Seven targeted CPU geometry, tight bounds, layout/LOD/camera transform and fallback checks; rerun selector integration after zero-draw refinement"
+    ],
+    "scope": "User explicitly approved targeted CPU/browser checks then deployment. 14 layouts /328 cells retain exact triangles and shared attributes. TypeScript/Vite production build passed. No full suite or FPS benchmark."
   },
   "browserChecks": {
-    "status": "skipped-by-user",
-    "scope": "User explicitly selected skip tests and proceed to deploy. No new browser/screenshot verification, iPhone XS/Safari or FPS benchmark. Publication identity/served bytes are checked separately."
+    "status": "passed-targeted-with-limits",
+    "scope": "Chromium/RTX2060SUPER, Ringan, matched desktop/mobile viewport static cameras; auto-follow movement, sampled day/night and overview return screenshots. Final HP follow layout estimate58968->10005 triangles,8->23 draws on optimized layouts only. Final whole-frame HP profiler174042 triangles/116 calls day. No physical XS or high-quality shadow image check; no FPS claim."
   },
   "currentChangeScope": {
-    "baseline": "Preserve production world LOD b352412 and concurrently published interactive formation preview7c74b99. Final combined production build passed. No fleet asset, resolution, palette, LOD threshold or HDR/AA setting reduction.",
-    "depotBatching": "Construct9 depot points before fixed and rigid-moving batches. Keep deforming blades and per-point lamps native; preserve receiveShadow and renderOrder flags.",
-    "sceneryTransforms": "Register scenery visual LODs for existing hidden render-walk skip independently of rolling detail membership. Cache world scale with ancestor pose/manual matrix/reparent invalidation and native custom-method fallback.",
-    "zeroGlow": "Skip only exact-zero additive light-pool RGB, respecting captured owner visibility. Restore color/visibility on release. Reveal/restore pool materials during GPU warm renders to retain night preparation.",
-    "vertexBuffers": "Exact all-attribute byte deduplication on owned static buffers when total bytes including index are lower. Triangle order, normals, colors, groups and drawRange retained; unsupported/custom/mutable buffers stay native. Adds construction CPU/temporary memory; no startup speed claim.",
-    "diagnostics": "Device report includes actual WEBGL_multi_draw capability and supported HDR sample counts, queried once per renderer.",
-    "limits": "No new draw/triangle/FPS or physical iPhone measurement. No screenshot/visual/gameplay check yet. Moving BatchedMesh draw savings depend on backend extension support. Some construction buffers can compact twice; culling can be coarser."
+    "baseline": "Preserve mobile-safe-renderwork062d046 and interactive formation preview. No resolution, palette, train detail or scenery LOD threshold reductions.",
+    "spatialLayouts": "Exact whole/cell draw layouts for immutable opaque terrain near/far, shore, board, terraces and completed large static batches. 24m centroid cells share all vertex attributes and retain every full triangle, winding, material and render flags.",
+    "selection": "Main-camera frustum chooses cells only with meaningful triangle savings per added draw; hysteresis and settled-view cache. Original layout retained when already culled or near overview. No individual cell visibility suppression; native beauty and shadow camera culling remain independent.",
+    "ownership": "Extra subset index buffers/bounds/objects; immutable attributes and original material shared. Hidden banks skip render transform walks. Headlight ground classification uses original semantic source.",
+    "diagnostics": "latestScene.spatialCulling reports main-camera estimates for optimized layouts only, separate from actual whole-frame geometry profiler and GPU timing.",
+    "limits": "Draws can increase for close views. Retains full map in memory. No physical iPhone/Safari FPS benchmark, high-quality shadow image validation or full suite. See docs/mobile-follow-culling.md for matched static views, final same-camera layout estimates and nonmatched follow sample limits."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -446,6 +447,11 @@
       "path": "assets/AssetCatalogPage-C8bkuryJ.js",
       "bytes": 24446,
       "sha256": "0f87cd68016a5834f21dfd2d321380cac22d7acab3ebb19bfbc95d6e60e73cfd"
+    },
+    {
+      "path": "assets/AssetCatalogPage-C98WONqV.js",
+      "bytes": 27474,
+      "sha256": "1bf87118ce3e199f48a6d320382a630ca764c4aa60d28e77032f1928eb2c500b"
     },
     {
       "path": "assets/AssetCatalogPage-CCA4jUkZ.js",
@@ -1878,6 +1884,11 @@
       "sha256": "fc8f6b1b6656b7f45c8838ce8553e847f7c8582b643efba41944dabdb2688d7d"
     },
     {
+      "path": "assets/Cc206ReviewPage-dK2S94j2.js",
+      "bytes": 12083,
+      "sha256": "7d8a1b014336fbf77584eb55622468cf468b43f8eba2847a3696e01a033ecfff"
+    },
+    {
       "path": "assets/Cc206ReviewPage-deX7ghdH.js",
       "bytes": 12019,
       "sha256": "d5f65ba03d84172741470ab730bf1a05154a6d9d14e1fd32deee42fd86fa9195"
@@ -2486,6 +2497,11 @@
       "path": "assets/ConsistsPage-Dr8BIa3m.css",
       "bytes": 4499,
       "sha256": "f016b885c0d87a63155c443d90932559582f826254bd7dba91450e19cb52edc7"
+    },
+    {
+      "path": "assets/ConsistsPage-Dr8o6dME.js",
+      "bytes": 25871,
+      "sha256": "d7a8a464e439dd48e722a9d4d05669d233904f21c47b8e4cf45e43338cbba3cd"
     },
     {
       "path": "assets/ConsistsPage-Drn90UwM.js",
@@ -3303,6 +3319,11 @@
       "sha256": "9b710a18ad502e3661b8712e87a5d1a276d198808e3a3a1b1fc505d58cf82a7f"
     },
     {
+      "path": "assets/DownloadSimple.es-in-4XoOv.js",
+      "bytes": 2100,
+      "sha256": "d47746236d34eb2040b1e40714d7dbd49f8a9a78c9fdad7afeef4256bd6b13b9"
+    },
+    {
       "path": "assets/DownloadSimple.es-jp1jbfuy.js",
       "bytes": 2102,
       "sha256": "65b1c8d4539e2827ef4c371c63235cd5bb7fed2e40d66f01a950a1e8cade2d2f"
@@ -4026,6 +4047,11 @@
       "path": "assets/GaugeReviewPage-D6sCndRO.js",
       "bytes": 18214,
       "sha256": "46684e1663c873566e3206213cf5e1760191470b271b4bc06834f8f4c7517f91"
+    },
+    {
+      "path": "assets/GaugeReviewPage-D7MA3sEE.js",
+      "bytes": 18338,
+      "sha256": "9f33bb22ebb13bd1356b522a2698023583fea2b07ab1497aec1a10a4df637f04"
     },
     {
       "path": "assets/GaugeReviewPage-D7VjjaHD.js",
@@ -4898,6 +4924,11 @@
       "sha256": "f484f046ce22d955fdbef7effbaf57a64f88bfb48cf0bdbf8bda7533b0e2fd76"
     },
     {
+      "path": "assets/HudPreviewPanel-XU6waYBp.js",
+      "bytes": 418,
+      "sha256": "c34e870570f5fc0b694c7d2d4e9a1bb8315c35cc2ea68e48e38dafde87547971"
+    },
+    {
       "path": "assets/HudPreviewPanel-XdeEpHCz.js",
       "bytes": 428,
       "sha256": "c20c0110ce0ff89020cff336f8a075e50eb4cdc1657571b1b1e28e5d3aac3b00"
@@ -5091,6 +5122,11 @@
       "path": "assets/IconBase.es-CFHwuhd-.js",
       "bytes": 3729,
       "sha256": "36e7923e158a0da4b73cfedda1fcfcec05cd3e4acd0ab8dca4a09c655fe86f93"
+    },
+    {
+      "path": "assets/IconBase.es-CLbgItRy.js",
+      "bytes": 3734,
+      "sha256": "436c189a36601805d771098b65b68cc0bc1018a025e779a4ca6fa8896c440d8d"
     },
     {
       "path": "assets/IconBase.es-CNi1KN4Z.js",
@@ -5471,6 +5507,11 @@
       "path": "assets/ImportedCc206Page-BrT0YaI-.js",
       "bytes": 13963,
       "sha256": "51b91cd80db16688534e400a3304d21d9603b0a2238ddca06cf78880ce3f5c21"
+    },
+    {
+      "path": "assets/ImportedCc206Page-BsQjZB9Q.js",
+      "bytes": 18478,
+      "sha256": "d67141bba75af67c16a6a14f238dac629819939b6c187748caac38b1c275aefc"
     },
     {
       "path": "assets/ImportedCc206Page-BsoaC6eR.js",
@@ -6088,6 +6129,11 @@
       "sha256": "39be6b6e018345f61cf958d8235ca2efd8e673192d6955d254844b03188c3c69"
     },
     {
+      "path": "assets/cc201-game-template-C1L7N-Dr.js",
+      "bytes": 5086,
+      "sha256": "4d1cba15b4fd07bd657a9f577f95ebfebed79d474459158cfb50a4cf01be65ec"
+    },
+    {
       "path": "assets/cc201-game-template-CBAuXUrp.js",
       "bytes": 4799,
       "sha256": "e1d4935cd2125f683335753bb75c382e3b1fe7b6a379df34ef4ad44ca7931329"
@@ -6193,6 +6239,11 @@
       "sha256": "7b4b2cc3ecefd99d707017da67caa40ff25342d5da19243f4d018b66879c4f5d"
     },
     {
+      "path": "assets/cc203-game-template-B-GlYXqQ.js",
+      "bytes": 7002,
+      "sha256": "c9f68eee094007c854afa2e434153e2c914a195a1e5917da7131a2be2fa68e23"
+    },
+    {
       "path": "assets/cc203-game-template-B5N_CiWZ.js",
       "bytes": 7002,
       "sha256": "9341ede8749f95dabb3d0a291a37a60c356fa315223f889569ea0e94c0dd1c14"
@@ -6281,6 +6332,11 @@
       "path": "assets/cc205-game-template-BIdqQT-o.js",
       "bytes": 3980,
       "sha256": "2629ba93e4ade1f51d811de56ac3636970e9a9870e244850095048de8e092b33"
+    },
+    {
+      "path": "assets/cc205-game-template-B_VO_QZT.js",
+      "bytes": 4249,
+      "sha256": "1e5cb4e322b7fe2b0e13544ef19569a26e90b346224b4429f82f482a699440fa"
     },
     {
       "path": "assets/cc205-game-template-BaeEc-Zi.js",
@@ -6463,6 +6519,11 @@
       "sha256": "cf5628151d416d27114437313dc79cc5fa11f331ddeb93b10ddc04f4ff835ded"
     },
     {
+      "path": "assets/cc206-game-template-DGwZ9r8Y.js",
+      "bytes": 10866,
+      "sha256": "eaf03d6084d66b8f06436ba42224b6811d1d63405a411558a79271176aea2e8f"
+    },
+    {
       "path": "assets/cc206-game-template-DMNqNrtR.js",
       "bytes": 8129,
       "sha256": "d666c4dc4c956dd80cab37479bd7c7f45637284c6d8e526fa2db86a55ec6cf0a"
@@ -6638,6 +6699,11 @@
       "sha256": "5f734dae9dd997259177d0683ffc9854dafb65e12c95bf46e7d586812af7d432"
     },
     {
+      "path": "assets/consist-preview-stage-CimikuOj.js",
+      "bytes": 10024,
+      "sha256": "a8c2309a3a8af85a7a1effea4591a0c8336b1be6547b1be3b80a97ae161b9381"
+    },
+    {
       "path": "assets/consist-preview-stage-Dec5T5UB.js",
       "bytes": 10024,
       "sha256": "fc6924f8822f2ffbc790ebd0b2ccf5a7c82b11c4c08d925a38988843dc7dca04"
@@ -6761,6 +6827,11 @@
       "path": "assets/diorama-postprocessing-Bd22U5NP.js",
       "bytes": 40373,
       "sha256": "ccb7f0d7307febe5fa0dc7df108a36cfff75285ce2faa9cb9b8b2d4864142f24"
+    },
+    {
+      "path": "assets/diorama-postprocessing-BlaKlF1c.js",
+      "bytes": 42440,
+      "sha256": "3df5e11cceca273d5f3eb2a26e979f4d4a97c43f2465909c13d18937b1a7dfe0"
     },
     {
       "path": "assets/diorama-postprocessing-Bp70QLjs.js",
@@ -8098,6 +8169,11 @@
       "sha256": "3c7e89bf2260d1b768ce9ab773758bf06853a03c12642737f7ea70e4aa8f6f6b"
     },
     {
+      "path": "assets/index-_Vu81gbU.js",
+      "bytes": 1041374,
+      "sha256": "af8670a1241384e40c8592b7e0c6e87a0aa93730873f4957137f863255b3bde7"
+    },
+    {
       "path": "assets/index-aHRQ1-VX.js",
       "bytes": 738839,
       "sha256": "875c5b0055219c2868ec9aaf4507369c36d302a32b86f0ccececafe8b21bb68a"
@@ -8316,6 +8392,11 @@
       "path": "assets/locomotive-model-selection-DJwo8AcJ.js",
       "bytes": 14346,
       "sha256": "e44e2e2bbe101ae3c404ad53d560cc2655e5d8c44a023103236b0562f4417104"
+    },
+    {
+      "path": "assets/locomotive-roof-BLK4NGps.js",
+      "bytes": 9333,
+      "sha256": "49e8dd21310cdc190189cef584af6c687e685e3170142bd436defe76d9a03fe3"
     },
     {
       "path": "assets/locomotive-roof-BZW-xxyC.js",
@@ -8586,6 +8667,11 @@
       "path": "assets/sandbox-bounds-CN-GgZog.js",
       "bytes": 709449,
       "sha256": "fdc8c62d2f1821cd152f49d9a36d768d02788ee249b8dc9dbe12c85111b7a4aa"
+    },
+    {
+      "path": "assets/sets-BIwp5VuN.js",
+      "bytes": 220427,
+      "sha256": "eb233d7b3ab3d7c717f12b3f8e9ce49ad3dba49de00f5f665540cd8a38550e8e"
     },
     {
       "path": "assets/sets-DNnjv0ZL.js",
@@ -9245,7 +9331,7 @@
     {
       "path": "index.html",
       "bytes": 3434,
-      "sha256": "e5ed60ef17f96355d18aa806f46663f8b59ee5d19cddde282a44f53812919fc4"
+      "sha256": "4759f6ff1c5b46dbf603a77d5dc02ea000eeb5746ee0b3975c324a1aa9809344"
     },
     {
       "path": "liveries/cc206/credits.txt",
