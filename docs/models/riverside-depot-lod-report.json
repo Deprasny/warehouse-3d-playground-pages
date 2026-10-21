@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "generator": "scripts/build-depot-lod.mjs",
+  "source": "riverside-depot-kit.glb",
+  "sourceSha256": "c0f8ebba72859b4a582b1e69535d34a18a45ac26d997b99ce651b7356ead5b8d",
+  "output": "riverside-depot-kit-low.glb",
+  "outputSha256": "206759b2e344829a38924deb574631cf10082e5489261df298ee46cf1ee497a4",
+  "processing": "Distant depot geometry only; painted colours, materials, node transforms and door pivots retained. Flat normals regenerated; authored high-detail GLB unchanged.",
+  "targetRatio": 0.24,
+  "error": 0.004,
+  "transport": {
+    "extension": "EXT_meshopt_compression",
+    "quantization": false,
+    "filters": false,
+    "uncompressedGlbBytes": 804136,
+    "description": "Lossless transport compression after the distant geometry simplification."
+  },
+  "high": {
+    "triangles": 15550,
+    "bytes": 1223236
+  },
+  "low": {
+    "triangles": 7271,
+    "bytes": 281468
+  },
+  "triangleReduction": 0.532411575562701,
+  "entries": [
+    {
+      "name": "GEO-grand-depot-shed",
+      "before": 3747,
+      "after": 1915
+    },
+    {
+      "name": "GEO-grand-depot-roof-1",
+      "before": 1676,
+      "after": 402
+    },
+    {
+      "name": "GEO-grand-depot-roof-2",
+      "before": 1636,
+      "after": 392
+    },
+    {
+      "name": "GEO-grand-depot-roof-3",
+      "before": 1676,
+      "after": 402
+    },
+    {
+      "name": "GEO-grand-depot-door-1-left",
+      "before": 156,
+      "after": 156
+    },
+    {
+      "name": "GEO-grand-depot-door-1-right",
+      "before": 156,
+      "after": 156
+    },
+    {
+      "name": "GEO-grand-depot-door-2-left",
+      "before": 156,
+      "after": 156
+    },
+    {
+      "name": "GEO-grand-depot-door-2-right",
+      "before": 156,
+      "after": 156
+    },
+    {
+      "name": "GEO-grand-depot-door-3-left",
+      "before": 156,
+      "after": 156
+    },
+    {
+      "name": "GEO-grand-depot-door-3-right",
+      "before": 156,
+      "after": 156
+    },
+    {
+      "name": "GEO-grand-depot-office",
+      "before": 1967,
+      "after": 469
+    },
+    {
+      "name": "GEO-grand-depot-clock-tower",
+      "before": 1214,
+      "after": 431
+    },
+    {
+      "name": "GEO-grand-depot-water-tower",
+      "before": 586,
+      "after": 554
+    },
+    {
+      "name": "GEO-grand-depot-workbench",
+      "before": 270,
+      "after": 270
+    },
+    {
+      "name": "GEO-grand-depot-compressor",
+      "before": 242,
+      "after": 242
+    },
+    {
+      "name": "GEO-grand-depot-tool-trolley",
+      "before": 192,
+      "after": 192
+    },
+    {
+      "name": "GEO-grand-depot-wheelset-rack",
+      "before": 508,
+      "after": 508
+    },
+    {
+      "name": "GEO-grand-depot-lifting-jack",
+      "before": 106,
+      "after": 106
+    },
+    {
+      "name": "GEO-grand-depot-hoist-rails",
+      "before": 20,
+      "after": 16
+    },
+    {
+      "name": "GEO-grand-depot-hoist-bridge",
+      "before": 40,
+      "after": 40
+    },
+    {
+      "name": "GEO-grand-depot-hoist-hook",
+      "before": 84,
+      "after": 84
+    },
+    {
+      "name": "GEO-grand-depot-service-pump",
+      "before": 76,
+      "after": 76
+    },
+    {
+      "name": "GEO-grand-depot-apron",
+      "before": 444,
+      "after": 106
+    },
+    {
+      "name": "GEO-grand-depot-track-buffer",
+      "before": 40,
+      "after": 40
+    },
+    {
+      "name": "GEO-grand-depot-service-platform",
+      "before": 90,
+      "after": 90
+    }
+  ]
+}

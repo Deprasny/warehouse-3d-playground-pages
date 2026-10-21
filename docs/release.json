@@ -1,37 +1,38 @@
 {
-  "release": "formation-shelf-5189f93",
-  "sourceCommit": "5189f93e396ce3450ccaeb737a6d420b10331ae5",
-  "sourceFingerprint": "4f6c703198f72bf5b750334ee39f116e6c4ebb50",
+  "release": "mobile-world-lod-b352412",
+  "sourceCommit": "b3524121b07e4724fe1db86204354283795956e2",
+  "sourceFingerprint": "a2106b25b586f787814dbcbca356096c14d465d7",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T10:30:36.157247+00:00",
+  "builtAt": "2026-10-21T10:33:03.595395+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "7028e357bbbd72d26ea49d2cbf963da65945f65b",
-  "previousPublishedCommit": "a93353f9a21f47aa8d92dba3131b21fd6adb1066",
+  "previousSourceCommit": "5189f93e396ce3450ccaeb737a6d420b10331ae5",
+  "previousPublishedCommit": "c16e9ea738dce57cc52b3b0b58fabd28f8c1000a",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 5189f93e396ce3450ccaeb737a6d420b10331ae5",
+    "source": "detached clean checkout of b3524121b07e4724fe1db86204354283795956e2",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
-    "status": "not-run",
-    "run": [],
-    "scope": "No automated test suites or FPS benchmarks run. The user explicitly authorized desktop/mobile browser checks for select assets, assemble and save, without dispatching trains. Production-base TypeScript/Vite build and publication status/identity verification are separate."
+    "status": "passed-targeted-only",
+    "run": [
+      "Approved CPU geometry inventory and assertions: .cache/world-lod-check-20261021/inventory.mjs"
+    ],
+    "scope": "Exact e63ea50 near rail/terrain and hardware checks, far endpoints/gaps, batching invariants,1681 exact height queries,6672 exact terrain boundary edges,39608 near/far centroid coverage checks. Max sampled far height47.27mm/normal3.566deg. TypeScript/Vite production build passed. No full suite/FPS tests."
   },
   "browserChecks": {
-    "status": "passed-scoped",
-    "scope": "Follow-up checked locally at 1440x900 desktop and 390x844 Chromium mobile emulation: CC206 with three coaches, large preview, explicit order/type labels, contained thumbnails, selected carriage visible after viewport resize, fixed footer, and save. Workspace clientHeight equalled scrollHeight (454px desktop, 474px mobile). Earlier category/search/reorder/detail/persistence checks are recorded separately in the review document. No dispatch, real-device performance claim, automated suites or FPS benchmarks.",
-    "evidence": "docs/formation-hud-ux-review-20261021.md"
+    "status": "passed-targeted-only",
+    "scope": "Explicitly approved geometry/draw traces, zoom transitions and overview/close screenshots. Matched Ringan1920x991 DPR1;375x640 DPR3 mobile viewport on Chromium/Windows RTX2060SUPER. Scene paused,no active trains. No conspicuous rail breaks/terrain cracks in compared views; ambient motion differs. No iPhone/Safari or FPS benchmark."
   },
   "currentChangeScope": {
-    "baseline": "Published formation-shelf-7028e35 retained, including the merged mobile-rail-terrain-e63ea50 geometry optimization. This follow-up changes formation preview and shelf sizing only.",
-    "builder": "Rangkaian opens directly into a wide horizontal vehicle shelf. Four locomotive choices and the production carriage catalogue use real asset thumbnails, search and category filters.",
-    "assembly": "Click a locomotive to change the engine type; click a carriage to append one at the rear. The connected composition strip updates immediately, with installed model counts and capacity feedback.",
-    "controls": "Fixed-height move, duplicate and remove actions; optional floating unit details; searchable saved collection. A persistent footer keeps Save and Atur keberangkatan visible; the latter opens dispatch configuration.",
-    "layout": "Formation preview is primary: 184px-wide vehicle controls with 76px contained thumbnails (previously 108px and 32px), visible front/number/name/type labels and coupling indicators. Shelf tiles reduced to 128px with 64px thumbnails. Desktop editor height 570px; mobile 590px, constrained by available viewport. Selection stays visible after viewport resize; footer stays outside workspace scrolling.",
-    "accessibility": "Labelled native controls, visible selected state, native horizontal scrolling and keyboard focus. Assembly scrolling changes only the horizontal strip position, preserving consecutive shelf clicks.",
-    "isolation": "Only formation HUD, its editor hook and release documentation changed. Unpublished rail-carrier assets and other unrelated working-tree edits are excluded."
+    "baseline": "Geometry baseline e63ea50. Preserve concurrently published formation preview5189f93 by merge; its HUD/editor/documentation changes do not change the measured geometry. Final combined production build passed. Camera, render resolution preferences, simulation, fleet assets and diorama palette retained.",
+    "rails": "Separate batched near/far sweep banks; original near geometry retained. Far top strips, bounded curve sampling, broad ballast sides and exact gaps/bridge endpoints. Subpixel fastener plates culled. All mountain/Riverside callers finalize both banks.",
+    "terrain": "Exact baseline near surface; far checked 5cm/4deg block16 simplification. Immutable shared attributes, separate indices, exact shore/soil and gameplay height queries.",
+    "people": "Simpler closed far figures and coherent per-person LOD; near figures, role colors and animation pivots retained. Main-view LOD retained for shadow pass.",
+    "depot": "Original high GLB retained. Far 15550 to 7271 triangles, 281468-byte Meshopt transport; no quantization/lossy filters after geometry simplification. Extra startup download/decode and stored LOD buffers.",
+    "measuredGeometry": "Main+depot sweep near75466/far10424; ground near23332/far16276. Matched desktop overview frame285389 to179962 triangles,472 to384 draws. Mobile viewport overview285387 to179960,470 to382 draws. Geometry snapshots only, not FPS gains.",
+    "limits": "No physical iPhone XS/Safari or FPS benchmark; no full gameplay/weather/location matrix. Dedicated close depot camera not compared. Additional LOD buffers and startup cost unbenchmarked."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -432,6 +433,11 @@
       "path": "assets/AssetCatalogPage-C4vPRTrw.js",
       "bytes": 24487,
       "sha256": "8c3f1ecffbb2aead126abc734ad7cb246934b3314be5d44a4718dfb662b1e19a"
+    },
+    {
+      "path": "assets/AssetCatalogPage-C6J3bFLE.js",
+      "bytes": 27446,
+      "sha256": "52778578194594617e4249676f3b32d172a7c600a3d9510e958b75300d4996ad"
     },
     {
       "path": "assets/AssetCatalogPage-C8bkuryJ.js",
@@ -1194,6 +1200,11 @@
       "sha256": "46f9e64d64117975cf2a1a4da7874a3dce1982a3bbddcc4cfeedf34ecda133cd"
     },
     {
+      "path": "assets/BufferGeometryUtils-Cq_zcVh7.js",
+      "bytes": 5337,
+      "sha256": "07d37a2e32351d7c7fca8389b9f16feedff7c10578042f574f24b73f07f9a4fe"
+    },
+    {
       "path": "assets/BufferGeometryUtils-D_K8gBps.js",
       "bytes": 4752,
       "sha256": "acd5346a9af0cb6edcd7b2c8035dc8d141aee9028fa87f7a2887ff8e3974b356"
@@ -1562,6 +1573,11 @@
       "path": "assets/Cc206ReviewPage-CeeT0uli.js",
       "bytes": 12022,
       "sha256": "7cc22efadc19e95219b8a18c01aed7de73735ab12ed121b27e4bb8da4f4d4a56"
+    },
+    {
+      "path": "assets/Cc206ReviewPage-CesG_2c1.js",
+      "bytes": 12049,
+      "sha256": "63d0108251070d4be56638946e1af1073e7620ac49f0411e0390b64717ed3c76"
     },
     {
       "path": "assets/Cc206ReviewPage-CgKFYTTp.js",
@@ -2564,6 +2580,11 @@
       "sha256": "7b519f788989b7a65997318065e431a8c21770625ccb555af894c7638229fd7f"
     },
     {
+      "path": "assets/ConsistsPage-pq7A3fT0.js",
+      "bytes": 22143,
+      "sha256": "64c7744f0a40c5347d32e018c99537682a3ac3ccbb345b6770481c8ef76acc05"
+    },
+    {
       "path": "assets/ConsistsPage-qQHDrwRQ.js",
       "bytes": 13572,
       "sha256": "dc95f4d05594a8a3d1cb3fe06252e44ad3f913f2fa0d6995238240f802af233f"
@@ -3174,6 +3195,11 @@
       "sha256": "3062d79984f06eb27f0166799bc9c63f6e7bfed47d5d8b5be1836a5160667259"
     },
     {
+      "path": "assets/DownloadSimple.es-QR84AsQE.js",
+      "bytes": 2100,
+      "sha256": "601e8ea75536ff8a10d65c5d83afeed8a2106c0aaff00a745e8ff449c732d2e7"
+    },
+    {
       "path": "assets/DownloadSimple.es-QrHLaCOp.js",
       "bytes": 2061,
       "sha256": "4f954d7dc8d9ecc0aac8a1697789e778e186c34e26eb0038a878011b239eb264"
@@ -3267,6 +3293,11 @@
       "path": "assets/DownloadSimple.es-xY18WiPL.js",
       "bytes": 2061,
       "sha256": "bcbf8ce989287ba284d44f1e83ea21c6310a5990bff2355707e4de79eee5b93a"
+    },
+    {
+      "path": "assets/GLTFExporter-BJqNG1VR.js",
+      "bytes": 36779,
+      "sha256": "3ecf11c2f3d5500ac7e18ceae34f215388351b1376352bcbfd384f448848abb7"
     },
     {
       "path": "assets/GLTFExporter-BNjNMp04.js",
@@ -3382,6 +3413,11 @@
       "path": "assets/GLTFLoader-C4rEGfoC.js",
       "bytes": 44394,
       "sha256": "62fc7c913dfe13b20dabe448bfd611faa1436c666449753054c11c60eb57d6b4"
+    },
+    {
+      "path": "assets/GLTFLoader-C9VbNAuz.js",
+      "bytes": 44396,
+      "sha256": "c699d25eedea202d87097055be17ddd9a54ef364c840ae5c66626e5de25616f1"
     },
     {
       "path": "assets/GLTFLoader-C9px0ImY.js",
@@ -4022,6 +4058,11 @@
       "path": "assets/GaugeReviewPage-GjeFj12O.js",
       "bytes": 18299,
       "sha256": "13a562dc4be937871afb9bb8d96a5af87d616aa0a48c64ae72e8322b34983983"
+    },
+    {
+      "path": "assets/GaugeReviewPage-JeltUMb5.js",
+      "bytes": 18304,
+      "sha256": "1d776ef6cb1589dfccdd60aff387a9807f5ff8d5dda937b274addf3c093d6d15"
     },
     {
       "path": "assets/GaugeReviewPage-K_fR-kM6.js",
@@ -4699,6 +4740,11 @@
       "sha256": "7df8d975ce3eddd91392c0770443b732d397f217230994f9b7131c18ac999ac6"
     },
     {
+      "path": "assets/HudPreviewPanel-JZogk66L.js",
+      "bytes": 418,
+      "sha256": "bd799d00b04a3a172af75a633d000be148dd5adf97cdbc9e9b4ca576c51aefcb"
+    },
+    {
       "path": "assets/HudPreviewPanel-LJ64GhfH.js",
       "bytes": 421,
       "sha256": "c5fa08018126a602322c5c9f64e2bffa654d55b55e404d55b618febb2840c7e1"
@@ -4897,6 +4943,11 @@
       "path": "assets/IconBase.es-BsPR6AlI.js",
       "bytes": 3432,
       "sha256": "59c31cc44d78c314a606840c20df26a05440e684007b3ec460fd4c96767d1aff"
+    },
+    {
+      "path": "assets/IconBase.es-Bv4p1Gwk.js",
+      "bytes": 3734,
+      "sha256": "171c28bc9ee69638d1e699a17a94b6f65f12d482e432905bd04951df6087c2ab"
     },
     {
       "path": "assets/IconBase.es-BwFmbv5e.js",
@@ -5559,6 +5610,11 @@
       "sha256": "b9f7acd3500d56fbbdb2e9916d1120f0ede481ef3b64c519ff5e72bcc8e380dc"
     },
     {
+      "path": "assets/ImportedCc206Page-DDIMLO-8.js",
+      "bytes": 18446,
+      "sha256": "9e465910703e259a1c77d141b140b71161793d5319568ff4c2b5eae9094406d3"
+    },
+    {
       "path": "assets/ImportedCc206Page-DDxZ2oRD.js",
       "bytes": 18451,
       "sha256": "828cc8fb08e5b5362b2af4cf8ebc020d59f1d55e302ac3a93f58bc4f1223c6f5"
@@ -5829,6 +5885,11 @@
       "sha256": "79b29cb1790560f0a0f32b4a31d935e2782875e4a367fde23c81d986b327ec3f"
     },
     {
+      "path": "assets/carriage-lamp-material-B46oVjxD.js",
+      "bytes": 576,
+      "sha256": "91d26f4bac02f291168b04f59010f82df2033fb9cdd9ab3b554ef1467f617019"
+    },
+    {
       "path": "assets/carriage-lamp-material-CxEinzDs.js",
       "bytes": 576,
       "sha256": "21bd309e5cf7c983df78fa0a5c89c2fd17a0db055f9726f96392fa6fcfaec735"
@@ -5974,6 +6035,11 @@
       "sha256": "772a55d538d4e5db4f46beaa9b036ad047b47526de43df00c095479b47566c72"
     },
     {
+      "path": "assets/cc201-game-template-u36KPJax.js",
+      "bytes": 5086,
+      "sha256": "aacf76a7870c5f113bb471665a0a6d3b6323de0c173bb6d3ecaf18c8fa07b0f5"
+    },
+    {
       "path": "assets/cc201-game-template-uZSUDU5E.js",
       "bytes": 5086,
       "sha256": "22c630b10761ed5bf5424603ca53bea64252547a776486e7170c3766c1c6dafd"
@@ -6017,6 +6083,11 @@
       "path": "assets/cc203-game-template-CtQBaLtv.js",
       "bytes": 7138,
       "sha256": "63437b2dad401bac4f3edcb90b83b5c77c27388c094e81f9fab46ca424efd3ab"
+    },
+    {
+      "path": "assets/cc203-game-template-D0kaPIDs.js",
+      "bytes": 7002,
+      "sha256": "69be247596d15d66a079367d3ccfee96ddd44982a56695a74aaa32df36cc3e12"
     },
     {
       "path": "assets/cc203-game-template-D9WB9-Uf.js",
@@ -6097,6 +6168,11 @@
       "path": "assets/cc205-game-template-CDzGUtWD.js",
       "bytes": 4249,
       "sha256": "f98d149dd782248e5228f5704f15c2a5192835b946ce1a9e49eec768a746f1ff"
+    },
+    {
+      "path": "assets/cc205-game-template-CNQDUJ7o.js",
+      "bytes": 4249,
+      "sha256": "8a691d32c65646a7b16997001993e2dfcbe2afddccb3731f87207cb8b6f0f848"
     },
     {
       "path": "assets/cc205-game-template-CRl2W41R.js",
@@ -6289,6 +6365,16 @@
       "sha256": "626183d21b7a838dc62c655762670d84f53371c56b1d496be360e831371c527f"
     },
     {
+      "path": "assets/cc206-game-template-zKnZlRI-.js",
+      "bytes": 10866,
+      "sha256": "4a7fad0322c81a06dc87678a9262fa3ddd90d55e2fe5b7c2d65d701db30c0f72"
+    },
+    {
+      "path": "assets/cc206-game-visuals-0O0kc_4g.js",
+      "bytes": 8080,
+      "sha256": "e22b85c29625ce7e75e73c4a162cb312d7caf360e13bc66497461c73deabc8b5"
+    },
+    {
       "path": "assets/cc206-game-visuals-B39AKTke.js",
       "bytes": 8042,
       "sha256": "aab14b89475d76f343c4d5ba3bf879e3b8fd819d8c8545e94de5ddedd310c576"
@@ -6337,6 +6423,11 @@
       "path": "assets/cc206-game-visuals-aVJP_8Pt.js",
       "bytes": 8080,
       "sha256": "c22676697e603546b9d7e030117bdff6484fd821f3b83f46bba3a50c5d24a466"
+    },
+    {
+      "path": "assets/coach-bodies-6AYpxXy1.js",
+      "bytes": 9177,
+      "sha256": "6e7ebbcef9bdc6bd589173dcd2c1dd633e15f0deac20e93689c5ccc25ef1d56c"
     },
     {
       "path": "assets/coach-bodies-BPleEKND.js",
@@ -6452,6 +6543,11 @@
       "path": "assets/diorama-postprocessing-BVXV6k3s.js",
       "bytes": 42405,
       "sha256": "6b7bc314c8723d62279fdc4931502584c1141b9e851a13e0cef36e42bb992fcd"
+    },
+    {
+      "path": "assets/diorama-postprocessing-BX-z5IoH.js",
+      "bytes": 42436,
+      "sha256": "a072416e664fa8cfc0779a4564c20d64a90db91c186b273e2898cee9a4aa106e"
     },
     {
       "path": "assets/diorama-postprocessing-BYL7RObX.js",
@@ -6894,6 +6990,11 @@
       "sha256": "8e43206684bf06aa4801905df60789b19b2600cf77eaa0027fef3893f6256b21"
     },
     {
+      "path": "assets/diorama-style-C0cnwUMV.js",
+      "bytes": 6061,
+      "sha256": "cb77cffedfbe59cf6ec6d930414b856f17a276a893d4829b1597a436cc6bbe8f"
+    },
+    {
       "path": "assets/diorama-style-C0tTkoVw.js",
       "bytes": 5944,
       "sha256": "ad7d32eb5e093324baebab867f1cd50a85e58b324ab7c98b54135048f536169a"
@@ -6952,6 +7053,11 @@
       "path": "assets/diorama-style-QxZQ8-Ta.js",
       "bytes": 5153,
       "sha256": "2e533be517e6dfe5461dda33d1bd3ccb6ca3eb211d04f52ee44ef844f0efa3e0"
+    },
+    {
+      "path": "assets/elite-coaches-B26QdzOx.js",
+      "bytes": 7233,
+      "sha256": "0577f2478b23cd68909ec07246a08fd33eb61fbf5cd09b96a5449da3fe622897"
     },
     {
       "path": "assets/elite-coaches-BRWoxsrL.js",
@@ -7022,6 +7128,11 @@
       "path": "assets/gear-gauge-qV9g1Val.js",
       "bytes": 1417,
       "sha256": "3c650d30ec59f9ad321d7a67479b194898a5ad8743ff583469a64b0f40dbc196"
+    },
+    {
+      "path": "assets/gear-gauge-xWCKHbL-.js",
+      "bytes": 1417,
+      "sha256": "b7583f1e2cc007650e7b6f1a3b5f7e11bfc7543c4a6c79ce9fa34779bad93a42"
     },
     {
       "path": "assets/index-02rirJvD.js",
@@ -7624,6 +7735,11 @@
       "sha256": "97cc492cbe7a35342a6399b940a4f72534cb19d7af6d9258d1c34acf997d0b17"
     },
     {
+      "path": "assets/index-DipubBgW.js",
+      "bytes": 1249764,
+      "sha256": "bddedcde89d764e1a928970e4ccc4acc644e4e91bbce2b180f1f90fedcb3e6f2"
+    },
+    {
       "path": "assets/index-DjUZLSZu.js",
       "bytes": 790530,
       "sha256": "c17087092f79660ccba2a09458a4229f418ea988ea9fbac356fb4bfbc5469b64"
@@ -7854,6 +7970,11 @@
       "sha256": "ce2ca1a508209a70aa20514b209b1bd7f23130db247637cd0a72ec1de3016e11"
     },
     {
+      "path": "assets/jacaranda-tree-GpdVXQtX.js",
+      "bytes": 3331,
+      "sha256": "54719b857aafe15ca1b6b22b78a607cf3a27107885eda86e3777ee6de43390c4"
+    },
+    {
       "path": "assets/jacaranda-tree-Jm_QdI4h.js",
       "bytes": 3331,
       "sha256": "017e5ad20c443b61b6725e9989b3a17c7a6d18761bad8a0e186026aa0a206c9c"
@@ -7959,6 +8080,11 @@
       "sha256": "ad95be2219cf52c4e8a663bb9e6d6bae3ef942bbb3ce6a429b5a9a1225f97f79"
     },
     {
+      "path": "assets/locomotive-roof-DW7GLs1N.js",
+      "bytes": 9195,
+      "sha256": "f773deef29f40912e1e01190e64fa7449ae6a03e04577bd2b2dd22c1a420196e"
+    },
+    {
       "path": "assets/locomotive-roof-DxRtTnER.js",
       "bytes": 9195,
       "sha256": "f52378a4bf5ab11fbb6157ae65252e8cbbf04974d359921d1631cc632e60cd5d"
@@ -8002,6 +8128,11 @@
       "path": "assets/nusantara-coaches-BMPJVriF.js",
       "bytes": 7782,
       "sha256": "ceabddf9b07bff4118b12516785ad72b7abcd7938bf2694a6237cd5c6f068323"
+    },
+    {
+      "path": "assets/nusantara-coaches-BT5Mm2mH.js",
+      "bytes": 8107,
+      "sha256": "e7a8b71e6e15b6af10dd99a17d27a51e97fb16a69991f78da8840224761c7272"
     },
     {
       "path": "assets/nusantara-coaches-BWNPPzST.js",
@@ -8079,6 +8210,11 @@
       "sha256": "c120ce427546fdcda3dcda02bea5d7605559e1d30339322698fc6b0f459b26d9"
     },
     {
+      "path": "assets/passenger-advertising-CT-b9aoY.js",
+      "bytes": 3007,
+      "sha256": "e992496548febfa3030b62809f4c91164f47a3f95718b617538450d8ed5da127"
+    },
+    {
       "path": "assets/passenger-advertising-D7bo4BEc.js",
       "bytes": 3007,
       "sha256": "744ef6e75f68fa685b6d9a29e5d5ef1946450aee1bf91f6b6461f0c18c4e4b64"
@@ -8087,6 +8223,11 @@
       "path": "assets/passenger-advertising-DYN6kb71.js",
       "bytes": 3007,
       "sha256": "c8c048e5b5bc1860bae57e942d1b341be4d94264b0d33a9a0775f9daf2455f6b"
+    },
+    {
+      "path": "assets/preload-helper-BHTDTnFZ.js",
+      "bytes": 3618,
+      "sha256": "4f8206d66ef0d81df421a904bd381d76bf620cad8b5aeece04c97737d82d65c0"
     },
     {
       "path": "assets/preload-helper-Br_ApurM.js",
@@ -8179,6 +8320,11 @@
       "sha256": "56b98ea96b88a7ca2f54485021cfff1fff3b0c920cdaeebcca9bf828d7ea9e94"
     },
     {
+      "path": "assets/taksaka-ssng-iFhapWAT.js",
+      "bytes": 16727,
+      "sha256": "8a8555e41cb8173e76b254083a17f3a7c0eae1a84de16d862a1956ebb7bc90c5"
+    },
+    {
       "path": "assets/terrain-XPngmypu.js",
       "bytes": 2424,
       "sha256": "b37e31940b692e820dd5201222dcac00cd993072f4f1b33124064160f26db4cf"
@@ -8202,6 +8348,11 @@
       "path": "assets/three.core-B3cxfkoF.js",
       "bytes": 262169,
       "sha256": "d8a28541d785138d6732c91ca09adea50b5bc25d551ecff7d8552e3ef4c39ba1"
+    },
+    {
+      "path": "assets/three.core-BUtXCakY.js",
+      "bytes": 283126,
+      "sha256": "af4b5536ede25696cc3808e6d77ecbcab916923f2b435c78bf71da6453120fdd"
     },
     {
       "path": "assets/three.core-C-PyFkKG.js",
@@ -8257,6 +8408,11 @@
       "path": "assets/three.module-BO1doOTd.js",
       "bytes": 352294,
       "sha256": "3d86bdf420f98e5da48d810d83833e6fa1766c55066f06cb2ccb04ef90f54314"
+    },
+    {
+      "path": "assets/three.module-CNFR3Iim.js",
+      "bytes": 352313,
+      "sha256": "5ee6fb3e88769bfd16410ead3120fe3810de940ab4de81871b41e04a3b86e29d"
     },
     {
       "path": "assets/three.module-CSQK7dYb.js",
@@ -8751,7 +8907,7 @@
     {
       "path": "index.html",
       "bytes": 3329,
-      "sha256": "6e7fa7f39ef39d09cd8653f6775fcc1d25f9ae0f05bd5de1e7fbc1fc68293b18"
+      "sha256": "e97d3606184b6f53bd0e2b3d1389f33b03f458aa309a4a033f480fdbb4b25eb5"
     },
     {
       "path": "liveries/cc206/credits.txt",
@@ -9219,6 +9375,11 @@
       "sha256": "cbd3896c54ecd2541a4a1784a60fd0195096168143ba04013f76dbb840eb44f9"
     },
     {
+      "path": "models/riverside-depot-kit-low.glb",
+      "bytes": 281468,
+      "sha256": "206759b2e344829a38924deb574631cf10082e5489261df298ee46cf1ee497a4"
+    },
+    {
       "path": "models/riverside-depot-kit-manifest.json",
       "bytes": 7095,
       "sha256": "0bd173b2a4b3b018f008ef1d051990ad55de7ff08c88662e8e10c1d2a17eb898"
@@ -9227,6 +9388,11 @@
       "path": "models/riverside-depot-kit.glb",
       "bytes": 1223236,
       "sha256": "c0f8ebba72859b4a582b1e69535d34a18a45ac26d997b99ce651b7356ead5b8d"
+    },
+    {
+      "path": "models/riverside-depot-lod-report.json",
+      "bytes": 3390,
+      "sha256": "2b3f3d1870cbd54b463d54278ebc753eddb2b99e485af06def5b7409d3d950bf"
     },
     {
       "path": "models/riverside-dermaga-kit-low.glb",
