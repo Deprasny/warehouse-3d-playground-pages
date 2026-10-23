@@ -1,38 +1,36 @@
 {
-  "release": "riverside-eight-tracks-nature-4c78283",
-  "sourceCommit": "4c78283dde9d4469544fa3379eeb88a30a9b5d08",
-  "sourceFingerprint": "e27ae5f3678d2a4c29e078723353fea842c5d1ae",
+  "release": "south-centered-free-tracks-ea47984",
+  "sourceCommit": "ea479840653a665266f505dbdcae8ab5b1241e9d",
+  "sourceFingerprint": "32d56bba1960044370e932e1122d3187f80d0597",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-23T17:18:24.774151+00:00",
+  "builtAt": "2026-10-23T17:49:11.029377+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "34927adb3f1acedef772f95fbde7dfafa8630088",
-  "previousPublishedCommit": "73b51b12725b99d59f9323840d71dfab25f6638b",
+  "previousSourceCommit": "4c78283dde9d4469544fa3379eeb88a30a9b5d08",
+  "previousPublishedCommit": "42a3baf8eaf19cb0d6dd047959259eaf3fd6b59a",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 4c78283dde9d4469544fa3379eeb88a30a9b5d08",
+    "source": "detached clean checkout of ea479840653a665266f505dbdcae8ab5b1241e9d",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "User requested implementation and deployment without tests. No automated tests, check scripts, check:all, profiling or benchmarks. Build, static review and publication identity/file verification are separate."
+    "scope": "User requested no tests. Build, static review and publication HTTP identity/file verification are separate. No automated tests, geometry probes, benchmarks or check scripts."
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser, gameplay, visual screenshot, mobile or FPS verification; live release metadata and served entry/asset bytes checked through HTTP only."
+    "scope": "No browser, gameplay, screenshots, mobile or FPS verification. Live metadata and entry/asset bytes checked by HTTP only."
   },
   "currentChangeScope": {
-    "baseline": "Published fps-pacing-34927ad retained, including display-refresh frame pacing and previously published formation/culling changes. Apply only this task's deltas from per-file cached baselines; unrelated dirty workspace features and fleet binary edits excluded.",
-    "performance": "Paused settled viewport skips simulation/render preparation; signal suffix decisions cached within explicit revisions; raw world asset fetch sharing/prefetch and cooperative rolling-stock priming; HUD snapshot cadence and atomic spatial audio frame updates.",
-    "map": "Old roads, houses, farms, depot, non-rail worksite and animated water/scenery construction/loading disabled. Railway station facilities, trains, rail bridge, portals, signals and passenger services retained.",
-    "southStation": "Eight South tracks: J1-J4 front and J5-J8 rear, six platform slabs, exact shared ladder geometry, signals, block reservations, UI dispatch and Auto track selection. North remains four tracks.",
-    "shunting": "Manual and Auto store/collect on rear station tracks using the same wagons and locomotive; source and holding berths reserved, shared throat protected during movement and released when parked. Depot remains absent.",
-    "turnouts": "Remove direction boards, poles, arrows and indicator lamps from turnout construction; retain motor boxes, blades, linkage and route locking. Main railway signals remain.",
-    "ornaments": "Bounded deterministic groups of low-poly round trees, pines, rocks and grass; four static instance banks, no new textures, GLB requests, lights or frame animation. Clearance covers actual rails including rear tracks, stations, portals, terrain and operational props.",
-    "fleet": "Published rolling-stock assets, liveries and carriage kit cache versions retained unchanged.",
-    "build": "Hook-disabled TypeScript/Vite build with GitHub Pages base succeeded. Existing large chunk and ineffective dynamic import warnings remain. No measured FPS or runtime equivalence claim."
+    "baseline": "Published 4c78283dde9d4469544fa3379eeb88a30a9b5d08 retained. Only task deltas included; unrelated dirty workspace and fleet assets excluded.",
+    "geometry": "South approach centered at Z64.85 between all eight tracks. Board widened to 320x200m, longer smooth shoulders and rear ladder; existing 90m platforms retained. Portals, bridge, signal boundaries and terrain follow physical rails.",
+    "routing": "South J1-J8 accept both directions including East return, with existing approach direction policy and interlocking retained. Auto balances successful South assignments across eight tracks; West return B does not count as a South visit.",
+    "shunting": "Station shunting cruise 6m/s, points approach 4.5m/s, final coupling 1.2m/s. Source and holding berths remain reserved; parked throat released.",
+    "audio": "Locomotive wheel and rail-joint audio uses absolute signed travel delta for reverse movement. Source, visibility, finite speed and pose-jump guards prevent reset bursts. Published diesel engine silence setting retained.",
+    "fleet": "Rolling-stock models, liveries, dependencies and cache versions retained unchanged.",
+    "verification": "Hook-disabled TypeScript/Vite production build passed. Static review only; rear curvature estimate is analytical, not a runtime measurement or real railway standard. Existing large chunk/dynamic import warnings retained."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -308,6 +306,11 @@
       "path": "assets/AssetCatalogPage-BWvbdt5p.js",
       "bytes": 24446,
       "sha256": "2050d83db293a029a2844896513b7d85909ebe2e9e249c7b943808aaf5031598"
+    },
+    {
+      "path": "assets/AssetCatalogPage-BXIV7Rw9.js",
+      "bytes": 27479,
+      "sha256": "e250455d01f4c4fb3b820e197fb7828edd42cfedb9b39e4c72018409dc56afc9"
     },
     {
       "path": "assets/AssetCatalogPage-BYKdo2Ca.js",
@@ -1710,6 +1713,11 @@
       "sha256": "e45aab00c25280393573fc87a04983a0df7d89f124174eef1bc7773d79851d4c"
     },
     {
+      "path": "assets/Cc206ReviewPage-CxoqfI_3.js",
+      "bytes": 12083,
+      "sha256": "e3ee757662908308de8716288c6a51530f4de1b64150a433b3877266a7b30fcf"
+    },
+    {
       "path": "assets/Cc206ReviewPage-CzYzOV-3.js",
       "bytes": 12022,
       "sha256": "3ac0ecceefd7ad9e41cd4025566969eec9f964bd62bdf653a3103d00a3b2f693"
@@ -2680,6 +2688,11 @@
       "sha256": "dd82a4635c3ad54c721b2080c001f9903616d0926b001e1cab42a2b5068c8935"
     },
     {
+      "path": "assets/ConsistsPage-aSJqBfdh.js",
+      "bytes": 25907,
+      "sha256": "446d24b17b865fe007aa372f819fe6066a3f4fd41bc6107621eaeec08a14bca6"
+    },
+    {
       "path": "assets/ConsistsPage-auv-ncx6.js",
       "bytes": 11762,
       "sha256": "a8e5f282a7ac23c7a3d0ef44ac04af9ca8b3296a02c57842f014406f3d5fe4c8"
@@ -3365,6 +3378,11 @@
       "sha256": "3062d79984f06eb27f0166799bc9c63f6e7bfed47d5d8b5be1836a5160667259"
     },
     {
+      "path": "assets/DownloadSimple.es-Ms_nHiFD.js",
+      "bytes": 2100,
+      "sha256": "047a717f9d095c3e1a6ae6c32032d16cefb88e40c484eb8e2956febb42c6781a"
+    },
+    {
       "path": "assets/DownloadSimple.es-QB0M9U3E.js",
       "bytes": 2100,
       "sha256": "f850d0260bcb43d3aca0abb9a206deaee6e69e0973ff892b961f56398f8da57e"
@@ -3843,6 +3861,11 @@
       "path": "assets/GaugeReviewPage-BLafMSf8.js",
       "bytes": 18205,
       "sha256": "b02464bb38cbeadd35c56f8f78e54038606e1411444c96277b496a6381e073f9"
+    },
+    {
+      "path": "assets/GaugeReviewPage-BNY3UNF-.js",
+      "bytes": 18338,
+      "sha256": "c4304940fdb7de76ecd456da87dce0a7d99bedc625fc5f6c238676b0f2e2a652"
     },
     {
       "path": "assets/GaugeReviewPage-BOLziBZ9.js",
@@ -4900,6 +4923,11 @@
       "sha256": "f08541e419ae5ccad4259fe44baa79754400efab79e56ed5ae84eaa6eae7de2f"
     },
     {
+      "path": "assets/HudPreviewPanel-DNc3rYax.js",
+      "bytes": 418,
+      "sha256": "338cb38135c046a0fb49010e447370ea17b5ff6142e51b450f0c15318162517c"
+    },
+    {
       "path": "assets/HudPreviewPanel-DRWRHw12.js",
       "bytes": 428,
       "sha256": "e87b285464777fc98b1e0be3c6ce9ffcb80ff2f2ac6868c70a5ab8a46e0cc61e"
@@ -5378,6 +5406,11 @@
       "path": "assets/IconBase.es-CpdwGZL4.js",
       "bytes": 3740,
       "sha256": "b2817c826a1674773db0b15f3fa66865c2886dd52ddf9aa82a3b49010874aabf"
+    },
+    {
+      "path": "assets/IconBase.es-D141_oSd.js",
+      "bytes": 3734,
+      "sha256": "19ef7b17c4b92759249b30ec7c734be4d06ab474450c3f080f803a4686146052"
     },
     {
       "path": "assets/IconBase.es-D1MEk3Ag.js",
@@ -6133,6 +6166,11 @@
       "path": "assets/ImportedCc206Page-DuhdS5Ra.js",
       "bytes": 18446,
       "sha256": "c32d8a7e9202dc50c472ab1fb604fe6e6bd6072cb9989586eaf9ddd9c8e5446a"
+    },
+    {
+      "path": "assets/ImportedCc206Page-DxGtkV4e.js",
+      "bytes": 18473,
+      "sha256": "a31df5b28504ebccc0c49278ae54ea3c520ed8ced38d4d7dd59e9bb64e72c0a2"
     },
     {
       "path": "assets/ImportedCc206Page-DzxaaFCn.js",
@@ -7050,6 +7088,11 @@
       "sha256": "a8c2309a3a8af85a7a1effea4591a0c8336b1be6547b1be3b80a97ae161b9381"
     },
     {
+      "path": "assets/consist-preview-stage-Cm1t6rnC.js",
+      "bytes": 10024,
+      "sha256": "c6ee72f376b8baca41aa009455e1ed85ac909ac1d58cee297f4593dcd49aceaf"
+    },
+    {
       "path": "assets/consist-preview-stage-Cmvkph2z.js",
       "bytes": 10024,
       "sha256": "0d889d7629cfe15a7a7973a81390ae9f452c8065d7d292be85aa2d1990225a51"
@@ -7128,6 +7171,11 @@
       "path": "assets/diorama-postprocessing-BH1K2B3-.js",
       "bytes": 40300,
       "sha256": "39820e0a9f6d64d4a3b103cb7ddedc8518d0181dfec0f57b676891e947456183"
+    },
+    {
+      "path": "assets/diorama-postprocessing-BHW98sH3.js",
+      "bytes": 42435,
+      "sha256": "c57ae9c05804a97305af4baa680dd620dc79f0e0692ad6b3f53541a11ead478b"
     },
     {
       "path": "assets/diorama-postprocessing-BH_kMUo7.js",
@@ -7943,6 +7991,11 @@
       "path": "assets/index-B6wgXRYx.js",
       "bytes": 896985,
       "sha256": "6fa6c495ae7a0baf442f7ee89dbc6b0dc0472cbef16fa1f0a670c61f492d826c"
+    },
+    {
+      "path": "assets/index-B8QhSfkm.js",
+      "bytes": 1010796,
+      "sha256": "702d0043c35c1e323ee0e5db582da44abbaf2f25c587dfe4886f824745fb0935"
     },
     {
       "path": "assets/index-B9GEpSv5.js",
@@ -9912,7 +9965,7 @@
     {
       "path": "index.html",
       "bytes": 3546,
-      "sha256": "dc805a475fbf0443ab3f7f65b935baf42723aba0a5dc0c2b57d44737078ef013"
+      "sha256": "441a03b6d90b8dc3dcb7d399f3cacf0f33d67a6512877b6f80d079b39d64c4d0"
     },
     {
       "path": "liveries/cc206/credits.txt",
