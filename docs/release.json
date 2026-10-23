@@ -1,38 +1,38 @@
 {
-  "release": "train-culling-37f656f",
-  "sourceCommit": "37f656f54b5680850c824599ef7b3184d5705670",
-  "sourceFingerprint": "d7dcc035a085308604d777017792fbe55b87c2d5",
+  "release": "fps-pacing-34927ad",
+  "sourceCommit": "34927adb3f1acedef772f95fbde7dfafa8630088",
+  "sourceFingerprint": "c35ca9a297d703ad33388d04d3fe9cb279820038",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-21T17:52:07.470485+00:00",
+  "builtAt": "2026-10-23T02:20:01.904651+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "a1d3f5ca1e013baf35f5a018d0908a4277af7822",
-  "previousPublishedCommit": "1271a8c98b91c27f07c09298fc672577c0d39299",
+  "previousSourceCommit": "37f656f54b5680850c824599ef7b3184d5705670",
+  "previousPublishedCommit": "140dbc04d767c7e768472050ad7e63fca2f9ddf0",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 37f656f54b5680850c824599ef7b3184d5705670",
+    "source": "detached clean checkout of 34927adb3f1acedef772f95fbde7dfafa8630088",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "passed-targeted",
     "run": [
-      "7 focused culling/lifecycle checks including1500 affine corner-oracle cases, shadow/headlight/warmup and clipping/wireframe/material fallbacks",
-      "18 focused geometry/cache checks including exact actual CC206/SSNG/Elite all3LOD source reconstruction, adversarial solids/attributes/winding, real hash collision and cooperative LRU accounting"
+      "scripts/check-frame-pacing.ts with new estimator, snapped pacing and budget cases",
+      "scripts/check-gpu-warmup-target.ts with a canvasOutput:false case"
     ],
-    "scope": "Explicit user approval for combined checks then deploy; fix retests limited to changed proof cache. TypeScript/Vite build passed with test hooks disabled. No full suite or device FPS benchmark."
+    "scope": "Explicit user approval for these two checks, run on the working tree and again on the clean release checkout. TypeScript/Vite build passed with test hooks disabled. No full suite or device FPS benchmark."
   },
   "browserChecks": {
-    "status": "passed-targeted-with-limits",
-    "scope": "Chromium desktop1920x991 and HP viewport375x640 DPR3: matched two-train South framing with baseline screenshots/debug reports, detail/follow, quality change, day/night and active headlights. Current opaque exterior remained intact. Background people/requests differ. Cutaway/wireframe CPU-only; no physical iPhone/Safari or FPS benchmark."
+    "status": "not-run",
+    "scope": "No browser/gameplay checks or FPS benchmarks"
   },
   "currentChangeScope": {
-    "baseline": "Preserve mobile-rail-culling-a1d3f5c, art/livery, resolution and existing LOD thresholds.",
-    "frustum": "Conservative affine local-box source culling for pooled and singleton train visuals, including Auto daytime noncasters; restore layers on visibility/ownership changes.",
-    "shadows": "Keep independent sun proxies and true casters. Preserve previous headlight paths and warmup coverage; native fallback draws remain per-pass.",
-    "runningGear": "Exact duplicate and certified fully enclosed triangle pruning within each rigid bogie/wheel/axle mesh. Compact private geometry and enclosed-only cutaway/wireframe fallback preserve exterior attributes and winding.",
-    "preparation": "Cooperative proof cache with hash plus full-byte collision verification, immutable copied results and bounded24entry/4MiB retained-data budget; no GPU ownership.",
-    "limits": "Same-framing two-train South train-category triangles decreased29.0% light and34.3% Auto; not device FPS or all-camera guarantees. Hidden-face savings alone are modest; preparation/fallback have CPU and small memory costs. See docs/train-culling.md."
+    "framePacing": "Once RAF intervals identify a nominal panel rate, the pacer admits whole refreshes at the divisor nearest the selected cap (60 on 75 Hz presents an even 75 FPS; 30 presents 25). Before recognition or on unlisted panels the previous deadline gate applies.",
+    "refreshEstimator": "Two-sided cluster mean around the 10th-percentile RAF interval over 64 samples; whole multiples of a recognised panel keep it; other readings must repeat on two updates.",
+    "adaptiveQuality": "Auto and adaptive Light judge against the presented rate while the panel is recognised, otherwise the previous cap/fastest-display target.",
+    "settings": "Batas FPS shows the recognised refresh and presented rate; option labels and saved preference key unchanged.",
+    "warmup": "Quality preparation no longer compiles or draws canvas-output main-pass variants; only a wired wireframe control would need them.",
+    "base": "Production source 37f656f plus this change only; other uncommitted working-tree changes are excluded."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -823,6 +823,11 @@
       "path": "assets/AssetCatalogPage-K9AmULKW.js",
       "bytes": 27446,
       "sha256": "57db621e4b35aa666d3ee8cee5aa762b518dfef8c00818e5d5774c2855183411"
+    },
+    {
+      "path": "assets/AssetCatalogPage-NUP6ZTBZ.js",
+      "bytes": 27479,
+      "sha256": "91e8af21ea3f7707b6003b9bd5ffa1b96896e5f8f632cb9d391dffeb8fe52c7d"
     },
     {
       "path": "assets/AssetCatalogPage-NpCIbZe9.js",
@@ -1865,6 +1870,11 @@
       "sha256": "4d6817d970a2a0694be2e8c4e1108a050106e3000b09d86fe2538ced34012704"
     },
     {
+      "path": "assets/Cc206ReviewPage-GgowVQ1_.js",
+      "bytes": 12083,
+      "sha256": "4f98ccf7198b7a6f70659468b82035dd75bae009f8944f5c30e51b5cec9b6370"
+    },
+    {
       "path": "assets/Cc206ReviewPage-KyiFBVeR.js",
       "bytes": 12049,
       "sha256": "4bc7b1d9b9e3a8053e4a8420028bfc6dadfe912ed5ebaf1de12f733f09423f24"
@@ -2253,6 +2263,11 @@
       "path": "assets/ConsistsPage-CPgA3OPA.js",
       "bytes": 13572,
       "sha256": "3d5eaddcec5576588d116a0ce78039c4bab33584878d2f87091f91283be2b5a5"
+    },
+    {
+      "path": "assets/ConsistsPage-CRkkZPZv.js",
+      "bytes": 25871,
+      "sha256": "5f1d0e29a5e435bb520f611911414f42030a73d74c4065d47b563caccc57b30f"
     },
     {
       "path": "assets/ConsistsPage-CU5g1_iU.js",
@@ -3360,6 +3375,11 @@
       "sha256": "27cd4cebd82dd01612978f38a250aeb0074f39d66d1415ec603e2ccb18d5e74d"
     },
     {
+      "path": "assets/DownloadSimple.es-cd_AxIPl.js",
+      "bytes": 2100,
+      "sha256": "124ee3924ebb916404030d0ec658431b083a3094868b0a1ea4eee3a6ea3472aa"
+    },
+    {
       "path": "assets/DownloadSimple.es-gpUjnyko.js",
       "bytes": 2061,
       "sha256": "9b710a18ad502e3661b8712e87a5d1a276d198808e3a3a1b1fc505d58cf82a7f"
@@ -3940,6 +3960,11 @@
       "sha256": "f45744f91e56a63e680103c67f77cc707d8a8a7338d7881b0bc9975226d65c1f"
     },
     {
+      "path": "assets/GaugeReviewPage-CCZYzBz8.js",
+      "bytes": 18338,
+      "sha256": "6181a98a4317a503657021a2f1c11ac6712dd5df481dc5de173e20568c48e4f6"
+    },
+    {
       "path": "assets/GaugeReviewPage-CGJtqEk2.js",
       "bytes": 18299,
       "sha256": "24bff4e334a987692975511dd5d23295194f28d7717d28807b7959e235803d2f"
@@ -4368,6 +4393,11 @@
       "path": "assets/GaugeReviewPage-xVuvFyya.js",
       "bytes": 18304,
       "sha256": "e3e242791a7bbb0c69e4b080f1f7dbc1f416ff2010dba75ec69d95da06ab1537"
+    },
+    {
+      "path": "assets/HudPreviewPanel-2baIoW5X.js",
+      "bytes": 418,
+      "sha256": "50dc1b607c37165d31f0493d79ea6849a0d5b31b8223f802b7e99bb21a8b9b74"
     },
     {
       "path": "assets/HudPreviewPanel-4ZYeoB12.js",
@@ -5300,6 +5330,11 @@
       "sha256": "5afb179c8bfc12a251611ce56ecf7eeb2ba43892b21923be9926dc7b25a5671c"
     },
     {
+      "path": "assets/IconBase.es-DGzPz-OO.js",
+      "bytes": 3734,
+      "sha256": "141c3274aef8e06947a4ae14133124587f1d88024146f78677d2698a85b84e99"
+    },
+    {
       "path": "assets/IconBase.es-DRbmcILO.js",
       "bytes": 3740,
       "sha256": "24a98666ee1a82cce854811ea531e7abd9b71b33ed5a0cc1f20b369fdbebd0c4"
@@ -5523,6 +5558,11 @@
       "path": "assets/ImportedCc206Page-BR0ncrSD.js",
       "bytes": 13962,
       "sha256": "dfba994e225b41b537156bf86bfc708178182f196b3132114b860f360d8199d1"
+    },
+    {
+      "path": "assets/ImportedCc206Page-BR9Kwjzm.js",
+      "bytes": 18478,
+      "sha256": "d8cd0b684806cd815d014901eb4f68f59313d713c58e2630397417703a386897"
     },
     {
       "path": "assets/ImportedCc206Page-BRYS2N1z.js",
@@ -6170,6 +6210,11 @@
       "sha256": "640678d7a9daa634655e64d9bdfc76bde76be9d8916c8965b940ef51de6a3353"
     },
     {
+      "path": "assets/cc201-decoder.worker-BfeUUnPR.js",
+      "bytes": 36783,
+      "sha256": "363e63dd81fd181279dd811eb9f785973dc84e556fe9370da52dc2e024a15c35"
+    },
+    {
       "path": "assets/cc201-decoder.worker-ChVfWu9Y.js",
       "bytes": 36743,
       "sha256": "40a19e36b41cf8cdf4c910748d76a91e0e89fd27eef6d773e59b9cf507a68c83"
@@ -6258,6 +6303,11 @@
       "path": "assets/cc201-game-template-CYLifxIf.js",
       "bytes": 3993,
       "sha256": "a1b8438d7582851643dbc5806836c655d073350a0e4ad98308ab107469cc1e1c"
+    },
+    {
+      "path": "assets/cc201-game-template-ChevVGMu.js",
+      "bytes": 5111,
+      "sha256": "627504d612bdb4a013e64af7ac6c276b348c8779b6f93244139048f5aa47533b"
     },
     {
       "path": "assets/cc201-game-template-CjYe_jGK.js",
@@ -6400,6 +6450,11 @@
       "sha256": "3dad7b679ba34b59d2e5c3f9464783b7eaa11bfc5df7eb1d6d464dd22254b5ee"
     },
     {
+      "path": "assets/cc203-game-template-DIr_jlTC.js",
+      "bytes": 7002,
+      "sha256": "f5059d05d5ed97b1d36ca19c6941f9e39e139d962653a3fb4a5de42757c4d92f"
+    },
+    {
       "path": "assets/cc203-game-template-DUoTI9U2.js",
       "bytes": 7002,
       "sha256": "241e108cb54274176f54388e425628e6643f3b7127df1c47a49ef876ecdd731e"
@@ -6530,6 +6585,11 @@
       "sha256": "3d1a5729a1c23a71e0e1b06d63391357f62320f8253e2b3ca22378d26489684f"
     },
     {
+      "path": "assets/cc205-game-template-DXZwUYfV.js",
+      "bytes": 4254,
+      "sha256": "02d7e93c57610d4023aae90ada6de7ee0fb10cb83c641a736a914b9d9a587c79"
+    },
+    {
       "path": "assets/cc205-game-template-DXzZeyjR.js",
       "bytes": 4163,
       "sha256": "3e7b3d51ff1ef2b96a26fe9cebebe29027e753f692388037af5e6e30cfdecc3c"
@@ -6653,6 +6713,11 @@
       "path": "assets/cc206-game-template-DUL2sUur.js",
       "bytes": 8129,
       "sha256": "c5b09d6b632d317e8382e01874ef7a6919e1713e39d10b6a297af9c233b0afcb"
+    },
+    {
+      "path": "assets/cc206-game-template-DV1rvU9f.js",
+      "bytes": 10866,
+      "sha256": "c65d0efecc535856e4f2f986bdd539d8230e836f399ff60b6d2e8d1a673fbc91"
     },
     {
       "path": "assets/cc206-game-template-DfD4aSa4.js",
@@ -6825,6 +6890,11 @@
       "sha256": "5f734dae9dd997259177d0683ffc9854dafb65e12c95bf46e7d586812af7d432"
     },
     {
+      "path": "assets/coach-bodies-Gbk0mkTr.js",
+      "bytes": 9172,
+      "sha256": "7b1a66e8bbc2c6fbb0ba684ffb9a8a9955949e48dec76d494943513358387c8e"
+    },
+    {
       "path": "assets/coach-bodies-KjDUM_01.js",
       "bytes": 9172,
       "sha256": "38ab80fc8d2f267ba2cabfd626b804b4fa7aa7027e49beecd2ae69c96a03bcfe"
@@ -6838,6 +6908,11 @@
       "path": "assets/consist-preview-stage-CimikuOj.js",
       "bytes": 10024,
       "sha256": "a8c2309a3a8af85a7a1effea4591a0c8336b1be6547b1be3b80a97ae161b9381"
+    },
+    {
+      "path": "assets/consist-preview-stage-CxsbfgaW.js",
+      "bytes": 10024,
+      "sha256": "502dd3b40d98a6418ee084a5ecb129848bd3303791740aea5640c109137a6938"
     },
     {
       "path": "assets/consist-preview-stage-DEMuXkU3.js",
@@ -7300,6 +7375,11 @@
       "sha256": "fd44f95652217ffe18378be7ca48974ffc6426963e50a7d83a7c639835e5a3f0"
     },
     {
+      "path": "assets/diorama-postprocessing-JRM2XKiJ.js",
+      "bytes": 42440,
+      "sha256": "87f1b605a26d711c78e3032448ed43e1159c0d38dc0d87c093ba1d1d43eb5bbf"
+    },
+    {
       "path": "assets/diorama-postprocessing-MdzfSDny.js",
       "bytes": 41254,
       "sha256": "81dd80e35d7a3545b18c12fcb52c3575d7feaff6cee8a7c6697444acc80053cd"
@@ -7518,6 +7598,11 @@
       "path": "assets/elite-coaches-BucrIO_5.js",
       "bytes": 7164,
       "sha256": "a3c9f3e65fc3f30510497b62bc2ed2505331586a78359aae92049eb0469518d6"
+    },
+    {
+      "path": "assets/elite-coaches-C2a4plOI.js",
+      "bytes": 7233,
+      "sha256": "207897545d14582478142793420acdcd03c2efb6a59b86ca0337589aae57c047"
     },
     {
       "path": "assets/elite-coaches-D5omKRqY.js",
@@ -7775,6 +7860,11 @@
       "sha256": "f4eff2d8e4d7b44197730af1bbe419aaf4ad8e6ccc408efce791501a31dcab00"
     },
     {
+      "path": "assets/index-BZ2vijVA.css",
+      "bytes": 163138,
+      "sha256": "3b7710c147646ba4ff5b9daa9aa0f111fe51d18a87206e1d3a87b8d846735bcd"
+    },
+    {
       "path": "assets/index-BZKIMRr9.js",
       "bytes": 752502,
       "sha256": "050b136e7b8aebe31f8f5641dc00795ef5cebde9060e652c070de2f781d9f063"
@@ -7873,6 +7963,11 @@
       "path": "assets/index-Bws5LMi8.css",
       "bytes": 115652,
       "sha256": "6b6dcf94172a411a60db32efc727eaf816e64bc4dafd2586ca3061234a318efc"
+    },
+    {
+      "path": "assets/index-BwwL-T_W.js",
+      "bytes": 1052718,
+      "sha256": "4596ba16ff5ee46f371c467f47441b091449f2edbbbcc98a1d0199f84de07ec6"
     },
     {
       "path": "assets/index-BxQEDhG4.js",
@@ -8470,6 +8565,11 @@
       "sha256": "a2135d129792bf346a5da0dfd28fd942a0a9ff02f17407011d62ae9daba6c19e"
     },
     {
+      "path": "assets/jacaranda-tree-CbUpIe03.js",
+      "bytes": 3331,
+      "sha256": "add10cb4aedf263b1cd42acda2f37d15b24434a5f443ef6da7eb72a5e056d114"
+    },
+    {
       "path": "assets/jacaranda-tree-Cr_tCNA6.js",
       "bytes": 3336,
       "sha256": "0fde2bf51860ef88b9fa666bb8428efa795f9600880183056f2ace7ac3f527d5"
@@ -8715,6 +8815,11 @@
       "sha256": "9a1f59c2b0768713c04a0f9bffbfbe108b9fc579ef18a990cae79c709af676f4"
     },
     {
+      "path": "assets/nusantara-coaches-DNjBKmE1.js",
+      "bytes": 8107,
+      "sha256": "2899ec009996255e5aca4883df3efc75a7403dd7da8c8e69fa1c36d6573c4c6e"
+    },
+    {
       "path": "assets/nusantara-coaches-DS8RDI4d.js",
       "bytes": 7782,
       "sha256": "32aef75e90b79a96fb2f1dcebe0d8c5fd7ce4b03afc7e4fb6bdf53b8001edadd"
@@ -8790,6 +8895,11 @@
       "sha256": "c8c048e5b5bc1860bae57e942d1b341be4d94264b0d33a9a0775f9daf2455f6b"
     },
     {
+      "path": "assets/passenger-advertising-gSVEU0rD.js",
+      "bytes": 3007,
+      "sha256": "5063ab41ac70e934d977e084de70fe80ba8821a5f9df8febafa7373863195f17"
+    },
+    {
       "path": "assets/preload-helper-BHTDTnFZ.js",
       "bytes": 3618,
       "sha256": "4f8206d66ef0d81df421a904bd381d76bf620cad8b5aeece04c97737d82d65c0"
@@ -8840,6 +8950,11 @@
       "sha256": "07aa2a2960a72eb689c0ac0eebbd3d284ec5e863811fc7fce698a84d68c96688"
     },
     {
+      "path": "assets/preload-helper-dOZgTYqo.js",
+      "bytes": 3638,
+      "sha256": "e63f455e97e3d07ba5efd6360f85ccdbb4cead80490c20a685661577622258ce"
+    },
+    {
       "path": "assets/preload-helper-gdRhpRf7.js",
       "bytes": 3616,
       "sha256": "1632370357c3c97ef3422a6df79b876e92d6f421ce4a4bce88732ebc1652f536"
@@ -8848,6 +8963,11 @@
       "path": "assets/preload-helper-iCJmfHIe.js",
       "bytes": 3729,
       "sha256": "5704cda5e5189ad129bfc41bd8079acdc33bb9bd305954dfd1114cfd57339c75"
+    },
+    {
+      "path": "assets/public-url-B_a2Z8Hr.js",
+      "bytes": 141,
+      "sha256": "50122b4a60d7af6c830b9552139e5801ec02900b39bb681d2cf4d00900fbf63f"
     },
     {
       "path": "assets/public-url-Cn3Yv7Zx.js",
@@ -8883,6 +9003,11 @@
       "path": "assets/sets-DuUa7PtW.js",
       "bytes": 218435,
       "sha256": "82f4c0c7f47cbfe155764f670ab234b224f6e8f056d4f4cfab38030e34f11d90"
+    },
+    {
+      "path": "assets/sets-RL_9_U34.js",
+      "bytes": 218435,
+      "sha256": "3ca73f4691976c5e9588f6fc5d2db775a9bfcbed4c31c82ceacccab5e0ad9b1d"
     },
     {
       "path": "assets/sets-iSbiooId.js",
@@ -8933,6 +9058,11 @@
       "path": "assets/taksaka-ssng-FIAHiVFo.js",
       "bytes": 15645,
       "sha256": "56b98ea96b88a7ca2f54485021cfff1fff3b0c920cdaeebcca9bf828d7ea9e94"
+    },
+    {
+      "path": "assets/taksaka-ssng-aTIho_lH.js",
+      "bytes": 16727,
+      "sha256": "d4504f55dbedf1b97fc71631c6dacb138d67f10b2fd87bb6a58e577d879c4fc3"
     },
     {
       "path": "assets/taksaka-ssng-iFhapWAT.js",
@@ -9551,8 +9681,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3434,
-      "sha256": "41b2db1b20760a7960293ec288e0277186b628be913622c5a62b32b758428b12"
+      "bytes": 3920,
+      "sha256": "bd955829628f8ece059b7ba89b185cb82dad51aaa754b99071c2a2b29b382ae0"
     },
     {
       "path": "liveries/cc206/credits.txt",

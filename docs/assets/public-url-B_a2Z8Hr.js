@@ -1,0 +1,1 @@
+function e(e,t=`/Program%20Files/Git/warehouse-3d-playground-pages/`){return`${t.replace(/\/?$/,`/`)}${e.replace(/^\/+/,``)}`}export{e as t};
