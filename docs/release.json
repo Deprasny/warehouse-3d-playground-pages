@@ -1,37 +1,33 @@
 {
-  "release": "north-uturn-symmetric-south-c37e751",
-  "sourceCommit": "c37e7510921aa657bd23e2f4dc5ca7b6776ee31d",
-  "sourceFingerprint": "9603ed32290483e9414d92ce76a01e40137e7923",
+  "release": "diorama-no-fog-6eb2a67",
+  "sourceCommit": "6eb2a67a4262f7b059922b3dbc1b7c323cd76565",
+  "sourceFingerprint": "a9ec867fbc01c4dcce0c58f178e604354c8e51f5",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-23T18:00:49.030455+00:00",
+  "builtAt": "2026-10-23T18:08:47.933331+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "ea479840653a665266f505dbdcae8ab5b1241e9d",
-  "previousPublishedCommit": "2d05e894957e9d31153688d0586a9bce43751736",
+  "previousSourceCommit": "c37e7510921aa657bd23e2f4dc5ca7b6776ee31d",
+  "previousPublishedCommit": "ac27ede740762df75dac3a211c0a716e9876fafc",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of c37e7510921aa657bd23e2f4dc5ca7b6776ee31d",
+    "source": "detached clean checkout of 6eb2a67a4262f7b059922b3dbc1b7c323cd76565",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "User requested no tests. Parent and subagents performed static source review; production build and HTTP publication file identity verification separate. No tests, geometry probes or benchmarks."
+    "scope": "No tests, probes or benchmarks per user instruction. Static source review, production build and publication HTTP identity/bytes separate."
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser/gameplay, screenshots, mobile, audio or FPS verification. Runtime routing and long-consist clearance not empirically verified."
+    "scope": "No browser/gameplay or visual screenshots. Fog disabled by scene configuration; appearance not visually verified."
   },
   "currentChangeScope": {
-    "baseline": "Published ea479840653a665266f505dbdcae8ab5b1241e9d retained; only task deltas from cached per-file baseline included, unrelated dirty source and fleet assets excluded.",
-    "northU": "Existing eased half-turn extended to board edge; outer running-line centre reaches X192 with 8m board clearance. Straight sections, grade and chainage derive from geometry.",
-    "southThroats": "Visible paired scissors at west[-150,-118] and east[150,182]. Both running lanes connect to J1-J8. Throats exactly mirror around X16, with 62.5m front and 80.5m rear shoulders, 90m platforms unchanged.",
-    "board": "400x200m board, bridge X-184; derived terrain grid, camera bounds, portals and rail clearance retained. North hidden scissors shifted outside west portal by board-width-derived anchors.",
-    "interlocking": "Wharf bridge crossover has separate physical rails, points and blocks instead of aliases of South west scissors. Storage/shunting uses updated visible crossover endpoints and whole-consist reversal clearance.",
-    "signals": "Static audit of both South entry heads, all8 bidirectional exit heads, North and wharf heads, physical post clearance, guarded sections and route projection. Entry heads precede scissors; berth exits retain overrun protection.",
-    "fleet": "Published rolling-stock assets, liveries, dependencies and cache versions unchanged.",
-    "build": "Hook-disabled TypeScript/Vite production build passed; existing large chunk and ineffective dynamic import warnings remain."
+    "baseline": "Published c37e7510921aa657bd23e2f4dc5ca7b6776ee31d retained; only fog policy and its documentation changed. Unrelated dirty workspace excluded.",
+    "fog": "Disable scene fog in the diorama style for every weather preset, per explicit user request. Internal legacy fog object remains detached; weather updates do not reattach it. Dispose restores original scene state.",
+    "scope": "North U, mirrored visible South crossovers, all8 routing, signal plan, shunting, audio, train assets and dependencies unchanged.",
+    "build": "Final hook-disabled TypeScript/Vite production build passed, 448 modules. Existing chunk size and ineffective dynamic import warnings remain."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -627,6 +623,11 @@
       "path": "assets/AssetCatalogPage-CxAlvQ6V.js",
       "bytes": 24488,
       "sha256": "865c02cea681fd07d79241eb1f4cc590fa539efeb1be44a6679bb91b99c5db31"
+    },
+    {
+      "path": "assets/AssetCatalogPage-Cz5HEMt5.js",
+      "bytes": 27479,
+      "sha256": "5c70c36ee4a53d9a48dc3242c067be5820538a23c82eae18831b81eabf5547c6"
     },
     {
       "path": "assets/AssetCatalogPage-Czf2HHWg.js",
@@ -1574,6 +1575,11 @@
       "sha256": "66be178fb411cf5f53627018900aa54fee8df2ee99dd51a773b30c1946447101"
     },
     {
+      "path": "assets/Cc206ReviewPage-CBLdNSBN.js",
+      "bytes": 12083,
+      "sha256": "990fe45ee72f67c27f87713e9229903277ab1c63c168161aa0cdc96c0fc5f2a1"
+    },
+    {
       "path": "assets/Cc206ReviewPage-CDp_AI88.js",
       "bytes": 12022,
       "sha256": "41e6ef951696bb33884b54134b9f6401ca5e16f07f5086f7631a83581eafd670"
@@ -2212,6 +2218,11 @@
       "path": "assets/ConsistsPage-Bp1wAFfI.js",
       "bytes": 8443,
       "sha256": "fa8610555dcab090bc6a0bdd2fcd0bb41ab39abf92d7cf1654033c78781b9629"
+    },
+    {
+      "path": "assets/ConsistsPage-BrdeJe8i.js",
+      "bytes": 25907,
+      "sha256": "150b0a8dcfe13408ec29a83e1c3ece56576e4b25b4c521228e5a1c425e70b24f"
     },
     {
       "path": "assets/ConsistsPage-BsXhLRNO.js",
@@ -3047,6 +3058,11 @@
       "path": "assets/DownloadSimple.es-CNKDpQ-2.js",
       "bytes": 2061,
       "sha256": "b9304c05fd9b4264b5f02b710588baa7dd41d37bca16854fa4362493609377d5"
+    },
+    {
+      "path": "assets/DownloadSimple.es-CQHMNAE9.js",
+      "bytes": 2100,
+      "sha256": "53ca3e5e1942109607534527043dbd7060471ecc908c4f68da5946f0ff1c0152"
     },
     {
       "path": "assets/DownloadSimple.es-CQdDuWI6.js",
@@ -4314,6 +4330,11 @@
       "sha256": "e7904ec156b5823bebafa594e456eaa109a30437087cf5884fba53758fe2974e"
     },
     {
+      "path": "assets/GaugeReviewPage-DpSpd9RX.js",
+      "bytes": 18338,
+      "sha256": "e98dc5d631cfc9cb510fa8668b1172088622c4509a6b1c4e908da7b3c4bdf5a1"
+    },
+    {
       "path": "assets/GaugeReviewPage-DukJ7Gtl.js",
       "bytes": 18205,
       "sha256": "a1f0f422cccb7b29c903f8343e9d4492c124247ebf50b4ba7d8b1bcce7660e36"
@@ -5024,6 +5045,11 @@
       "sha256": "ff8b503746a3f700574035460b6964ef0c91180c638be0e6aaa09387859d7ecd"
     },
     {
+      "path": "assets/HudPreviewPanel-DfXCKy6U.js",
+      "bytes": 418,
+      "sha256": "b71704d20e19284ec9b250b7786f3640240abb5b829ef9d0b9ebad459190d8ca"
+    },
+    {
       "path": "assets/HudPreviewPanel-DfhsuCxE.js",
       "bytes": 421,
       "sha256": "e1f581c92b71a3f52d417b18ee4c7499f03197a18ebfe2d5ef6606db71787e03"
@@ -5282,6 +5308,11 @@
       "path": "assets/IconBase.es-BUL2eBQi.js",
       "bytes": 3740,
       "sha256": "3d9eae4b7e344fd3c0b06ab389fd9f42021b6e6b38ba29477e371398b4b79995"
+    },
+    {
+      "path": "assets/IconBase.es-BWCg0RJG.js",
+      "bytes": 3734,
+      "sha256": "cb6bd17391b087d3fd9fb3dd1c42f473480e916719c294caaf71c8b5f6753c28"
     },
     {
       "path": "assets/IconBase.es-B_mDIV5K.js",
@@ -5727,6 +5758,11 @@
       "path": "assets/ImportedCc206Page-BSlD59S9.js",
       "bytes": 13963,
       "sha256": "c4ea6e8c5e5f780869b9ee7a77af84529b74e9d9e2995c8bc2d8e2a1925692f9"
+    },
+    {
+      "path": "assets/ImportedCc206Page-BTimLqmG.js",
+      "bytes": 18473,
+      "sha256": "a1de27226633999ab0fe39438e7f8e0200b65230e15d10a699edf99c6a50b1dc"
     },
     {
       "path": "assets/ImportedCc206Page-BYIpnerC.js",
@@ -6484,6 +6520,11 @@
       "sha256": "41e0c9f519f84f9345e19be8df4f50aba415295b85ffbf38de7d3f56b97ec197"
     },
     {
+      "path": "assets/cc201-game-template-CJkJVdOz.js",
+      "bytes": 5091,
+      "sha256": "26d9b769ffac17f6986fb14812095a00e2ce69f71c42da186704c28e02835c30"
+    },
+    {
       "path": "assets/cc201-game-template-CSBUYDVC.js",
       "bytes": 4953,
       "sha256": "02181cce2bd8794daf8294bb4593621e3f1b6679a471a425e162a7fc9cc0d454"
@@ -6649,6 +6690,11 @@
       "sha256": "241e108cb54274176f54388e425628e6643f3b7127df1c47a49ef876ecdd731e"
     },
     {
+      "path": "assets/cc203-game-template-DUzbh3YA.js",
+      "bytes": 7002,
+      "sha256": "79b0b90da20a21f0b77cf0d7298dc62f0671f3249c4f72ff2df3c7d7356eab46"
+    },
+    {
       "path": "assets/cc203-game-template-DukENdbz.js",
       "bytes": 6923,
       "sha256": "47b7a0478c5a401017c1495b83b434be4ca4e27d8c7c1f7d76440092317af99c"
@@ -6792,6 +6838,11 @@
       "path": "assets/cc205-game-template-Dc7ef0M_.js",
       "bytes": 3980,
       "sha256": "d58a367b61cb13f223d2472f8938b996c3f5abe6e55ef98e35c82836d8708c31"
+    },
+    {
+      "path": "assets/cc205-game-template-DhaeFHr1.js",
+      "bytes": 4254,
+      "sha256": "a625a11db41114afe720382059c0434b36470d735664d43ad745f1d6efb8518b"
     },
     {
       "path": "assets/cc205-game-template-DmdMJYfL.js",
@@ -6979,6 +7030,11 @@
       "sha256": "626183d21b7a838dc62c655762670d84f53371c56b1d496be360e831371c527f"
     },
     {
+      "path": "assets/cc206-game-template-w0McctlH.js",
+      "bytes": 10866,
+      "sha256": "3c23e319f55dad6cd8648c69a7ce85773125f61290ef4a0ff24c420d600bed7e"
+    },
+    {
       "path": "assets/cc206-game-template-zKnZlRI-.js",
       "bytes": 10866,
       "sha256": "4a7fad0322c81a06dc87678a9262fa3ddd90d55e2fe5b7c2d65d701db30c0f72"
@@ -7044,6 +7100,11 @@
       "sha256": "7ccc5dcbe6dbe8b1a1963b39a134da71f7403c2fa929d8598c120964e4998f19"
     },
     {
+      "path": "assets/cc206-game-visuals-G60ZcVad.js",
+      "bytes": 20487,
+      "sha256": "1568a20be2f101158536262cc13c780e1a62732e7fbb2fe263ba31dd986ce3b9"
+    },
+    {
       "path": "assets/cc206-game-visuals-V3DUA9FW.js",
       "bytes": 20487,
       "sha256": "a6529310755695b2a165e6b169811bdeef863e4c1ecfca318128b6bfb17bef5a"
@@ -7072,6 +7133,11 @@
       "path": "assets/coach-bodies-BHKi5Iqv.js",
       "bytes": 9177,
       "sha256": "738c21194bb7bf524527915a0c7ec54c9facd82862094e34c4250271e5280159"
+    },
+    {
+      "path": "assets/coach-bodies-BNfpWAwK.js",
+      "bytes": 9172,
+      "sha256": "53866f533d94fb8744cac701d58dafc270a9a3d9d860804482c96ffff92e835c"
     },
     {
       "path": "assets/coach-bodies-BPleEKND.js",
@@ -7117,6 +7183,11 @@
       "path": "assets/consist-preview-stage-CIDmqIzE.js",
       "bytes": 10024,
       "sha256": "196ee27677581567f2f17a7dea4c7932687be517a1ef903a422a306dde94b44e"
+    },
+    {
+      "path": "assets/consist-preview-stage-CdeOFsNv.js",
+      "bytes": 10024,
+      "sha256": "a0a1c5e2f6337bd0d973aff324530986022f8602c78037d1a7441f300e260155"
     },
     {
       "path": "assets/consist-preview-stage-ChETwqcj.js",
@@ -7212,6 +7283,11 @@
       "path": "assets/diorama-postprocessing-BEw-3aDd.js",
       "bytes": 40924,
       "sha256": "3c5f916a74460dec945fd1ea685ba060a2b87390b04b11fba9dab0eb34b92b1e"
+    },
+    {
+      "path": "assets/diorama-postprocessing-BF3Z-0FS.js",
+      "bytes": 42435,
+      "sha256": "78cd3f725ec740b12177bd3f02f58ff87fd1fb64fd494907f946b610dfa0e15c"
     },
     {
       "path": "assets/diorama-postprocessing-BH1K2B3-.js",
@@ -7784,6 +7860,11 @@
       "sha256": "3765f879fe71f64ec76629850ca75b0f08f29b96c5a6f098df49c1418c5d114d"
     },
     {
+      "path": "assets/diorama-style-D6uUJZ3F.js",
+      "bytes": 6075,
+      "sha256": "ae88b0bd0ec7b606c3201c459ff8882033dd47bcbaa211255038dc57050a0754"
+    },
+    {
       "path": "assets/diorama-style-DMClDMPr.js",
       "bytes": 6022,
       "sha256": "c2da04e39ddfacad221dc8f31d9708d1c0cdac3b0c3c5bd5e65b8d0eda50afd1"
@@ -7867,6 +7948,11 @@
       "path": "assets/elite-coaches-C2a4plOI.js",
       "bytes": 7233,
       "sha256": "207897545d14582478142793420acdcd03c2efb6a59b86ca0337589aae57c047"
+    },
+    {
+      "path": "assets/elite-coaches-Ctjn1BFe.js",
+      "bytes": 7233,
+      "sha256": "bad3328d396d259139bebb36baa1520a10e0fd1e0afefd3e7e03ce940712e7fd"
     },
     {
       "path": "assets/elite-coaches-D5omKRqY.js",
@@ -8247,6 +8333,11 @@
       "path": "assets/index-BsAiCEsE.js",
       "bytes": 728465,
       "sha256": "f6cdc9ce3a938fd2ca9db9e5250383c2513e1fba97013dc9f173331613f28634"
+    },
+    {
+      "path": "assets/index-BwY26Cmy.js",
+      "bytes": 1011114,
+      "sha256": "1f41a1767cc348c2b6a1ebd53ac75252fe3b85502a2f8080139b9338d8e1c726"
     },
     {
       "path": "assets/index-Bws5LMi8.css",
@@ -9004,6 +9095,11 @@
       "sha256": "ad95be2219cf52c4e8a663bb9e6d6bae3ef942bbb3ce6a429b5a9a1225f97f79"
     },
     {
+      "path": "assets/locomotive-roof-DBak-g5H.js",
+      "bytes": 9328,
+      "sha256": "c10e3e10c31571e2ade7a53f3a4ff0cc0a335468eadd8c719e1cfdaf1aaa8536"
+    },
+    {
       "path": "assets/locomotive-roof-DQaEa5gT.js",
       "bytes": 9269,
       "sha256": "a3172d54717927dca44198db7d23e2ee651370f996c513128971cd5317692756"
@@ -9062,6 +9158,11 @@
       "path": "assets/nusantara-coaches-B-ks0Z6k.js",
       "bytes": 8028,
       "sha256": "2b5521abc1c3aa8d3145a92f7ea1ea80d988f1bbf991b676ee4cc8ce8cab1c60"
+    },
+    {
+      "path": "assets/nusantara-coaches-BFuogKCP.js",
+      "bytes": 8107,
+      "sha256": "9e1f341c45b29fda330f2730c986b807e50891e9a00721774570f6b1832e7120"
     },
     {
       "path": "assets/nusantara-coaches-BMPJVriF.js",
@@ -9334,6 +9435,11 @@
       "sha256": "10c6197bc648bc2d57f7864d0b177a395e901446e1a612087332d44542577f1d"
     },
     {
+      "path": "assets/sets-kbrwMCKk.js",
+      "bytes": 218456,
+      "sha256": "de72b06c0a2085088ba4a21bf0090ff524a18471c4104033648842dc19a42aac"
+    },
+    {
       "path": "assets/sets-zkEjYHC7.js",
       "bytes": 218456,
       "sha256": "3eaf37ff484fa6e44eb575106b53512f7c7969b23fafe27cf28b6c714e47b776"
@@ -9362,6 +9468,11 @@
       "path": "assets/taksaka-ssng-CAXpI-jP.js",
       "bytes": 16727,
       "sha256": "f3cc4d2fc56bf4440d027685ec90473a5bbd6f8d6e7844033ef2ebcf5121aa97"
+    },
+    {
+      "path": "assets/taksaka-ssng-CEuEHBhY.js",
+      "bytes": 16727,
+      "sha256": "13d71952b1b6b70566f7fb6cb74faabd355fddf33193449ab77bd8f1fb34f0be"
     },
     {
       "path": "assets/taksaka-ssng-CrGlXK9k.js",
@@ -10021,7 +10132,7 @@
     {
       "path": "index.html",
       "bytes": 3546,
-      "sha256": "4ef1310c29d59af3ca30f30ff0bcdfd963c81c9895e5b190a2d092a55cb22506"
+      "sha256": "0fb3580287c7aef78da48e203776d5de4d57f50d2a47127559e9302b13366c78"
     },
     {
       "path": "liveries/cc206/credits.txt",
