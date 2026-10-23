@@ -1,38 +1,38 @@
 {
-  "release": "fps-pacing-34927ad",
-  "sourceCommit": "34927adb3f1acedef772f95fbde7dfafa8630088",
-  "sourceFingerprint": "c35ca9a297d703ad33388d04d3fe9cb279820038",
+  "release": "riverside-eight-tracks-nature-4c78283",
+  "sourceCommit": "4c78283dde9d4469544fa3379eeb88a30a9b5d08",
+  "sourceFingerprint": "e27ae5f3678d2a4c29e078723353fea842c5d1ae",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-23T02:25:25.548922+00:00",
+  "builtAt": "2026-10-23T17:18:24.774151+00:00",
   "base": "/warehouse-3d-playground-pages/",
   "previousSourceCommit": "34927adb3f1acedef772f95fbde7dfafa8630088",
-  "previousPublishedCommit": "3b653574d101262fa9f21ee17f5705d167f95636",
+  "previousPublishedCommit": "73b51b12725b99d59f9323840d71dfab25f6638b",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 34927adb3f1acedef772f95fbde7dfafa8630088",
+    "source": "detached clean checkout of 4c78283dde9d4469544fa3379eeb88a30a9b5d08",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
-    "status": "passed-targeted",
-    "run": [
-      "scripts/check-frame-pacing.ts with new estimator, snapped pacing and budget cases",
-      "scripts/check-gpu-warmup-target.ts with a canvasOutput:false case"
-    ],
-    "scope": "Explicit user approval for these two checks, run on the working tree and again on the clean release checkout. TypeScript/Vite build passed with test hooks disabled. No full suite or device FPS benchmark."
+    "status": "not-run",
+    "run": [],
+    "scope": "User requested implementation and deployment without tests. No automated tests, check scripts, check:all, profiling or benchmarks. Build, static review and publication identity/file verification are separate."
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser/gameplay checks or FPS benchmarks"
+    "scope": "No browser, gameplay, visual screenshot, mobile or FPS verification; live release metadata and served entry/asset bytes checked through HTTP only."
   },
   "currentChangeScope": {
-    "framePacing": "Once RAF intervals identify a nominal panel rate, the pacer admits whole refreshes at the divisor nearest the selected cap (60 on 75 Hz presents an even 75 FPS; 30 presents 25). Before recognition or on unlisted panels the previous deadline gate applies.",
-    "refreshEstimator": "Two-sided cluster mean around the 10th-percentile RAF interval over 64 samples; whole multiples of a recognised panel keep it; other readings must repeat on two updates.",
-    "adaptiveQuality": "Auto and adaptive Light judge against the presented rate while the panel is recognised, otherwise the previous cap/fastest-display target.",
-    "settings": "Batas FPS shows the recognised refresh and presented rate; option labels and saved preference key unchanged.",
-    "warmup": "Quality preparation no longer compiles or draws canvas-output main-pass variants; only a wired wireframe control would need them.",
-    "base": "Production source 37f656f plus this change only; other uncommitted working-tree changes are excluded."
+    "baseline": "Published fps-pacing-34927ad retained, including display-refresh frame pacing and previously published formation/culling changes. Apply only this task's deltas from per-file cached baselines; unrelated dirty workspace features and fleet binary edits excluded.",
+    "performance": "Paused settled viewport skips simulation/render preparation; signal suffix decisions cached within explicit revisions; raw world asset fetch sharing/prefetch and cooperative rolling-stock priming; HUD snapshot cadence and atomic spatial audio frame updates.",
+    "map": "Old roads, houses, farms, depot, non-rail worksite and animated water/scenery construction/loading disabled. Railway station facilities, trains, rail bridge, portals, signals and passenger services retained.",
+    "southStation": "Eight South tracks: J1-J4 front and J5-J8 rear, six platform slabs, exact shared ladder geometry, signals, block reservations, UI dispatch and Auto track selection. North remains four tracks.",
+    "shunting": "Manual and Auto store/collect on rear station tracks using the same wagons and locomotive; source and holding berths reserved, shared throat protected during movement and released when parked. Depot remains absent.",
+    "turnouts": "Remove direction boards, poles, arrows and indicator lamps from turnout construction; retain motor boxes, blades, linkage and route locking. Main railway signals remain.",
+    "ornaments": "Bounded deterministic groups of low-poly round trees, pines, rocks and grass; four static instance banks, no new textures, GLB requests, lights or frame animation. Clearance covers actual rails including rear tracks, stations, portals, terrain and operational props.",
+    "fleet": "Published rolling-stock assets, liveries and carriage kit cache versions retained unchanged.",
+    "build": "Hook-disabled TypeScript/Vite build with GitHub Pages base succeeded. Existing large chunk and ineffective dynamic import warnings remain. No measured FPS or runtime equivalence claim."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -880,6 +880,11 @@
       "sha256": "5403336fff76d50aa2fe6eac6b4d323b60be27060482b5b70ae3b4e5ff9b6e8e"
     },
     {
+      "path": "assets/AssetCatalogPage-X_8gh4CT.js",
+      "bytes": 27479,
+      "sha256": "672fa4a47156452111a34048e749f895437626f0e51d4e7fbf6c3e677ba0c1ca"
+    },
+    {
       "path": "assets/AssetCatalogPage-Zxi8DMbW.js",
       "bytes": 27457,
       "sha256": "17ff3ca9f94d044392c09139397bd2ea1ee6b096cd145bd25c35fdacdbb5c50f"
@@ -1213,6 +1218,11 @@
       "path": "assets/BufferGeometryUtils-BffPWCYD.js",
       "bytes": 5337,
       "sha256": "19e9e797c21aa59eb24479b744b184d2f7e004f37c5283b7b8477d4213a702fd"
+    },
+    {
+      "path": "assets/BufferGeometryUtils-BfuQO4Gi.js",
+      "bytes": 5338,
+      "sha256": "a6a97619a2fbaf44a3c6f725343029a739d77d702b20ac6c31339f80fbbe4bfe"
     },
     {
       "path": "assets/BufferGeometryUtils-BujMPj8L.js",
@@ -1985,6 +1995,11 @@
       "sha256": "c909ba5991b78b1dee5040d8eed2e825ff8815cf14989739e377d0c5f8a615ea"
     },
     {
+      "path": "assets/Cc206ReviewPage-to0VXrG3.js",
+      "bytes": 12083,
+      "sha256": "bee880e1d5b70a4aca184fee6bcc43fd0566293b0e3969bbe8938d96e4ebb65e"
+    },
+    {
       "path": "assets/Cc206ReviewPage-zNJ224QU.js",
       "bytes": 12019,
       "sha256": "28b3b21918f01a757663d5ae016c7a89e16bfd40c40081f22cdf519800e73cbb"
@@ -2313,6 +2328,11 @@
       "path": "assets/ConsistsPage-CdQryrqr.js",
       "bytes": 8448,
       "sha256": "6a4dc80b54352568460709f18d0cecbb469b9cfd95170a2f88a7c9b11a1b76f9"
+    },
+    {
+      "path": "assets/ConsistsPage-Cdui-C4G.js",
+      "bytes": 25907,
+      "sha256": "f89fcb8440714d65435158931c0db8ae3fdf95d75ac30d06c8e399eadf613aef"
     },
     {
       "path": "assets/ConsistsPage-CjT6cFuy.js",
@@ -3345,6 +3365,11 @@
       "sha256": "3062d79984f06eb27f0166799bc9c63f6e7bfed47d5d8b5be1836a5160667259"
     },
     {
+      "path": "assets/DownloadSimple.es-QB0M9U3E.js",
+      "bytes": 2100,
+      "sha256": "f850d0260bcb43d3aca0abb9a206deaee6e69e0973ff892b961f56398f8da57e"
+    },
+    {
       "path": "assets/DownloadSimple.es-QR84AsQE.js",
       "bytes": 2100,
       "sha256": "601e8ea75536ff8a10d65c5d83afeed8a2106c0aaff00a745e8ff449c732d2e7"
@@ -3495,6 +3520,11 @@
       "sha256": "df71583096e6f1ab13cb8bfb05dd897dcf3d09d045d129936afc2f4f5c2c4797"
     },
     {
+      "path": "assets/GLTFExporter-DCioG4Kr.js",
+      "bytes": 36785,
+      "sha256": "37b31734cd484ed19a1c842ddd6eda1ef344de5066d57285b79a382d4c419d2a"
+    },
+    {
       "path": "assets/GLTFExporter-DIy2IV1r.js",
       "bytes": 36784,
       "sha256": "8aa373e5550283ad09855d639f2e4e37a9218b78a0f1acb51883f19a2b29ac3c"
@@ -3558,6 +3588,11 @@
       "path": "assets/GLTFLoader-BRQAy5lS.js",
       "bytes": 44400,
       "sha256": "b106372ac674657fb5f1fdee6bda9daff462f28d2e3f60784dd0fcac1c62e90f"
+    },
+    {
+      "path": "assets/GLTFLoader-BcCADDw6.js",
+      "bytes": 44397,
+      "sha256": "fcbdca8382ee8f18bd7849836a0a7b55761dd3bf212305c9e9a932ba5e6de417"
     },
     {
       "path": "assets/GLTFLoader-Bf35660z.js",
@@ -4303,6 +4338,11 @@
       "path": "assets/GaugeReviewPage-PV1OFrqC.js",
       "bytes": 18201,
       "sha256": "ae1ae586e6e3e2f62dea376aa9cf0a1eb730e46ffe52ff5f827b20dc33e8af40"
+    },
+    {
+      "path": "assets/GaugeReviewPage-QTebqn5J.js",
+      "bytes": 18338,
+      "sha256": "2664ca4fd1a2838a868c949af187322c6c9d33133aa720804e0d2b22f18088aa"
     },
     {
       "path": "assets/GaugeReviewPage-S6JCjIjK.js",
@@ -5120,6 +5160,11 @@
       "sha256": "a830f6bad4446169ab97f81d2c404a8b7dd4c18ad8579bdedda783aea20f4471"
     },
     {
+      "path": "assets/HudPreviewPanel-pa1I2uzE.js",
+      "bytes": 418,
+      "sha256": "dd88129e1c30dc4a4a03c68c76a6e0b95521efdc5aa69724f8a210a4e62fac34"
+    },
+    {
       "path": "assets/HudPreviewPanel-tvo3N4e0.js",
       "bytes": 418,
       "sha256": "a45c9193c6808772982a23c85d0a7284d493f50260e6477d0cb8f8a6cf847644"
@@ -5443,6 +5488,11 @@
       "path": "assets/IconBase.es-DmzqJGYj.js",
       "bytes": 3432,
       "sha256": "27ee1e124dfeaad6bfa0bb8667cf9a340e606b4052b6d2fc91884068c16c09cf"
+    },
+    {
+      "path": "assets/IconBase.es-Dp4OVL_d.js",
+      "bytes": 3734,
+      "sha256": "d760b3e9e5a55aec065239ac6eb9c707a553f7b2de124303bdba964af6a56447"
     },
     {
       "path": "assets/IconBase.es-Drz1CYUD.js",
@@ -5940,6 +5990,11 @@
       "sha256": "9a6439644ec2933e458e961583fa250fae85cd81dbbabe3641ede367b20854f6"
     },
     {
+      "path": "assets/ImportedCc206Page-DG-8_v80.js",
+      "bytes": 18473,
+      "sha256": "330e790bcaea779fbba92c900ca796404bb5f53e702708e7d93e78ffe4408b98"
+    },
+    {
       "path": "assets/ImportedCc206Page-DH-CqzVK.js",
       "bytes": 18456,
       "sha256": "45cccde34e4e643011a32634a6731574a6353959d3befc6f6db1a3ca52662110"
@@ -6210,6 +6265,11 @@
       "sha256": "e9177111b24ffd9700b7d5c18575a10f74bf4b42842e8578a95db107a45b02d4"
     },
     {
+      "path": "assets/asset-fetch-NdMlTS-m.js",
+      "bytes": 743,
+      "sha256": "9513312554f20d89987b3cffa6ad6ebbe4e12781b72448278e56b7c0f65937d2"
+    },
+    {
       "path": "assets/brotli_dec_wasm_bg-BK3DOf3U.wasm",
       "bytes": 208439,
       "sha256": "79b29cb1790560f0a0f32b4a31d935e2782875e4a367fde23c81d986b327ec3f"
@@ -6223,6 +6283,11 @@
       "path": "assets/carriage-lamp-material-B4T6kUn7.js",
       "bytes": 576,
       "sha256": "2eb5913a17865f3ad4b48ae6943af7afef14fdda84268eab80852e648eeb0047"
+    },
+    {
+      "path": "assets/carriage-lamp-material-BNqSsDnm.js",
+      "bytes": 576,
+      "sha256": "e97155206b9b429f82af0456afd64a89f9add5d0b9c52d78b257a290395c9a02"
     },
     {
       "path": "assets/carriage-lamp-material-CxEinzDs.js",
@@ -6288,6 +6353,11 @@
       "path": "assets/cc201-game-template-BYJLh4DD.js",
       "bytes": 4953,
       "sha256": "047787b9f5c2539bff14ec69825659af2bc15294aa77fbccba5b969297860403"
+    },
+    {
+      "path": "assets/cc201-game-template-B_O6XDGK.js",
+      "bytes": 5091,
+      "sha256": "d5570fb21bd059cfa3e143b760e016963526893cf2934a1fa288524abe9350b1"
     },
     {
       "path": "assets/cc201-game-template-Biwyy-ce.js",
@@ -6515,6 +6585,11 @@
       "sha256": "25738ddd23c9e79a150b3294fb0f2ffbdab3f8f0ac8682ed7dfac59151b3ea4d"
     },
     {
+      "path": "assets/cc203-game-template-nRBGKv44.js",
+      "bytes": 7002,
+      "sha256": "2bb00e4ab60fd09fb266b32782d5b3ab23dc239aa4eb1e494592b9fdf9deb29d"
+    },
+    {
       "path": "assets/cc203-game-template-nXGbpqsQ.js",
       "bytes": 7138,
       "sha256": "c7ed56caca275b827c77cdd4a60223539bc6d9fe91e925eda808f8ae8c7581f0"
@@ -6640,6 +6715,11 @@
       "sha256": "d58a367b61cb13f223d2472f8938b996c3f5abe6e55ef98e35c82836d8708c31"
     },
     {
+      "path": "assets/cc205-game-template-DmdMJYfL.js",
+      "bytes": 4254,
+      "sha256": "0d14a5cea3350accc1b6309a1145952f0442798cd81d2bc114fafc11510a3a31"
+    },
+    {
       "path": "assets/cc205-game-template-Dn3WtNSj.js",
       "bytes": 4249,
       "sha256": "f5446d8e19b624b322c4ad5ab4e011d6def81bae36aa8ebdcbf40c50fa0d3f16"
@@ -6668,6 +6748,11 @@
       "path": "assets/cc206-game-template-3aX-pl1C.js",
       "bytes": 10533,
       "sha256": "9599fa0aaaf9365d3b8a08a4b357d6f70ef79e65641788c4f6220a9c511fe9a5"
+    },
+    {
+      "path": "assets/cc206-game-template-4BpyMQ4R.js",
+      "bytes": 10866,
+      "sha256": "d607fd07994e10ecce19f693a379742702280687351be876ccc3c605a45fc599"
     },
     {
       "path": "assets/cc206-game-template-5Les3AKs.js",
@@ -6870,6 +6955,11 @@
       "sha256": "fd0490fd87ba753bb7da178b7971fde7973447dd8c2c6e993ad54b18cd3e777d"
     },
     {
+      "path": "assets/cc206-game-visuals-DizAt7eJ.js",
+      "bytes": 20487,
+      "sha256": "d755298cfea0a489620d339b979554725a060e1a11930a35c1a4e5bd74a257b2"
+    },
+    {
       "path": "assets/cc206-game-visuals-DrnTQRXM.js",
       "bytes": 8042,
       "sha256": "7ccc5dcbe6dbe8b1a1963b39a134da71f7403c2fa929d8598c120964e4998f19"
@@ -6908,6 +6998,11 @@
       "path": "assets/coach-bodies-BPleEKND.js",
       "bytes": 9117,
       "sha256": "85868cf9ee07045159e9f4e729ea9165f6b64d7e666b09a95c6525cb210f842a"
+    },
+    {
+      "path": "assets/coach-bodies-BZDz3you.js",
+      "bytes": 9172,
+      "sha256": "8030bb988ac7104ba0e931ce33affe3304815fa55de71207e93d3889e68a1ef5"
     },
     {
       "path": "assets/coach-bodies-Bfg62STT.js",
@@ -6953,6 +7048,11 @@
       "path": "assets/consist-preview-stage-CimikuOj.js",
       "bytes": 10024,
       "sha256": "a8c2309a3a8af85a7a1effea4591a0c8336b1be6547b1be3b80a97ae161b9381"
+    },
+    {
+      "path": "assets/consist-preview-stage-Cmvkph2z.js",
+      "bytes": 10024,
+      "sha256": "0d889d7629cfe15a7a7973a81390ae9f452c8065d7d292be85aa2d1990225a51"
     },
     {
       "path": "assets/consist-preview-stage-CxsbfgaW.js",
@@ -7505,6 +7605,11 @@
       "sha256": "3635813aa1f4978646a1d3303868aa096e15d9effc9bc324fa677cca50d3c470"
     },
     {
+      "path": "assets/diorama-postprocessing-t_5Pm3Rx.js",
+      "bytes": 42435,
+      "sha256": "5bcd4ffe606c07636ea1ba48b5263f6f024548338d045bb078f714fee4d5e71c"
+    },
+    {
       "path": "assets/diorama-postprocessing-x0WxTMYw.js",
       "bytes": 42405,
       "sha256": "34f5251c97fa76b4d887db432df01918632978df473fc22f1fd5620edcb6cf52"
@@ -7610,6 +7715,11 @@
       "sha256": "fb406ff076f2a5393edb2f7d36ba1bee664b532da548cc0d788e236b6b1926ea"
     },
     {
+      "path": "assets/diorama-style-Dw_U3__M.js",
+      "bytes": 6061,
+      "sha256": "cc5576a4afc715ce3bdaa5a400465947e4833391721d59be3bd37a13502d3303"
+    },
+    {
       "path": "assets/diorama-style-Fe6JFdyN.js",
       "bytes": 6061,
       "sha256": "4be495bf9d49a03596266a0488bde95c766a62778521c51d63c71fa73a78412b"
@@ -7628,6 +7738,11 @@
       "path": "assets/elite-coaches-B26QdzOx.js",
       "bytes": 7233,
       "sha256": "0577f2478b23cd68909ec07246a08fd33eb61fbf5cd09b96a5449da3fe622897"
+    },
+    {
+      "path": "assets/elite-coaches-B6kKZ8y6.js",
+      "bytes": 7233,
+      "sha256": "27579d5ae8135235ebd1fd448968307330ada31dbb84720f67608bb287f92575"
     },
     {
       "path": "assets/elite-coaches-BRWoxsrL.js",
@@ -7708,6 +7823,11 @@
       "path": "assets/gear-gauge-CFAGjorc.js",
       "bytes": 1417,
       "sha256": "9967ca3338c7d6c7d3297f7ebfb330cea10760e21efdd13dbf83c774ff25b94f"
+    },
+    {
+      "path": "assets/gear-gauge-CQzKyPQu.js",
+      "bytes": 1417,
+      "sha256": "777f612869c9e9d81c326aae40bc383e3b4c85b3edfd254050dc4e264122c007"
     },
     {
       "path": "assets/gear-gauge-CbR7oWBz.js",
@@ -7895,6 +8015,11 @@
       "sha256": "00e93137b1aa26701768f24b0fa65eae85d4f8584f0253fdd233cd4b7991d979"
     },
     {
+      "path": "assets/index-BU4ZmHsn.js",
+      "bytes": 1008983,
+      "sha256": "adeb74f94bb2816cb57f2b4afce6dfdb1033508d6306df6423f37f5362896f6f"
+    },
+    {
       "path": "assets/index-BULCvV-2.js",
       "bytes": 1203304,
       "sha256": "537325c57ac10a70ea75ac945afe890d68f7787799003bf7b01acb4fb824732f"
@@ -7983,6 +8108,11 @@
       "path": "assets/index-BhkjDfbm.js",
       "bytes": 872787,
       "sha256": "2b3bfa616e0e85ea09ba42bdab3b49b456d7525f3920829d07029afe7d4e9769"
+    },
+    {
+      "path": "assets/index-Bkt7uR_h.css",
+      "bytes": 163785,
+      "sha256": "822fe0fa337715109ed635cd18e94668b196b7bc012974cc966e7350a53bbd1f"
     },
     {
       "path": "assets/index-BmniIwUI.js",
@@ -8605,6 +8735,11 @@
       "sha256": "29ef72ec4b546f5ed9bb0f92295a184890e25cb929c17ef529773c58af9a59fc"
     },
     {
+      "path": "assets/jacaranda-tree-BDQCIoY0.js",
+      "bytes": 3336,
+      "sha256": "8f5375f746d8477de2a45d2ba42ad00b653eaab0e6bd531df27902586d2e1745"
+    },
+    {
       "path": "assets/jacaranda-tree-BQG9h_kG.js",
       "bytes": 3336,
       "sha256": "3b687ee97901202d479ada223735169c4d9f9f5e0aca0c60415274e0feb6d06c"
@@ -8765,6 +8900,11 @@
       "sha256": "a3172d54717927dca44198db7d23e2ee651370f996c513128971cd5317692756"
     },
     {
+      "path": "assets/locomotive-roof-DV1IjiVi.js",
+      "bytes": 9328,
+      "sha256": "fb83de063faef95c42f56ee0f498ea3ccc83bec44b30eab633aa10fcce571f59"
+    },
+    {
       "path": "assets/locomotive-roof-DW7GLs1N.js",
       "bytes": 9195,
       "sha256": "f773deef29f40912e1e01190e64fa7449ae6a03e04577bd2b2dd22c1a420196e"
@@ -8880,6 +9020,11 @@
       "sha256": "32aef75e90b79a96fb2f1dcebe0d8c5fd7ce4b03afc7e4fb6bdf53b8001edadd"
     },
     {
+      "path": "assets/nusantara-coaches-DriufA0e.js",
+      "bytes": 8107,
+      "sha256": "1b6a74122368b44e04dbb7ef605710214a32cd2ddf4f272d48e0fa6b9f72d790"
+    },
+    {
       "path": "assets/nusantara-coaches-DsGUSVDj.js",
       "bytes": 8107,
       "sha256": "f590755ff1f86119917d80e8e8a7c8a11240c79cb56df508c19acc999723a07c"
@@ -8955,6 +9100,11 @@
       "sha256": "5063ab41ac70e934d977e084de70fe80ba8821a5f9df8febafa7373863195f17"
     },
     {
+      "path": "assets/passenger-advertising-t4V7-Xgo.js",
+      "bytes": 3000,
+      "sha256": "535eaaa09638b1df3c564c7465fe1487a43e07b71423fcb54e0db655fbfd3661"
+    },
+    {
       "path": "assets/preload-helper-BHTDTnFZ.js",
       "bytes": 3618,
       "sha256": "4f8206d66ef0d81df421a904bd381d76bf620cad8b5aeece04c97737d82d65c0"
@@ -9020,6 +9170,11 @@
       "sha256": "5704cda5e5189ad129bfc41bd8079acdc33bb9bd305954dfd1114cfd57339c75"
     },
     {
+      "path": "assets/preload-helper-tTazZoHA.js",
+      "bytes": 3618,
+      "sha256": "f8c7023ab1f500dbc3caf17b9673c3022fde293ae5af48fa85952e4c7e84db38"
+    },
+    {
       "path": "assets/public-url-B_a2Z8Hr.js",
       "bytes": 141,
       "sha256": "50122b4a60d7af6c830b9552139e5801ec02900b39bb681d2cf4d00900fbf63f"
@@ -9070,6 +9225,11 @@
       "sha256": "10c6197bc648bc2d57f7864d0b177a395e901446e1a612087332d44542577f1d"
     },
     {
+      "path": "assets/sets-zkEjYHC7.js",
+      "bytes": 218456,
+      "sha256": "3eaf37ff484fa6e44eb575106b53512f7c7969b23fafe27cf28b6c714e47b776"
+    },
+    {
       "path": "assets/ssng-coaches-ghYFzEB7.js",
       "bytes": 7096,
       "sha256": "152fdc56acf3b1cb9b808e86ff1468cfdc7c0776cc8f024a34582f1252fd96c8"
@@ -9098,6 +9258,11 @@
       "path": "assets/taksaka-ssng-CrGlXK9k.js",
       "bytes": 16727,
       "sha256": "37b5500d6531738e6d486618e27f1b9c7815408013e74c0e13d574083e04a7b4"
+    },
+    {
+      "path": "assets/taksaka-ssng-CxRl_hqa.js",
+      "bytes": 16727,
+      "sha256": "d6ddc7531471aef8bfa1995a5de5c3103a1d99cbd6c5852f99f1b4c22e475967"
     },
     {
       "path": "assets/taksaka-ssng-D51bgdym.js",
@@ -9185,6 +9350,11 @@
       "sha256": "af2a8d3081aa83bb57017005cad41d26e13b90968183bac3b31cb448a97e2dfa"
     },
     {
+      "path": "assets/three.core-DcczrZCx.js",
+      "bytes": 286897,
+      "sha256": "e98b978b4ec30e54d70f05a2d1e5a6d2e69febf355b5d9ca115be74f928c2839"
+    },
+    {
       "path": "assets/three.core-DltIj_1E.js",
       "bytes": 283734,
       "sha256": "26e9958e321ee88747b06a3682f6c5f687b1f5c15f254702f8cf4b0cb47bcb2f"
@@ -9248,6 +9418,11 @@
       "path": "assets/three.module-CcBE0Vkp.js",
       "bytes": 352305,
       "sha256": "472dbe85d540eec87770bc2604d3ed6b073244c04df9c9d1bd1fc58dee0ac47c"
+    },
+    {
+      "path": "assets/three.module-DTz-IK2l.js",
+      "bytes": 352316,
+      "sha256": "2665ae6569f589cc44193584db0c826cdc25546d5a8e1b5608b64186f0307ba9"
     },
     {
       "path": "assets/three.module-KTrK8O_D.js",
@@ -9736,8 +9911,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3434,
-      "sha256": "f71277cb0a32a3cc76fb029f39add29973c5908dc764136d1bd8186fe0e545db"
+      "bytes": 3546,
+      "sha256": "dc805a475fbf0443ab3f7f65b935baf42723aba0a5dc0c2b57d44737078ef013"
     },
     {
       "path": "liveries/cc206/credits.txt",
