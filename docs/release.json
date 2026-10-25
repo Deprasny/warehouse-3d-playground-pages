@@ -1,33 +1,38 @@
 {
-  "release": "diorama-no-fog-6eb2a67",
-  "sourceCommit": "6eb2a67a4262f7b059922b3dbc1b7c323cd76565",
-  "sourceFingerprint": "a9ec867fbc01c4dcce0c58f178e604354c8e51f5",
+  "release": "compact200-full-platforms-7080c15",
+  "sourceCommit": "7080c15bf454782aef741c737c973e84a281b292",
+  "sourceFingerprint": "d6d0edf00b0ebe80d786f355106f2cb0e603879f",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-23T18:08:47.933331+00:00",
+  "builtAt": "2026-10-25T04:53:49.503804+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "c37e7510921aa657bd23e2f4dc5ca7b6776ee31d",
-  "previousPublishedCommit": "ac27ede740762df75dac3a211c0a716e9876fafc",
+  "previousSourceCommit": "6eb2a67a4262f7b059922b3dbc1b7c323cd76565",
+  "previousPublishedCommit": "3c076cebebde0d04689dbf326359832c55d22b38",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 6eb2a67a4262f7b059922b3dbc1b7c323cd76565",
+    "source": "detached clean checkout of 7080c15bf454782aef741c737c973e84a281b292",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "No tests, probes or benchmarks per user instruction. Static source review, production build and publication HTTP identity/bytes separate."
+    "scope": "User explicitly requested no tests. Static source reviews and production build separate. No geometry probes, automated tests, benchmarks or gameplay verification."
   },
   "browserChecks": {
     "status": "not-run",
-    "scope": "No browser/gameplay or visual screenshots. Fog disabled by scene configuration; appearance not visually verified."
+    "scope": "No browser/gameplay/screenshots. Full-length actual stop/shunt journeys not empirically verified. Publication metadata and entry/mainJS/CSS bytes verified only via HTTP."
   },
   "currentChangeScope": {
-    "baseline": "Published c37e7510921aa657bd23e2f4dc5ca7b6776ee31d retained; only fog policy and its documentation changed. Unrelated dirty workspace excluded.",
-    "fog": "Disable scene fog in the diorama style for every weather preset, per explicit user request. Internal legacy fog object remains detached; weather updates do not reattach it. Dispose restores original scene state.",
-    "scope": "North U, mirrored visible South crossovers, all8 routing, signal plan, shunting, audio, train assets and dependencies unchanged.",
-    "build": "Final hook-disabled TypeScript/Vite production build passed, 448 modules. Existing chunk size and ineffective dynamic import warnings remain."
+    "baseline": "Published 6eb2a67a4262f7b059922b3dbc1b7c323cd76565 retained. Only this task deltas included from per-file cached baseline; unrelated dirty source, rolling stock and Auto policy changes excluded.",
+    "board": "Physical map, terrain and navigation 200x200m. Hidden simulation approaches remain outside the board for whole-consist admission.",
+    "southStation": "South rotated25 degrees, world origin14/51. All8 roads retain genuine90m straight platforms, 4.2m track spacing and unchanged rolling-stock scale. No Auto formation shortening or pass-only restriction introduced.",
+    "turnouts": "Station fan roots and ladder forks mirrored in station-local metres, 44.5m main shoulders. Real24m west bridge scissors shares physical wharf diagonal,32m east scissors in tunnel; both mains reach all8. Shared three-way toe renders one mechanism at a time.",
+    "signals": "All16 South exitheads in proper local berth coordinates, entryheads before actual hazards, repeated-traversal signal projection, terrain/deck footings. Rotated station storage and occupancy use inverse frame.",
+    "world": "Station/perons/courts/lamps/light pools/contacts/passengers/doors/focus transformed consistently. Oblique portal meets X board edge; narrow earth causeway supports east approach. North U tip remains8m inside edge.",
+    "vegetation": "45 groups within board, upper limits140trees72rocks650grass; actual rail/facility/edge clearance authoritative. Four static instance kinds, no new asset binaries/textures/lights or frame animation.",
+    "fog": "Diorama scene fog remains disabled for all weather.",
+    "build": "Final TypeScript/Vite hook-disabled production build passed450modules. Existing chunk and dynamic import warnings remain."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -753,6 +758,11 @@
       "path": "assets/AssetCatalogPage-DlYSNyyB.js",
       "bytes": 27446,
       "sha256": "367c89d17c002951d0d7c2cbc9d3af13c851d6d47716a97fa57f49f783536a4d"
+    },
+    {
+      "path": "assets/AssetCatalogPage-DmZJFPip.js",
+      "bytes": 27479,
+      "sha256": "4afb220c01b6ce1cdcfc8e8db0727d2518d61fd034891bd54b12137e98eee3df"
     },
     {
       "path": "assets/AssetCatalogPage-DmxbA904.js",
@@ -1520,6 +1530,11 @@
       "sha256": "2b3f9442cae7a02a675d2a5e37a0f7238624cf72788a6091fa7f55948c4b3ad3"
     },
     {
+      "path": "assets/Cc206ReviewPage-BrgxfK0I.js",
+      "bytes": 12083,
+      "sha256": "a12b94c007e82b830da707e6aad02b7e9d61b842d9e23f23097d578070a4c069"
+    },
+    {
       "path": "assets/Cc206ReviewPage-BtLob5o9.js",
       "bytes": 12019,
       "sha256": "dde1dc9fad1ca68f1ca9d905e1bf6cb7711c4e649b5de07c1151f652f7abd093"
@@ -2278,6 +2293,11 @@
       "path": "assets/ConsistsPage-C5Fdkn-E.js",
       "bytes": 13572,
       "sha256": "5fb6b092de81991b643e046757bb44e99594d6d4d4d90c4912f183a985188c6a"
+    },
+    {
+      "path": "assets/ConsistsPage-C5Kp9XYO.js",
+      "bytes": 25907,
+      "sha256": "8564c38ed5bcc6e9dbdd10c7df4a6f54cda507a3be4db86dacaa20a5d5ae8f6a"
     },
     {
       "path": "assets/ConsistsPage-C7yRUe9C.js",
@@ -3480,6 +3500,11 @@
       "sha256": "124ee3924ebb916404030d0ec658431b083a3094868b0a1ea4eee3a6ea3472aa"
     },
     {
+      "path": "assets/DownloadSimple.es-gEWQRemS.js",
+      "bytes": 2100,
+      "sha256": "79e447fed6cf58043f60b6529227f73b48e90b102f675ce3c4e1e2f449a97379"
+    },
+    {
       "path": "assets/DownloadSimple.es-gpUjnyko.js",
       "bytes": 2061,
       "sha256": "9b710a18ad502e3661b8712e87a5d1a276d198808e3a3a1b1fc505d58cf82a7f"
@@ -4285,6 +4310,11 @@
       "sha256": "5d9620a46fb87fcf9dc18d1f206733b4579f6160d2358f69ef54bfb55bd5e3df"
     },
     {
+      "path": "assets/GaugeReviewPage-DWTpII9Q.js",
+      "bytes": 18338,
+      "sha256": "83b3b726e433aabd1bd4535173baaae1c74919fe488d10f8a94bcbfbe7edde9e"
+    },
+    {
       "path": "assets/GaugeReviewPage-DZySavJc.js",
       "bytes": 18205,
       "sha256": "4a9048a12906b8900d8eb52127617c948de930dcec2fd8653fd1e528efbe68b0"
@@ -4938,6 +4968,11 @@
       "path": "assets/HudPreviewPanel-D75pnI1v.js",
       "bytes": 421,
       "sha256": "9e030610bafef9622f20dd5b8d7be530cf4593e8c4888d903b7a5e088e3d71e6"
+    },
+    {
+      "path": "assets/HudPreviewPanel-D9mEiCTB.js",
+      "bytes": 418,
+      "sha256": "de5b1df62c79cc14bf88069e7965c9dfdc6a593b40a08b6a3d34c876145d082f"
     },
     {
       "path": "assets/HudPreviewPanel-DBuXJ5XO.js",
@@ -5620,6 +5655,11 @@
       "sha256": "db262f4878f37c628ca7dec2abeb46cfe163900901bd7192c87913158332c226"
     },
     {
+      "path": "assets/IconBase.es-e-fp_xvP.js",
+      "bytes": 3734,
+      "sha256": "5b6ab24529c8d6a8485ae5a18af3843e4d89f5e9a99c18330281aa2567b3c43d"
+    },
+    {
       "path": "assets/IconBase.es-mV9hidLY.js",
       "bytes": 3729,
       "sha256": "9c535fc50642d8aedb0e3bc682e826d3b287a65f00013679efac74fba9f51db6"
@@ -5763,6 +5803,11 @@
       "path": "assets/ImportedCc206Page-BTimLqmG.js",
       "bytes": 18473,
       "sha256": "a1de27226633999ab0fe39438e7f8e0200b65230e15d10a699edf99c6a50b1dc"
+    },
+    {
+      "path": "assets/ImportedCc206Page-BUyfXI3D.js",
+      "bytes": 18473,
+      "sha256": "b56ad96eefb66b20b70ccf5db2d073c76af2bb217cab90569eb0f418825a8a38"
     },
     {
       "path": "assets/ImportedCc206Page-BYIpnerC.js",
@@ -7180,6 +7225,11 @@
       "sha256": "38ab80fc8d2f267ba2cabfd626b804b4fa7aa7027e49beecd2ae69c96a03bcfe"
     },
     {
+      "path": "assets/consist-preview-stage-AzkWZ-jl.js",
+      "bytes": 10024,
+      "sha256": "e0a8e17352409dd82de3c472e1cfaa8db220629fed21f971108f1e8bd69be8f9"
+    },
+    {
       "path": "assets/consist-preview-stage-CIDmqIzE.js",
       "bytes": 10024,
       "sha256": "196ee27677581567f2f17a7dea4c7932687be517a1ef903a422a306dde94b44e"
@@ -7578,6 +7628,11 @@
       "path": "assets/diorama-postprocessing-D9EjLZmH.js",
       "bytes": 41254,
       "sha256": "8d4ea2ba56c375af53b89fb372d0de14a3d070a774fcca1d06de572133bd0ebe"
+    },
+    {
+      "path": "assets/diorama-postprocessing-DEPeoMCf.js",
+      "bytes": 42435,
+      "sha256": "33c7d0c925df5a1b605cb3497a7825fca80b9eb17cf0f66b4d38d418a3806df8"
     },
     {
       "path": "assets/diorama-postprocessing-DET8ZW9S.js",
@@ -8683,6 +8738,11 @@
       "path": "assets/index-DYzYUT_Z.js",
       "bytes": 894905,
       "sha256": "78fe136b0bf90f099f5e216b371d9f678644283385a9b4317d3b0b4c72bb5215"
+    },
+    {
+      "path": "assets/index-DaOVIgAs.js",
+      "bytes": 1015583,
+      "sha256": "dad5968c0bfa21d339278bb78346b23a54fe00c8a3a2020385195c072ca96727"
     },
     {
       "path": "assets/index-DbgUnzsJ.css",
@@ -10132,7 +10192,7 @@
     {
       "path": "index.html",
       "bytes": 3546,
-      "sha256": "0fb3580287c7aef78da48e203776d5de4d57f50d2a47127559e9302b13366c78"
+      "sha256": "0b153d674acaf3750f2b77de1a11829ab1540c9189d3d0d4314f8a6a05fa86c6"
     },
     {
       "path": "liveries/cc206/credits.txt",
