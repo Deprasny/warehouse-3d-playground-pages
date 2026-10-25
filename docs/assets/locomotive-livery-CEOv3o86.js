@@ -1,0 +1,1 @@
+var e=[{value:`kai-standard`,label:`KAI standar`},{value:`nusantara-explorer`,label:`Nusantara Explorer`}],t=e=>e===`kai-standard`||e===`nusantara-explorer`,n=e=>e??`kai-standard`;export{n,t as r,e as t};
