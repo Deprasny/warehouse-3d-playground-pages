@@ -1,0 +1,1 @@
+import{P as e,qn as t}from"./diorama-style-CaeadOgw.js";var n=class extends e{constructor(e=null,n=1,r=1,i,a,o,s,c,l=t,u=t,d,f){super(null,o,s,c,l,u,i,a,d,f),this.isDataTexture=!0,this.image={data:e,width:n,height:r},this.generateMipmaps=!1,this.flipY=!1,this.unpackAlignment=1}};export{n as t};
