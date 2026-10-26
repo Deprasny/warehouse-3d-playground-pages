@@ -1,37 +1,36 @@
 {
-  "release": "loop-auto-depot-forest-south-7525275",
-  "sourceCommit": "7525275c8abc50ad0d693733b75d573206ba24bd",
-  "sourceFingerprint": "5819a2beb658bbee820df36c8ed5f075746af8e7",
+  "release": "station-tracks-terrain-calm-audio-0d51fb6",
+  "sourceCommit": "0d51fb696e79b546ff93ac0c5b3e303cb79c0804",
+  "sourceFingerprint": "d7cac719d6b6f559b9ac0b716b7c983ba429e341",
   "sourceFingerprintAlgorithm": "git HEAD tree hash",
   "sourceIncludesUncommittedChanges": false,
-  "builtAt": "2026-10-26T11:22:58.458967+00:00",
+  "builtAt": "2026-10-26T11:51:40.702016+00:00",
   "base": "/warehouse-3d-playground-pages/",
-  "previousSourceCommit": "420917a9ace5a0b9c2febd05d36056e47632b601",
-  "previousPublishedCommit": "f0f9317984f53f06309c8ce782d7b6cecb741511",
+  "previousSourceCommit": "7525275c8abc50ad0d693733b75d573206ba24bd",
+  "previousPublishedCommit": "133a8a93f3790ab40e08616092f33a46c3f6bbf3",
   "build": {
     "status": "passed",
     "command": "npm --ignore-scripts run build -- --base=/warehouse-3d-playground-pages/",
-    "source": "detached clean checkout of 7525275c8abc50ad0d693733b75d573206ba24bd",
+    "source": "detached clean checkout of 0d51fb696e79b546ff93ac0c5b3e303cb79c0804",
     "compatibility": "Historical compiled chunks and standalone previews retained"
   },
   "checks": {
     "status": "not-run",
     "run": [],
-    "scope": "Tests explicitly withheld. Static source/math review, scoped formatting and deployment build only; runtime clearance, multi-actor behavior, visuals and performance remain unmeasured."
+    "scope": "Automated tests explicitly withheld. No test scripts/hooks, geometry probes, traffic scenarios, audio listening or benchmarks. TypeScript/Vite compilation and static review only."
   },
   "browserChecks": {
-    "status": "not-run",
-    "scope": "No browser or gameplay execution. HTTP artifact identity and exact compiled bytes only."
+    "status": "targeted-visual-review",
+    "scope": "User requested station/rail inspection: before live overview; after built preview overview and focused Sentral, elevated Timur, Cempaka/depot. Rails exposed in inspected areas; station axes aligned and adjacent south-facing architecture visible. Paused inspection only; no complete gameplay/traffic or subjective audio validation."
   },
   "currentChangeScope": {
-    "map": "1200x1200 organic two-direction loop,10stations with220m platforms;Sentral8roads,allother9stations4roads;2locos+10coaches supported withoutscalechange",
-    "auto": "6persistentAutoformations,each2CC206+10coaches,mixlocalexpressforestbothdirections,staggeredinitialstations;max8circulatingincluding2manualslots;boundedstoredinventoryseparate,nounboundedspawning",
-    "overtaking": "Localouterroad,expressmainroad;independententry/exitpointleasesandberths withfulltail+14clearance,localsyieldtoreachableexpressuntiltailclear;HUDactualroadsandreasons",
-    "forest": "Connected2directionforestshortcutafterSentral/beforeTimur,skipsCempakaSelatanMekarsari;sharedphysicalsectionIDintervals,inverseprojectedfollowingdistance,actualgradedforksandsignals,Hub+WestcompoundauthorityandEastjunctionlease",
-    "depot": "CempakaJ4directionBphysicalyardaccess,2x220mcoachsidingsand2x60mlocoshedberths;initialreal2+10formationand2locos;store/retrieveactualmodelswithreversal,remaincoupled,mainapproachandSentrallease;noabstractrunaround/lateralteleport;seedmovementhasbothloco/reverseaudio",
-    "stationFacing": "All10architecturefacades,doors,windows,clockandfrontnameboardsfaceworldSouth+Ztowardfixedisometriccamera;platformsrailsfootbridgeskeeprailbasis;separateauthoredanchorswithterrainpadsandvegetationexclusion;10identitiesnear/farretained",
-    "preserved": "Originaltrainliveriesgaugecenteredbogies,rail/train/sceneryLOD,instanced15vegetationzones,organicterrainviaducthollowtunnel,nofog,nounrelatedRiversidechangesornewmodeldownloads",
-    "verification": "Threeownedsub-agentimplementationsplusstaticgeometry/API/authority/lifecycle/UIreviews;clean-commitTypeScript/Vitebuild485modules. ExistinglargechunkwarningGamePage804.17kB. HTTPpublicationidentityandcompiledbytesonly. No tests,gameplay,browser,scene/modelexecution,pathprobes,visualchecksorbenchmarks"
+    "stations": "Actual rails and 220m platforms of all10stations now parallel worldX, Sentral8roads/others4; adjacent north-side architecture faces worldSouth+Z, Cempaka compact forecourt clears real depot lead",
+    "network": "Six east-west rows connected by broad200m row turns, independent western return inside1200mboard, forest shortcut between rows outside depot; actual route tangents orient hub mechanisms, bridge and tunnel metadata follow network",
+    "terrain": "Conforming64cellbase locally2xrefined with shared transition vertices; final all-vertex triangle caps below every nearby nonbridge rail grade plane after all pads;4m corridor pieces, railtop-.39m clearance, same packedmesh barycentric scenery seating; platform tops unchanged with extended foundations",
+    "traffic": "Hub/forestWest authority combined only for real overlap; yard range from actual CempakaJ4B toe and full consist span with periodic intersection, upstream gates prevent downstream reservations across unowned junctions; Auto6x2locos+10coaches and max8 retained",
+    "audio": "Loco impacts every12m instead1.5m with independent phases, lower paired gains and progressive45percent highspeed attenuation; coach joints12m and .28s shared cooldown, softer460Hz rolling bed .64-.86 rate and .25s smoothing, shared8s noise buffer with offsets; absolute coach travel supports reverse audio",
+    "preserved": "Stylized lowpoly diorama palette, original train liveries/gauge/wheels, existing near/overview LOD and vegetation batching; no fog/new library/model downloads",
+    "verification": "Three subagent implementations and static source/math peer review; clean TypeScript/Vite build486modules, existing GamePage808.67kB largechunk warning. Requested targeted manual browser appearance review of old overview and built new overview/Sentral/Timur/Cempaka; paused while inspecting. No automated tests, path probes, traffic exercises, listening tests or performance benchmarks. Publication identity and exact compiled HTTP bytes checked separately."
   },
   "locomotiveFleet": {
     "totalPackedBytes": 4863388,
@@ -262,6 +261,11 @@
       "path": "assets/AssetCatalogPage-B1naMGjB.js",
       "bytes": 24488,
       "sha256": "bc7c87d4981ab125d4b2d3a2dffe287d783e346059639aa8b1ec3086033017ec"
+    },
+    {
+      "path": "assets/AssetCatalogPage-B2bD9n-f.js",
+      "bytes": 28051,
+      "sha256": "2559c8493978daf5fbd5857b5725f086ced8f0b4c55fbab4be4a8ef445e0203f"
     },
     {
       "path": "assets/AssetCatalogPage-B4HcQJ2L.js",
@@ -1294,6 +1298,11 @@
       "sha256": "679334d015ccf4e5d0570f5a957e417dad2d8929341144c66743ae47c86fd835"
     },
     {
+      "path": "assets/AssetThumbnail-_A0HLtBf.js",
+      "bytes": 383557,
+      "sha256": "f7414fbc2084d200af0d2500380ebfa09a1cf83e982d0b34fb6f1918a31a5803"
+    },
+    {
       "path": "assets/AssetThumbnail-m4ziEzjN.js",
       "bytes": 597515,
       "sha256": "0fa22b6805a7334bd35824afec3db83fd7843580cf3b4e3dc728c10631ba4f92"
@@ -2134,6 +2143,11 @@
       "sha256": "81658c9719c6ec198668867964205d9270188080af9562faa9e36647c33f0623"
     },
     {
+      "path": "assets/Cc206ReviewPage-kdV0eWIF.js",
+      "bytes": 12130,
+      "sha256": "54c92207b7e26e6e63552c5029b9cf7af60f8b32f91c4a75a4730aa03a756dab"
+    },
+    {
       "path": "assets/Cc206ReviewPage-ltcNWQYB.js",
       "bytes": 12019,
       "sha256": "924e05806f02b16018270400fa9c024701485d13acaf40df72f0f46cc69eb01d"
@@ -2577,6 +2591,11 @@
       "path": "assets/ConsistsPage-Cyq0RJt9.js",
       "bytes": 8470,
       "sha256": "036995462f391884ea0a0e40409a93bb0340ad7a7d8ae67d381ca20593dc5810"
+    },
+    {
+      "path": "assets/ConsistsPage-D35KrUHR.js",
+      "bytes": 26406,
+      "sha256": "314ba8426d3ff7cc4cc51eb79bfc347b9b07302e2ebcebc575b5fffa79a3ed2a"
     },
     {
       "path": "assets/ConsistsPage-D4rYesIy.js",
@@ -3182,6 +3201,11 @@
       "path": "assets/DownloadSimple.es-C39Fnq_I.js",
       "bytes": 2100,
       "sha256": "405e6cecbe68704a6193acc1dd7e5a1852e5602a360d6b01c5cc9b7fd1eb6e31"
+    },
+    {
+      "path": "assets/DownloadSimple.es-C4E-I5n8.js",
+      "bytes": 2056,
+      "sha256": "cf4531536968b4490ee649cd5bb015a3fcc323fbf8d594b0853fdf92ea1825b1"
     },
     {
       "path": "assets/DownloadSimple.es-C4TR50B4.js",
@@ -4004,6 +4028,11 @@
       "sha256": "bd63526be1c372ddae0a3816e1d2decaf1c8730411a5d702102c9fa5592edb07"
     },
     {
+      "path": "assets/GLTFLoader-DYkwjXuZ.js",
+      "bytes": 44380,
+      "sha256": "dbfbe198c0fe39f53a92b02a01f36b5207a1617360748ca04abf61990da076ea"
+    },
+    {
       "path": "assets/GLTFLoader-Ddm7y4pU.js",
       "bytes": 44396,
       "sha256": "2b0d2d331dd82a6dc95a59ace92908039f48401fdc0d7e19914ff28ad5410c61"
@@ -4082,6 +4111,11 @@
       "path": "assets/GamePage-Cl2y23zi.js",
       "bytes": 724230,
       "sha256": "6be34ba95ae019c9368fed4c00c13c735208d0055851be05b49a060b48542253"
+    },
+    {
+      "path": "assets/GamePage-CmHl5X7c.js",
+      "bytes": 808678,
+      "sha256": "18199acec3d55fea10bbee63a14be76fc76fa09eb8322ec63025ea1e004c0f9d"
     },
     {
       "path": "assets/GamePage-CmwoTN0g.js",
@@ -4587,6 +4621,11 @@
       "path": "assets/GaugeReviewPage-D6sCndRO.js",
       "bytes": 18214,
       "sha256": "46684e1663c873566e3206213cf5e1760191470b271b4bc06834f8f4c7517f91"
+    },
+    {
+      "path": "assets/GaugeReviewPage-D7GpmHaB.js",
+      "bytes": 18388,
+      "sha256": "79186667bb296255a79aae609dcf497ae1ff0e467028ad56f52e486173d39c17"
     },
     {
       "path": "assets/GaugeReviewPage-D7MA3sEE.js",
@@ -5184,6 +5223,11 @@
       "sha256": "91523d5fa2cd4866e25ba57f13e894a5e0a0a3a4b1d936951f2a03a90feb7ad9"
     },
     {
+      "path": "assets/HudPreviewPanel-CKbEdn7l.js",
+      "bytes": 418,
+      "sha256": "362712cb41c8b0f19585d7b1712ebc51f34816b6b07943567ccf6f29bf07a8e9"
+    },
+    {
       "path": "assets/HudPreviewPanel-CQPuiot9.js",
       "bytes": 418,
       "sha256": "1dde15026ed7dd09bf1ec2a4980086d5c7157b636a85a433b4b985bcf7777197"
@@ -5717,6 +5761,11 @@
       "path": "assets/IconBase.es-BJWJEqP3.js",
       "bytes": 3737,
       "sha256": "7368ec239d8faaf23c4fbd98f0199a32c20fbb14582ac46d5647d5478b55157f"
+    },
+    {
+      "path": "assets/IconBase.es-BTCwc9Pv.js",
+      "bytes": 3737,
+      "sha256": "1b8a47592d586b42073804a686ecb6738c4745c0151360c5ddae288ffe40d494"
     },
     {
       "path": "assets/IconBase.es-BUL2eBQi.js",
@@ -6394,6 +6443,11 @@
       "sha256": "3c38b5e0716eda8ece3bf09b9ab5c40fbcafec5b7b40a1e9a756cafac1d91600"
     },
     {
+      "path": "assets/ImportedCc206Page-CS7nTvnN.js",
+      "bytes": 18524,
+      "sha256": "041d7316ab52069491c387ec928cecbc27072965a1bd52eba9c6d21b3b8eb256"
+    },
+    {
       "path": "assets/ImportedCc206Page-CTlz7N8e.js",
       "bytes": 18456,
       "sha256": "05432655a6865ba476b487fea28c796f3ca36170616bf82841f64ae08899295a"
@@ -6899,6 +6953,11 @@
       "sha256": "59e0e79928f3532fbbac902f643639ac4470bef7603abe3c131541f51915c73d"
     },
     {
+      "path": "assets/asset-resources-CXENOij3.js",
+      "bytes": 631,
+      "sha256": "0e07e55a3fd13cf2f445da7b6ff30243a10da306f02d9f6ec37fc7f2e7c828ad"
+    },
+    {
       "path": "assets/asset-resources-CYHlqkYK.js",
       "bytes": 631,
       "sha256": "5d2b84bbb18d2e0f38fb82ef340fd945819fdd8a9086fe34ac3534e326dcb96e"
@@ -6967,6 +7026,11 @@
       "path": "assets/carriages-CvWBQKUZ.js",
       "bytes": 447,
       "sha256": "99ed2963332739515b6a1ecf9b2deaf773f9bc17761fa1d839091867171bdfe2"
+    },
+    {
+      "path": "assets/catalog-B1SsCzs8.js",
+      "bytes": 43884,
+      "sha256": "14832870aac5cc1dff6a866d48d818f6b481d88c9ffa700590f85b9afe9b663d"
     },
     {
       "path": "assets/catalog-BBPk7J4R.js",
@@ -7229,6 +7293,11 @@
       "sha256": "22c630b10761ed5bf5424603ca53bea64252547a776486e7170c3766c1c6dafd"
     },
     {
+      "path": "assets/cc201-game-template-uzOODuod.js",
+      "bytes": 5315,
+      "sha256": "1f311cc83cdaff5f4daa9f6e6185cd57a884896c60262c6b288bcd181f6ae68a"
+    },
+    {
       "path": "assets/cc203-game-template-0eEp9u9V.js",
       "bytes": 7002,
       "sha256": "845f764cd137109d3a8877077cd8203bca62d461696bc092140b761af01a77f1"
@@ -7267,6 +7336,11 @@
       "path": "assets/cc203-game-template-BBm0_37W.js",
       "bytes": 6918,
       "sha256": "036589e2ad6999c7c4331a3972c635adaf2d59c382ca2455978ddcba76dfef39"
+    },
+    {
+      "path": "assets/cc203-game-template-BNNHGjsE.js",
+      "bytes": 7509,
+      "sha256": "a4d96b436f23156fe783e6ce86bf5f44b1ac1fda0e3a0bc0cd181453c6c09abb"
     },
     {
       "path": "assets/cc203-game-template-BZVdysh3.js",
@@ -7442,6 +7516,11 @@
       "path": "assets/cc205-game-template-BzlHLW8a.js",
       "bytes": 4052,
       "sha256": "f2fef5bc77c613d7969c8a1e6b136ed49f42dec78489347db001e3e85d65c6cb"
+    },
+    {
+      "path": "assets/cc205-game-template-CCA0_nzG.js",
+      "bytes": 4290,
+      "sha256": "35a5f16fe17f321ec3200e27eace61751cc0019cd99043e45567abaf6cc41904"
     },
     {
       "path": "assets/cc205-game-template-CCpd9aZI.js",
@@ -7674,6 +7753,11 @@
       "sha256": "b857f590c81a50b284a0496876451e39034832c57a28d3b5fd1212619785ce7a"
     },
     {
+      "path": "assets/cc206-game-template-CmqNUBJQ.js",
+      "bytes": 8830,
+      "sha256": "45fc1fab8b1b6349d5688256b31d1a216d253f1d920c87cb9e5ab94ee80cd37c"
+    },
+    {
       "path": "assets/cc206-game-template-D5E2ylpj.js",
       "bytes": 8940,
       "sha256": "a5c641cc13e93401b88e115bc57420a3bb87bdc1251e26a2aa2379dee2d96ac8"
@@ -7884,6 +7968,11 @@
       "sha256": "41773026215572e4d25792524ddaf6293e663b3f66fdca6d9887557670dfdac1"
     },
     {
+      "path": "assets/cc206-livery-Dn6YSrRk.js",
+      "bytes": 2400,
+      "sha256": "18eff946e5a70bf51f1672797f672dcfcc2e21e1f62ac1a4ea87de9ac789ddd2"
+    },
+    {
       "path": "assets/cc206-livery-DwO443Hm.js",
       "bytes": 2400,
       "sha256": "c41384ff785808186a014dd7885edb8f0f14e682602068f0f7c8c866a61b5a91"
@@ -7982,6 +8071,11 @@
       "path": "assets/consist-preview-stage-CIDmqIzE.js",
       "bytes": 10024,
       "sha256": "196ee27677581567f2f17a7dea4c7932687be517a1ef903a422a306dde94b44e"
+    },
+    {
+      "path": "assets/consist-preview-stage-CP7m1-HG.js",
+      "bytes": 10364,
+      "sha256": "8e0c0e1d60c85df40faee58420ee88a1d8aabb0d504da5356edbd2d35286d8f5"
     },
     {
       "path": "assets/consist-preview-stage-CX9v81e5.js",
@@ -8099,6 +8193,16 @@
       "sha256": "e898f514956625d4ee3dcaaabed72b23377d7d12d2fe7086b1efe530c5a20ae2"
     },
     {
+      "path": "assets/crossing-surface-DQMHLbPe.js",
+      "bytes": 24280,
+      "sha256": "264d3a2d84073f450755540a350c38884e031146bdcafd37833f9415d4c89963"
+    },
+    {
+      "path": "assets/dermaga-kit-B3BeSQGJ.js",
+      "bytes": 2171,
+      "sha256": "d9eb449c17fdf933e9a8dd92d936f6dd42a103cdc7a80949001babd42299db01"
+    },
+    {
       "path": "assets/dermaga-kit-Bj5uJhSN.js",
       "bytes": 2171,
       "sha256": "0cca29145ed47ca4e4ad72992877736f45abaf7da36e7d4d43879d9a8aafae6f"
@@ -8157,6 +8261,11 @@
       "path": "assets/diorama-carriages-DmRUT5Ec.js",
       "bytes": 6216,
       "sha256": "fcaacf5a4864fee312a0e835b5d07a348f7be83e22c5a2dfa2e5c9ab597de9fa"
+    },
+    {
+      "path": "assets/diorama-carriages-Doyr4nYV.js",
+      "bytes": 6278,
+      "sha256": "27311abd52d8c02fdabb93ceccd158bb497bf0ca84f8f06b5cb5ba33d0800a13"
     },
     {
       "path": "assets/diorama-carriages-DqDkbAan.js",
@@ -8222,6 +8331,11 @@
       "path": "assets/diorama-kit-Dik42veh.js",
       "bytes": 4216,
       "sha256": "1db5c83d33501d56dc4068725edfdc2d5cec3d25c2e177dcc533e6800f9af4fe"
+    },
+    {
+      "path": "assets/diorama-kit-DnVVp286.js",
+      "bytes": 4216,
+      "sha256": "aff160b141903daa03a8cb95e9f06a04415745e580d085fd183e1169238c75cb"
     },
     {
       "path": "assets/diorama-kit-tzOx5UVd.js",
@@ -8754,6 +8868,11 @@
       "sha256": "752875bf3dc3d0a6a272f5142fae7a905b036cb5589e78ef5dd720ad9b546933"
     },
     {
+      "path": "assets/diorama-postprocessing-ZbgPaaC2.js",
+      "bytes": 42439,
+      "sha256": "24e65118cae03b19aff8aca10553cbcce364349e92fc1256a366260e7fe61270"
+    },
+    {
       "path": "assets/diorama-postprocessing-b11Qf7OE.js",
       "bytes": 40300,
       "sha256": "d242ca41327b7f5d0629cf4c9be4d9cded7cb91e44f3add90dea963d2953b013"
@@ -8954,6 +9073,11 @@
       "sha256": "2e533be517e6dfe5461dda33d1bd3ccb6ca3eb211d04f52ee44ef844f0efa3e0"
     },
     {
+      "path": "assets/elements-4rBn2RZx.js",
+      "bytes": 594,
+      "sha256": "c0094681b0ef8ca16ab2d03c8b5ee257befb78362400d595388a49c444a059e0"
+    },
+    {
       "path": "assets/elements-BKokVkw3.js",
       "bytes": 594,
       "sha256": "22d0e14386e1b59d6485a864ffdabf50604e8cad301497ce7de0ef3b7414951a"
@@ -9079,6 +9203,11 @@
       "sha256": "b2c5589b7cbfa9f9f144a7e30c82a0ae9c3e5fc84cc56f1f1fd5991e8d0a09d8"
     },
     {
+      "path": "assets/elite-coaches-DO21b8dB.js",
+      "bytes": 7162,
+      "sha256": "ca257ac86d42790ab3c17508c505e3211dfc9189f2fcd82813e655854b0786cf"
+    },
+    {
       "path": "assets/elite-coaches-DOZLoIu3.js",
       "bytes": 7307,
       "sha256": "28aa48f76d807f427d2e939b687bcef4ded12c8a3a769fee9d756bbc9ed9fd93"
@@ -9107,6 +9236,11 @@
       "path": "assets/gauge-profile-BG1F1n9U.js",
       "bytes": 17701,
       "sha256": "d5b8546525278bf46f3d9db808c0e9187c5253f3a42ed8db4386f0a779245735"
+    },
+    {
+      "path": "assets/gauge-profile-BPJkACJE.js",
+      "bytes": 17701,
+      "sha256": "14f5f84458d1dfb78f5d22a945916472350fac51ed8517b6bb35b66bc1b0fb50"
     },
     {
       "path": "assets/gauge-profile-BRPoYBvz.js",
@@ -9189,6 +9323,11 @@
       "sha256": "49b46ecc7266f625a77425a280c8dd9e73d6a728db286de3bbedfc9be7b74d14"
     },
     {
+      "path": "assets/gear-gauge-DQkftKGZ.js",
+      "bytes": 1417,
+      "sha256": "be3a5b128c488d33bfa0a32a63ff45e183cc356e646a1b10b638cee210bd41bf"
+    },
+    {
       "path": "assets/gear-gauge-DhqVvwn6.js",
       "bytes": 1417,
       "sha256": "bce667860638dc07ade8b7e0d3bc4c7b516f0415813e5288f59f8271e20eae2c"
@@ -9252,6 +9391,11 @@
       "path": "assets/glb-kit-bCye_F_q.js",
       "bytes": 3244,
       "sha256": "ac0098c0681997bac4d1aba9207e8571788c8a192f0ae65486ab72ab1bad7626"
+    },
+    {
+      "path": "assets/glb-kit-rsPXfnmw.js",
+      "bytes": 3252,
+      "sha256": "8217843f9246eca5318cb996cb94f01d94a6d6b87fde6864d1a61068fdf6c647"
     },
     {
       "path": "assets/glb-kit-yQRjDjo_.js",
@@ -9959,6 +10103,11 @@
       "sha256": "97cc492cbe7a35342a6399b940a4f72534cb19d7af6d9258d1c34acf997d0b17"
     },
     {
+      "path": "assets/index-DiCe6rbT.js",
+      "bytes": 235503,
+      "sha256": "5edf0b26073dc10865ad0834b6e7dda55043defa63fb5df71199f6b8338b9d8f"
+    },
+    {
       "path": "assets/index-DipubBgW.js",
       "bytes": 1249764,
       "sha256": "bddedcde89d764e1a928970e4ccc4acc644e4e91bbce2b180f1f90fedcb3e6f2"
@@ -10449,6 +10598,11 @@
       "sha256": "65a5473e4f7420c66fc52ca802d95ceb10a895af69c66c32794fe6270e47f3ce"
     },
     {
+      "path": "assets/locomotive-roof-Vci_Xnz5.js",
+      "bytes": 12265,
+      "sha256": "93f2b094ded5b0f19058b37ff17cba8ed690ba8a44682f5352e03cb5bef54080"
+    },
+    {
       "path": "assets/locomotive-roof-bDHhCCfX.js",
       "bytes": 11887,
       "sha256": "90ad935c1b57a842eed1f45277cfffd92d960bcce7d3aee2747a16a4e3a3ce4e"
@@ -10482,6 +10636,11 @@
       "path": "assets/nusantara-coaches--zEzaDIh.js",
       "bytes": 7227,
       "sha256": "15ed0ccb6720891b1a14fd38e8ed2a527587c31e79f4ab088ed57f04f920dc21"
+    },
+    {
+      "path": "assets/nusantara-coaches-9pT4aGZV.js",
+      "bytes": 8036,
+      "sha256": "50af4f483f62468f17bf42cffe4d2b1637770862119fcf9edc65547fa6031207"
     },
     {
       "path": "assets/nusantara-coaches-B-ks0Z6k.js",
@@ -10714,6 +10873,11 @@
       "sha256": "79ca6e6083db628fd138055dae7773328eaf460426fb9ecc81b53a1cc43ba8fb"
     },
     {
+      "path": "assets/passenger-coach-F87V_9j5.js",
+      "bytes": 8674,
+      "sha256": "d5c50476857e2e35c27ef68287ea80e70038e9fa430e35991ac465ad575a367f"
+    },
+    {
       "path": "assets/passenger-coach-QOpYr_El.js",
       "bytes": 8674,
       "sha256": "366031b1383d36fd37252acfad5ea828e983e3077526b18c5fc8a8264d4d2f01"
@@ -10814,6 +10978,11 @@
       "sha256": "32f35fa1a0a79eaff6091cdf738fe4b3c4a180f99fd3109792f293583be059f4"
     },
     {
+      "path": "assets/procedural-DqUfx5EQ.js",
+      "bytes": 132120,
+      "sha256": "14ba1e90dee902ab3c0e8eb8a2d7a569c950204faf48a928c7304bf9ac7a3c20"
+    },
+    {
       "path": "assets/procedural-EXg28NxU.js",
       "bytes": 132120,
       "sha256": "f2954edc53df7aebbbc9aac4d9ccf4e606f10086072a74becb8d65ddb2fd5575"
@@ -10864,6 +11033,11 @@
       "sha256": "2fed731ae7891caea36c7024630dbcb362cbe2d0246590fd9c539730d3f23f15"
     },
     {
+      "path": "assets/riverside-depot-import-D2LXDE2Q.js",
+      "bytes": 15373,
+      "sha256": "01cb3186c9d18e5797634bc65da52e18c705c87558129a2e05696ac8c5516410"
+    },
+    {
       "path": "assets/riverside-depot-import-FVVE1lV8.js",
       "bytes": 12515,
       "sha256": "050d0515c0cb631f8c27171314e5bd0b459ddde420f61e07cfbd44c4ddbf9533"
@@ -10907,6 +11081,11 @@
       "path": "assets/riverside-station-import-C_Z-1Wcy.js",
       "bytes": 5089,
       "sha256": "fda3954af9b2ec2ff945c14c3599834a4ba1aafcd7bf864bef95e77764398afd"
+    },
+    {
+      "path": "assets/riverside-station-import-DWATAe_Z.js",
+      "bytes": 4979,
+      "sha256": "874fff3e53c208f725312cfc0a20a3f921f94c701d5164cbb2af5726ebc6d923"
     },
     {
       "path": "assets/riverside-station-import-hvxRrX7u.js",
@@ -10959,6 +11138,11 @@
       "sha256": "80b249d739d689506533f73233a46b08847b2c03a376ec1d4a8b77272459ff2a"
     },
     {
+      "path": "assets/riverside-train-model-lOsf_TfN.js",
+      "bytes": 28516,
+      "sha256": "dae8377822dc6493468626ef3d6df205e7ab658e30e7e968c18918387a96354a"
+    },
+    {
       "path": "assets/riverside-train-model-t-Avy_-l.js",
       "bytes": 28604,
       "sha256": "3a87bf432969401bb54b9c84ed1497967add2a3a81771ec2cf2bc3617caa2276"
@@ -11009,6 +11193,11 @@
       "sha256": "999b0e415d12c18503c853a0c13be5d524271352e0544ccf0872f02d4726f1bc"
     },
     {
+      "path": "assets/rolling-detail-ydkHGILc.js",
+      "bytes": 3657,
+      "sha256": "ff58696c213f07655d5f536bef14107b0f97ef2207c6a238362119860bf9b5d7"
+    },
+    {
       "path": "assets/rolling-stock-5yxORR2j.js",
       "bytes": 2592,
       "sha256": "d9e4218603429dcdc5dacfa37259251783667df5cf09a47a7b96f7b346585f33"
@@ -11039,6 +11228,11 @@
       "sha256": "77ae5e2cab570e87aca5a12e875abc7d79d421d2d9083617a52d71297beabccf"
     },
     {
+      "path": "assets/rolling-stock-gO-bCQy5.js",
+      "bytes": 2592,
+      "sha256": "332c77198f16db7ffe03a8b5eeb995ac1151085163a8ceaa9fa1cc2baee71472"
+    },
+    {
       "path": "assets/rolling-stock-jmB2_cam.js",
       "bytes": 2592,
       "sha256": "0b773f8af78434767014ae0a58bd4194f1a5b019343019b2863d823969ccc9dc"
@@ -11062,6 +11256,11 @@
       "path": "assets/rolling-stock-overview-CPDojDTl.js",
       "bytes": 13027,
       "sha256": "124ea0d5454a85ed5c6eaa08abfb66c0ccf9a08b13485f131673c50e621627f8"
+    },
+    {
+      "path": "assets/rolling-stock-overview-CtqSJumr.js",
+      "bytes": 13027,
+      "sha256": "8c417827091af47e5a8afbc3c7cfba0bf7f9e6a3bee9e4ecea00f2c11156cc5c"
     },
     {
       "path": "assets/rolling-stock-overview-DR8UWyHz.js",
@@ -11127,6 +11326,11 @@
       "path": "assets/ssng-coaches-BIL6EKFN.js",
       "bytes": 8467,
       "sha256": "4e1ade05cbf088aa08ceea845c4f51ddf1e34288b64aa06e3f7f53901543a9c7"
+    },
+    {
+      "path": "assets/ssng-coaches-BcIySNNF.js",
+      "bytes": 8357,
+      "sha256": "b17ddc37eca1549469aa219a380f0bf0ad839b992b13e3aef81cd737af1a963a"
     },
     {
       "path": "assets/ssng-coaches-C5sHwVOk.js",
@@ -11209,9 +11413,19 @@
       "sha256": "cc5d9b7777c610e8789e546741ab190fd76282c1f75fbde7278a5a925326b724"
     },
     {
+      "path": "assets/ssng-route-display-fAs4RqjD.js",
+      "bytes": 11243,
+      "sha256": "9746fb44a551fd41fb2425f1264742fc1377645bb7f0c279597f9e417b004b33"
+    },
+    {
       "path": "assets/startup-preload-BOq5X91m.js",
       "bytes": 483,
       "sha256": "146e48424a5ed27d6eb093382b3801d3e55ec20c5b46282d472ad98407a3eb20"
+    },
+    {
+      "path": "assets/startup-preload-BRWYf1to.js",
+      "bytes": 483,
+      "sha256": "e97a0ad84dffd2ec6b3e82372651f68a7102c7da71cf45045f8fdffcab0103c7"
     },
     {
       "path": "assets/startup-preload-BRZkQHey.js",
@@ -11337,6 +11551,11 @@
       "path": "assets/taksaka-ssng-aTIho_lH.js",
       "bytes": 16727,
       "sha256": "d4504f55dbedf1b97fc71631c6dacb138d67f10b2fd87bb6a58e577d879c4fc3"
+    },
+    {
+      "path": "assets/taksaka-ssng-gztxAQfZ.js",
+      "bytes": 6072,
+      "sha256": "fd42349f9c41df4198745c76cfc8c33d7bd0187bcc6bf9e7178fa000a8a21ffe"
     },
     {
       "path": "assets/taksaka-ssng-iFhapWAT.js",
@@ -11644,6 +11863,11 @@
       "sha256": "5eadeec6bafa67b234f09f846466c018916c81bbea9f42815e3491af189ffe15"
     },
     {
+      "path": "assets/useCc206Livery-CO4iElL9.js",
+      "bytes": 13939,
+      "sha256": "d09d0ceae4a01d1a0aa7566bb98346abde025df6590faf04d0b80b03dcca7616"
+    },
+    {
       "path": "assets/useCc206Livery-CRNCv9d4.js",
       "bytes": 11487,
       "sha256": "f85777b019eb29b11f3b00f51f191decb7839d37ef6ed3fdd08a64f22e128282"
@@ -11672,6 +11896,11 @@
       "path": "assets/useCc206Livery-SSflt5hi.js",
       "bytes": 11487,
       "sha256": "3cd7ee49d3d36b7be294110a6075a024edd7a0b42d9426ef865b76556373cd54"
+    },
+    {
+      "path": "assets/wheel-batching-77bm4PDl.js",
+      "bytes": 3345,
+      "sha256": "b4b4ca6489579f46196c0dc90102f6cf61bb0f343df451c6cf9784f00db4feb7"
     },
     {
       "path": "assets/wheel-batching-BXxN4qEL.js",
@@ -12041,7 +12270,7 @@
     {
       "path": "index.html",
       "bytes": 531,
-      "sha256": "e84928a95b6e6df0b1de6a7038d14d6682561cf15281aacd24c831ae430f543c"
+      "sha256": "9fd7dd535cc6522091df78a8598d4a1131c7b201e82097782fd26c324f27ad61"
     },
     {
       "path": "liveries/cc206/credits.txt",
