@@ -1,0 +1,1 @@
+import{c as e}from"./diorama-style-CCQKhlWv.js";var t=class extends e{constructor(e,t,n,r,i,a,o,s,c,l,u,d){super(null,a,o,s,c,l,r,i,u,d),this.isCompressedTexture=!0,this.image={width:t,height:n},this.mipmaps=e,this.flipY=!1,this.generateMipmaps=!1}};export{t};
