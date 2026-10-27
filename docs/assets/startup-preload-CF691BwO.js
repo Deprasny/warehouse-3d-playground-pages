@@ -1,0 +1,1 @@
+import{_ as e,i as t}from"./index-DBZz2aJv.js";import{n}from"./riverside-station-import-DgfoTXlT.js";import"./riverside-depot-import-CH7OGh5m.js";async function r(){if(t().runtimeKey!==`riverside-railway`)return;let r=[];e.railFacilities&&r.push(n(`selatan`),n(`utara`)),e.railFacilities,await Promise.all(r)}export{r as prefetchStartupWorldAssets};
