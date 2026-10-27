@@ -1,0 +1,1 @@
+import{a as e}from"./Three.WebGPU-Cl9I7z6g.js";var t=!1;function n(){if(t)return;t=!0;let n=e.prototype,r=n.getUniformFromNode,i=new WeakMap;n.getUniformFromNode=function(e,t,n,a=null){let o=r.call(this,e,t,n,a);if(o&&o.name===`NodeBuffer_`+o.id){let e=i.get(this)??0;i.set(this,e+1),o.name=`NodeBuffer_s`+e}return o}}export{n as installStableShaderNames};

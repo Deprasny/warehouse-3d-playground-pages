@@ -1,0 +1,1 @@
+import{zt as e}from"./constants-CBH9FfQc.js";import{i as t}from"./import-texture-bank-BC0TWW0q.js";var n=class extends t{constructor(t=null,n=1,r=1,i,a,o,s,c,l=e,u=e,d,f){super(null,o,s,c,l,u,i,a,d,f),this.isDataTexture=!0,this.image={data:t,width:n,height:r},this.generateMipmaps=!1,this.flipY=!1,this.unpackAlignment=1}};export{n as t};

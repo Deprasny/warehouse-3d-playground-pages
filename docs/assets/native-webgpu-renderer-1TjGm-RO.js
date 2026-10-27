@@ -1,0 +1,1 @@
+import{i as e,o as t,r as n}from"./Three.WebGPU-Cl9I7z6g.js";var r=class extends t{isWebGPURenderer=!0;library;constructor(t={}){super(new e(t),{...t,getFallback:null}),this.library=new n}};export{r as NativeWebGpuRenderer};
